@@ -161,6 +161,7 @@ locale = FR,
 \makeglossaries
 \loadglsentries{Glossaire}							% Utilisation d'un fichier externe pour la définition des entrées (Glossaire.tex)
 \usepackage{hyphenat}
+\usepackage{pdfpages} 
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false

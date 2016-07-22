@@ -172,8 +172,8 @@ name "fig:SALUT"
 
 \end_layout
 
-\begin_layout Subsection
-Glossaire et citations
+\begin_layout Section
+Article
 \end_layout
 
 \begin_layout Standard
@@ -181,11 +181,353 @@ test
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+includepdf[pages=-,
+\end_layout
+
+\begin_layout Plain Layout
+
+addtotoc={1, section, 1, Introduction, sec:exif:intro,
+\end_layout
+
+\begin_layout Plain Layout
+
+1, subsection, 2, BOS and 3DBOS, sec:exif:intro:bos,
+\end_layout
+
+\begin_layout Plain Layout
+
+2, subsection, 2, Related works, sec:exif:intro:works,
+\end_layout
+
+\begin_layout Plain Layout
+
+3, subsection, 2, Contributions and outline of the pape, sec:exif:intro:outline,
+\end_layout
+
+\begin_layout Plain Layout
+
+3, section, 1, A regularized framework for direct 3DBOS reconstruction,
+ sec:direct,
+\end_layout
+
+\begin_layout Plain Layout
+
+4, subsection, 2,Discretization, sec:exif:direct:discretization,
+\end_layout
+
+\begin_layout Plain Layout
+
+4, subsection, 2,Regularization, sec:exif:direct:regularization,
+\end_layout
+
+\begin_layout Plain Layout
+
+5, subsection, 2,Optimization, sec:exif:direct:optim,
+\end_layout
+
+\begin_layout Plain Layout
+
+6, section, 1, Validation of the one-step inversion method on simulated
+ data, sec:exif:simu,
+\end_layout
+
+\begin_layout Plain Layout
+
+6, subsection, 2, Test case, sec:exif:simu:test,
+\end_layout
+
+\begin_layout Plain Layout
+
+7, subsection, 2, Choice of the regularization parameter, sec:exif:simu:regu,
+\end_layout
+
+\begin_layout Plain Layout
+
+9, subsection, 2, Influence of the mask, sec:exif:simu:mask,
+\end_layout
+
+\begin_layout Plain Layout
+
+10, subsection, 2, Geometrical configuration of the cameras, sec:exif:simu:confi
+g,
+\end_layout
+
+\begin_layout Plain Layout
+
+10, subsection, 2, Conclusion of the simulation study, sec:exif:simu:conclu,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, section, 1, Experimental bench for instantaneous 3DBOS: the Geode, sec:exif:
+geode,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, subsection, 2, Camera setup, sec:exif:geode:setup,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, subsection, 2, Background, sec:exif:geode:background,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, subsection, 2, Geometric setting and calibration, sec:exif:geode:calib,
+\end_layout
+
+\begin_layout Plain Layout
+
+14, section, 1, From images to deviation fields : the Geode, sec:exif:dev,
+\end_layout
+
+\begin_layout Plain Layout
+
+14, subsection, 2, Displacements estimation, sec:exif:dev:disp,
+\end_layout
+
+\begin_layout Plain Layout
+
+15, subsection, 2, Converting image displacement into deviations, sec:exif:dev:c
+onvert,
+\end_layout
+
+\begin_layout Plain Layout
+
+15, subsection, 2, 3D mask, sec:exif:dev:mask,
+\end_layout
+
+\begin_layout Plain Layout
+
+15, section, 1, Experimental results and discussion, sec:exif:expe,
+\end_layout
+
+\begin_layout Plain Layout
+
+16, subsection, 2, Plume of a candle, sec:exif:expe:candle,
+\end_layout
+
+\begin_layout Plain Layout
+
+16, subsection, 2, Hot plume, sec:exif:expe:plume,
+\end_layout
+
+\begin_layout Plain Layout
+
+18, subsection, 2, Rotating flows, sec:exif:expe:rotate,
+\end_layout
+
+\begin_layout Plain Layout
+
+20, section, 1, Conclusion, sec:exif:conclu
+\end_layout
+
+\begin_layout Plain Layout
+
+},
+\end_layout
+
+\begin_layout Plain Layout
+
+addtolist={
+\end_layout
+
+\begin_layout Plain Layout
+
+3, figure, {Views of the actuator}, fig:exif:actuator,
+\end_layout
+
+\begin_layout Plain Layout
+
+3, figure, {Sketch of the PSJ actuator}, fig:exif:sketch,
+\end_layout
+
+\begin_layout Plain Layout
+
+4, table, {Acquisition delays for the Schlieren experiments}, tab:exif:delays,
+\end_layout
+
+\begin_layout Plain Layout
+
+4, figure, {Examples of Schlieren photography of the jet}, fig:exif:schlieren,
+\end_layout
+
+\begin_layout Plain Layout
+
+5, figure, {Mean Schlieren picture at $t_4$}, fig:exif:mean_schlieren,
+\end_layout
+
+\begin_layout Plain Layout
+
+5, figure, {Evolution of the pressure wave radius}, fig:exif:pressure_wave,
+\end_layout
+
+\begin_layout Plain Layout
+
+6, figure, {Histogram and Gaussian fit of the location of the jet front
+ at two different delays}, fig:exif:histo,
+\end_layout
+
+\begin_layout Plain Layout
+
+6, figure, {Evolution of the jet front from the Schlieren pictures}, fig:exif:je
+t_front_exp,
+\end_layout
+
+\begin_layout Plain Layout
+
+8, figure, {Comparison of voltage evolution at the capacitor between experiments
+ and unsteady source terms model}, fig:exif:signals,
+\end_layout
+
+\begin_layout Plain Layout
+
+8, figure, {Plasma resistance evolution in logarithmic scale}, fig:exif:plasma_r
+,
+\end_layout
+
+\begin_layout Plain Layout
+
+9, figure, {Evolution of the coefficients $C_p$ and $
+\backslash
+lambda$ with the temperature, at the atmospheric pressure}, fig:exif:lambda_cp,
+\end_layout
+
+\begin_layout Plain Layout
+
+10, table, {Meshes characteristics}, tab:exif:meshes,
+\end_layout
+
+\begin_layout Plain Layout
+
+10, figure, {Views of Mesh 2}, fig:exif:mesh,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, table, {Calculation plan}, tab:exif:plan,
+\end_layout
+
+\begin_layout Plain Layout
+
+12, figure, {Energy balance in the cavity}, fig:exif:nrj_balance,
+\end_layout
+
+\begin_layout Plain Layout
+
+13, figure, {Temperature field and pressure field for two instants}, fig:exif:ca
+vity,
+\end_layout
+
+\begin_layout Plain Layout
+
+13, figure, {Time evolution of the mass flow rate at the exit section of
+ the cavity}, fig:exif:mfr,
+\end_layout
+
+\begin_layout Plain Layout
+
+14, figure, {Relative differences on ejected mass}, fig:exif:diff_mass,
+\end_layout
+
+\begin_layout Plain Layout
+
+14, figure, {Maximal temperature and pressure in the cavity evolution},
+ fig:exif:max,
+\end_layout
+
+\begin_layout Plain Layout
+
+15, figure, {Evolution of the mean pressure on the cavity exit section},
+ fig:exif:pressure_mean,
+\end_layout
+
+\begin_layout Plain Layout
+
+16, figure, {Density along the revolution axis}, fig:exif:density,
+\end_layout
+
+\begin_layout Plain Layout
+
+16, figure, {Density and vertical density gradient along the revolution
+ axis}, fig:exif:density_2,
+\end_layout
+
+\begin_layout Plain Layout
+
+17, figure, {Positions of the jet front from the experiments, and from calculati
+ons using unsteady source terms model and constants source terms model},
+ fig:exif:jet_front_comp,      18, figure, {Experimental and numerical Schlieren
+ images}, fig:exif:schlieren_num,
+\end_layout
+
+\begin_layout Plain Layout
+
+19, figure, {Views the vertical density gradient and of surfaces of Q iso-criter
+ia}, fig:exif:jet_num
+\end_layout
+
+\begin_layout Plain Layout
+
+},
+\end_layout
+
+\begin_layout Plain Layout
+
+pagecommand={
+\backslash
+thispagestyle{headings}},
+\end_layout
+
+\begin_layout Plain Layout
+
+scale=0.95,
+\end_layout
+
+\begin_layout Plain Layout
+
+clip,trim= 1cm 2cm 1mm 2.06cm,
+\end_layout
+
+\begin_layout Plain Layout
+
+offset=0cm -0.7cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+{Article1.pdf} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset External
 	template PDFPages
 	filename Article1.pdf
 	extra LaTeX "pages=-, pagecommand={\thispagestyle{headings}},clip,trim=1cm 2cm 1cm 2.06cm,offset=0cm -0.7cm"
 	scale 90
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 

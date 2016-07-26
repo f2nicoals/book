@@ -33,7 +33,7 @@
 
 
 %% Faux texte, juste pour la démo
-\usepackage{blindtext}
+%\usepackage{blindtext}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -41,7 +41,7 @@
 %\usepackage[utf8]{inputenc}		% LaTeX, comprend les accents !
 %\usepackage[T1]{fontenc}
 
-\usepackage[square,sort&compress,sectionbib]{natbib}		% Doit être chargé avant babel
+%\usepackage[square,sort&compress,sectionbib]{natbib}		% Doit être chargé avant babel
 %\usepackage{chapterbib}
 %\renewcommand{\bibsection}{\section{Références}}		% Met les références biblio %dans un \section (au lieu de \section*)
 
@@ -57,29 +57,29 @@
 %% Apparence globale             
 %\usepackage[top=2.5cm, bottom=2cm, left=3cm, right=2.5cm,
 %headheight=15pt]{geometry} 
-\usepackage{fancyhdr}			% Entête et pieds de page
-\pagestyle{fancy}			% Indique que le style de la page sera justement fancy
-\lfoot[\thepage]{} %gauche du pied de page
-\cfoot{} %milieu du pied de page
-\rfoot[]{\thepage} %droite du pied de page
-\fancyhead[RO, LE] {}	
-\usepackage{enumerate}
-\usepackage{enumitem}
-\usepackage[section]{placeins}	% Place un FloatBarrier à chaque nouvelle section
-\usepackage{epigraph}
-\usepackage[font={small}]{caption}
-\usepackage[francais,nohints]{minitoc}		% Mini table des matières, en français
-\setcounter{minitocdepth}{2}	% Mini-toc détaillées (sections/sous-sections)
+%\usepackage{fancyhdr}			% Entête et pieds de page
+%\pagestyle{fancy}			% Indique que le style de la page sera justement fancy
+%\lfoot[\thepage]{} %gauche du pied de page
+%\cfoot{} %milieu du pied de page
+%\rfoot[]{\thepage} %droite du pied de page
+%\fancyhead[RO, LE] {}	
+%\usepackage{enumerate}
+%\usepackage{enumitem}
+%\usepackage[section]{placeins}	% Place un FloatBarrier à chaque nouvelle section
+%\usepackage{epigraph}
+%\usepackage[font={small}]{caption}
+%\usepackage[francais,nohints]{minitoc}		% Mini table des matières, en français
+%\setcounter{minitocdepth}{2}	% Mini-toc détaillées (sections/sous-sections)
 %\usepackage{pdflscape}				% Permet d'utiliser des %pages au format paysage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Maths                         
-\usepackage{amsmath}			% Permet de taper des formules mathématiques
-\usepackage{amssymb}			% Permet d'utiliser des symboles mathématiques
-\usepackage{amsfonts}			% Permet d'utiliser des polices mathématiques
-\usepackage{nicefrac}
-\usepackage{upgreek}			% For roman (i.e. upright) lowercase Greek characters
+%\usepackage{amsmath}			% Permet de taper des formules mathématiques
+%\usepackage{amssymb}			% Permet d'utiliser des symboles mathématiques
+%\usepackage{amsfonts}			% Permet d'utiliser des polices mathématiques
+%\usepackage{nicefrac}
+%\usepackage{upgreek}			% For roman (i.e. upright) lowercase Greek characters
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -117,9 +117,9 @@
 %use comma,
 %1000 sep={\,},
 %}}
-\usepackage{eso-pic}
-\usepackage{import}
-\usepackage{cclicenses}
+%\usepackage{eso-pic}
+%\usepackage{import}
+%\usepackage{cclicenses}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Biblio                        
@@ -141,27 +141,30 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Mise en forme du texte        
-\usepackage{xspace}
-\usepackage[load-configurations = abbreviations]{siunitx}
-\DeclareSIUnit{\MPa}{\mega\pascal}
-\DeclareSIUnit{\micron}{\micro\meter}
-\DeclareSIUnit{\tr}{tr}
-\DeclareSIPostPower\totheM{m}
-\sisetup{
-locale = FR,
-  inter-unit-separator=$\cdot$,
-  range-phrase=~\`{a}~,     	% Utilise le tiret court pour dire "de... à"
-  range-units=single,  			% Cache l'unité sur la première borne
-  }
-\usepackage{textcomp}
-\usepackage{numprint}
-\usepackage{array}
-\usepackage[acronym,xindy,toc,numberedsection]{glossaries}
-\newglossary[nlg]{notation}{not}{ntn}{Notation} 	% Création d'un type de glossaire 'notation'
-\makeglossaries
-\loadglsentries{Glossaire}							% Utilisation d'un fichier externe pour la définition des entrées (Glossaire.tex)
+%\usepackage{xspace}
+%\usepackage[load-configurations = abbreviations]{siunitx}
+%\DeclareSIUnit{\MPa}{\mega\pascal}
+%\DeclareSIUnit{\micron}{\micro\meter}
+%\DeclareSIUnit{\tr}{tr}
+%\DeclareSIPostPower\totheM{m}
+%\sisetup{
+%locale = FR,
+%  inter-unit-separator=$\cdot$,
+%  range-phrase=~\`{a}~,     	% Utilise le tiret court pour dire "de... à"
+%  range-units=single,  			% Cache l'unité sur la première borne
+%  }
+%\usepackage{textcomp}
+%\usepackage{numprint}
+%\usepackage{array}
+%\usepackage[acronym,xindy,toc,numberedsection]{glossaries}
+%\newglossary[nlg]{notation}{not}{ntn}{Notation} 	% Création d'un type de glossaire 'notation'
+%\makeglossaries
+%\loadglsentries{Glossaire}							% Utilisation d'un fichier externe pour la définition des entrées (Glossaire.tex)
 \usepackage{hyphenat}
+
+%RAJOUTS
 \usepackage{pdfpages} 
+\usepackage{minitoc}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -298,6 +301,23 @@ set_width "auto"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
@@ -344,10 +364,6 @@ filename "Chapitre4.lyx"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Test from St Michel
 \end_layout
 
 \end_body

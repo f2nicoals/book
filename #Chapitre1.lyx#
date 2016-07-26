@@ -70,7 +70,7 @@
 \begin_body
 
 \begin_layout Chapter
-Biblio de merde
+BOS 3D
 \end_layout
 
 \begin_layout Standard
@@ -282,7 +282,7 @@ geode,
 
 \begin_layout Plain Layout
 
-11, subsection, 2, Geometric setting and calibration, sec:exif:geode:calib
+11, subsection, 2, Geometric setting and calibration, sec:exif:geode:calib,
 \end_layout
 
 \begin_layout Plain Layout
@@ -292,18 +292,18 @@ geode,
 
 \begin_layout Plain Layout
 
-14, subsection, 2, Displacements estimation, sec:exif:dev:disp
+14, subsection, 2, Displacements estimation, sec:exif:dev:disp,
 \end_layout
 
 \begin_layout Plain Layout
 
 15, subsection, 2, Converting image displacement into deviations, sec:exif:dev:c
-onvert
+onvert,
 \end_layout
 
 \begin_layout Plain Layout
 
-15, subsection, 2, 3D mask, sec:exif:dev:mask
+15, subsection, 2, 3D mask, sec:exif:dev:mask,
 \end_layout
 
 \begin_layout Plain Layout
@@ -313,12 +313,22 @@ onvert
 
 \begin_layout Plain Layout
 
-15, subsection, 2, Plume of a candle, sec:exif:expe:candle
+16, subsection, 2, Plume of a candle, sec:exif:expe:candle,
 \end_layout
 
 \begin_layout Plain Layout
 
-15, subsection, 2, Plume of a candle, sec:exif:expe:candle
+16, subsection, 2, Hot plume, sec:exif:expe:plume,
+\end_layout
+
+\begin_layout Plain Layout
+
+18, subsection, 2, Rotating flows, sec:exif:expe:rotate,
+\end_layout
+
+\begin_layout Plain Layout
+
+20, section, 1, Conclusion, sec:exif:conclu
 \end_layout
 
 \begin_layout Plain Layout
@@ -333,131 +343,145 @@ addtolist={
 
 \begin_layout Plain Layout
 
-3, figure, {Views of the actuator}, fig:exif:actuator,
+5, figure, {Mask and boundary conditions.}, fig:exif:valid,
 \end_layout
 
 \begin_layout Plain Layout
 
-3, figure, {Sketch of the PSJ actuator}, fig:exif:sketch,
+6, figure, { Illustration of the pixelwise ray tracing operation.}, fig:exif:rayt
+racing,
 \end_layout
 
 \begin_layout Plain Layout
 
-4, table, {Acquisition delays for the Schlieren experiments}, tab:exif:delays,
+7, figure, {Reference camera configuration for 3DBOS: 'coplanar180' case},
+ fig:exif:cam180,
 \end_layout
 
 \begin_layout Plain Layout
 
-4, figure, {Examples of Schlieren photography of the jet}, fig:exif:schlieren,
+7, table, {Cameras angular positions.}, fig:exif:cam_angles,
 \end_layout
 
 \begin_layout Plain Layout
 
-5, figure, {Mean Schlieren picture at $t_4$}, fig:exif:mean_schlieren,
+8, figure, {Simulated deviation fields.}, fig:exif:simu_dev,
 \end_layout
 
 \begin_layout Plain Layout
 
-5, figure, {Evolution of the pressure wave radius}, fig:exif:pressure_wave,
+8, figure, {Choice of the regularization parameter.
+ Density field.}, fig:exif:regu_choice,
 \end_layout
 
 \begin_layout Plain Layout
 
-6, figure, {Histogram and Gaussian fit of the location of the jet front
- at two different delays}, fig:exif:histo,
+9, figure, {Choice of the regularization parameter.
+ L-curve.}, fig:exif:L-curve,
 \end_layout
 
 \begin_layout Plain Layout
 
-6, figure, {Evolution of the jet front from the Schlieren pictures}, fig:exif:je
-t_front_exp,
+9, figure, {Profiles of density along slices extracted from the volumes.},
+ fig:exif:slices,
 \end_layout
 
 \begin_layout Plain Layout
 
-8, figure, {Comparison of voltage evolution at the capacitor between experiments
- and unsteady source terms model}, fig:exif:signals,
+10, figure, {Residual error per voxel as a function of the number of cameras.},
+ fig:exif:errror_ncam,
 \end_layout
 
 \begin_layout Plain Layout
 
-8, figure, {Plasma resistance evolution in logarithmic scale}, fig:exif:plasma_r
-,
+10, figure, {Noncoplanar camera configurations.
+ a Shifted180 b Cluster30}, fig:exif:cameras_conf,
 \end_layout
 
 \begin_layout Plain Layout
 
-9, figure, {Evolution of the coefficients $C_p$ and $
-\backslash
-lambda$ with the temperature, at the atmospheric pressure}, fig:exif:lambda_cp,
+12, figure, {Synthetic reconstructions}, fig:exif:synth_reconstruction,
 \end_layout
 
 \begin_layout Plain Layout
 
-10, table, {Meshes characteristics}, tab:exif:meshes,
+13, table, { The Geode, a 3DBOS experimental facility.}, tab:exif:geode,
 \end_layout
 
 \begin_layout Plain Layout
 
-10, figure, {Views of Mesh 2}, fig:exif:mesh,
+13, figure, {The semi-random background.}, fig:exif:background,
 \end_layout
 
 \begin_layout Plain Layout
 
-11, table, {Calculation plan}, tab:exif:plan,
+13, table, {Camera JAI BM500 GE characteristics and acquisition parameters.},
+ tab:exif:camera,
 \end_layout
 
 \begin_layout Plain Layout
 
-12, figure, {Energy balance in the cavity}, fig:exif:nrj_balance,
+13, figure, {Sketch of the geometrical configuration of cameras in a typical
+ 3DBOS setting.}, tab:exif:calib,
 \end_layout
 
 \begin_layout Plain Layout
 
-13, figure, {Temperature field and pressure field for two instants}, fig:exif:ca
-vity,
+14, figure, {Processing chain.}, fig:exif:mascarade,
 \end_layout
 
 \begin_layout Plain Layout
 
-13, figure, {Time evolution of the mass flow rate at the exit section of
- the cavity}, fig:exif:mfr,
+15, figure, {Principle of BOS measurement.}, fig:exif:principle,
 \end_layout
 
 \begin_layout Plain Layout
 
-14, figure, {Relative differences on ejected mass}, fig:exif:diff_mass,
+15, figure, {Masked displacement norm.}, fig:exif:disp,
 \end_layout
 
 \begin_layout Plain Layout
 
-14, figure, {Maximal temperature and pressure in the cavity evolution},
- fig:exif:max,
+16, table, {Size of the reconstructed volumes and computation times.}, fig:exif:c
+omputation_time,
 \end_layout
 
 \begin_layout Plain Layout
 
-15, figure, {Evolution of the mean pressure on the cavity exit section},
- fig:exif:pressure_mean,
+16, figure, {L-curve of the 3D reconstruction of a candle plume for a coplanar
+ configuration.}, fig:exif:L-curve_expe,
 \end_layout
 
 \begin_layout Plain Layout
 
-16, figure, {Density along the revolution axis}, fig:exif:density,
+17, figure, {Candle plume reconstruction.}, fig:exif:candle,
 \end_layout
 
 \begin_layout Plain Layout
 
-16, figure, {Density and vertical density gradient along the revolution
- axis}, fig:exif:density_2,
+17, figure, {Comparison between input deviations and computed deviations.},
+ fig:exif:expe_dev
 \end_layout
 
 \begin_layout Plain Layout
 
-17, figure, {Positions of the jet front from the experiments, and from calculati
-ons using unsteady source terms model and constants source terms model},
- fig:exif:jet_front_comp,      18, figure, {Experimental and numerical Schlieren
- images}, fig:exif:schlieren_num,
+18, figure, {Hot jet instantaneous field reconstruction}, fig:exif:hot_jet_inst,
+\end_layout
+
+\begin_layout Plain Layout
+
+18, figure, {Hot jet mean field reconstruction}, fig:exif:hot_jet_mean,
+\end_layout
+
+\begin_layout Plain Layout
+
+19, figure, {Comparison between thermocouple measurements and density field
+ reconstructed by 3DBOS}, fig:exif:thermocouples_comparison,
+\end_layout
+
+\begin_layout Plain Layout
+
+19, figure, {Helicoidal plume reconstruction}, fig:exif:helix,
 \end_layout
 
 \begin_layout Plain Layout

@@ -1,0 +1,375 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass report
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Etat de l'art
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+minitoc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+La naissance de la Background Oriented Schlieren (BOS)
+\end_layout
+
+\begin_layout Standard
+La Background Oriented Sclieren (BOS) est née au début des années 2000.
+ Elle a été introduite par Meier (et Raffel) et Dalziel.
+ Meier et son équipe du DLR travaillaient beaucoup sur les tourbillons de
+ bout de pâles d'hélicoptères.
+ Ils se sont inspirés de la vélocimétrie par image de particules (PIV) et
+ des algorithme développés pour calculer le champ de déplacement entre deux
+ images de particules.
+ Pour celà, ils ont 
+\begin_inset Quotes eld
+\end_inset
+
+imprimé
+\begin_inset Quotes erd
+\end_inset
+
+ leur encemenscement en projetant de la peinture blanche sur une surface
+ goudronnée.
+ Ils ont ensuite observé leur hélicoptère en vol stationaire depuis le toît
+ d'un bâtiment et après avoir calculé leur champ de déplacement, ils ont
+ pu observer les ourbillons de bout de pâles et leur évolution.
+ Déjà, Meier voit la technique comme très prometteuse pour la visualisation
+ d'écoulements compressibles sur de très grand champs, avec des applications
+ en soufflerie mais aussi pour des expériences en vol.
+ Dalziel a eu une approche un peu différente: il s'intéressait aux variations
+ de densité présntes dans un écoulement stratifié soumis à des oscillations
+ périodiques.
+ Pour étudier ce phénomène de manière quantitative, Dalziel explore divers
+ techniques: il commence par la strioscopie puis étudie l'utilisation de
+ la strioscopie par grille encore appelée 
+\begin_inset Quotes eld
+\end_inset
+
+focusing schlieren
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Il étend le principe en s'intéressant à un masque de points qui n'est plus
+ 2D.
+ Enfin, il montre qu'un suivit du déplacement de son motif de points par
+ corrélation fournit de belles cartes des gradients horizontaux et verticaux
+ avec un montage bien plus simple que les techniques de grilles.
+\end_layout
+
+\begin_layout Standard
+Par la suite la BOS va se démocratisée de part sa simplicité d'utilisation.
+ Les divers motifs qui ont été utilisés comme fonds sont détaillés dans
+ la section suivante.
+\end_layout
+
+\begin_layout Section
+Le choix du fond
+\end_layout
+
+\begin_layout Subsection
+Classiques
+\end_layout
+
+\begin_layout Standard
+L'utilisation première de sprays de peinture pour créer le mouchetis est
+ satisfaisante et très adapatée aux grandes dimensions 
+\series bold
+\size normal
+klinge 2006
+\series default
+\size default
+.
+ Pour les expériences de dimensions plus modeste, le choix classique porte
+ sur l'impression d'une distribution aléatoire de points.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Biblio/Images/random.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L'utilisation de fonds en ondelettes semblaient prometteuse pour les capture
+ d'écoulements présentants une grande dynamique mais elle ne s'est pas avérée
+ concluante.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Biblio/Images/wavelet.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Todoroff a un introduit un mouchetis semi-aléatoire: ce fond composé de
+ point répartis aléatoirement dans de petites fenêtres permet de s'affranchir
+ d'un certains nombre de contraintes de la répartition aléatoire classsique,
+ à savoir la présence de zone partiellement vides et d'amas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Biblio/Images/semi-random.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour augmenter l'énergie lumineuse reçu, l'ensemble de ces fonds peut être
+ imprimé sur panneaux rétroréfléchissant 
+\series bold
+Bauknect_b
+\series default
+ ou bien sur panneaux transparents couplé à un éclairage par l'arrière.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+regarder hartberger
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Fond naturel
+\end_layout
+
+\begin_layout Standard
+Pour les expériences de grandes dimensions, plusieurs équipes se sont intéressé
+ à l'utilisation de la texture naturelle d'une étendue herbeuse, rocheuse
+ ou bien aux branchage d'une forêt comme mfond de référence.
+ Toujours dans le but d'étudier les tourbillons de bout de pâles, le DLR
+ a largement utilisé les fonds naturels pour des expériences à échelle 1:1
+ 
+\series bold
+\size normal
+Bauknecht_a
+\series default
+ ou bien pour des mesures en vol 
+\series bold
+Leopold2007, Raffel 2014 
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Par rapport à des problématiques d'explosions, Mizukaki 
+\series bold
+\size normal
+ref
+\series default
+ et 
+\series bold
+Hargater2013 
+\series default
+\size default
+ont
+\size normal
+ égalment utilisés des textures naturelles pour analyser le déplacement
+ de l'onde de souffle.
+\end_layout
+
+\begin_layout Standard
+Une etude détaillée de l'impact du fond naturel sur la qualité de la corrélation
+ d'image a par ailleurs été mené par 
+\series bold
+\size normal
+Hargather2007.
+\end_layout
+
+\begin_layout Subsection
+Color-BOS
+\end_layout
+
+\begin_layout Standard
+La Color-BOS (CBOS) a été introduite par 
+\series bold
+Leopold 2007.
+ 
+\series default
+Elle repose sur l'utilisation un fond coloré, résultant d'un mélange de
+ pixels rouges, verts et bleus.
+ De cette manière, des corrélations indépendantes des pixels de chaque couleur
+ et des mélange de couleurs permet d'améliorer la résolution classique de
+ la corrélation qui est conditionnée par la taille de la fenêtre de corrélation
+ et par le recouvrement.
+ De plus, en introduisant un dépalcement connu entre les motifs de couleurs
+ différentes lors de la conception du background 
+\series bold
+\size normal
+Leopold2013
+\series default
+\size default
+, il est possible de réaliser des corrélations entre ces deux motifs à la
+ traversée des ondes de chocs qui sont relaticvemnet difficiles à bien capturer.
+ La technique présente néanmoins quelques inconvénients pusique il faut
+ avoir à l'avance une idée de la topologie de l'onde de choc et elle ne
+ pourrait fonctionner sur des topologie d'écoulements complexes.
+ Enfin, la mise en oeuvre de la CBOS nécessite bien évidement une caméra
+ couleur, ce qui se traduit par une baisse de résolution pour un nimbre
+ de pixels donné.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Biblio/Images/spike.jpg
+	lyxscale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Biblio/Images/CBOS.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Color-Grid-BOS
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
+Obtenir le champ de masse volumique: reconstruction 3D
+\end_layout
+
+\begin_layout Standard
+axi, stationnaire, périodique
+\end_layout
+
+\begin_layout Subsection
+Strioscopie quantitative
+\end_layout
+
+\begin_layout Standard
+périodique, color schlieren, topologie
+\end_layout
+
+\begin_layout Subsection
+3D instationnaire
+\end_layout
+
+\begin_layout Standard
+Topologie-> DLR tourbillons de bout de pales.
+\end_layout
+
+\begin_layout Standard
+Irhke, nous, Ota~, Hartman...
+\end_layout
+
+\end_body
+\end_document

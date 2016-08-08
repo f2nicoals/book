@@ -5,7 +5,7 @@
 \textclass report
 \use_default_options false
 \maintain_unincluded_children false
-\language english
+\language french
 \language_package none
 \inputencoding auto
 \fontencoding default
@@ -24,6 +24,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement h
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -56,7 +57,7 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\quotes_language french
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -71,6 +72,13 @@
 
 \begin_layout Chapter
 Etat de l'art
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:biblio"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -98,6 +106,13 @@ minitoc
 
 \begin_layout Section
 La naissance de la Background Oriented Schlieren (BOS)
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:intro"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -108,7 +123,7 @@ La Background Oriented Sclieren (BOS) est née au début des années 2000.
  Ils se sont inspirés de la vélocimétrie par image de particules (PIV) et
  des algorithme développés pour calculer le champ de déplacement entre deux
  images de particules.
- Pour celà, ils ont 
+ Pour cela, ils ont 
 \begin_inset Quotes eld
 \end_inset
 
@@ -116,16 +131,67 @@ imprimé
 \begin_inset Quotes erd
 \end_inset
 
- leur encemenscement en projetant de la peinture blanche sur une surface
+ leur ensemencement en projetant de la peinture blanche sur une surface
  goudronnée.
- Ils ont ensuite observé leur hélicoptère en vol stationaire depuis le toît
- d'un bâtiment et après avoir calculé leur champ de déplacement, ils ont
- pu observer les ourbillons de bout de pâles et leur évolution.
+ Ils ont ensuite observé leur hélicoptère en vol stationnaire depuis le
+ toit d'un bâtiment et après avoir calculé leur champ de déplacement, ils
+ ont pu observer les tourbillons de bout de pâles et leur évolution.
  Déjà, Meier voit la technique comme très prometteuse pour la visualisation
  d'écoulements compressibles sur de très grand champs, avec des applications
  en soufflerie mais aussi pour des expériences en vol.
- Dalziel a eu une approche un peu différente: il s'intéressait aux variations
- de densité présntes dans un écoulement stratifié soumis à des oscillations
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Biblio/Images/DLR_helico.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Biblio/Images/DLR_helico_res.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dalziel a eu une approche un peu différente: il s'intéressait aux variations
+ de densité présentes dans un écoulement stratifié soumis à des oscillations
  périodiques.
  Pour étudier ce phénomène de manière quantitative, Dalziel explore divers
  techniques: il commence par la strioscopie puis étudie l'utilisation de
@@ -151,8 +217,24 @@ Par la suite la BOS va se démocratisée de part sa simplicité d'utilisation.
  la section suivante.
 \end_layout
 
+\begin_layout Standard
+Un état de l'art détaillé a été réalisé par 
+\series bold
+Raffel 2015
+\series default
+\size normal
+ nous allons revenir sur les principales contributions.
+\end_layout
+
 \begin_layout Section
 Le choix du fond
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:background"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -161,7 +243,7 @@ Classiques
 
 \begin_layout Standard
 L'utilisation première de sprays de peinture pour créer le mouchetis est
- satisfaisante et très adapatée aux grandes dimensions 
+ satisfaisante et très adaptée aux grandes dimensions 
 \series bold
 \size normal
 klinge 2006
@@ -173,8 +255,34 @@ klinge 2006
 \end_layout
 
 \begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Biblio/Images/random.pdf
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -183,15 +291,41 @@ klinge 2006
 
 \begin_layout Standard
 L'utilisation de fonds en ondelettes semblaient prometteuse pour les capture
- d'écoulements présentants une grande dynamique mais elle ne s'est pas avérée
+ d'écoulements présentant une grande dynamique mais elle ne s'est pas avérée
  concluante.
 \end_layout
 
 \begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Biblio/Images/wavelet.png
 	lyxscale 25
 	scale 25
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -206,8 +340,34 @@ Todoroff a un introduit un mouchetis semi-aléatoire: ce fond composé de
 \end_layout
 
 \begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Biblio/Images/semi-random.pdf
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -243,7 +403,7 @@ Fond naturel
 \begin_layout Standard
 Pour les expériences de grandes dimensions, plusieurs équipes se sont intéressé
  à l'utilisation de la texture naturelle d'une étendue herbeuse, rocheuse
- ou bien aux branchage d'une forêt comme mfond de référence.
+ ou bien aux branchage d'une forêt comme fond de référence.
  Toujours dans le but d'étudier les tourbillons de bout de pâles, le DLR
  a largement utilisé les fonds naturels pour des expériences à échelle 1:1
  
@@ -277,7 +437,7 @@ ont
 \end_layout
 
 \begin_layout Standard
-Une etude détaillée de l'impact du fond naturel sur la qualité de la corrélation
+Une étude détaillée de l'impact du fond naturel sur la qualité de la corrélation
  d'image a par ailleurs été mené par 
 \series bold
 \size normal
@@ -300,8 +460,8 @@ Elle repose sur l'utilisation un fond coloré, résultant d'un mélange de
  et des mélange de couleurs permet d'améliorer la résolution classique de
  la corrélation qui est conditionnée par la taille de la fenêtre de corrélation
  et par le recouvrement.
- De plus, en introduisant un dépalcement connu entre les motifs de couleurs
- différentes lors de la conception du background 
+ De plus, en introduisant un déplacement connu entre les motifs de couleurs
+ différentes lors de la conception du fond 
 \series bold
 \size normal
 Leopold2013
@@ -309,18 +469,27 @@ Leopold2013
 \size default
 , il est possible de réaliser des corrélations entre ces deux motifs à la
  traversée des ondes de chocs qui sont relaticvemnet difficiles à bien capturer.
- La technique présente néanmoins quelques inconvénients pusique il faut
+ La technique présente néanmoins quelques inconvénients puisque il faut
  avoir à l'avance une idée de la topologie de l'onde de choc et elle ne
  pourrait fonctionner sur des topologie d'écoulements complexes.
- Enfin, la mise en oeuvre de la CBOS nécessite bien évidement une caméra
+ Enfin, la mise en œuvre de la CBOS nécessite bien évidement une caméra
  couleur, ce qui se traduit par une baisse de résolution pour un nimbre
  de pixels donné.
 \end_layout
 
 \begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Biblio/Images/spike.jpg
 	lyxscale 50
+	rotateOrigin center
 
 \end_inset
 
@@ -329,6 +498,24 @@ Leopold2013
 	filename Biblio/Images/CBOS.jpg
 	lyxscale 50
 	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -340,7 +527,203 @@ Color-Grid-BOS
 \end_layout
 
 \begin_layout Standard
+La color-grid BOS a été développée par 
+\series bold
+Ota 
+\series default
+et son équipe.
+ Possédant une grande expérience en interférométrrie, ils en ont repris
+ le principe pour l'appliquer à la BOS.
+ Leurs fonds sont donc composés de 2 grilles : une grille rouge verticale
+ et une grille verte horizontale.
+ Ils utilisent ensuite leurs algorithme de détection de franges pour calculer
+ les déplacements horizontaux et verticaux au centre de chaque ligne.
+ Les champs finaux sont obtenus par interpolation.
+ La CBOS permet une grande qualité de mesure mais elle sa résolution est
+ limitée par la grille utilisée.
+ Enfin, comme la CBOS, elle nécessite l'emploi d'une caméra couleur.
+\end_layout
 
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Biblio/Images/CGBOS_red.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Biblio/Images/CGBOS_green.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Speckle-BOS
+\end_layout
+
+\begin_layout Standard
+Beaucoup utilisé au début des années 2000 (Fomin) l'utilisation du speckle
+ en interférométrie est revenue au goût du jour par Meier 2014 qui propose
+ d'utilisé le speckle d'un laser comme image de fond.
+ Pour rappel, le speckle est un motif tacheté qui apparait lorsque l'on
+ éclaire une surface avec une lumière cohérente.
+ Les défauts de rugosité à la surface du matériaux créent de multiples retard
+ de phase, à l'origine des interférences speckle.
+ La taille des grains du speckle est directement liée à l'ouverture du système
+ optique.
+ Ainsi, plus l'ouverture est faible et plus le speckle est 
+\begin_inset Quotes eld
+\end_inset
+
+gros
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Meier réalise donc son fond en imageant son speckle sur une plaque de verre
+ dépolie.
+ Le premier avantage relatif au speckle réside dans la possibilité de faire
+ varier la sensibilité de la technique en bougeant simplement la mise au
+ point.
+ Contrairement à la BOS classique, la position du fond et la sensibilité
+ sont ici décorrélés.
+ En faisant varier la mise au point, Meier observe une évolution de la sensibili
+té, avec des déplacement nuls lorsqu'il se trouve sur l'écoulement.
+ De manière surprenante, il obtient des déplacements opposés lorsque la
+ mise au moins est faite devant l'écoulement, avec une sensibilité qui augmente
+ bien plus rapidement lorsqu'il s'éloigne que dans le montage classique.
+ De plus, Meier présente un montage 
+\begin_inset Quotes fld
+\end_inset
+
+double passe
+\begin_inset Quotes frd
+\end_inset
+
+ qui permet de doubler la sensibilité en faisant passer la lumière deux
+ fois à travers l'écoulement par réflexion.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Biblio/Images/speckle.jpg
+	lyxscale 60
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Biblio/Images/speckle_sensitivity.gif
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L'utilisation du speckle reste séduisante sur le papier mais il apparait
+ difficile à mettre en œuvre dans un environnement complexe: Meier a réalisé
+ ses mesures sur table optique.
+ Que se passe-t-il lorsque le fond vibre ou se déforme? Le speckle est-il
+ stable dans le temps? Il semble toutefois très approprié au petites expériences
+ (qui peuvent se faire sur table optique) mais surtout pour lesquelles il
+ est difficile d'imprimer un mouchetis suffisamment petit.
+ Enfin, bien qu'intéressant le montage double passe nécessite un alignement
+ précis du faisceau laser et de la caméra.
+\end_layout
+
+\begin_layout Standard
+(dans le cas de faisceaux non parallèles, les rayons voient-ils vraiment
+ la même chose à l'aller et au retour ????)
+\end_layout
+
+\begin_layout Standard
+micro:Stoller, Kushner, poitiers 0
+\end_layout
+
+\begin_layout Section
+Corrélation d'images
+\end_layout
+
+\begin_layout Standard
+Après obtention d'une paire d'image, l'image de référence et l'image perturbée,
+ le calcul des champs de déplacements (verticaux et horizontaux) se fait
+ par corrélation d'images.
+ La plus parts des équipes utilisent des algorithmes basés sur la transformée
+ de Fourier.
+ En effet, ceux-ci sont largement répandu en PIV et facilement disponible
+ (matkab matpiv).
+ Toutefois, Atcheson
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Atcheson09"
+
+\end_inset
+
+ a mené une étude comparative entre un calcul par FFT et des calculs par
+ flot optiques.
+ Au bilan, il montre que les algo Lucas-Kanade et Horn-Schunck sont plus
+ performant que la moyenne avec une légère avance pour le HS.
+ 
 \end_layout
 
 \begin_layout Section
@@ -348,7 +731,20 @@ Obtenir le champ de masse volumique: reconstruction 3D
 \end_layout
 
 \begin_layout Standard
-axi, stationnaire, périodique
+La BOS étant une mesure intégrée, l'obtention du champ de masse volumique
+ n'est pas immédiate et dépend des hypothèses considérées.
+ Le cas le plus simple est le cas 2D pour lequel il suffit de connaitre
+ la longueur d'intégration puis réaliser une intégration du champ de gradients
+ pour accéder à la masse volumique.
+ Dans les autres cas une étape de reconstruction est nécessaire.
+\end_layout
+
+\begin_layout Subsection
+Ecoulement axisymétrique
+\end_layout
+
+\begin_layout Subsection
+Ecoulement stationnaire 
 \end_layout
 
 \begin_layout Subsection
@@ -369,6 +765,898 @@ Topologie-> DLR tourbillons de bout de pales.
 
 \begin_layout Standard
 Irhke, nous, Ota~, Hartman...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="7">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="3cm">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Equipe
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Référence
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Technique
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hypothèse
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Algorithme
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nombre de projections
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Schlieren
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Khole, Agrawal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Agrawal06"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rainbow Schlieren
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Axi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CBP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kolhe2009"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rainbow Schlieren
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Axi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Takano
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "takano2016"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rainbow Schlieren
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Axi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abel/CPB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cabaleiro
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cabaleiro2013"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Schlieren
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Périodique
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FBP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+36
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jap flamme
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ishino2016"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Schlieren
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ART
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOS
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Leopold
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sourgen2004"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Axi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sourgen12"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CBOS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Axi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FBP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leopold2013"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CBOS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stationnaire
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ART
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+36
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ota
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ota11"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CGBOS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stationnaire
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ART
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+38
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Atcheson, Irhke
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Atcheson08"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOS 3D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ART
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Todoroff
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Todoroff2013"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOS 3D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ART
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+vfrgbfrgbrfgrgrggrgvrgbr
 \end_layout
 
 \end_body

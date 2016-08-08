@@ -71,25 +71,15 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\myx}{\mathbf{x}}
-{\mathbf{x}}
+\newcommand{\myrho}{\rho}
+{\rho}
 \end_inset
 
 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "x"
-description "c'est x"
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-c'est x
-\end_layout
+symbol "$\\rho$"
+description "Masse volumique"
 
 \end_inset
 

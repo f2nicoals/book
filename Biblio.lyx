@@ -896,11 +896,26 @@ tion s'impose pour pouvoir converger vers une solution.
 \end_layout
 
 \begin_layout Subsection
+3D instationnaire
+\end_layout
+
+\begin_layout Standard
+BieTopologie-> DLR tourbillons de bout de pales.
+\end_layout
+
+\begin_layout Standard
+Détailler Irhke, nous, Ota~, Hartman...
+\end_layout
+
+\begin_layout Subsection
 Strioscopie quantitative
 \end_layout
 
 \begin_layout Standard
-Bien qu'il soit difficile d'obtenir des mesures quantitative en strioscopie,
+Pour compléter cet état de l'art sur les techniques BOS, il nous parait
+ important de mentionner les références suivantes qui utilise la strioscopie
+ pour reconstruire le champ de masse volumique.
+ Bien qu'il soit difficile d'obtenir des mesures quantitative en strioscopie,
  en réalisant une calibration, il est également possible d'effectuer une
  reconstruction du champ de masse volumique.
  La strioscopie couleur, encore appelée 
@@ -933,18 +948,56 @@ key "Agrawal06,kolhe2009,takano2016"
  Une fois calibré, ce dernier permet d'associer à chaque couleur un déplacement.
  Comme le filtre est 2D, il est néanmoins nécessaire de tourner le filtrre
  de 90° pour mesurer à la fois les gradients horizontaux et verticaux.
-\end_layout
+ A partir de ces mesures, les auteurs ont pu reconstruire le champ axisymmétriqu
+e de masse volumique par transformée d'Abel 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kolhe2009,takano2016"
 
-\begin_layout Subsection
-3D instationnaire
+\end_inset
+
+ ou bien par une variante de FBP dénommée 
+\begin_inset Quotes fld
+\end_inset
+
+Convolution BackProjection
+\begin_inset Quotes frd
+\end_inset
+
+ (CBP) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Agrawal06,takano2016"
+
+\end_inset
+
+.
+ Cabaleiro 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cabaleiro2013"
+
+\end_inset
+
+ travaille quant à lui avec des strioscopie classique en niveau de gris.
+ Il adopte néanmoins une démarche intéressante: il étudie le fonctionnement
+ d'un actionneur de type jet pulsé.
+ Etant donné le caractère périodique de l'écoulement, il travaille en moyenne
+ de phase et utilise 36 points de vues différentys pour reconstruire son
+ écoulement par FBP.
+ Enfin, Ishino 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ishino2016"
+
+\end_inset
+
+ a développé un banc avec 20 lignes strioscopique qui lui permettent de
+ reconstruire le champ instantané de masse volumique d'une flamme turbulente.
 \end_layout
 
 \begin_layout Standard
-Topologie-> DLR tourbillons de bout de pales.
-\end_layout
 
-\begin_layout Standard
-Détailler Irhke, nous, Ota~, Hartman...
 \end_layout
 
 \begin_layout Standard

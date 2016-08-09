@@ -203,7 +203,7 @@ math-macro.lyx
 \pdf_colorlinks true
 \pdf_backref page
 \pdf_pdfusetitle true
-\pdf_quoted_options "linkcolor=blue, urlcolor=blue, citecolor=red, linktoc=all, backref"
+\pdf_quoted_options "linkcolor=red, urlcolor=blue, citecolor=blue, linktoc=all, backref"
 \papersize default
 \use_geometry true
 \use_package amsmath 1
@@ -216,8 +216,8 @@ math-macro.lyx
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine basic
-\cite_engine_type default
+\cite_engine natbib
+\cite_engine_type authoryear
 \biblio_style plain
 \use_bibtopic false
 \use_indices false
@@ -375,10 +375,14 @@ filename "Chapitre4.lyx"
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "bib"
-options "plain"
+options "plainnat"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 

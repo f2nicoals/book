@@ -743,8 +743,156 @@ La BOS étant une mesure intégrée, l'obtention du champ de masse volumique
 Ecoulement axisymétrique
 \end_layout
 
+\begin_layout Standard
+Pour un écoulement axisymmétrique, une seule vue est nécessaire pour capturer
+ la physique.
+ Et, dans ce cas précis, il est possible d'utiliser l'inversion d'Abel pour
+ reconstruire la distribution volumique de masse volumique.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Equation: expression de la transformée ?
+\end_layout
+
+\end_inset
+
+La transformée d'Abel exprime la projection d'une fonction axi-symmétrique
+ le long d'une ligne de vue aboutissant à la mesure.
+ Son inverse permet de calculer la-dite fonction à partir de sa projection
+ mesurée.
+\end_layout
+
+\begin_layout Standard
+Très utilisée, la transformée d'Abel permet de remonter au champ de masse
+ volumique pour un certains nombre d'écoulements qui sont axisymmétrique,
+ le plus souvent en moyenne.
+ La difficulté réside dans l'estimation précise de l'axe de symétrie lors
+ du montage expérimental.
+ En effet il faut pouvoir positionner précisément la caméra en alignant
+ l'un de ses axes avec l'axe de symétrie de l'écoulement.
+ Une erreur de positionnement impactera directement la reconstruction avec
+ l'apparition d'artefacts sur cet axe justement.
+\end_layout
+
 \begin_layout Subsection
-Ecoulement stationnaire 
+Ecoulement stationnaire
+\end_layout
+
+\begin_layout Standard
+Un écoulement stationnaire permet également de travailler avec un seul point
+ de vue.
+ En effet en réalisant successivement plusieurs acquisitions en tournant
+ autour de l'écoulement, on peut reconstruire le champ de masse volumique.
+ Lorsque ces écoulements ne sont pas axisymétrique il faut faire appel à
+ des techniques de reconstructions plus complexes que la transformé d'Abel,
+ telle que la rétroprojection filtrée: Filtered BacProjection (FBP) ou bien
+ les méthodes algébriques: Algebraic Reconstruction Techniques (ART).
+ 
+\end_layout
+
+\begin_layout Standard
+La rétroprojection filtrée est basée sur la transformée de Radon, une généralisa
+tion de la transformée d'Abel, qui tient compte de l'angle de visée.
+ Beaucoup utilisée à l'origine en imagerie médicale, Sourgen
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sourgen2004"
+
+\end_inset
+
+ l'a mise en œuvre sur la BOS pour reconstruire des champ de masse volumique
+ autour d'un cône à Mach 2.06.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Schéma
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La principale difficulté de la rétroprojection filtrée réside dans le filtrage.
+ En effet, si l'on rétroprojette brutalement la mesure dans le volume, des
+ données vont s'accumuler le long des axes de visée conduisant à des artefacts
+ en étoile.
+ Un filtrage est donc nécessaire pour les limiter et aboutir à une reconstructio
+n propre.
+ Enfin, la FBP nécessite un grand nombre de projection pour fonctionner:
+ typiquement, les scanners médicaux acquiert plusieurs centaines de projections!
+ En BOS, pour les écoulements stationnaires, il est possible de faire un
+ certain nombre de mesure (20 à 30 en général) mais cela demeure assez insuffisa
+nt.
+ Une manière d'améliorer la qualité des reconstructions est d'interpoler
+ les données manquantes en se basant sur le sinogramme.
+ Le sinogramme est une façon de représenter l'ensemble des projections en
+ représentant la mesure sous la forme d'un graphique (r,
+\begin_inset Formula $\theta$
+\end_inset
+
+), chaque ligne représentant une projection.
+ Il est appelé ainsi car l'image dans point se traduit par une sinusoïde.
+ L'interpolation du sinogramme permet donc de combler le manque de données
+ et d'améliorer la reconstruction.
+\end_layout
+
+\begin_layout Standard
+Les méthodes algébrique connaissent un intérêt croissant depuis une dizaine
+ d'années.
+ Elles étaient jusque là peu utilisées en raison de leur coût de calcul
+ prohibitif mais elles se démocratise avec l'amélioration performances des
+ ordinateurs.
+ Ces méthodes consistent à rechercher une solution sur un espace discret
+ de fonctions de base, généralement choisi comme les voxels.
+ Un opérateur de projection est définit au en un point 
+\begin_inset Formula $j$
+\end_inset
+
+ comme la somme des contributions des voxels traversés par la ligne de visée
+ issue de 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ Le principe des méthodes ART est de mettre à jour de manière itérative
+ les valeurs des voxels en ajoutant la valeur calculée à l'itération précédente
+ le résidu entre la valeur mesurée en j et la projection du volume calculé
+ à l'itération précédente.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+equation
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leopold2013,Ota11"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En pratique, en tomographie la matrice A du système n'est pas carré, donc
+ non inversible au sens strict.
+ On cherche donc, le plus souvent, la solution au sens des moindres carré.
+ De plus, le bruit de mesure rendant le problème mal conditionné, une régularisa
+tion s'impose pour pouvoir converger vers une solution.
 \end_layout
 
 \begin_layout Subsection
@@ -752,7 +900,39 @@ Strioscopie quantitative
 \end_layout
 
 \begin_layout Standard
-périodique, color schlieren, topologie
+Bien qu'il soit difficile d'obtenir des mesures quantitative en strioscopie,
+ en réalisant une calibration, il est également possible d'effectuer une
+ reconstruction du champ de masse volumique.
+ La strioscopie couleur, encore appelée 
+\begin_inset Quotes fld
+\end_inset
+
+rainbow schlieren
+\begin_inset Quotes frd
+\end_inset
+
+ nécessite l'emploie d'un filtre coloré.
+ Plusieurs type de filtres existe: les filtres à variation progressive comme
+ celui employé par Elsinga 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Elsinga04"
+
+\end_inset
+
+ permet de caractériser complètement le vecteur déplacement.
+ Sa calibration reste néanmoins compliquée et beaucoup de gens préfèrent
+ utiliser un filtre en coloration de Hue 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Agrawal06,kolhe2009,takano2016"
+
+\end_inset
+
+.
+ Une fois calibré, ce dernier permet d'associer à chaque couleur un déplacement.
+ Comme le filtre est 2D, il est néanmoins nécessaire de tourner le filtrre
+ de 90° pour mesurer à la fois les gradients horizontaux et verticaux.
 \end_layout
 
 \begin_layout Subsection
@@ -764,7 +944,7 @@ Topologie-> DLR tourbillons de bout de pales.
 \end_layout
 
 \begin_layout Standard
-Irhke, nous, Ota~, Hartman...
+Détailler Irhke, nous, Ota~, Hartman...
 \end_layout
 
 \begin_layout Standard
@@ -780,8 +960,8 @@ status open
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="3cm">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="3cm">
@@ -795,7 +975,7 @@ status open
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -804,7 +984,7 @@ Equipe
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -813,7 +993,7 @@ Référence
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -822,7 +1002,7 @@ Technique
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -831,7 +1011,7 @@ Hypothèse
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -840,7 +1020,7 @@ Algorithme
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -860,7 +1040,7 @@ Schlieren
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1215,7 +1395,7 @@ BOS
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout

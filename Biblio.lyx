@@ -163,7 +163,7 @@ status open
 \begin_inset Graphics
 	filename Biblio/Images/DLR_helico.png
 	lyxscale 70
-	height 5cm
+	height 50text%
 	BoundingBox 0bp -30bp 500bp 400bp
 	clip
 
@@ -197,7 +197,7 @@ status open
 \begin_inset Graphics
 	filename Biblio/Images/DLR_helico_res.png
 	lyxscale 50
-	height 5cm
+	height 50text%
 	BoundingBox 20bp 0bp 670bp 685bp
 	clip
 
@@ -341,21 +341,22 @@ Todoroff a un introduit un mouchetis semi-aléatoire: ce fond composé de
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Biblio/Images/random.pdf
-	width 4cm
-	height 4cm
+	width 30text%
+	height 30text%
+	keepAspectRatio
 	rotateOrigin center
 
 \end_inset
@@ -381,15 +382,16 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Biblio/Images/wavelet.png
 	lyxscale 25
-	width 4cm
-	height 4cm
+	width 30text%
+	height 30text%
+	keepAspectRatio
 	rotateOrigin center
 
 \end_inset
@@ -415,14 +417,15 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Biblio/Images/semi-random.pdf
-	width 4cm
-	height 4cm
+	width 30text%
+	height 30text%
+	keepAspectRatio
 	rotateOrigin center
 
 \end_inset
@@ -489,16 +492,12 @@ name "fig:biblio:mouchetis"
 \begin_layout Standard
 Pour augmenter l'énergie lumineuse reçu, l'ensemble de ces fonds peut être
  imprimé sur panneaux rétroréfléchissant 
-\series bold
-
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bauknecht2014b"
 
 \end_inset
 
-
-\series default
  ou bien sur panneaux transparents couplé à un éclairage par l'arrière.
 \end_layout
 
@@ -526,9 +525,6 @@ Pour les expériences de grandes dimensions, plusieurs équipes se sont intéres
  Toujours dans le but d'étudier les tourbillons de bout de pâles, le DLR
  a largement utilisé les fonds naturels pour des expériences à échelle 1:1
  
-\series bold
-\size normal
-
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Richard01,Bauknecht2014b"
@@ -536,8 +532,9 @@ key "Richard01,Bauknecht2014b"
 \end_inset
 
 
-\series default
+\size normal
  ou bien pour des mesures en vol 
+\size default
 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -546,6 +543,7 @@ key "leopold2007,raffel2014,bauknecht2014a"
 \end_inset
 
 
+\size normal
 .
  Lors de cs tests, Raffel et Baucknecht étudie l'influence du choix de la
  texture sur la qualité des images BOS.
@@ -553,19 +551,13 @@ key "leopold2007,raffel2014,bauknecht2014a"
 
 \begin_layout Standard
 Par rapport à des problématiques d'explosions, 
-\series bold
-\size normal
-
 \begin_inset CommandInset citation
 LatexCommand cite
 key "mizukaki2013,hargather2013"
 
 \end_inset
 
- 
-\series default
-\size default
-ont
+ ont
 \size normal
  également utilisés des textures naturelles pour analyser le déplacement
  de l'onde de souffle.
@@ -589,22 +581,14 @@ Color-BOS
 
 \begin_layout Standard
 La Color-BOS (CBOS) a été introduite par 
-\series bold
-
 \begin_inset CommandInset citation
 LatexCommand cite
 key "leopold2007"
 
 \end_inset
 
-
-\series default
 .
-
-\series bold
- 
-\series default
-Elle repose sur l'utilisation un fond coloré, résultant d'un mélange de
+ Elle repose sur l'utilisation un fond coloré, résultant d'un mélange de
  pixels rouges, verts et bleus.
  De cette manière, des corrélations indépendantes des pixels de chaque couleur
  et des mélange de couleurs permet d'améliorer la résolution classique de
@@ -612,18 +596,12 @@ Elle repose sur l'utilisation un fond coloré, résultant d'un mélange de
  et par le recouvrement.
  De plus, en introduisant un déplacement connu entre les motifs de couleurs
  différentes lors de la conception du fond 
-\series bold
-\size normal
-
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Leopold2013"
 
 \end_inset
 
-
-\series default
-\size default
 , il est possible de réaliser des corrélations entre ces deux motifs à la
  traversée des ondes de chocs qui sont relativement difficiles à bien capturer.
  La technique présente néanmoins quelques inconvénients puisque il faut
@@ -639,10 +617,43 @@ key "Leopold2013"
 \begin_inset Float figure
 wide false
 sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Graphics
+	filename Biblio/Images/CBOS.pdf
+	lyxscale 50
+	height 40text%
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -653,40 +664,7 @@ status open
 \begin_inset Graphics
 	filename Biblio/Images/spike.jpg
 	lyxscale 50
-	rotateOrigin center
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Biblio/Images/CBOS.jpg
-	lyxscale 50
-	scale 50
-	rotateOrigin center
+	height 40text%
 
 \end_inset
 
@@ -714,6 +692,22 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Color-BOS 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leopold2013"
+
+\end_inset
+
+.
+ a) Principe de traitement des images CBOS.
+ b) Exemple d'image CBOS sur un spike.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:CBOS"
+
+\end_inset
+
 
 \end_layout
 
@@ -732,13 +726,16 @@ Color-Grid-BOS
 \end_layout
 
 \begin_layout Standard
-La color-grid BOS a été développée par 
-\series bold
-Ota 
-\series default
-et son équipe.
- Possédant une grande expérience en interférométrrie, ils en ont repris
- le principe pour l'appliquer à la BOS.
+La color-grid BOS a été développée par Ota 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ota11"
+
+\end_inset
+
+ et son équipe.
+ Possédant une grande expérience en interférométrie, ils en ont repris le
+ principe pour l'appliquer à la BOS.
  Leurs fonds sont donc composés de 2 grilles : une grille rouge verticale
  et une grille verte horizontale.
  Ils utilisent ensuite leurs algorithme de détection de franges pour calculer
@@ -758,18 +755,75 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Graphics
-	filename Biblio/Images/CGBOS_red.png
-	lyxscale 50
-	scale 50
+	filename Biblio/Images/CGBOS_green.png
+	lyxscale 20
+	width 20text%
+	BoundingBox 0bp 0bp 726bp 541bp
+	clip
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Graphics
-	filename Biblio/Images/CGBOS_green.png
-	lyxscale 50
-	scale 50
+	filename Biblio/Images/CGBOS.jpg
+	lyxscale 40
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Biblio/Images/CGBOS_red.png
+	lyxscale 20
+	width 20text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -777,9 +831,26 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+CGBOS sur un cône tronqué à Mach 2.0 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ota11"
+
+\end_inset
+
+: Détail des grilles verticale et horizontale (à gauche) qui donne le motif
+ complet (à droite).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:CGBOS"
+
+\end_inset
+
 
 \end_layout
 
@@ -799,8 +870,14 @@ Speckle-BOS
 
 \begin_layout Standard
 Beaucoup utilisé au début des années 2000 (Fomin) l'utilisation du speckle
- en interférométrie est revenue au goût du jour par Meier 2014 qui propose
- d'utilisé le speckle d'un laser comme image de fond.
+ en interférométrie est revenue au goût du jour par Meier 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Meier13"
+
+\end_inset
+
+ qui propose d'utiliser le speckle d'un laser comme image de fond.
  Pour rappel, le speckle est un motif tacheté qui apparait lorsque l'on
  éclaire une surface avec une lumière cohérente.
  Les défauts de rugosité à la surface du matériaux créent de multiples retard
@@ -850,17 +927,17 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Biblio/Images/speckle.jpg
 	lyxscale 60
-	scale 50
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename Biblio/Images/speckle_sensitivity.gif
-	scale 50
+	width 40text%
 
 \end_inset
 
@@ -871,6 +948,75 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Biblio/Images/speckle_sensitivity.gif
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+BOS speckle 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Meier13"
+
+\end_inset
+
+ : a) Evolution de la taille du motif de speckle avec l'ouverture caméra.
+ b) Sensibilité de la technique: déplacemnt observé fonction de la distance
+ de mise au point 
+\begin_inset Formula $l$
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:speckle"
+
+\end_inset
+
 
 \end_layout
 
@@ -1079,6 +1225,7 @@ status open
 \begin_inset Graphics
 	filename Biblio/Images/ota_isfv.png
 	lyxscale 50
+	width 50text%
 
 \end_inset
 
@@ -1149,37 +1296,133 @@ key "Leopold2013,Ota11"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Biblio/Images/leopold-a.jpg
 	lyxscale 70
+	width 20text%
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Biblio/Images/leopold-b.jpg
 	lyxscale 70
+	width 20text%
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Biblio/Images/leopold-c.jpg
 	lyxscale 70
+	width 20text%
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Biblio/Images/leopold-d.jpg
+	width 25text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1266,6 +1509,7 @@ status open
 \begin_inset Graphics
 	filename Biblio/Images/Ihrke_Atch.png
 	lyxscale 50
+	width 100text%
 
 \end_inset
 
@@ -1377,16 +1621,66 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Biblio/Images/geode.png
 	lyxscale 70
+	width 50text%
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Biblio/Images/jetchdiL2L1_1v1.png
 	lyxscale 20
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1556,21 +1850,172 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Biblio/Images/Rainbow_schlieren_2.png
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 
 \end_layout
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Biblio/Images/Rainbow_schlieren_2.png
+	filename Biblio/Images/Takano.png
 	lyxscale 50
+	width 50text%
 
 \end_inset
 
 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Biblio/Images/ishino.png
 	lyxscale 50
+	height 40text%
+	BoundingBox 0bp 0bp 750bp 575bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Biblio/Images/flamme.png
+	lyxscale 50
+	height 40text%
+	BoundingBox 0bp 55bp 500bp 630bp
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
@@ -1624,13 +2069,13 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="7">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<features rotate="0" tabularvalignment="middle" tabularwidth="23cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="4cm">
 <column alignment="center" valignment="top" width="4cm">
 <column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
 <column alignment="center" valignment="top" width="3cm">
 <row>
 <cell alignment="center" valignment="top" usebox="none">
@@ -1698,7 +2143,7 @@ Nombre de projections
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="left" valignment="middle" bottomline="true" rightline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1707,7 +2152,7 @@ Schlieren
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1778,7 +2223,7 @@ CBP
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2072,7 +2517,7 @@ BOS
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2143,7 +2588,7 @@ Abel
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2214,7 +2659,7 @@ FBP
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout

@@ -86,5 +86,39 @@ description "Masse volumique"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mylambda}{\lambda}
+{\lambda}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\lambda$"
+description "paramètre de régularisation"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mydelta}{\delta}
+{\delta}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\delta$"
+description "paramètre de régularisation L2L1"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

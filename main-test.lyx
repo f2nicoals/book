@@ -203,7 +203,7 @@ math-macro.lyx
 \pdf_colorlinks true
 \pdf_backref page
 \pdf_pdfusetitle true
-\pdf_quoted_options "linkcolor=red, urlcolor=blue, citecolor=blue, linktoc=all, backref"
+\pdf_quoted_options "linkcolor=blue, urlcolor=blue, citecolor=blue, linktoc=all, backref=red"
 \papersize default
 \use_geometry true
 \use_package amsmath 1

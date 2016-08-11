@@ -108,7 +108,7 @@ minitoc
 La naissance de la Background Oriented Schlieren (BOS)
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:intro"
+name "sec:biblio:intro"
 
 \end_inset
 
@@ -153,18 +153,70 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Biblio/Images/DLR_helico.png
 	lyxscale 70
-	scale 70
+	height 5cm
+	BoundingBox 0bp -30bp 500bp 400bp
+	clip
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Biblio/Images/DLR_helico_res.png
 	lyxscale 50
-	scale 50
+	height 5cm
+	BoundingBox 20bp 0bp 670bp 685bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -172,7 +224,17 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Mesure de tourbillons de bout de pales par BOS 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Richard2002"
 
+\end_inset
+
+.
+ a) Hélicoptère et mouchetis obtenu par pulvérisation de peinture.
+ b) Champ de déplacement mesuré par BOS.
+ 
 \end_layout
 
 \end_inset
@@ -220,7 +282,14 @@ Par la suite la BOS va se démocratisée de part sa simplicité d'utilisation.
 \begin_layout Standard
 Un état de l'art détaillé a été réalisé par 
 \series bold
-Raffel 2015
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "raffel2015"
+
+\end_inset
+
+
 \series default
 \size normal
  nous allons revenir sur les principales contributions.
@@ -230,7 +299,7 @@ Raffel 2015
 Le choix du fond
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:background"
+name "sec:biblio:background"
 
 \end_inset
 
@@ -255,81 +324,9 @@ klinge 2006
 \end_layout
 
 \begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Biblio/Images/random.pdf
-	rotateOrigin center
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 L'utilisation de fonds en ondelettes semblaient prometteuse pour les capture
  d'écoulements présentant une grande dynamique mais elle ne s'est pas avérée
  concluante.
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Biblio/Images/wavelet.png
-	lyxscale 25
-	scale 25
-	rotateOrigin center
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -348,8 +345,84 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Biblio/Images/random.pdf
+	width 4cm
+	height 4cm
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Biblio/Images/wavelet.png
+	lyxscale 25
+	width 4cm
+	height 4cm
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Biblio/Images/semi-random.pdf
+	width 4cm
+	height 4cm
 	rotateOrigin center
 
 \end_inset
@@ -374,11 +447,57 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Différents types de mouchetis utilisés en BOS: a) Mouchetis aléatoire, b)
+ Bruit en ondelettes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Atcheson09"
+
+\end_inset
+
+, c) Mouchetis semi-aléatoire
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Todoroff2013"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:mouchetis"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 Pour augmenter l'énergie lumineuse reçu, l'ensemble de ces fonds peut être
  imprimé sur panneaux rétroréfléchissant 
 \series bold
-Bauknect_b
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bauknecht2014b"
+
+\end_inset
+
+
 \series default
  ou bien sur panneaux transparents couplé à un éclairage par l'arrière.
 \end_layout
@@ -409,39 +528,59 @@ Pour les expériences de grandes dimensions, plusieurs équipes se sont intéres
  
 \series bold
 \size normal
-Bauknecht_a
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Richard01,Bauknecht2014b"
+
+\end_inset
+
+
 \series default
  ou bien pour des mesures en vol 
-\series bold
-Leopold2007, Raffel 2014 
-\series default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "leopold2007,raffel2014,bauknecht2014a"
+
+\end_inset
+
+
 .
- 
+ Lors de cs tests, Raffel et Baucknecht étudie l'influence du choix de la
+ texture sur la qualité des images BOS.
 \end_layout
 
 \begin_layout Standard
-Par rapport à des problématiques d'explosions, Mizukaki 
+Par rapport à des problématiques d'explosions, 
 \series bold
 \size normal
-ref
-\series default
- et 
-\series bold
-Hargater2013 
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mizukaki2013,hargather2013"
+
+\end_inset
+
+ 
 \series default
 \size default
 ont
 \size normal
- égalment utilisés des textures naturelles pour analyser le déplacement
+ également utilisés des textures naturelles pour analyser le déplacement
  de l'onde de souffle.
 \end_layout
 
 \begin_layout Standard
 Une étude détaillée de l'impact du fond naturel sur la qualité de la corrélation
  d'image a par ailleurs été mené par 
-\series bold
-\size normal
-Hargather2007.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hargather2010"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -451,7 +590,18 @@ Color-BOS
 \begin_layout Standard
 La Color-BOS (CBOS) a été introduite par 
 \series bold
-Leopold 2007.
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "leopold2007"
+
+\end_inset
+
+
+\series default
+.
+
+\series bold
  
 \series default
 Elle repose sur l'utilisation un fond coloré, résultant d'un mélange de
@@ -464,11 +614,18 @@ Elle repose sur l'utilisation un fond coloré, résultant d'un mélange de
  différentes lors de la conception du fond 
 \series bold
 \size normal
-Leopold2013
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leopold2013"
+
+\end_inset
+
+
 \series default
 \size default
 , il est possible de réaliser des corrélations entre ces deux motifs à la
- traversée des ondes de chocs qui sont relaticvemnet difficiles à bien capturer.
+ traversée des ondes de chocs qui sont relativement difficiles à bien capturer.
  La technique présente néanmoins quelques inconvénients puisque il faut
  avoir à l'avance une idée de la topologie de l'onde de choc et elle ne
  pourrait fonctionner sur des topologie d'écoulements complexes.
@@ -486,6 +643,13 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Biblio/Images/spike.jpg
 	lyxscale 50
@@ -494,11 +658,52 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Biblio/Images/CBOS.jpg
 	lyxscale 50
 	scale 50
 	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -702,6 +907,13 @@ micro:Stoller, Kushner, poitiers 0
 
 \begin_layout Section
 Corrélation d'images
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:biblio:correlation"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -728,6 +940,13 @@ key "Atcheson09"
 
 \begin_layout Section
 Obtenir le champ de masse volumique: reconstruction 3D
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:biblio:3d"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -846,6 +1065,45 @@ nt.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Biblio/Images/ota_isfv.png
+	lyxscale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Les méthodes algébrique connaissent un intérêt croissant depuis une dizaine
  d'années.
  Elles étaient jusque là peu utilisées en raison de leur coût de calcul
@@ -888,6 +1146,65 @@ key "Leopold2013,Ota11"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Biblio/Images/leopold-a.jpg
+	lyxscale 70
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Biblio/Images/leopold-b.jpg
+	lyxscale 70
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Biblio/Images/leopold-c.jpg
+	lyxscale 70
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Biblio/Images/leopold-d.jpg
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 En pratique, en tomographie la matrice A du système n'est pas carré, donc
  non inversible au sens strict.
  On cherche donc, le plus souvent, la solution au sens des moindres carré.
@@ -900,11 +1217,247 @@ tion s'impose pour pouvoir converger vers une solution.
 \end_layout
 
 \begin_layout Standard
-BieTopologie-> DLR tourbillons de bout de pales.
+Pour pouvoir capturer un écoulement quelconque, il est nécessaire d'acquérir
+ de manière simultanée, plusieurs point de vues.
+ Les premiers à avoir développé un tel système sont Ihrke et Atcheson
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ihrke07,Atcheson08"
+
+\end_inset
+
+.
+ Issus de la communauté du rendu graphique, ils ont développé un tel système
+ pour pouvoir simuler de manière réaliste les distorsions optiques causées
+ par un milieu non homogène que l'on observe typiquement au dessus d'une
+ flamme.
+ Plutôt qu' 
+\begin_inset Quotes fld
+\end_inset
+
+inventer
+\begin_inset Quotes frd
+\end_inset
+
+ un champ de densité, ils ont développé un système de mesure de BOS 3D à
+ 16 caméras afin de capturer un écoulement de convection.
+ Ihrke est également le premier à résoudre le problème de reconstruction
+ sous forme algébrique.
+ Il reconstruit le champ de masse volumique en deux étapes: la reconstruction
+ du champ de gradients part méthode ART, puis il retrouve sa solution par
+ intégration de l'équation de Poisson.
+ Cette première reconstruction de champ instantanés de masse volumique donne
+ de très beaux résultats comme on peut le voir Fig.
+ De plus, en comparaison des méthode de FBP utilisées jusqu'alors, elle
+ fonctionne avec nombre relativement limitée de projections (16).
+ Toutefois, cette démonstration n'a pas pour vocation de réaliser des mesures
+ précise, l'aspect visuel étant privilégié dans un contexte de rendu par
+ ordinateur.
 \end_layout
 
 \begin_layout Standard
-Détailler Irhke, nous, Ota~, Hartman...
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Biblio/Images/Ihrke_Atch.png
+	lyxscale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Violaine Todoroff 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Todoroff2013"
+
+\end_inset
+
+s'est inspiré de ces travaux pour développer un nouvel outil de mesure,
+ la BOS 3D, pour la mécanique des fluides.
+ Son objectif est de mettre au point une technique de reconstruction de
+ champs instantanés de masse volumique par BOS 3D.
+ Sa contribution s'appuie sur deux réalisations majeures.
+ Tout d'abord, elle a développé un code de reconstruction novateur puisqu'il
+ utilise une approche directe.
+ Cela se traduit par le fait que son algorithme ne fonctionne pas en 2 étapes
+ comme précédemment 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ihrke07,Atcheson08,Leopold2013,Ota11,ishino2016"
+
+\end_inset
+
+ (reconstruction des gradients + intégration) mais permet de reconstruire
+ directement le champ de masse volumique.
+ Son algorithme recherche la solution au sens des moindres carrés, d'un
+ critère régularisé.
+ L'objectif de cette régularisation est de lutter contre le bruit et donc
+ de rechercher une solution relativement lisse.
+ Au cours de sa thèse, Todoroff s'est intéréssé à deux types de régularisations:
+ une régularisation de Thickonov, quadratique, et une régularisation par
+ variation totale, L2L1.
+ Si son code donne de bons résultats, Todoroff constate toutefois un certains
+ nombre de problèmes numériques: des oscillations qui apparaissent en bord
+ de champ, des interactions complexes avec le masque 3D, un critère qui
+ affiche parfois un comportement anormal, la difficulté d'ajuster les paramètres
+ 
+\begin_inset Formula $\mylambda$
+\end_inset
+
+et 
+\begin_inset Formula $\mydelta$
+\end_inset
+
+de la régularisation L2L1.
+ Elle note aussi l'importance de l'optimisation du code pour améliorer la
+ résolution mais aussi la taille des champs reconstruits.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Plus de détails, équation du critère, L-curve
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La deuxième contribution de Todoroff réside dans la conception d'un banc
+ d'essai BOS 3D, la géode, supportant 12 caméras qui permet d'étudier l'impact
+ du positionnement caméras sur les reconstructions.
+ Sur cette installation, elle a put réaliser diverse reconstructions d'écoulemen
+ts de convection, comme un jet chaud ou bien un charbon en rotation.
+ Malgré la construction de la géode, Todoroff n'a pas pu réaliser une étude
+ du positionnement caméras, ni valider les mesures BOS 3D par une technique
+ complémentaire.
+ Ce dernier point étant essentiel pour qualifier la technique.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Biblio/Images/geode.png
+	lyxscale 70
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Biblio/Images/jetchdiL2L1_1v1.png
+	lyxscale 20
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Une campagne d'essai relativement impressionnante a également été mené par
+ le DLR 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bauknecht2014c"
+
+\end_inset
+
+ sur des tourbillons de bout de pales d'hélicoptères.
+ Pour pouvoir reconstruire en 3-dimensions les tourbillons d'un hélicoptère
+ échelle 1:1, Baucknecht et al.
+ ont installé 12 caméras disposées en arc de cercle dans une carrière et
+ utilisé la texture naturelle de la paroi rocheuse comme fond.
+ Ces essais ont permis d'étudier la dynamique tourbillonnaire pour différents
+ régimes de vol de l'appareil.
+ Ils ont utilisé l'information de position des tourbillons capturée par
+ chaque caméra pour reconstruire leur position dans l'espace par géométrie
+ épipolaire.
+ Cette technique consiste à trianguler des points caractéristiques d'un
+ objet vu par plusieurs caméra pour déterminer sa position dans l'espace.
+ Si elle demeure impressionant e par ses dimension, cette campagne d'essai
+ se limite au niveau de la reconstruction à de la localisation de structure
+ sans chercher à évaluer les niveaux de masse volumique rencontrés.
+ De ce fait, elle s'éloigne un peu de notre objectif.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ota ?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hartman...
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -997,7 +1550,68 @@ key "ishino2016"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Biblio/Images/Rainbow_schlieren_2.png
+	lyxscale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Biblio/Images/ishino.png
+	lyxscale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Résumé
+\end_layout
+
+\begin_layout Standard
+Un panorama complet des différents études menées en Background Oriented
+ Schlieren a été détaillé par Raffel 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "raffel2015"
+
+\end_inset
+
+.
+ Il nous néanmoins paru intéressant de de rassembler les études ayant trait
+ à la reconstruction 3D dans le tableau ...
+ .
 \end_layout
 
 \begin_layout Standard
@@ -1239,7 +1853,7 @@ Abel
 \begin_inset Text
 
 \begin_layout Plain Layout
-Takano
+Miyazato et Ono
 \end_layout
 
 \end_inset
@@ -1251,6 +1865,16 @@ Takano
 \begin_inset CommandInset citation
 LatexCommand cite
 key "takano2016"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Eventuellement les AIAA 2011-12
+\end_layout
 
 \end_inset
 

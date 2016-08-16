@@ -3,7 +3,7 @@
 \begin_document
 \begin_header
 \textclass report
-\use_default_options false
+\use_default_options true
 \maintain_unincluded_children false
 \language french
 \language_package none
@@ -53,8 +53,8 @@
 \shortcut idx
 \color #008000
 \end_index
-\secnumdepth 3
-\tocdepth 3
+\secnumdepth 2
+\tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language french
@@ -145,11 +145,7 @@ imprimé
 \begin_inset Float figure
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -163,7 +159,7 @@ status open
 \begin_inset Graphics
 	filename Biblio/Images/DLR_helico.png
 	lyxscale 70
-	height 50text%
+	height 40text%
 	BoundingBox 0bp -30bp 500bp 400bp
 	clip
 
@@ -197,7 +193,7 @@ status open
 \begin_inset Graphics
 	filename Biblio/Images/DLR_helico_res.png
 	lyxscale 50
-	height 50text%
+	height 40text%
 	BoundingBox 20bp 0bp 670bp 685bp
 	clip
 
@@ -281,8 +277,6 @@ Par la suite la BOS va se démocratisée de part sa simplicité d'utilisation.
 
 \begin_layout Standard
 Un état de l'art détaillé a été réalisé par 
-\series bold
-
 \begin_inset CommandInset citation
 LatexCommand cite
 key "raffel2015"
@@ -290,7 +284,6 @@ key "raffel2015"
 \end_inset
 
 
-\series default
 \size normal
  nous allons revenir sur les principales contributions.
 \end_layout
@@ -312,13 +305,7 @@ Classiques
 
 \begin_layout Standard
 L'utilisation première de sprays de peinture pour créer le mouchetis est
- satisfaisante et très adaptée aux grandes dimensions 
-\series bold
-\size normal
-klinge 2006
-\series default
-\size default
-.
+ satisfaisante et très adaptée aux grandes dimensions.
  Pour les expériences de dimensions plus modeste, le choix classique porte
  sur l'impression d'une distribution aléatoire de points.
 \end_layout
@@ -545,8 +532,8 @@ key "leopold2007,raffel2014,bauknecht2014a"
 
 \size normal
 .
- Lors de cs tests, Raffel et Baucknecht étudie l'influence du choix de la
- texture sur la qualité des images BOS.
+ Lors de ces tests, Raffel et Baucknecht étudie l'influence du choix de
+ la texture sur la qualité des images BOS.
 \end_layout
 
 \begin_layout Standard
@@ -657,7 +644,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -755,75 +742,10 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="2">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 \begin_inset Graphics
-	filename Biblio/Images/CGBOS_green.png
-	lyxscale 20
-	width 20text%
-	BoundingBox 0bp 0bp 726bp 541bp
-	clip
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multirow="3" alignment="center" valignment="middle" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Biblio/Images/CGBOS.jpg
-	lyxscale 40
-	width 40text%
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Biblio/Images/CGBOS_red.png
-	lyxscale 20
-	width 20text%
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
+	filename Biblio/Images/CGBOS_full.png
+	lyxscale 50
+	width 80text%
 
 \end_inset
 
@@ -942,6 +864,10 @@ status open
 \end_inset
 
 
+\begin_inset VSpace 40mm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -951,6 +877,14 @@ status open
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset VSpace 40mm
 \end_inset
 
 
@@ -1043,12 +977,21 @@ L'utilisation du speckle reste séduisante sur le papier mais il apparait
 \end_layout
 
 \begin_layout Standard
-(dans le cas de faisceaux non parallèles, les rayons voient-ils vraiment
- la même chose à l'aller et au retour ????)
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+dans le cas de faisceaux non parallèles, les rayons voient-ils vraiment
+ la même chose à l'aller et au retour ????
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-micro:Stoller, Kushner, poitiers 0
+micro:Stoller, Kushner, poitiers 
 \end_layout
 
 \begin_layout Section
@@ -1079,9 +1022,24 @@ key "Atcheson09"
 
  a mené une étude comparative entre un calcul par FFT et des calculs par
  flot optiques.
- Au bilan, il montre que les algo Lucas-Kanade et Horn-Schunck sont plus
- performant que la moyenne avec une légère avance pour le HS.
+ Au bilan, il montre que les algorithmes Lucas-Kanade (LK) et Horn-Schunck
+ (HS) sont plus performant que la moyenne avec une légère avance pour le
+ HS.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Une image ? un peu plus exhaustif ? différence entre FFT et flot optique
+ , Folki ?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1111,19 +1069,34 @@ Ecoulement axisymétrique
 \begin_layout Standard
 Pour un écoulement axisymmétrique, une seule vue est nécessaire pour capturer
  la physique.
- Et, dans ce cas précis, il est possible d'utiliser l'inversion d'Abel pour
- reconstruire la distribution volumique de masse volumique.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Equation: expression de la transformée ?
-\end_layout
+ Et, dans ce cas précis, il est possible d'utiliser la transformée inverse
+ d'Abel 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:biblio:abel"
 
 \end_inset
 
-La transformée d'Abel exprime la projection d'une fonction axi-symmétrique
+ pour reconstruire la distribution volumique de masse volumique.
+\begin_inset Formula 
+\begin{equation}
+F(y)=2\int_{y}^{\text{\ensuremath{\infty}}}\frac{f(r)rdr}{\sqrt{r^{2}-y^{2}}},\hspace{10mm}f(r)=\frac{-1}{\pi}\int_{r}^{\text{\ensuremath{\infty}}}\frac{dF}{dy}\frac{dy}{\sqrt{y^{2}-r^{2}}}\label{eq:biblio:abel}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La transformée d'Abel exprime la projection 
+\begin_inset Formula $F(y)$
+\end_inset
+
+ d'une fonction axi-symmétrique 
+\begin_inset Formula $f(r)$
+\end_inset
+
  le long d'une ligne de vue aboutissant à la mesure.
  Son inverse permet de calculer la-dite fonction à partir de sa projection
  mesurée.
@@ -1157,6 +1130,10 @@ Un écoulement stationnaire permet également de travailler avec un seul point
  
 \end_layout
 
+\begin_layout Subsubsection
+Rétroprojection filtrée (FBP)
+\end_layout
+
 \begin_layout Standard
 La rétroprojection filtrée est basée sur la transformée de Radon, une généralisa
 tion de la transformée d'Abel, qui tient compte de l'angle de visée.
@@ -1173,11 +1150,56 @@ key "sourgen2004"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Formula 
+\begin{equation}
+F(y)=2\int_{y}^{\text{\ensuremath{\infty}}}\frac{f(r,theta)rdr}{\sqrt{r^{2}-y^{2}}}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Note Greyedout
 status open
 
 \begin_layout Plain Layout
 Schéma
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Biblio/Images/Sourgen_2012.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparaison des champs de masse volumique, reconstruit par FBP (à gauche)
+ et obtenus par calcul RANS (à droite).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -1210,44 +1232,8 @@ nt.
  et d'améliorer la reconstruction.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Biblio/Images/ota_isfv.png
-	lyxscale 50
-	width 50text%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+\begin_layout Subsubsection
+Reconstruction algébrique (ART)
 \end_layout
 
 \begin_layout Standard
@@ -1273,7 +1259,7 @@ Les méthodes algébrique connaissent un intérêt croissant depuis une dizaine
  le résidu entre la valeur mesurée en j et la projection du volume calculé
  à l'itération précédente.
  
-\begin_inset Note Note
+\begin_inset Note Greyedout
 status open
 
 \begin_layout Plain Layout
@@ -1286,6 +1272,46 @@ equation
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Leopold2013,Ota11"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Biblio/Images/Ota_2012.png
+	lyxscale 50
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Reconstruction du champ de masse volumique moyen autour d'un cône à Mach
+ 2.0 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ota2012"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1491,10 +1517,16 @@ inventer
  intégration de l'équation de Poisson.
  Cette première reconstruction de champ instantanés de masse volumique donne
  de très beaux résultats comme on peut le voir Fig.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:atcheson"
+
+\end_inset
+
  De plus, en comparaison des méthode de FBP utilisées jusqu'alors, elle
  fonctionne avec nombre relativement limitée de projections (16).
  Toutefois, cette démonstration n'a pas pour vocation de réaliser des mesures
- précise, l'aspect visuel étant privilégié dans un contexte de rendu par
+ précises, l'aspect visuel étant privilégié dans un contexte de rendu par
  ordinateur.
 \end_layout
 
@@ -1517,6 +1549,25 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+De gauche à droite: montage expérimental à 16 caméras mis en oeuvre par
+ Ihrke et Atcheson 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Atcheson08"
+
+\end_inset
+
+.
+ Image brute d'un bruleur à gaz devant un fond en ondelette.
+ Champ de déplacement calculé, champ 3D de gradient de masse volumique et
+ iso-surfaces de masse volumique.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:atcheson"
+
+\end_inset
+
 
 \end_layout
 
@@ -1563,8 +1614,8 @@ key "Ihrke07,Atcheson08,Leopold2013,Ota11,ishino2016"
  critère régularisé.
  L'objectif de cette régularisation est de lutter contre le bruit et donc
  de rechercher une solution relativement lisse.
- Au cours de sa thèse, Todoroff s'est intéréssé à deux types de régularisations:
- une régularisation de Thickonov, quadratique, et une régularisation par
+ Au cours de sa thèse, Todoroff s'est intéressé à deux types de régularisations:
+ une régularisation de Tickonov, quadratique, et une régularisation par
  variation totale, L2L1.
  Si son code donne de bons résultats, Todoroff constate toutefois un certains
  nombre de problèmes numériques: des oscillations qui apparaissent en bord
@@ -1585,7 +1636,7 @@ de la régularisation L2L1.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Note Greyedout
 status open
 
 \begin_layout Plain Layout
@@ -1642,7 +1693,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Géode: banc BOS 3D supportant une douzaine de caméras sur un hémisphère
+ et des mouchetis sur l'autre.
 \end_layout
 
 \end_inset
@@ -1674,7 +1726,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Reconstruction d'un écoulement instantané de jet chaud.
 \end_layout
 
 \end_inset
@@ -1729,7 +1781,110 @@ key "bauknecht2014c"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Biblio/Images/bauknecht-1.png
+	lyxscale 50
+	height 28text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Biblio/Images/Bauknecht-2.png
+	lyxscale 50
+	height 28text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
 status open
 
 \begin_layout Plain Layout
@@ -1742,7 +1897,7 @@ Ota ?
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Note Greyedout
 status open
 
 \begin_layout Plain Layout
@@ -1793,7 +1948,7 @@ key "Agrawal06,kolhe2009,takano2016"
 
 .
  Une fois calibré, ce dernier permet d'associer à chaque couleur un déplacement.
- Comme le filtre est 2D, il est néanmoins nécessaire de tourner le filtrre
+ Comme le filtre est 2D, il est néanmoins nécessaire de tourner le filtre
  de 90° pour mesurer à la fois les gradients horizontaux et verticaux.
  A partir de ces mesures, les auteurs ont pu reconstruire le champ axisymmétriqu
 e de masse volumique par transformée d'Abel 
@@ -1819,28 +1974,7 @@ key "Agrawal06,takano2016"
 \end_inset
 
 .
- Cabaleiro 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "cabaleiro2013"
-
-\end_inset
-
- travaille quant à lui avec des strioscopie classique en niveau de gris.
- Il adopte néanmoins une démarche intéressante: il étudie le fonctionnement
- d'un actionneur de type jet pulsé.
- Etant donné le caractère périodique de l'écoulement, il travaille en moyenne
- de phase et utilise 36 points de vues différentys pour reconstruire son
- écoulement par FBP.
- Enfin, Ishino 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "ishino2016"
-
-\end_inset
-
- a développé un banc avec 20 lignes strioscopique qui lui permettent de
- reconstruire le champ instantané de masse volumique d'une flamme turbulente.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1861,7 +1995,7 @@ status open
 \begin_inset Graphics
 	filename Biblio/Images/Rainbow_schlieren_2.png
 	lyxscale 30
-	width 50text%
+	height 35text%
 
 \end_inset
 
@@ -1889,15 +2023,11 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Biblio/Images/Takano.png
 	lyxscale 50
-	width 50text%
+	height 35text%
 
 \end_inset
 
@@ -1913,16 +2043,38 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Etude d'un jet sous-détendu, NPR = 4 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "takano2016"
+
+\end_inset
+
+.
+ a) Striscopie couleur obtenu avec un filtre hue, gradients verticaux.
+ b) Reconstruction du cahmp de masse volumique par transformée d'Abel inverse
+ et par 
+\begin_inset Quotes fld
+\end_inset
+
+Computed Tomography
+\begin_inset Quotes frd
+\end_inset
+
+ (CT).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:rainbow"
+
+\end_inset
+
 
 \end_layout
 
@@ -1931,13 +2083,34 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Cabaleiro 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cabaleiro2013"
+
+\end_inset
+
+ travaille quant à lui avec des strioscopie classique en niveau de gris.
+ Il adopte néanmoins une démarche intéressante: il étudie le fonctionnement
+ d'un actionneur de type jet pulsé.
+ Etant donné le caractère périodique de l'écoulement, il travaille en moyenne
+ de phase et utilise 36 points de vues différents pour reconstruire son
+ écoulement par FBP.
+ Enfin, Ishino 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ishino2016"
+
+\end_inset
+
+ a développé un banc avec 20 lignes strioscopique qui lui permettent de
+ reconstruire le champ instantané de masse volumique d'une flamme turbulente.
 \end_layout
 
 \begin_layout Standard
@@ -2023,7 +2196,16 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+a) Banc de strioscopie à 20 lignes de visée et b) reconstruction d'une flamme
+ turbulente 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ishino2016"
 
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_inset
@@ -2056,7 +2238,6 @@ key "raffel2015"
 .
  Il nous néanmoins paru intéressant de de rassembler les études ayant trait
  à la reconstruction 3D dans le tableau ...
- .
 \end_layout
 
 \begin_layout Standard
@@ -2066,19 +2247,19 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
+\align left
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="7">
-<features rotate="0" tabularvalignment="middle" tabularwidth="23cm">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="4cm">
-<column alignment="center" valignment="top" width="4cm">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="3cm">
+<features rotate="0" tabularvalignment="middle" tabularwidth="100text%">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="left" valignment="middle" width="10line%">
+<column alignment="center" valignment="top" width="20line%">
+<column alignment="center" valignment="top" width="10line%">
+<column alignment="center" valignment="middle" width="0pt">
+<column alignment="center" valignment="middle" width="0pt">
+<column alignment="center" valignment="top" width="12line%">
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2087,7 +2268,7 @@ status open
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2096,7 +2277,7 @@ Equipe
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2105,7 +2286,7 @@ Référence
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2114,7 +2295,7 @@ Technique
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2123,7 +2304,7 @@ Hypothèse
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2132,7 +2313,7 @@ Algorithme
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2143,7 +2324,7 @@ Nombre de projections
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2294,7 +2475,7 @@ Abel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2375,7 +2556,7 @@ Abel/CPB
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2446,11 +2627,11 @@ FBP
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Jap flamme
+Ishino
 \end_layout
 
 \end_inset
@@ -2497,7 +2678,7 @@ ART
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2508,7 +2689,7 @@ ART
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="left" valignment="middle" topline="true" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2730,7 +2911,7 @@ ART
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2801,7 +2982,7 @@ ART
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2872,7 +3053,7 @@ ART
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2941,6 +3122,19 @@ ART
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Goldhann et Seum ?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -2958,7 +3152,7 @@ ART
 \end_layout
 
 \begin_layout Standard
-vfrgbfrgbrfgrgrggrgvrgbr
+
 \end_layout
 
 \end_body

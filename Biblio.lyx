@@ -611,7 +611,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -841,14 +841,12 @@ double passe
 \end_layout
 
 \begin_layout Standard
-\align center
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -858,13 +856,9 @@ status open
 \align center
 \begin_inset Graphics
 	filename Biblio/Images/speckle.jpg
-	lyxscale 60
-	width 40text%
+	lyxscale 50
+	height 35text%
 
-\end_inset
-
-
-\begin_inset VSpace 40mm
 \end_inset
 
 
@@ -877,14 +871,6 @@ status open
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset VSpace 40mm
 \end_inset
 
 
@@ -900,9 +886,36 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+raisebox{-0.1
+\backslash
+height}{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
-	filename Biblio/Images/speckle_sensitivity.gif
-	width 40text%
+	filename Biblio/Images/speckle-sensitivity.png
+	lyxscale 30
+	height 40text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -918,6 +931,10 @@ status open
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -938,7 +955,7 @@ key "Meier13"
 \end_inset
 
  : a) Evolution de la taille du motif de speckle avec l'ouverture caméra.
- b) Sensibilité de la technique: déplacemnt observé fonction de la distance
+ b) Sensibilité de la technique: déplacement observé fonction de la distance
  de mise au point 
 \begin_inset Formula $l$
 \end_inset
@@ -956,6 +973,10 @@ name "fig:biblio:speckle"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1479,6 +1500,34 @@ En pratique, en tomographie la matrice A du système n'est pas carré, donc
  On cherche donc, le plus souvent, la solution au sens des moindres carré.
  De plus, le bruit de mesure rendant le problème mal conditionné, une régularisa
 tion s'impose pour pouvoir converger vers une solution.
+\end_layout
+
+\begin_layout Subsubsection
+Combinaison FBP et ART
+\end_layout
+
+\begin_layout Standard
+Tout récemment 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hartmann2016"
+
+\end_inset
+
+ a proposé une approche mixte.
+ Après avoir constaté que, d'une part sa reconstruction FBP est très affectée
+ par des artefacts suivant les lignes de vues mais qu'elle est capable de
+ reconstruire de forts gradients et que , d'autre part sa reconstruction
+ ARt es relativement propre mais sous-estime de manière systématique les
+ niveaux de masse volumique, il propose de combiner les deux techniques.
+ Pour cela, il réalise tout d'abord une reconstruction FBP à partir delaquelle
+ il extrait les zones de forts gradients de masse volumique.
+ Puis, il utilise ce résultat pour initialiser la reconstruction ART.
+ Le résultat final est propre avec de mailleurs niveaux sur les zones de
+ forts gradients.
+ Si cette technique semble fonctionner sur ce cas simple pour lequel l'utilisate
+ur identifie aisément la zone de forts gradients, pour un cas plus complexe,
+ cette procédure semble difficile à mettre en œuvre.
 \end_layout
 
 \begin_layout Subsection

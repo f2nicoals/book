@@ -5,7 +5,7 @@
 \textclass report
 \use_default_options false
 \maintain_unincluded_children false
-\language english
+\language french
 \language_package none
 \inputencoding auto
 \fontencoding default
@@ -56,7 +56,7 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\quotes_language french
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -70,7 +70,7 @@
 \begin_body
 
 \begin_layout Chapter
-Letter
+Etude des écoulements compressibles (113)
 \end_layout
 
 \begin_layout Standard
@@ -87,6 +87,9 @@ minitoc
 \end_inset
 
  
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -94,15 +97,15 @@ minitoc
 \end_layout
 
 \begin_layout Section
-Exemple minimal
+Optimisation de la prise d'image
 \end_layout
 
 \begin_layout Section
-Exemple minimal
+Mesures BOS 3D sur un jet sous-détendu
 \end_layout
 
 \begin_layout Section
-Exemple minimal
+Résultats
 \end_layout
 
 \end_body

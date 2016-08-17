@@ -167,10 +167,6 @@
 \usepackage{minitoc}
 \end_preamble
 \use_default_options true
-\begin_includeonly
-Biblio.lyx
-math-macro.lyx
-\end_includeonly
 \maintain_unincluded_children false
 \language french
 \language_package default
@@ -191,6 +187,7 @@ math-macro.lyx
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref true
@@ -373,6 +370,16 @@ filename "Chapitre4.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapitre5.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "bib"
@@ -384,7 +391,7 @@ options "plainnat"
 \end_layout
 
 \begin_layout Standard
-cfeds
+cfedsv
 \end_layout
 
 \end_body

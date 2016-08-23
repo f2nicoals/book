@@ -87,7 +87,37 @@ minitoc
 \end_inset
 
  
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+L'objectif de ce chapitre est de démontré la faisabilité d'une mesure BOS
+ 3D en soufflerie industrielle.
+ Après avoir déployé pour la première fois la technique en soufflerie à
+ F2, nous changeons ici d'échelle pour réaliser des mesures à S1MA qui possède
+ une veine de 8m de diamètre et 
+\end_layout
+
 \end_inset
 
 
@@ -107,10 +137,6 @@ Reconstruction sans vent
 
 \begin_layout Section
 Analyse des données et stratégie de post traitement
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \end_body

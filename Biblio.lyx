@@ -595,7 +595,7 @@ key "Leopold2013"
  avoir à l'avance une idée de la topologie de l'onde de choc et elle ne
  pourrait fonctionner sur des topologie d'écoulements complexes.
  Enfin, la mise en œuvre de la CBOS nécessite bien évidement une caméra
- couleur, ce qui se traduit par une baisse de résolution pour un nimbre
+ couleur, ce qui se traduit par une baisse de résolution pour un nombre
  de pixels donné.
 \end_layout
 
@@ -1518,12 +1518,12 @@ key "hartmann2016"
  Après avoir constaté que, d'une part sa reconstruction FBP est très affectée
  par des artefacts suivant les lignes de vues mais qu'elle est capable de
  reconstruire de forts gradients et que , d'autre part sa reconstruction
- ARt es relativement propre mais sous-estime de manière systématique les
+ ART es relativement propre mais sous-estime de manière systématique les
  niveaux de masse volumique, il propose de combiner les deux techniques.
- Pour cela, il réalise tout d'abord une reconstruction FBP à partir delaquelle
+ Pour cela, il réalise tout d'abord une reconstruction FBP à partir de laquelle
  il extrait les zones de forts gradients de masse volumique.
  Puis, il utilise ce résultat pour initialiser la reconstruction ART.
- Le résultat final est propre avec de mailleurs niveaux sur les zones de
+ Le résultat final est propre avec de meilleurs niveaux sur les zones de
  forts gradients.
  Si cette technique semble fonctionner sur ce cas simple pour lequel l'utilisate
 ur identifie aisément la zone de forts gradients, pour un cas plus complexe,

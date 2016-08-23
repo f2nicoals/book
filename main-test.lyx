@@ -167,6 +167,10 @@
 \usepackage{minitoc}
 \end_preamble
 \use_default_options true
+\begin_includeonly
+Biblio.lyx
+math-macro.lyx
+\end_includeonly
 \maintain_unincluded_children false
 \language french
 \language_package default

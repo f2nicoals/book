@@ -1,0 +1,552 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass report
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+BOS 3D
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+minitoc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Exemple minimal
+\end_layout
+
+\begin_layout Standard
+je fais référence à 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SALUT"
+
+\end_inset
+
+ 
+\lang french
+
+\begin_inset CommandInset href
+LatexCommand href
+name "openclassroom"
+target "https://openclassrooms.com/courses/gerez-vos-codes-source-avec-git"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Bordure.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+SALUT
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SALUT"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+3+1=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Article
+\end_layout
+
+\begin_layout Standard
+test
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+includepdf[pages=-,
+\end_layout
+
+\begin_layout Plain Layout
+
+addtotoc={1, section, 1, Introduction, sec:exif:intro,
+\end_layout
+
+\begin_layout Plain Layout
+
+1, subsection, 2, BOS and 3DBOS, sec:exif:intro:bos,
+\end_layout
+
+\begin_layout Plain Layout
+
+2, subsection, 2, Related works, sec:exif:intro:works,
+\end_layout
+
+\begin_layout Plain Layout
+
+3, subsection, 2, Contributions and outline of the pape, sec:exif:intro:outline,
+\end_layout
+
+\begin_layout Plain Layout
+
+3, section, 1, A regularized framework for direct 3DBOS reconstruction,
+ sec:direct,
+\end_layout
+
+\begin_layout Plain Layout
+
+4, subsection, 2,Discretization, sec:exif:direct:discretization,
+\end_layout
+
+\begin_layout Plain Layout
+
+4, subsection, 2,Regularization, sec:exif:direct:regularization,
+\end_layout
+
+\begin_layout Plain Layout
+
+5, subsection, 2,Optimization, sec:exif:direct:optim,
+\end_layout
+
+\begin_layout Plain Layout
+
+6, section, 1, Validation of the one-step inversion method on simulated
+ data, sec:exif:simu,
+\end_layout
+
+\begin_layout Plain Layout
+
+6, subsection, 2, Test case, sec:exif:simu:test,
+\end_layout
+
+\begin_layout Plain Layout
+
+7, subsection, 2, Choice of the regularization parameter, sec:exif:simu:regu,
+\end_layout
+
+\begin_layout Plain Layout
+
+9, subsection, 2, Influence of the mask, sec:exif:simu:mask,
+\end_layout
+
+\begin_layout Plain Layout
+
+10, subsection, 2, Geometrical configuration of the cameras, sec:exif:simu:confi
+g,
+\end_layout
+
+\begin_layout Plain Layout
+
+10, subsection, 2, Conclusion of the simulation study, sec:exif:simu:conclu,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, section, 1, Experimental bench for instantaneous 3DBOS: the Geode, sec:exif:
+geode,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, subsection, 2, Camera setup, sec:exif:geode:setup,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, subsection, 2, Background, sec:exif:geode:background,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, subsection, 2, Geometric setting and calibration, sec:exif:geode:calib,
+\end_layout
+
+\begin_layout Plain Layout
+
+14, section, 1, From images to deviation fields : the Geode, sec:exif:dev,
+\end_layout
+
+\begin_layout Plain Layout
+
+14, subsection, 2, Displacements estimation, sec:exif:dev:disp,
+\end_layout
+
+\begin_layout Plain Layout
+
+15, subsection, 2, Converting image displacement into deviations, sec:exif:dev:c
+onvert,
+\end_layout
+
+\begin_layout Plain Layout
+
+15, subsection, 2, 3D mask, sec:exif:dev:mask,
+\end_layout
+
+\begin_layout Plain Layout
+
+15, section, 1, Experimental results and discussion, sec:exif:expe,
+\end_layout
+
+\begin_layout Plain Layout
+
+16, subsection, 2, Plume of a candle, sec:exif:expe:candle,
+\end_layout
+
+\begin_layout Plain Layout
+
+16, subsection, 2, Hot plume, sec:exif:expe:plume,
+\end_layout
+
+\begin_layout Plain Layout
+
+18, subsection, 2, Rotating flows, sec:exif:expe:rotate,
+\end_layout
+
+\begin_layout Plain Layout
+
+20, section, 1, Conclusion, sec:exif:conclu
+\end_layout
+
+\begin_layout Plain Layout
+
+},
+\end_layout
+
+\begin_layout Plain Layout
+
+addtolist={
+\end_layout
+
+\begin_layout Plain Layout
+
+5, figure, {Mask and boundary conditions.}, fig:exif:valid,
+\end_layout
+
+\begin_layout Plain Layout
+
+6, figure, { Illustration of the pixelwise ray tracing operation.}, fig:exif:rayt
+racing,
+\end_layout
+
+\begin_layout Plain Layout
+
+7, figure, {Reference camera configuration for 3DBOS: 'coplanar180' case},
+ fig:exif:cam180,
+\end_layout
+
+\begin_layout Plain Layout
+
+7, table, {Cameras angular positions.}, fig:exif:cam_angles,
+\end_layout
+
+\begin_layout Plain Layout
+
+8, figure, {Simulated deviation fields.}, fig:exif:simu_dev,
+\end_layout
+
+\begin_layout Plain Layout
+
+8, figure, {Choice of the regularization parameter.
+ Density field.}, fig:exif:regu_choice,
+\end_layout
+
+\begin_layout Plain Layout
+
+9, figure, {Choice of the regularization parameter.
+ L-curve.}, fig:exif:L-curve,
+\end_layout
+
+\begin_layout Plain Layout
+
+9, figure, {Profiles of density along slices extracted from the volumes.},
+ fig:exif:slices,
+\end_layout
+
+\begin_layout Plain Layout
+
+10, figure, {Residual error per voxel as a function of the number of cameras.},
+ fig:exif:errror_ncam,
+\end_layout
+
+\begin_layout Plain Layout
+
+10, figure, {Noncoplanar camera configurations.
+ a Shifted180 b Cluster30}, fig:exif:cameras_conf,
+\end_layout
+
+\begin_layout Plain Layout
+
+12, figure, {Synthetic reconstructions}, fig:exif:synth_reconstruction,
+\end_layout
+
+\begin_layout Plain Layout
+
+13, table, { The Geode, a 3DBOS experimental facility.}, tab:exif:geode,
+\end_layout
+
+\begin_layout Plain Layout
+
+13, figure, {The semi-random background.}, fig:exif:background,
+\end_layout
+
+\begin_layout Plain Layout
+
+13, table, {Camera JAI BM500 GE characteristics and acquisition parameters.},
+ tab:exif:camera,
+\end_layout
+
+\begin_layout Plain Layout
+
+13, figure, {Sketch of the geometrical configuration of cameras in a typical
+ 3DBOS setting.}, tab:exif:calib,
+\end_layout
+
+\begin_layout Plain Layout
+
+14, figure, {Processing chain.}, fig:exif:mascarade,
+\end_layout
+
+\begin_layout Plain Layout
+
+15, figure, {Principle of BOS measurement.}, fig:exif:principle,
+\end_layout
+
+\begin_layout Plain Layout
+
+15, figure, {Masked displacement norm.}, fig:exif:disp,
+\end_layout
+
+\begin_layout Plain Layout
+
+16, table, {Size of the reconstructed volumes and computation times.}, fig:exif:c
+omputation_time,
+\end_layout
+
+\begin_layout Plain Layout
+
+16, figure, {L-curve of the 3D reconstruction of a candle plume for a coplanar
+ configuration.}, fig:exif:L-curve_expe,
+\end_layout
+
+\begin_layout Plain Layout
+
+17, figure, {Candle plume reconstruction.}, fig:exif:candle,
+\end_layout
+
+\begin_layout Plain Layout
+
+17, figure, {Comparison between input deviations and computed deviations.},
+ fig:exif:expe_dev
+\end_layout
+
+\begin_layout Plain Layout
+
+18, figure, {Hot jet instantaneous field reconstruction}, fig:exif:hot_jet_inst,
+\end_layout
+
+\begin_layout Plain Layout
+
+18, figure, {Hot jet mean field reconstruction}, fig:exif:hot_jet_mean,
+\end_layout
+
+\begin_layout Plain Layout
+
+19, figure, {Comparison between thermocouple measurements and density field
+ reconstructed by 3DBOS}, fig:exif:thermocouples_comparison,
+\end_layout
+
+\begin_layout Plain Layout
+
+19, figure, {Helicoidal plume reconstruction}, fig:exif:helix,
+\end_layout
+
+\begin_layout Plain Layout
+
+19, figure, {Views the vertical density gradient and of surfaces of Q iso-criter
+ia}, fig:exif:jet_num
+\end_layout
+
+\begin_layout Plain Layout
+
+},
+\end_layout
+
+\begin_layout Plain Layout
+
+pagecommand={
+\backslash
+thispagestyle{headings}},
+\end_layout
+
+\begin_layout Plain Layout
+
+scale=0.95,
+\end_layout
+
+\begin_layout Plain Layout
+
+clip,trim= 1cm 2cm 1mm 2.06cm,
+\end_layout
+
+\begin_layout Plain Layout
+
+offset=0cm -0.7cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+{Article1.pdf} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset External
+	template PDFPages
+	filename Article1.pdf
+	extra LaTeX "pages=-, pagecommand={\thispagestyle{headings}},clip,trim=1cm 2cm 1cm 2.06cm,offset=0cm -0.7cm"
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

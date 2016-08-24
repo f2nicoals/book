@@ -1,0 +1,502 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass report
+\use_default_options false
+\maintain_unincluded_children false
+\language french
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Campagne d'essai en soufflerie industrielle :S1MA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+minitoc
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+L'objectif de ce chapitre est de démontré la faisabilité d'une mesure BOS
+ 3D en soufflerie industrielle.
+ Après avoir déployé pour la première fois la technique en soufflerie à
+ F2, nous changeons ici d'échelle pour réaliser des mesures à S1MA qui possède
+ une veine de 8m de diamètre et dont la vitesse veine peut atteindre Mach
+ 1.
+ Au-delà de ce changement d'échelle, nous étudions ici les contraintes liées
+ à environnement même de cette soufflerie: vibrations, déformations, monté
+ en température.
+ ces essais ont lieu dans le cadre du projet Carnot 
+\shape italic
+BOS 3D
+\shape default
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+contrainte de temps? d'efficacité ?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Soufflerie
+\end_layout
+
+\begin_layout Standard
+La soufflerie S1MA a été récupérée aux allemands à la fin de la seconde
+ guerre mondiale alors qu'elle était en construction dans le Tyrol autrichien.
+ Cette installation unique au monde a été déplacée et achevée à Avrieux
+ à coté de Modane, dans les Alpes.
+ En effet, la puissance requise pour faire fonctionner cette installation
+ est telle que les ingénieurs allemands avaient imaginé un système qui utilisera
+it l'énergie hydraulique issue d'une conduite forcée pour entrainer directement
+ les deux ventilateurs contrarotatifs.
+ C'est une retenue d'eau située 800m plus haut qui alimente la soufflerie
+ et permet d'atteindre Mach 1 en veine.
+ Avec sa veine de 8m de diamètre, son circuit de près de 400m de long et
+ une hauteur de 24m à son diamètre le plus large, S1MA fait partie des plus
+ grande soufflerie au monde.
+ 
+\end_layout
+
+\begin_layout Standard
+Depuis son entrée en service en 1950, la plus part des grand projets aéronautiqu
+es sont passés à S1MA, comme le concorde, le Rafale, l'A380 ou l'A400M.
+ Afin d'optimiser les essais, 3 chariots interchangeables cohabitent: pendant
+ que des essais ont lieu avec un des chariot, l'essai suivant peut être
+ préparé hors du circuit.
+ Le chariot sera finalement inséré dans le circuit pour les essais.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/S1MA.png
+	lyxscale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuit aérodynamique de S1MA 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/A380.jpg
+	lyxscale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Maquette A380 montée sur un dard en Z issu du tripode.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:A380"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Mise en œuvre de la BOS: setup + acquisition
+\end_layout
+
+\begin_layout Subsection
+Phénomène étudié
+\end_layout
+
+\begin_layout Standard
+L'objectif ici n'était pas tant d'étudier un phénomène physique particulier
+ mais plus de démontrer la faisabilité de la BOS 3D en soufflerie industrielle.
+ Pour des questions de simplicité, nous avons étudié un jet à contre-courant.
+ En effet, si ce choix peut sembler peu commun, il conciliait notre contrainte
+ liée à l'absence de maquette dans le champ de vue, et les contrainte soufflerie
+s qui imposaient un montage à partir du tripode, situé en aval de la veine
+ d'essai.
+\end_layout
+
+\begin_layout Standard
+Le système fonctionnait donc comme suit: sur le tripode était monté le dard
+ FLA7 qui supportait l'arrivée d'air HP.
+ Le jet était finalement généré par une buse montée à l'extrémité du dard.
+ Deux types de buses ont été testées: une simple buse et une double buse.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Schéma buses
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Buse1.JPG
+	lyxscale 10
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Buse2.JPG
+	lyxscale 10
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Installation des caméras
+\end_layout
+
+\begin_layout Standard
+Comme nous l'avons vu jusque là la disposition optimale de caméras pour
+ un jet est la configuration en couronne.
+ Nous avons donc répartis nos 12 caméras par paires derrière les différents
+ hublots de la veine.
+ Bien que les accès optiques soient nettement moins confortables qu'à F2,
+ le nombre important de hublots sur le chariot que nous avons utilisé et
+ la petite taille de nos caméras nous ont permis de les disposer autour
+ de la veine sans trop de difficultés.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/setup.JPG
+	lyxscale 10
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Mouchetis
+\end_layout
+
+\begin_layout Subsection
+Eclairage
+\end_layout
+
+\begin_layout Section
+Reconstruction sans vent
+\end_layout
+
+\begin_layout Section
+Analyse des données et stratégie de post traitement
+\end_layout
+
+\end_body
+\end_document

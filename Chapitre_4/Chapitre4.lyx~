@@ -290,6 +290,40 @@ name "fig:A380"
 Mise en œuvre de la BOS: setup + acquisition
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/setup.JPG
+	lyxscale 10
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Phénomène étudié
 \end_layout
@@ -329,11 +363,7 @@ Schéma buses
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -441,53 +471,176 @@ Comme nous l'avons vu jusque là la disposition optimale de caméras pour
  le nombre important de hublots sur le chariot que nous avons utilisé et
  la petite taille de nos caméras nous ont permis de les disposer autour
  de la veine sans trop de difficultés.
+ Chacune de nos caméra était équipée d'un objectif de 70 mm afin de viser
+ un volume d'une cinquantaine de cm en amont de la buse.
+ Pour atténuer au maximum les phénomènes de vibrations, les caméra sont
+ été installées sur des plateaux amortis.
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/setup.JPG
-	lyxscale 10
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
 Mouchetis
 \end_layout
 
+\begin_layout Standard
+Etant donnée la géométrie du montage, le champ de vue des caméras qui est
+ de près de 50 cm au centre veine, approche 1m sur les parois de la veine.
+ Pour couvrir l'ensemble des caméras, 
+\begin_inset Formula $8m\text{²}$
+\end_inset
+
+de mouchetis ont été nécessaires.
+ Pour satisfaire la contrainte soufflerie stipulant que le mouchetis devait
+ pouvoir s'enlever facilement, tout en conservant une bonne tenue au vent,
+ nous avons utiliser des panneaux mouchetis autocollants recouvert d'un
+ pelliculage transparent.
+ Le mouchetis a été appliqué sur les parois de la veine nettoyée, en face
+ des caméra.
+ Comme nous le verrons par la suite, ce type de mouchetis a très bien fonctionné
+, excepté en présence de défauts de surface qui ont pu compromettre sont
+ intégrité.
+\end_layout
+
+\begin_layout Standard
+Enfin, des marqueurs de type april tags 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+citation
+\end_layout
+
+\end_inset
+
+ ont été apposés sur le mouchetis, aux limites des champs caméras afin d'être
+ en mesure de diagnostiquer les mouvements caméras dans le cas où les plateaux
+ amortis ne fonctionnerait pas ou mal.
+ De plus, ces marqueurs ont été utilisés par le DTIM pour réaliser des scans
+ de la veine à l'aide d'un système stéréoscopique.
+ Ces scans on été réalisés avant et après essais pour éventuellement détecter
+ des effets de dilatation thermique.
+\end_layout
+
 \begin_layout Subsection
 Eclairage
+\end_layout
+
+\begin_layout Standard
+Une fois les caméras et les mouchetis installé, le système d'éclairage a
+ été mis en place.
+ Nous avons ici repris le même type de montage que celui utilisé à F2, à
+ savoir une table de séparation du faisceau laser puis des guides de lumières
+ associés à des lentilles divergentes.
+ Pour pouvoir couvrir l'ensemble des mouchetis nous avons utilisé une table
+ de séparation en 8 faisceaux couplée à un laser twins BBSl de 400mJ.
+ Le laser et sa table de séparation étaient installés dans un local climatisé
+ au-dessus de la soufflerie tandis que de nouveaux guides de lumières de
+ 5 et 10m 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ref
+\end_layout
+
+\end_inset
+
+ ont permis d'amener les faisceau jusqu'aux différents hublots.
+ Des lentilles divergentes de 50mm permettaient ensuite d'éclater le faisceau
+ sur un diamètre de près d'1m.
+\end_layout
+
+\begin_layout Standard
+Ce montage nous a permis de travailler avec des ouvertures caméras de 
+\begin_inset Formula $f_{\#}=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Calibration
+\end_layout
+
+\begin_layout Standard
+Pour ne pas reproduire les erreurs commises à F2, une procédure de calibration
+ a été mise en place.
+ Nous avons tout d'abord fait imprimer par 
+\shape italic
+Plastimage 
+\shape default
+une mire sur un panneau en nid d'abeille.
+ Un ingénieux système de fixation a été conçu par impression 3D pour venir
+ fixer la mire directement sur les différentes buses afin de connaitre préciséme
+nt la position du référentiel mire par rapport à celui de la buse.
+ Chaque calibration se déroulait en 2 phases: la prise d'une image de référence
+ avec la mire fixée sur la buse puis l'enregistrement en continu d'une soixantai
+ne de points de vue pendant lequel un opérateur déplaçait la mire dans le
+ champ de vue des caméras.
+ 
+\end_layout
+
+\begin_layout Subsection
+Déroulement des essais 
+\end_layout
+
+\begin_layout Standard
+Après avoir installé l'ensemble du système la première semaine, les essais
+ se sont ensuite déroulés sur 2 jours et demi.
+ Ils ont débutés par la buse simple avant de se poursuivre avec la double
+ buse.
+ Une rotation dans le jargon soufflerie désigne ...
+\end_layout
+
+\begin_layout Standard
+Nous avons travaillé par demi-journée en se rapprochant de ce modèle: calibratio
+n- scan - 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+diagramme
+\end_layout
+
+\end_inset
+
+- Acquisition des images de références - mise en route de la soufflerie-
+ acquisitions sans jet - mise en route du jet- acquisition arrêt jet - arrêt
+ soufflerie - calibration à chaud -scan
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Matrice d'essais
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Il faut noter que lors de la première rotation lorsque l'on a atteint Mach
+ 0.7, des bulles ses ont formées sous certains panneaux de mouchetis.
+ L'un d'eux s'est même arraché.
+ Il est apparu que de l'air passait par des jointures ou des pas de vis
+ situés sous le mouchetis lorsque la soufflerie est en fonctionnement, et
+ donc en dépression.
+\end_layout
+
+\begin_layout Standard
+Ces trous ont donc été bouchés avec du skotch aluminium et le 
+\begin_inset Quotes fld
+\end_inset
+
+bord d'attaque
+\begin_inset Quotes frd
+\end_inset
+
+ des panneaux de mouchetis également renforcé avec une bande de skocth aluminium
 \end_layout
 
 \begin_layout Section

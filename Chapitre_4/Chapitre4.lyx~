@@ -555,6 +555,14 @@ Ce montage nous a permis de travailler avec des ouvertures caméras de
 \begin_inset Formula $f_{\#}=2$
 \end_inset
 
+ ce qui demeure assez faible malgré tout.
+ En fin de campagne une configuration d'éclairage différente a été réalisée:
+ nous nous somme placé en configuration de BOS 2D en ne gardant qu'une caméra
+ et, en regroupant les illuminateurs sur un panneau de mouchetis nous avons
+ pu travailler à 
+\begin_inset Formula $f_{\#}=8$
+\end_inset
+
 .
 \end_layout
 
@@ -640,7 +648,7 @@ bord d'attaque
 \begin_inset Quotes frd
 \end_inset
 
- des panneaux de mouchetis également renforcé avec une bande de skocth aluminium
+ des panneaux de mouchetis également renforcé avec une bande de skocth aluminium.
 \end_layout
 
 \begin_layout Section

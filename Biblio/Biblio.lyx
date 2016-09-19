@@ -1,0 +1,3207 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass report
+\use_default_options true
+\maintain_unincluded_children false
+\language french
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Etat de l'art
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:biblio"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+minitoc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+La naissance de la Background Oriented Schlieren (BOS)
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:biblio:intro"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La Background Oriented Sclieren (BOS) est née au début des années 2000.
+ Elle a été introduite par Meier (et Raffel) et Dalziel.
+ Meier et son équipe du DLR travaillaient beaucoup sur les tourbillons de
+ bout de pâles d'hélicoptères.
+ Ils se sont inspirés de la vélocimétrie par image de particules (PIV) et
+ des algorithme développés pour calculer le champ de déplacement entre deux
+ images de particules.
+ Pour cela, ils ont 
+\begin_inset Quotes eld
+\end_inset
+
+imprimé
+\begin_inset Quotes erd
+\end_inset
+
+ leur ensemencement en projetant de la peinture blanche sur une surface
+ goudronnée.
+ Ils ont ensuite observé leur hélicoptère en vol stationnaire depuis le
+ toit d'un bâtiment et après avoir calculé leur champ de déplacement, ils
+ ont pu observer les tourbillons de bout de pâles et leur évolution.
+ Déjà, Meier voit la technique comme très prometteuse pour la visualisation
+ d'écoulements compressibles sur de très grand champs, avec des applications
+ en soufflerie mais aussi pour des expériences en vol.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/DLR_helico.png
+	lyxscale 70
+	height 40text%
+	BoundingBox 0bp -30bp 500bp 400bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/DLR_helico_res.png
+	lyxscale 50
+	height 40text%
+	BoundingBox 20bp 0bp 670bp 685bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mesure de tourbillons de bout de pales par BOS 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Richard2002"
+
+\end_inset
+
+.
+ a) Hélicoptère et mouchetis obtenu par pulvérisation de peinture.
+ b) Champ de déplacement mesuré par BOS.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dalziel a eu une approche un peu différente: il s'intéressait aux variations
+ de densité présentes dans un écoulement stratifié soumis à des oscillations
+ périodiques.
+ Pour étudier ce phénomène de manière quantitative, Dalziel explore divers
+ techniques: il commence par la strioscopie puis étudie l'utilisation de
+ la strioscopie par grille encore appelée 
+\begin_inset Quotes eld
+\end_inset
+
+focusing schlieren
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Il étend le principe en s'intéressant à un masque de points qui n'est plus
+ 2D.
+ Enfin, il montre qu'un suivit du déplacement de son motif de points par
+ corrélation fournit de belles cartes des gradients horizontaux et verticaux
+ avec un montage bien plus simple que les techniques de grilles.
+\end_layout
+
+\begin_layout Standard
+Par la suite la BOS va se démocratisée de part sa simplicité d'utilisation.
+ Les divers motifs qui ont été utilisés comme fonds sont détaillés dans
+ la section suivante.
+\end_layout
+
+\begin_layout Standard
+Un état de l'art détaillé a été réalisé par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "raffel2015"
+
+\end_inset
+
+
+\size normal
+ nous allons revenir sur les principales contributions.
+\end_layout
+
+\begin_layout Section
+Le choix du fond
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:biblio:background"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Classiques
+\end_layout
+
+\begin_layout Standard
+L'utilisation première de sprays de peinture pour créer le mouchetis est
+ satisfaisante et très adaptée aux grandes dimensions.
+ Pour les expériences de dimensions plus modeste, le choix classique porte
+ sur l'impression d'une distribution aléatoire de points.
+\end_layout
+
+\begin_layout Standard
+L'utilisation de fonds en ondelettes semblaient prometteuse pour les capture
+ d'écoulements présentant une grande dynamique mais elle ne s'est pas avérée
+ concluante.
+\end_layout
+
+\begin_layout Standard
+Todoroff a un introduit un mouchetis semi-aléatoire: ce fond composé de
+ point répartis aléatoirement dans de petites fenêtres permet de s'affranchir
+ d'un certains nombre de contraintes de la répartition aléatoire classique,
+ à savoir la présence de zone partiellement vides et d'amas.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/random.pdf
+	width 30text%
+	height 30text%
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/wavelet.png
+	lyxscale 25
+	width 30text%
+	height 30text%
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/semi-random.pdf
+	width 30text%
+	height 30text%
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Différents types de mouchetis utilisés en BOS: a) Mouchetis aléatoire, b)
+ Bruit en ondelettes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Atcheson09"
+
+\end_inset
+
+, c) Mouchetis semi-aléatoire
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Todoroff2013"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:mouchetis"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour augmenter l'énergie lumineuse reçu, l'ensemble de ces fonds peut être
+ imprimé sur panneaux rétroréfléchissant 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bauknecht2014b"
+
+\end_inset
+
+ ou bien sur panneaux transparents couplé à un éclairage par l'arrière.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+regarder hartberger
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Fond naturel
+\end_layout
+
+\begin_layout Standard
+Pour les expériences de grandes dimensions, plusieurs équipes se sont intéressé
+ à l'utilisation de la texture naturelle d'une étendue herbeuse, rocheuse
+ ou bien aux branchage d'une forêt comme fond de référence.
+ Toujours dans le but d'étudier les tourbillons de bout de pâles, le DLR
+ a largement utilisé les fonds naturels pour des expériences à échelle 1:1
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Richard01,Bauknecht2014b"
+
+\end_inset
+
+
+\size normal
+ ou bien pour des mesures en vol 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "leopold2007,raffel2014,bauknecht2014a"
+
+\end_inset
+
+
+\size normal
+.
+ Lors de ces tests, Raffel et Baucknecht étudie l'influence du choix de
+ la texture sur la qualité des images BOS.
+\end_layout
+
+\begin_layout Standard
+Par rapport à des problématiques d'explosions, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mizukaki2013,hargather2013"
+
+\end_inset
+
+ ont
+\size normal
+ également utilisés des textures naturelles pour analyser le déplacement
+ de l'onde de souffle.
+\end_layout
+
+\begin_layout Standard
+Une étude détaillée de l'impact du fond naturel sur la qualité de la corrélation
+ d'image a par ailleurs été mené par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hargather2010"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Color-BOS
+\end_layout
+
+\begin_layout Standard
+La Color-BOS (CBOS) a été introduite par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "leopold2007"
+
+\end_inset
+
+.
+ Elle repose sur l'utilisation un fond coloré, résultant d'un mélange de
+ pixels rouges, verts et bleus.
+ De cette manière, des corrélations indépendantes des pixels de chaque couleur
+ et des mélange de couleurs permet d'améliorer la résolution classique de
+ la corrélation qui est conditionnée par la taille de la fenêtre de corrélation
+ et par le recouvrement.
+ De plus, en introduisant un déplacement connu entre les motifs de couleurs
+ différentes lors de la conception du fond 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leopold2013"
+
+\end_inset
+
+, il est possible de réaliser des corrélations entre ces deux motifs à la
+ traversée des ondes de chocs qui sont relativement difficiles à bien capturer.
+ La technique présente néanmoins quelques inconvénients puisque il faut
+ avoir à l'avance une idée de la topologie de l'onde de choc et elle ne
+ pourrait fonctionner sur des topologie d'écoulements complexes.
+ Enfin, la mise en œuvre de la CBOS nécessite bien évidement une caméra
+ couleur, ce qui se traduit par une baisse de résolution pour un nombre
+ de pixels donné.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/CBOS.pdf
+	lyxscale 50
+	height 40text%
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/spike.jpg
+	lyxscale 50
+	height 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Color-BOS 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leopold2013"
+
+\end_inset
+
+.
+ a) Principe de traitement des images CBOS.
+ b) Exemple d'image CBOS sur un spike.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:CBOS"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Color-Grid-BOS
+\end_layout
+
+\begin_layout Standard
+La color-grid BOS a été développée par Ota 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ota11"
+
+\end_inset
+
+ et son équipe.
+ Possédant une grande expérience en interférométrie, ils en ont repris le
+ principe pour l'appliquer à la BOS.
+ Leurs fonds sont donc composés de 2 grilles : une grille rouge verticale
+ et une grille verte horizontale.
+ Ils utilisent ensuite leurs algorithme de détection de franges pour calculer
+ les déplacements horizontaux et verticaux au centre de chaque ligne.
+ Les champs finaux sont obtenus par interpolation.
+ La CBOS permet une grande qualité de mesure mais elle sa résolution est
+ limitée par la grille utilisée.
+ Enfin, comme la CBOS, elle nécessite l'emploi d'une caméra couleur.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/CGBOS_full.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CGBOS sur un cône tronqué à Mach 2.0 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ota11"
+
+\end_inset
+
+: Détail des grilles verticale et horizontale (à gauche) qui donne le motif
+ complet (à droite).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:CGBOS"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Speckle-BOS
+\end_layout
+
+\begin_layout Standard
+Beaucoup utilisé au début des années 2000 (Fomin) l'utilisation du speckle
+ en interférométrie est revenue au goût du jour par Meier 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Meier13"
+
+\end_inset
+
+ qui propose d'utiliser le speckle d'un laser comme image de fond.
+ Pour rappel, le speckle est un motif tacheté qui apparait lorsque l'on
+ éclaire une surface avec une lumière cohérente.
+ Les défauts de rugosité à la surface du matériaux créent de multiples retard
+ de phase, à l'origine des interférences speckle.
+ La taille des grains du speckle est directement liée à l'ouverture du système
+ optique.
+ Ainsi, plus l'ouverture est faible et plus le speckle est 
+\begin_inset Quotes eld
+\end_inset
+
+gros
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Meier réalise donc son fond en imageant son speckle sur une plaque de verre
+ dépolie.
+ Le premier avantage relatif au speckle réside dans la possibilité de faire
+ varier la sensibilité de la technique en bougeant simplement la mise au
+ point.
+ Contrairement à la BOS classique, la position du fond et la sensibilité
+ sont ici décorrélés.
+ En faisant varier la mise au point, Meier observe une évolution de la sensibili
+té, avec des déplacement nuls lorsqu'il se trouve sur l'écoulement.
+ De manière surprenante, il obtient des déplacements opposés lorsque la
+ mise au moins est faite devant l'écoulement, avec une sensibilité qui augmente
+ bien plus rapidement lorsqu'il s'éloigne que dans le montage classique.
+ De plus, Meier présente un montage 
+\begin_inset Quotes fld
+\end_inset
+
+double passe
+\begin_inset Quotes frd
+\end_inset
+
+ qui permet de doubler la sensibilité en faisant passer la lumière deux
+ fois à travers l'écoulement par réflexion.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/speckle.jpg
+	lyxscale 50
+	height 35text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+raisebox{-0.1
+\backslash
+height}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Images/speckle-sensitivity.png
+	lyxscale 30
+	height 40text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+BOS speckle 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Meier13"
+
+\end_inset
+
+ : a) Evolution de la taille du motif de speckle avec l'ouverture caméra.
+ b) Sensibilité de la technique: déplacement observé fonction de la distance
+ de mise au point 
+\begin_inset Formula $l$
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:speckle"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L'utilisation du speckle reste séduisante sur le papier mais il apparait
+ difficile à mettre en œuvre dans un environnement complexe: Meier a réalisé
+ ses mesures sur table optique.
+ Que se passe-t-il lorsque le fond vibre ou se déforme? Le speckle est-il
+ stable dans le temps? Il semble toutefois très approprié au petites expériences
+ (qui peuvent se faire sur table optique) mais surtout pour lesquelles il
+ est difficile d'imprimer un mouchetis suffisamment petit.
+ Enfin, bien qu'intéressant le montage double passe nécessite un alignement
+ précis du faisceau laser et de la caméra.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+dans le cas de faisceaux non parallèles, les rayons voient-ils vraiment
+ la même chose à l'aller et au retour ????
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+micro:Stoller, Kushner, poitiers 
+\end_layout
+
+\begin_layout Section
+Corrélation d'images
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:biblio:correlation"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Après obtention d'une paire d'image, l'image de référence et l'image perturbée,
+ le calcul des champs de déplacements (verticaux et horizontaux) se fait
+ par corrélation d'images.
+ La plus parts des équipes utilisent des algorithmes basés sur la transformée
+ de Fourier.
+ En effet, ceux-ci sont largement répandu en PIV et facilement disponible
+ (matkab matpiv).
+ Toutefois, Atcheson
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Atcheson09"
+
+\end_inset
+
+ a mené une étude comparative entre un calcul par FFT et des calculs par
+ flot optiques.
+ Au bilan, il montre que les algorithmes Lucas-Kanade (LK) et Horn-Schunck
+ (HS) sont plus performant que la moyenne avec une légère avance pour le
+ HS.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Une image ? un peu plus exhaustif ? différence entre FFT et flot optique
+ , Folki ?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Obtenir le champ de masse volumique: reconstruction 3D
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:biblio:3d"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La BOS étant une mesure intégrée, l'obtention du champ de masse volumique
+ n'est pas immédiate et dépend des hypothèses considérées.
+ Le cas le plus simple est le cas 2D pour lequel il suffit de connaitre
+ la longueur d'intégration puis réaliser une intégration du champ de gradients
+ pour accéder à la masse volumique.
+ Dans les autres cas une étape de reconstruction est nécessaire.
+\end_layout
+
+\begin_layout Subsection
+Ecoulement axisymétrique
+\end_layout
+
+\begin_layout Standard
+Pour un écoulement axisymmétrique, une seule vue est nécessaire pour capturer
+ la physique.
+ Et, dans ce cas précis, il est possible d'utiliser la transformée inverse
+ d'Abel 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:biblio:abel"
+
+\end_inset
+
+ pour reconstruire la distribution volumique de masse volumique.
+\begin_inset Formula 
+\begin{equation}
+F(y)=2\int_{y}^{\text{\ensuremath{\infty}}}\frac{f(r)rdr}{\sqrt{r^{2}-y^{2}}},\hspace{10mm}f(r)=\frac{-1}{\pi}\int_{r}^{\text{\ensuremath{\infty}}}\frac{dF}{dy}\frac{dy}{\sqrt{y^{2}-r^{2}}}\label{eq:biblio:abel}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La transformée d'Abel exprime la projection 
+\begin_inset Formula $F(y)$
+\end_inset
+
+ d'une fonction axi-symmétrique 
+\begin_inset Formula $f(r)$
+\end_inset
+
+ le long d'une ligne de vue aboutissant à la mesure.
+ Son inverse permet de calculer la-dite fonction à partir de sa projection
+ mesurée.
+\end_layout
+
+\begin_layout Standard
+Très utilisée, la transformée d'Abel permet de remonter au champ de masse
+ volumique pour un certains nombre d'écoulements qui sont axisymmétrique,
+ le plus souvent en moyenne.
+ La difficulté réside dans l'estimation précise de l'axe de symétrie lors
+ du montage expérimental.
+ En effet il faut pouvoir positionner précisément la caméra en alignant
+ l'un de ses axes avec l'axe de symétrie de l'écoulement.
+ Une erreur de positionnement impactera directement la reconstruction avec
+ l'apparition d'artefacts sur cet axe justement.
+\end_layout
+
+\begin_layout Subsection
+Ecoulement stationnaire
+\end_layout
+
+\begin_layout Standard
+Un écoulement stationnaire permet également de travailler avec un seul point
+ de vue.
+ En effet en réalisant successivement plusieurs acquisitions en tournant
+ autour de l'écoulement, on peut reconstruire le champ de masse volumique.
+ Lorsque ces écoulements ne sont pas axisymétrique il faut faire appel à
+ des techniques de reconstructions plus complexes que la transformé d'Abel,
+ telle que la rétroprojection filtrée: Filtered BacProjection (FBP) ou bien
+ les méthodes algébriques: Algebraic Reconstruction Techniques (ART).
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Rétroprojection filtrée (FBP)
+\end_layout
+
+\begin_layout Standard
+La rétroprojection filtrée est basée sur la transformée de Radon, une généralisa
+tion de la transformée d'Abel, qui tient compte de l'angle de visée.
+ Beaucoup utilisée à l'origine en imagerie médicale, Sourgen
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sourgen2004"
+
+\end_inset
+
+ l'a mise en œuvre sur la BOS pour reconstruire des champ de masse volumique
+ autour d'un cône à Mach 2.06.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+F(y)=2\int_{y}^{\text{\ensuremath{\infty}}}\frac{f(r,theta)rdr}{\sqrt{r^{2}-y^{2}}}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Schéma
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Sourgen_2012.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparaison des champs de masse volumique, reconstruit par FBP (à gauche)
+ et obtenus par calcul RANS (à droite).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La principale difficulté de la rétroprojection filtrée réside dans le filtrage.
+ En effet, si l'on rétroprojette brutalement la mesure dans le volume, des
+ données vont s'accumuler le long des axes de visée conduisant à des artefacts
+ en étoile.
+ Un filtrage est donc nécessaire pour les limiter et aboutir à une reconstructio
+n propre.
+ Enfin, la FBP nécessite un grand nombre de projection pour fonctionner:
+ typiquement, les scanners médicaux acquiert plusieurs centaines de projections!
+ En BOS, pour les écoulements stationnaires, il est possible de faire un
+ certain nombre de mesure (20 à 30 en général) mais cela demeure assez insuffisa
+nt.
+ Une manière d'améliorer la qualité des reconstructions est d'interpoler
+ les données manquantes en se basant sur le sinogramme.
+ Le sinogramme est une façon de représenter l'ensemble des projections en
+ représentant la mesure sous la forme d'un graphique (r,
+\begin_inset Formula $\theta$
+\end_inset
+
+), chaque ligne représentant une projection.
+ Il est appelé ainsi car l'image dans point se traduit par une sinusoïde.
+ L'interpolation du sinogramme permet donc de combler le manque de données
+ et d'améliorer la reconstruction.
+\end_layout
+
+\begin_layout Subsubsection
+Reconstruction algébrique (ART)
+\end_layout
+
+\begin_layout Standard
+Les méthodes algébrique connaissent un intérêt croissant depuis une dizaine
+ d'années.
+ Elles étaient jusque là peu utilisées en raison de leur coût de calcul
+ prohibitif mais elles se démocratise avec l'amélioration performances des
+ ordinateurs.
+ Ces méthodes consistent à rechercher une solution sur un espace discret
+ de fonctions de base, généralement choisi comme les voxels.
+ Un opérateur de projection est définit au en un point 
+\begin_inset Formula $j$
+\end_inset
+
+ comme la somme des contributions des voxels traversés par la ligne de visée
+ issue de 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ Le principe des méthodes ART est de mettre à jour de manière itérative
+ les valeurs des voxels en ajoutant la valeur calculée à l'itération précédente
+ le résidu entre la valeur mesurée en j et la projection du volume calculé
+ à l'itération précédente.
+ 
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+equation
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leopold2013,Ota11"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Ota_2012.png
+	lyxscale 50
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Reconstruction du champ de masse volumique moyen autour d'un cône à Mach
+ 2.0 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ota2012"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/leopold-a.jpg
+	lyxscale 70
+	width 20text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/leopold-b.jpg
+	lyxscale 70
+	width 20text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/leopold-c.jpg
+	lyxscale 70
+	width 20text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/leopold-d.jpg
+	width 25text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En pratique, en tomographie la matrice A du système n'est pas carré, donc
+ non inversible au sens strict.
+ On cherche donc, le plus souvent, la solution au sens des moindres carré.
+ De plus, le bruit de mesure rendant le problème mal conditionné, une régularisa
+tion s'impose pour pouvoir converger vers une solution.
+\end_layout
+
+\begin_layout Subsubsection
+Combinaison FBP et ART
+\end_layout
+
+\begin_layout Standard
+Tout récemment 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hartmann2016"
+
+\end_inset
+
+ a proposé une approche mixte.
+ Après avoir constaté que, d'une part sa reconstruction FBP est très affectée
+ par des artefacts suivant les lignes de vues mais qu'elle est capable de
+ reconstruire de forts gradients et que , d'autre part sa reconstruction
+ ART es relativement propre mais sous-estime de manière systématique les
+ niveaux de masse volumique, il propose de combiner les deux techniques.
+ Pour cela, il réalise tout d'abord une reconstruction FBP à partir de laquelle
+ il extrait les zones de forts gradients de masse volumique.
+ Puis, il utilise ce résultat pour initialiser la reconstruction ART.
+ Le résultat final est propre avec de meilleurs niveaux sur les zones de
+ forts gradients.
+ Si cette technique semble fonctionner sur ce cas simple pour lequel l'utilisate
+ur identifie aisément la zone de forts gradients, pour un cas plus complexe,
+ cette procédure semble difficile à mettre en œuvre.
+\end_layout
+
+\begin_layout Subsection
+3D instationnaire
+\end_layout
+
+\begin_layout Standard
+Pour pouvoir capturer un écoulement quelconque, il est nécessaire d'acquérir
+ de manière simultanée, plusieurs point de vues.
+ Les premiers à avoir développé un tel système sont Ihrke et Atcheson
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ihrke07,Atcheson08"
+
+\end_inset
+
+.
+ Issus de la communauté du rendu graphique, ils ont développé un tel système
+ pour pouvoir simuler de manière réaliste les distorsions optiques causées
+ par un milieu non homogène que l'on observe typiquement au dessus d'une
+ flamme.
+ Plutôt qu' 
+\begin_inset Quotes fld
+\end_inset
+
+inventer
+\begin_inset Quotes frd
+\end_inset
+
+ un champ de densité, ils ont développé un système de mesure de BOS 3D à
+ 16 caméras afin de capturer un écoulement de convection.
+ Ihrke est également le premier à résoudre le problème de reconstruction
+ sous forme algébrique.
+ Il reconstruit le champ de masse volumique en deux étapes: la reconstruction
+ du champ de gradients part méthode ART, puis il retrouve sa solution par
+ intégration de l'équation de Poisson.
+ Cette première reconstruction de champ instantanés de masse volumique donne
+ de très beaux résultats comme on peut le voir Fig.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:atcheson"
+
+\end_inset
+
+ De plus, en comparaison des méthode de FBP utilisées jusqu'alors, elle
+ fonctionne avec nombre relativement limitée de projections (16).
+ Toutefois, cette démonstration n'a pas pour vocation de réaliser des mesures
+ précises, l'aspect visuel étant privilégié dans un contexte de rendu par
+ ordinateur.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Ihrke_Atch.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+De gauche à droite: montage expérimental à 16 caméras mis en oeuvre par
+ Ihrke et Atcheson 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Atcheson08"
+
+\end_inset
+
+.
+ Image brute d'un bruleur à gaz devant un fond en ondelette.
+ Champ de déplacement calculé, champ 3D de gradient de masse volumique et
+ iso-surfaces de masse volumique.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:atcheson"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Violaine Todoroff 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Todoroff2013"
+
+\end_inset
+
+s'est inspiré de ces travaux pour développer un nouvel outil de mesure,
+ la BOS 3D, pour la mécanique des fluides.
+ Son objectif est de mettre au point une technique de reconstruction de
+ champs instantanés de masse volumique par BOS 3D.
+ Sa contribution s'appuie sur deux réalisations majeures.
+ Tout d'abord, elle a développé un code de reconstruction novateur puisqu'il
+ utilise une approche directe.
+ Cela se traduit par le fait que son algorithme ne fonctionne pas en 2 étapes
+ comme précédemment 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ihrke07,Atcheson08,Leopold2013,Ota11,ishino2016"
+
+\end_inset
+
+ (reconstruction des gradients + intégration) mais permet de reconstruire
+ directement le champ de masse volumique.
+ Son algorithme recherche la solution au sens des moindres carrés, d'un
+ critère régularisé.
+ L'objectif de cette régularisation est de lutter contre le bruit et donc
+ de rechercher une solution relativement lisse.
+ Au cours de sa thèse, Todoroff s'est intéressé à deux types de régularisations:
+ une régularisation de Tickonov, quadratique, et une régularisation par
+ variation totale, L2L1.
+ Si son code donne de bons résultats, Todoroff constate toutefois un certains
+ nombre de problèmes numériques: des oscillations qui apparaissent en bord
+ de champ, des interactions complexes avec le masque 3D, un critère qui
+ affiche parfois un comportement anormal, la difficulté d'ajuster les paramètres
+ 
+\begin_inset Formula $\mylambda$
+\end_inset
+
+et 
+\begin_inset Formula $\mydelta$
+\end_inset
+
+de la régularisation L2L1.
+ Elle note aussi l'importance de l'optimisation du code pour améliorer la
+ résolution mais aussi la taille des champs reconstruits.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Plus de détails, équation du critère, L-curve
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La deuxième contribution de Todoroff réside dans la conception d'un banc
+ d'essai BOS 3D, la géode, supportant 12 caméras qui permet d'étudier l'impact
+ du positionnement caméras sur les reconstructions.
+ Sur cette installation, elle a put réaliser diverse reconstructions d'écoulemen
+ts de convection, comme un jet chaud ou bien un charbon en rotation.
+ Malgré la construction de la géode, Todoroff n'a pas pu réaliser une étude
+ du positionnement caméras, ni valider les mesures BOS 3D par une technique
+ complémentaire.
+ Ce dernier point étant essentiel pour qualifier la technique.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/geode.png
+	lyxscale 70
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Géode: banc BOS 3D supportant une douzaine de caméras sur un hémisphère
+ et des mouchetis sur l'autre.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/jetchdiL2L1_1v1.png
+	lyxscale 20
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Reconstruction d'un écoulement instantané de jet chaud.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Une campagne d'essai relativement impressionnante a également été mené par
+ le DLR 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bauknecht2014c"
+
+\end_inset
+
+ sur des tourbillons de bout de pales d'hélicoptères.
+ Pour pouvoir reconstruire en 3-dimensions les tourbillons d'un hélicoptère
+ échelle 1:1, Baucknecht et al.
+ ont installé 12 caméras disposées en arc de cercle dans une carrière et
+ utilisé la texture naturelle de la paroi rocheuse comme fond.
+ Ces essais ont permis d'étudier la dynamique tourbillonnaire pour différents
+ régimes de vol de l'appareil.
+ Ils ont utilisé l'information de position des tourbillons capturée par
+ chaque caméra pour reconstruire leur position dans l'espace par géométrie
+ épipolaire.
+ Cette technique consiste à trianguler des points caractéristiques d'un
+ objet vu par plusieurs caméra pour déterminer sa position dans l'espace.
+ Si elle demeure impressionant e par ses dimension, cette campagne d'essai
+ se limite au niveau de la reconstruction à de la localisation de structure
+ sans chercher à évaluer les niveaux de masse volumique rencontrés.
+ De ce fait, elle s'éloigne un peu de notre objectif.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/bauknecht-1.png
+	lyxscale 50
+	height 28text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Bauknecht-2.png
+	lyxscale 50
+	height 28text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Ota ?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Hartman...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Strioscopie quantitative
+\end_layout
+
+\begin_layout Standard
+Pour compléter cet état de l'art sur les techniques BOS, il nous parait
+ important de mentionner les références suivantes qui utilise la strioscopie
+ pour reconstruire le champ de masse volumique.
+ Bien qu'il soit difficile d'obtenir des mesures quantitative en strioscopie,
+ en réalisant une calibration, il est également possible d'effectuer une
+ reconstruction du champ de masse volumique.
+ La strioscopie couleur, encore appelée 
+\begin_inset Quotes fld
+\end_inset
+
+rainbow schlieren
+\begin_inset Quotes frd
+\end_inset
+
+ nécessite l'emploie d'un filtre coloré.
+ Plusieurs type de filtres existe: les filtres à variation progressive comme
+ celui employé par Elsinga 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Elsinga04"
+
+\end_inset
+
+ permet de caractériser complètement le vecteur déplacement.
+ Sa calibration reste néanmoins compliquée et beaucoup de gens préfèrent
+ utiliser un filtre en coloration de Hue 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Agrawal06,kolhe2009,takano2016"
+
+\end_inset
+
+.
+ Une fois calibré, ce dernier permet d'associer à chaque couleur un déplacement.
+ Comme le filtre est 2D, il est néanmoins nécessaire de tourner le filtre
+ de 90° pour mesurer à la fois les gradients horizontaux et verticaux.
+ A partir de ces mesures, les auteurs ont pu reconstruire le champ axisymmétriqu
+e de masse volumique par transformée d'Abel 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kolhe2009,takano2016"
+
+\end_inset
+
+ ou bien par une variante de FBP dénommée 
+\begin_inset Quotes fld
+\end_inset
+
+Convolution BackProjection
+\begin_inset Quotes frd
+\end_inset
+
+ (CBP) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Agrawal06,takano2016"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Rainbow_schlieren_2.png
+	lyxscale 30
+	height 35text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Takano.png
+	lyxscale 50
+	height 35text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Etude d'un jet sous-détendu, NPR = 4 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "takano2016"
+
+\end_inset
+
+.
+ a) Striscopie couleur obtenu avec un filtre hue, gradients verticaux.
+ b) Reconstruction du cahmp de masse volumique par transformée d'Abel inverse
+ et par 
+\begin_inset Quotes fld
+\end_inset
+
+Computed Tomography
+\begin_inset Quotes frd
+\end_inset
+
+ (CT).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:rainbow"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cabaleiro 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cabaleiro2013"
+
+\end_inset
+
+ travaille quant à lui avec des strioscopie classique en niveau de gris.
+ Il adopte néanmoins une démarche intéressante: il étudie le fonctionnement
+ d'un actionneur de type jet pulsé.
+ Etant donné le caractère périodique de l'écoulement, il travaille en moyenne
+ de phase et utilise 36 points de vues différents pour reconstruire son
+ écoulement par FBP.
+ Enfin, Ishino 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ishino2016"
+
+\end_inset
+
+ a développé un banc avec 20 lignes strioscopique qui lui permettent de
+ reconstruire le champ instantané de masse volumique d'une flamme turbulente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/ishino.png
+	lyxscale 50
+	height 40text%
+	BoundingBox 0bp 0bp 750bp 575bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/flamme.png
+	lyxscale 50
+	height 40text%
+	BoundingBox 0bp 55bp 500bp 630bp
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+a) Banc de strioscopie à 20 lignes de visée et b) reconstruction d'une flamme
+ turbulente 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ishino2016"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Résumé
+\end_layout
+
+\begin_layout Standard
+Un panorama complet des différents études menées en Background Oriented
+ Schlieren a été détaillé par Raffel 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "raffel2015"
+
+\end_inset
+
+.
+ Il nous néanmoins paru intéressant de de rassembler les études ayant trait
+ à la reconstruction 3D dans le tableau ...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="7">
+<features rotate="0" tabularvalignment="middle" tabularwidth="100text%">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="left" valignment="middle" width="10line%">
+<column alignment="center" valignment="top" width="20line%">
+<column alignment="center" valignment="top" width="10line%">
+<column alignment="center" valignment="middle" width="0pt">
+<column alignment="center" valignment="middle" width="0pt">
+<column alignment="center" valignment="top" width="12line%">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Equipe
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Référence
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Technique
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hypothèse
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Algorithme
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nombre de projections
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Schlieren
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Khole, Agrawal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Agrawal06"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rainbow Schlieren
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Axi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CBP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kolhe2009"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rainbow Schlieren
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Axi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Miyazato et Ono
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "takano2016"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Eventuellement les AIAA 2011-12
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rainbow Schlieren
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Axi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abel/CPB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cabaleiro
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cabaleiro2013"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Schlieren
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Périodique
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FBP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+36
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ishino
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ishino2016"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Schlieren
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ART
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOS
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Leopold
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sourgen2004"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Axi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sourgen12"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CBOS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Axi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FBP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leopold2013"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CBOS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stationnaire
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ART
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+36
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ota
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ota11"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CGBOS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stationnaire
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ART
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+38
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Atcheson, Irhke
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Atcheson08"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOS 3D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ART
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Todoroff
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Todoroff2013"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOS 3D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ART
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Goldhann et Seum ?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

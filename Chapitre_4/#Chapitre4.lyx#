@@ -111,16 +111,16 @@ height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
-L'objectif de ce chapitre est de démontré la faisabilité d'une mesure BOS
+L'objectif de ce chapitre est de démontrer la faisabilité d'une mesure BOS
  3D en soufflerie industrielle.
  Après avoir déployé pour la première fois la technique en soufflerie à
  F2, nous changeons ici d'échelle pour réaliser des mesures à S1MA qui possède
  une veine de 8m de diamètre et dont la vitesse veine peut atteindre Mach
  1.
  Au-delà de ce changement d'échelle, nous étudions ici les contraintes liées
- à environnement même de cette soufflerie: vibrations, déformations, monté
+ à l'environnement même de cette soufflerie: vibrations, déformations, monté
  en température.
- ces essais ont lieu dans le cadre du projet Carnot 
+ Ces essais ont lieu dans le cadre du projet Carnot 
 \shape italic
 BOS 3D
 \shape default
@@ -147,11 +147,12 @@ Soufflerie
 \end_layout
 
 \begin_layout Standard
-La soufflerie S1MA a été récupérée aux allemands à la fin de la seconde
- guerre mondiale alors qu'elle était en construction dans le Tyrol autrichien.
- Cette installation unique au monde a été déplacée et achevée à Avrieux
- à coté de Modane, dans les Alpes.
- En effet, la puissance requise pour faire fonctionner cette installation
+La soufflerie S1MA constitue une prise de guerre de l'armée française aux
+ allemands à la fin de la seconde guerre mondiale.
+ Cette installation unique au monde était alors en construction dans le
+ Tyrol autrichien.
+ Elle a été déplacée et achevée à Avrieux à coté de Modane, dans les Alpes.
+ En effet, la puissance requise pour faire fonctionner cette soufflerie
  est telle que les ingénieurs allemands avaient imaginé un système qui utilisera
 it l'énergie hydraulique issue d'une conduite forcée pour entrainer directement
  les deux ventilateurs contrarotatifs.
@@ -194,6 +195,7 @@ status open
 \begin_inset Graphics
 	filename Images/S1MA.png
 	lyxscale 50
+	width 80text%
 
 \end_inset
 
@@ -240,6 +242,7 @@ status open
 \begin_inset Graphics
 	filename Images/A380.jpg
 	lyxscale 50
+	width 80text%
 
 \end_inset
 
@@ -301,6 +304,7 @@ status open
 \begin_inset Graphics
 	filename Images/setup.JPG
 	lyxscale 10
+	width 80text%
 
 \end_inset
 
@@ -340,7 +344,7 @@ s qui imposaient un montage à partir du tripode, situé en aval de la veine
 
 \begin_layout Standard
 Le système fonctionnait donc comme suit: sur le tripode était monté le dard
- FLA7 qui supportait l'arrivée d'air HP.
+ FLA7 qui supportait l'arrivée d'air haute pression (HP).
  Le jet était finalement généré par une buse montée à l'extrémité du dard.
  Deux types de buses ont été testées: une simple buse et une double buse.
  
@@ -380,6 +384,7 @@ status open
 \begin_inset Graphics
 	filename Images/Buse1.JPG
 	lyxscale 10
+	width 80text%
 
 \end_inset
 
@@ -416,6 +421,7 @@ status open
 \begin_inset Graphics
 	filename Images/Buse2.JPG
 	lyxscale 10
+	width 80text%
 
 \end_inset
 
@@ -473,8 +479,8 @@ Comme nous l'avons vu jusque là la disposition optimale de caméras pour
  de la veine sans trop de difficultés.
  Chacune de nos caméra était équipée d'un objectif de 70 mm afin de viser
  un volume d'une cinquantaine de cm en amont de la buse.
- Pour atténuer au maximum les phénomènes de vibrations, les caméra sont
- été installées sur des plateaux amortis.
+ Pour atténuer au maximum les phénomènes de vibrations, les caméra ont été
+ installées sur des plateaux amortis.
  
 \end_layout
 
@@ -492,7 +498,7 @@ Etant donnée la géométrie du montage, le champ de vue des caméras qui est
 de mouchetis ont été nécessaires.
  Pour satisfaire la contrainte soufflerie stipulant que le mouchetis devait
  pouvoir s'enlever facilement, tout en conservant une bonne tenue au vent,
- nous avons utiliser des panneaux mouchetis autocollants recouvert d'un
+ nous avons utilisé des panneaux de mouchetis autocollants recouvert d'un
  pelliculage transparent.
  Le mouchetis a été appliqué sur les parois de la veine nettoyée, en face
  des caméra.
@@ -515,6 +521,49 @@ citation
  ont été apposés sur le mouchetis, aux limites des champs caméras afin d'être
  en mesure de diagnostiquer les mouvements caméras dans le cas où les plateaux
  amortis ne fonctionnerait pas ou mal.
+ De plus, ces marqueurs ont été utilisés par le DTIM pour réaliser des scans
+ de la veine à l'aide d'un système stéréoscopique.
+ Ces scans on été réalisés avant et après essais pour éventuellement détecter
+ des effets de dilatation thermique.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/veine3D.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -547,8 +596,48 @@ ref
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/laser.JPG
+	lyxscale 10
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Ce montage nous a permis de travailler avec des ouvertures caméras de 
 \begin_inset Formula $f_{\#}=2$
+\end_inset
+
+ ce qui demeure assez faible malgré tout.
+ En fin de campagne une configuration d'éclairage différente a été réalisée:
+ nous nous somme placé en configuration de BOS 2D en ne gardant qu'une caméra
+ et, en regroupant les illuminateurs sur un panneau de mouchetis nous avons
+ pu travailler à 
+\begin_inset Formula $f_{\#}=8$
 \end_inset
 
 .
@@ -589,7 +678,8 @@ Après avoir installé l'ensemble du système la première semaine, les essais
 \end_layout
 
 \begin_layout Standard
-Nous avons travaillé par demi-journée suivant ce modèle: calibration 
+Nous avons travaillé par demi-journée en se rapprochant de ce modèle: calibratio
+n- scan - 
 \begin_inset Note Note
 status open
 
@@ -599,8 +689,9 @@ diagramme
 
 \end_inset
 
-- Acquisition des images de références - mise en route de la soufflerie-
-  
+- Acquisition des images de références - mise en route de la soufflerie
+ - acquisitions sans jet - mise en route du jet- acquisition arrêt jet -
+ arrêt soufflerie - calibration à chaud -scan
 \end_layout
 
 \begin_layout Standard
@@ -616,12 +707,177 @@ Matrice d'essais
 
 \end_layout
 
+\begin_layout Standard
+Il faut noter que lors de la première rotation lorsque l'on a atteint Mach
+ 0.7, des bulles ses ont formées sous certains panneaux de mouchetis.
+ L'un d'eux s'est même arraché.
+ Il est apparu que de l'air passait par des jointures ou des pas de vis
+ situés sous le mouchetis lorsque la soufflerie est en fonctionnement, et
+ donc en dépression.
+\end_layout
+
+\begin_layout Standard
+Ces trous ont donc été bouchés avec du scotch aluminium et le 
+\begin_inset Quotes fld
+\end_inset
+
+bord d'attaque
+\begin_inset Quotes frd
+\end_inset
+
+ des panneaux de mouchetis également renforcé avec une bande de scotch aluminium.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/mouchetis.JPG
+	lyxscale 10
+	width 40text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/bulles.JPG
+	lyxscale 10
+	width 40text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Reconstruction sans vent
 \end_layout
 
+\begin_layout Standard
+La reconstruction du jet soufflerie à l'arrêt (sans vent) ne pose pas de
+ problème en soi.
+ Le champ moyen de masse volumique est obtenu par reconstruction des champs
+ de déplacements moyennés sur 900 images.
+ Le jet débitant à 2.5kg/s est présenté en figure .
+ De manière classique, on peut observer la succession de systèmes choc-détente
+ sous la forme de cellules en diamant.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Champ_moyen.tif
+	lyxscale 20
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Analyse des données et stratégie de post traitement
+Analyse des données et stratégie de post-traitement
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body

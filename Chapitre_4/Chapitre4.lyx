@@ -606,7 +606,7 @@ status open
 \begin_inset Graphics
 	filename Images/laser.JPG
 	lyxscale 10
-	width 80text%
+	width 50text%
 
 \end_inset
 
@@ -772,10 +772,6 @@ status open
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -999,8 +995,359 @@ Stratégie de correction
 \begin_layout Standard
 Nous faisons tout d'abord l'hypothèse que le mouchetis a subi un mouvement
  de translation.
- il devrait alors être possible de supprimer ce mouvement en mesurant un
+ Il devrait alors être possible de supprimer ce mouvement en mesurant un
  déplacement moyen dans une zone non perturbée par l'écoulement.
+ Un exemple de traitement est présenté sur la figure..
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si la correction semble bien fonctionner pour la caméra 4, une discontinuité
+ apparait sur la caméra 9.
+ Cette observation implique bien un mouvement du mouchetis mais également
+ des mouvements disjoints des différents éléments qui constitue la veine.
+ La correction précédente est donc insuffisante pour corriger ce type de
+ perturbation.
+\end_layout
+
+\begin_layout Standard
+Nous poussons donc le concept un peu plus loin et choisissons de corriger
+ le mouvement de chaque élément de paroi de manière indépendante.
+ Cela nécessite donc de distinguer 2 zones sur chaque image et de soustraire
+ le mouvement global de chacune des zones.
+ A nouveau (figure ..) la correction améliore le résultat mais elle ne semble
+ pas suffisante: en effet, si on obtient bien une continuité du champ de
+ déplacement hors de l'écoulement, au niveau des cadres, la discontinuité
+ est toujours visible de l'autre coté de l'image sur la sortie du jet.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour analyser ce phénomène plus en détails nous revenons sur les données
+ sans jet.
+ Là aussi le même phénomène apparait: il y a une variabilité des déplacements
+ selon la diagonale de l'image.
+ Cela semble indiquer un mouvement plus complexe qu'un simple translation
+ de la part des éléments de paroi de la veine.
+ Le phénomène présente peu de variations temporelles également.
+ On aurait donc, lors de la montée en Mach un mouvement de corps solide-rigide
+ des différents éléments qui constituent la paroi de la veine.
+ Une analyse approfondie serait nécessaire afin d'analyser les champs de
+ déplacements et de déterminer pour chaque zone le mouvement subi par le
+ mouchetis.
+ 
+\end_layout
+
+\begin_layout Standard
+Néanmoins, une solution peu couteuse a été testée: si l'on considère qu'en
+ moyenne à un Mach donné, le mouvement du mouchetis ne résulte que de la
+ montée en vitesse, pour chaque cas d'étude on peut soustraire aux mesures
+ avec jet les mesures sans jet et retrouver ainsi le déplacement associé
+ au jet lui-même.
+ Cette procédure fonctionne plutôt bien comme on peut le voir sur la figure
+ ..On retrouve désormais une belle structure en forme de 
+\begin_inset Quotes fld
+\end_inset
+
+champignon
+\begin_inset Quotes frd
+\end_inset
+
+ que l'on attendait pour un jet à contre-courant.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cette solution présente toutefois des limites puisque lorsque le jet est
+ à l'arrêt, l'écoulement génère tout de même des effets aéro-optiques dues
+ aux accélérations sur l'intrados et l'extrados de la buse.
+ En soustrayant ces valeurs aux mesures avec le jet on introduit des valeurs
+ erronées dans les champs de déplacements.
+ Pour la suite ces régions ont donc été écartés par un masque.
+ Un autre point surprenant est la dissymétrie présente sur les déplacements
+ verticaux (v).
+ Etant donné qu'en moyenne le jet est axisymétrique on devrait trouver des
+ déplacement verticaux opposés de part et d'autre de l'axe du jet.
+ Bien que ce phénomène ne soit pas compris, nous avons préféré le corriger
+ pour travailler avec des champs symétriques.
+\end_layout
+
+\begin_layout Standard
+A partir de ces champs de déplacements corrigés nous avons pu estimer nos
+ champs de déviations et reconstruire la champ de masse volumique associé
+ à ce point de fonctionnement.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/3-Mach_04_1kg-s.png
+	lyxscale 10
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/4-Mach_04_1kg-s.png
+	lyxscale 10
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/6-Mach_04_1kg-s.png
+	lyxscale 10
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Astigmatisme parasite
+\end_layout
+
+\begin_layout Standard
+Lorsque l'on étudie un écoulement en BOS, en utilisant de manière classique
+ un éclairage non collimaté, il possible que les images présentent de l'astigmat
+isme parasite (figure).
+ En effet, à la traversée de forts gradients, les déviations subies par
+ les rayons lumineux peuvent être si importantes que les rayons ne focalisent
+ plus en un point sur le CCD, générant un flou parasite d'astigmatisme.
+ Ce phénomène qui sera étudié plus en détail dans le chapitre suivant est
+ d'autant plus important que les gradients d'indice optique sont élevés,
+ que le trajet du rayon à travers l'écoulement est important et que le système
+ est sensible.
+ Notre configuration à S1MA est loin d'être optimale puisqu'en collant les
+ mouchetis à 4m de l'écoulement, sur les parois, nous avons une grande sensibili
+té.
+ C'est une caractéristique pour l'étude de phénomène de très faible échelle
+ mais pour l'analyse d'un écoulement compressible cela pose problème.
+ Dans un environnement soufflerie comme ici, le mouchetis ne peut pas être
+ rapproché de l'écoulement pour mitiger les effets d'astigmatisme.
+ En fin de campagne d'essai nous avons réalisé des mesures complémentaires
+ en BOS 2D en regroupant les différents points d'éclairage sur le même panneau
+ de mouchetis (figure.).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Conclusion
+\end_layout
+
+\begin_layout Plain Layout
+Pour la première fois la BOS 3D a été déployé en soufflerie industrielle
+ avec succès.
+ 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

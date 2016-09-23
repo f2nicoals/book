@@ -175,13 +175,10 @@ es sont passés à S1MA, comme le concorde, le Rafale, l'A380 ou l'A400M.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -195,7 +192,7 @@ status open
 \begin_inset Graphics
 	filename Images/S1MA.png
 	lyxscale 50
-	width 80text%
+	width 40text%
 
 \end_inset
 
@@ -224,25 +221,10 @@ name "fig:S1MA"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename Images/A380.jpg
 	lyxscale 50
-	width 80text%
+	width 40text%
 
 \end_inset
 
@@ -254,7 +236,7 @@ Maquette A380 montée sur un dard en Z issu du tripode.
  
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:A380"
+name "fig:A380-1"
 
 \end_inset
 
@@ -267,12 +249,7 @@ name "fig:A380"
 \end_layout
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -536,7 +513,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/veine3D.png
+	filename Images/veine3D-2.png
 	lyxscale 50
 	width 80text%
 
@@ -774,10 +751,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/bulles.JPG
@@ -844,7 +817,7 @@ La reconstruction du jet soufflerie à l'arrêt (sans vent) ne pose pas de
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1318,7 +1291,64 @@ isme parasite (figure).
  En effet, à la traversée de forts gradients, les déviations subies par
  les rayons lumineux peuvent être si importantes que les rayons ne focalisent
  plus en un point sur le CCD, générant un flou parasite d'astigmatisme.
- Ce phénomène qui sera étudié plus en détail dans le chapitre suivant est
+ Ceci est visible sur les images brutes comme présenté en figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:CGBOS:astigmatisme"
+
+\end_inset
+
+ où l'on voit la sortie du jet à 3kg/s, soufflerie à l'arrêt.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/M0d0_Q3d0_detail.tif
+	lyxscale 50
+	width 80text%
+	rotateAngle 180
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Astigmatisme parasite visible sur une image brute de la sortie du jet simple
+ buse, soufflerie arrêtée, débit de 3kg/s.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:CGBOS:astigmatisme"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ce phénomène qui sera étudié plus en détail dans le chapitre suivant est
  d'autant plus important que les gradients d'indice optique sont élevés,
  que le trajet du rayon à travers l'écoulement est important et que le système
  est sensible.
@@ -1328,25 +1358,59 @@ té.
  C'est une caractéristique pour l'étude de phénomène de très faible échelle
  mais pour l'analyse d'un écoulement compressible cela pose problème.
  Dans un environnement soufflerie comme ici, le mouchetis ne peut pas être
- rapprocher de l'écoulement pour mitiger les effets d'astigmatisme.
+ rapproché de l'écoulement pour mitiger les effets d'astigmatisme.
  En fin de campagne d'essai nous avons réalisé des mesures complémentaires
  en BOS 2D en regroupant les différents points d'éclairage sur le même panneau
- de mouchetis.
+ de mouchetis (figure.).
  
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
+\begin_layout Section
 Conclusion
 \end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
 
 \begin_layout Plain Layout
 Pour la première fois la BOS 3D a été déployé en soufflerie industrielle
  avec succès.
+ Ce type d'environnement pose un certains nombre de problème pour des mesures
+ optiques qui nécessite un alignement précis.
+ Néanmoins nous avons pu démontrer la faisabilité de la mesure BOS 3D dans
+ ce type d'installation.
+ Deux aspects spécifiques émergent de cette campagne: le premier concerne
+ la stabilité du mouchetis vis à vis de la caméra.
+ Comme on l'a vu, ici le mouchetis est affecté par des mouvement complexes
+ des différents éléments de la soufflerie.
+ La correction de ces mouvements est essentielle pour parvenir à une mesure
+ fiable de l'écoulement.
+ Même si notre procédure basée sur les mesure à Mach donné sans le jet permetten
+t de corriger en bonne partie les images, elle demeure valides que si le
+ champ n'est pas perturbé par une maquette.
+ De plus, si ce mouvement global représentait la plus grande perturbation
+ dans un premier temps, une fois corrigé, les mouvements du second ordre
+ dus aux vibrations pourraient avérés non négligeables.
  
+\end_layout
+
+\begin_layout Plain Layout
+La seconde difficulté est lié à la bonne capture de la dynamique de l'écoulement.
+ Cela est ici plus complexe car nous n'avons pas de choix quant à la position
+ des mouchetis.
+ La sensibilité étant imposée, nous devons nous accommoder de l'astigmatisme
+ parasite qui est généré.
 \end_layout
 
 \end_inset

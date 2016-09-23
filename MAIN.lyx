@@ -226,6 +226,7 @@ Chapitre_4/Chapitre4.lyx
 \justification true
 \use_refstyle 1
 \notefontcolor #cc0003
+\boxbgcolor #cacbcb
 \index Index
 \shortcut idx
 \color #008000

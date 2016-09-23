@@ -536,7 +536,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/veine3D.png
+	filename Images/veine3D-2.png
 	lyxscale 50
 	width 80text%
 
@@ -840,7 +840,7 @@ La reconstruction du jet soufflerie à l'arrêt (sans vent) ne pose pas de
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1342,6 +1342,19 @@ Conclusion
 \begin_layout Plain Layout
 Pour la première fois la BOS 3D a été déployé en soufflerie industrielle
  avec succès.
+ Ce type d'environnement pose un certains nombre de problème pour des mesures
+ optiques qui nécessite un alignement précis.
+ Néanmoins nous avons pu démontrer la faisabilité de la mesure BOS 3D dans
+ ce type d'installation.
+ Deux aspects spécifiques émergent de cette campagne: le premier concerne
+ la stabilité du mouchetis vis à vis de la caméra.
+ Comme on l'a vu, ici le mouchetis est affecté par des mouvement complexes
+ des différents éléments de la soufflerie.
+ La correction de ces mouvements est essentielle pour parvenir à une mesure
+ fiable de l'écoulement.
+ Même si notre procédure basée sur les mesure à Mach donné sans le jet permetten
+t de corriger en bonne partie les images, elle demeure valides que si le
+ champ n'est pas perturbé par une maquette.
  
 \end_layout
 

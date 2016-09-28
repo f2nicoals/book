@@ -309,7 +309,7 @@ status open
 \begin_inset Graphics
 	filename Images/setup2.jpg
 	lyxscale 10
-	width 80text%
+	width 100text%
 
 \end_inset
 
@@ -320,6 +320,17 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Montage BOS 3D dans la veine de S1MA.
+ Les caméras sont disposées par paires derrières les hublots et font face
+ aux panneaux de mouchetis collés sur les parois.
+ Les mouchetis sont éclairés au moyen de différents illuminateurs laser.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:montage_BOS3D"
+
+\end_inset
+
 
 \end_layout
 
@@ -343,8 +354,15 @@ L'objectif ici n'était pas tant d'étudier un phénomène physique particulier
  Pour des questions de simplicité, nous avons étudié un jet à contre-courant.
  En effet, si ce choix peut sembler peu commun, il conciliait notre contrainte
  liée à l'absence de maquette dans le champ de vue, et les contrainte soufflerie
-s qui imposaient un montage à partir du tripode, situé en aval de la veine
- d'essai.
+s qui imposaient un montage à partir du tripode (visible en orange sur la
+ figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:montage_BOS3D"
+
+\end_inset
+
+), situé en aval de la veine d'essai.
 \end_layout
 
 \begin_layout Standard
@@ -372,6 +390,137 @@ Schéma buses
 \begin_inset Float figure
 wide false
 sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/simpleBuse_C.pdf
+	lyxscale 20
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/simpleBuse_F.pdf
+	lyxscale 20
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Buse1.JPG
+	lyxscale 10
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
 status collapsed
 
 \begin_layout Plain Layout
@@ -382,15 +531,11 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/Buse1.JPG
-	lyxscale 10
-	width 40text%
+	filename Images/doubleBuse_C.pdf
+	lyxscale 20
+	width 30text%
 
 \end_inset
 
@@ -403,10 +548,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -419,15 +560,40 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/doubleBuse_F.pdf
+	lyxscale 20
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/Buse2.JPG
 	lyxscale 10
-	width 40text%
+	width 30text%
 
 \end_inset
 
@@ -443,10 +609,6 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -458,10 +620,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -502,7 +660,7 @@ status open
 \begin_inset Graphics
 	filename Images/plateau.JPG
 	lyxscale 20
-	width 80text%
+	width 60text%
 
 \end_inset
 
@@ -510,7 +668,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Montage des caméras BOS sur plateaux amortis par cylindre-blocs.
+Montage des caméras BOS sur plateaux amortis 
+\shape italic
+Vibrachoc
+\shape default
+.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -927,7 +1089,14 @@ La reconstruction du jet soufflerie à l'arrêt (sans vent) ne pose pas de
  problème en soi.
  Le champ moyen de masse volumique est obtenu par reconstruction des champs
  de déplacements moyennés sur 900 images.
- Le jet débitant à 2.5kg/s est présenté en figure .
+ Le jet débitant à 2.5kg/s est présenté en figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:sans_vent"
+
+\end_inset
+
+.
  De manière classique, on peut observer la succession de systèmes choc-détente
  sous la forme de cellules en diamant.
  
@@ -937,7 +1106,7 @@ La reconstruction du jet soufflerie à l'arrêt (sans vent) ne pose pas de
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -952,6 +1121,15 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Champ de masse volumique reconstruit pour un débit de 2.5.kg/s et un Mach
+ nul.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:sans_vent"
+
+\end_inset
+
 
 \end_layout
 

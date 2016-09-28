@@ -309,7 +309,7 @@ status open
 \begin_inset Graphics
 	filename Images/setup2.jpg
 	lyxscale 10
-	width 80text%
+	width 100text%
 
 \end_inset
 
@@ -320,6 +320,17 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Montage BOS 3D dans la veine de S1MA.
+ Les caméras sont disposées par paires derrières les hublots et font face
+ aux panneaux de mouchetis collés sur les parois.
+ Les mouchetis sont éclairés au moyen de différents illuminateurs laser.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:montage_BOS3D"
+
+\end_inset
+
 
 \end_layout
 
@@ -343,8 +354,15 @@ L'objectif ici n'était pas tant d'étudier un phénomène physique particulier
  Pour des questions de simplicité, nous avons étudié un jet à contre-courant.
  En effet, si ce choix peut sembler peu commun, il conciliait notre contrainte
  liée à l'absence de maquette dans le champ de vue, et les contrainte soufflerie
-s qui imposaient un montage à partir du tripode, situé en aval de la veine
- d'essai.
+s qui imposaient un montage à partir du tripode (visible en orange sur la
+ figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:montage_BOS3D"
+
+\end_inset
+
+), situé en aval de la veine d'essai.
 \end_layout
 
 \begin_layout Standard
@@ -502,7 +520,7 @@ status open
 \begin_inset Graphics
 	filename Images/plateau.JPG
 	lyxscale 20
-	width 80text%
+	width 60text%
 
 \end_inset
 

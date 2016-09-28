@@ -24,6 +24,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -167,9 +168,16 @@ it l'énergie hydraulique issue d'une conduite forcée pour entrainer directemen
 \begin_layout Standard
 Depuis son entrée en service en 1950, la plus part des grand projets aéronautiqu
 es sont passés à S1MA, comme le concorde, le Rafale, l'A380 ou l'A400M.
- Afin d'optimiser les essais, 3 chariots interchangeables cohabitent: pendant
- que des essais ont lieu avec un des chariot, l'essai suivant peut être
- préparé hors du circuit.
+ Afin d'optimiser les essais, 3 chariots interchangeables cohabitent (figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:schema"
+
+\end_inset
+
+): pendant que des essais ont lieu avec un des chariot, l'essai suivant
+ peut être préparé hors du circuit.
  Le chariot sera finalement inséré dans le circuit pour les essais.
 \end_layout
 
@@ -206,7 +214,7 @@ status open
 Circuit aérodynamique de S1MA 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:S1MA"
+name "fig:S1MA:schema"
 
 \end_inset
 
@@ -685,6 +693,52 @@ Matrice d'essais
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/matrice.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Norme du champ de déplacement pour différents débit d'air au niveau de la
+ buse: Q=1kg/s, Q=1.5kg/s, Q=2kg/s, Q=2.5kg/s.
+ Soufflerie à l'arrêt.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:matrice"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Il faut noter que lors de la première rotation lorsque l'on a atteint Mach
  0.7, des bulles ses ont formées sous certains panneaux de mouchetis.
  L'un d'eux s'est même arraché.
@@ -854,7 +908,149 @@ Un premier regard sur les champs de déplacements à Mach 0.7 et pour un débit
  de Q=2kg/s (figure) illustre clairement le problème rencontré: les déplacements
  lié à la présence du jet à contre-courant sont complètement noyés dans
  bruit qui affecte l'ensemble de l'image.
- Ces résultats nous laissent à penser dans un premier temps que les vibrations
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/brut_U.png
+	lyxscale 20
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/brut_V.png
+	lyxscale 20
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/brut_N.png
+	lyxscale 20
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ces résultats nous laissent à penser dans un premier temps que les vibrations
  ont eu un impact plus négatif que prévu et qu'elles ont largement affectées
  la mesure.
  La déformation de la veine sous la charge aérodynamique ou encore la dilatation
@@ -929,8 +1125,67 @@ status open
 \begin_layout Standard
 Avec seulement l'écoulement de la soufflerie, on devrait s'attendre à obtenir
  des déplacements nuls, le milieu étant homogène.
- L'évolution des déplacements est présenté en figure .
- Ceux-ci augmentent fortement au fur et à mesure que le Mach devient important
+ L'évolution des déplacements est présenté en figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:N_mach"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/N_Mach.pdf
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Evolution du mouvement des mouchetis en fonction du Mach soufflerie.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:N_mach"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ceux-ci augmentent fortement au fur et à mesure que le Mach devient important
  pour atteindre un maximum à Mach 0..7 de 17 pixels ! Au contraire, les écart-type
 s restent modérés avec une valeur maximale de 2 pixels.
  On peut déjà déduire que la perturbation majeure n'est pas liée aux vibrations.
@@ -984,10 +1239,21 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/simple_U.png
+	lyxscale 20
+	width 30text%
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -999,7 +1265,75 @@ status collapsed
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/simple_V.png
+	lyxscale 20
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/simple_N.png
+	lyxscale 20
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1036,10 +1370,21 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Double_U.png
+	lyxscale 20
+	width 30text%
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1051,7 +1396,75 @@ status collapsed
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Double_V.png
+	lyxscale 20
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Double_N.png
+	lyxscale 20
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1101,10 +1514,21 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Soustraction_Trasnlation_U.png
+	lyxscale 20
+	width 30text%
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1116,7 +1540,75 @@ status collapsed
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Soustraction_Trasnlation_V.png
+	lyxscale 20
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Soustraction_Trasnlation_N.png
+	lyxscale 20
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1130,14 +1622,26 @@ Cette solution présente toutefois des limites puisque lorsque le jet est
  à l'arrêt, l'écoulement génère tout de même des effets aéro-optiques dues
  aux accélérations sur l'intrados et l'extrados de la buse.
  En soustrayant ces valeurs aux mesures avec le jet on introduit des valeurs
- erronées dans les champs de déplacements.
+ erronées dans les champs de déplacements qui sont visibles sur la partie
+ gauche de la figure.
+ .
  Pour la suite ces régions ont donc été écartés par un masque.
- Un autre point surprenant est la dissymétrie présente sur les déplacements
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Un autre point surprenant est la dissymétrie présente sur les déplacements
  verticaux (v).
  Etant donné qu'en moyenne le jet est axisymétrique on devrait trouver des
  déplacement verticaux opposés de part et d'autre de l'axe du jet.
  Bien que ce phénomène ne soit pas compris, nous avons préféré le corriger
  pour travailler avec des champs symétriques.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1151,10 +1655,6 @@ A partir de ces champs de déplacements corrigés nous avons pu estimer nos
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -1294,7 +1794,7 @@ isme parasite (figure).
  Ceci est visible sur les images brutes comme présenté en figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:biblio:CGBOS:astigmatisme"
+reference "fig:S1MA:astigmatisme"
 
 \end_inset
 
@@ -1326,7 +1826,7 @@ Astigmatisme parasite visible sur une image brute de la sortie du jet simple
  
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:biblio:CGBOS:astigmatisme"
+name "fig:S1MA:astigmatisme"
 
 \end_inset
 

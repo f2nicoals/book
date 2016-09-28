@@ -186,7 +186,7 @@ reference "fig:S1MA:schema"
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -200,7 +200,7 @@ status open
 \begin_inset Graphics
 	filename Images/S1MA.png
 	lyxscale 50
-	width 40text%
+	width 50text%
 
 \end_inset
 
@@ -229,10 +229,21 @@ name "fig:S1MA:schema"
 \end_inset
 
 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Images/A380.jpg
 	lyxscale 50
-	width 40text%
+	width 50text%
 
 \end_inset
 
@@ -248,6 +259,15 @@ name "fig:A380-1"
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -287,7 +307,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/setup.JPG
+	filename Images/setup2.jpg
 	lyxscale 10
 	width 80text%
 
@@ -352,9 +372,10 @@ Schéma buses
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -463,10 +484,55 @@ Comme nous l'avons vu jusque là la disposition optimale de caméras pour
  la petite taille de nos caméras nous ont permis de les disposer autour
  de la veine sans trop de difficultés.
  Chacune de nos caméra était équipée d'un objectif de 70 mm afin de viser
- un volume d'une cinquantaine de cm en amont de la buse.
+ un volume cubique d'une cinquantaine de cm de coté en amont de la buse.
  Pour atténuer au maximum les phénomènes de vibrations, les caméra ont été
- installées sur des plateaux amortis.
+ installées sur des plateaux amortis comme on peut le voir sur la figure
+ ..
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/plateau.JPG
+	lyxscale 20
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Montage des caméras BOS sur plateaux amortis par cylindre-blocs.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:plateau"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -516,7 +582,7 @@ citation
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -703,7 +769,7 @@ status open
 \begin_inset Graphics
 	filename Images/matrice.png
 	lyxscale 50
-	width 80text%
+	width 100text%
 
 \end_inset
 
@@ -763,7 +829,7 @@ bord d'attaque
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -918,10 +984,6 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
@@ -936,7 +998,7 @@ status open
 \begin_inset Graphics
 	filename Images/brut_U.png
 	lyxscale 20
-	width 30text%
+	width 33text%
 
 \end_inset
 
@@ -969,7 +1031,7 @@ status open
 \begin_inset Graphics
 	filename Images/brut_V.png
 	lyxscale 20
-	width 30text%
+	width 33text%
 
 \end_inset
 
@@ -1006,7 +1068,7 @@ status open
 \begin_inset Graphics
 	filename Images/brut_N.png
 	lyxscale 20
-	width 30text%
+	width 33text%
 
 \end_inset
 
@@ -1037,10 +1099,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1236,20 +1294,25 @@ Nous faisons tout d'abord l'hypothèse que le mouchetis a subi un mouvement
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/simple_U.png
 	lyxscale 20
-	width 30text%
+	width 33text%
 
 \end_inset
 
@@ -1262,6 +1325,10 @@ status open
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1278,7 +1345,7 @@ status open
 \begin_inset Graphics
 	filename Images/simple_V.png
 	lyxscale 20
-	width 30text%
+	width 33text%
 
 \end_inset
 
@@ -1307,7 +1374,7 @@ status open
 \begin_inset Graphics
 	filename Images/simple_N.png
 	lyxscale 20
-	width 30text%
+	width 33text%
 
 \end_inset
 
@@ -1329,6 +1396,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Champs de déplacement après correction par mouvement de translation.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:simple"
+
+\end_inset
+
 
 \end_layout
 
@@ -1367,9 +1442,10 @@ Nous poussons donc le concept un peu plus loin et choisissons de corriger
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -1380,7 +1456,7 @@ status open
 \begin_inset Graphics
 	filename Images/Double_U.png
 	lyxscale 20
-	width 30text%
+	width 33text%
 
 \end_inset
 
@@ -1409,7 +1485,7 @@ status open
 \begin_inset Graphics
 	filename Images/Double_V.png
 	lyxscale 20
-	width 30text%
+	width 33text%
 
 \end_inset
 
@@ -1438,7 +1514,7 @@ status open
 \begin_inset Graphics
 	filename Images/Double_N.png
 	lyxscale 20
-	width 30text%
+	width 33text%
 
 \end_inset
 
@@ -1460,6 +1536,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Champs de déplacement après correction par zones.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:double"
+
+\end_inset
+
 
 \end_layout
 
@@ -1511,9 +1595,10 @@ champignon
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -1524,7 +1609,7 @@ status open
 \begin_inset Graphics
 	filename Images/Soustraction_Trasnlation_U.png
 	lyxscale 20
-	width 30text%
+	width 33text%
 
 \end_inset
 
@@ -1553,7 +1638,7 @@ status open
 \begin_inset Graphics
 	filename Images/Soustraction_Trasnlation_V.png
 	lyxscale 20
-	width 30text%
+	width 33text%
 
 \end_inset
 
@@ -1582,7 +1667,7 @@ status open
 \begin_inset Graphics
 	filename Images/Soustraction_Trasnlation_N.png
 	lyxscale 20
-	width 30text%
+	width 33text%
 
 \end_inset
 
@@ -1604,6 +1689,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Champs de déplacement après correction à partir des images acquises à débit
+ nul.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:soustraction"
+
+\end_inset
+
 
 \end_layout
 
@@ -1622,14 +1716,26 @@ Cette solution présente toutefois des limites puisque lorsque le jet est
  à l'arrêt, l'écoulement génère tout de même des effets aéro-optiques dues
  aux accélérations sur l'intrados et l'extrados de la buse.
  En soustrayant ces valeurs aux mesures avec le jet on introduit des valeurs
- erronées dans les champs de déplacements.
+ erronées dans les champs de déplacements qui sont visibles sur la partie
+ gauche de la figure.
+ .
  Pour la suite ces régions ont donc été écartés par un masque.
- Un autre point surprenant est la dissymétrie présente sur les déplacements
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Un autre point surprenant est la dissymétrie présente sur les déplacements
  verticaux (v).
  Etant donné qu'en moyenne le jet est axisymétrique on devrait trouver des
  déplacement verticaux opposés de part et d'autre de l'axe du jet.
  Bien que ce phénomène ne soit pas compris, nous avons préféré le corriger
  pour travailler avec des champs symétriques.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1642,9 +1748,10 @@ A partir de ces champs de déplacements corrigés nous avons pu estimer nos
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -1659,7 +1766,7 @@ status open
 \begin_inset Graphics
 	filename Images/3-Mach_04_1kg-s.png
 	lyxscale 10
-	width 30text%
+	width 33text%
 
 \end_inset
 
@@ -1692,7 +1799,7 @@ status open
 \begin_inset Graphics
 	filename Images/4-Mach_04_1kg-s.png
 	lyxscale 10
-	width 30text%
+	width 33text%
 
 \end_inset
 
@@ -1725,7 +1832,7 @@ status open
 \begin_inset Graphics
 	filename Images/6-Mach_04_1kg-s.png
 	lyxscale 10
-	width 30text%
+	width 33text%
 
 \end_inset
 

@@ -159,15 +159,27 @@ it l'énergie hydraulique issue d'une conduite forcée pour entrainer directemen
  les deux ventilateurs contrarotatifs.
  C'est une retenue d'eau située 800m plus haut qui alimente la soufflerie
  et permet d'atteindre Mach 1 en veine.
- Avec sa veine de 8m de diamètre, son circuit de près de 400m de long et
- une hauteur de 24m à son diamètre le plus large, S1MA fait partie des plus
- grande soufflerie au monde.
+ Avec sa veine de 
+\begin_inset Formula $8\, m$
+\end_inset
+
+ de diamètre, son circuit de près de 
+\begin_inset Formula $400\, m$
+\end_inset
+
+ de long et une hauteur de 
+\begin_inset Formula $24\, m$
+\end_inset
+
+ à son diamètre le plus large, S1MA fait partie des plus grande soufflerie
+ au monde.
  
 \end_layout
 
 \begin_layout Standard
 Depuis son entrée en service en 1950, la plus part des grand projets aéronautiqu
-es sont passés à S1MA, comme le concorde, le Rafale, l'A380 ou l'A400M.
+es français sont passés à S1MA, comme le concorde, le Rafale, l'A380 ou
+ l'A400M.
  Afin d'optimiser les essais, 3 chariots interchangeables cohabitent (figure
  
 \begin_inset CommandInset ref
@@ -186,7 +198,7 @@ reference "fig:S1MA:schema"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -211,7 +223,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Circuit aérodynamique de S1MA 
+Illustration du circuit aérodynamique de S1MA et des 3 chariots interchangeables.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:S1MA:schema"
@@ -251,7 +263,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Maquette A380 montée sur un dard en Z issu du tripode.
+Maquette de l'A380 montée sur un dard en Z issu du tripode.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -295,7 +307,7 @@ name "fig:A380-1"
 \end_layout
 
 \begin_layout Section
-Mise en œuvre de la BOS: setup + acquisition
+Mise en œuvre de la BOS à S1MA
 \end_layout
 
 \begin_layout Standard
@@ -390,7 +402,7 @@ Schéma buses
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -400,15 +412,81 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/simpleBuse_C.pdf
+	lyxscale 20
+	height 25text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/simpleBuse_F.pdf
+	lyxscale 20
+	height 25text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/Buse1.JPG
 	lyxscale 10
-	width 40text%
+	width 30text%
 
 \end_inset
 
@@ -425,6 +503,75 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Buse simple de 
+\begin_inset Formula $80\, mm$
+\end_inset
+
+ de diamètre.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:simple_buse"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/doubleBuse_C.pdf
+	lyxscale 20
+	height 25text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -437,15 +584,40 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/doubleBuse_F.pdf
+	lyxscale 20
+	height 25text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/Buse2.JPG
 	lyxscale 10
-	width 40text%
+	width 30text%
 
 \end_inset
 
@@ -461,25 +633,29 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Double buse de 
+\begin_inset Formula $56.6\, mm$
+\end_inset
 
-\end_layout
+ de diamètre.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:double_buse"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
@@ -520,7 +696,7 @@ status open
 \begin_inset Graphics
 	filename Images/plateau.JPG
 	lyxscale 20
-	width 60text%
+	width 50text%
 
 \end_inset
 
@@ -581,7 +757,7 @@ de mouchetis ont été nécessaires.
 \end_layout
 
 \begin_layout Standard
-Enfin, des marqueurs de type april tags 
+Enfin, des marqueurs de type AprilTags 
 \begin_inset Note Note
 status open
 
@@ -604,14 +780,14 @@ citation
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/veine3D-2.png
 	lyxscale 50
-	width 80text%
+	width 100text%
 
 \end_inset
 
@@ -622,6 +798,14 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Modèle 3D de la veine de S1MA obtenu par stéréoscopie.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:veine3D"
+
+\end_inset
+
 
 \end_layout
 
@@ -651,9 +835,15 @@ Une fois les caméras et les mouchetis installé, le système d'éclairage a
  associés à des lentilles divergentes.
  Pour pouvoir couvrir l'ensemble des mouchetis nous avons utilisé une table
  de séparation en 8 faisceaux couplée à un laser twins BBSl de 400mJ.
- Le laser et sa table de séparation étaient installés dans un local climatisé
- au-dessus de la soufflerie tandis que de nouveaux guides de lumières de
- 5 et 10m 
+ Le laser et sa table de séparation visibles en figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:laser"
+
+\end_inset
+
+étaient installés dans un local climatisé au-dessus de la soufflerie tandis
+ que de nouveaux guides de lumières de 5 et 10m 
 \begin_inset Note Note
 status open
 
@@ -687,6 +877,17 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Platine de séparation du faisceau laser.
+ Chacun des 8 faisceaux résultants est conduit via un guide de lumière liquide
+ jusqu'au hublot où une lentille divergente permet d'étaler la lumière sur
+ l'ensemble du panneau de mouchetis.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:laser"
+
+\end_inset
+
 
 \end_layout
 
@@ -827,16 +1028,13 @@ name "fig:S1MA:matrice"
 \end_layout
 
 \begin_layout Standard
-Il faut noter que lors de la première rotation lorsque l'on a atteint Mach
+Il faut noter que lors de la première rotation, lorsque l'on a atteint Mach
  0.7, des bulles ses ont formées sous certains panneaux de mouchetis.
  L'un d'eux s'est même arraché.
  Il est apparu que de l'air passait par des jointures ou des pas de vis
  situés sous le mouchetis lorsque la soufflerie est en fonctionnement, et
  donc en dépression.
-\end_layout
-
-\begin_layout Standard
-Ces trous ont donc été bouchés avec du scotch aluminium et le 
+ Ces trous ont donc été bouchés avec du scotch aluminium et le 
 \begin_inset Quotes fld
 \end_inset
 
@@ -851,9 +1049,10 @@ bord d'attaque
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -923,6 +1122,19 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Panneaux de mouchetis collés sur la veine avec bords d'attaque renforcé
+ par du scotch aluminium.
+ On distingue également les marqueurs AprilTags utilisés pour la reconstruction
+ stéréoscopique de la veine.
+ Les dommages causés par l'apparition de bulles au cours de s premiers essais
+ est clairement visible a posteriori sur la photo de droite.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:mouchetis"
+
+\end_inset
+
 
 \end_layout
 
@@ -1986,8 +2198,11 @@ Ce phénomène qui sera étudié plus en détail dans le chapitre suivant est
  que le trajet du rayon à travers l'écoulement est important et que le système
  est sensible.
  Notre configuration à S1MA est loin d'être optimale puisqu'en collant les
- mouchetis à 4m de l'écoulement, sur les parois, nous avons une grande sensibili
-té.
+ mouchetis à 
+\begin_inset Formula $4\, m$
+\end_inset
+
+ de l'écoulement, sur les parois, nous avons une grande sensibilité.
  C'est une caractéristique pour l'étude de phénomène de très faible échelle
  mais pour l'analyse d'un écoulement compressible cela pose problème.
  Dans un environnement soufflerie comme ici, le mouchetis ne peut pas être

@@ -1291,7 +1291,14 @@ La reconstruction du jet soufflerie à l'arrêt (sans vent) ne pose pas de
 \begin_inset Formula $900\, images$
 \end_inset
 
- (figure).
+ (figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:deplacement_moyen"
+
+\end_inset
+
+).
  Le jet débitant à 
 \begin_inset Formula $2.5\, kg/s$
 \end_inset
@@ -1327,10 +1334,11 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Images/Norme_moyenne.png
-	lyxscale 50
-	width 40text%
+	lyxscale 30
+	height 25text%
 
 \end_inset
 
@@ -1338,6 +1346,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:deplacement_moyen"
+
+\end_inset
+
 
 \end_layout
 
@@ -1352,7 +1366,7 @@ status open
 
 \end_inset
 
-
+ 
 \begin_inset Float figure
 wide false
 sideways false
@@ -1367,7 +1381,7 @@ status open
 \begin_inset Graphics
 	filename Images/Champ_moyen.tif
 	lyxscale 20
-	width 80text%
+	height 25text%
 
 \end_inset
 
@@ -1375,27 +1389,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Champ de masse volumique reconstruit pour un débit de 2.5.kg/s et un Mach
- nul.
- 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:S1MA:sans_vent"
@@ -1403,6 +1396,26 @@ name "fig:S1MA:sans_vent"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+a)Champ de déplacement moyenné sur 900 images.
+ b)Champ de masse volumique reconstruit pour un débit de 2.5.kg/s et un Mach
+ nul.
 \end_layout
 
 \end_inset
@@ -1548,7 +1561,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Champs de déplacement 
+Champs de déplacement bruts obtenus pour la camera 08.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:deplacements_bruts"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1755,11 +1776,39 @@ Stratégie de correction
 \end_layout
 
 \begin_layout Standard
-Nous faisons tout d'abord l'hypothèse que le mouchetis a subi un mouvement
- de translation.
+Dans la suite nous concentrons sur un point de fonctionnement particulier
+ : débit de 
+\begin_inset Formula $1\, kg/s$
+\end_inset
+
+ et 
+\begin_inset Formula $Mach=$
+\end_inset
+
+0.4.
+ Ce choix est motivé par deux raisons principales.
+ Tout d'abord, le Mach n'est pas trop élevé, ce qui limite l'amplitude de
+ la perturbation.
+ De plus, en étudiant ce cas à faible débit (vis à vis de l'écoulement amont),
+ la distance de pénétration du jet reste relativement faible.
+ Ceci garantit la présence de zone non perturbée par l'écoulement en dehors
+ du jet.
+ 
+\end_layout
+
+\begin_layout Standard
+Pour mettre en place notre correction, nous faisons tout d'abord l'hypothèse
+ que le mouchetis a subi un mouvement de translation.
  Il devrait alors être possible de supprimer ce mouvement en mesurant un
  déplacement moyen dans une zone non perturbée par l'écoulement.
- Un exemple de traitement est présenté sur la figure..
+ Un exemple de traitement est présenté sur la figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:simple"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1903,10 +1952,17 @@ Nous poussons donc le concept un peu plus loin et choisissons de corriger
  le mouvement de chaque élément de paroi de manière indépendante.
  Cela nécessite donc de distinguer 2 zones sur chaque image et de soustraire
  le mouvement global de chacune des zones.
- A nouveau (figure ..) la correction améliore le résultat mais elle ne semble
- pas suffisante: en effet, si on obtient bien une continuité du champ de
- déplacement hors de l'écoulement, au niveau des cadres, la discontinuité
- est toujours visible de l'autre coté de l'image sur la sortie du jet.
+ A nouveau (figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:double"
+
+\end_inset
+
+.) la correction améliore le résultat mais elle ne semble pas suffisante:
+ en effet, si on obtient bien une continuité du champ de déplacement hors
+ de l'écoulement, au niveau des cadres, la discontinuité est toujours visible
+ de l'autre coté de l'image sur la sortie du jet.
  
 \end_layout
 
@@ -2052,7 +2108,15 @@ Néanmoins, une solution peu couteuse a été testée: si l'on considère qu'en
  avec jet les mesures sans jet et retrouver ainsi le déplacement associé
  au jet lui-même.
  Cette procédure fonctionne plutôt bien comme on peut le voir sur la figure
- ..On retrouve désormais une belle structure en forme de 
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:soustraction"
+
+\end_inset
+
+.
+ On retrouve désormais une belle structure en forme de 
 \begin_inset Quotes fld
 \end_inset
 
@@ -2220,7 +2284,7 @@ A partir de ces champs de déplacements corrigés nous avons pu estimer nos
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2355,6 +2419,70 @@ name "fig:S1MA:M0d4_Q1d0"
 
 \end_layout
 
+\begin_layout Subsection
+Mesure de grand champs par BOS 3D
+\end_layout
+
+\begin_layout Standard
+Bien qu'il présente une belle topologie le résultat ci-dessus (figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:M0d4_Q1d0"
+
+\end_inset
+
+) a fait surgir quelques problématiques lors du processus de reconstruction
+ qu'il nous apparait intéressant d'expliciter ici.
+ contrairement aux mesure faites jusqu'à présent (cas sans vent, F2) la
+ forme de l'écoulement étudié est ici relativement importante vis à vis
+ du champ de vue caméra et pour certains points de vue, les bords du champignon
+ sont coupés.
+ Cela n'est pas sans conséquence pour le processus de reconstruction.
+ Comme on peut le voir en figure.
+ Si le masque 3D est construit par combinaison du champ de vue des 12 caméras,
+ il sera très restrictif et nuira à la reconstruction.
+ En effet rayon venant d'une caméra située au-dessus du jet ne verra pas
+ d'écoulement jusqu'à rencontrer le bord du masque ce qui est en contradiction
+ avec la mesure effectuée puisque l'écoulement est plus grand que le masque.
+ On peut ici 
+\begin_inset Quotes fld
+\end_inset
+
+rattraper
+\begin_inset Quotes frd
+\end_inset
+
+ le problème en relâchant la contrainte sur le masque  3D et en le construisant
+ sur la base de la région commune à moins de 12 caméras (9 ici).
+ Ce choix implique alors la présence de zones de poids différents dans le
+ champ reconstruit, certaines étant moins 
+\begin_inset Quotes fld
+\end_inset
+
+fiables
+\begin_inset Quotes frd
+\end_inset
+
+ car leurs voxels sont affectés par moins de caméras.
+\end_layout
+
+\begin_layout Standard
+Si l'on pousse le raisonnement plus loin, ce problème pose la question de
+ la mesure de grands champs par BOS 3D.
+ Du fait de la nature intégrale de la technique BOS, il apparait nécessaire
+ d'englober l'ensemble de l'écoulement lors de la prise de vue pour pouvoir
+ effectuer une reconstruction.
+ Ceci est réalisable au moyen d'une focale plus courte mais s'accompagne
+ nécessairement par une résolution spatiale plus faible au niveau de l'écoulemen
+t.
+ Une solution pourrait consister à combiner plusieurs caméras au niveau
+ de chaque point de vue afin de couvrir l'ensemble de l'écoulement mais
+ entrainerait nécessairement une variabilité sur le nombre de caméras affectant
+ chaque voxel.
+ Il faudrait alors d'une part veiller à ce que cette variabilité reste fanalyser
+ l'impact de ce volume de poids inégaux dans le processus de reconstruction.
+\end_layout
+
 \begin_layout Section
 Astigmatisme parasite
 \end_layout
@@ -2401,7 +2529,11 @@ status open
 
 \begin_layout Plain Layout
 Astigmatisme parasite visible sur une image brute de la sortie du jet simple
- buse, soufflerie arrêtée, débit de 3kg/s.
+ buse, soufflerie arrêtée, débit de 
+\begin_inset Formula $3\, kg/s$
+\end_inset
+
+.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -2443,7 +2575,149 @@ Ce phénomène qui sera étudié plus en détail dans le chapitre suivant est
  rapproché de l'écoulement pour mitiger les effets d'astigmatisme.
  En fin de campagne d'essai nous avons réalisé des mesures complémentaires
  en BOS 2D en regroupant les différents points d'éclairage sur le même panneau
- de mouchetis (figure.).
+ de mouchetis.
+ Cette configuration nous a permis de travailler avec des caméras ouvertes
+ à 
+\begin_inset Formula $f_{\#}=8$
+\end_inset
+
+.
+ Les champs de déplacements associés à chacune des ouvertures caméras sont
+ présentés ci-dessous (figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:f-number"
+
+\end_inset
+
+).
+ Par rapport au cas à grande ouverture (
+\begin_inset Formula $f_{\#}=2$
+\end_inset
+
+), les nouvelles mesure réalisées à 
+\begin_inset Formula $f_{\#}=8$
+\end_inset
+
+ sont plus détaillées.
+ on parvient également à capter de fines structures très intenses.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Inst_f2_M0.png
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Inst_f8_M0.png
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Champs instantanés de déplacement pour une ouverture de 
+\begin_inset Formula $f_{\#}=2$
+\end_inset
+
+ à gauche et 
+\begin_inset Formula $f_{\#}=8$
+\end_inset
+
+ à droite.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:f-number"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ce résultat préliminaire est intéressant car il apporte un élément de solution
+ aux problématiques d'astigmatisme qui seront étudiées plus largement dans
+ le chapitre suivant.
+ Il permettrait également de dimensionner un futur système d'éclairage adapté
+ à la taille de S1MA.
  
 \end_layout
 
@@ -2468,7 +2742,7 @@ status open
 \begin_layout Plain Layout
 Pour la première fois la BOS 3D a été déployé en soufflerie industrielle
  avec succès.
- Ce type d'environnement pose un certains nombre de problème pour des mesures
+ Ce type d'environnement pose un certains nombre de problèmes pour des mesures
  optiques qui nécessite un alignement précis.
  Néanmoins nous avons pu démontrer la faisabilité de la mesure BOS 3D dans
  ce type d'installation.
@@ -2478,21 +2752,24 @@ Pour la première fois la BOS 3D a été déployé en soufflerie industrielle
  des différents éléments de la soufflerie.
  La correction de ces mouvements est essentielle pour parvenir à une mesure
  fiable de l'écoulement.
- Même si notre procédure basée sur les mesure à Mach donné sans le jet permetten
-t de corriger en bonne partie les images, elle demeure valides que si le
+ Même si notre procédure basée sur les mesure à Mach donné sans le jet permet
+ de corriger en bonne partie les images, elle demeure valides que si le
  champ n'est pas perturbé par une maquette.
  De plus, si ce mouvement global représentait la plus grande perturbation
  dans un premier temps, une fois corrigé, les mouvements du second ordre
- dus aux vibrations pourraient avérés non négligeables.
+ dus aux vibrations pourraient s'avérés non négligeables.
  
 \end_layout
 
 \begin_layout Plain Layout
 La seconde difficulté est lié à la bonne capture de la dynamique de l'écoulement.
- Cela est ici plus complexe car nous n'avons pas de choix quant à la position
- des mouchetis.
- La sensibilité étant imposée, nous devons nous accommoder de l'astigmatisme
+ Cela est plus complexesur une telle installation car nous n'avons pas de
+ choix quant à la position des mouchetis.
+ La sensibilité étant imposée,nous devons nous accommoder de l'astigmatisme
  parasite qui est généré.
+ Une solution qui a été mis en évidence suggère de travailler à plus faible
+ ouverture et nécessite donc de disposer de sources d'éclairage très puissantes.
+ 
 \end_layout
 
 \end_inset

@@ -296,6 +296,24 @@ Mise en œuvre de la BOS à S1MA
 \end_layout
 
 \begin_layout Standard
+L'ensemble du système BOS 3D mis en œuvre à S1MA visible sur la figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:montage_BOS3D"
+
+\end_inset
+
+ s'inspire fortement du montage réalisé à F2.
+ L'évolution majeur concerne l'emploi d'un nouveau switch d'acquisition
+ avec des liaisons en fibre optique à 
+\begin_inset Formula $20\, Gb/s$
+\end_inset
+
+ et le processus d'enregistrement des images.
+ Avec ses liaisons en fibre optiques 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -770,7 +788,7 @@ citation
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1701,7 +1719,7 @@ status open
 \begin_inset Graphics
 	filename Images/N_Mach.pdf
 	lyxscale 50
-	width 80text%
+	width 70text%
 
 \end_inset
 
@@ -2419,7 +2437,7 @@ name "fig:S1MA:M0d4_Q1d0"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Mesure de grand champs par BOS 3D
 \end_layout
 
@@ -2435,15 +2453,82 @@ reference "fig:S1MA:M0d4_Q1d0"
  qu'il nous apparait intéressant d'expliciter ici.
  contrairement aux mesure faites jusqu'à présent (cas sans vent, F2) la
  forme de l'écoulement étudié est ici relativement importante vis à vis
- du champ de vue caméra et pour certains points de vue, les bords du champignon
+ du champ de vue caméra et pour certains points de vue, les bords du 
+\begin_inset Quotes fld
+\end_inset
+
+champignon
+\begin_inset Quotes frd
+\end_inset
+
  sont coupés.
- Cela n'est pas sans conséquence pour le processus de reconstruction.
- Comme on peut le voir en figure.
- Si le masque 3D est construit par combinaison du champ de vue des 12 caméras,
- il sera très restrictif et nuira à la reconstruction.
- En effet rayon venant d'une caméra située au-dessus du jet ne verra pas
- d'écoulement jusqu'à rencontrer le bord du masque ce qui est en contradiction
- avec la mesure effectuée puisque l'écoulement est plus grand que le masque.
+ Cela n'est pas sans conséquence pour le processus de reconstruction comme
+ nous allons l'expliquer à partir de la figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:grand_champ"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/grand_champ.pdf
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+illustration de la problématique associée à un champ de vue caméra trop
+ faible vis à vis du phénomène étudié.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:grand_champ"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Si le masque 3D est construit par combinaison du champ de vue des 12 caméras
+ (
+\begin_inset Quotes fld
+\end_inset
+
+Visual hull
+\begin_inset Quotes frd
+\end_inset
+
+ en anglais), il sera très restrictif et nuira à la reconstruction.
+ En effet, un rayon venant d'une caméra située au-dessus du jet ne verra
+ pas d'écoulement jusqu'à rencontrer le bord du masque ce qui est en contradicti
+on avec la mesure effectuée puisque l'écoulement est plus grand que le masque.
  On peut ici 
 \begin_inset Quotes fld
 \end_inset
@@ -2479,8 +2564,11 @@ t.
  de chaque point de vue afin de couvrir l'ensemble de l'écoulement mais
  entrainerait nécessairement une variabilité sur le nombre de caméras affectant
  chaque voxel.
- Il faudrait alors d'une part veiller à ce que cette variabilité reste fanalyser
- l'impact de ce volume de poids inégaux dans le processus de reconstruction.
+ Il faudrait alors d'une part veiller à ce que cette variabilité reste faible
+ au sein du volume à reconstruire et également analyser l'impact de ce volume
+ de poids inégaux dans le processus de reconstruction.
+ Le risque ici, c'est que des gradients artificiels risque d'apparaitre
+ lors du processus de reconstruction et de gêner la convergence.
 \end_layout
 
 \begin_layout Section
@@ -2488,7 +2576,11 @@ Astigmatisme parasite
 \end_layout
 
 \begin_layout Standard
-Lorsque l'on étudie un écoulement en BOS, en utilisant de manière classique
+Une autre problématique qui a été rencontrée lors des essai à S1MA concerne
+ la nature de l'écoulement étudié.
+ Pour la première fois, nous appliquons la BOS 3D a des écoulements compressible
+s qui présentent de forts gradients de masse volumique.
+ Lorsque l'on étudie un écoulement en BOS, en utilisant de manière classique
  un éclairage non collimaté, il possible que les images présentent de l'astigmat
 isme parasite (figure).
  En effet, à la traversée de forts gradients, les déviations subies par
@@ -2569,15 +2661,15 @@ Ce phénomène qui sera étudié plus en détail dans le chapitre suivant est
 \end_inset
 
  de l'écoulement, sur les parois, nous avons une grande sensibilité.
- C'est une caractéristique pour l'étude de phénomène de très faible échelle
- mais pour l'analyse d'un écoulement compressible cela pose problème.
+ C'est une caractéristique intéressante pour l'étude de phénomène de très
+ faible échelle mais pour l'analyse d'un écoulement compressible cela pose
+ problème.
  Dans un environnement soufflerie comme ici, le mouchetis ne peut pas être
  rapproché de l'écoulement pour mitiger les effets d'astigmatisme.
- En fin de campagne d'essai nous avons réalisé des mesures complémentaires
- en BOS 2D en regroupant les différents points d'éclairage sur le même panneau
- de mouchetis.
- Cette configuration nous a permis de travailler avec des caméras ouvertes
- à 
+ Toutefois, en fin de campagne d'essai nous avons réalisé des mesures complément
+aires en BOS 2D en jouant sur un autre paramètre : l'ouverture caméra.
+ En regroupant les différents points d'éclairage sur le même panneau de
+ mouchetis, nous avons pu de travailler avec des caméras ouvertes à 
 \begin_inset Formula $f_{\#}=8$
 \end_inset
 
@@ -2600,7 +2692,7 @@ reference "fig:S1MA:f-number"
 \end_inset
 
  sont plus détaillées.
- on parvient également à capter de fines structures très intenses.
+ On parvient également à capter de fines structures très intenses.
 \end_layout
 
 \begin_layout Standard
@@ -2746,8 +2838,8 @@ Pour la première fois la BOS 3D a été déployé en soufflerie industrielle
  optiques qui nécessite un alignement précis.
  Néanmoins nous avons pu démontrer la faisabilité de la mesure BOS 3D dans
  ce type d'installation.
- Deux aspects spécifiques émergent de cette campagne: le premier concerne
- la stabilité du mouchetis vis à vis de la caméra.
+ Trois problématiques spécifiques émergent de cette campagne: la première
+ concerne la stabilité du mouchetis vis à vis de la caméra.
  Comme on l'a vu, ici le mouchetis est affecté par des mouvement complexes
  des différents éléments de la soufflerie.
  La correction de ces mouvements est essentielle pour parvenir à une mesure
@@ -2762,7 +2854,19 @@ Pour la première fois la BOS 3D a été déployé en soufflerie industrielle
 \end_layout
 
 \begin_layout Plain Layout
-La seconde difficulté est lié à la bonne capture de la dynamique de l'écoulement.
+La seconde concerne la mesure des écoulements de grande de taille.
+ En effet, de part sa nature intégrale, la technique BOS mesure un gradient
+ de masse volumique sur l'ensemble de la trajectoire des rayons lumineux.
+ Il est donc nécessaire de reconstruire l'ensemble du domaine perturbé et
+ cela avec un nombre suffisant de caméras.
+ Si la solution la plus simple consiste à travailler avec de petites focales,
+ d'autres solutions pouraient être envisagée par combinaisons de caméras
+ et/ou de différentes focales pour couvrir l'ensemble du champ.
+\end_layout
+
+\begin_layout Plain Layout
+Enfin, la troisième difficulté est liée à la bonne capture de la dynamique
+ de l'écoulement.
  Cela est plus complexesur une telle installation car nous n'avons pas de
  choix quant à la position des mouchetis.
  La sensibilité étant imposée,nous devons nous accommoder de l'astigmatisme

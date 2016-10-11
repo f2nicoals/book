@@ -88,7 +88,7 @@ minitoc
 \end_inset
 
  
-\begin_inset VSpace defskip
+\begin_inset VSpace 1.5cm
 \end_inset
 
 
@@ -142,8 +142,11 @@ La soufflerie S1MA constitue une prise de guerre de l'armée française aux
  est telle que les ingénieurs allemands avaient imaginé un système qui utilisera
 it l'énergie hydraulique issue d'une conduite forcée pour entrainer directement
  les deux ventilateurs contrarotatifs.
- C'est une retenue d'eau située 800m plus haut qui alimente la soufflerie
- et permet d'atteindre Mach 1 en veine.
+ C'est une retenue d'eau située 
+\begin_inset Formula $800\, m$
+\end_inset
+
+ plus haut qui alimente la soufflerie et permet d'atteindre Mach 1 en veine.
  Avec sa veine de 
 \begin_inset Formula $8\, m$
 \end_inset
@@ -293,6 +296,47 @@ name "fig:A380-1"
 
 \begin_layout Section
 Mise en œuvre de la BOS à S1MA
+\end_layout
+
+\begin_layout Standard
+L'ensemble du système BOS 3D mis en œuvre à S1MA visible sur la figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:montage_BOS3D"
+
+\end_inset
+
+ s'inspire fortement du montage réalisé à F2.
+ L'évolution majeur concerne l'emploi d'un nouveau switch 
+\shape italic
+Enterasys 24 port
+\shape default
+s avec des liaisons en fibre optique à 
+\begin_inset Formula $20\, Gb/s$
+\end_inset
+
+ et le stockage des images en RAM.
+ Ce système nous permet désormais d'enregistrer un total de 
+\begin_inset Formula $900$
+\end_inset
+
+ images par caméra à une fréquence de 
+\begin_inset Formula $10\, Hz$
+\end_inset
+
+.
+ Les images sont ensuite transférées sur des disques SSD montés en RAID,
+ afin de 
+\begin_inset Quotes fld
+\end_inset
+
+vidanger
+\begin_inset Quotes frd
+\end_inset
+
+ la RAM.
+ Les spécificités du montage BOS 3D relatives à S1MA sont décrites par la
+ suite.
 \end_layout
 
 \begin_layout Standard
@@ -649,7 +693,7 @@ Comme nous l'avons vu jusque là la disposition optimale de caméras pour
  le nombre important de hublots sur le chariot que nous avons utilisé et
  la petite taille de nos caméras nous ont permis de les disposer autour
  de la veine sans trop de difficultés.
- Chacune de nos caméra était équipée d'un objectif de
+ Chacune de nos caméra était équipée d'un objectif de 
 \begin_inset Formula $70\, mm$
 \end_inset
 
@@ -678,7 +722,7 @@ status open
 \begin_inset Graphics
 	filename Images/plateau.JPG
 	lyxscale 20
-	width 50text%
+	width 45text%
 
 \end_inset
 
@@ -725,7 +769,7 @@ Etant donnée la géométrie du montage, le champ de vue des caméras qui est
 \begin_inset Formula $50\, cm$
 \end_inset
 
- au centre veine, approche
+ au centre veine, approche 
 \begin_inset Formula $1\, m$
 \end_inset
 
@@ -734,13 +778,13 @@ Etant donnée la géométrie du montage, le champ de vue des caméras qui est
 \begin_inset Formula $8m\text{²}$
 \end_inset
 
-de mouchetis ont été nécessaires.
+ de mouchetis ont été nécessaires.
  Pour satisfaire la contrainte soufflerie stipulant que le mouchetis devait
  pouvoir s'enlever facilement, tout en conservant une bonne tenue au vent,
  nous avons utilisé des panneaux de mouchetis autocollants recouvert d'un
  pelliculage transparent.
  Le mouchetis a été appliqué sur les parois de la veine nettoyée, en face
- des caméra.
+ des caméras.
  Comme nous le verrons par la suite, ce type de mouchetis a très bien fonctionné
 , excepté en présence de défauts de surface qui ont pu compromettre sont
  intégrité.
@@ -757,8 +801,8 @@ citation
 
 \end_inset
 
- ont été apposés sur le mouchetis, aux limites des champs caméras afin d'être
- en mesure de diagnostiquer les mouvements caméras dans le cas où les plateaux
+ ont été apposés sur le mouchetis, aux limites des champs caméras afin de
+ permettre un diagnostique des mouvements caméras dans le cas où les plateaux
  amortis ne fonctionnerait pas ou mal.
  De plus, ces marqueurs ont été utilisés par le DTIM pour réaliser des scans
  de la veine à l'aide d'un système stéréoscopique.
@@ -828,11 +872,11 @@ Une fois les caméras et les mouchetis installé, le système d'éclairage a
 \begin_inset Formula $8$
 \end_inset
 
- faisceaux couplée à un laser twins BBSl de 
-\begin_inset Formula $400\, mJ$
+ faisceaux couplée à un laser Quantel Twins B de 
+\begin_inset Formula $380\, mJ$
 \end_inset
 
-.
+ par pulse.
  Le laser et sa table de séparation visibles en figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -840,7 +884,7 @@ reference "fig:S1MA:laser"
 
 \end_inset
 
-étaient installés dans un local climatisé au-dessus de la soufflerie tandis
+ étaient installés dans un local climatisé au-dessus de la soufflerie tandis
  que de nouveaux guides de lumières 
 \shape italic
 Rayvision
@@ -912,8 +956,8 @@ Ce montage nous a permis de travailler avec des ouvertures caméras de
  ce qui demeure assez faible malgré tout.
  En fin de campagne une configuration d'éclairage différente a été réalisée:
  nous nous somme placé en configuration de BOS 2D en ne gardant qu'une caméra
- et, en regroupant les illuminateurs sur un panneau de mouchetis nous avons
- pu travailler à 
+ et, en regroupant les illuminateurs sur un panneau de mouchetis.
+ De ce fait, nous avons pu travailler à 
 \begin_inset Formula $f_{\#}=8$
 \end_inset
 
@@ -1075,7 +1119,9 @@ Après avoir installé l'ensemble du système la première semaine, les essais
  se sont ensuite déroulés sur 2 jours et demi.
  Ils ont débutés par la buse simple avant de se poursuivre avec la double
  buse.
- Une rotation dans le jargon soufflerie désigne ...
+ Une rotation dans le jargon soufflerie désigne la période entre la mise
+ en marche de la soufflerie et son arrêt.
+ A chaque rotation différents points de fonctionnement ont été testés.
 \end_layout
 
 \begin_layout Standard
@@ -1156,7 +1202,7 @@ name "fig:S1MA:matrice"
 
 \begin_layout Standard
 Il faut noter que lors de la première rotation, lorsque l'on a atteint Mach
- 0.7, des bulles ses ont formées sous certains panneaux de mouchetis.
+ 0.7, des bulles se sont formées sous certains panneaux de mouchetis.
  L'un d'eux s'est même arraché.
  Il est apparu que de l'air passait par des jointures ou des pas de vis
  situés sous le mouchetis lorsque la soufflerie est en fonctionnement, et
@@ -1284,14 +1330,14 @@ Reconstruction sans vent
 \end_layout
 
 \begin_layout Standard
-La reconstruction du jet soufflerie à l'arrêt (sans vent) ne pose pas de
- problème en soi.
+La reconstruction du jet, soufflerie à l'arrêt (sans vent), ne pose pas
+ de problème en soi.
  Le champ moyen de masse volumique est obtenu par reconstruction des champs
  de déplacements moyennés sur 
-\begin_inset Formula $900\, images$
+\begin_inset Formula $900$
 \end_inset
 
- (figure 
+ images (figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:deplacement_moyen"
@@ -1433,14 +1479,21 @@ Analyse des données et stratégie de post-traitement
 \end_layout
 
 \begin_layout Standard
-Un premier regard sur les champs de déplacements à Mach 0.7 et pour un débit
+Un premier regard sur les champs de déplacements à Mach 0.4 et pour un débit
  de 
 \begin_inset Formula $Q=1\, kg/s$
 \end_inset
 
- (figure) illustre clairement le problème rencontré: les déplacements lié
- à la présence du jet à contre-courant sont complètement noyés dans bruit
- qui affecte l'ensemble de l'image.
+ (figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:deplacements_bruts"
+
+\end_inset
+
+) illustre clairement le problème rencontré: les déplacements lié à la présence
+ du jet à contre-courant sont complètement noyés dans bruit qui affecte
+ l'ensemble de l'image.
  
 \end_layout
 
@@ -1611,8 +1664,8 @@ Nous nous sommes intéressé dans un premier temps à l'évolution de ce phénom
  de la buse.
  Pour un Mach donné, nous disposons de plusieurs centaines d'images de déplaceme
 nts horizontaux et verticaux (u et v) associés au repère caméra.
- les deux déplacements sont moyennés sur l'ensemble des images ainsi que
- sur une certaines fenêtre pixels (figure 
+ Chacun des deux déplacements est moyenné sur l'ensemble des images ainsi
+ que sur une certaine fenêtre pixels (figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:moyennes"
@@ -1785,7 +1838,7 @@ Dans la suite nous concentrons sur un point de fonctionnement particulier
 \begin_inset Formula $Mach=$
 \end_inset
 
-0.4.
+0.4 et nous regardons les champs de déplacements moyens.
  Ce choix est motivé par deux raisons principales.
  Tout d'abord, le Mach n'est pas trop élevé, ce qui limite l'amplitude de
  la perturbation.
@@ -1846,10 +1899,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1917,7 +1966,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Champs de déplacement après correction par mouvement de translation.
+Champs de déplacement après correction par mouvement de translation calculé
+ sur la fenêtre pixels représentée en rouge.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -1939,8 +1989,9 @@ name "fig:S1MA:simple"
 \end_layout
 
 \begin_layout Standard
-Si la correction semble bien fonctionner pour la caméra 4, une discontinuité
- apparait sur la caméra 9.
+Si la correction fait clairement ressortir la topologie du jet, une forte
+ discontinuité apparait désormais au sein de l'image au niveau de la jointure
+ présente sur la paroi.
  Cette observation implique bien un mouvement du mouchetis mais également
  des mouvements disjoints des différents éléments qui constitue la veine.
  La correction précédente est donc insuffisante pour corriger ce type de
@@ -2095,9 +2146,8 @@ Pour analyser ce phénomène plus en détails nous revenons sur les données
  Le phénomène présente peu de variations temporelles également.
  On aurait donc, lors de la montée en Mach un mouvement de corps solide-rigide
  des différents éléments qui constituent la paroi de la veine.
- Une analyse approfondie serait nécessaire afin d'analyser les champs de
- déplacements et de déterminer pour chaque zone le mouvement subi par le
- mouchetis.
+ Une étude approfondie serait nécessaire afin d'analyser les champs de déplaceme
+nts et de déterminer pour chaque zone le mouvement subi par le mouchetis.
  
 \end_layout
 
@@ -2253,8 +2303,14 @@ Cette solution présente toutefois des limites puisque lorsque le jet est
  aux accélérations sur l'intrados et l'extrados de la buse.
  En soustrayant ces valeurs aux mesures avec le jet on introduit des valeurs
  erronées dans les champs de déplacements qui sont visibles sur la partie
- gauche de la figure.
- .
+ gauche de la figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:soustraction"
+
+\end_inset
+
+.
  Pour la suite ces régions ont donc été écartés par un masque.
  
 \begin_inset Note Comment
@@ -2277,14 +2333,22 @@ Un autre point surprenant est la dissymétrie présente sur les déplacements
 \begin_layout Standard
 A partir de ces champs de déplacements corrigés nous avons pu estimer nos
  champs de déviations et reconstruire la champ de masse volumique associé
- à ce point de fonctionnement.
+ à ce point de fonctionnement (
+\begin_inset Formula $M=0.4$
+\end_inset
+
+ et 
+\begin_inset Formula $Q=1\, kg/s$
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2394,8 +2458,8 @@ Iso-surfaces et coupes de masse volumique pour un jet débitant à
 \begin_inset Formula $1\, kg/s$
 \end_inset
 
- face à un écoulement à 
-\begin_inset Formula $Mach\,0.4$
+ face à un écoulement à Mach 
+\begin_inset Formula $0.4$
 \end_inset
 
 .
@@ -2419,6 +2483,33 @@ name "fig:S1MA:M0d4_Q1d0"
 
 \end_layout
 
+\begin_layout Standard
+Le champ de masse volumique présente comme attendu cette forme en champignon.
+ Ce qui est surprenant c'est le 
+\begin_inset Quotes fld
+\end_inset
+
+renfoncement
+\begin_inset Quotes frd
+\end_inset
+
+ présent à l'extrémité du champignon.
+ Encore une fois l'originalité de cette configuration rend les comparaisons
+ difficiles.
+ On trouve néanmoins quelques études qui cherche à employer cette injection
+ fluidique (parfois réalisée au moyen d'une décharge plasma) pour contrôler
+ l'écoulement autour d'un objet en vol supersonique.
+ L'objectif étant de diminué la trainée et de réduire l'intensité du 
+\begin_inset Quotes fld
+\end_inset
+
+bang
+\begin_inset Quotes frd
+\end_inset
+
+ sonique .
+\end_layout
+
 \begin_layout Section
 Mesure de grand champs par BOS 3D
 \end_layout
@@ -2433,7 +2524,7 @@ reference "fig:S1MA:M0d4_Q1d0"
 
 ) a fait surgir quelques problématiques lors du processus de reconstruction
  qu'il nous apparait intéressant d'expliciter ici.
- contrairement aux mesure faites jusqu'à présent (cas sans vent, F2) la
+ Contrairement aux mesure faites jusqu'à présent (cas sans vent, F2) la
  forme de l'écoulement étudié est ici relativement importante vis à vis
  du champ de vue caméra et pour certains points de vue, les bords du 
 \begin_inset Quotes fld
@@ -2551,6 +2642,12 @@ t.
  de poids inégaux dans le processus de reconstruction.
  Le risque ici, c'est que des gradients artificiels risque d'apparaitre
  lors du processus de reconstruction et de gêner la convergence.
+\end_layout
+
+\begin_layout Standard
+Une autre problématique liée à la mesure de grand champ concerne la présence
+ dans le volume reconstruit d'une zone non perturbée au niveau de laquelle
+ on peut imposer la valeur de la masse volumique externe.
 \end_layout
 
 \begin_layout Section

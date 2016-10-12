@@ -216,7 +216,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Images/S1MA.png
-	lyxscale 50
+	lyxscale 30
 	width 50text%
 
 \end_inset
@@ -259,7 +259,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Images/A380.jpg
-	lyxscale 50
+	lyxscale 30
 	width 50text%
 
 \end_inset
@@ -478,10 +478,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/simpleBuse_F.pdf
@@ -518,7 +514,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Images/Buse1.JPG
-	lyxscale 10
+	lyxscale 5
 	width 30text%
 
 \end_inset
@@ -649,7 +645,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Images/Buse2.JPG
-	lyxscale 10
+	lyxscale 5
 	width 30text%
 
 \end_inset
@@ -738,7 +734,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Images/plateau.JPG
-	lyxscale 20
+	lyxscale 10
 	width 45text%
 
 \end_inset
@@ -932,7 +928,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Images/laser.JPG
-	lyxscale 10
+	lyxscale 5
 	width 50text%
 
 \end_inset
@@ -2846,6 +2842,7 @@ reference "fig:S1MA:matrice"
 
  les champs de déplacement moyens et instantanés associés aux différents
  débit de la buse.
+ Les champs de déplacements moyens ont été calculés à partir de 900 images.
  Le jet issu de la buse (simple) vient de la gauche.
  Au fur et à mesure que le débit augmente l'empreinte du jet est de plus
  en plus marquée.
@@ -2882,15 +2879,11 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/matrice_inst.png
-	lyxscale 50
-	width 100text%
+	lyxscale 30
+	width 95text%
 
 \end_inset
 
@@ -2917,8 +2910,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename Images/matrice_moy.png
-	lyxscale 50
-	width 100text%
+	lyxscale 30
+	width 95text%
 
 \end_inset
 
@@ -3099,10 +3092,10 @@ La reconstruction du jet, soufflerie à l'arrêt (sans vent), ne pose pas
 \begin_inset Formula $900$
 \end_inset
 
- images (figure 
+ images (visible en bas à droite de la figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:S1MA:deplacement_moyen"
+reference "fig:S1MA:matrice"
 
 \end_inset
 
@@ -3128,68 +3121,15 @@ reference "fig:S1MA:sans_vent"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename Images/Norme_moyenne.png
-	lyxscale 30
-	height 25text%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:S1MA:deplacement_moyen"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
  
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename Images/Champ_moyen.tif
 	lyxscale 20
-	height 25text%
+	width 80text%
 
 \end_inset
 
@@ -3197,6 +3137,9 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Champ de masse volumique reconstruit pour un débit de 2.5.kg/s et un Mach
+ nul.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:S1MA:sans_vent"
@@ -3204,26 +3147,6 @@ name "fig:S1MA:sans_vent"
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-a)Champ de déplacement moyenné sur 900 images.
- b)Champ de masse volumique reconstruit pour un débit de 2.5.kg/s et un Mach
- nul.
 \end_layout
 
 \end_inset

@@ -59,7 +59,7 @@
 \paragraph_indentation default
 \quotes_language french
 \papercolumns 1
-\papersides 1
+\papersides 2
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
@@ -71,11 +71,24 @@
 \begin_body
 
 \begin_layout Chapter
-Mise en oeuvre de la BOS 3D en soufflerie industrielle : campagne d'essai
+Mise en œuvre de la BOS 3D en soufflerie industrielle : campagne d'essai
  à S1MA
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptermark{Mise en œuvre de la BOS 3D en soufflerie industrielle}
+\end_layout
+
+\end_inset
+
+
 \begin_inset ERT
 status open
 
@@ -104,11 +117,11 @@ L'objectif de ce chapitre est de démontrer la faisabilité d'une mesure BOS
 \begin_inset Formula $8\, m$
 \end_inset
 
- de diamètre et dont la vitesse veine peut atteindre 1.
+ de diamètre et dont la vitesse veine peut atteindre Mach 1.
  Au-delà de ce changement d'échelle, nous étudions ici les contraintes liées
  à l'environnement même de cette soufflerie: vibrations, déformations, monté
  en température.
- Ces essais ont lieu dans le cadre du projet Carnot 
+ Ces essais ont eu lieu dans le cadre du projet Carnot 
 \shape italic
 BOS 3D
 \shape default
@@ -203,7 +216,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Images/S1MA.png
-	lyxscale 50
+	lyxscale 30
 	width 50text%
 
 \end_inset
@@ -246,7 +259,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Images/A380.jpg
-	lyxscale 50
+	lyxscale 30
 	width 50text%
 
 \end_inset
@@ -465,10 +478,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/simpleBuse_F.pdf
@@ -505,7 +514,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Images/Buse1.JPG
-	lyxscale 10
+	lyxscale 5
 	width 30text%
 
 \end_inset
@@ -636,7 +645,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Images/Buse2.JPG
-	lyxscale 10
+	lyxscale 5
 	width 30text%
 
 \end_inset
@@ -689,9 +698,9 @@ Installation des caméras
 \end_layout
 
 \begin_layout Standard
-Comme nous l'avons vu jusque là la disposition optimale de caméras pour
- un jet est la configuration en couronne.
- Nous avons donc répartis nos 12 caméras par paires derrière les différents
+Comme nous l'avons vu jusqu'à présent, la disposition optimale de caméras
+ pour un jet est la configuration en couronne.
+ Nous avons donc répartis nos 12 caméras par paires, derrière les différents
  hublots de la veine.
  Bien que les accès optiques soient nettement moins confortables qu'à F2,
  le nombre important de hublots sur le chariot que nous avons utilisé et
@@ -725,7 +734,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Images/plateau.JPG
-	lyxscale 20
+	lyxscale 10
 	width 45text%
 
 \end_inset
@@ -785,8 +794,8 @@ Etant donnée la géométrie du montage, le champ de vue des caméras qui est
  de mouchetis ont été nécessaires.
  Pour satisfaire la contrainte soufflerie stipulant que le mouchetis devait
  pouvoir s'enlever facilement, tout en conservant une bonne tenue au vent,
- nous avons utilisé des panneaux de mouchetis autocollants recouvert d'un
- pelliculage transparent.
+ nous avons utilisé des panneaux autocollants recouvert d'un pelliculage
+ transparent.
  Le mouchetis a été appliqué sur les parois de la veine nettoyée, en face
  des caméras.
  Comme nous le verrons par la suite, ce type de mouchetis a très bien fonctionné
@@ -818,14 +827,14 @@ citation
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/veine3D-2.png
+	filename Images/veine3D-3.pdf
 	lyxscale 50
-	width 100text%
+	width 90text%
 
 \end_inset
 
@@ -836,7 +845,8 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Modèle 3D de la veine de S1MA obtenu par stéréoscopie.
+Modèle 3D de la veine de S1MA obtenu par stéréoscopie et détail d'un marqueur
+ AprilTag.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -888,7 +898,7 @@ reference "fig:S1MA:laser"
 
 \end_inset
 
- étaient installés dans un local climatisé au-dessus de la soufflerie tandis
+, étaient installés dans un local climatisé au-dessus de la soufflerie tandis
  que de nouveaux guides de lumières 
 \shape italic
 Rayvision
@@ -919,7 +929,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Images/laser.JPG
-	lyxscale 10
+	lyxscale 5
 	width 50text%
 
 \end_inset
@@ -2833,6 +2843,7 @@ reference "fig:S1MA:matrice"
 
  les champs de déplacement moyens et instantanés associés aux différents
  débit de la buse.
+ Les champs de déplacements moyens ont été calculés à partir de 900 images.
  Le jet issu de la buse (simple) vient de la gauche.
  Au fur et à mesure que le débit augmente l'empreinte du jet est de plus
  en plus marquée.
@@ -2842,7 +2853,17 @@ reference "fig:S1MA:matrice"
 \end_inset
 
 ).
- Ces mesures o
+ Ces mesures offrent également une très belle visualisation des ondes acoustique
+s qui naissent aux niveau des lèvres de la buse et se propage vers l'aval
+ du jet.
+ Pour le cas à débit de 
+\begin_inset Formula $2.5\, kg/s$
+\end_inset
+
+, d'autres ondes acoustiques qui se propage vers l'amont se superposent
+ aux premières: elles sont liées à la présence de sources au niveau des
+ sommet des des cellules de chocs.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2859,15 +2880,11 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/matrice_inst.png
-	lyxscale 50
-	width 100text%
+	lyxscale 30
+	width 95text%
 
 \end_inset
 
@@ -2894,17 +2911,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename Images/matrice_moy.png
-	lyxscale 50
-	width 100text%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
+	lyxscale 30
+	width 95text%
 
 \end_inset
 
@@ -3085,10 +3093,10 @@ La reconstruction du jet, soufflerie à l'arrêt (sans vent), ne pose pas
 \begin_inset Formula $900$
 \end_inset
 
- images (figure 
+ images (visible en bas à droite de la figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:S1MA:deplacement_moyen"
+reference "fig:S1MA:matrice"
 
 \end_inset
 
@@ -3114,68 +3122,15 @@ reference "fig:S1MA:sans_vent"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename Images/Norme_moyenne.png
-	lyxscale 30
-	height 25text%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:S1MA:deplacement_moyen"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
  
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename Images/Champ_moyen.tif
 	lyxscale 20
-	height 25text%
+	width 80text%
 
 \end_inset
 
@@ -3183,6 +3138,9 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Champ de masse volumique reconstruit pour un débit de 2.5.kg/s et un Mach
+ nul.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:S1MA:sans_vent"
@@ -3190,26 +3148,6 @@ name "fig:S1MA:sans_vent"
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-a)Champ de déplacement moyenné sur 900 images.
- b)Champ de masse volumique reconstruit pour un débit de 2.5.kg/s et un Mach
- nul.
 \end_layout
 
 \end_inset

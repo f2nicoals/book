@@ -59,7 +59,7 @@
 \paragraph_indentation default
 \quotes_language french
 \papercolumns 1
-\papersides 1
+\papersides 2
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
@@ -117,11 +117,11 @@ L'objectif de ce chapitre est de démontrer la faisabilité d'une mesure BOS
 \begin_inset Formula $8\, m$
 \end_inset
 
- de diamètre et dont la vitesse veine peut atteindre 1.
+ de diamètre et dont la vitesse veine peut atteindre Mach 1.
  Au-delà de ce changement d'échelle, nous étudions ici les contraintes liées
  à l'environnement même de cette soufflerie: vibrations, déformations, monté
  en température.
- Ces essais ont lieu dans le cadre du projet Carnot 
+ Ces essais ont eu lieu dans le cadre du projet Carnot 
 \shape italic
 BOS 3D
 \shape default
@@ -698,9 +698,9 @@ Installation des caméras
 \end_layout
 
 \begin_layout Standard
-Comme nous l'avons vu jusque là la disposition optimale de caméras pour
- un jet est la configuration en couronne.
- Nous avons donc répartis nos 12 caméras par paires derrière les différents
+Comme nous l'avons vu jusqu'à présent, la disposition optimale de caméras
+ pour un jet est la configuration en couronne.
+ Nous avons donc répartis nos 12 caméras par paires, derrière les différents
  hublots de la veine.
  Bien que les accès optiques soient nettement moins confortables qu'à F2,
  le nombre important de hublots sur le chariot que nous avons utilisé et
@@ -794,8 +794,8 @@ Etant donnée la géométrie du montage, le champ de vue des caméras qui est
  de mouchetis ont été nécessaires.
  Pour satisfaire la contrainte soufflerie stipulant que le mouchetis devait
  pouvoir s'enlever facilement, tout en conservant une bonne tenue au vent,
- nous avons utilisé des panneaux de mouchetis autocollants recouvert d'un
- pelliculage transparent.
+ nous avons utilisé des panneaux autocollants recouvert d'un pelliculage
+ transparent.
  Le mouchetis a été appliqué sur les parois de la veine nettoyée, en face
  des caméras.
  Comme nous le verrons par la suite, ce type de mouchetis a très bien fonctionné
@@ -827,14 +827,14 @@ citation
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/veine3D-2.png
+	filename Images/veine3D-3.pdf
 	lyxscale 50
-	width 100text%
+	width 90text%
 
 \end_inset
 
@@ -845,7 +845,8 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Modèle 3D de la veine de S1MA obtenu par stéréoscopie.
+Modèle 3D de la veine de S1MA obtenu par stéréoscopie et détail d'un marqueur
+ AprilTag.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -897,7 +898,7 @@ reference "fig:S1MA:laser"
 
 \end_inset
 
- étaient installés dans un local climatisé au-dessus de la soufflerie tandis
+, étaient installés dans un local climatisé au-dessus de la soufflerie tandis
  que de nouveaux guides de lumières 
 \shape italic
 Rayvision
@@ -4464,9 +4465,9 @@ t.
 \end_layout
 
 \begin_layout Standard
-Une autre problématique liée à la mesure de grand champ concerne la présence
- dans le volume reconstruit d'une zone non perturbée au niveau de laquelle
- on peut imposer la valeur de la masse volumique externe.
+La présence dans le volume reconstruit d'une zone non perturbée au niveau
+ de laquelle on peut imposer la valeur de la masse volumique externe peut
+ également représenter une difficulté.
 \end_layout
 
 \begin_layout Section
@@ -4736,15 +4737,18 @@ Pour la première fois la BOS 3D a été déployé en soufflerie industrielle
  optiques qui nécessite un alignement précis.
  Néanmoins nous avons pu démontrer la faisabilité de la mesure BOS 3D dans
  ce type d'installation.
- Trois problématiques spécifiques émergent de cette campagne: la première
- concerne la stabilité du mouchetis vis à vis de la caméra.
+ Trois problématiques spécifiques émergent de cette campagne.
+\end_layout
+
+\begin_layout Plain Layout
+La première concerne la stabilité du mouchetis vis à vis de la caméra.
  Comme on l'a vu, ici le mouchetis est affecté par des mouvement complexes
  des différents éléments de la soufflerie.
  La correction de ces mouvements est essentielle pour parvenir à une mesure
  fiable de l'écoulement.
- Même si notre procédure basée sur les mesure à Mach donné sans le jet permet
- de corriger en bonne partie les images, elle demeure valides que si le
- champ n'est pas perturbé par une maquette.
+ Même si notre procédure basée sur les mesures à Mach donné, sans le jet,
+ permet de corriger en bonne partie les images, elle demeure valides que
+ si le champ n'est pas perturbé par une maquette.
  De plus, si ce mouvement global représentait la plus grande perturbation
  dans un premier temps, une fois corrigé, les mouvements du second ordre
  dus aux vibrations pourraient s'avérés non négligeables.
@@ -4765,8 +4769,8 @@ La seconde concerne la mesure des écoulements de grande de taille.
 \begin_layout Plain Layout
 Enfin, la troisième difficulté est liée à la bonne capture de la dynamique
  de l'écoulement.
- Cela est plus complexesur une telle installation car nous n'avons pas de
- choix quant à la position des mouchetis.
+ Cela est plus complexe sur une telle installation car nous n'avons pas
+ de choix quant à la position des mouchetis.
  La sensibilité étant imposée,nous devons nous accommoder de l'astigmatisme
  parasite qui est généré.
  Une solution qui a été mis en évidence suggère de travailler à plus faible

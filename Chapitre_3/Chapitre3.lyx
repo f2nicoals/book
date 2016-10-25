@@ -86,10 +86,41 @@ minitoc
 
 \end_inset
 
+ 
+\begin_inset VSpace 1.5cm
+\end_inset
+
 
 \end_layout
 
 \begin_layout Standard
+L'objectif de ce chapitre est de démontrer la faisabilité d'une mesure BOS
+ 3D en soufflerie industrielle.
+ Après avoir déployé pour la première fois la technique en soufflerie à
+ F2, nous changeons ici d'échelle pour réaliser des mesures à S1MA qui possède
+ une veine de 
+\begin_inset Formula $8\, m$
+\end_inset
+
+ de diamètre et dont la vitesse veine peut atteindre Mach 1.
+ Au-delà de ce changement d'échelle, nous étudions ici les contraintes liées
+ à l'environnement même de cette soufflerie: vibrations, déformations, monté
+ en température.
+ Ces essais ont eu lieu dans le cadre du projet Carnot 
+\shape italic
+BOS 3D
+\shape default
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+contrainte de temps? d'efficacité ?
+\end_layout
+
+\end_inset
+
+
 \begin_inset Newpage newpage
 \end_inset
 
@@ -97,7 +128,176 @@ minitoc
 \end_layout
 
 \begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Section
 Article
+\end_layout
+
+\begin_layout Section
+Compléments
+\end_layout
+
+\begin_layout Subsection
+Analyse modale d'un champ de masse volumique instantané
+\end_layout
+
+\begin_layout Standard
+En observant attentivement notre champ de masse volumique instantanée, et
+ en particulier le champ de gradient, une organisation hélicoïdale des enrouleme
+nts de Kelvin-Helmoltz semble émerger.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Slice_Z_Grad2.png
+	lyxscale 20
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Afin d'investiguer si un mode hélicoïdal domine effectivement, nous avons
+ réaliser une décomposition modale.
+ Dans un premier temps, nous avons interpolé notre champ de masse volumique
+ fluctuant 
+\begin_inset Formula $\$\myrho'=\myrho-<\myrho>\$$
+\end_inset
+
+ sur une maillage cylindrique afin de pouvoir réaliser des transformée de
+ Fourier azimutales.
+ La taille des mailles sur l'axe (en 
+\begin_inset Formula $\$z\$$
+\end_inset
+
+) et selon le rayon 
+\begin_inset Formula $\$r\$$
+\end_inset
+
+ est égale à la dimension des cellules du maillage cartésien de la reconstructio
+n.
+ Le découpage azimutal (en 
+\begin_inset Formula $\$\mytheta\$$
+\end_inset
+
+) est définit de façon à obtenir la taille des mailles du maillage cartésien
+ au niveau de la couche de mélange ($x
+\begin_inset space ~
+\end_inset
+
+mm$).
+ Au final notre maillage contient X cellules en Z, Y en r et 340 en 
+\begin_inset Formula $\$\mytheta\$$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/FFT.pdf
+	lyxscale 50
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Ainsi, pour chaque coupe en 
+\begin_inset Formula $\$z\$$
+\end_inset
+
+, et pour chaque couronne 
+\begin_inset Formula $\$r\$$
+\end_inset
+
+, nous pouvons calculer une transformée de Fourrier azimutale.
+ Pour chaque mode nous pouvons alors représenter sur un plan 
+\begin_inset Formula $\$z-r\$$
+\end_inset
+
+une carte d'intensité.
+ La partie réelle des 5 premiers modes est présentée en figure .
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

@@ -120,5 +120,22 @@ description "paramètre de régularisation L2L1"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mytheta}{\theta}
+{\theta}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\theta$"
+description "coordonnée azimutale"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

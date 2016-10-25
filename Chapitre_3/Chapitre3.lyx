@@ -270,7 +270,38 @@ Ainsi, pour chaque coupe en
 \end_inset
 
 une carte d'intensité.
- La partie réelle des 5 premiers modes est présentée en figure .
+ La partie réelle et l'amplitude des 5 premiers modes est présentée en figure
+ .
+ La lèvre de la buse, soit la position 
+\begin_inset Formula $\$r/D=0.5\$$
+\end_inset
+
+, est symbolisée par la ligne noire.
+ Le mode 0 est relativement absent au début du jet avant de s'amplifier
+ en aval.
+ On peut voir apparaitre sur le mode 1, le mode hélicoïdal, plusieurs structures
+ énergétiques entre 
+\begin_inset Formula $\$Z/D\$=1$
+\end_inset
+
+et 
+\begin_inset Formula $\$Z/D\$=3$
+\end_inset
+
+.
+ Le mode 2 est également présent dans la même zone que le mode 1.
+ Si l'on extrait la partie réelle du mode 1 en 
+\begin_inset Formula $\$r/D=0.5\$$
+\end_inset
+
+ on obtient la courbe présentée en figure.
+ Sur la première partie de la mesure on observe une belle amplification
+ sinusoïdale de pseudo-période 
+\begin_inset Formula $\$\myperiod=1.12\$$
+\end_inset
+
+.
+  
 \end_layout
 
 \begin_layout Section

@@ -137,5 +137,22 @@ description "coordonnée azimutale"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myperiod}{\lambda_{1}}
+{\lambda_{1}}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\lambda_1$"
+description "pseudo-période de l'amplification du mode 1"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

@@ -144,9 +144,14 @@ Analyse modale d'un champ de masse volumique instantané
 \end_layout
 
 \begin_layout Standard
-En observant attentivement notre champ de masse volumique instantanée, et
- en particulier le champ de gradient, une organisation hélicoïdale des enrouleme
-nts de Kelvin-Helmoltz semble émerger.
+Nous présentons dans cette section un début d'analyse physique du comportement
+ du jet.
+ Bien que l'objectif de cette thèse n'est pas de caractériser ce jet, il
+ est intéressant de se pencher sur l'information que l'on obtenir et extraire
+ d'une mesure BOS 3D.
+ En observant attentivement notre champ de masse volumique instantanée,
+ et en particulier le champ de gradient, une organisation hélicoïdale des
+ enroulements de Kelvin-Helmoltz semble émerger.
  
 \end_layout
 
@@ -191,33 +196,33 @@ Afin d'investiguer si un mode hélicoïdal domine effectivement, nous avons
  réaliser une décomposition modale.
  Dans un premier temps, nous avons interpolé notre champ de masse volumique
  fluctuant 
-\begin_inset Formula $\$\myrho'=\myrho-<\myrho>\$$
+\begin_inset Formula $\myrho'=\myrho-<\myrho>$
 \end_inset
 
  sur une maillage cylindrique afin de pouvoir réaliser des transformée de
  Fourier azimutales.
  La taille des mailles sur l'axe (en 
-\begin_inset Formula $\$z\$$
+\begin_inset Formula $z$
 \end_inset
 
 ) et selon le rayon 
-\begin_inset Formula $\$r\$$
+\begin_inset Formula $r$
 \end_inset
 
  est égale à la dimension des cellules du maillage cartésien de la reconstructio
 n.
  Le découpage azimutal (en 
-\begin_inset Formula $\$\mytheta\$$
+\begin_inset Formula $\mytheta$
 \end_inset
 
 ) est définit de façon à obtenir la taille des mailles du maillage cartésien
- au niveau de la couche de mélange ($x
-\begin_inset space ~
+ au niveau de la couche de mélange (
+\begin_inset Formula $0.5 mm$
 \end_inset
 
-mm$).
+).
  Au final notre maillage contient X cellules en Z, Y en r et 340 en 
-\begin_inset Formula $\$\mytheta\$$
+\begin_inset Formula $\mytheta$
 \end_inset
 
 .
@@ -257,23 +262,33 @@ status open
 \end_inset
 
 Ainsi, pour chaque coupe en 
-\begin_inset Formula $\$z\$$
+\begin_inset Formula $z$
 \end_inset
 
 , et pour chaque couronne 
-\begin_inset Formula $\$r\$$
+\begin_inset Formula $r$
 \end_inset
 
 , nous pouvons calculer une transformée de Fourrier azimutale.
  Pour chaque mode nous pouvons alors représenter sur un plan 
-\begin_inset Formula $\$z-r\$$
+\begin_inset Formula $z-r$
 \end_inset
 
-une carte d'intensité.
+ une carte d'intensité.
  La partie réelle et l'amplitude des 5 premiers modes est présentée en figure
- .
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:F2:modes"
+
+\end_inset
+
+.
  La lèvre de la buse, soit la position 
-\begin_inset Formula $\$r/D=0.5\$$
+\begin_inset Formula $r/D=0.5$
 \end_inset
 
 , est symbolisée par la ligne noire.
@@ -281,27 +296,207 @@ une carte d'intensité.
  en aval.
  On peut voir apparaitre sur le mode 1, le mode hélicoïdal, plusieurs structures
  énergétiques entre 
-\begin_inset Formula $\$Z/D\$=1$
+\begin_inset Formula $Z/D=2.5$
 \end_inset
 
 et 
-\begin_inset Formula $\$Z/D\$=3$
+\begin_inset Formula $Z/D=4.5$
 \end_inset
 
 .
  Le mode 2 est également présent dans la même zone que le mode 1.
- Si l'on extrait la partie réelle du mode 1 en 
-\begin_inset Formula $\$r/D=0.5\$$
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Abs_modes.pdf
+	lyxscale 50
+	width 50text%
+	BoundingBox 20bp 100bp 595bp 750bp
+	clip
+
 \end_inset
 
- on obtient la courbe présentée en figure.
- Sur la première partie de la mesure on observe une belle amplification
- sinusoïdale de pseudo-période 
-\begin_inset Formula $\$\myperiod=1.12\$$
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Amplitude
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Re_modes.pdf
+	lyxscale 50
+	width 50text%
+	BoundingBox 25bp 100bp 595bp 750bp
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Partie réelle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Représentation des 5 premiers modes azimutaux
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:F2:modes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si l'on extrait la partie réelle du mode 1 en 
+\begin_inset Formula $r/D=0.5$
+\end_inset
+
+ on obtient la courbe présentée en figure
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:F2:amplification"
+
 \end_inset
 
 .
-  
+ Sur la première partie de la mesure on observe une belle amplification
+ sinusoïdale de pseudo-période 
+\begin_inset Formula $\myperiod\approx0.6D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/amplification.pdf
+	lyxscale 40
+	width 60text%
+	BoundingBox 80bp 250bp 500bp 600bp
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Amplification du mode 1 au niveau de la couche de mélange (
+\begin_inset Formula $r/D=0.5$
+\end_inset
+
+).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:F2:amplification"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ce début d'analyse est encourageant et montre l'intérêt de pouvoir reconstruire
+ des champs de masse volumique instantanés mais il demeure trop limité pour
+ pouvoir tirer d'avantage de conclusions.
+ Sur un cas tel que celui-ci mais aussi de manière plus générale), il serait
+ intéressant de reconstruire l'ensemble des champs instantanés afin de pouvoir
+ réaliser des statistiques.
+ Le processus décrit précédemment pourrait être répété sur l'ensemble des
+ champs.
+ On pourrait alors estimer un taux d'amplification associé à chacun des
+ modes.
+ Il serait alors intéressant de comparer ce résultat avec une analyse de
+ stabilité, d'autant plus que l'on dispose de manière expérimentale à la
+ fois des champs température et de vitesse moyens.
 \end_layout
 
 \begin_layout Section

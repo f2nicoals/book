@@ -70,7 +70,7 @@
 \begin_body
 
 \begin_layout Chapter
-BOS 3D
+Reconstruction de champs instantanés de masse volumique
 \end_layout
 
 \begin_layout Standard
@@ -90,6 +90,33 @@ minitoc
 \end_layout
 
 \begin_layout Standard
+
+\lang french
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dans ce chapitre nous revenons dans un premier temps sur les faiblesses
+ du code de reconstruction de masse volumique par BOS 3D développé par Violaine
+ Todoroff.
+ Après avoir identifier les problèmes majeurs, nous décrivons le fonctionnement
+ de ce nouveau code optimisé.
+ Ses performances sont dans un premier temps évaluées sur des données synthétiqu
+es, générées à partir d'un écoulements résultant d'une simulation numérique
+ de type LES.
+ L'utilisation des données de synthèse nous permet d'évaluer l'impact de
+ paramètres clés comme le nombre de caméras et leur répartitions spatiale
+ sur la qualité des reconstructions.
+ Enfin, nous présentons l'uilisation de la méthode sur un banc d'essai expérimen
+tal comportant 12 caméras.
+ Nous démontrons ainsi le fonctionnement de notre méthode sur des écoulements
+ de convection.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -97,87 +124,17 @@ minitoc
 \end_layout
 
 \begin_layout Section
-Exemple minimal
+Analyse des faiblesses du code de reconstruction BOS 3D initial
 \end_layout
 
 \begin_layout Standard
-je fais référence à 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:SALUT"
-
-\end_inset
-
+Le code de reconstruction conçu par Violaine Todoroff repose sur la minimisation
  
-\lang french
-
-\begin_inset CommandInset href
-LatexCommand href
-name "openclassroom"
-target "https://openclassrooms.com/courses/gerez-vos-codes-source-avec-git"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Bordure.png
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-SALUT
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:SALUT"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-3+1=0
-\]
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
-Article
-\end_layout
-
-\begin_layout Standard
-test
+A direct approach for instantaneous 3D density field reconstruction from
+ background oriented schlieren (BOS) measurements
 \end_layout
 
 \begin_layout Standard
@@ -460,7 +417,7 @@ omputation_time,
 \begin_layout Plain Layout
 
 17, figure, {Comparison between input deviations and computed deviations.},
- fig:exif:expe_dev
+ fig:exif:expe_dev,
 \end_layout
 
 \begin_layout Plain Layout
@@ -481,13 +438,12 @@ omputation_time,
 
 \begin_layout Plain Layout
 
-19, figure, {Helicoidal plume reconstruction}, fig:exif:helix,
+19, figure, {Rotating ember reconstruction}, fig:exif:ember,
 \end_layout
 
 \begin_layout Plain Layout
 
-19, figure, {Views the vertical density gradient and of surfaces of Q iso-criter
-ia}, fig:exif:jet_num
+19, figure, {Rotating gas burner}, fig:exif:burner
 \end_layout
 
 \begin_layout Plain Layout
@@ -519,7 +475,7 @@ offset=0cm -0.7cm]
 
 \begin_layout Plain Layout
 
-{Article1.pdf} 
+{Chapitre_2/Article1.pdf} 
 \end_layout
 
 \end_inset

@@ -70,7 +70,7 @@
 \begin_body
 
 \begin_layout Chapter
-BOS 3D
+Reconstruction de champs instantanés de masse volumique
 \end_layout
 
 \begin_layout Standard
@@ -90,10 +90,55 @@ minitoc
 \end_layout
 
 \begin_layout Standard
+
+\lang french
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dans ce chapitre nous revenons dans un premier temps sur les faiblesses
+ du code de reconstruction de masse volumique par BOS 3D développé par Violaine
+ Todoroff.
+ Après avoir identifier les problèmes majeurs, nous décrivons le fonctionnement
+ de ce nouveau code optimisé.
+ Ses performances sont dans un premier temps évaluées sur des données synthétiqu
+es, générées à partir d'un écoulements résultant d'une simulation numérique
+ de type LES.
+ L'utilisation des données de synthèse nous permet d'évaluer l'impact de
+ paramètres clés comme le nombre de caméras et leur répartitions spatiale
+ sur la qualité des reconstructions.
+ Enfin, nous présentons l'uilisation de la méthode sur un banc d'essai expérimen
+tal comportant 12 caméras.
+ Nous démontrons ainsi le fonctionnement de notre méthode sur des écoulements
+ de convection.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Analyse des faiblesses du code de reconstruction BOS 3D initial
+\end_layout
+
+\begin_layout Standard
+Le code de reconstruction conçu par Violaine Todoroff repose sur la minimisation
+ d'un critère quadratique régularisé:
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
+A direct approach for instantaneous 3D density field reconstruction from
+ background oriented schlieren (BOS) measurements
 \end_layout
 
 \begin_layout Standard

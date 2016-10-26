@@ -90,6 +90,21 @@ minitoc
 \end_layout
 
 \begin_layout Standard
+
+\lang french
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang french
+Test
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -434,7 +449,7 @@ offset=0cm -0.7cm]
 
 \begin_layout Plain Layout
 
-{Chapitre2/Article1.pdf} 
+{Chapitre_2/Article1.pdf} 
 \end_layout
 
 \end_inset

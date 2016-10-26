@@ -71,8 +71,8 @@
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\myrho}{\rho}
-{\rho}
+\newcommand{\myrho}{\boldsymbol{\rho}}
+{\boldsymbol{\rho}}
 \end_inset
 
 
@@ -148,6 +148,23 @@ description "coordonnée azimutale"
 LatexCommand nomenclature
 symbol "$\\lambda_1$"
 description "pseudo-période de l'amplification du mode 1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myepsilon}{\boldsymbol{\epsilon}}
+{\boldsymbol{\epsilon}}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\epsilon$"
+description "déviation lumineuse"
 
 \end_inset
 

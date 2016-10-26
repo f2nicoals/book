@@ -127,13 +127,402 @@ tal comportant 12 caméras.
 Analyse des faiblesses du code de reconstruction BOS 3D initial
 \end_layout
 
-\begin_layout Standard
-Le code de reconstruction conçu par Violaine Todoroff repose sur la minimisation
- d'un critère quadratique régularisé:
+\begin_layout Subsection
+Rappel sur le fonctionnement du code 
 \end_layout
 
 \begin_layout Standard
+Le code de reconstruction conçu par Violaine Todoroff repose sur la minimisation
+ du critère régularisé:
+\end_layout
 
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{J}(\myrho)=\dfrac{1}{2}||A\myrho-\myepsilon||-\mylambda\mathcal{R}(\myrho)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+où le terme de régularisation
+\begin_inset Formula $R(\myrho)$
+\end_inset
+
+ vaut 
+\begin_inset Formula $\dfrac{1}{2}||\nabla\myrho||^{2}$
+\end_inset
+
+ pour la régularisation 
+
+\begin_inset Formula $\mathcal{L}2$
+\end_inset
+
+
+\lang english
+ et 
+\begin_inset Formula $\dfrac{1}{2}\sqrt{||\nabla\myrho||^{2}+\mydelta^{2}}$
+\end_inset
+
+ pour la régularisation 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\mathcal{L}2\mathcal{L}1$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
+ Dans notre étude et dans toute la suite du manuscrit nous nous sommes intéressé
+ uniquement à la régularisation 
+\begin_inset Formula $\mathcal{L}2$
+\end_inset
+
+ qui a montré des résultats suffisament convaincant pour essayer un autre
+ type de régularisation.
+ 
+\end_layout
+
+\begin_layout Subsection
+Cas d'étude
+\end_layout
+
+\begin_layout Standard
+Pour évaluer son algortihme de reconstruction, Violaine Todoroff a utilisé
+ un champ de masse volumique obtenu par simulation numérique.
+ Cet écoulement de jet double-flux, typique de ceux rencontrés sur des moteurs
+ aéronautiques, a été calculé par simulation aux grandes échelle (LES)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Vuillot08"
+
+\end_inset
+
+.
+ L'écoulement primaire, chaud, est éjecté à Mach 0.7 avec une température
+ de 
+\begin_inset Formula $850\, K$
+\end_inset
+
+, tandis que l'écoulement secondaire plus froid, sort à Mach
+\begin_inset space ~
+\end_inset
+
+0.9 avec une température de 
+\begin_inset Formula $335\, K$
+\end_inset
+
+.
+ Nous nous intéressons ici à un champ instantané qui présente bien plus
+ d'échelles et de complexité que le champ moyen.
+ Sur la figure
+\begin_inset space ~
+\end_inset
+
+ on peut voir une coupe longitudinal du jet ainsi qu'une isosurface de densité,
+ illustrant le caractère tridimensionnel du jet.
+ Cet écoulement est également intéressant par la diversité des gradients
+ présents: très intenses au début du jet, les gradients de masse volumiques
+ s'atténuent au fur et à mesure du mélange avec l'air ambient.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/True_vol.png
+	lyxscale 20
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/True_vol_Surf_film2.png
+	lyxscale 20
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Synthèse des données
+\end_layout
+
+\begin_layout Standard
+A partir ce volume de masse volumique nous pouvons générer des données synthétiq
+ues pour tester notre algorithme de reconstruction.
+ Pour celà il est tout d'abord nécessaire de définir le système d'observation.
+ Chaque caméra est caractérisée par son fichier de calibration, contenant
+ ses paramères intrinsèques: sa focale, son nombre de pixels, leur taille,
+ et ses paramètres extrinsèques: sa position dans l'espace vis à vis du
+ repère monde et son orientation.
+ On peut alors appliquer l'opérateur direct 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+, dont fait référence Todoroff, et qui modélise le processus d'acquisition,
+ à savoir l'équation d'eikonale reliant le champ de masse volumique 
+\begin_inset Formula $\myrho$
+\end_inset
+
+ à la deviation d'un rayon lumineux 
+\begin_inset Formula $\myepsilon$
+\end_inset
+
+ via la constante de Gladstone-Dale:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\myepsilon=\dfrac{G}{n_{0}}\int_{s\in ray}\nabla\myrho ds
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L'aspect dérivation est réalisé par différences finies centrées.
+ Quant à l'aspect tomograhie-intégration, c'est une opération classique
+ de synthèse d'image, à savoir un lancé de rayon.
+ Ainsi, pour chaque pixel caméra, un rayon est propagé à travers les volumes
+ de gradient de masse volumique.
+ Le long du rayon, on intégr les gradients avec un pas de calcul égal à
+ 
+\begin_inset Formula $\dfrac{1}{10}^{ème}$
+\end_inset
+
+ de voxel.
+ Cette valeur a été jugée suffisante après avoir testé différents pas d'intégrat
+ion.
+ On obtient alors nos 3 cartes de déviations 
+\begin_inset Formula $\myepsilon_{x},\myepsilon_{y},\myepsilon_{z}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Performances du code de Todoroff
+\end_layout
+
+\begin_layout Standard
+Nous revenons ici sur la reconstruction optimale obtenue par Violaine Todoroff.
+ C'est une reconstruction réalisée avec 52 caméras disposées en couronne
+ autour du jet.
+ Elle a utilisé une régularisation 
+\begin_inset Formula $\mathcal{L}2\mathcal{L}1$
+\end_inset
+
+ avec un paramètre de régularisation 
+\begin_inset Formula $\mylambda=10^{-4}$
+\end_inset
+
+ et un seuil 
+\begin_inset Formula $\mydelta=0.5$
+\end_inset
+
+.
+ Elle utilise également une initialisation de la solution avec le champ
+ de masse volumique moyen.
+ Elle a en effet montré que cela permet non seulement d'accéler la convergence
+ mais aussi d'améliorer la qualité des résultats.
+ Une coupe du champ reconstruit est présenté en figure
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BOS3D:L2L1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Violaine_52cam_L2L1.png
+	lyxscale 30
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Champ de masse volumique reconstruit avec 52 caméras par Todoroff en utilisant
+ une régularisation 
+\begin_inset Formula $\mathcal{L}2\mathcal{L}1$
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BOS3D:L2L1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si il y a un bon accord avec le champ de référence on peut noter plusieurs
+ choses.
+ Tout d'avord, des oscillations apparaissent à la fois aucentre du volume
+ mais ausi sur le bord du volume au niveau de la sortie du jet.
+ Alors que la régularisation semble avoir fait son oeuvre sur l'ensemble
+ du jet certains voxels ressortent, donnant comme un 
+\begin_inset Quotes eld
+\end_inset
+
+piqué
+\begin_inset Quotes erd
+\end_inset
+
+ à l'image.
+ Enfin, dans les zones de forts gradients, à la sortie du jet, on constate
+ un éffet de rebond et une surestimation des niveaux de masse volumique.
+\end_layout
+
+\begin_layout Standard
+Todoroff évoque plusieurs éléments pouvant être responsable de ces artefacts:
+ d'une part, le positionnement coplanaire des caméras pourrait expliquer
+ les oscillations visibles au centre du volume.
+ Ensuite, 
 \end_layout
 
 \begin_layout Section

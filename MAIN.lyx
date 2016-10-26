@@ -137,6 +137,31 @@
 \usepackage{pdfpages} 
 \usepackage{minitoc}
 \usepackage{makecell}
+
+\include{alphabet}
+\usepackage{amsmath}
+\usepackage{xspace}
+\usepackage{bbm}
+\newcommand{\boldnabla}{\mbox{\boldmath$\nabla$}}
+\newcommand{\boldeps}{\mbox{\boldmath$\epsilon$}}
+\newcommand{\boldDelta}{\mbox{\boldmath$\Delta$}}
+\newcommand{\boldrho}{\mbox{\boldmath$\rho$}}
+\newcommand{\boldr}{\mbox{\boldmath$r$}}
+\newcommand{\boldd}{\mbox{\boldmath$d$}}
+\newcommand{\boldc}{\mbox{\boldmath$c$}}
+\newcommand{\boldv}{\mbox{\boldmath$v$}}
+\newcommand{\boldx}{\mbox{\boldmath$x$}}
+\newcommand{\boldy}{\mbox{\boldmath$y$}}
+\newcommand{\boldp}{\mbox{\boldmath$p$}}
+\newcommand{\boldP}{\mbox{\boldmath$P$}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+\newcommand{\Diag}{{\sdm {diag}}}
+\newcommand{\Vect}{{\sdm {vect}}}
+\newcommand{\sign}{{\sdm {sign}}}
+\newcommand{\rouge}[1]{\textcolor{red}{#1}}
+\newcommand{\bleu}[1]{\textcolor{blue}{#1}}
+\newcommand{\Laplace}{\mathop{}\!\mathbin\bigtriangleup}
+\newcommand{\vdir}[1]{\ab_{#1}}
 \end_preamble
 \use_default_options true
 \begin_includeonly

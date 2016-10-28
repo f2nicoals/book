@@ -137,6 +137,8 @@
 \usepackage{pdfpages} 
 \usepackage{minitoc}
 \usepackage{makecell}
+\usepackage{placeins}
+
 
 \include{alphabet}
 \usepackage{amsmath}
@@ -162,12 +164,16 @@
 \newcommand{\bleu}[1]{\textcolor{blue}{#1}}
 \newcommand{\Laplace}{\mathop{}\!\mathbin\bigtriangleup}
 \newcommand{\vdir}[1]{\ab_{#1}}
+
+
+\renewcommand{\floatpagefraction}{.99}
+\renewcommand{\textfraction}{.01}
+%\setlength{\intextsep}{0pt plus 2pt minus 2pt}
 \end_preamble
 \use_default_options true
 \begin_includeonly
-Chapitre_3/Chapitre3.lyx
 math-macro.lyx
-Chapitre_2/Chapitre2.lyx
+Biblio/Biblio.lyx
 \end_includeonly
 \maintain_unincluded_children false
 \language french
@@ -189,7 +195,6 @@ Chapitre_2/Chapitre2.lyx
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement H
 \paperfontsize 11
 \spacing single
 \use_hyperref true

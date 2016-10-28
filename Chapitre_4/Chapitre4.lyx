@@ -73,22 +73,19 @@
 \begin_layout Chapter
 Mise en œuvre de la BOS 3D en soufflerie industrielle : campagne d'essai
  à S1MA
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
+\begin_inset Argument 1
+status collapsed
 
 \begin_layout Plain Layout
-
-
-\backslash
-chaptermark{Mise en œuvre de la BOS 3D en soufflerie industrielle}
+Mise en œuvre de la BOS 3D en soufflerie industrielle
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 

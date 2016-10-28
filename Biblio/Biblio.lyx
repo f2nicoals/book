@@ -132,16 +132,7 @@ imprimé
 \end_inset
 
  leur ensemencement en projetant de la peinture blanche sur une surface
- goudronnée.
- Ils ont ensuite observé leur hélicoptère en vol stationnaire depuis le
- toit d'un bâtiment et après avoir calculé leur champ de déplacement, ils
- ont pu observer les tourbillons de bout de pâles et leur évolution.
- Déjà, Meier voit la technique comme très prometteuse pour la visualisation
- d'écoulements compressibles sur de très grand champs, avec des applications
- en soufflerie mais aussi pour des expériences en vol.
-\end_layout
-
-\begin_layout Standard
+ goudronnée 
 \begin_inset Float figure
 wide false
 sideways false
@@ -231,6 +222,13 @@ key "Richard2002"
  a) Hélicoptère et mouchetis obtenu par pulvérisation de peinture.
  b) Champ de déplacement mesuré par BOS.
  
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:DLR"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -238,13 +236,22 @@ key "Richard2002"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:DLR"
+
+\end_inset
+
+.
+ Ils ont ensuite observé leur hélicoptère en vol stationnaire depuis le
+ toit d'un bâtiment et après avoir calculé leur champ de déplacement, ils
+ ont pu observer les tourbillons de bout de pâles et leur évolution.
+ Déjà, Meier voit la technique comme très prometteuse pour la visualisation
+ d'écoulements compressibles sur de très grand champs, avec des applications
+ en soufflerie mais aussi pour des expériences en vol.
 \end_layout
 
 \begin_layout Standard
@@ -285,10 +292,432 @@ key "raffel2015"
 
 
 \size normal
- nous allons revenir sur les principales contributions.
+ nous allons revenir sur les principales contributions après avoir détailler
+ le principe de la technique BOS.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
+Principe de la technique BOS
+\end_layout
+
+\begin_layout Subsection
+Trajectoire des rayons lumineux dans un milieu d'indice non homogène
+\end_layout
+
+\begin_layout Standard
+Dans un milieu d'indice non homogène la lumière ne se propage plus en ligne
+ droite.
+ Les rayons lumineux sont courbés par le gradient d'indice optique aboutissant
+ au phénomène de mirage.
+ La trajectoire des rayons lumineux dans un milieu d'indice optique 
+\begin_inset Formula $n$
+\end_inset
+
+ est décrite par l'équation fondamentale de l'optique géométrique:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{d}{d\mys}(\myn\frac{d}{ds}\myx(\mys))=\nabla\myn\label{eq:biblio:ray}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+où 
+\begin_inset Formula $\mys$
+\end_inset
+
+ représente l'abscisse curviligne, et 
+\begin_inset Formula $\myx(\mys)$
+\end_inset
+
+ la trajectoire du rayon lumineux.
+ Dans la suite, le vecteur directeur 
+\begin_inset Formula $\dfrac{d\myx}{ds}$
+\end_inset
+
+ sera noté 
+\begin_inset Formula $\textbf{d}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Cette équation résulte du principe de Fermat qui stipule que pour aller
+ d'un point 
+\begin_inset Formula $A$
+\end_inset
+
+ à un point 
+\begin_inset Formula $B$
+\end_inset
+
+, la lumière suit le trajet le plus court.
+ Les différentes techniques exploitant les variations d'indice optique,
+ l'ombroscopie, la strioscopie, la BOS et l'holographie, peuvent toutes
+ êtres décrites à partir des de cette équation.
+ Lorsqu'un rayon traverse un milieu d'indice inhomogène sa trajectoire courbe
+ induit 3 phénomènes: un retard, une déviation et un déplacement.
+ Le retard est exploité par l'holographie pour mesurer le champ d'indice.
+ La déviation est directement mesurée par la strioscopie tandis que la BOS
+ exploite le déplacement.
+ Toutes deux sont sensibles au gradient de masse volumique.
+ L'ombroscopie quant à elle, exploite la conséquence du déplacement sur
+ l'intensité lumineuse.
+ Elle est alors sensible à la dérivée seconde de l'indice optique.
+ Dans la suite nous nous concentrons sur la mesure du gradient de masse
+ volumique et donc sur la mesure du déplacement et de la déviation.
+\end_layout
+
+\begin_layout Standard
+Si l'on considère un volume d'indice non homogène 
+\begin_inset Formula $V$
+\end_inset
+
+ et si l'on intègre l'équation
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:biblio:ray"
+
+\end_inset
+
+ entre le point d'entré du volume 
+\begin_inset Formula $\mys_{in}$
+\end_inset
+
+ et le point de sortie 
+\begin_inset Formula $\mys_{out}$
+\end_inset
+
+ on abouti à l'expression de la déviation des rayon lumineux :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\myepsilon=\mydo-\mydi=\frac{1}{\myn_{ext}}\int_{s_{in}}^{s_{out}}\nabla n(\textbf{x}(r))dr
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Enfin, en utilisant la relation de Gladstone-Dale, qui relie de manière
+ linéaire l'indice optique à la masse volumique, nous pouvons écrire:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\myepsilon=\frac{\myG}{\myn_{ext}}\int_{s_{in}}^{s_{out}}\nabla\myrho(\textbf{x}(r))dr
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+avec 
+\begin_inset Formula $\myG$
+\end_inset
+
+, la constante de Gadstone-Dale.
+ Celle-ci dépend principalement du gaz considéré et de la longueur d'onde.
+ Pour de l'air en conditions standard elle vaut 
+\begin_inset Formula $\myG=0.23.10^{-3}m^{3}/kg$
+\end_inset
+
+.
+ Le vecteur de déviation peut être décomposer suivant chacun des axes du
+ repère monde 
+\begin_inset Formula $\myepsilon=\left(\begin{array}{c}
+\myepsilon_{x}\\
+\myepsilon_{y}\\
+\myepsilon_{z}
+\end{array}\right)$
+\end_inset
+
+.
+ A noter que dans le cas de petites déviations, le vecteur déviation peut
+ être confondu avec l'angle de déviation.
+ 
+\end_layout
+
+\begin_layout Subsection
+Montage BOS
+\end_layout
+
+\begin_layout Standard
+Détaillons à présent le montage BOS.
+ Celui-ci se compose d'un fond texturé placé derrière l'écoulement à une
+ distance 
+\begin_inset Formula $Z_{B}$
+\end_inset
+
+ et d'un système d'imagerie, une caméra positionnée à une distance 
+\begin_inset Formula $Z_{A}$
+\end_inset
+
+ de l'écoulement.
+ En l'absence d'écoulement le rayon lumineux se propage en ligne droite
+ jusqu'à la caméra et vient impacter le CCD en X.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/principe.pdf
+	lyxscale 30
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En présence de l'écoulement, le rayon est dévié et touche le CCD en 
+\begin_inset Formula $X+\Delta X$
+\end_inset
+
+.
+ La BOS utilise alors des algorithmes de corrélation d'images pour calculer
+ ce déplacement 
+\begin_inset Formula $\Delta X$
+\end_inset
+
+.
+ La relation entre le déplacement mesuré et la déviation lumineuse, et donc
+ au gradient de masse volumique n'est pas immédiate et nécessite une hypothèse
+ supplémentaire.
+ En effet, la direction du rayon dévié est connue: 
+\begin_inset Formula $\mydo=\bar{XO}$
+\end_inset
+
+, tandis que la direction d'entrée 
+\begin_inset Formula $\mydi$
+\end_inset
+
+ demeure inconnue.
+ Pour pouvoir l'estimer, on fait l'hypothèse que la déviation s'est produite
+ brutalement sur un point à l'intérieur du volume.
+ Todoroff indique que le choix de ce point a peu d'influence sur l'estimation
+ de 
+\begin_inset Formula $\myepsilon$
+\end_inset
+
+ et de manière classique les auteurs choisissent le point milieu.
+ On abouti alors à la formule classique : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Delta X=Z_{B}M\myepsilon=f\left(\dfrac{Z_{B}}{Z_{A}+Z_{B}-f}\right)\myepsilon\label{eq:biblio:sensibilite}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+où 
+\begin_inset Formula $\myM$
+\end_inset
+
+, fait référence au grandissement optique de la caméra.
+\end_layout
+
+\begin_layout Subsection
+Optimisation du montage BOS
+\end_layout
+
+\begin_layout Subsubsection
+Sensibilité
+\end_layout
+
+\begin_layout Standard
+Plusieurs paramètres influent sur la sensibilité et la résolution de la
+ mesure BOS: les distances 
+\begin_inset Formula $Z_{A}$
+\end_inset
+
+(caméra-écoulement) et 
+\begin_inset Formula $Z_{B}$
+\end_inset
+
+ (écoulement-fond), la focale, l'ouverture caméra, le plan de mise au point.
+ Nous allons revenir sur chacun de ses paramètres et monter que pour une
+ mesure donnée un certain compromis doit être trouvé entre résolution et
+ sensibilité.
+ comme on peut le voir sur l'équation
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:biblio:sensibilite"
+
+\end_inset
+
+, la sensibilité de la mesure est directement liée à la focale.
+ De plus, pour maximiser la sensibilité, on a intérêt à éloigner le fonds
+ par rapport à l'écoulement et à rapprocher la caméra.
+ En pratique, focale caméra et distance d'observation sont directement liés.
+ Pour un écoulement de taille 
+\begin_inset Formula $U$
+\end_inset
+
+ on peut faire le lien entre ces deux grandeurs via le grandissement:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M=\dfrac{N\cdot pix}{U}=\dfrac{f}{Z_{A}-f}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+et donc,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f=\dfrac{N\cdot pix\cdot Z_{A}}{U+N\cdot pix}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour maximiser 
+\begin_inset Formula $\myf$
+\end_inset
+
+ en conservant 
+\begin_inset Formula $Z_{A}$
+\end_inset
+
+faible il faut donc maximiser la taille du capteur (
+\begin_inset Formula $N\cdot pix$
+\end_inset
+
+).
+ En pratique on préfère 
+\end_layout
+
+\begin_layout Standard
+Vérifier que :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\myepsilon=\dfrac{N\cdot pix\cdot AZ_{A}\cdot Z_{B}}{H(Z_{A}+Z_{B})+N\cdot pix\cdot Z_{B}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Résolution
+\end_layout
+
+\begin_layout Standard
+La résolution fait intervenir plusieurs aspects: on peut parler de la résolution
+ avec le fond est imagée, c'est la résolution caméra.
+ Meilleure sera la résolution caméra, plus petits pourront être les points
+ du mouchetis et donc les fenêtre de corrélation pour le calcul du champ
+ de déplacement.
+\end_layout
+
+\begin_layout Standard
+Il existe également une résolution au niveau de l'écoulement: on parlera
+ alors plus de cercle de confusion.
+ En effet, à partir du moment où l'on travaille pas en lumière collimaté
+ mais avec un faisceau divergent, la lumière qui arrive sur un pixel est
+ issu d'un 
+\begin_inset Quotes fld
+\end_inset
+
+pinceau
+\begin_inset Quotes frd
+\end_inset
+
+ qui a un certain diamètre au niveau de l'écoulement.
+ La déviation en ce pixel résulte donc d'un moyennage spatial.
+ Le diamètre du cercle de confusion au niveau de l'écoulement est proportionel
+ à l'ouverture caméra:
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
+Choix technologiques et pratiques
+\end_layout
+
+\begin_layout Subsection
 Le choix du fond
 \begin_inset CommandInset label
 LatexCommand label
@@ -299,7 +728,7 @@ name "sec:biblio:background"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Classiques
 \end_layout
 
@@ -498,7 +927,7 @@ regarder hartberger
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Fond naturel
 \end_layout
 
@@ -559,7 +988,7 @@ key "Hargather2010"
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Color-BOS
 \end_layout
 
@@ -705,7 +1134,7 @@ name "fig:biblio:CBOS"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Color-Grid-BOS
 \end_layout
 
@@ -783,7 +1212,7 @@ name "fig:biblio:CGBOS"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Speckle-BOS
 \end_layout
 
@@ -1012,7 +1441,11 @@ dans le cas de faisceaux non parallèles, les rayons voient-ils vraiment
 micro:Stoller, Kushner, poitiers 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
+Eclairage
+\end_layout
+
+\begin_layout Subsection
 Corrélation d'images
 \begin_inset CommandInset label
 LatexCommand label
@@ -1061,7 +1494,139 @@ Une image ? un peu plus exhaustif ? différence entre FFT et flot optique
 \end_layout
 
 \begin_layout Section
-Obtenir le champ de masse volumique: reconstruction 3D
+Quelques applications particulières
+\end_layout
+
+\begin_layout Subsection
+Mesures grand champ
+\end_layout
+
+\begin_layout Standard
+Mesures en vol déjà citées, 
+\end_layout
+
+\begin_layout Standard
+soufflerie, Mizukaki, Bathel Shairer,...
+\end_layout
+
+\begin_layout Standard
+Une campagne d'essai relativement impressionnante a également été mené par
+ le DLR 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bauknecht2014c"
+
+\end_inset
+
+ sur des tourbillons de bout de pales d'hélicoptères.
+ Pour pouvoir reconstruire en 3-dimensions les tourbillons d'un hélicoptère
+ échelle 1:1, Baucknecht et al.
+ ont installé 12 caméras disposées en arc de cercle dans une carrière et
+ utilisé la texture naturelle de la paroi rocheuse comme fond.
+ Ces essais ont permis d'étudier la dynamique tourbillonnaire pour différents
+ régimes de vol de l'appareil.
+ Ils ont utilisé l'information de position des tourbillons capturée par
+ chaque caméra pour reconstruire leur position dans l'espace par géométrie
+ épipolaire.
+ Cette technique consiste à trianguler des points caractéristiques d'un
+ objet vu par plusieurs caméra pour déterminer sa position dans l'espace.
+ Si elle demeure impressionant e par ses dimension, cette campagne d'essai
+ se limite au niveau de la reconstruction à de la localisation de structure
+ sans chercher à évaluer les niveaux de masse volumique rencontrés.
+ De ce fait, elle s'éloigne un peu de notre objectif.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/bauknecht-1.png
+	lyxscale 50
+	height 28text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Bauknecht-2.png
+	lyxscale 50
+	height 28text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ecoulements haute vitesse
+\end_layout
+
+\begin_layout Standard
+Ota, friedrich, sourgen, kirmse, Mizukaki, Ramanah
+\end_layout
+
+\begin_layout Section
+Méthodes de reconstruction tomographique
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:biblio:3d"
@@ -1527,438 +2092,24 @@ ur identifie aisément la zone de forts gradients, pour un cas plus complexe,
  cette procédure semble difficile à mettre en œuvre.
 \end_layout
 
-\begin_layout Subsection
-3D instationnaire
-\end_layout
-
 \begin_layout Standard
-Pour pouvoir capturer un écoulement quelconque, il est nécessaire d'acquérir
- de manière simultanée, plusieurs point de vues.
- Les premiers à avoir développé un tel système sont Ihrke et Atcheson
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Ihrke07,Atcheson08"
-
-\end_inset
-
-.
- Issus de la communauté du rendu graphique, ils ont développé un tel système
- pour pouvoir simuler de manière réaliste les distorsions optiques causées
- par un milieu non homogène que l'on observe typiquement au dessus d'une
- flamme.
- Plutôt qu' 
-\begin_inset Quotes fld
-\end_inset
-
-inventer
-\begin_inset Quotes frd
-\end_inset
-
- un champ de densité, ils ont développé un système de mesure de BOS 3D à
- 16 caméras afin de capturer un écoulement de convection.
- Ihrke est également le premier à résoudre le problème de reconstruction
- sous forme algébrique.
- Il reconstruit le champ de masse volumique en deux étapes: la reconstruction
- du champ de gradients part méthode ART, puis il retrouve sa solution par
- intégration de l'équation de Poisson.
- Cette première reconstruction de champ instantanés de masse volumique donne
- de très beaux résultats comme on peut le voir Fig.
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:biblio:atcheson"
-
-\end_inset
-
- De plus, en comparaison des méthode de FBP utilisées jusqu'alors, elle
- fonctionne avec nombre relativement limitée de projections (16).
- Toutefois, cette démonstration n'a pas pour vocation de réaliser des mesures
- précises, l'aspect visuel étant privilégié dans un contexte de rendu par
- ordinateur.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/Ihrke_Atch.png
-	lyxscale 50
-	width 100text%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-De gauche à droite: montage expérimental à 16 caméras mis en oeuvre par
- Ihrke et Atcheson 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Atcheson08"
-
-\end_inset
-
-.
- Image brute d'un bruleur à gaz devant un fond en ondelette.
- Champ de déplacement calculé, champ 3D de gradient de masse volumique et
- iso-surfaces de masse volumique.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:biblio:atcheson"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Violaine Todoroff 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Todoroff2013"
-
-\end_inset
-
-s'est inspiré de ces travaux pour développer un nouvel outil de mesure,
- la BOS 3D, pour la mécanique des fluides.
- Son objectif est de mettre au point une technique de reconstruction de
- champs instantanés de masse volumique par BOS 3D.
- Sa contribution s'appuie sur deux réalisations majeures.
- Tout d'abord, elle a développé un code de reconstruction novateur puisqu'il
- utilise une approche directe.
- Cela se traduit par le fait que son algorithme ne fonctionne pas en 2 étapes
- comme précédemment 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Ihrke07,Atcheson08,Leopold2013,Ota11,ishino2016"
-
-\end_inset
-
- (reconstruction des gradients + intégration) mais permet de reconstruire
- directement le champ de masse volumique.
- Son algorithme recherche la solution au sens des moindres carrés, d'un
- critère régularisé.
- L'objectif de cette régularisation est de lutter contre le bruit et donc
- de rechercher une solution relativement lisse.
- Au cours de sa thèse, Todoroff s'est intéressé à deux types de régularisations:
- une régularisation de Tickonov, quadratique, et une régularisation par
- variation totale, L2L1.
- Si son code donne de bons résultats, Todoroff constate toutefois un certains
- nombre de problèmes numériques: des oscillations qui apparaissent en bord
- de champ, des interactions complexes avec le masque 3D, un critère qui
- affiche parfois un comportement anormal, la difficulté d'ajuster les paramètres
- 
-\begin_inset Formula $\mylambda$
-\end_inset
-
-et 
-\begin_inset Formula $\mydelta$
-\end_inset
-
-de la régularisation L2L1.
- Elle note aussi l'importance de l'optimisation du code pour améliorer la
- résolution mais aussi la taille des champs reconstruits.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-Plus de détails, équation du critère, L-curve
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La deuxième contribution de Todoroff réside dans la conception d'un banc
- d'essai BOS 3D, la géode, supportant 12 caméras qui permet d'étudier l'impact
- du positionnement caméras sur les reconstructions.
- Sur cette installation, elle a put réaliser diverse reconstructions d'écoulemen
-ts de convection, comme un jet chaud ou bien un charbon en rotation.
- Malgré la construction de la géode, Todoroff n'a pas pu réaliser une étude
- du positionnement caméras, ni valider les mesures BOS 3D par une technique
- complémentaire.
- Ce dernier point étant essentiel pour qualifier la technique.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/geode.png
-	lyxscale 70
-	width 50text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Géode: banc BOS 3D supportant une douzaine de caméras sur un hémisphère
- et des mouchetis sur l'autre.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/jetchdiL2L1_1v1.png
-	lyxscale 20
-	width 50text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Reconstruction d'un écoulement instantané de jet chaud.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Une campagne d'essai relativement impressionnante a également été mené par
- le DLR 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "bauknecht2014c"
-
-\end_inset
-
- sur des tourbillons de bout de pales d'hélicoptères.
- Pour pouvoir reconstruire en 3-dimensions les tourbillons d'un hélicoptère
- échelle 1:1, Baucknecht et al.
- ont installé 12 caméras disposées en arc de cercle dans une carrière et
- utilisé la texture naturelle de la paroi rocheuse comme fond.
- Ces essais ont permis d'étudier la dynamique tourbillonnaire pour différents
- régimes de vol de l'appareil.
- Ils ont utilisé l'information de position des tourbillons capturée par
- chaque caméra pour reconstruire leur position dans l'espace par géométrie
- épipolaire.
- Cette technique consiste à trianguler des points caractéristiques d'un
- objet vu par plusieurs caméra pour déterminer sa position dans l'espace.
- Si elle demeure impressionant e par ses dimension, cette campagne d'essai
- se limite au niveau de la reconstruction à de la localisation de structure
- sans chercher à évaluer les niveaux de masse volumique rencontrés.
- De ce fait, elle s'éloigne un peu de notre objectif.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/bauknecht-1.png
-	lyxscale 50
-	height 28text%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/Bauknecht-2.png
-	lyxscale 50
-	height 28text%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-Ota ?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-Hartman...
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
 \begin_layout Subsection
-Strioscopie quantitative
+
+\end_layout
+
+\begin_layout Section
+Calcul de la masse volumique
+\end_layout
+
+\begin_layout Section
+Mise en œuvre pratique de la BOS 3D
+\end_layout
+
+\begin_layout Subsection
+Ecoulements axisymmétriques
 \end_layout
 
 \begin_layout Standard
@@ -2029,7 +2180,7 @@ key "Agrawal06,takano2016"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2136,6 +2287,14 @@ name "fig:biblio:rainbow"
 
 \end_layout
 
+\begin_layout Subsection
+Ecoulements stationnaires
+\end_layout
+
+\begin_layout Subsection
+Ecoulements périodiques
+\end_layout
+
 \begin_layout Standard
 Cabaleiro 
 \begin_inset CommandInset citation
@@ -2150,7 +2309,21 @@ key "cabaleiro2013"
  Etant donné le caractère périodique de l'écoulement, il travaille en moyenne
  de phase et utilise 36 points de vues différents pour reconstruire son
  écoulement par FBP.
- Enfin, Ishino 
+ 
+\end_layout
+
+\begin_layout Subsection
+Ecoulements instationnaires
+\end_layout
+
+\begin_layout Standard
+Pour pouvoir capturer un écoulement quelconque, il est nécessaire d'acquérir
+ de manière simultanée, plusieurs point de vues.
+ 
+\end_layout
+
+\begin_layout Standard
+Enfin, Ishino 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ishino2016"
@@ -2165,7 +2338,7 @@ key "ishino2016"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2208,10 +2381,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/flamme.png
@@ -2231,10 +2400,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -2261,12 +2426,296 @@ key "ishino2016"
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Les premiers à avoir développé un tel système sont Ihrke et Atcheson
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ihrke07,Atcheson08"
+
+\end_inset
+
+.
+ Issus de la communauté du rendu graphique, ils ont développé un tel système
+ pour pouvoir simuler de manière réaliste les distorsions optiques causées
+ par un milieu non homogène que l'on observe typiquement au dessus d'une
+ flamme.
+ Plutôt qu' 
+\begin_inset Quotes fld
+\end_inset
+
+inventer
+\begin_inset Quotes frd
+\end_inset
+
+ un champ de densité, ils ont développé un système de mesure de BOS 3D à
+ 16 caméras afin de capturer un écoulement de convection.
+ Ihrke est également le premier à résoudre le problème de reconstruction
+ sous forme algébrique.
+ Il reconstruit le champ de masse volumique en deux étapes: la reconstruction
+ du champ de gradients part méthode ART, puis il retrouve sa solution par
+ intégration de l'équation de Poisson.
+ Cette première reconstruction de champ instantanés de masse volumique donne
+ de très beaux résultats comme on peut le voir Fig.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:atcheson"
+
+\end_inset
+
+ De plus, en comparaison des méthode de FBP utilisées jusqu'alors, elle
+ fonctionne avec nombre relativement limitée de projections (16).
+ Toutefois, cette démonstration n'a pas pour vocation de réaliser des mesures
+ précises, l'aspect visuel étant privilégié dans un contexte de rendu par
+ ordinateur.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Ihrke_Atch.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+De gauche à droite: montage expérimental à 16 caméras mis en oeuvre par
+ Ihrke et Atcheson 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Atcheson08"
+
+\end_inset
+
+.
+ Image brute d'un bruleur à gaz devant un fond en ondelette.
+ Champ de déplacement calculé, champ 3D de gradient de masse volumique et
+ iso-surfaces de masse volumique.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:atcheson"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Violaine Todoroff 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Todoroff2013"
+
+\end_inset
+
+s'est inspiré de ces travaux pour développer un nouvel outil de mesure,
+ la BOS 3D, pour la mécanique des fluides.
+ Son objectif est de mettre au point une technique de reconstruction de
+ champs instantanés de masse volumique par BOS 3D.
+ Sa contribution s'appuie sur deux réalisations majeures.
+ Tout d'abord, elle a développé un code de reconstruction novateur puisqu'il
+ utilise une approche directe.
+ Cela se traduit par le fait que son algorithme ne fonctionne pas en 2 étapes
+ comme précédemment 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ihrke07,Atcheson08,Leopold2013,Ota11,ishino2016"
+
+\end_inset
+
+ (reconstruction des gradients + intégration) mais permet de reconstruire
+ directement le champ de masse volumique.
+ Son algorithme recherche la solution au sens des moindres carrés, d'un
+ critère régularisé.
+ L'objectif de cette régularisation est de lutter contre le bruit et donc
+ de rechercher une solution relativement lisse.
+ Au cours de sa thèse, Todoroff s'est intéressé à deux types de régularisations:
+ une régularisation de Tickonov, quadratique, et une régularisation par
+ variation totale, L2L1.
+ Si son code donne de bons résultats, Todoroff constate toutefois un certains
+ nombre de problèmes numériques: des oscillations qui apparaissent en bord
+ de champ, des interactions complexes avec le masque 3D, un critère qui
+ affiche parfois un comportement anormal, la difficulté d'ajuster les paramètres
+ 
+\begin_inset Formula $\mylambda$
+\end_inset
+
+et 
+\begin_inset Formula $\mydelta$
+\end_inset
+
+de la régularisation L2L1.
+ Elle note aussi l'importance de l'optimisation du code pour améliorer la
+ résolution mais aussi la taille des champs reconstruits.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Plus de détails, équation du critère, L-curve
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La deuxième contribution de Todoroff réside dans la conception d'un banc
+ d'essai BOS 3D, la géode, supportant 12 caméras qui permet d'étudier l'impact
+ du positionnement caméras sur les reconstructions.
+ Sur cette installation, elle a put réaliser diverse reconstructions d'écoulemen
+ts de convection, comme un jet chaud ou bien un charbon en rotation.
+ Malgré la construction de la géode, Todoroff n'a pas pu réaliser une étude
+ du positionnement caméras, ni valider les mesures BOS 3D par une technique
+ complémentaire.
+ Ce dernier point étant essentiel pour qualifier la technique.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/geode.png
+	lyxscale 70
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Géode: banc BOS 3D supportant une douzaine de caméras sur un hémisphère
+ et des mouchetis sur l'autre.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/jetchdiL2L1_1v1.png
+	lyxscale 20
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Reconstruction d'un écoulement instantané de jet chaud.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
 \begin_layout Plain Layout
 
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Ota ?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Hartman...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
@@ -3196,10 +3645,6 @@ Goldhann et Seum ?
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 

@@ -4737,15 +4737,18 @@ Pour la première fois la BOS 3D a été déployé en soufflerie industrielle
  optiques qui nécessite un alignement précis.
  Néanmoins nous avons pu démontrer la faisabilité de la mesure BOS 3D dans
  ce type d'installation.
- Trois problématiques spécifiques émergent de cette campagne: la première
- concerne la stabilité du mouchetis vis à vis de la caméra.
+ Trois problématiques spécifiques émergent de cette campagne.
+\end_layout
+
+\begin_layout Plain Layout
+La première concerne la stabilité du mouchetis vis à vis de la caméra.
  Comme on l'a vu, ici le mouchetis est affecté par des mouvement complexes
  des différents éléments de la soufflerie.
  La correction de ces mouvements est essentielle pour parvenir à une mesure
  fiable de l'écoulement.
- Même si notre procédure basée sur les mesure à Mach donné sans le jet permet
- de corriger en bonne partie les images, elle demeure valides que si le
- champ n'est pas perturbé par une maquette.
+ Même si notre procédure basée sur les mesures à Mach donné, sans le jet,
+ permet de corriger en bonne partie les images, elle demeure valides que
+ si le champ n'est pas perturbé par une maquette.
  De plus, si ce mouvement global représentait la plus grande perturbation
  dans un premier temps, une fois corrigé, les mouvements du second ordre
  dus aux vibrations pourraient s'avérés non négligeables.
@@ -4766,8 +4769,8 @@ La seconde concerne la mesure des écoulements de grande de taille.
 \begin_layout Plain Layout
 Enfin, la troisième difficulté est liée à la bonne capture de la dynamique
  de l'écoulement.
- Cela est plus complexesur une telle installation car nous n'avons pas de
- choix quant à la position des mouchetis.
+ Cela est plus complexe sur une telle installation car nous n'avons pas
+ de choix quant à la position des mouchetis.
  La sensibilité étant imposée,nous devons nous accommoder de l'astigmatisme
  parasite qui est généré.
  Une solution qui a été mis en évidence suggère de travailler à plus faible

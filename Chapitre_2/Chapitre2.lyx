@@ -156,12 +156,9 @@ où le terme de régularisation
 \end_inset
 
  pour la régularisation 
-
 \begin_inset Formula $\myL$
 \end_inset
 
-
-\lang french
  et 
 \begin_inset Formula $\sqrt{||\nabla\myrho||^{2}+\mydelta^{2}}$
 \end_inset
@@ -200,9 +197,9 @@ où le terme de régularisation
 \begin_inset Formula $\myL$
 \end_inset
 
- qui a montré des résultats suffisament convaincant pour envisager un autre
+ qui a montré des résultats suffisamment convaincant pour envisager un autre
  type de régularisation.
- La recherche de ce minimum est résolu de manière itérative via un algoritme
+ La recherche de ce minimum est résolu de manière itérative via un algorithme
  de gradient conjugué.
  La direction de descente est alors donnée par une combinaison linéaire
  de la direction courante 
@@ -241,7 +238,7 @@ Cas d'étude
 \end_layout
 
 \begin_layout Standard
-Pour évaluer son algortihme de reconstruction, Violaine Todoroff a utilisé
+Pour évaluer son algorithme de reconstruction, Violaine Todoroff a utilisé
  un champ de masse volumique obtenu par simulation numérique: le jet CoJen.
  Cet écoulement de jet double-flux, typique de ceux rencontrés sur des moteurs
  aéronautiques, a été calculé par simulation aux grandes échelle (LES)
@@ -272,26 +269,12 @@ key "Vuillot08"
 .
  Nous nous intéressons ici à un champ instantané qui présente bien plus
  d'échelles et de complexité que le champ moyen.
- Sur la figure
-\begin_inset space ~
-\end_inset
-
- on peut voir une coupe longitudinal du jet ainsi qu'une isosurface de densité,
- illustrant le caractère tridimensionnel du jet.
- Cet écoulement est également intéressant par la diversité des gradients
- présents: très intenses au début du jet, les gradients de masse volumiques
- s'atténuent au fur et à mesure du mélange avec l'air ambient.
-\end_layout
-
-\begin_layout Standard
+ Sur la 
 \begin_inset Float figure
+placement h
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -299,10 +282,6 @@ status open
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -334,10 +313,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/True_vol_Surf_film2.png
@@ -358,10 +333,6 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -369,6 +340,39 @@ status open
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ figure
+\begin_inset space ~
+\end_inset
+
+ on peut voir une coupe longitudinal du jet ainsi qu'une isosurface de densité,
+ illustrant le caractère tridimensionnel du jet.
+ Cet écoulement est également intéressant par la diversité des gradients
+ présents: très intenses au début du jet, les gradients de masse volumiques
+ s'atténuent au fur et à mesure du mélange avec l'air ambiant.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
 \end_layout
 
 \end_inset
@@ -468,29 +472,12 @@ Nous revenons ici sur la reconstruction optimale obtenue par Violaine Todoroff.
  de masse volumique moyen.
  Elle a en effet montré que cela permet non seulement accélérer la convergence
  mais aussi d'améliorer la qualité des résultats.
- Une coupe du champ reconstruit est présenté en figure
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BOS3D:L2L1"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
+ Une coupe du champ reconstruit est présenté en 
 \begin_inset Float figure
+placement h
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -528,7 +515,18 @@ name "fig:BOS3D:L2L1"
 
 \end_inset
 
+figure
+\begin_inset space ~
+\end_inset
 
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BOS3D:L2L1"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -561,6 +559,31 @@ Todoroff évoque plusieurs éléments pouvant être responsable de ces artefacts
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Mise en place d'un nouveau code de reconstruction
 \end_layout
@@ -578,33 +601,12 @@ et
  De manière pratique, les opérations de projection et rétroprojection peuvent
  être implémentées de 2 manières: par lancer de rayons, ou bien par projection
  de voxels.
- A chaque fois c'est le point de vue qui diffère (figure
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BOS3D:proj"
-
-\end_inset
-
-): pour le lancer de rayons on adopte le point de vue pixel en lançant un
- rayon à travers l'écoulement pour intégrer ou déposer de l'information.
- Au contraire, pour la projection de voxels on regarde quels pixels interceptent
- le voxel courant répartir l'information sur ces pixels ou bien mettre à
- jour la valeur du voxel.
-\end_layout
-
-\begin_layout Standard
+ A chaque fois c'est le point de vue qui diffère 
 \begin_inset Float figure
+placement h
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -612,10 +614,6 @@ status open
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -647,10 +645,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/voxelProj.png
@@ -668,10 +662,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -707,6 +697,37 @@ name "fig:BOS3D:proj"
 
 \end_inset
 
+(figure
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BOS3D:proj"
+
+\end_inset
+
+): pour le lancer de rayons on adopte le point de vue pixel en lançant un
+ rayon à travers l'écoulement pour intégrer ou déposer de l'information.
+ Au contraire, pour la projection de voxels on regarde quels pixels interceptent
+ le voxel courant répartir l'information sur ces pixels ou bien mettre à
+ jour la valeur du voxel.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -728,43 +749,12 @@ Violaine utilisait le lancer de rayon pour l'opération de projection et
 \end_layout
 
 \begin_layout Standard
-Enfin, nous avons également distinguer deux types de conditions aux limites
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BOS3D:boundaries"
-
-\end_inset
-
-: les bords où la masse volumiques est imposée et des bords dits 
-\begin_inset Quotes fld
-\end_inset
-
-libres
-\begin_inset Quotes frd
-\end_inset
-
- pour les quels un gradient nul est imposé.
- La première permet d'imposer la valeur de 
-\begin_inset Formula $\myrho_{ext}$
-\end_inset
-
-, qui n'est pas mesurée par la BOS.
- Quant à la seconde, elle est effectivement nécessaire dans le cas d'un
- jet pour les faces d'entrée et de sortie.
- Elle est équivalente à avoir une couronne de voxels supplémentaires autour
- de notre volume, de même valeur que les voxels du bords.
+Enfin, nous avons également distinguer deux types de conditions aux 
 \begin_inset Float figure
+placement h
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -798,35 +788,62 @@ name "fig:BOS3D:boundaries"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Au final, nous appliquons notre nouveau code de reconstruction sur le jet
- CoJeN avec également 52 caméras virtuelles.
- Une coupe du champ reconstruit est comparé à la référence en figure
+limites
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:BOS3D:cojen_good"
+reference "fig:BOS3D:boundaries"
 
 \end_inset
 
-.
+: les bords où la masse volumiques est imposée et des bords dits 
+\begin_inset Quotes fld
+\end_inset
+
+libres
+\begin_inset Quotes frd
+\end_inset
+
+ pour les quels un gradient nul est imposé.
+ La première permet d'imposer la valeur de 
+\begin_inset Formula $\myrho_{ext}$
+\end_inset
+
+, qui n'est pas mesurée par la BOS.
+ Quant à la seconde, elle est effectivement nécessaire dans le cas d'un
+ jet pour les faces d'entrée et de sortie.
+ Elle est équivalente à avoir une couronne de voxels supplémentaires autour
+ de notre volume, de même valeur que les voxels du bords.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
+
+\backslash
+FloatBarrier
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Au final, nous appliquons notre nouveau code de reconstruction sur le jet
+ CoJeN avec également 52 caméras virtuelles.
+ Une coupe du champ reconstruit est comparé à la référence en 
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -834,10 +851,6 @@ status open
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -860,10 +873,6 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -871,10 +880,6 @@ status open
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -894,10 +899,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -923,13 +924,20 @@ name "fig:BOS3D:cojen_good"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
-\end_layout
-
+figure
+\begin_inset space ~
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BOS3D:cojen_good"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -947,6 +955,22 @@ Dans la section suivante, à travers notre article, nous revenons en détail
  Enfin, après ces tests synthétiques, nous le mettons en œuvre sur des données
  expérimentales obtenues sur un banc d'essais BOS 3D et nous reconstruisons
  des écoulements de convection.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section

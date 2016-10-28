@@ -239,5 +239,158 @@ description "Régularisation L2"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mys}{s}
+{s}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$s$"
+description "Abscisse curviligne"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myx}{\textbf{x}}
+{\textbf{x}}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\textbf{x}$"
+description "Vecteur directeur du rayon lumineux"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myxp}{\textbf{\dot{x}}}
+{\dot{\textbf{x}}}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\dot{\\textbf{x}}$"
+description "Vecteur directeur du rayon lumineux"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myn}{n}
+{n}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$n$"
+description "Indice optique"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myG}{G}
+{G}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$G$"
+description "Constante de Gladstone-Dale"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mydi}{\textbf{d_{in}}}
+{\textbf{d_{in}}}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\textbf{d_{in}}$"
+description "Direction d'entrée du rayon lumineux"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mydo}{\textbf{d_{out}}}
+{\textbf{d_{out}}}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\textbf{d_{out}}$"
+description "Direction de sortie du rayon lumineux"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myf}{f}
+{f}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$f$"
+description "focale caméra"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myM}{m}
+{M}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$m$"
+description "Grandissement optique"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

@@ -147,23 +147,11 @@ Analyse modale d'un champ de masse volumique instantané
 Nous présentons dans cette section un début d'analyse physique du comportement
  du jet.
  Bien que l'objectif de cette thèse n'est pas de caractériser ce jet, il
- est intéressant de se pencher sur l'information que l'on obtenir et extraire
- d'une mesure BOS 3D.
- En observant attentivement notre champ de masse volumique instantanée,
- et en particulier le champ de gradient, une organisation hélicoïdale des
- enroulements de Kelvin-Helmoltz semble émerger.
- 
-\end_layout
-
-\begin_layout Standard
+ est intéressant de se pencher sur l'information
 \begin_inset Float figure
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -188,7 +176,11 @@ status open
 
 \end_inset
 
-
+ que l'on obtenir et extraire d'une mesure BOS 3D.
+ En observant attentivement notre champ de masse volumique instantanée,
+ et en particulier le champ de gradient, une organisation hélicoïdale des
+ enroulements de Kelvin-Helmoltz semble émerger.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -229,14 +221,26 @@ n.
 \end_layout
 
 \begin_layout Standard
+Ainsi, pour chaque coupe en 
+\begin_inset Formula $z$
+\end_inset
+
+, et pour chaque couronne 
+\begin_inset Formula $r$
+\end_inset
+
+, nous pouvons calculer une transformée de Fourrier azimutale.
+ Pour chaque mode nous pouvons alors représenter sur un plan 
+\begin_inset Formula $z-r$
+\end_inset
+
+ une carte d'intensité.
+ La partie réelle et l'amplitude des 5 premiers modes est présentée en 
 \begin_inset Float figure
+placement h
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -261,21 +265,7 @@ status open
 
 \end_inset
 
-Ainsi, pour chaque coupe en 
-\begin_inset Formula $z$
-\end_inset
-
-, et pour chaque couronne 
-\begin_inset Formula $r$
-\end_inset
-
-, nous pouvons calculer une transformée de Fourrier azimutale.
- Pour chaque mode nous pouvons alors représenter sur un plan 
-\begin_inset Formula $z-r$
-\end_inset
-
- une carte d'intensité.
- La partie réelle et l'amplitude des 5 premiers modes est présentée en figure
+figure
 \begin_inset space ~
 \end_inset
 
@@ -306,14 +296,19 @@ et
 .
  Le mode 2 est également présent dans la même zone que le mode 1.
  
+\end_layout
+
+\begin_layout Standard
+Si l'on extrait la partie réelle du mode 1 en 
+\begin_inset Formula $r/D=0.5$
+\end_inset
+
+ on obtient la courbe présentée en 
 \begin_inset Float figure
+placement h
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -347,10 +342,6 @@ Amplitude
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -358,10 +349,6 @@ Amplitude
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -409,15 +396,7 @@ name "fig:F2:modes"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Si l'on extrait la partie réelle du mode 1 en 
-\begin_inset Formula $r/D=0.5$
-\end_inset
-
- on obtient la courbe présentée en figure
+figure
 \begin_inset space ~
 \end_inset
 
@@ -438,10 +417,12 @@ reference "fig:F2:amplification"
 \end_layout
 
 \begin_layout Standard
+Ce début d'analyse 
 \begin_inset Float figure
+placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -480,13 +461,9 @@ name "fig:F2:amplification"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Ce début d'analyse est encourageant et montre l'intérêt de pouvoir reconstruire
- des champs de masse volumique instantanés mais il demeure trop limité pour
- pouvoir tirer d'avantage de conclusions.
+ est encourageant et montre l'intérêt de pouvoir reconstruire des champs
+ de masse volumique instantanés mais il demeure trop limité pour pouvoir
+ tirer d'avantage de conclusions.
  Sur un cas tel que celui-ci mais aussi de manière plus générale), il serait
  intéressant de reconstruire l'ensemble des champs instantanés afin de pouvoir
  réaliser des statistiques.
@@ -497,6 +474,22 @@ Ce début d'analyse est encourageant et montre l'intérêt de pouvoir reconstrui
  Il serait alors intéressant de comparer ce résultat avec une analyse de
  stabilité, d'autant plus que l'on dispose de manière expérimentale à la
  fois des champs température et de vitesse moyens.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section

@@ -326,6 +326,15 @@ description "Constante de Gladstone-Dale"
 
 \begin_layout Standard
 \begin_inset FormulaMacro
+\newcommand{\myF}{\mathcal{F}}
+{\mathcal{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
 \newcommand{\mydi}{\textbf{d_{in}}}
 {\textbf{d_{in}}}
 \end_inset

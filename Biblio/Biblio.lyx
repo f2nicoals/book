@@ -755,6 +755,7 @@ Todoroff a un introduit un mouchetis semi-aléatoire: ce fond composé de
 \begin_layout Standard
 \align center
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status collapsed
@@ -1646,24 +1647,76 @@ La BOS étant une mesure intégrée, l'obtention du champ de masse volumique
 \end_layout
 
 \begin_layout Subsection
-Ecoulement axisymétrique
+Cas axisymétrique: transformée d'Abel
 \end_layout
 
 \begin_layout Standard
 Pour un écoulement axisymmétrique, une seule vue est nécessaire pour capturer
- la physique.
- Et, dans ce cas précis, il est possible d'utiliser la transformée inverse
- d'Abel 
+ la phénomène.
+ Et, dans ce cas précis, il est possible d'utiliser la transformée d'Abel
+ inverse 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:biblio:abel"
 
 \end_inset
 
- pour reconstruire la distribution volumique de masse volumique.
+ pour reconstruire le champ 
+\begin_inset Formula $f(r)$
+\end_inset
+
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/abel.pdf
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Transformée d'Abel.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:abel"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:abel"
+
+\end_inset
+
+.
 \begin_inset Formula 
 \begin{equation}
-F(y)=2\int_{y}^{\text{\ensuremath{\infty}}}\frac{f(r)rdr}{\sqrt{r^{2}-y^{2}}},\hspace{10mm}f(r)=\frac{-1}{\pi}\int_{r}^{\text{\ensuremath{\infty}}}\frac{dF}{dy}\frac{dy}{\sqrt{y^{2}-r^{2}}}\label{eq:biblio:abel}
+p(y)=2\int_{y}^{\text{\ensuremath{\infty}}}\frac{f(r)rdr}{\sqrt{r^{2}-y^{2}}},\hspace{10mm}f(r)=\frac{-1}{\pi}\int_{r}^{\text{\ensuremath{\infty}}}\frac{dF}{dy}\frac{dy}{\sqrt{y^{2}-r^{2}}}\label{eq:biblio:abel}
 \end{equation}
 
 \end_inset
@@ -1673,7 +1726,7 @@ F(y)=2\int_{y}^{\text{\ensuremath{\infty}}}\frac{f(r)rdr}{\sqrt{r^{2}-y^{2}}},\h
 
 \begin_layout Standard
 La transformée d'Abel exprime la projection 
-\begin_inset Formula $F(y)$
+\begin_inset Formula $p(y)$
 \end_inset
 
  d'une fonction axi-symmétrique 
@@ -1681,8 +1734,14 @@ La transformée d'Abel exprime la projection
 \end_inset
 
  le long d'une ligne de vue aboutissant à la mesure.
- Son inverse permet de calculer la-dite fonction à partir de sa projection
- mesurée.
+ Comme en pratique on dispose d'un nombre fini de projections, la tranformée
+ d'Abel inverse est un problème mal posé qui doit être en général résolu
+ avec des outils de régularisation.
+ Elle fournit alors une estimation de la distribution 
+\begin_inset Formula $f(r)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1697,10 +1756,6 @@ Très utilisée, la transformée d'Abel permet de remonter au champ de masse
  l'apparition d'artefacts sur cet axe justement.
 \end_layout
 
-\begin_layout Subsection
-Ecoulement stationnaire
-\end_layout
-
 \begin_layout Standard
 Un écoulement stationnaire permet également de travailler avec un seul point
  de vue.
@@ -1713,44 +1768,113 @@ Un écoulement stationnaire permet également de travailler avec un seul point
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Rétroprojection filtrée (FBP)
 \end_layout
 
 \begin_layout Standard
+\align center
 La rétroprojection filtrée est basée sur la transformée de Radon, une généralisa
 tion de la transformée d'Abel, qui tient compte de l'angle de visée.
- Beaucoup utilisée à l'origine en imagerie médicale, Sourgen
-\begin_inset CommandInset citation
-LatexCommand cite
-key "sourgen2004"
+ En adoptant les notations de 
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/radon.pdf
+	lyxscale 50
+	width 80text%
 
 \end_inset
 
- l'a mise en œuvre sur la BOS pour reconstruire des champ de masse volumique
- autour d'un cône à Mach 2.06.
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Illustration de la transformée de Radon et du thèoreme de la tranche centrale.
  
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:radon"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ , l'operateur de Radon qui exprime l'ensemble des projections de 
+\begin_inset Formula $f$
+\end_inset
+
+ peut s'écrire :
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-F(y)=2\int_{y}^{\text{\ensuremath{\infty}}}\frac{f(r,theta)rdr}{\sqrt{r^{2}-y^{2}}}
+R[f](t,\mytheta)=p_{\mytheta}(t)=\int f(t\cdot cos\mytheta-s\cdot sin\mytheta,sin\mytheta+s\cdot cos\mytheta)ds
 \end{equation}
 
 \end_inset
 
 
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-Schéma
 \end_layout
 
+\begin_layout Standard
+La reconstruction de la focntion 
+\begin_inset Formula $f$
 \end_inset
 
+ exploite alors le théorème de la tranche centrale (
+\shape italic
+Fourrier slice theorem
+\shape default
+ en anglais), qui stipule qu'une projection 
+\begin_inset Formula $p_{\mytheta1}(t)$
+\end_inset
 
+ suivant l'angle 
+\begin_inset Formula $\mytheta1$
+\end_inset
+
+dans le domaine spatial est équivalent à une coupe selon la droite d'angle
+ 
+\begin_inset Formula $\mytheta1$
+\end_inset
+
+ dans l'espace fréquentiel.
+ L'idée est donc de reconstruire la transformée de Frourrier du champ 
+\begin_inset Formula $\myF\{f(x,y)\}$
+\end_inset
+
+ avec ses projections dans l'espace de Fourrier puis de prendre sa tranformée
+ inverse.
+ En pratique, on applique également un filtre aux projections 
+\begin_inset Formula $p_{\mytheta}(t)$
+\end_inset
+
+ pour limiter le bruit.
+ En effet, si l'on rétroprojette brutalement la mesure dans le volume, des
+ données vont s'accumuler le long des axes de visée conduisant à des artefacts
+ en étoile.
+ La principale difficulté de la rétroprojection filtrée réside donc dans
+ le filtrage.
 \end_layout
 
 \begin_layout Standard
@@ -1791,31 +1915,32 @@ Comparaison des champs de masse volumique, reconstruit par FBP (à gauche)
 \end_layout
 
 \begin_layout Standard
-La principale difficulté de la rétroprojection filtrée réside dans le filtrage.
- En effet, si l'on rétroprojette brutalement la mesure dans le volume, des
- données vont s'accumuler le long des axes de visée conduisant à des artefacts
- en étoile.
- Un filtrage est donc nécessaire pour les limiter et aboutir à une reconstructio
-n propre.
- Enfin, la FBP nécessite un grand nombre de projection pour fonctionner:
+Enfin, la FBP nécessite un grand nombre de projection pour fonctionner:
  typiquement, les scanners médicaux acquiert plusieurs centaines de projections!
  En BOS, pour les écoulements stationnaires, il est possible de faire un
  certain nombre de mesure (20 à 30 en général) mais cela demeure assez insuffisa
 nt.
  Une manière d'améliorer la qualité des reconstructions est d'interpoler
  les données manquantes en se basant sur le sinogramme.
- Le sinogramme est une façon de représenter l'ensemble des projections en
- représentant la mesure sous la forme d'un graphique (r,
+ Le sinogramme est une façon de représenter l'ensemble des projections 
+\begin_inset Formula $p_{\mytheta}(t)$
+\end_inset
+
+ en représentant la mesure sous la forme d'un graphique (t,
 \begin_inset Formula $\theta$
 \end_inset
 
-), chaque ligne représentant une projection.
+), chaque ligne représentant une projection suivant l'angle 
+\begin_inset Formula $\mytheta$
+\end_inset
+
+.
  Il est appelé ainsi car l'image dans point se traduit par une sinusoïde.
  L'interpolation du sinogramme permet donc de combler le manque de données
  et d'améliorer la reconstruction.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Reconstruction algébrique (ART)
 \end_layout
 
@@ -1825,17 +1950,63 @@ Les méthodes algébrique connaissent un intérêt croissant depuis une dizaine
  Elles étaient jusque là peu utilisées en raison de leur coût de calcul
  prohibitif mais elles se démocratise avec l'amélioration performances des
  ordinateurs.
- Ces méthodes consistent à rechercher une solution sur un espace discret
- de fonctions de base, généralement choisi comme les voxels.
- Un opérateur de projection est définit au en un point 
+ Ces méthodes consistent à rechercher la distribution 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ sur un espace discret de fonctions de base 
+\begin_inset Formula $\phi_{i}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f(x,y)=\sum_{i=1}^{n}f_{i}\phi_{i}(x,y)
+\end{equation}
+
+\end_inset
+
+On utilise générallement la base des fonctions caractéristiques des voxels:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\phi_{i}=\left\{ \begin{array}{l}
+1\mbox{ si }(x,y)\in\mbox{pixel }i\\
+0\mbox{ sinon}
+\end{array}\right.
+\end{equation}
+
+\end_inset
+
+Un opérateur de projection 
+\begin_inset Formula $p_{j}$
+\end_inset
+
+ est définit comme la somme des contributions des voxels traversés par la
+ ligne de visée issue de 
 \begin_inset Formula $j$
 \end_inset
 
- comme la somme des contributions des voxels traversés par la ligne de visée
- issue de 
-\begin_inset Formula $j$
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p_{j}=\sum_{i=1}^{n}R_{ij}f_{i}
+\end{equation}
+
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 .
  Le principe des méthodes ART est de mettre à jour de manière itérative
  les valeurs des voxels en ajoutant la valeur calculée à l'itération précédente
@@ -1865,7 +2036,7 @@ key "Leopold2013,Ota11"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2064,7 +2235,7 @@ En pratique, en tomographie la matrice A du système n'est pas carré, donc
 tion s'impose pour pouvoir converger vers une solution.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Combinaison FBP et ART
 \end_layout
 
@@ -2291,6 +2462,13 @@ name "fig:biblio:rainbow"
 Ecoulements stationnaires
 \end_layout
 
+\begin_layout Standard
+Beaucoup utilisée à l'origine en imagerie médicale FBP, Sourgen[#sourgen2004]
+ l'a mise en œuvre sur la BOS pour reconstruire des champ de masse volumique
+ autour d'un cône à Mach 2.06.
+ 
+\end_layout
+
 \begin_layout Subsection
 Ecoulements périodiques
 \end_layout
@@ -2314,6 +2492,10 @@ key "cabaleiro2013"
 
 \begin_layout Subsection
 Ecoulements instationnaires
+\end_layout
+
+\begin_layout Subsubsection
+Strioscopie
 \end_layout
 
 \begin_layout Standard
@@ -2431,6 +2613,10 @@ key "ishino2016"
 
 \end_layout
 
+\begin_layout Subsubsection
+BOS 3D et infographie
+\end_layout
+
 \begin_layout Standard
 Les premiers à avoir développé un tel système sont Ihrke et Atcheson
 \begin_inset CommandInset citation
@@ -2523,6 +2709,10 @@ name "fig:biblio:atcheson"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Développement de la BOS 3D à l'ONERA
 \end_layout
 
 \begin_layout Standard

@@ -1998,7 +1998,7 @@ Un opérateur de projection
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-p_{j}=\sum_{i=1}^{n}R_{ij}f_{i}
+p_{j}=\sum_{i=1}^{n}A_{ij}f_{i}
 \end{equation}
 
 \end_inset
@@ -2007,11 +2007,76 @@ p_{j}=\sum_{i=1}^{n}R_{ij}f_{i}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula $R_{ij}$
+\end_inset
+
+ représente la contribution du voxel 
+\begin_inset Formula $i$
+\end_inset
+
+ à la mesure selon ligne 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ Le problème peut alors s'écrire de manière matricielle sous la forme:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+P=Af
+\end{equation}
+
+\end_inset
+
+Le vecteur 
+\begin_inset Formula $P$
+\end_inset
+
+ représente la mesure.
+ Sa dimension 
+\begin_inset Formula $m$
+\end_inset
+
+ est égale au produit du nombre de prise de vue 
+\begin_inset Formula $M$
+\end_inset
+
+ par le nombre de points de projections 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Le champ 
+\begin_inset Formula $f$
+\end_inset
+
+ est lui de taille 
+\begin_inset Formula $n=V_{x}\times V_{y}$
+\end_inset
+
+, le nombre total de voxels.
+ Et 
+\begin_inset Formula $R$
+\end_inset
+
+, la matrice de poids qui est indédenante de 
+\begin_inset Formula $f$
+\end_inset
+
+, est de taille 
+\begin_inset Formula $n\times m$
+\end_inset
+
 .
  Le principe des méthodes ART est de mettre à jour de manière itérative
  les valeurs des voxels en ajoutant la valeur calculée à l'itération précédente
- le résidu entre la valeur mesurée en j et la projection du volume calculé
- à l'itération précédente.
+ le résidu entre la valeur mesurée en 
+\begin_inset Formula $j$
+\end_inset
+
+ et la projection du volume calculé à l'itération précédente.
  
 \begin_inset Note Greyedout
 status open
@@ -2228,8 +2293,11 @@ status open
 \end_layout
 
 \begin_layout Standard
-En pratique, en tomographie la matrice A du système n'est pas carré, donc
- non inversible au sens strict.
+En pratique, en tomographie la matrice 
+\begin_inset Formula $A$
+\end_inset
+
+ du système n'est pas carré, donc non inversible au sens strict.
  On cherche donc, le plus souvent, la solution au sens des moindres carré.
  De plus, le bruit de mesure rendant le problème mal conditionné, une régularisa
 tion s'impose pour pouvoir converger vers une solution.

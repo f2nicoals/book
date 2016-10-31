@@ -1508,6 +1508,7 @@ Mesures en vol déjà citées,
 
 \begin_layout Standard
 soufflerie, Mizukaki, Bathel Shairer,...
+ Venka vibrations
 \end_layout
 
 \begin_layout Standard
@@ -1522,22 +1523,14 @@ key "bauknecht2014c"
  sur des tourbillons de bout de pales d'hélicoptères.
  Pour pouvoir reconstruire en 3-dimensions les tourbillons d'un hélicoptère
  échelle 1:1, Baucknecht et al.
- ont installé 12 caméras disposées en arc de cercle dans une carrière et
- utilisé la texture naturelle de la paroi rocheuse comme fond.
- Ces essais ont permis d'étudier la dynamique tourbillonnaire pour différents
- régimes de vol de l'appareil.
- Ils ont utilisé l'information de position des tourbillons capturée par
- chaque caméra pour reconstruire leur position dans l'espace par géométrie
- épipolaire.
- Cette technique consiste à trianguler des points caractéristiques d'un
- objet vu par plusieurs caméra pour déterminer sa position dans l'espace.
- Si elle demeure impressionant e par ses dimension, cette campagne d'essai
- se limite au niveau de la reconstruction à de la localisation de structure
- sans chercher à évaluer les niveaux de masse volumique rencontrés.
- De ce fait, elle s'éloigne un peu de notre objectif.
-\end_layout
+ ont installé 12 caméras disposées en arc de cercle dans une carrière 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:label:carriere"
 
-\begin_layout Standard
+\end_inset
+
+ 
 \begin_inset Float figure
 wide false
 sideways false
@@ -1605,8 +1598,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\end_layout
+Reconstruction de la position des tourbillons de bout de pâles d'un hélicoptère
+ par géométrie épipolaire.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:label:carriere"
 
 \end_inset
 
@@ -1616,6 +1613,22 @@ status open
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+ et utilisé la texture naturelle de la paroi rocheuse comme fond.
+ Ces essais ont permis d'étudier la dynamique tourbillonnaire pour différents
+ régimes de vol de l'appareil.
+ Ils ont utilisé l'information de position des tourbillons capturée par
+ chaque caméra pour reconstruire leur position dans l'espace par géométrie
+ épipolaire.
+ Cette technique consiste à trianguler des points caractéristiques d'un
+ objet vu par plusieurs caméra pour déterminer sa position dans l'espace.
+ Si elle demeure impressionnante par ses dimension, cette campagne d'essai
+ se limite au niveau de la reconstruction à de la localisation de structure
+ sans chercher à évaluer les niveaux de masse volumique rencontrés.
+ De ce fait, elle s'éloigne un peu de notre objectif.
 \end_layout
 
 \begin_layout Subsection
@@ -2133,16 +2146,6 @@ key "hartmann2016"
 ur identifie aisément la zone de forts gradients, pour un cas plus complexe,
  cette procédure risque d'être difficile à mettre en œuvre.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-8 caméras
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -2680,6 +2683,16 @@ Les équipes précédentes ont poursuivit leurs développements en s'intéressan
  plusieurs prises de vues successivement en tournant autour de l'écoulement.
  En général, plutôt que de tourner la caméra, on préfère déplacer la maquette
  qui est très souvent monté sur un bras robotisé.
+ Ota 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ota11"
+
+\end_inset
+
+ procède de cette manière et enregistre 19 projections réalisées tous les
+ 5° entre 0° et 90° pour reconstruire l'écoulement supersonique autour d'un
+ cône tronqué.
  Sourgen
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2687,7 +2700,13 @@ key "Sourgen12"
 
 \end_inset
 
- l'a mise en œuvre sur la BOS pour reconstruire des champ de masse volumique
+ qui s'intéresse lui aussi à l'écoulement supersonique autour d'un cône
+ adapte la FBP pour être capable de traiter ses mesures.
+ En effet, la présence d'une maquette dans l'écoulement perturbe fortement
+ la reconstruction.
+ Il propose une solution consistant à interpoler la zone masquée du sinogramme.
+ Après avoir évaluer sa solution sur le fantôme de Shepp-Logan, il démontre
+ le potentiel de sa technique pour reconstruire des champ de masse volumique
  autour d'un cône à Mach 2.06 
 \begin_inset Float figure
 placement h
@@ -2735,8 +2754,7 @@ reference "fig:biblio:sourgen"
 \end_inset
 
 .
- Ota a quant à lui reconstruit l'écoulement autour d'un cône tronqué à partir
- de 19 projections réalisées tous les 5° entre 0° et 90°.
+ .
 \end_layout
 
 \begin_layout Subsection

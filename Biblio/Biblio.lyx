@@ -2243,7 +2243,7 @@ Ecoulements axisymmétriques
 Les écoulements axi-symmétriques sont les plus faciles à mesurer: des techniques
  peu couteuse comme l'inversion de la transformée d'Abel peuvent être employées
  et ils ne nécessite qu'une seule prise de vue.
- Le plus souvent ce sont des écoulments axi-symmétriques en moyenne qui
+ Le plus souvent ce sont des écoulements axi-symmétriques en moyenne qui
  sont étudiés.
 \end_layout
 
@@ -3387,8 +3387,15 @@ key "raffel2015"
 \end_inset
 
 .
- Il nous néanmoins paru intéressant de de rassembler les études ayant trait
- à la reconstruction 3D dans le tableau ...
+ Il nous est néanmoins paru intéressant de synthétiser l'ensemble des études
+ ayant trait à la reconstruction 3D dans le tableau 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:biblio:resume"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3400,7 +3407,7 @@ status open
 \begin_layout Plain Layout
 \align left
 \begin_inset Tabular
-<lyxtabular version="3" rows="16" columns="7">
+<lyxtabular version="3" rows="18" columns="7">
 <features rotate="0" tabularvalignment="middle" tabularwidth="100text%">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="left" valignment="middle" width="10line%">
@@ -3630,7 +3637,7 @@ Abel
 \begin_inset Text
 
 \begin_layout Plain Layout
-Miyazato et Ono
+Takano, Miyazato et Ono
 \end_layout
 
 \end_inset
@@ -3642,16 +3649,6 @@ Miyazato et Ono
 \begin_inset CommandInset citation
 LatexCommand cite
 key "takano2016"
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Eventuellement les AIAA 2011-12
-\end_layout
 
 \end_inset
 
@@ -3995,7 +3992,7 @@ FBP
 \begin_inset Text
 
 \begin_layout Plain Layout
-Sourgen, Leopold
+Sourgen et Leopold
 \end_layout
 
 \end_inset
@@ -4346,11 +4343,11 @@ ART
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Atcheson, Irhke, Berger
+Atcheson, Irhke et Berger
 \end_layout
 
 \end_inset
@@ -4472,7 +4469,149 @@ ART
 \begin_inset Text
 
 \begin_layout Plain Layout
+/
+\end_layout
 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Goldhahn, Hartmann et Seume
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Goldhahn07"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stationnaire
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FBP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+36
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hartmann2016"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOS 3D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ART + FBP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
 \end_layout
 
 \end_inset
@@ -4557,15 +4696,6 @@ ART
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-Goldhann et Seum ?
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -4573,6 +4703,14 @@ Goldhann et Seum ?
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+ebfcebjce .
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:biblio:resume"
+
+\end_inset
+
 
 \end_layout
 

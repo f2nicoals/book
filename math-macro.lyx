@@ -386,7 +386,7 @@ description "focale caméra"
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\myM}{m}
+\newcommand{\myM}{M}
 {M}
 \end_inset
 

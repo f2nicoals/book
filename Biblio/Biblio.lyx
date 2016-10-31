@@ -1734,7 +1734,7 @@ La transformée d'Abel exprime la projection
 \end_inset
 
  le long d'une ligne de vue aboutissant à la mesure.
- Comme en pratique on dispose d'un nombre fini de projections, la tranformée
+ Comme en pratique on dispose d'un nombre fini de projections, la transformée
  d'Abel inverse est un problème mal posé qui doit être en général résolu
  avec des outils de régularisation.
  Elle fournit alors une estimation de la distribution 
@@ -1818,7 +1818,7 @@ name "fig:biblio:radon"
 
 \end_inset
 
- , l'operateur de Radon qui exprime l'ensemble des projections de 
+ , l'opérateur de Radon qui exprime l'ensemble des projections de 
 \begin_inset Formula $f$
 \end_inset
 
@@ -1837,7 +1837,7 @@ R[f](t,\mytheta)=p_{\mytheta}(t)=\int f(t\cdot cos\mytheta-s\cdot sin\mytheta,si
 \end_layout
 
 \begin_layout Standard
-La reconstruction de la focntion 
+La reconstruction de la fonction 
 \begin_inset Formula $f$
 \end_inset
 
@@ -1863,7 +1863,7 @@ dans le domaine spatial est équivalent à une coupe selon la droite d'angle
 \begin_inset Formula $\myF\{f(x,y)\}$
 \end_inset
 
- avec ses projections dans l'espace de Fourrier puis de prendre sa tranformée
+ avec ses projections dans l'espace de Fourrier puis de prendre sa transformée
  inverse.
  En pratique, on applique également un filtre aux projections 
 \begin_inset Formula $p_{\mytheta}(t)$
@@ -1878,39 +1878,6 @@ dans le domaine spatial est équivalent à une coupe selon la droite d'angle
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/Sourgen_2012.png
-	lyxscale 50
-	width 100text%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Comparaison des champs de masse volumique, reconstruit par FBP (à gauche)
- et obtenus par calcul RANS (à droite).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -1958,6 +1925,54 @@ Les méthodes algébrique connaissent un intérêt croissant depuis une dizaine
 \begin_inset Formula $\phi_{i}$
 \end_inset
 
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/art.pdf
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Reconstruction algébrique.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:art"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:art"
+
+\end_inset
+
 :
 \end_layout
 
@@ -1969,7 +1984,7 @@ f(x,y)=\sum_{i=1}^{n}f_{i}\phi_{i}(x,y)
 
 \end_inset
 
-On utilise générallement la base des fonctions caractéristiques des voxels:
+On utilise généralement la base des fonctions caractéristiques des voxels:
 \end_layout
 
 \begin_layout Standard
@@ -2061,7 +2076,7 @@ Le vecteur
 \begin_inset Formula $R$
 \end_inset
 
-, la matrice de poids qui est indédenante de 
+, la matrice de poids qui est indépendante de 
 \begin_inset Formula $f$
 \end_inset
 
@@ -2078,16 +2093,405 @@ Le vecteur
 
  et la projection du volume calculé à l'itération précédente.
  
-\begin_inset Note Greyedout
+\end_layout
+
+\begin_layout Standard
+En pratique, en tomographie la matrice 
+\begin_inset Formula $A$
+\end_inset
+
+ du système n'est pas carré, donc non inversible au sens strict.
+ On cherche donc, le plus souvent, la solution au sens des moindres carré.
+ De plus, le bruit de mesure rendant le problème mal conditionné, une régularisa
+tion s'impose pour pouvoir converger vers une solution.
+\end_layout
+
+\begin_layout Subsection
+Combinaison FBP et ART
+\end_layout
+
+\begin_layout Standard
+Tout récemment 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hartmann2016"
+
+\end_inset
+
+ ont proposé une approche mixte.
+ Après avoir constaté que, d'une part leur reconstruction FBP est très affectée
+ par des artefacts suivant les lignes de vues mais qu'elle est capable de
+ reconstruire de forts gradients et que , d'autre part leur reconstruction
+ ART est relativement propre mais sous-estime de manière systématique les
+ niveaux de masse volumique, ils proposent de combiner les deux techniques.
+ Pour cela, ils réalisent tout d'abord une reconstruction FBP à partir de
+ laquelle ils extraient les zones de forts gradients de masse volumique.
+ Puis, ils utilisent ce résultat pour initialiser la reconstruction ART.
+ Le résultat final est propre avec de meilleurs niveaux sur les zones de
+ forts gradients.
+ Si cette technique semble fonctionner sur ce cas simple pour lequel l'utilisate
+ur identifie aisément la zone de forts gradients, pour un cas plus complexe,
+ cette procédure risque d'être difficile à mettre en œuvre.
+\end_layout
+
+\begin_layout Section
+Calcul de la masse volumique
+\end_layout
+
+\begin_layout Standard
+Dans notre contexte de mesure de la masse volumique, les méthodes de reconstruct
+ions tomographiques décrites précédemment permettent donc de reconstruire
+ le champ de gradient de 
+\begin_inset Formula $\myrho$
+\end_inset
+
+.
+ Il est alors nécessaire d'intégrer le résultat pour accéder au champ de
+ masse volumique.
+ Plusieurs solution ont été utilisées dans la littérature.
+ La plus simple consiste a intégré le champ de gradients par différences
+ finies dans les trois directions de l'espace.
+ Elle est utilisée par Leopold 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leopold2013"
+
+\end_inset
+
+.
+ Une seconde façon de procédé consiste à faire apparaitre une équation de
+ Poisson en dérivant le champ de gradient:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dfrac{\partial^{2}\myrho}{\partial x^{\text{2}}}+\dfrac{\partial^{2}\myrho}{\partial y^{\text{2}}}+\dfrac{\partial^{2}\myrho}{\partial z^{\text{2}}}=\Delta\myrho
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L'intégration 3D est alors calculée de manière itérative, le plus souvent
+ par la méthode de sur-relaxation SOR (Successive Over Relaxation) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ota11,ota2012"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Venkatakrishnan applique lui aussi l'équation de Poisson 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Venkatakrishnan04"
+
+\end_inset
+
+ mais sur les champs de déplacement pour obtenir des champs de masse volumique
+ intégrée.
+ Il applique ensuite son algorithme de FBP pour reconstruire la masse volumique.
+\end_layout
+
+\begin_layout Standard
+Enfin, à l'ONERA, nous avons fait le choix de construire un algorithme de
+ reconstruction qui tient compte de l'intégration et qui reconstruit donc
+ directement le champ de masse volumique 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Todoroff2013,todoroff2014reconstruction"
+
+\end_inset
+
+.
+ Le fonctionnement de cet algorithme sera détaillé par la suite.
+\end_layout
+
+\begin_layout Section
+Mise en œuvre pratique de la BOS 3D
+\end_layout
+
+\begin_layout Standard
+Nous détaillons maintenant les différentes études qui ont réalisé des mesures
+ tridimensionnelles de la masse volumique au moyen de la BOS ou de la strioscopi
+e.
+\end_layout
+
+\begin_layout Subsection
+Ecoulements axisymmétriques
+\end_layout
+
+\begin_layout Standard
+Les écoulements axi-symmétriques sont les plus faciles à mesurer: des techniques
+ peu couteuse comme l'inversion de la transformée d'Abel peuvent être employées
+ et ils ne nécessite qu'une seule prise de vue.
+ Le plus souvent ce sont des écoulments axi-symmétriques en moyenne qui
+ sont étudiés.
+\end_layout
+
+\begin_layout Standard
+Bien qu'il soit difficile d'obtenir des mesures quantitative en strioscopie,
+ en réalisant une calibration, il est également possible d'effectuer une
+ reconstruction du champ de masse volumique.
+ La strioscopie couleur, encore appelée 
+\begin_inset Quotes fld
+\end_inset
+
+rainbow schlieren
+\begin_inset Quotes frd
+\end_inset
+
+ nécessite l'emploie d'un filtre coloré.
+ Plusieurs type de filtres existe: les filtres à variation progressive comme
+ celui employé par Elsinga 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Elsinga04"
+
+\end_inset
+
+ permet de caractériser complètement le vecteur déplacement.
+ Sa calibration reste néanmoins compliquée et beaucoup de gens préfèrent
+ utiliser un filtre en coloration de Hue 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Agrawal06,kolhe2009,takano2016"
+
+\end_inset
+
+.
+ Une fois calibré, ce dernier permet d'associer à chaque couleur un déplacement.
+ Comme le filtre est 2D, il est néanmoins nécessaire de tourner le filtre
+ de 90° pour mesurer à la fois les gradients horizontaux et verticaux.
+ A partir de ces mesures, les auteurs ont pu reconstruire le champ axisymmétriqu
+e de masse volumique par transformée d'Abel 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kolhe2009,takano2016"
+
+\end_inset
+
+ ou bien par une variante de FBP dénommée 
+\begin_inset Quotes fld
+\end_inset
+
+Convolution BackProjection
+\begin_inset Quotes frd
+\end_inset
+
+ (CBP) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Agrawal06,takano2016"
+
+\end_inset
+
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-equation
+\align center
+\begin_inset Graphics
+	filename Images/Rainbow_schlieren_2.png
+	lyxscale 30
+	height 35text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Takano.png
+	lyxscale 50
+	height 35text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Etude d'un jet sous-détendu, NPR = 4 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "takano2016"
+
+\end_inset
+
+.
+ a) Striscopie couleur obtenu avec un filtre hue, gradients verticaux.
+ b) Reconstruction du cahmp de masse volumique par transformée d'Abel inverse
+ et par 
+\begin_inset Quotes fld
+\end_inset
+
+Computed Tomography
+\begin_inset Quotes frd
+\end_inset
+
+ (CT).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:rainbow"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:rainbow"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Dès les prémices de la BOS, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "richard2000background,meier02"
+
+\end_inset
+
+ ont démontré le potentiel de la technique en utilisant une reconstruction
+ FBP sur un jet sous-détendu.
+ Par la suite de nombreuses équipes se sont intéressées à des écoulement
+ supersonique, autour d'un cône 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Venkatakrishnan04,ota2012,sourgen2004"
+
+\end_inset
+
+, d'un spike 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sourgen2005"
+
+\end_inset
+
+ ou sur un arrière corps 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Venkatakrishnan09"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Ecoulements stationnaires
+\end_layout
+
+\begin_layout Standard
+Beaucoup utilisée à l'origine en imagerie médicale FBP, Sourgen[#sourgen2004]
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Sourgen_2012.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparaison des champs de masse volumique, reconstruit par FBP (à gauche)
+ et obtenus par calcul RANS (à droite).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ l'a mise en œuvre sur la BOS pour reconstruire des champ de masse volumique
+ autour d'un cône à Mach 2.06.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Leopold2013,Ota11"
@@ -2101,7 +2505,7 @@ key "Leopold2013,Ota11"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2283,258 +2687,9 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-En pratique, en tomographie la matrice 
-\begin_inset Formula $A$
-\end_inset
-
- du système n'est pas carré, donc non inversible au sens strict.
- On cherche donc, le plus souvent, la solution au sens des moindres carré.
- De plus, le bruit de mesure rendant le problème mal conditionné, une régularisa
-tion s'impose pour pouvoir converger vers une solution.
-\end_layout
-
-\begin_layout Subsection
-Combinaison FBP et ART
-\end_layout
-
-\begin_layout Standard
-Tout récemment 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "hartmann2016"
-
-\end_inset
-
- a proposé une approche mixte.
- Après avoir constaté que, d'une part sa reconstruction FBP est très affectée
- par des artefacts suivant les lignes de vues mais qu'elle est capable de
- reconstruire de forts gradients et que , d'autre part sa reconstruction
- ART es relativement propre mais sous-estime de manière systématique les
- niveaux de masse volumique, il propose de combiner les deux techniques.
- Pour cela, il réalise tout d'abord une reconstruction FBP à partir de laquelle
- il extrait les zones de forts gradients de masse volumique.
- Puis, il utilise ce résultat pour initialiser la reconstruction ART.
- Le résultat final est propre avec de meilleurs niveaux sur les zones de
- forts gradients.
- Si cette technique semble fonctionner sur ce cas simple pour lequel l'utilisate
-ur identifie aisément la zone de forts gradients, pour un cas plus complexe,
- cette procédure semble difficile à mettre en œuvre.
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Subsection
-
-\end_layout
-
-\begin_layout Section
-Calcul de la masse volumique
-\end_layout
-
-\begin_layout Section
-Mise en œuvre pratique de la BOS 3D
-\end_layout
-
-\begin_layout Subsection
-Ecoulements axisymmétriques
-\end_layout
-
-\begin_layout Standard
-Pour compléter cet état de l'art sur les techniques BOS, il nous parait
- important de mentionner les références suivantes qui utilise la strioscopie
- pour reconstruire le champ de masse volumique.
- Bien qu'il soit difficile d'obtenir des mesures quantitative en strioscopie,
- en réalisant une calibration, il est également possible d'effectuer une
- reconstruction du champ de masse volumique.
- La strioscopie couleur, encore appelée 
-\begin_inset Quotes fld
-\end_inset
-
-rainbow schlieren
-\begin_inset Quotes frd
-\end_inset
-
- nécessite l'emploie d'un filtre coloré.
- Plusieurs type de filtres existe: les filtres à variation progressive comme
- celui employé par Elsinga 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Elsinga04"
-
-\end_inset
-
- permet de caractériser complètement le vecteur déplacement.
- Sa calibration reste néanmoins compliquée et beaucoup de gens préfèrent
- utiliser un filtre en coloration de Hue 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Agrawal06,kolhe2009,takano2016"
-
-\end_inset
-
-.
- Une fois calibré, ce dernier permet d'associer à chaque couleur un déplacement.
- Comme le filtre est 2D, il est néanmoins nécessaire de tourner le filtre
- de 90° pour mesurer à la fois les gradients horizontaux et verticaux.
- A partir de ces mesures, les auteurs ont pu reconstruire le champ axisymmétriqu
-e de masse volumique par transformée d'Abel 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "kolhe2009,takano2016"
-
-\end_inset
-
- ou bien par une variante de FBP dénommée 
-\begin_inset Quotes fld
-\end_inset
-
-Convolution BackProjection
-\begin_inset Quotes frd
-\end_inset
-
- (CBP) 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Agrawal06,takano2016"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/Rainbow_schlieren_2.png
-	lyxscale 30
-	height 35text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/Takano.png
-	lyxscale 50
-	height 35text%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Etude d'un jet sous-détendu, NPR = 4 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "takano2016"
-
-\end_inset
-
-.
- a) Striscopie couleur obtenu avec un filtre hue, gradients verticaux.
- b) Reconstruction du cahmp de masse volumique par transformée d'Abel inverse
- et par 
-\begin_inset Quotes fld
-\end_inset
-
-Computed Tomography
-\begin_inset Quotes frd
-\end_inset
-
- (CT).
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:biblio:rainbow"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Ecoulements stationnaires
-\end_layout
-
-\begin_layout Standard
-Beaucoup utilisée à l'origine en imagerie médicale FBP, Sourgen[#sourgen2004]
- l'a mise en œuvre sur la BOS pour reconstruire des champ de masse volumique
- autour d'un cône à Mach 2.06.
- 
 \end_layout
 
 \begin_layout Subsection
@@ -3004,7 +3159,7 @@ status open
 \begin_layout Plain Layout
 \align left
 \begin_inset Tabular
-<lyxtabular version="3" rows="12" columns="7">
+<lyxtabular version="3" rows="13" columns="7">
 <features rotate="0" tabularvalignment="middle" tabularwidth="100text%">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="left" valignment="middle" width="10line%">
@@ -3444,7 +3599,7 @@ ART
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="center" valignment="middle" topline="true" rightline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3453,7 +3608,72 @@ BOS
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Venkatakrishnan
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Axi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FBP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="middle" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3462,7 +3682,7 @@ Leopold
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3477,7 +3697,7 @@ key "sourgen2004"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3486,7 +3706,7 @@ BOS
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3495,7 +3715,7 @@ Axi
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3504,7 +3724,7 @@ Abel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3561,7 +3781,7 @@ CBOS
 \begin_inset Text
 
 \begin_layout Plain Layout
-Axi
+Stationnaire
 \end_layout
 
 \end_inset

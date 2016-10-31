@@ -2132,6 +2132,17 @@ key "hartmann2016"
  Si cette technique semble fonctionner sur ce cas simple pour lequel l'utilisate
 ur identifie aisément la zone de forts gradients, pour un cas plus complexe,
  cette procédure risque d'être difficile à mettre en œuvre.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+8 caméras
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2295,6 +2306,7 @@ key "Agrawal06,takano2016"
 
  
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status collapsed
@@ -2430,79 +2442,9 @@ key "Venkatakrishnan04,ota2012,sourgen2004"
 
 \end_inset
 
-, d'un spike 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "sourgen2005"
-
-\end_inset
-
- ou sur un arrière corps 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Venkatakrishnan09"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsection
-Ecoulements stationnaires
-\end_layout
-
-\begin_layout Standard
-Beaucoup utilisée à l'origine en imagerie médicale FBP, Sourgen[#sourgen2004]
-\begin_inset space ~
-\end_inset
-
 
 \begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/Sourgen_2012.png
-	lyxscale 50
-	width 100text%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Comparaison des champs de masse volumique, reconstruit par FBP (à gauche)
- et obtenus par calcul RANS (à droite).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- l'a mise en œuvre sur la BOS pour reconstruire des champ de masse volumique
- autour d'un cône à Mach 2.06.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Leopold2013,Ota11"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
+placement h
 wide false
 sideways false
 status collapsed
@@ -2538,11 +2480,32 @@ key "ota2012"
 
 \end_inset
 
+, d'un spike 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sourgen2005"
 
-\end_layout
+\end_inset
 
-\begin_layout Standard
+ ou sur un arrière corps 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Venkatakrishnan09"
+
+\end_inset
+
+.
+ Leopold 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leopold2013"
+
+\end_inset
+
+ reconstruit différents instants d'un écoulement instationnaire autour d'un
+ spike par méthode algébrique en supposant que celui-ci reste axisymmétrique
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status collapsed
@@ -2679,6 +2642,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Spike Leopold
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:spike"
+
+\end_inset
+
 
 \end_layout
 
@@ -2689,7 +2659,84 @@ status open
 
 \end_inset
 
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:spike"
 
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Ecoulements stationnaires
+\end_layout
+
+\begin_layout Standard
+Les équipes précédentes ont poursuivit leurs développements en s'intéressant
+ aux écoulement stationnaires.
+ En effet, avec un écoulement stationnaire, il est possible de réaliser
+ plusieurs prises de vues successivement en tournant autour de l'écoulement.
+ En général, plutôt que de tourner la caméra, on préfère déplacer la maquette
+ qui est très souvent monté sur un bras robotisé.
+ Sourgen
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sourgen12"
+
+\end_inset
+
+ l'a mise en œuvre sur la BOS pour reconstruire des champ de masse volumique
+ autour d'un cône à Mach 2.06 
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Sourgen_2012.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparaison des champs de masse volumique, reconstruit par FBP (à gauche)
+ et obtenus par calcul RANS (à droite).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:sourgen"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:sourgen"
+
+\end_inset
+
+.
+ Ota a quant à lui reconstruit l'écoulement autour d'un cône tronqué à partir
+ de 19 projections réalisées tous les 5° entre 0° et 90°.
 \end_layout
 
 \begin_layout Subsection
@@ -2704,12 +2751,70 @@ key "cabaleiro2013"
 
 \end_inset
 
- travaille quant à lui avec des strioscopie classique en niveau de gris.
- Il adopte néanmoins une démarche intéressante: il étudie le fonctionnement
- d'un actionneur de type jet pulsé.
- Etant donné le caractère périodique de l'écoulement, il travaille en moyenne
- de phase et utilise 36 points de vues différents pour reconstruire son
- écoulement par FBP.
+ qui travaille avec des strioscopie classique en niveau de gris adopte une
+ démarche intéressante: il exploite le caractère périodique de son écoulement,
+ un jet pulsé, pour réaliser des acquisitions suivant différentes orientations.
+ Pour chacune de ses 36 points de vues, il réalise des moyennes de phases
+ sur 20 images.
+ Il reconstruit alors le champ de masse volumique pour chacune des phases
+ illustrant le développement temporel de ce micro jet d'hélium 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/cabaleiro.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Evolution d'un micro-jet d'hélium issu d'une buse rectangulaire.
+ Iso-surface de densité 
+\begin_inset Formula $0.75\, kg/m^{3}$
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:cabaleiro"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:cabaleiro"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -2717,30 +2822,36 @@ key "cabaleiro2013"
 Ecoulements instationnaires
 \end_layout
 
-\begin_layout Subsubsection
-Strioscopie
-\end_layout
-
 \begin_layout Standard
 Pour pouvoir capturer un écoulement quelconque, il est nécessaire d'acquérir
  de manière simultanée, plusieurs point de vues.
- 
+ Cela complique grandement la mesure puisque un certain nombre de caméra
+ doivent fonctionner de concert pour capturer l'écoulement.
+\end_layout
+
+\begin_layout Subsubsection
+Mesures par strioscopie
 \end_layout
 
 \begin_layout Standard
-Enfin, Ishino 
+Bien que la strioscopie soit plus complexe à mettre en œuvre que la BOS,
+ Ishino 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ishino2016"
 
 \end_inset
 
- a développé un banc avec 20 lignes strioscopique qui lui permettent de
- reconstruire le champ instantané de masse volumique d'une flamme turbulente.
-\end_layout
+ a développé un banc avec 20 lignes strioscopique 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:ishino"
 
-\begin_layout Standard
+\end_inset
+
+ 
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status collapsed
@@ -2824,6 +2935,13 @@ key "ishino2016"
 
 .
  
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:ishino"
+
+\end_inset
+
+ 
 \end_layout
 
 \end_inset
@@ -2833,15 +2951,27 @@ key "ishino2016"
 
 \end_inset
 
+.
+ Après avoir calibré la sensibilité de ses caméra avec un filtre à densité
+ de pas, Ishino évalue sa reconstruction sur un bruleur à flammes calibrées
+ avant de l'appliquer à un cas complètement instationnaire et de reconstruire
+ le champ instantané de masse volumique d'une flamme turbulente 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:ishino"
 
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
-BOS 3D et infographie
+Développements précurseurs de la BOS 3D
 \end_layout
 
 \begin_layout Standard
-Les premiers à avoir développé un tel système sont Ihrke et Atcheson
+Les premiers à avoir développé un système BOS mumti-caméras sont Ihrke et
+ Atcheson
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ihrke07,Atcheson08"
@@ -2849,10 +2979,13 @@ key "Ihrke07,Atcheson08"
 \end_inset
 
 .
- Issus de la communauté du rendu graphique, ils ont développé un tel système
- pour pouvoir simuler de manière réaliste les distorsions optiques causées
- par un milieu non homogène que l'on observe typiquement au dessus d'une
- flamme.
+ Issus de la communauté de l'infographie (
+\shape italic
+Computer graphics
+\shape default
+), ils cherchaient à simuler de manière réaliste les distorsions optiques
+ causées par un milieu non homogène que l'on observe typiquement au dessus
+ d'une flamme.
  Plutôt qu' 
 \begin_inset Quotes fld
 \end_inset
@@ -2862,32 +2995,18 @@ inventer
 \end_inset
 
  un champ de densité, ils ont développé un système de mesure de BOS 3D à
- 16 caméras afin de capturer un écoulement de convection.
- Ihrke est également le premier à résoudre le problème de reconstruction
- sous forme algébrique.
- Il reconstruit le champ de masse volumique en deux étapes: la reconstruction
- du champ de gradients part méthode ART, puis il retrouve sa solution par
- intégration de l'équation de Poisson.
- Cette première reconstruction de champ instantanés de masse volumique donne
- de très beaux résultats comme on peut le voir Fig.
+ 16 caméras afin de capturer un écoulement de convection 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:atcheson"
 
 \end_inset
 
- De plus, en comparaison des méthode de FBP utilisées jusqu'alors, elle
- fonctionne avec nombre relativement limitée de projections (16).
- Toutefois, cette démonstration n'a pas pour vocation de réaliser des mesures
- précises, l'aspect visuel étant privilégié dans un contexte de rendu par
- ordinateur.
-\end_layout
-
-\begin_layout Standard
+ 
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2902,8 +3021,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-De gauche à droite: montage expérimental à 16 caméras mis en oeuvre par
- Ihrke et Atcheson 
+BOS 3D instationnaire 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Atcheson08"
@@ -2911,6 +3029,7 @@ key "Atcheson08"
 \end_inset
 
 .
+ De gauche à droite: montage expérimental à 16 caméras.
  Image brute d'un bruleur à gaz devant un fond en ondelette.
  Champ de déplacement calculé, champ 3D de gradient de masse volumique et
  iso-surfaces de masse volumique.
@@ -2931,7 +3050,38 @@ name "fig:biblio:atcheson"
 
 \end_inset
 
+.
+ Il reconstruisent le champ de masse volumique en deux étapes.
+ La première consiste à reconstruire le champ de gradients part méthode
+ ART.
+ A noter que les auteurs stoppent le processus de reconstruction prématurément
+ afin de régulariser leur solution.
+ Puis ils retrouvent le champ de masse volumique par intégration de l'équation
+ de Poisson.
+ Cette première reconstruction de champ instantanés de masse volumique donne
+ de beaux résultats comme on peut le voir Fig.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:atcheson"
 
+\end_inset
+
+.
+ De plus, en comparaison des méthode de FBP utilisées jusqu'alors, elle
+ fonctionne avec nombre relativement limitée de projections (16).
+ Cette équipe a par la suite poursuivit ses développements en tenant compte
+ de la présence éventuelle d'un objet occultant au sein de l'écoulement
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Berger09"
+
+\end_inset
+
+.
+ Toutefois, cette démonstration n'a pas pour vocation de réaliser des mesures
+ précises, l'aspect visuel étant privilégié dans un contexte de rendu par
+ ordinateur.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2939,22 +3089,24 @@ Développement de la BOS 3D à l'ONERA
 \end_layout
 
 \begin_layout Standard
-Violaine Todoroff 
+Le développement de la BOS 3D à l'ONERA est le fruit d'une collaboration
+ entre le département de modélisation pour l'aérodynamique et l'énergétique
+ (DMAE) et le département de traitement de l'information et de modélisation
+ (DTIM).
+ L'objectif était de mettre au point une technique de reconstruction de
+ champs instantanés de masse volumique par BOS 3D.
+ Le code reconstruction qui a été développé au cours de la thèse de Violaine
+ Todoroff 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Todoroff2013"
 
 \end_inset
 
-s'est inspiré de ces travaux pour développer un nouvel outil de mesure,
- la BOS 3D, pour la mécanique des fluides.
- Son objectif est de mettre au point une technique de reconstruction de
- champs instantanés de masse volumique par BOS 3D.
- Sa contribution s'appuie sur deux réalisations majeures.
- Tout d'abord, elle a développé un code de reconstruction novateur puisqu'il
- utilise une approche directe.
- Cela se traduit par le fait que son algorithme ne fonctionne pas en 2 étapes
- comme précédemment 
+ se distingue des précédent travaux par approche novatrice : il permet la
+ reconstruction directe du champ de masse volumique.
+ Cela se traduit par le fait que l'algorithme ne fonctionne pas en 2 étapes
+ comme évoqué précédemment 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ihrke07,Atcheson08,Leopold2013,Ota11,ishino2016"
@@ -2963,38 +3115,69 @@ key "Ihrke07,Atcheson08,Leopold2013,Ota11,ishino2016"
 
  (reconstruction des gradients + intégration) mais permet de reconstruire
  directement le champ de masse volumique.
- Son algorithme recherche la solution au sens des moindres carrés, d'un
- critère régularisé.
- L'objectif de cette régularisation est de lutter contre le bruit et donc
- de rechercher une solution relativement lisse.
- Au cours de sa thèse, Todoroff s'est intéressé à deux types de régularisations:
- une régularisation de Tickonov, quadratique, et une régularisation par
- variation totale, L2L1.
- Si son code donne de bons résultats, Todoroff constate toutefois un certains
- nombre de problèmes numériques: des oscillations qui apparaissent en bord
- de champ, des interactions complexes avec le masque 3D, un critère qui
- affiche parfois un comportement anormal, la difficulté d'ajuster les paramètres
- 
+ De plus, l'approche algébrique de résolution du problème repose sur la
+ minimisation d'un critère des moindres carrés régularisé 
+\begin_inset Formula $\myJ$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathcal{\myJ}(\myrho)=||\myA\myrho-\myepsilon||^{2}-\mylambda\mathcal{R}(\myrho)\label{eq:biblio:critere}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dans la partie de droite de 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:biblio:critere"
+
+\end_inset
+
+, on retrouve le terme des moindres carrés où 
+\begin_inset Formula $\myA$
+\end_inset
+
+ représente à la fois l'opérateur de projection, d'intégration et de dérivation
+ tandis 
+\begin_inset Formula $\myepsilon$
+\end_inset
+
+ traduit l'ensemble des mesures de déviations.
+ Sur la partie de gauche, 
+\begin_inset Formula $\myR(\myrho)$
+\end_inset
+
+ représente le terme de régularisation et il est pondéré par le paramètre
+ de régularisation 
 \begin_inset Formula $\mylambda$
 \end_inset
 
-et 
-\begin_inset Formula $\mydelta$
-\end_inset
-
-de la régularisation L2L1.
- Elle note aussi l'importance de l'optimisation du code pour améliorer la
- résolution mais aussi la taille des champs reconstruits.
+.
+ L'objectif de cette régularisation est de lutter contre le mauvais conditionnem
+ent du système et de de rechercher une solution relativement lisse.
+ Au cours de sa thèse, Violaine Todoroff s'est intéressée à deux types de
+ régularisations: une régularisation quadratique (Tikhonov), et une régularisati
+on par variation totale, L2L1.
  
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-Plus de détails, équation du critère, L-curve
-\end_layout
+\begin_inset Formula 
+\begin{equation}
+\mathcal{R}(\myrho)=\left\{ \begin{array}{l}
+||\nabla\myrho||^{2}\mbox{ pour la régularisation}\myL\\
+\sqrt{||\nabla\myrho||^{2}+\mydelta^{2}}\mbox{ pour la régularisation}\myLL
+\end{array}\right.
+\end{equation}
 
 \end_inset
 
@@ -3002,22 +3185,71 @@ Plus de détails, équation du critère, L-curve
 \end_layout
 
 \begin_layout Standard
-La deuxième contribution de Todoroff réside dans la conception d'un banc
- d'essai BOS 3D, la géode, supportant 12 caméras qui permet d'étudier l'impact
- du positionnement caméras sur les reconstructions.
- Sur cette installation, elle a put réaliser diverse reconstructions d'écoulemen
-ts de convection, comme un jet chaud ou bien un charbon en rotation.
- Malgré la construction de la géode, Todoroff n'a pas pu réaliser une étude
- du positionnement caméras, ni valider les mesures BOS 3D par une technique
- complémentaire.
- Ce dernier point étant essentiel pour qualifier la technique.
+Sur ce type de résolution, le choix du paramètre de régularisation 
+\begin_inset Formula $\mylambda$
+\end_inset
+
+ (et 
+\begin_inset Formula $\mydelta$
+\end_inset
+
+, pour la régularisation 
+\begin_inset Formula $\myLL$
+\end_inset
+
+) est important car il permet de donner plus ou moins de poids à la régularisati
+on et donc de lisser plus ou moins la solution.
+ Pour le cas quadratique (
+\begin_inset Formula $\myL$
+\end_inset
+
+), il existe une manière automatique de déterminer le paramètre optimal.
+ Cette solution est basée sur la 
+\shape italic
+L-curve 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hansen"
+
+\end_inset
+
+
+\shape default
+: elle consiste à tracer le terme de régularisation en fonction du terme
+ d'adéquation aux données pour différents paramètre de régularisation.
+ Le point situé aux maximum de courbure minimise, les deux termes du critère:
+ c'est le 
+\begin_inset Formula $\mylambda$
+\end_inset
+
+ optimal.
+ Bien qu'efficace, cette méthode nécessite tout de même d'effectuer plusieurs
+ reconstructions avant de pouvoir sélectionner la meilleure.
+ Enfin, elle s'avère difficile à mettre en œuvre sur la régularisation 
+\begin_inset Formula $\myLL$
+\end_inset
+
+.
+ L'utilisation d'un masque 3D permet également de concentrer l'information
+ et d'accélérer la convergence de l'algorithme.
+ 
 \end_layout
 
 \begin_layout Standard
+Le code de reconstruction BOS 3D développé à l'ONERA a tout d'abord été
+ évalué sur des données synthétiques puis de manière expérimentale.
+ Pour cela, un banc d'essai BOS 3D, la géode a été conçu au DMAE 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:géode"
+
+\end_inset
+
+ 
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3076,6 +3308,14 @@ status open
 
 \begin_layout Plain Layout
 Reconstruction d'un écoulement instantané de jet chaud.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:géode"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3099,33 +3339,34 @@ Reconstruction d'un écoulement instantané de jet chaud.
 
 \end_inset
 
-
+.
+ Ce montage comporte un hémisphère couvert de mouchetis semi-aléatoires
+ tandis que le second hémisphère est dédié au support de 12 caméras.
+ Sur cette installation, de très bons résultats ont été obtenus sur des
+ écoulements de convection, comme un jet chaud ou bien un charbon en rotation.
+ 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-Ota ?
-\end_layout
-
+Si le code développé par Violaine Todoroff à l'ONERA donne de bons résultats,
+ Todoroff constate toutefois un certains nombre de problèmes numériques:
+ des oscillations qui apparaissent en bord de champ, des interactions complexes
+ avec le masque 3D, un critère qui affiche parfois un comportement anormal,
+ la difficulté d'ajuster les paramètres 
+\begin_inset Formula $\mylambda$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-Hartman...
-\end_layout
-
+ et 
+\begin_inset Formula $\mydelta$
 \end_inset
 
-
+ de la régularisation L2L1.
+ Elle note aussi l'importance de l'optimisation du code pour améliorer la
+ résolution mais aussi la taille des champs reconstruits.
+ Malgré la construction de la géode, Todoroff n'a pas pu réaliser une étude
+ du positionnement caméras, ni valider les mesures BOS 3D par une technique
+ complémentaire.
+ Ce dernier point étant essentiel pour qualifier la technique.
 \end_layout
 
 \begin_layout Standard
@@ -3159,7 +3400,7 @@ status open
 \begin_layout Plain Layout
 \align left
 \begin_inset Tabular
-<lyxtabular version="3" rows="13" columns="7">
+<lyxtabular version="3" rows="16" columns="7">
 <features rotate="0" tabularvalignment="middle" tabularwidth="100text%">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="left" valignment="middle" width="10line%">
@@ -3298,7 +3539,7 @@ CBP
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -3369,7 +3610,7 @@ Abel
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -3450,7 +3691,7 @@ Abel/CPB
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -3608,7 +3849,7 @@ BOS
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3617,10 +3858,87 @@ Venkatakrishnan
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Venkatakrishnan04,Venkatakrishnan09"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Axi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FBP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "venkatakrishnan2005density"
+
+\end_inset
+
 
 \end_layout
 
@@ -3639,7 +3957,7 @@ BOS
 \begin_inset Text
 
 \begin_layout Plain Layout
-Axi
+Stationnaire/Axi
 \end_layout
 
 \end_inset
@@ -3657,7 +3975,7 @@ FBP
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2/1
 \end_layout
 
 \end_inset
@@ -3677,7 +3995,7 @@ FBP
 \begin_inset Text
 
 \begin_layout Plain Layout
-Leopold
+Sourgen, Leopold
 \end_layout
 
 \end_inset
@@ -3728,7 +4046,7 @@ Abel
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -3886,7 +4204,7 @@ ART
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3941,7 +4259,78 @@ ART
 \begin_inset Text
 
 \begin_layout Plain Layout
-38
+19
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ota2012"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CGBOS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Axi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ART
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+36
 \end_layout
 
 \end_inset
@@ -3957,11 +4346,11 @@ ART
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Atcheson, Irhke
+Atcheson, Irhke, Berger
 \end_layout
 
 \end_inset
@@ -4013,6 +4402,77 @@ ART
 
 \begin_layout Plain Layout
 16
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Berger09"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOS 3D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ART
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset

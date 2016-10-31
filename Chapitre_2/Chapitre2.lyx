@@ -138,7 +138,7 @@ Le code de reconstruction conçu par Violaine Todoroff repose sur la minimisatio
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mathcal{\myJ}(\myrho)=||\myA\myrho-\myepsilon||-\mylambda\mathcal{R}(\myrho)
+\mathcal{\myJ}(\myrho)=||\myA\myrho-\myepsilon||^{2}-\mylambda\mathcal{R}(\myrho)
 \]
 
 \end_inset

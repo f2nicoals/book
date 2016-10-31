@@ -716,6 +716,22 @@ reference "fig:BOS3D:proj"
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Violaine utilisait le lancer de rayon pour l'opération de projection et
  la projection de voxels pour la rétroprojection.
  Ces méthodes n'étant pas strictement identiques, cela pouvait conduire

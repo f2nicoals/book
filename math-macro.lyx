@@ -207,6 +207,23 @@ description "Opérateur direct"
 
 \begin_layout Standard
 \begin_inset FormulaMacro
+\newcommand{\myR}{\mathcal{R}}
+{\mathcal{R}}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\mathcal{J}$"
+description "Terme de régualrisation"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
 \newcommand{\myLL}{\mathcal{L}2\mathcal{L}1}
 {\mathcal{L}2\mathcal{L}1}
 \end_inset
@@ -328,6 +345,14 @@ description "Constante de Gladstone-Dale"
 \begin_inset FormulaMacro
 \newcommand{\myF}{\mathcal{F}}
 {\mathcal{F}}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$n$"
+description "Transformée de Fourrier\\\\"
+
 \end_inset
 
 

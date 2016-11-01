@@ -746,7 +746,7 @@ L'utilisation de fonds en ondelettes semblaient prometteuse pour les capture
 \end_layout
 
 \begin_layout Standard
-Todoroff a un introduit un mouchetis semi-aléatoire: ce fond composé de
+A l'ONERA, nous utilisons un mouchetis semi-aléatoire: ce fond composé de
  point répartis aléatoirement dans de petites fenêtres permet de s'affranchir
  d'un certains nombre de contraintes de la répartition aléatoire classique,
  à savoir la présence de zone partiellement vides et d'amas.
@@ -913,6 +913,18 @@ key "Bauknecht2014b"
 \end_inset
 
  ou bien sur panneaux transparents couplé à un éclairage par l'arrière.
+ Les panneaux rétroréfléchissant induisent cependant une contrainte supplémentai
+re puisque la source lumineuse doit être positionnée très proche de la caméra.
+ De ce fait, il peut être difficile d'éliminer toutes les ombres dues à
+ la présence d'une maquette d'une part 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bathel2015"
+
+\end_inset
+
+, et la chaleur dégagée par la source lumineuse peut perturber la mesure
+ d'autre part.
 \end_layout
 
 \begin_layout Standard
@@ -1495,20 +1507,83 @@ Une image ? un peu plus exhaustif ? différence entre FFT et flot optique
 \end_layout
 
 \begin_layout Section
-Quelques applications particulières
-\end_layout
-
-\begin_layout Subsection
 Mesures grand champ
 \end_layout
 
 \begin_layout Standard
-Mesures en vol déjà citées, 
+Les expériences de BOS de grande dimensions ou dans des environnements complexes
+, en grande soufflerie ou en extérieur, induise des problématiques particulière
+ sur lesquelles nous revenons ici.
+\end_layout
+
+\begin_layout Subsection
+Elements du montage BOS
 \end_layout
 
 \begin_layout Standard
-soufflerie, Mizukaki, Bathel Shairer,...
- Venka vibrations
+Plus le champ de mesure est grand et plus l'énergie lumineuse nécessaire
+ est importante.
+ Pour les applications en soufflerie, la NASA 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bathel2015"
+
+\end_inset
+
+ a largement utilisé des fonds rétroréfléchissant avec les contraintes déjà
+ évoqué.
+ Quant aux applications en extérieur il faut se contenter de la lumière
+ naturelle.
+ Les essais réalisés à la NASA au National Full- Scale Aerodynamics Complex
+ sur un rotor d'UH-60A échelle 
+\begin_inset Formula $1:1$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "schairer2013"
+
+\end_inset
+
+, illustrent également les contraintes liées aux essais en grande soufflerie:
+ des accès optiques limités, des caméras non accessibles pendant les essais
+ et des contraintes liées au positionnement des fonds.
+ En effet, pour ne pas trop endommager le liner acoustique qui recouvre
+ les parois de la souffleries, la zone recouverte de mouchetis était limitée
+ et devait rester accessible (pas de collage au plafond).
+\end_layout
+
+\begin_layout Subsection
+Perturbations
+\end_layout
+
+\begin_layout Standard
+Que ce soit dans un montage en soufflerie ou bien lors de mesures en extérieur
+ la stabilité du fond entre l'image de référence et l'image avec écoulement
+ est essentielle.
+ En soufflerie, le fond est sensibles aux vibrations.
+ Pour les limiter 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "venkatakrishnan2005density"
+
+\end_inset
+
+ fixe son mouchetis sur un support robuste et le plus stable possible.
+ La NASA qui a testé plusieurs type de fonds (répartition aléatoire, speckle,
+ aluminium froissé, peinture brillante)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bathel2015"
+
+\end_inset
+
+, constate que le speckle n'est pas stable du tout lors des mesures.
+ Ils indiquent également que l'aluminium froissé et la peinture brillante
+ présentent de fortes variations d'intensité lumineuse au cours des essais
+ ce qui affectent la mesure.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1521,9 +1596,9 @@ key "bauknecht2014c"
 \end_inset
 
  sur des tourbillons de bout de pales d'hélicoptères.
- Pour pouvoir reconstruire en 3-dimensions les tourbillons d'un hélicoptère
- échelle 1:1, Baucknecht et al.
- ont installé 12 caméras disposées en arc de cercle dans une carrière 
+ Pour pouvoir reconstruire en 3-dimensions la position des tourbillons d'un
+ hélicoptère échelle 1:1, Baucknecht et son équipe ont installé 12 caméras
+ disposées en arc de cercle dans une carrière 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:label:carriere"
@@ -1618,20 +1693,229 @@ name "fig:label:carriere"
 \end_inset
 
  et utilisé la texture naturelle de la paroi rocheuse comme fond.
- Ces essais ont permis d'étudier la dynamique tourbillonnaire pour différents
- régimes de vol de l'appareil.
  Ils ont utilisé l'information de position des tourbillons capturée par
  chaque caméra pour reconstruire leur position dans l'espace par géométrie
  épipolaire.
- Cette technique consiste à trianguler des points caractéristiques d'un
- objet vu par plusieurs caméra pour déterminer sa position dans l'espace.
- Si elle demeure impressionnante par ses dimension, cette campagne d'essai
- se limite au niveau de la reconstruction à de la localisation de structure
- sans chercher à évaluer les niveaux de masse volumique rencontrés.
- De ce fait, elle s'éloigne un peu de notre objectif.
+ Lors de ces mesures ils réalisent des mesures très rapidement après avoir
+ enregistrer l'image de référence pour limiter tout mouvement ou variation
+ d'illumination.
+ Comme ce n'est pas suffisant, ils corrigent à la fois des mouvement de
+ translations éventuels mais aussi de rotation afin de dewarper les images.
+ Pour cela, ils estiment leur matrice de transformation à partir des coins
+ non perturbés de chaque image.
+\end_layout
+
+\begin_layout Standard
+Les essais menés dans les différentes installation de la NASA 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bathel2015"
+
+\end_inset
+
+ révèlent également la problématique de la tenu du mouchetis à l'environnement
+ soufflerie: les efforts aérodynamiques peuvent arracher le mouchetis collé
+ sur les parois, la dépression qui règne au sein du circuit est responsable
+ de l'apparition de bulles qui conduisent au décollement des fonds et les
+ installations cryogéniques comme la National Transonic Facility à Langley,
+ abime très rapidement les fonds.
 \end_layout
 
 \begin_layout Subsection
+Calibration
+\end_layout
+
+\begin_layout Standard
+La calibration de caméras est essentielle lorsque l'on souhaite à minima
+ localiser une structure dans l'espace.
+ Les essais conduits à la NASA sur la localisation des tourbillons de bout
+ de pâle par utilisation d'un système BOS stéréoscopique 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "schairer2013"
+
+\end_inset
+
+, a nécessité le développement d'une solution propre à la taille de leur
+ soufflerie.
+ La zone d'intérêt étant difficile d'accès, ils ont construit une structure
+ en tube ABS sur laquelle sont positionnées 65 cibles 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/shairer.png
+	lyxscale 50
+	width 20text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mire de calibration utilisée au National Full- Scale Aerodynamics Complex
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "schairer2013"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:schairer"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:schairer"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Lors des essais menés dans la carrière par le DLR 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bauknecht2014c"
+
+\end_inset
+
+, le volume de mesure était trop haut pour être atteignable à partir du
+ sol.
+ Ils ont donc déployé un ballon blanc remplis d'hélium.
+ Puis à l'aide d'un distance-mètre laser, ils ont mesuré les distances des
+ caméras au ballon et les angles entre les caméra pour obtenir une première
+ estimation de la calibration.
+ La calibration finale a été réalisée in-situ à partir de marqueurs spécifiques
+ collés sur l'hélicoptère.
+\end_layout
+
+\begin_layout Subsection
+BOS sans référence
+\end_layout
+
+\begin_layout Standard
+Un développement intéressant proposé par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "raffel2000helico,Bauknecht2014b"
+
+\end_inset
+
+ est la BOS sans référence.
+ Elle n'est pas tant destiné à réaliser une mesure d'un écoulement mais
+ plus à suivre une structure qui se déformerait peu entre deux instants
+ très court.
+ Les auteurs exploite le fait qu'un tourbillons de bout de pâle va traverser
+ l'image et passer à un moment donné devant le fond.
+ Le déplacement peut alors être calculé entre la zone ou la structure n'est
+ pas présente à l'instant 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ et celle où elle est présente à l'instant 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/reference-free.png
+	lyxscale 20
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+BOS sans référence 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bauknecht2014b"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:reference-free"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:reference-free"
+
+\end_inset
+
+.
+ Cette solution permet alors aux auteurs d'utiliser un système de deux caméras
+ combinées pour suivre un hélicoptère en manœuvre 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bauknecht2014b"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
 Ecoulements haute vitesse
 \end_layout
 

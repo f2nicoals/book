@@ -1493,6 +1493,10 @@ key "Atcheson09"
 \end_layout
 
 \begin_layout Standard
+shock induced under water
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Greyedout
 status open
 
@@ -1920,7 +1924,205 @@ Ecoulements haute vitesse
 \end_layout
 
 \begin_layout Standard
-Ota, friedrich, sourgen, kirmse, Mizukaki, Ramanah
+Les écoulements rapides (compressibles) sont responsables d'aberrations
+ optiques dues aux forts gradients d'indice rencontrés.
+ Ces aberrations sont gênantes pour la métrologie et nottament pour la PIV
+ où elles conduisent à des erreurs de positionnement de particules et des
+ bais dans le calcul des vecteurs vitesse 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "elsinga2005evaluation,elsinga2015"
+
+\end_inset
+
+.
+ En BOS, à partir du moment où l'on travaille en faisceaux divergents, le
+ présence de forts gradients de masse volumique comme les ondes de choc,
+ peuvent induire de l'astigmatisme parasite: les rayons subissent une déviation
+ telle qu'ils ne focalise plus sur un même pixel sur le CCD.
+ Il en résulte un flou d'astigmatisme 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/blur.png
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flou d'astigmatisme constaté par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leopold2013"
+
+\end_inset
+
+ sur une onde de choc.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:astigmatisme"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:astigmatisme"
+
+\end_inset
+
+comme le constate 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sourgen2004,sourgen2005,Leopold2013,Ramanah07"
+
+\end_inset
+
+.
+ Pour pallier à ce problème 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leopold2013"
+
+\end_inset
+
+ propose une solution à partir de la CBOS.
+ Il conçoit son mouchetis de couleur à partir d'un motif de points rouge
+ qu'il réplique avec un déplacement 
+\begin_inset Formula $X$
+\end_inset
+
+ dans les deux directions en vert et en bleu.
+ Il parvient ensuite a récupérer de l'information sur le choc en réalisant
+ la corrélation croisée entre le motif rouge et le motif vert ainsi qu'entre
+ le rouge et le bleu.
+ Cette solution est toutefois limitée au choc de forme simple et elle nécessite
+ de concevoir le fond en fonction de la largeur du flou que l'on va rencontrer.
+ 
+\end_layout
+
+\begin_layout Standard
+En plus de l'astigmatisme présent au niveau des forts gradients, la bonne
+ capture des ces phénomènes très minces est un problème en soi.
+ Deux filtrages viennent affecter la mesure BOS: le premier est lié à la
+ taille de la fenêtre d'interrogation tandis que le deuxième résulte de
+ la taille du cercle de confusion associé au 
+\begin_inset Quotes fld
+\end_inset
+
+pinceau lumineux
+\begin_inset Quotes frd
+\end_inset
+
+ au niveau de l'écoulement.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kirmse11"
+
+\end_inset
+
+ montre qu'en appliquant ces 2 filtrages à sa simulation il parvient à retrouver
+ des résultats semblables à sa mesure BOS 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/kirmse.png
+	lyxscale 30
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparaison entre mesure BOS (haut) et CFD sur une sphère à Mach 8.1 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kirmse11"
+
+\end_inset
+
+.
+ En bas à gauche résultat CFD brut.
+ En bas à droite, résultat CFD avec prise en compte des filtrages spatiaux
+ qui affecte la mesure BOS.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:kirmse"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Ota propose une solution au problème d'astigmatisme et du cercle de confusion
+ en suggérant l'utilisation d'un objectif télécentrique
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ota2015"
+
+\end_inset
+
+.
+ Cette solution permet de travailler avec un faisceau de lumière parallèle
+ et donc d'augmenter la profondeur de champ.
+ Ce dernier point est très utile lorsque l'on travaille en présence d'une
+ maquette, celle-ci apparaissant flou dans le cas classique.
+ Cette solution fait néanmoins perdre une grande caractéristique de la technique
+ BOS, à savoir de ne pas nécessiter d'une optique de la même taille que
+ le champ à mesurer.
 \end_layout
 
 \begin_layout Section

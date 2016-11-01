@@ -710,6 +710,18 @@ pinceau
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1510,6 +1522,22 @@ Une image ? un peu plus exhaustif ? différence entre FFT et flot optique
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Mesures grand champ
 \end_layout
@@ -1919,6 +1947,22 @@ key "Bauknecht2014b"
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Ecoulements haute vitesse
 \end_layout
@@ -2003,6 +2047,16 @@ key "sourgen2004,sourgen2005,Leopold2013,Ramanah07"
 \end_inset
 
 .
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mizukaki2010"
+
+\end_inset
+
+ qui étudie des anneaux tourbillonnaires en aval d'un tube à choc, rencontre
+ même des zones pour lesquelles, la corrélation échoue en raison d'une distorsio
+n trop intense.
  Pour pallier à ce problème 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2039,6 +2093,8 @@ pinceau lumineux
 \end_inset
 
  au niveau de l'écoulement.
+ Le cercle de confusion étant contrôlé par l'ouverture caméra il vaut mieux
+ travailler à grand nombre d'ouverture.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2052,10 +2108,6 @@ key "Kirmse11"
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -2102,6 +2154,13 @@ name "fig:biblio:kirmse"
 
 \end_inset
 
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:kirmse"
+
+\end_inset
+
 .
  
 \end_layout
@@ -2123,6 +2182,22 @@ key "ota2015"
  Cette solution fait néanmoins perdre une grande caractéristique de la technique
  BOS, à savoir de ne pas nécessiter d'une optique de la même taille que
  le champ à mesurer.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2632,6 +2707,22 @@ key "hartmann2016"
 ur identifie aisément la zone de forts gradients, pour un cas plus complexe,
  cette procédure risque d'être difficile à mettre en œuvre.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -3474,7 +3565,7 @@ Développements précurseurs de la BOS 3D
 \end_layout
 
 \begin_layout Standard
-Les premiers à avoir développé un système BOS mumti-caméras sont Ihrke et
+Les premiers à avoir développé un système BOS multi-caméras sont Ihrke et
  Atcheson
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3903,25 +3994,40 @@ reference "tab:biblio:resume"
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+renewcommand{
+\backslash
+arraystretch}{1.5}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Float table
 wide false
-sideways false
-status open
+sideways true
+status collapsed
 
 \begin_layout Plain Layout
 \align left
 \begin_inset Tabular
 <lyxtabular version="3" rows="18" columns="7">
 <features rotate="0" tabularvalignment="middle" tabularwidth="100text%">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="left" valignment="middle" width="10line%">
-<column alignment="center" valignment="top" width="20line%">
-<column alignment="center" valignment="top" width="10line%">
 <column alignment="center" valignment="middle" width="0pt">
 <column alignment="center" valignment="middle" width="0pt">
-<column alignment="center" valignment="top" width="12line%">
+<column alignment="center" valignment="middle" width="20line%">
+<column alignment="center" valignment="middle" width="10line%">
+<column alignment="center" valignment="middle" width="0pt">
+<column alignment="center" valignment="middle" width="0pt">
+<column alignment="center" valignment="middle" width="12line%">
 <row>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3930,16 +4036,17 @@ status open
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\align center
 Equipe
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3948,7 +4055,7 @@ Référence
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3957,7 +4064,7 @@ Technique
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3966,7 +4073,7 @@ Hypothèse
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3975,7 +4082,7 @@ Algorithme
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3986,7 +4093,7 @@ Nombre de projections
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3995,10 +4102,11 @@ Schlieren
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\align center
 Khole, Agrawal
 \end_layout
 
@@ -4066,7 +4174,7 @@ CBP
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4137,10 +4245,11 @@ Abel
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\align center
 Takano, Miyazato et Ono
 \end_layout
 
@@ -4208,10 +4317,11 @@ Abel/CPB
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\align center
 Cabaleiro
 \end_layout
 
@@ -4279,10 +4389,11 @@ FBP
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\align center
 Ishino
 \end_layout
 
@@ -4341,7 +4452,7 @@ ART
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4350,10 +4461,11 @@ BOS
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\align center
 Venkatakrishnan
 \end_layout
 
@@ -4430,7 +4542,7 @@ FBP
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4445,7 +4557,7 @@ key "venkatakrishnan2005density"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4454,7 +4566,7 @@ BOS
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4463,7 +4575,7 @@ Stationnaire/Axi
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4472,7 +4584,7 @@ FBP
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4492,16 +4604,17 @@ FBP
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="left" valignment="middle" leftline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\align center
 Sourgen et Leopold
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4516,7 +4629,7 @@ key "sourgen2004"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4525,7 +4638,7 @@ BOS
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4534,7 +4647,7 @@ Axi
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4543,7 +4656,7 @@ Abel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4563,7 +4676,7 @@ Abel
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="left" valignment="top" leftline="true" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4634,7 +4747,7 @@ FBP
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4705,10 +4818,11 @@ ART
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\align center
 Ota
 \end_layout
 
@@ -4767,7 +4881,7 @@ ART
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4847,10 +4961,11 @@ ART
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\align center
 Atcheson, Irhke et Berger
 \end_layout
 
@@ -4909,7 +5024,7 @@ ART
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4980,7 +5095,7 @@ ART
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4989,10 +5104,11 @@ ART
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="left" valignment="middle" leftline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\align center
 Goldhahn, Hartmann et Seume
 \end_layout
 
@@ -5051,7 +5167,7 @@ FBP
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5131,10 +5247,11 @@ ART + FBP
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\align center
 Todoroff
 \end_layout
 

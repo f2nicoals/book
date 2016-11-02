@@ -1624,32 +1624,135 @@ Après obtention d'une paire d'image, l'image de référence et l'image perturb�
  par corrélation d'images.
  La plupart des équipes utilisent des approches de type corrélation sur
  fenêtre.
- En effet, ceux-ci sont largement répandu en PIV et facilement disponible
- (matkab matpiv 
+ En effet, celles-ci sont largement répandu en PIV et facilement disponible
+ (matPIV 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "thielicke2014"
 
 \end_inset
 
-).
- Toutefois, 
+ disponible sous Matlab).
+ L'approche corrélation sur des fenêtres repose sur un calcul de corrélation
+ spatiale sur des fenêtres de tailles dégressives afin d'obtenir une meilleur
+ résolution.
+ D'un autre coté, les méthodes de flot optique utilisées en vision par ordinateu
+r ont également prouvé leur intérêt.
+ Le flot optique repose sur l'invariance de l'intensité lumineuse entre
+ deux images et cherche à estimer le vecteur déplacement 
+\begin_inset Formula $(\delta x,\delta y)$
+\end_inset
+
+ tel que l'intensité lumineuse 
+\begin_inset Formula $I_{1}$
+\end_inset
+
+ de l'image 1 s'exprime en fonction de l'intensité lumineuse 
+\begin_inset Formula $I_{2}$
+\end_inset
+
+de l'image 2:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+I_{1}(x,y,t)=I_{2}(x+\delta x,y+\delta y,t+\delta t)
+\end{equation}
+
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Atcheson09"
 
 \end_inset
 
- a mené une étude comparative entre un calcul par FFT et des calculs par
- flot optiques.
+ a mené une étude comparative entre un calcul par corrélation sur fenêtre
+ et différents algorithmes de calculs par flot optiques: les algorithmes
+ Lucas-Kanade(LK)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lucas"
+
+\end_inset
+
+ et Horn-Schunk(HS)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Horn"
+
+\end_inset
+
+ basés sur le gradient et l'algorithme Brox
+\begin_inset CommandInset citation
+LatexCommand cite
+key "brox2004"
+
+\end_inset
+
+ qui utilise une approche variationnelle.
  Au bilan, il montre que les algorithmes Lucas-Kanade (LK) et Horn-Schunck
  (HS) sont plus performant que la moyenne avec une légère avance pour le
  HS.
+ Néanmoins il met en avant le fait que contrairement au HS, l'algorithme
+ LK est moins sensibles aux paramètres de réglage.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hayasaka2016"
+
+\end_inset
+
+ qui utilisent une version dérivée de l'algorithme HS qui tient compte de
+ la physique de l'écoulement recherché 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2008"
+
+\end_inset
+
+, montrent dans leur cas le gain apporté par l'utilisation du flot optique
+ en terme de résolution.
+ Le flot optique permet en effet d'obtenir un vecteur par pixel contrairement
+ au techniques par fenêtres qui déterminent un vecteur par fenêtre.
+ Les auteurs montrent que cette grande résolution est nécessaire pour bien
+ capturer des ondes de chocs dans l'eau et pour correctement reconstruire
+ le champ de pression associé.
  
 \end_layout
 
 \begin_layout Standard
-shock induced under water
+L'ONERA a développé son propre code de flot optique basé sur l'algorithme
+ LK baptisé Folki 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Champagnat11,plyer2016"
+
+\end_inset
+
+.
+ Folki a été utilisé dans plusieurs applications que ce soit pour de la
+ mesure de déformations ou bien pour la PIV.
+ En BOS, il a été utilisé par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Todoroff2013"
+
+\end_inset
+
+ pour calculer les champs de déplacement comme pour le jet chaud présenté
+ en figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:folki"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard

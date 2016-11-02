@@ -117,12 +117,12 @@ name "sec:biblio:intro"
 
 \begin_layout Standard
 La Background Oriented Sclieren (BOS) est née au début des années 2000.
- Elle a été introduite par Meier (et Raffel) et Dalziel.
- Meier et son équipe du DLR travaillaient beaucoup sur les tourbillons de
- bout de pâles d'hélicoptères.
+ Elle a été introduite initialement par Meier (et Raffel) et Dalziel.
+ Meier et son équipe au DLR travaillaient en particulier sur les tourbillons
+ de bout de pâles d'hélicoptères.
  Ils se sont inspirés de la vélocimétrie par image de particules (PIV) et
- des algorithme développés pour calculer le champ de déplacement entre deux
- images de particules.
+ des algorithmes développés pour calculer le champ de déplacement entre
+ deux images de particules.
  Pour cela, ils ont 
 \begin_inset Quotes eld
 \end_inset
@@ -211,7 +211,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Mesure de tourbillons de bout de pales par BOS 
+Mesure de tourbillons de bout de pâles par BOS 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Richard2002"
@@ -277,23 +277,19 @@ focusing schlieren
 \end_layout
 
 \begin_layout Standard
-Par la suite la BOS va se démocratisée de part sa simplicité d'utilisation.
- Les divers motifs qui ont été utilisés comme fonds sont détaillés dans
- la section suivante.
+Par la suite, technique la BOS est adoptée par de nombreuses équipes grâce
+ à sa simplicité d'utilisation.
+ 
 \end_layout
 
 \begin_layout Standard
-Un état de l'art détaillé a été réalisé par 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "raffel2015"
-
-\end_inset
-
-
-\size normal
- nous allons revenir sur les principales contributions après avoir détailler
- le principe de la technique BOS.
+Après avoir décrit la techniques BOS et les différents éléments qui constituent
+ le montage, nous nous pencherons sur des applications particulières, pour
+ des expériences de grandes dimensions et à haute vitesse.
+ Nous décrirons ensuite brièvement les techniques classiques de tomographie
+ puis nous verrons comment elles peuvent être appliquées à la technique
+ BOS pour reconstruire le champ tridimensionnel de masse volumique.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -741,31 +737,14 @@ name "sec:biblio:background"
 \end_layout
 
 \begin_layout Subsubsection
-Classiques
+Motif aléatoire
 \end_layout
 
 \begin_layout Standard
 L'utilisation première de sprays de peinture pour créer le mouchetis est
  satisfaisante et très adaptée aux grandes dimensions.
  Pour les expériences de dimensions plus modeste, le choix classique porte
- sur l'impression d'une distribution aléatoire de points.
-\end_layout
-
-\begin_layout Standard
-L'utilisation de fonds en ondelettes semblaient prometteuse pour les capture
- d'écoulements présentant une grande dynamique mais elle ne s'est pas avérée
- concluante.
-\end_layout
-
-\begin_layout Standard
-A l'ONERA, nous utilisons un mouchetis semi-aléatoire: ce fond composé de
- point répartis aléatoirement dans de petites fenêtres permet de s'affranchir
- d'un certains nombre de contraintes de la répartition aléatoire classique,
- à savoir la présence de zone partiellement vides et d'amas.
-\end_layout
-
-\begin_layout Standard
-\align center
+ sur l'impression d'une distribution aléatoire de points 
 \begin_inset Float figure
 placement h
 wide false
@@ -796,6 +775,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:mouchetisA"
+
+\end_inset
+
 
 \end_layout
 
@@ -830,6 +815,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:moucheisB"
+
+\end_inset
+
 
 \end_layout
 
@@ -863,6 +854,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:mouchetisC"
+
+\end_inset
+
 
 \end_layout
 
@@ -912,11 +909,70 @@ name "fig:biblio:mouchetis"
 
 \end_inset
 
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:mouchetisA"
 
+\end_inset
+
+.
+ La conception du mouchetis suit les règles établies en PIV d'un ensemencement
+ idéal, à savoir des particules de 3-5 pixels de diamètre et une répartition
+ de 5 à 10 particules par fenêtre d'interrogation.
 \end_layout
 
 \begin_layout Standard
-Pour augmenter l'énergie lumineuse reçu, l'ensemble de ces fonds peut être
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Atcheson09"
+
+\end_inset
+
+ s'est penché sur l'utilisation de fonds en ondelettes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cook2005"
+
+\end_inset
+
+: ces fonds ont l'avantage de présenter un motif texturé à différentes échelles
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:mouchetisC"
+
+\end_inset
+
+.
+ Atcheson décrit deux avantages propres aux fonds en ondelettes: l'indépendance
+ du fond vis à vis de la du montage.
+ En effet, pour les fonds aléatoire, il est nécessaire de designer un fond
+ pour chaque expérience afin de satisfaire une taille de points optimale
+ sur le CCD.
+ De plus, de part leur construction multi-échelle, ces fonds sont a priori
+ mieux adaptés aux techniques sous-échantillonne les images lors du calcul
+ de corrélation.
+ Bien que cette solution semblait prometteuse, les tests que nous avons
+ menés à l'ONERA ne se sont pas avérés concluants.
+\end_layout
+
+\begin_layout Standard
+A l'ONERA, nous utilisons donc un mouchetis semi-aléatoire 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:mouchetisC"
+
+\end_inset
+
+: ce fond composé de point répartis aléatoirement dans des fenêtres de même
+ taille que celles utilisées pour la corrélation d'image.
+ Cela permet de s'affranchir d'un certains nombre de défauts associés à
+ la répartition aléatoire classique: la présence de zones partiellement
+ vides et d'amas.
+\end_layout
+
+\begin_layout Standard
+Pour augmenter l'énergie lumineuse reçue, l'ensemble de ces fonds peut être
  imprimé sur panneaux rétroréfléchissant 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -983,34 +1039,113 @@ key "leopold2007,raffel2014,bauknecht2014a"
 
 \size normal
 .
- Lors de ces tests, Raffel et Baucknecht étudie l'influence du choix de
- la texture sur la qualité des images BOS.
-\end_layout
-
-\begin_layout Standard
-Par rapport à des problématiques d'explosions, 
+ Pour étudier l'onde de souffle sphérique qui se propage lors de l'explosion
+ d'une charge
+\size default
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "mizukaki2013,hargather2013"
 
 \end_inset
 
- ont
-\size normal
- également utilisés des textures naturelles pour analyser le déplacement
- de l'onde de souffle.
-\end_layout
 
-\begin_layout Standard
-Une étude détaillée de l'impact du fond naturel sur la qualité de la corrélation
- d'image a par ailleurs été mené par 
+\size normal
+ ont également utilisé la texture naturelle.
+ L'utilisation de la texture naturelle pose néanmoins le problème de l'impact
+ de la texture sur la qualité de la corrélation d'image.
+ Plusieurs équipes se sont penchées sur la question en introduisant un facteur
+ de qualité associé à la corrélation de deux images du même fond.
+ 
+\size default
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Hargather2010"
 
 \end_inset
 
+ s'intéresse au carré de la valeur RMS des corrélations tandis que 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bauknecht2014a,Bauknecht2014b"
+
+\end_inset
+
+ regarde la variance de la vorticité pour compenser d'éventuels mouvements
+ de caméras entre ses deux images.
+ Ils regardent alors l'évolution de leur critère pour différentes textures
+ en fonction de la taille des fenêtres d'interrogations 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/natural.png
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Impact du fond naturel sur la corrélation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bauknecht2014a"
+
+\end_inset
+
 .
+ a)-f )Exemples de fonds.
+ g) Evolution du critère de qualité en fonction de la taille de fenêtre
+ d'interrogation.
+ h) Détail de g.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:natural"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:natural"
+
+\end_inset
+
+.
+ Ils concluent, tout comme 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kindler07,raffel2014"
+
+\end_inset
+
+, que la difficulté consiste à trouver présentant des hautes fréquences,
+ en accord avec le grandissement caméra, et suffisamment contrastés.
+ Les meilleurs résultats ont été obtenus avec de l'herbe et un pierrier.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -1027,7 +1162,7 @@ key "leopold2007"
 
 .
  Elle repose sur l'utilisation un fond coloré, résultant d'un mélange de
- pixels rouges, verts et bleus.
+ pixels rouges, verts et bleus, capturé par un appareil photographique couleur.
  De cette manière, des corrélations indépendantes des pixels de chaque couleur
  et des mélange de couleurs permet d'améliorer la résolution classique de
  la corrélation qui est conditionnée par la taille de la fenêtre de corrélation
@@ -1174,10 +1309,10 @@ key "Ota11"
  et son équipe.
  Possédant une grande expérience en interférométrie, ils en ont repris le
  principe pour l'appliquer à la BOS.
- Leurs fonds sont donc composés de 2 grilles : une grille rouge verticale
- et une grille verte horizontale.
- Ils utilisent ensuite leurs algorithme de détection de franges pour calculer
- les déplacements horizontaux et verticaux au centre de chaque ligne.
+ Leurs fonds sont composés de 2 grilles : une grille rouge verticale et
+ une grille verte horizontale.
+ Ils utilisent leurs algorithmes de détection de franges pour calculer les
+ déplacements horizontaux et verticaux au centre de chaque ligne.
  Les champs finaux sont obtenus par interpolation.
  La CBOS permet une grande qualité de mesure mais elle sa résolution est
  limitée par la grille utilisée.
@@ -1243,55 +1378,20 @@ Speckle-BOS
 
 \begin_layout Standard
 Beaucoup utilisé au début des années 2000 (Fomin) l'utilisation du speckle
- en interférométrie est revenue au goût du jour par Meier 
+ en interférométrie est revenue au goût du jour par Meier et Rösgen 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Meier13"
 
 \end_inset
 
- qui propose d'utiliser le speckle d'un laser comme image de fond.
+ qui proposent d'utiliser le speckle d'un laser comme image de fond.
  Pour rappel, le speckle est un motif tacheté qui apparait lorsque l'on
  éclaire une surface avec une lumière cohérente.
  Les défauts de rugosité à la surface du matériaux créent de multiples retard
  de phase, à l'origine des interférences speckle.
- La taille des grains du speckle est directement liée à l'ouverture du système
- optique.
- Ainsi, plus l'ouverture est faible et plus le speckle est 
-\begin_inset Quotes eld
-\end_inset
-
-gros
-\begin_inset Quotes erd
-\end_inset
-
-.
- Meier réalise donc son fond en imageant son speckle sur une plaque de verre
- dépolie.
- Le premier avantage relatif au speckle réside dans la possibilité de faire
- varier la sensibilité de la technique en bougeant simplement la mise au
- point.
- Contrairement à la BOS classique, la position du fond et la sensibilité
- sont ici décorrélés.
- En faisant varier la mise au point, Meier observe une évolution de la sensibili
-té, avec des déplacement nuls lorsqu'il se trouve sur l'écoulement.
- De manière surprenante, il obtient des déplacements opposés lorsque la
- mise au moins est faite devant l'écoulement, avec une sensibilité qui augmente
- bien plus rapidement lorsqu'il s'éloigne que dans le montage classique.
- De plus, Meier présente un montage 
-\begin_inset Quotes fld
-\end_inset
-
-double passe
-\begin_inset Quotes frd
-\end_inset
-
- qui permet de doubler la sensibilité en faisant passer la lumière deux
- fois à travers l'écoulement par réflexion.
- 
-\end_layout
-
-\begin_layout Standard
+ La taille des grains du speckle est seulement liée à la longueur d'onde
+ et à l'ouverture du système optique comme illustré en figure 
 \begin_inset Float figure
 wide false
 sideways false
@@ -1385,10 +1485,6 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -1427,19 +1523,60 @@ name "fig:biblio:speckle"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
-\end_layout
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:speckle"
 
 \end_inset
 
-
+.
+ Ainsi, plus l'ouverture est faible et plus le speckle est grand.
+ Par conséquent, peu importe la position de l'écran qui génère le speckle,
+ c'est la position du plan focal qui va affecter la sensibilité de la mesure.
+ Contrairement à la BOS classique, pour le speckle, la position du fond
+ et la sensibilité sont décorrélés.
 \end_layout
 
 \begin_layout Standard
-L'utilisation du speckle reste séduisante sur le papier mais il apparait
- difficile à mettre en œuvre dans un environnement complexe: Meier a réalisé
- ses mesures sur table optique.
+Meier s'intéresse alors à l'évolution de cette sensibilité en fonction de
+ la position de mise au point de la caméra.
+ On retrouve sur la figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:speckle"
+
+\end_inset
+
+ l'évolution classique de la sensibilité de la technique BOS qui prédit
+ une augmentation de la sensibilité avec l'éloignement du fond (distance
+ 
+\begin_inset Formula $l$
+\end_inset
+
+).
+ De manière surprenante, Meier obtient des déplacements opposés lorsque
+ la mise au moins est faite devant l'écoulement, avec une sensibilité qui
+ augmente bien plus rapidement lorsqu'il s'éloigne que dans le montage classique.
+ De plus, Meier présente un montage 
+\begin_inset Quotes fld
+\end_inset
+
+double passe
+\begin_inset Quotes frd
+\end_inset
+
+ qui permet de doubler la sensibilité en faisant passer la lumière deux
+ fois à travers l'écoulement par réflexion.
+ 
+\end_layout
+
+\begin_layout Standard
+L'utilisation du speckle reste séduisante sur le papier mais semble délicate
+ à mettre en œuvre dans un environnement complexe: Meier a réalisé ses mesures
+ sur table optique.
  Que se passe-t-il lorsque le fond vibre ou se déforme? Le speckle est-il
  stable dans le temps? Il semble toutefois très approprié au petites expériences
  (qui peuvent se faire sur table optique) mais surtout pour lesquelles il
@@ -1485,11 +1622,18 @@ name "sec:biblio:correlation"
 Après obtention d'une paire d'image, l'image de référence et l'image perturbée,
  le calcul des champs de déplacements (verticaux et horizontaux) se fait
  par corrélation d'images.
- La plus parts des équipes utilisent des algorithmes basés sur la transformée
- de Fourier.
+ La plupart des équipes utilisent des approches de type corrélation sur
+ fenêtre.
  En effet, ceux-ci sont largement répandu en PIV et facilement disponible
- (matkab matpiv).
- Toutefois, Atcheson
+ (matkab matpiv 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "thielicke2014"
+
+\end_inset
+
+).
+ Toutefois, 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Atcheson09"
@@ -1509,12 +1653,116 @@ shock induced under water
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Greyedout
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Une image ? un peu plus exhaustif ? différence entre FFT et flot optique
- , Folki ?
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/jet_instx.png
+	lyxscale 30
+	width 40text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/jet_insty.png
+	lyxscale 30
+	width 40text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Champs de déplacement horizontaux et verticaux mesurés avec Folki sur un
+ jet chaud 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Todoroff2013"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:folki"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -1623,7 +1871,7 @@ Une campagne d'essai relativement impressionnante a également été mené par
  le DLR 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "bauknecht2014c"
+key "bauknecht2015"
 
 \end_inset
 
@@ -1838,7 +2086,7 @@ reference "fig:biblio:schairer"
 Lors des essais menés dans la carrière par le DLR 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "bauknecht2014c"
+key "bauknecht2015"
 
 \end_inset
 
@@ -4040,7 +4288,6 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-\align center
 Equipe
 \end_layout
 
@@ -4106,7 +4353,6 @@ Schlieren
 \begin_inset Text
 
 \begin_layout Plain Layout
-\align center
 Khole, Agrawal
 \end_layout
 
@@ -4249,7 +4495,6 @@ Abel
 \begin_inset Text
 
 \begin_layout Plain Layout
-\align center
 Takano, Miyazato et Ono
 \end_layout
 
@@ -4321,7 +4566,6 @@ Abel/CPB
 \begin_inset Text
 
 \begin_layout Plain Layout
-\align center
 Cabaleiro
 \end_layout
 
@@ -4393,7 +4637,6 @@ FBP
 \begin_inset Text
 
 \begin_layout Plain Layout
-\align center
 Ishino
 \end_layout
 
@@ -4465,7 +4708,6 @@ BOS
 \begin_inset Text
 
 \begin_layout Plain Layout
-\align center
 Venkatakrishnan
 \end_layout
 
@@ -4608,7 +4850,6 @@ FBP
 \begin_inset Text
 
 \begin_layout Plain Layout
-\align center
 Sourgen et Leopold
 \end_layout
 
@@ -4822,7 +5063,6 @@ ART
 \begin_inset Text
 
 \begin_layout Plain Layout
-\align center
 Ota
 \end_layout
 
@@ -4965,7 +5205,6 @@ ART
 \begin_inset Text
 
 \begin_layout Plain Layout
-\align center
 Atcheson, Irhke et Berger
 \end_layout
 
@@ -5108,7 +5347,6 @@ ART
 \begin_inset Text
 
 \begin_layout Plain Layout
-\align center
 Goldhahn, Hartmann et Seume
 \end_layout
 
@@ -5251,7 +5489,6 @@ ART + FBP
 \begin_inset Text
 
 \begin_layout Plain Layout
-\align center
 Todoroff
 \end_layout
 

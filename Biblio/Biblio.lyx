@@ -375,7 +375,67 @@ Cette équation résulte du principe de Fermat qui stipule que pour aller
  l'ombroscopie, la strioscopie, la BOS et l'holographie, peuvent toutes
  êtres décrites à partir des de cette équation.
  Lorsqu'un rayon traverse un milieu d'indice inhomogène sa trajectoire courbe
- induit 3 phénomènes: un retard, une déviation et un déplacement.
+ induit 3 phénomènes: un retard, une déviation et un déplacement 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Merzkirch.pdf
+	lyxscale 30
+	width 60text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Trajectoire d'un rayon lumineux au sein d'un volume d'indice inhomogène
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Merzkirch"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:merzkirch"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:merzkirch"
+
+\end_inset
+
+.
  Le retard est exploité par l'holographie pour mesurer le champ d'indice.
  La déviation est directement mesurée par la strioscopie tandis que la BOS
  exploite le déplacement.
@@ -443,6 +503,10 @@ Enfin, en utilisant la relation de Gladstone-Dale, qui relie de manière
 
 \begin_layout Standard
 avec 
+\begin_inset Formula $n_{ext}$
+\end_inset
+
+ l'indice optique de l'air ambiant et 
 \begin_inset Formula $\myG$
 \end_inset
 
@@ -453,7 +517,7 @@ avec
 \end_inset
 
 .
- Le vecteur de déviation peut être décomposer suivant chacun des axes du
+ Le vecteur de déviation peut être décomposé suivant chacun des axes du
  repère monde 
 \begin_inset Formula $\myepsilon=\left(\begin{array}{c}
 \myepsilon_{x}\\
@@ -490,12 +554,12 @@ Détaillons à présent le montage BOS.
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/principe.pdf
+	filename Images/principle.pdf
 	lyxscale 30
 	width 80text%
 
@@ -505,6 +569,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Montage BOS.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:setup"
+
+\end_inset
+
 
 \end_layout
 
@@ -699,9 +771,62 @@ pinceau
 \begin_inset Quotes frd
 \end_inset
 
- qui a un certain diamètre au niveau de l'écoulement.
+ qui a un certain diamètre au niveau de l'écoulement 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/circle_of_confusion.pdf
+	lyxscale 30
+	width 60text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cercle de confusion associé au pinceau lumineux qui traverse l'écoulement
+ en faisceau divergent.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:circle_of_confusion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:circle_of_confusion"
+
+\end_inset
+
+.
  La déviation en ce pixel résulte donc d'un moyennage spatial.
- Le diamètre du cercle de confusion au niveau de l'écoulement est proportionel
+ Le diamètre du cercle de confusion au niveau de l'écoulement est proportionnel
  à l'ouverture caméra:
 \end_layout
 
@@ -918,11 +1043,15 @@ reference "fig:biblio:mouchetisA"
 
 .
  La conception du mouchetis suit les règles établies en PIV d'un ensemencement
- idéal, à savoir des particules de 3-5 pixels de diamètre et une répartition
- de 5 à 10 particules par fenêtre d'interrogation.
+ idéal, à savoir des particules de 2-3 pixels de diamètre et une répartition
+ de 4 à 8 particules par fenêtre d'interrogation.
+ Le défaut majeur de ce type de mouchetis c'est qu'il est lié à un montage
+ donné par le grandissement caméra.
+ Ainsi pour chaque expérience il faut concevoir un nouveau fond.
 \end_layout
 
 \begin_layout Standard
+Pour s'affranchir de cette contrainte, 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Atcheson09"
@@ -944,14 +1073,10 @@ reference "fig:biblio:mouchetisC"
 \end_inset
 
 .
- Atcheson décrit deux avantages propres aux fonds en ondelettes: l'indépendance
- du fond vis à vis de la du montage.
- En effet, pour les fonds aléatoire, il est nécessaire de designer un fond
- pour chaque expérience afin de satisfaire une taille de points optimale
- sur le CCD.
+ De ce fait, ces fonds en ondelettes sont indépendant du montage.
  De plus, de part leur construction multi-échelle, ces fonds sont a priori
- mieux adaptés aux techniques sous-échantillonne les images lors du calcul
- de corrélation.
+ mieux adaptés aux techniques qui sous-échantillonne les images lors du
+ calcul de corrélation.
  Bien que cette solution semblait prometteuse, les tests que nous avons
  menés à l'ONERA ne se sont pas avérés concluants.
 \end_layout
@@ -964,8 +1089,8 @@ reference "fig:biblio:mouchetisC"
 
 \end_inset
 
-: ce fond composé de point répartis aléatoirement dans des fenêtres de même
- taille que celles utilisées pour la corrélation d'image.
+: ces fonds sont composés de point répartis aléatoirement dans des fenêtres
+ de même taille que celles utilisées pour la corrélation d'image.
  Cela permet de s'affranchir d'un certains nombre de défauts associés à
  la répartition aléatoire classique: la présence de zones partiellement
  vides et d'amas.
@@ -993,19 +1118,6 @@ key "bathel2015"
 
 , et la chaleur dégagée par la source lumineuse peut perturber la mesure
  d'autre part.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-regarder hartberger
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection
@@ -1163,30 +1275,7 @@ key "leopold2007"
 .
  Elle repose sur l'utilisation un fond coloré, résultant d'un mélange de
  pixels rouges, verts et bleus, capturé par un appareil photographique couleur.
- De cette manière, des corrélations indépendantes des pixels de chaque couleur
- et des mélange de couleurs permet d'améliorer la résolution classique de
- la corrélation qui est conditionnée par la taille de la fenêtre de corrélation
- et par le recouvrement.
- De plus, en introduisant un déplacement connu entre les motifs de couleurs
- différentes lors de la conception du fond 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Leopold2013"
-
-\end_inset
-
-, il est possible de réaliser des corrélations entre ces deux motifs à la
- traversée des ondes de chocs qui sont relativement difficiles à bien capturer.
- La technique présente néanmoins quelques inconvénients puisque il faut
- avoir à l'avance une idée de la topologie de l'onde de choc et elle ne
- pourrait fonctionner sur des topologie d'écoulements complexes.
- Enfin, la mise en œuvre de la CBOS nécessite bien évidement une caméra
- couleur, ce qui se traduit par une baisse de résolution pour un nombre
- de pixels donné.
-\end_layout
-
-\begin_layout Standard
-\align center
+ Pour chaque image couleur, Leopold la décompose en 8 sous-images 
 \begin_inset Float figure
 wide false
 sideways false
@@ -1273,7 +1362,7 @@ key "Leopold2013"
 \end_inset
 
 .
- a) Principe de traitement des images CBOS.
+ a) Extraction des différentes composantes de couleur.
  b) Exemple d'image CBOS sur un spike.
 \begin_inset CommandInset label
 LatexCommand label
@@ -1291,7 +1380,47 @@ name "fig:biblio:CBOS"
 
 \end_inset
 
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:CBOS"
 
+\end_inset
+
+: celle contenant que du rouge, du bleu, du vert, des mélanges,...Il réalise
+ alors 8 corrélations indépendantes pour chaque motif et moyenne ces 8 résultats
+ par fenêtre.
+ Il diminue ainsi et diminue l'écart type relatif à ses corrélations.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+De plus, en introduisant un déplacement connu entre les motifs de couleurs
+ différentes lors de la conception du fond 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leopold2013"
+
+\end_inset
+
+, il est possible de réaliser des corrélations entre ces deux motifs à la
+ traversée des ondes de chocs qui sont relativement difficiles à bien capturer.
+ La technique présente néanmoins quelques inconvénients puisque il faut
+ avoir à l'avance une idée de la topologie de l'onde de choc et elle ne
+ pourrait fonctionner sur des topologie d'écoulements complexes.
+\end_layout
+
+\end_inset
+
+ L'intérêt que peut présenter l'utilisation de la couleur doit toutefois
+ être nuancé.
+ D'une part, si la caméra couleur utilisée possède une matrice de Bayer,
+ il faut pouvoir compenser la perte de résolution associé à chaque composante
+ RGB par un capteur avec une grande définition, i.e.
+ un grand nombre de pixels.
+ Enfin, le traitement des données CBOS se traduit par un coût de calcul
+ 8 fois plus important.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1310,17 +1439,7 @@ key "Ota11"
  Possédant une grande expérience en interférométrie, ils en ont repris le
  principe pour l'appliquer à la BOS.
  Leurs fonds sont composés de 2 grilles : une grille rouge verticale et
- une grille verte horizontale.
- Ils utilisent leurs algorithmes de détection de franges pour calculer les
- déplacements horizontaux et verticaux au centre de chaque ligne.
- Les champs finaux sont obtenus par interpolation.
- La CBOS permet une grande qualité de mesure mais elle sa résolution est
- limitée par la grille utilisée.
- Enfin, comme la CBOS, elle nécessite l'emploi d'une caméra couleur.
-\end_layout
-
-\begin_layout Standard
-\align center
+ une grille verte horizontale 
 \begin_inset Float figure
 wide false
 sideways false
@@ -1343,7 +1462,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CGBOS sur un cône tronqué à Mach 2.0 
+CG-BOS sur un cône tronqué à Mach 2.0 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ota11"
@@ -1369,7 +1488,21 @@ name "fig:biblio:CGBOS"
 
 \end_inset
 
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:CGBOS"
 
+\end_inset
+
+.
+ Ils utilisent leurs algorithmes de détection de franges pour calculer les
+ déplacements horizontaux et verticaux au centre de chaque ligne.
+ Les champs finaux sont obtenus par interpolation.
+ La CG-BOS permet une grande qualité de mesure et elle ne nécessite pas
+ d'image de référence puisque la grille est connue.
+ Toutefois sa résolution est limitée par la grille utilisée et comme la
+ CBOS, elle nécessite l'emploi d'une caméra couleur.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1600,7 +1733,16 @@ dans le cas de faisceaux non parallèles, les rayons voient-ils vraiment
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
 micro:Stoller, Kushner, poitiers 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -2339,14 +2481,14 @@ key "elsinga2005evaluation,elsinga2015"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/blur.png
 	lyxscale 30
-	width 50text%
+	width 30text%
 
 \end_inset
 
@@ -2601,7 +2743,7 @@ status collapsed
 \begin_inset Graphics
 	filename Images/abel.pdf
 	lyxscale 50
-	width 80text%
+	width 60text%
 
 \end_inset
 
@@ -2861,7 +3003,7 @@ status collapsed
 \begin_inset Graphics
 	filename Images/art.pdf
 	lyxscale 50
-	width 80text%
+	width 60text%
 
 \end_inset
 

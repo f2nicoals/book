@@ -540,11 +540,11 @@ Montage BOS
 Détaillons à présent le montage BOS.
  Celui-ci se compose d'un fond texturé placé derrière l'écoulement à une
  distance 
-\begin_inset Formula $Z_{B}$
+\begin_inset Formula $\myl$
 \end_inset
 
  et d'un système d'imagerie, une caméra positionnée à une distance 
-\begin_inset Formula $Z_{A}$
+\begin_inset Formula $\mym$
 \end_inset
 
  de l'écoulement.
@@ -628,7 +628,7 @@ En présence de l'écoulement, le rayon est dévié et touche le CCD en
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\Delta X=Z_{B}M\myepsilon=f\left(\dfrac{Z_{B}}{Z_{A}+Z_{B}-f}\right)\myepsilon\label{eq:biblio:sensibilite}
+\Delta X=\myl M\myepsilon=f\left(\dfrac{\myl}{\mym+\myl-f}\right)\myepsilon\label{eq:biblio:sensibilite}
 \end{equation}
 
 \end_inset
@@ -655,11 +655,11 @@ Sensibilité
 \begin_layout Standard
 Plusieurs paramètres influent sur la sensibilité et la résolution de la
  mesure BOS: les distances 
-\begin_inset Formula $Z_{A}$
+\begin_inset Formula $\mym$
 \end_inset
 
-(caméra-écoulement) et 
-\begin_inset Formula $Z_{B}$
+ (caméra-écoulement) et 
+\begin_inset Formula $\myl$
 \end_inset
 
  (écoulement-fond), la focale, l'ouverture caméra, le plan de mise au point.
@@ -680,7 +680,12 @@ reference "eq:biblio:sensibilite"
 , la sensibilité de la mesure est directement liée à la focale.
  De plus, pour maximiser la sensibilité, on a intérêt à éloigner le fonds
  par rapport à l'écoulement et à rapprocher la caméra.
- En pratique, focale caméra et distance d'observation sont directement liés.
+ En pratique, focale caméra et distance d'observation sont directement liés
+ pour une taille de capteur 
+\begin_inset Formula $C=N\cdot pix$
+\end_inset
+
+ fixée.
  Pour un écoulement de taille 
 \begin_inset Formula $U$
 \end_inset
@@ -691,7 +696,7 @@ reference "eq:biblio:sensibilite"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-M=\dfrac{N\cdot pix}{U}=\dfrac{f}{Z_{A}-f}
+M=\dfrac{C}{U}=\dfrac{f}{\mym-f}
 \end{equation}
 
 \end_inset
@@ -706,7 +711,7 @@ et donc,
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-f=\dfrac{N\cdot pix\cdot Z_{A}}{U+N\cdot pix}
+f=\dfrac{C\cdot\mym}{U+N\cdot pix}
 \end{equation}
 
 \end_inset
@@ -720,10 +725,10 @@ Pour maximiser
 \end_inset
 
  en conservant 
-\begin_inset Formula $Z_{A}$
+\begin_inset Formula $\mym$
 \end_inset
 
-faible il faut donc maximiser la taille du capteur (
+ faible il faut donc maximiser la taille du capteur (
 \begin_inset Formula $N\cdot pix$
 \end_inset
 

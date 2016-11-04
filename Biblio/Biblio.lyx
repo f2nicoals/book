@@ -666,7 +666,7 @@ Plusieurs paramètres influent sur la sensibilité et la résolution de la
  Nous allons revenir sur chacun de ses paramètres et monter que pour une
  mesure donnée un certain compromis doit être trouvé entre résolution et
  sensibilité.
- comme on peut le voir sur l'équation
+ Comme on peut le voir sur l'équation
 \begin_inset space ~
 \end_inset
 
@@ -680,7 +680,26 @@ reference "eq:biblio:sensibilite"
 , la sensibilité de la mesure est directement liée à la focale.
  De plus, pour maximiser la sensibilité, on a intérêt à éloigner le fonds
  par rapport à l'écoulement et à rapprocher la caméra.
- En pratique, focale caméra et distance d'observation sont directement liés
+ L'analyse faite par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Goldhahn07"
+
+\end_inset
+
+ montre que c'est surtout le rapport des distances 
+\begin_inset Formula $m$
+\end_inset
+
+ et 
+\begin_inset Formula $l$
+\end_inset
+
+ qui impacte la sensibilité de la technique.
+ En pratique, comment choisir l'ensemble de ses paramètres ? En général,
+ on dispose d'une caméra donné et l'on veut observer un phénomène sur un
+ champ de taille elle aussi donnée.
+ La taille focale caméra et distance d'observation sont directement liés
  pour une taille de capteur 
 \begin_inset Formula $C=N\cdot pix$
 \end_inset
@@ -696,7 +715,7 @@ reference "eq:biblio:sensibilite"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-M=\dfrac{C}{U}=\dfrac{f}{\mym-f}
+\dfrac{C}{U}=\dfrac{z}{\mym}=\dfrac{(m+l)M}{m}=\dfrac{f}{m}\dfrac{1}{1-\dfrac{f}{m+l}}\text{≈}\dfrac{f}{m}
 \end{equation}
 
 \end_inset
@@ -705,13 +724,13 @@ M=\dfrac{C}{U}=\dfrac{f}{\mym-f}
 \end_layout
 
 \begin_layout Standard
-et donc,
+d'où,
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-f=\dfrac{C\cdot\mym}{U+N\cdot pix}
+f\text{≈}\dfrac{C\cdot\mym}{U}
 \end{equation}
 
 \end_inset
@@ -720,35 +739,44 @@ f=\dfrac{C\cdot\mym}{U+N\cdot pix}
 \end_layout
 
 \begin_layout Standard
-Pour maximiser 
-\begin_inset Formula $\myf$
+En injectant ce résultat dans 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:biblio:sensibilite"
+
 \end_inset
 
- en conservant 
-\begin_inset Formula $\mym$
-\end_inset
-
- faible il faut donc maximiser la taille du capteur (
-\begin_inset Formula $N\cdot pix$
-\end_inset
-
-).
- En pratique on préfère 
-\end_layout
-
-\begin_layout Standard
-Vérifier que :
+, on obtient que:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\myepsilon=\dfrac{N\cdot pix\cdot AZ_{A}\cdot Z_{B}}{H(Z_{A}+Z_{B})+N\cdot pix\cdot Z_{B}}
+\Delta X=\dfrac{C}{U}\myepsilon\dfrac{lm}{l+m}
 \end{equation}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Les distances 
+\begin_inset Formula $m$
+\end_inset
+
+ et 
+\begin_inset Formula $l$
+\end_inset
+
+ ont donc des rôles équivalents.
+ Augmenter l'une ou l'autre de ces longueurs permet donc d'améliorer la
+ sensibilité du montage.
+ Ce résultat est intéressant dans des cas où l'on souhaite par exemple contenir
+ l'écoulement et le fond dans la profondeur de champ pour minimiser un flou
+ maquette.
+ On peut donc rapprocher le mouchetis tout en éloignant la caméra pour conserver
+ de la sensibilité.
 \end_layout
 
 \begin_layout Subsubsection
@@ -757,15 +785,14 @@ Résolution
 
 \begin_layout Standard
 La résolution fait intervenir plusieurs aspects: on peut parler de la résolution
- avec le fond est imagée, c'est la résolution caméra.
- Meilleure sera la résolution caméra, plus petits pourront être les points
- du mouchetis et donc les fenêtre de corrélation pour le calcul du champ
- de déplacement.
+ avec laquelle le fond est imagée, c'est la résolution caméra.
+ Meilleure elle sera et plus petits pourront être les points du mouchetis
+ et donc les fenêtre de corrélation pour le calcul du champ de déplacement.
 \end_layout
 
 \begin_layout Standard
-Il existe également une résolution au niveau de l'écoulement: on parlera
- alors plus de cercle de confusion.
+Il existe également une résolution de mesure au niveau de l'écoulement:
+ on parlera alors plus de cercle de confusion.
  En effet, à partir du moment où l'on travaille pas en lumière collimaté
  mais avec un faisceau divergent, la lumière qui arrive sur un pixel est
  issu d'un 
@@ -832,7 +859,42 @@ reference "fig:biblio:circle_of_confusion"
 .
  La déviation en ce pixel résulte donc d'un moyennage spatial.
  Le diamètre du cercle de confusion au niveau de l'écoulement est proportionnel
- à l'ouverture caméra:
+ à l'ouverture caméra 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gojani2013,ota2015"
+
+\end_inset
+
+.
+ Il est égale à la largeur d'un cône au niveau de l'écoulement plus la distance
+ entre deux cônes: 
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+\delta_{t} & = & \dfrac{lD}{m+l}+\dfrac{\delta_{b}m}{m+l}\\
+ & = & \underbrace{\dfrac{M}{1+M}\dfrac{l}{f_{\#}}}_{1}+\underbrace{\dfrac{\Delta t}{M}\dfrac{m}{l+m}}_{2}
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dans cette expression, le premier terme est très souvent prépondérant devant
+ le deuxième.
+ On voit alors que pour améliorer la résolution spatiale, il faut principalement
+ agir sur l'ouverture caméra 
+\begin_inset Formula $f_{\#}$
+\end_inset
+
+ et sur la distance du mouchetis 
+\begin_inset Formula $l$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1125,6 +1187,22 @@ key "bathel2015"
  d'autre part.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Fond naturel
 \end_layout
@@ -1194,6 +1272,7 @@ key "bauknecht2014a,Bauknecht2014b"
  Ils regardent alors l'évolution de leur critère pour différentes textures
  en fonction de la taille des fenêtres d'interrogations 
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status collapsed
@@ -1265,6 +1344,22 @@ key "Kindler07,raffel2014"
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Color-BOS
 \end_layout
@@ -1282,6 +1377,7 @@ key "leopold2007"
  pixels rouges, verts et bleus, capturé par un appareil photographique couleur.
  Pour chaque image couleur, Leopold la décompose en 8 sous-images 
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status collapsed
@@ -1428,6 +1524,22 @@ key "Leopold2013"
  8 fois plus important.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Color-Grid-BOS
 \end_layout
@@ -1446,6 +1558,7 @@ key "Ota11"
  Leurs fonds sont composés de 2 grilles : une grille rouge verticale et
  une grille verte horizontale 
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status collapsed
@@ -1508,6 +1621,22 @@ reference "fig:biblio:CGBOS"
  d'image de référence puisque la grille est connue.
  Toutefois sa résolution est limitée par la grille utilisée et comme la
  CBOS, elle nécessite l'emploi d'une caméra couleur.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -1750,8 +1879,36 @@ micro:Stoller, Kushner, poitiers
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Eclairage
+\end_layout
+
+\begin_layout Standard
+L'éclairage du mouchetis est le plus souvent réalisé en lumière blanche.
+ La lumière naturelle ou des lampes de spectacles peuvent être suffisantes
+ mais pour correctement des écoulements rapides un éclairage plus puissant
+ est nécessaire afin de diminuer le temps d'exposition.
+ Une source lumineuse plus intense permet aussi d'opérer à plus faible ouverture
+ ce qui améliore la résolution spatiale comme nous l'avons vu précédemment.
+ Parmi les sources plus puissante on peut citer les lampes à arc et les
+ progrès récent que connaissent les leds.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -1874,7 +2031,7 @@ key "liu2008"
 
 \begin_layout Standard
 L'ONERA a développé son propre code de flot optique basé sur l'algorithme
- LK baptisé Folki 
+ LK baptisé Folki et implémenté sous GPU 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Champagnat11,plyer2016"
@@ -1900,6 +2057,8 @@ reference "fig:biblio:folki"
 \end_inset
 
 .
+ Sa rapidité de calcul est extrêmement intéressante lorsqu'il est nécessaire
+ de traiter un grand nombre d'images.
 \end_layout
 
 \begin_layout Standard
@@ -3384,7 +3543,6 @@ key "Agrawal06,takano2016"
 
  
 \begin_inset Float figure
-placement h
 wide false
 sideways false
 status collapsed
@@ -3521,6 +3679,10 @@ key "Venkatakrishnan04,ota2012,sourgen2004"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset Float figure
 placement h
 wide false
@@ -3545,6 +3707,11 @@ Reconstruction du champ de masse volumique moyen autour d'un cône à Mach
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ota2012"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -3720,7 +3887,18 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Spike Leopold
+Mesures CBOS réalisées par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leopold2013"
+
+\end_inset
+
+ sur le développement d'un écoulement supersonique autour d'un spike.
+ a)- Déplacements en couleur pseudo-strioscopique.
+ b)-Déplacements horizontaux.
+ c)- Déplacements verticaux.
+ d)-Iso-surface de densité obtenue après reconstruction 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:biblio:spike"
@@ -3745,6 +3923,22 @@ reference "fig:biblio:spike"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -3802,8 +3996,15 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Comparaison des champs de masse volumique, reconstruit par FBP (à gauche)
- et obtenus par calcul RANS (à droite).
+Comparaison réalisée par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sourgen12"
+
+\end_inset
+
+ des champs de masse volumique, reconstruit à partir de 19 projections par
+ FBP (à gauche) et obtenus par calcul RANS (à droite).
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -3837,28 +4038,24 @@ Ecoulements périodiques
 \end_layout
 
 \begin_layout Standard
-Cabaleiro 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cabaleiro2013"
 
 \end_inset
 
- qui travaille avec des strioscopie classique en niveau de gris adopte une
- démarche intéressante: il exploite le caractère périodique de son écoulement,
- un jet pulsé, pour réaliser des acquisitions suivant différentes orientations.
- Pour chacune de ses 36 points de vues, il réalise des moyennes de phases
+ et son équipe travaillent avec des strioscopie classique en niveau de gris.
+ Ils adoptent dependant une démarche intéressante: ils exploitent le caractère
+ périodique de leur écoulement, un jet pulsé, pour réaliser des acquisitions
+ suivant différentes orientations.
+ Pour chacune de ses 36 points de vues, ils calculent des moyennes de phases
  sur 20 images.
- Il reconstruit alors le champ de masse volumique pour chacune des phases
- illustrant le développement temporel de ce micro jet d'hélium 
+ Ils reconstruisent alors le champ de masse volumique pour chacune des phases
+ et illustrent le développement temporel de ce micro jet d'hélium 
 \begin_inset Float figure
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -3873,7 +4070,15 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Evolution d'un micro-jet d'hélium issu d'une buse rectangulaire.
+Evolution d'un micro-jet d'hélium issu d'une buse rectangulaire mesurée
+ par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cabaleiro2013"
+
+\end_inset
+
+.
  Iso-surface de densité 
 \begin_inset Formula $0.75\, kg/m^{3}$
 \end_inset
@@ -3891,10 +4096,6 @@ name "fig:biblio:cabaleiro"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -3918,7 +4119,7 @@ Ecoulements instationnaires
 \begin_layout Standard
 Pour pouvoir capturer un écoulement quelconque, il est nécessaire d'acquérir
  de manière simultanée, plusieurs point de vues.
- Cela complique grandement la mesure puisque un certain nombre de caméra
+ Cela complique grandement la mesure puisque un certain nombre de caméras
  doivent fonctionner de concert pour capturer l'écoulement.
 \end_layout
 
@@ -3928,14 +4129,14 @@ Mesures par strioscopie
 
 \begin_layout Standard
 Bien que la strioscopie soit plus complexe à mettre en œuvre que la BOS,
- Ishino 
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ishino2016"
 
 \end_inset
 
- a développé un banc avec 20 lignes strioscopique 
+ ont développé un banc avec 20 lignes strioscopique 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:ishino"
@@ -4018,8 +4219,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-a) Banc de strioscopie à 20 lignes de visée et b) reconstruction d'une flamme
- turbulente 
+Mesure instantanée d'une flamme turbulente par 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ishino2016"
@@ -4027,6 +4227,8 @@ key "ishino2016"
 \end_inset
 
 .
+ a) Banc de strioscopie à 20 lignes de visée et b) reconstruction d'une
+ flamme turbulente.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -4045,9 +4247,9 @@ name "fig:biblio:ishino"
 \end_inset
 
 .
- Après avoir calibré la sensibilité de ses caméra avec un filtre à densité
- de pas, Ishino évalue sa reconstruction sur un bruleur à flammes calibrées
- avant de l'appliquer à un cas complètement instationnaire et de reconstruire
+ Après avoir calibré la sensibilité des caméra avec un filtre à densité
+ de pas, les auteurs évaluent leur reconstruction sur un bruleur à flammes
+ calibrées avant de l'appliquer à un cas instationnaire et de reconstruire
  le champ instantané de masse volumique d'une flamme turbulente 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4266,7 +4468,7 @@ on par variation totale, L2L1.
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathcal{R}(\myrho)=\left\{ \begin{array}{l}
+{\newcommand{\arraystretch}{1.5}}\mathcal{R}(\myrho)=\left\{ \begin{array}{l}
 ||\nabla\myrho||^{2}\mbox{ pour la régularisation}\myL\\
 \sqrt{||\nabla\myrho||^{2}+\mydelta^{2}}\mbox{ pour la régularisation}\myLL
 \end{array}\right.
@@ -4309,7 +4511,61 @@ key "Hansen"
 
 \shape default
 : elle consiste à tracer le terme de régularisation en fonction du terme
- d'adéquation aux données pour différents paramètre de régularisation.
+ d'adéquation aux données pour différents paramètre de régularisation 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/l-curve.pdf
+	lyxscale 30
+	width 60text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tracé schématique de la 
+\shape italic
+L-curve.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:l-curve"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:l-curve"
+
+\end_inset
+
+.
  Le point situé aux maximum de courbure minimise, les deux termes du critère:
  c'est le 
 \begin_inset Formula $\mylambda$
@@ -4369,6 +4625,14 @@ status open
 \begin_layout Plain Layout
 Géode: banc BOS 3D supportant une douzaine de caméras sur un hémisphère
  et des mouchetis sur l'autre.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:géode"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4401,10 +4665,9 @@ status open
 
 \begin_layout Plain Layout
 Reconstruction d'un écoulement instantané de jet chaud.
- 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:biblio:géode"
+name "fig:biblio:geode_jet-chaud"
 
 \end_inset
 
@@ -4436,7 +4699,14 @@ name "fig:biblio:géode"
  Ce montage comporte un hémisphère couvert de mouchetis semi-aléatoires
  tandis que le second hémisphère est dédié au support de 12 caméras.
  Sur cette installation, de très bons résultats ont été obtenus sur des
- écoulements de convection, comme un jet chaud ou bien un charbon en rotation.
+ écoulements de convection, comme un jet chaud 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:geode_jet-chaud"
+
+\end_inset
+
+ ou bien un charbon en rotation.
  
 \end_layout
 
@@ -4480,7 +4750,7 @@ key "raffel2015"
 \end_inset
 
 .
- Il nous est néanmoins paru intéressant de synthétiser l'ensemble des études
+ Il nous est néanmoins paru intéressant de synthétiser les principales détudes
  ayant trait à la reconstruction 3D dans le tableau 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5829,6 +6099,14 @@ name "tab:biblio:resume"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 

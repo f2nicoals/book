@@ -255,12 +255,11 @@ reference "fig:biblio:DLR"
 \end_layout
 
 \begin_layout Standard
-Dalziel a eu une approche un peu différente: il s'intéressait aux variations
- de densité présentes dans un écoulement stratifié soumis à des oscillations
- périodiques.
- Pour étudier ce phénomène de manière quantitative, Dalziel explore divers
- techniques: il commence par la strioscopie puis étudie l'utilisation de
- la strioscopie par grille encore appelée 
+Dalziel qui s'intéressait aux variations de densité présentes dans un écoulement
+ stratifié soumis à des oscillations périodiques a adopté une démarche un
+ peu différente à l'origine.
+ Il s'est inspiré de la technique de strioscopie par grille encore appelée
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -268,17 +267,13 @@ focusing schlieren
 \begin_inset Quotes erd
 \end_inset
 
-.
- Il étend le principe en s'intéressant à un masque de points qui n'est plus
- 2D.
- Enfin, il montre qu'un suivit du déplacement de son motif de points par
- corrélation fournit de belles cartes des gradients horizontaux et verticaux
- avec un montage bien plus simple que les techniques de grilles.
-\end_layout
-
-\begin_layout Standard
-Par la suite, technique la BOS est adoptée par de nombreuses équipes grâce
- à sa simplicité d'utilisation.
+ pour remplacer la grille par une impression d'un ensemencement PIV.
+ Il montre alors qu'il est aisé de calculer les déplacements horizontaux
+ et verticaux par corrélation d'images.
+ Il entrevoit un fort potentiel pour cette nouvelle technique qui est simple
+ à mettre en œuvre, qui a présente une bonne dynamique et une bonne résolution
+ spatiale, et qui à l'avantage de fournir des informations quantitative
+ sur les deux composantes du gradient de masse volumique.
  
 \end_layout
 
@@ -379,11 +374,7 @@ Cette équation résulte du principe de Fermat qui stipule que pour aller
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -398,8 +389,8 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Trajectoire d'un rayon lumineux au sein d'un volume d'indice inhomogène
- 
+Trajectoire d'un rayon lumineux au sein d'un volume d'indice inhomogène.
+ D'après 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Merzkirch"
@@ -1844,39 +1835,26 @@ double passe
 L'utilisation du speckle reste séduisante sur le papier mais semble délicate
  à mettre en œuvre dans un environnement complexe: Meier a réalisé ses mesures
  sur table optique.
- Que se passe-t-il lorsque le fond vibre ou se déforme? Le speckle est-il
- stable dans le temps? Il semble toutefois très approprié au petites expériences
+ Que se passe-t-il lorsque le fond vibre ou se déforme? 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bathel2015"
+
+\end_inset
+
+ rapporte justement de grosses difficultés a corrélé des mouchetis de speckle
+ lors d'essais en soufflerie.
+ Il semble toutefois très approprié au petites expériences 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "stoller2014"
+
+\end_inset
+
  (qui peuvent se faire sur table optique) mais surtout pour lesquelles il
  est difficile d'imprimer un mouchetis suffisamment petit.
  Enfin, bien qu'intéressant le montage double passe nécessite un alignement
  précis du faisceau laser et de la caméra.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-dans le cas de faisceaux non parallèles, les rayons voient-ils vraiment
- la même chose à l'aller et au retour ????
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-micro:Stoller, Kushner, poitiers 
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1929,14 +1907,21 @@ Après obtention d'une paire d'image, l'image de référence et l'image perturb�
  La plupart des équipes utilisent des approches de type corrélation sur
  fenêtre.
  En effet, celles-ci sont largement répandu en PIV et facilement disponible
- (matPIV 
+ sous Matlab (matPIV 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sveen2004"
+
+\end_inset
+
+ et PIVLab
 \begin_inset CommandInset citation
 LatexCommand cite
 key "thielicke2014"
 
 \end_inset
 
- disponible sous Matlab).
+).
  L'approche corrélation sur des fenêtres repose sur un calcul de corrélation
  spatiale sur des fenêtres de tailles dégressives afin d'obtenir une meilleur
  résolution.
@@ -2002,6 +1987,37 @@ key "brox2004"
  HS.
  Néanmoins il met en avant le fait que contrairement au HS, l'algorithme
  LK est moins sensibles aux paramètres de réglage.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "letelier2016"
+
+\end_inset
+
+ proposent une méthode permettant de déterminer les paramètres 
+\begin_inset Formula $(p_{1},p_{2})$
+\end_inset
+
+ optimaux de leur algorithme de variation total avec une norme 
+\begin_inset Formula $\mathcal{L}1$
+\end_inset
+
+.
+ Après avoir définit une métrique de similarité, ils comparent un post-traitemen
+t par flot optique à un post-traitement sur des fenêtres pour un ensemble
+ de paramètres.
+ La carte de métrique associée est alors interpolée pour trouver le meilleur
+ couple 
+\begin_inset Formula $(p_{1},p_{2})$
+\end_inset
+
+.
+ C'est ce choix de paramètres moyenné sur quelques images qui est alors
+ utilisé sur l'ensemble du jeu de données.
+ Même si un choix de paramètres automatique pour la corrélation est intéressant,
+ il est ici très lourds à mettre en œuvre et très couteux en temps de calcul.
 \end_layout
 
 \begin_layout Standard
@@ -2432,18 +2448,14 @@ key "schairer2013"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/shairer.png
 	lyxscale 50
-	width 20text%
+	width 30text%
 
 \end_inset
 
@@ -3923,6 +3935,31 @@ reference "fig:biblio:spike"
 \end_inset
 
 .
+ 
+\end_layout
+
+\begin_layout Standard
+Enfin, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tan2015"
+
+\end_inset
+
+ propose une technique dérivée de la transformée d'Abel, l'algorithme d'Abel
+ Fourrier-Hankel adaptatif 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ma2008,chehouani2013"
+
+\end_inset
+
+ pour reconstruire des profils axisymétrique de jets d'hélium.
+ Cette solution permet d'être plus robuste au bruit que la transformée d'Abel
+ classique et contrairement au méthodes FBP, elle ne nécessite pas de choisir
+ un filtre adéquat.
+ Elle repose néanmoins sur un paramètre de lissage qu'il convient d'ajuster
+ correctement.
 \end_layout
 
 \begin_layout Standard
@@ -4518,15 +4555,11 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/l-curve.pdf
 	lyxscale 30
-	width 60text%
+	width 35text%
 
 \end_inset
 
@@ -4598,7 +4631,7 @@ reference "fig:biblio:géode"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4612,7 +4645,7 @@ status open
 \begin_inset Graphics
 	filename Images/geode.png
 	lyxscale 70
-	width 50text%
+	height 40text%
 
 \end_inset
 
@@ -4653,7 +4686,7 @@ status open
 \begin_inset Graphics
 	filename Images/jetchdiL2L1_1v1.png
 	lyxscale 20
-	width 50text%
+	height 40text%
 
 \end_inset
 
@@ -4733,6 +4766,18 @@ Si le code développé par Violaine Todoroff à l'ONERA donne de bons résultats
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -4750,7 +4795,7 @@ key "raffel2015"
 \end_inset
 
 .
- Il nous est néanmoins paru intéressant de synthétiser les principales détudes
+ Il nous est néanmoins paru intéressant de synthétiser les principales études
  ayant trait à la reconstruction 3D dans le tableau 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -6107,6 +6152,64 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Depuis son introduction au début des années 2000 la technique BOS a connu
+ un fort succès de part sa simplicité de mise en oeuvre.
+ Elle a été applliquée dans de nombreux domaines, des écoulements de convections
+ aux écoulements supersoniques et à de larges échelles, de la micro-BOS
+ à des expériences échelle 1:1.
+ Bien que sa résolution soit plus faible que la strisocopie, la technique
+ BOS permet d'obtenir une information quantitative sur les deux composantes
+ du gradient de masse volumique.
+ Pour les écoulement de symétrie axiale, la mesure BOS permet aisément de
+ retrouver le champ de masse volumique par transformée d'Abel.
+ Pour les écoulements de forme plus complexe, il est nécessaire d'acquérir
+ des mesures depuis différents points de vue pour pouvoir reconbstruire
+ la distribution de masse volumique par rétroprojection filtrée ou par méthode
+ algébrique.
+ Il est possible d'effectuer ses mesures avec une seule caméra sous certaines
+ hypothèses (stationnarité, périodicité) mais pour la capture d'un champ
+ instantané, un système multi-caméras est indispensable.
+ Atcheson et Ihrke ont pour la première fois mis en oeuvre un telle instrumentat
+ion et démontré la capacité de la BOS 3D à reconstruire un écoulement de
+ convection pour des applications en infographie.
+ L'ONERA a également développé son propre système BOS 3D : un banc d'essai
+ supportant 12 caméras permet de recontruire différents écoulement de convection
+ grâce à un algorithme dont la particularité est de reconstruire directement
+ le champ de masse volumique.
+ Ces systèmes BOS  3D laissent entrevoir un grand potentiel pour cette nouvelle
+ technique à la fois pour offrir un nouveau regard sur la physique de certains
+ écoulements mais aussi pour pouvoir valider les simulations numériques.
+ Avant de pouvoir utiliser la BOS 3D comme réel moyen de mesure il est nécessair
+e de poursiivre son développment.
+ Cela commence par gagner en robustesse sur le code de reconstruction introduit
+ par Violaine Todoroff.
+ De plus, il convient de valider les résultats obtenus par une technique
+ complémentaire pour pouvoir qualifier la technique.
+ Pour l'ONERA qui possède un des plus grand parc de souffleries au monde,
+ il est particulièrement intéressant de pouvoir déployer cette nouvelle
+ métrologie dans ces installations.
+ On s'intéressera donc la mise en œuvre et au traitement de données BOS
+ 3D dans un contexte soufflerie.
+ Enfin, il est essentiel d'élargir le domaine d'application de la technique
+ pour être capable de traiter des écoulements compressibles, à haute vitesse.
+\end_layout
+
+\end_inset
+
 
 \end_layout
 

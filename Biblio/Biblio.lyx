@@ -889,6 +889,26 @@ Dans cette expression, le premier terme est très souvent prépondérant devant
 \end_layout
 
 \begin_layout Standard
+Pour améliorer la résolution au niveau de l'écoulement 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bichal2013"
+
+\end_inset
+
+ propose de positionner le plan focal entre la caméra et le mouchetis de
+ telle sorte que l'ensemble soit dans la profondeur de champ.
+ Néanmoins, Bichal et Thurow n'évaluent pas dans leur étude l'impact de
+ ce choix de dimensionnement sur la qualité de la corrélation.
+ De plus, les couples de paramètres (
+\begin_inset Formula $l,m$
+\end_inset
+
+) étudiés ne sont pas représentatifs des dimensions classiques d'un montage
+ BOS.
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -2292,8 +2312,26 @@ key "bathel2015"
 \end_layout
 
 \begin_layout Standard
-Une campagne d'essai relativement impressionnante a également été mené par
- le DLR 
+Une équipe du DLR a réalisé des mesures sur le jet issu du réacteur d'un
+ A320 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "geisler2016"
+
+\end_inset
+
+.
+ Ils ont utilisé 4 caméra rapides avec des mouchetis rétroréfléchissants
+ fixés sur des panneaux rigides qui étaient éclairés par des LEDs.
+ Afin de corriger les mouvement de vibrations des panneaux de mouchetis
+ dues au fonctionnement du moteur, ils ont retranché le déplacement mesuré
+ dans une région de l'image non perturbée de l'écoulement.
+ 
+\end_layout
+
+\begin_layout Standard
+Une campagne autre d'essai relativement impressionnante a également été
+ mené par le DLR 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bauknecht2015"
@@ -2452,10 +2490,21 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
 \begin_inset Graphics
 	filename Images/shairer.png
-	lyxscale 50
-	width 30text%
+	lyxscale 30
+	height 40text%
 
 \end_inset
 
@@ -2475,7 +2524,7 @@ key "schairer2013"
  
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:biblio:schairer"
+name "fig:biblio:shairer"
 
 \end_inset
 
@@ -2493,14 +2542,97 @@ name "fig:biblio:schairer"
 
 \end_inset
 
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align right
+\begin_inset Graphics
+	filename Images/calib_heineck.JPG
+	lyxscale 30
+	height 40text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cibles positionnées sur le support du rotor pour des mesures par stéréo-vision
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:biblio:schairer"
+\begin_inset CommandInset citation
+LatexCommand cite
+key "heineck2016"
 
 \end_inset
 
 .
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:heineck"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:shairer"
+
+\end_inset
+
+.
+ Lors d'une expérience similaire sur un rotor statique, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "heineck2016"
+
+\end_inset
+
+ ont également disposé un ensemble de cibles dans le volume d'intérêt 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:heineck"
+
+\end_inset
+
+, puis calibré le système de stéréo-vision à l'aide du logiciel de photogrammétr
+ie commercial VSTARS.
 \end_layout
 
 \begin_layout Standard
@@ -4117,7 +4249,7 @@ key "cabaleiro2013"
 
 .
  Iso-surface de densité 
-\begin_inset Formula $0.75\, kg/m^{3}$
+\begin_inset Formula $0.75\,kg/m^{3}$
 \end_inset
 
 .
@@ -4417,6 +4549,45 @@ key "Berger09"
 \end_layout
 
 \begin_layout Subsubsection
+Mesures BOS 3D à partir d'une caméra plénoptique
+\end_layout
+
+\begin_layout Standard
+Les caméras plénoptiques se distingues des caméras classiques par la présence
+ d'un ensemble de mico-lentilles devant le CCD.
+ Ce dispositif leur permet d'enregistrer la direction avec laquelle les
+ rayons lumineux pénètrent dans la caméra.
+ Cette information offre la capacité aux caméras plénoptiques de pouvoir
+ changer à la fois la la mise la point et aussi l'angle de vue a posteriori.
+ L'équipe du Professeur Thurow de l'Université d'Auburn travaille depuis
+ quelques années à l'utilisation d'une telle caméra pour effectuer des mesures
+ de PIV 3D.
+ Récemment, ils ont proposé d'utiliser leur caméra plénotpique plutôt plusieurs
+ caméras classiques pour des mesures de BOS 3D 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bichal2015"
+
+\end_inset
+
+.
+ Les auteurs ont développé un algorithme spécifique pour reconstruire par
+ méthode algébrique le champ de masse volumique à partir d'une caméra plénoptiqu
+e.
+ Après avoir menés des tests synthétiques et expérimentaux sur l’écoulement
+ autour d'un cône à Mach 2.3 Bichal conclue que la technique est encore très
+ jeune et manque de maturité.
+ Il soulève plusieurs limites: l'angle solide avec lequel l'écoulement est
+ observé est trop faible avec une seule caméra plénoptique pour avoir des
+ mesures correctes.
+ La faible résolution de la caméra nuit fortement à la mesure et ne permet
+ pour l'instant que de localiser une maquette ou des structures intenses
+ comme les ondes de chocs.
+ Enfin, il observe un lissage du champ de masse volumique de plus en plus
+ prononcé à mesure que l'on s'éloigne du plan de focalisation.
+\end_layout
+
+\begin_layout Subsubsection
 Développement de la BOS 3D à l'ONERA
 \end_layout
 
@@ -4505,7 +4676,7 @@ on par variation totale, L2L1.
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-{\newcommand{\arraystretch}{1.5}}\mathcal{R}(\myrho)=\left\{ \begin{array}{l}
+{\renewcommand{\arraystretch}{1.5}}\mathcal{R}(\myrho)=\left\{ \begin{array}{l}
 ||\nabla\myrho||^{2}\mbox{ pour la régularisation}\myL\\
 \sqrt{||\nabla\myrho||^{2}+\mydelta^{2}}\mbox{ pour la régularisation}\myLL
 \end{array}\right.

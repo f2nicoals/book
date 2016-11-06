@@ -138,6 +138,7 @@
 \usepackage{minitoc}
 \usepackage{makecell}
 \usepackage{placeins}
+\usepackage{calc}
 
 
 \include{alphabet}

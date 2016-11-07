@@ -110,7 +110,7 @@ L'objectif de ce chapitre est de démontrer la faisabilité d'une mesure BOS
  Après avoir déployé pour la première fois la technique en soufflerie à
  F2, nous changeons ici d'échelle pour réaliser des mesures à S1MA qui possède
  une veine de 
-\begin_inset Formula $8\,m$
+\begin_inset Formula $8\, m$
 \end_inset
 
  de diamètre et dont la vitesse veine peut atteindre Mach 1.
@@ -145,6 +145,85 @@ contrainte de temps? d'efficacité ?
 Contexte
 \end_layout
 
+\begin_layout Subsection
+Motivations
+\end_layout
+
+\begin_layout Standard
+Le Carnot BOS 3D s'est achevé à l'été 2015 par une démonstration dans l'immense
+ soufflerie S1MA de l'ONERA à Modane.
+ Le caractère exceptionnel de ces essais résulte d'une volonté d'équiper
+ les grands moyens techniques (GMT) de l'ONERA de nouveau outils métrologiques.
+ Cette campagne de mesure représente également un challenge de part le fait
+ que 2 ans à peine se sont écoulés de puis les premiers essais BOS 3D réalisés
+ sur la géode au DMAE (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Todoroff2013"
+
+\end_inset
+
+).
+ En plus, des équipes du DMAE et du DTIM, de nombreuses personnes de GMT
+ ont été impliquées: des ingénieur d'essais pour la préparation et le suivi
+ de la campagne, le bureau d'étude pour la conception de la maquette et
+ de son support, des monteurs.
+ Toute cette équipe est visible sur la figure 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:equipe"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:equipe"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+L'objectif de cette première démonstration était de mettre en œuvre le système
+ BOS 3D complet (12 caméras, mouchetis et laser) dans cet environnement
+ complexe et d'acquérir des mesures à un Mach de vol de 0.85 représentatif
+ des conditions de croisière pour les avions civil.
+\end_layout
+
+\begin_layout Subsection
+Présentation de la soufflerie S1MA
+\end_layout
+
 \begin_layout Standard
 La soufflerie S1MA constitue une prise de guerre de l'armée française aux
  allemands à la fin de la seconde guerre mondiale.
@@ -155,51 +234,39 @@ La soufflerie S1MA constitue une prise de guerre de l'armée française aux
  est telle que les ingénieurs allemands avaient imaginé un système qui utilisera
 it l'énergie hydraulique issue d'une conduite forcée pour entrainer directement
  les deux ventilateurs contrarotatifs.
+ Le lieu de son installation en France a donc été choisi pour reproduire
+ ce système.
  C'est une retenue d'eau située 
-\begin_inset Formula $800\,m$
+\begin_inset Formula $800\, m$
 \end_inset
 
  plus haut qui alimente la soufflerie et permet d'atteindre Mach 1 en veine.
  Avec sa veine de 
-\begin_inset Formula $8\,m$
+\begin_inset Formula $8\, m$
 \end_inset
 
  de diamètre, son circuit de près de 
-\begin_inset Formula $400\,m$
+\begin_inset Formula $400\, m$
 \end_inset
 
  de long et une hauteur de 
-\begin_inset Formula $24\,m$
+\begin_inset Formula $24\, m$
 \end_inset
 
- à son diamètre le plus large, S1MA fait partie des plus grande soufflerie
+ à son diamètre le plus large, S1MA fait partie des plus grandes souffleries
  au monde.
  
 \end_layout
 
 \begin_layout Standard
-Depuis son entrée en service en 1950, la plus part des grand projets aéronautiqu
-es français sont passés à S1MA, comme le concorde, le Rafale, l'A380 ou
- l'A400M.
- Afin d'optimiser les essais, 3 chariots interchangeables cohabitent (figure
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:S1MA:schema"
-
-\end_inset
-
-): pendant que des essais ont lieu avec un des chariot, l'essai suivant
- peut être préparé hors du circuit.
- Le chariot sera finalement inséré dans le circuit pour les essais.
-\end_layout
-
-\begin_layout Standard
+Depuis son entrée en service en 1950, la plupart des grand projets aéronautiques
+ français sont passés à S1MA, comme le Concorde, le Rafale, l'A400M ou l'A380
+ dont la maquette est visible sur la figure 
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -213,7 +280,7 @@ status open
 \begin_inset Graphics
 	filename Images/S1MA.png
 	lyxscale 30
-	width 45text%
+	width 46text%
 
 \end_inset
 
@@ -243,21 +310,22 @@ name "fig:S1MA:schema"
 \end_inset
 
 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/A380.jpg
 	lyxscale 30
-	width 45text%
+	width 46text%
 
 \end_inset
 
@@ -269,7 +337,7 @@ Maquette de l'A380 montée sur un dard en Z issu du tripode.
  
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:A380-1"
+name "fig:A380"
 
 \end_inset
 
@@ -278,10 +346,6 @@ name "fig:A380-1"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -305,6 +369,31 @@ name "fig:A380-1"
 
 \end_inset
 
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:A380"
+
+\end_inset
+
+.
+ Afin d'optimiser les essais, 3 chariots interchangeables cohabitent (figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:schema"
+
+\end_inset
+
+): pendant que des essais ont lieu en veine, les essais suivant peuvent
+ être préparés dans les autres charriots.
+\end_layout
+
+\begin_layout Subsection
+Préparation des essais
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
@@ -326,7 +415,7 @@ reference "fig:S1MA:montage_BOS3D"
 Enterasys 24 port
 \shape default
 s avec des liaisons en fibre optique à 
-\begin_inset Formula $20\,Gb/s$
+\begin_inset Formula $20\, Gb/s$
 \end_inset
 
  et le stockage des images en RAM.
@@ -335,7 +424,7 @@ s avec des liaisons en fibre optique à
 \end_inset
 
  images par caméra à une fréquence de 
-\begin_inset Formula $10\,Hz$
+\begin_inset Formula $10\, Hz$
 \end_inset
 
 .
@@ -666,7 +755,7 @@ Comme nous l'avons vu jusqu'à présent, la disposition optimale de caméras
  la petite taille de nos caméras nous ont permis de les disposer autour
  de la veine sans trop de difficultés.
  Chacune de nos caméra était équipée d'un objectif de 
-\begin_inset Formula $70\,mm$
+\begin_inset Formula $70\, mm$
 \end_inset
 
  afin de viser un volume cubique d'une cinquantaine de cm de coté en amont
@@ -738,11 +827,11 @@ Mouchetis
 \begin_layout Standard
 Etant donnée la géométrie du montage, le champ de vue des caméras qui est
  de près de 
-\begin_inset Formula $50\,cm$
+\begin_inset Formula $50\, cm$
 \end_inset
 
  au centre veine, approche 
-\begin_inset Formula $1\,m$
+\begin_inset Formula $1\, m$
 \end_inset
 
  sur les parois de la veine.
@@ -846,7 +935,7 @@ Une fois les caméras et les mouchetis installé, le système d'éclairage a
 \end_inset
 
  faisceaux couplée à un laser Quantel Twins B de 
-\begin_inset Formula $380\,mJ$
+\begin_inset Formula $380\, mJ$
 \end_inset
 
  par pulse.
@@ -867,12 +956,12 @@ Rayvision
 \end_inset
 
  et 
-\begin_inset Formula $10\,m$
+\begin_inset Formula $10\, m$
 \end_inset
 
  ont permis d'amener les faisceau jusqu'aux différents hublots.
  Des lentilles divergentes de 
-\begin_inset Formula $50\,mm$
+\begin_inset Formula $50\, mm$
 \end_inset
 
  permettaient ensuite d'éclater le faisceau sur un diamètre de près d'1m.
@@ -2808,7 +2897,7 @@ reference "fig:S1MA:matrice"
  en plus marquée.
  On voit très nettement l'apparition de cellules de chocs caractéristiques
  d'un jet sous-détendu pour le débit le plus important (
-\begin_inset Formula $Q=2.5\,kg/s$
+\begin_inset Formula $Q=2.5\, kg/s$
 \end_inset
 
 ).
@@ -2816,7 +2905,7 @@ reference "fig:S1MA:matrice"
 s qui naissent aux niveau des lèvres de la buse et se propage vers l'aval
  du jet.
  Pour le cas à débit de 
-\begin_inset Formula $2.5\,kg/s$
+\begin_inset Formula $2.5\, kg/s$
 \end_inset
 
 , d'autres ondes acoustiques qui se propage vers l'amont se superposent
@@ -3081,7 +3170,7 @@ reference "fig:S1MA:matrice"
 
 ).
  Le jet débitant à 
-\begin_inset Formula $2.5\,kg/s$
+\begin_inset Formula $2.5\, kg/s$
 \end_inset
 
  est présenté en figure 
@@ -3146,7 +3235,7 @@ Reconstruction de l'écoulement à Mach 0.4
 \begin_layout Standard
 Un premier regard sur les champs de déplacements à Mach 0.4 et pour un débit
  de 
-\begin_inset Formula $Q=1\,kg/s$
+\begin_inset Formula $Q=1\, kg/s$
 \end_inset
 
  (figure 
@@ -3315,6 +3404,10 @@ Dans une démarche d'analyse logique et pragmatique, nous avons cherché à
  les données et reconstruire un champ de masse volumique lorsque la soufflerie
  est en fonctionnement.
  
+\end_layout
+
+\begin_layout Subsubsection
+Problématique
 \end_layout
 
 \begin_layout Subsubsection
@@ -3505,7 +3598,7 @@ Stratégie de correction
 \begin_layout Standard
 Dans la suite nous concentrons sur un point de fonctionnement particulier
  : débit de 
-\begin_inset Formula $1\,kg/s$
+\begin_inset Formula $1\, kg/s$
 \end_inset
 
  et 
@@ -4129,6 +4222,10 @@ Un autre point surprenant est la dissymétrie présente sur les déplacements
 
 \end_layout
 
+\begin_layout Subsubsection
+Reconstruction BOS 3D
+\end_layout
+
 \begin_layout Standard
 A partir de ces champs de déplacements corrigés nous avons pu estimer nos
  champs de déviations et reconstruire la champ de masse volumique associé
@@ -4137,7 +4234,7 @@ A partir de ces champs de déplacements corrigés nous avons pu estimer nos
 \end_inset
 
  et 
-\begin_inset Formula $Q=1\,kg/s$
+\begin_inset Formula $Q=1\, kg/s$
 \end_inset
 
 ).
@@ -4254,7 +4351,7 @@ status open
 
 \begin_layout Plain Layout
 Iso-surfaces et coupes de masse volumique pour un jet débitant à 
-\begin_inset Formula $1\,kg/s$
+\begin_inset Formula $1\, kg/s$
 \end_inset
 
  face à un écoulement à Mach 
@@ -4314,7 +4411,7 @@ Discussion sur les enseignements à tirer de la campagne
 \end_layout
 
 \begin_layout Subsection
-Mesure tridimensionelle de champs étendus
+Mesure tridimensionnelle de champs étendus
 \end_layout
 
 \begin_layout Standard
@@ -4476,7 +4573,7 @@ reference "fig:S1MA:astigmatisme"
 \end_inset
 
  où l'on voit la sortie du jet à 
-\begin_inset Formula $3\,kg/s$
+\begin_inset Formula $3\, kg/s$
 \end_inset
 
 , soufflerie à l'arrêt.
@@ -4504,7 +4601,7 @@ status open
 \begin_layout Plain Layout
 Astigmatisme parasite visible sur une image brute de la sortie du jet simple
  buse, soufflerie arrêtée, débit de 
-\begin_inset Formula $3\,kg/s$
+\begin_inset Formula $3\, kg/s$
 \end_inset
 
 .
@@ -4539,7 +4636,7 @@ Ce phénomène qui sera étudié plus en détail dans le chapitre suivant est
  est sensible.
  Notre configuration à S1MA est loin d'être optimale puisqu'en collant les
  mouchetis à 
-\begin_inset Formula $4\,m$
+\begin_inset Formula $4\, m$
 \end_inset
 
  de l'écoulement, sur les parois, nous avons une grande sensibilité.

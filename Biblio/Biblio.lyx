@@ -4299,7 +4299,7 @@ key "cabaleiro2013"
 
 .
  Iso-surface de densité 
-\begin_inset Formula $0.75\,kg/m^{3}$
+\begin_inset Formula $0.75\, kg/m^{3}$
 \end_inset
 
 .
@@ -4870,7 +4870,7 @@ status open
 \begin_inset Graphics
 	filename Images/geode.png
 	lyxscale 70
-	height 40text%
+	height 38text%
 
 \end_inset
 
@@ -4901,6 +4901,11 @@ name "fig:biblio:géode"
 \end_inset
 
 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -4911,7 +4916,7 @@ status open
 \begin_inset Graphics
 	filename Images/jetchdiL2L1_1v1.png
 	lyxscale 20
-	height 40text%
+	height 38text%
 
 \end_inset
 

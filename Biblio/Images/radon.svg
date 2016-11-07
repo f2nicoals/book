@@ -15,7 +15,7 @@
    viewBox="0 0 496.06308 318.89768"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.48.0 r"
    sodipodi:docname="radon.svg">
   <defs
      id="defs4">
@@ -302,16 +302,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="276.59182"
-     inkscape:cy="186.40731"
+     inkscape:zoom="1.4"
+     inkscape:cx="108.60847"
+     inkscape:cy="168.47923"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-height="1006"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -321,7 +321,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -391,7 +391,7 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;font-family:Sans;-inkscape-font-specification:'Sans Bold'">Y</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4201-9-7-9"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:0.94901961;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:0.94901961;stroke:none;font-family:Sans"
        transform="translate(-114.9261,242.91193)"><flowRegion
          id="flowRegion4203-9-7-0"><rect
            id="rect4205-4-5-3"
@@ -401,9 +401,7 @@
            y="654.36212"
            style="fill:#0000ff;fill-opacity:0.94901961" /></flowRegion><flowPara
          id="flowPara4207-2-3-0"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'Lucida Calligraphy';-inkscape-font-specification:'Lucida Calligraphy Italic';fill:#0000ff;fill-opacity:0.94901961">f<flowSpan
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.5px;font-family:'Lucida Calligraphy';-inkscape-font-specification:'Lucida Calligraphy Italic';fill:#0000ff"
-   id="flowSpan4657">(x,y)</flowSpan></flowPara></flowRoot>    <flowRoot
+         style="font-size:13.00000286px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000080;fill-opacity:0.94901961;font-family:Monotype Corsiva;-inkscape-font-specification:Monotype Corsiva">f(x,y)</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4201-9-7-9-9"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#1828a2;fill-opacity:0.94901961;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -416,8 +414,8 @@
            y="654.36212"
            style="fill:#1828a2;fill-opacity:0.94901961" /></flowRegion><flowPara
          id="flowPara4207-2-3-0-8"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.5px;font-family:'Lucida Calligraphy';-inkscape-font-specification:'Lucida Calligraphy Italic';fill:#ff0000;fill-opacity:0.94901961">p<flowSpan
-   style="font-size:64.99999762%;baseline-shift:sub"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.00000203px;font-family:Monotype Corsiva;-inkscape-font-specification:Monotype Corsiva;fill:#ff0000;fill-opacity:0.94901961000000001">p<flowSpan
+   style="font-size:11.00000203px;baseline-shift:sub;-inkscape-font-specification:Monotype Corsiva;font-family:Monotype Corsiva"
    id="flowSpan5061">θ1</flowSpan>(t)</flowPara></flowRoot>    <path
        sodipodi:nodetypes="cc"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.2, 2.39999998;stroke-dashoffset:0;stroke-opacity:1"
@@ -436,7 +434,8 @@
        cx="-359.17621"
        cy="720.12262"
        r="1.5"
-       transform="matrix(0.76604444,-0.64278761,0.64278761,0.76604444,0,0)" />
+       transform="matrix(0.76604444,-0.64278761,0.64278761,0.76604444,0,0)"
+       d="m -357.67621,720.12262 c 0,0.82843 -0.67157,1.5 -1.5,1.5 -0.82843,0 -1.5,-0.67157 -1.5,-1.5 0,-0.82843 0.67157,-1.5 1.5,-1.5 0.82843,0 1.5,0.67157 1.5,1.5 z" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4692)"
        d="m 149.52433,783.09522 75.66617,90.19836"
@@ -468,8 +467,8 @@
            y="654.36212"
            style="fill:#008000;fill-opacity:0.94901961" /></flowRegion><flowPara
          id="flowPara4207-2-3-0-8-1"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.5px;font-family:'Lucida Calligraphy';-inkscape-font-specification:'Lucida Calligraphy Italic';fill:#008000;fill-opacity:0.94901961">p<flowSpan
-   style="font-size:64.99999762%;baseline-shift:sub;fill:#008000"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.00000203px;font-family:Monotype Corsiva;-inkscape-font-specification:Monotype Corsiva;fill:#008000;fill-opacity:0.94901961000000001">p<flowSpan
+   style="font-size:11.00000203px;baseline-shift:sub;fill:#008000;-inkscape-font-specification:Monotype Corsiva;font-family:Monotype Corsiva"
    id="flowSpan5061-1">θ2</flowSpan></flowPara></flowRoot>    <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4692-5)"
        d="m 100.62464,882.82548 12.50305,15.13942"
@@ -615,19 +614,19 @@
        transform="translate(114.57829,263.99548)"><flowRegion
          id="flowRegion4203-9-7-0-3"><rect
            id="rect4205-4-5-3-0"
-           width="43.049995"
-           height="20.597149"
+           width="51.621418"
+           height="21.668596"
            x="229.55716"
            y="654.36212"
            style="fill:#0000ff;fill-opacity:0.94901961" /></flowRegion><flowPara
          id="flowPara4207-2-3-0-0"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'Lucida Calligraphy';-inkscape-font-specification:'Lucida Calligraphy Italic';fill:#0000ff;fill-opacity:0.94901961"><flowSpan
-   style="font-size:12.5px;fill:#000000"
-   id="flowSpan5252">F{</flowSpan>f<flowSpan
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.5px;font-family:'Lucida Calligraphy';-inkscape-font-specification:'Lucida Calligraphy Italic';fill:#0000ff"
-   id="flowSpan4657-0">(x,y)<flowSpan
-   style="font-size:12.5px;fill:#000000"
-   id="flowSpan5254">}</flowSpan></flowSpan></flowPara></flowRoot>    <rect
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.00000259px;font-family:Monotype Corsiva;-inkscape-font-specification:Monotype Corsiva;fill:#0000ff;fill-opacity:0.94901961000000001"><flowSpan
+           style="font-size:14.00000259px;fill:#000000;-inkscape-font-specification:Monotype Corsiva;font-family:Monotype Corsiva"
+           id="flowSpan5252">F{</flowSpan><flowSpan
+           style="fill:#000080"
+           id="flowSpan6171">f(x,y)</flowSpan><flowSpan
+           style="font-size:14.00000259px;fill:#000000;-inkscape-font-specification:Monotype Corsiva;font-family:Monotype Corsiva"
+           id="flowSpan5254">}</flowSpan></flowPara></flowRoot>    <rect
        style="opacity:0.56099997;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.4, 1.4;stroke-dashoffset:0;stroke-opacity:0.36190479"
        id="rect5295"
        width="12.956656"
@@ -758,19 +757,19 @@
        transform="translate(139.30832,381.00418)"><flowRegion
          id="flowRegion4203-9-7-0-3-1"><rect
            id="rect4205-4-5-3-0-7"
-           width="43.049995"
-           height="20.597149"
+           width="57.692848"
+           height="18.097168"
            x="229.55716"
            y="654.36212"
            style="fill:#0000ff;fill-opacity:0.94901961" /></flowRegion><flowPara
          id="flowPara4207-2-3-0-0-2"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'Lucida Calligraphy';-inkscape-font-specification:'Lucida Calligraphy Italic';fill:#0000ff;fill-opacity:0.94901961"><flowSpan
-   style="font-size:12.5px;fill:#000000"
-   id="flowSpan5252-3">F{</flowSpan>f<flowSpan
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.5px;font-family:'Lucida Calligraphy';-inkscape-font-specification:'Lucida Calligraphy Italic';fill:#0000ff"
-   id="flowSpan4657-0-0">(x,y)<flowSpan
-   style="font-size:12.5px;fill:#000000"
-   id="flowSpan5254-8">}</flowSpan></flowSpan></flowPara></flowRoot>    <flowRoot
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.00000239999999962px;font-family:Monotype Corsiva;-inkscape-font-specification:Monotype Corsiva;fill:#0000ff;fill-opacity:0.94901961000000001"><flowSpan
+           style="font-size:13.00000239999999962px;fill:#000000;-inkscape-font-specification:Monotype Corsiva;font-family:Monotype Corsiva"
+           id="flowSpan5252-3">F{</flowSpan><flowSpan
+           style="fill:#000080"
+           id="flowSpan6174">f(x,y)</flowSpan><flowSpan
+           style="font-size:13.00000239999999962px;fill:#000000;-inkscape-font-specification:Monotype Corsiva;font-family:Monotype Corsiva"
+           id="flowSpan5254-8">}</flowSpan></flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4201-9-7-9-37"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:0.94901961;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -783,12 +782,10 @@
            y="654.36212"
            style="fill:#0000ff;fill-opacity:0.94901961" /></flowRegion><flowPara
          id="flowPara4207-2-3-0-3"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'Lucida Calligraphy';-inkscape-font-specification:'Lucida Calligraphy Italic';fill:#0000ff;fill-opacity:0.94901961">f<flowSpan
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.5px;font-family:'Lucida Calligraphy';-inkscape-font-specification:'Lucida Calligraphy Italic';fill:#0000ff"
-   id="flowSpan4657-5">(x,y)</flowSpan></flowPara></flowRoot>    <flowRoot
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.00000239999999962px;font-family:Monotype Corsiva;-inkscape-font-specification:Monotype Corsiva;fill:#000080;fill-opacity:0.94901961000000001">f(x,y)</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4595"
-       style="color:#000000;line-height:125%;letter-spacing:0px;word-spacing:0px;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       style="line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        transform="translate(-44.063475,822.09681)"><flowRegion
          id="flowRegion4597"><rect
            id="rect4599"
@@ -797,8 +794,8 @@
            x="275"
            y="204.8369" /></flowRegion><flowPara
          id="flowPara4601"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Lucida Handwriting';-inkscape-font-specification:'Lucida Handwriting Italic'">F<flowSpan
-   style="font-size:65.0000155%;baseline-shift:super"
+         style="font-size:13.00000286px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Monotype Corsiva;-inkscape-font-specification:Monotype Corsiva">F <flowSpan
+   style="font-size:8.00000191px;baseline-shift:super;font-family:Monotype Corsiva;-inkscape-font-specification:Monotype Corsiva"
    id="flowSpan4603">-1</flowSpan></flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4595-5"
@@ -811,22 +808,20 @@
            x="275"
            y="204.8369" /></flowRegion><flowPara
          id="flowPara4601-9"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Lucida Handwriting';-inkscape-font-specification:'Lucida Handwriting Italic'">F<flowSpan
-   style="font-size:65.0000155%;baseline-shift:super"
-   id="flowSpan4603-2" /></flowPara></flowRoot>    <flowRoot
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Monotype Corsiva;-inkscape-font-specification:Monotype Corsiva;font-size:13.0000024px">F</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4201-9-7-9-9-7"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#1828a2;fill-opacity:0.94901961;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="translate(102.83713,161.73678)"><flowRegion
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1828a2;fill-opacity:0.94901961;stroke:none;font-family:Sans"
+       transform="translate(99.806672,157.19109)"><flowRegion
          id="flowRegion4203-9-7-0-0-9"><rect
            id="rect4205-4-5-3-7-91"
-           width="30.644196"
-           height="15.722334"
+           width="37.715263"
+           height="14.207122"
            x="229.55716"
            y="654.36212"
            style="fill:#1828a2;fill-opacity:0.94901961" /></flowRegion><flowPara
          id="flowPara4207-2-3-0-8-0"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.5px;font-family:'Lucida Calligraphy';-inkscape-font-specification:'Lucida Calligraphy Italic';fill:#ff0000;fill-opacity:0.94901961">P(θ1,U)</flowPara></flowRoot>    <path
+         style="font-size:11.00000191px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ff0000;fill-opacity:0.94901961;font-family:Monotype Corsiva;-inkscape-font-specification:Monotype Corsiva">p(θ1,U)</flowPara></flowRoot>    <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000024;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker4867)"
        d="m 390,1006.5765 0,24.2858"
        id="path4859"

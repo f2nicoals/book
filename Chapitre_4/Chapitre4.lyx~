@@ -170,18 +170,25 @@ key "Todoroff2013"
  de son support, des monteurs.
  Toute cette équipe est visible sur la figure 
 \begin_inset Float figure
+placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/equipe.png
+	lyxscale 10
+	width 70text%
 
-\end_layout
+\end_inset
 
-\begin_layout Plain Layout
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Equipe qui a participé à la réalisation des essais BOS 3D à S1MA.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:S1MA:equipe"
@@ -240,7 +247,12 @@ it l'énergie hydraulique issue d'une conduite forcée pour entrainer directemen
 \begin_inset Formula $800\, m$
 \end_inset
 
- plus haut qui alimente la soufflerie et permet d'atteindre Mach 1 en veine.
+ plus haut qui alimente la soufflerie et permet d'atteindre Mach 1 en veine
+ pour une puissance totale de 
+\begin_inset Formula $88\, MW$
+\end_inset
+
+.
  Avec sa veine de 
 \begin_inset Formula $8\, m$
 \end_inset
@@ -393,102 +405,55 @@ reference "fig:S1MA:schema"
 Préparation des essais
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Section
-Mise en œuvre de la BOS à S1MA
+\begin_layout Subsubsection
+Contraintes
 \end_layout
 
 \begin_layout Standard
-L'ensemble du système BOS 3D mis en œuvre à S1MA visible sur la figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:S1MA:montage_BOS3D"
+Dans une installation d'un tel gigantisme, un certains nombre de contraintes
+ et de problématiques rendent difficile le déploiement de la technique BOS
+ 3D: 
+\end_layout
 
-\end_inset
+\begin_layout Itemize
+D'une part, les accès optiques sont ici bien plus étroits que les larges
+ panneaux vitrés dont nous disposions à F2.
+ De plus, certains logements caméras ne sont pas accessible pendant le fonctionn
+ement de la soufflerie, empêchant toute intervention au cours de l'essai.
+\end_layout
 
- s'inspire fortement du montage réalisé à F2.
- L'évolution majeur concerne l'emploi d'un nouveau switch 
-\shape italic
-Enterasys 24 port
-\shape default
-s avec des liaisons en fibre optique à 
-\begin_inset Formula $20\, Gb/s$
-\end_inset
+\begin_layout Itemize
+Les mouchetis qui seront collés sur les parois de la veine seront exposés
+ à un écoulement à Mach 0.85.
+\end_layout
 
- et le stockage des images en RAM.
- Ce système nous permet désormais d'enregistrer un total de 
-\begin_inset Formula $900$
-\end_inset
-
- images par caméra à une fréquence de 
-\begin_inset Formula $10\, Hz$
+\begin_layout Itemize
+Il est nécessaire d'éclairer une surface de mouchetis de près de 
+\begin_inset Formula $10\, m^{2}$
 \end_inset
 
 .
- Les images sont ensuite transférées sur des disques SSD montés en RAID,
- afin de 
-\begin_inset Quotes fld
-\end_inset
-
-vidanger
-\begin_inset Quotes frd
-\end_inset
-
- la RAM.
- Les spécificités du montage BOS 3D relatives à S1MA sont décrites par la
- suite.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/setup2.jpg
-	lyxscale 10
-	width 100text%
-
-\end_inset
-
-
+\begin_layout Itemize
+Lors de son fonctionnement la soufflerie induit des vibrations.
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Montage BOS 3D dans la veine de S1MA.
- Les caméras sont disposées par paires derrières les hublots et font face
- aux panneaux de mouchetis collés sur les parois.
- Les mouchetis sont éclairés au moyen de différents illuminateurs laser.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:S1MA:montage_BOS3D"
-
+\begin_layout Itemize
+De plus, en raison de l'échauffement de l'air par frottements, la température
+ de l'air à la fin d'un essai peut atteindre près 
+\begin_inset Formula $50\,°C$
 \end_inset
 
-
+.
 \end_layout
 
-\end_inset
-
-
+\begin_layout Itemize
+Enfin, une contrainte sur la conception du banc maquette imposait un montage
+ issu de l'aval de la soufflerie.
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
+\begin_layout Subsubsection
 Phénomène étudié
 \end_layout
 
@@ -513,7 +478,35 @@ reference "fig:S1MA:montage_BOS3D"
 Le système fonctionnait donc comme suit: sur le tripode était monté le dard
  FLA7 qui supportait l'arrivée d'air haute pression (HP).
  Le jet était finalement généré par une buse montée à l'extrémité du dard.
- Deux types de buses ont été testées: une simple buse et une double buse.
+ Deux types de buses ont été testées: une simple buse de 
+\begin_inset Formula $80\, mm$
+\end_inset
+
+ de diamètre 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ref
+\end_layout
+
+\end_inset
+
+et une double buse de 
+\begin_inset Formula $56.6\, mm$
+\end_inset
+
+ de diamètre.
+ Ainsi, les 2 buses présentent la même aire dans leur section de sortie.
+ Sur le plan en figure .., on peut voir l'arrivée d'air HP par le haut qui
+ passe dans un coude puis dans un cône perforé afin d'homogénéiser l'écoulement.
+ Les deux buses sont instrumentées avec une prise de pression et de température
+ statiques.
+ Ce montage permet d'atteindre un débit d'air de 
+\begin_inset Formula $3.4\, kg/s$
+\end_inset
+
+ en sortie des buses.
  
 \end_layout
 
@@ -521,10 +514,72 @@ Le système fonctionnait donc comme suit: sur le tripode était monté le dard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Buse1.JPG
+	lyxscale 5
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Buse2.JPG
+	lyxscale 5
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -548,10 +603,6 @@ status collapsed
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -651,68 +702,6 @@ status collapsed
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/Buse1.JPG
-	lyxscale 5
-	width 50text%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/Buse2.JPG
-	lyxscale 5
-	width 50text%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -732,7 +721,315 @@ name "fig:S1MA:simple_buse"
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Comme nous l'avons dit cette configuration de jet à contre courant est plutôt
+ originale.
+ Elle se rapproche néanmoins des études liées à du contrôle d'écoulement
+ en régime supersonique.On trouve néanmoins quelques études qui cherche à
+ employer une injection fluidique (parfois réalisée au moyen d'une décharge
+ plasma) au nez d'un corps élancé ou d'une capsule afin diminuer la trainée
+ 
+\begin_inset Note Note
+status open
+
 \begin_layout Plain Layout
+ref
+\end_layout
+
+\end_inset
+
+et de réduire l'intensité du 
+\begin_inset Quotes fld
+\end_inset
+
+bang
+\begin_inset Quotes frd
+\end_inset
+
+ sonique 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ref
+\end_layout
+
+\end_inset
+
+ou bien de contrôler un véhicule lors d'une rentrée atmosphérique
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ref
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Dimensionnement du montage
+\end_layout
+
+\begin_layout Standard
+Encore une fois, l'originalité de cette configuration rend difficile la
+ préparation de l'essai notamment concernant la distance de pénétration
+ du jet dans l'écoulement de la soufflerie.
+ Afin de correctement dimensionner notre montage: choix la focale caméra
+ qui permettra de visualiser l'écoulement d'intérêt et par conséquent la
+ taille des points du mouchetis, nous avons réaliser une simulation numérique
+ RANS 2D axisymmétrique au moyen du logiciel elsA de l'ONERA.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Elsa_Vx.png
+	lyxscale 10
+	width 47text%
+	BoundingBox 40bp 180bp 1950bp 1380bp
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Elsa_Vy.png
+	lyxscale 10
+	width 47text%
+	BoundingBox 40bp 180bp 1950bp 1380bp
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Elsa_M.png
+	lyxscale 10
+	width 47text%
+	BoundingBox 40bp 180bp 1950bp 1380bp
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Elsa_rho.png
+	lyxscale 10
+	width 47text%
+	BoundingBox 40bp 180bp 1950bp 1380bp
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Choix du mouchetis
+\end_layout
+
+\begin_layout Subsubsection
+Mesures de vibrations
+\end_layout
+
+\begin_layout Section
+Mise en œuvre de la BOS à S1MA
+\end_layout
+
+\begin_layout Standard
+L'ensemble du système BOS 3D mis en œuvre à S1MA visible sur la figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:montage_BOS3D"
+
+\end_inset
+
+ s'inspire fortement du montage réalisé à F2.
+ L'évolution majeur concerne l'emploi d'un nouveau switch 
+\shape italic
+Enterasys 24 port
+\shape default
+s avec des liaisons en fibre optique à 
+\begin_inset Formula $20\, Gb/s$
+\end_inset
+
+ et le stockage des images en RAM.
+ Ce système nous permet désormais d'enregistrer un total de 
+\begin_inset Formula $900$
+\end_inset
+
+ images par caméra à une fréquence de 
+\begin_inset Formula $10\, Hz$
+\end_inset
+
+.
+ Les images sont ensuite transférées sur des disques SSD montés en RAID,
+ afin de 
+\begin_inset Quotes fld
+\end_inset
+
+vidanger
+\begin_inset Quotes frd
+\end_inset
+
+ la RAM.
+ Les spécificités du montage BOS 3D relatives à S1MA sont décrites par la
+ suite.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/setup2.jpg
+	lyxscale 10
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Montage BOS 3D dans la veine de S1MA.
+ Les caméras sont disposées par paires derrières les hublots et font face
+ aux panneaux de mouchetis collés sur les parois.
+ Les mouchetis sont éclairés au moyen de différents illuminateurs laser.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:montage_BOS3D"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -781,9 +1078,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/plateau.JPG
-	lyxscale 10
-	width 45text%
+	filename Images/plateau.png
+	lyxscale 20
+	width 70text%
 
 \end_inset
 
@@ -4392,18 +4689,6 @@ renfoncement
  présent à l'extrémité du champignon.
  Encore une fois l'originalité de cette configuration rend les comparaisons
  difficiles.
- On trouve néanmoins quelques études qui cherche à employer cette injection
- fluidique (parfois réalisée au moyen d'une décharge plasma) pour contrôler
- l'écoulement autour d'un objet en vol supersonique.
- L'objectif étant de diminuer la trainée et de réduire l'intensité du 
-\begin_inset Quotes fld
-\end_inset
-
-bang
-\begin_inset Quotes frd
-\end_inset
-
- sonique .
 \end_layout
 
 \begin_layout Section

@@ -139,6 +139,8 @@
 \usepackage{makecell}
 \usepackage{placeins}
 \usepackage{calc}
+\usepackage{colortbl}
+\usepackage{xcolor}
 
 
 \include{alphabet}
@@ -248,6 +250,7 @@ Chapitre_4/Chapitre4.lyx
 \papercolumns 1
 \papersides 2
 \paperpagestyle headings
+\bullet 1 0 15 -1
 \tracking_changes false
 \output_changes false
 \html_math_output 0

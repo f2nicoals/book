@@ -72,6 +72,13 @@
 
 \begin_layout Chapter
 Reconstruction de champs instantanés de masse volumique
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:BOS3D"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

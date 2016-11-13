@@ -116,7 +116,7 @@ name "sec:biblio:intro"
 \end_layout
 
 \begin_layout Standard
-La technique Background Oriented Sclieren (BOS) est née au début des années
+La technique Background Oriented Schlieren (BOS) est née au début des années
  2000.
  Elle a été introduite initialement par 
 \begin_inset CommandInset citation
@@ -133,22 +133,22 @@ key "raffel2000"
 \end_inset
 
 .
- Dalziel s'intéressait aux variations de densité présentes dans un écoulement
- stratifié soumis à des oscillations périodiques.
+ Dalziel s'intéressait aux variations de masse volumique présentes dans
+ un écoulement stratifié soumis à des oscillations périodiques.
  Il s'est inspiré de la technique de strioscopie par grille encore appelée
  “ focusing schlieren ” pour remplacer la grille par une impression d'un
  ensemencement PIV.
  Il montre alors qu'il est aisé de calculer les déplacements horizontaux
  et verticaux par corrélation d'images.
  Il entrevoit un fort potentiel pour cette nouvelle technique qui est simple
- à mettre en œuvre, qui a présente une bonne dynamique et une bonne résolution
- spatiale, et qui à l'avantage de fournir des informations quantitative
+ à mettre en œuvre, qui présente une bonne dynamique et une bonne résolution
+ spatiale, et qui à l'avantage de fournir des informations quantitatives
  sur les deux composantes du gradient de masse volumique.
 \end_layout
 
 \begin_layout Standard
 Raffel et son équipe au DLR travaillaient en particulier sur les tourbillons
- de bout de pâles d'hélicoptères.
+ de bout de pales d'hélicoptères.
  Ils se sont inspirés de la vélocimétrie par image de particules (PIV) et
  des algorithmes développés pour calculer le champ de déplacement entre
  deux images de particules.
@@ -161,11 +161,15 @@ imprimé
 \end_inset
 
  leur ensemencement en projetant de la peinture blanche sur une surface
- goudronnée 
+ goudronnée Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -240,7 +244,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Mesure BOS de tourbillons de bout de pâles par 
+Mesure BOS de tourbillons de bout de pales par 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Richard2002"
@@ -277,7 +281,7 @@ reference "fig:biblio:DLR"
 .
  Ils ont ensuite observé leur hélicoptère en vol stationnaire depuis le
  toit d'un bâtiment et après avoir calculé leur champ de déplacement, ils
- ont pu observer les tourbillons de bout de pâles et leur évolution.
+ ont pu mettre en évidebnce les tourbillons de bout de pales et leur évolution.
  Peu de temps après, 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -384,11 +388,15 @@ Cette équation résulte du principe de Fermat qui stipule que pour aller
  l'ombroscopie, la strioscopie, la BOS et l'holographie, peuvent toutes
  êtres décrites à partir des de cette équation.
  Lorsqu'un rayon traverse un milieu d'indice inhomogène sa trajectoire courbe
- induit 3 phénomènes: un retard, une déviation et un déplacement 
+ induit 3 phénomènes: un retard, une déviation et un déplacement Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -433,7 +441,7 @@ name "fig:biblio:merzkirch"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:merzkirch"
@@ -457,7 +465,7 @@ Si l'on considère un volume d'indice non homogène
 \begin_inset Formula $V$
 \end_inset
 
- et si l'on intègre l'équation
+ et si l'on intègre l'Eq.
 \begin_inset space ~
 \end_inset
 
@@ -682,7 +690,7 @@ Plusieurs paramètres influent sur la sensibilité et la résolution de la
  Nous allons revenir sur chacun de ses paramètres et monter que pour une
  mesure donnée un certain compromis doit être trouvé entre résolution et
  sensibilité.
- Comme on peut le voir sur l'équation
+ Comme on peut le voir sur l'Eq.
 \begin_inset space ~
 \end_inset
 
@@ -755,7 +763,11 @@ f\text{≈}\dfrac{C\cdot\mym}{U}
 \end_layout
 
 \begin_layout Standard
-En injectant ce résultat dans 
+En injectant ce résultat dans l'Eq.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:biblio:sensibilite"
@@ -999,7 +1011,11 @@ Motif aléatoire
 L'utilisation première de sprays de peinture pour créer le mouchetis est
  satisfaisante et très adaptée aux grandes dimensions.
  Pour les expériences de dimensions plus modeste, le choix classique porte
- sur l'impression d'une distribution aléatoire de points 
+ sur l'impression d'une distribution aléatoire de points Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
@@ -1164,7 +1180,7 @@ name "fig:biblio:mouchetis"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:mouchetisA"
@@ -1177,7 +1193,7 @@ reference "fig:biblio:mouchetisA"
  de 4 à 8 particules par fenêtre d'interrogation.
  Le défaut majeur de ce type de mouchetis c'est qu'il est lié à un montage
  donné par le grandissement caméra.
- Ainsi pour chaque expérience il faut concevoir un nouveau fond.
+ Ainsi pour chaque expérience, il faut concevoir un nouveau fond.
 \end_layout
 
 \begin_layout Standard
@@ -1188,38 +1204,46 @@ key "Atcheson09"
 
 \end_inset
 
- s'est penché sur l'utilisation de fonds en ondelettes 
+ se sont penchés sur l'utilisation de fonds en ondelettes (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cook2005"
 
 \end_inset
 
-: ces fonds ont l'avantage de présenter un motif texturé à différentes échelles
+): ces fonds, dont un exemple est présenté en Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:moucheisB"
 
 \end_inset
 
-.
- De ce fait, ces fonds en ondelettes sont indépendant du montage.
- De plus, de part leur construction multi-échelle, ces fonds sont a priori
- mieux adaptés aux techniques qui sous-échantillonne les images lors du
+, ont l'avantage de présenter un motif texturé à différentes échelles.
+ De ce fait, les motifs en ondelettes sont indépendants du montage.
+ De plus, de part leur construction multi-échelles, ces fonds sont à priori
+ mieux adaptés aux techniques qui sous-échantillonnent les images lors du
  calcul de corrélation.
- Bien que cette solution semblait prometteuse, les tests que nous avons
- menés à l'ONERA ne se sont pas avérés concluants.
+ Bien que cette solution semble prometteuse, les tests que nous avons menés
+ à l'ONERA ne se sont pas avérés concluants.
 \end_layout
 
 \begin_layout Standard
-A l'ONERA, nous utilisons donc un mouchetis semi-aléatoire 
+A l'ONERA, nous utilisons donc un mouchetis semi-aléatoire (Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:mouchetisC"
 
 \end_inset
 
-: ces fonds sont composés de point répartis aléatoirement dans des fenêtres
+): ces fonds sont composés de points répartis aléatoirement dans des fenêtres
  de même taille que celles utilisées pour la corrélation d'image.
  Cela permet de s'affranchir d'un certains nombre de défauts associés à
  la répartition aléatoire classique: la présence de zones partiellement
@@ -1228,25 +1252,27 @@ reference "fig:biblio:mouchetisC"
 
 \begin_layout Standard
 Pour augmenter l'énergie lumineuse reçue, l'ensemble de ces fonds peut être
- imprimé sur panneaux rétroréfléchissant 
+ imprimé sur panneaux rétroréfléchissants (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bauknecht2014b"
 
 \end_inset
 
- ou bien sur panneaux transparents couplé à un éclairage par l'arrière.
- Les panneaux rétroréfléchissant induisent cependant une contrainte supplémentai
-re puisque la source lumineuse doit être positionnée très proche de la caméra.
+) ou bien sur panneaux transparents couplés à un éclairage par l'arrière.
+ Les panneaux rétroréfléchissants induisent cependant une contrainte supplémenta
+ire puisque, du fait de leur fonction de distribution de réflexion bidirectionne
+lle étroite (BRDF), la source lumineuse doit être positionnée très proche
+ de la caméra.
  De ce fait, il peut être difficile d'éliminer toutes les ombres dues à
- la présence d'une maquette d'une part 
+ la présence d'une maquette d'une part (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bathel2015"
 
 \end_inset
 
-, et la chaleur dégagée par la source lumineuse peut perturber la mesure
+), et la chaleur dégagée par la source lumineuse peut perturber la mesure
  d'autre part.
 \end_layout
 
@@ -1274,20 +1300,20 @@ Fond naturel
 Pour les expériences de grandes dimensions, plusieurs équipes se sont intéressé
  à l'utilisation de la texture naturelle d'une étendue herbeuse, rocheuse
  ou bien aux branchage d'une forêt comme fond de référence.
- Toujours dans le but d'étudier les tourbillons de bout de pâles, le DLR
+ Toujours dans le but d'étudier les tourbillons de bout de pales, le DLR
  a largement utilisé les fonds naturels pour des expériences à échelle 1:1
- 
+ (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Richard01,Bauknecht2014b"
 
 \end_inset
 
-
+)
 \size normal
  ou bien pour des mesures en vol 
 \size default
-
+(
 \begin_inset CommandInset citation
 LatexCommand cite
 key "leopold2007,raffel2014,bauknecht2014a"
@@ -1296,9 +1322,9 @@ key "leopold2007,raffel2014,bauknecht2014a"
 
 
 \size normal
-.
+).
  Pour étudier l'onde de souffle sphérique qui se propage lors de l'explosion
- d'une charge
+ d'une charge,
 \size default
  
 \begin_inset CommandInset citation
@@ -1330,10 +1356,14 @@ key "bauknecht2014a,Bauknecht2014b"
 
 \end_inset
 
- regarde la variance de la vorticité pour compenser d'éventuels mouvements
+ regardent la variance de la vorticité pour compenser d'éventuels mouvements
  de caméras entre ses deux images.
- Ils regardent alors l'évolution de leur critère pour différentes textures
- en fonction de la taille des fenêtres d'interrogations 
+ Ils s'intéresse alors l'évolution de leur critère pour différentes textures
+ en fonction de la taille des fenêtres d'interrogations (Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
@@ -1353,7 +1383,8 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Impact du fond naturel sur la corrélation 
+Etude de l'impact du fond naturel sur la qualité de la corrélation réalisée
+ par 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bauknecht2014a"
@@ -1386,18 +1417,25 @@ name "fig:biblio:natural"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:natural"
 
 \end_inset
 
-.
+).
  Ils concluent, tout comme 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Kindler07,raffel2014"
+key "Kindler07"
+
+\end_inset
+
+ et 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "raffel2014"
 
 \end_inset
 
@@ -1438,7 +1476,11 @@ key "leopold2007"
 .
  Elle repose sur l'utilisation un fond coloré, résultant d'un mélange de
  pixels rouges, verts et bleus, capturé par un appareil photographique couleur.
- Pour chaque image couleur, Leopold la décompose en 8 sous-images 
+ Pour chaque image couleur, Leopold la décompose en 8 sous-images (Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
@@ -1469,6 +1511,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:color_decomposition"
+
+\end_inset
+
 
 \end_layout
 
@@ -1544,14 +1592,14 @@ name "fig:biblio:CBOS"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:biblio:CBOS"
+reference "fig:biblio:color_decomposition"
 
 \end_inset
 
-: celle contenant que du rouge, du bleu, du vert, des mélanges,...Il réalise
+): celle contenant que du rouge, du bleu, du vert, des mélanges,...Il réalise
  alors 8 corrélations indépendantes pour chaque motif et moyenne ces 8 résultats
  par fenêtre.
  Il diminue ainsi l'écart type relatif à ses corrélations.
@@ -1580,7 +1628,7 @@ key "Leopold2013"
  L'intérêt que peut présenter l'utilisation de la couleur doit toutefois
  être nuancé.
  D'une part, si la caméra couleur utilisée possède une matrice de Bayer,
- il faut pouvoir compenser la perte de résolution associé à chaque composante
+ il faut pouvoir compenser la perte de résolution associée à chaque composante
  RGB par un capteur avec une grande définition, i.e.
  un grand nombre de pixels.
  Enfin, le traitement des données CBOS se traduit par un coût de calcul
@@ -1604,7 +1652,11 @@ FloatBarrier
 \end_layout
 
 \begin_layout Subsubsection
-Color-Grid-BOS
+Déflection de franges et Color-Grid-BOS
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Standard
@@ -1707,11 +1759,11 @@ Speckle-BOS
 \end_layout
 
 \begin_layout Standard
-Beaucoup utilisé au début des années 2000 (Fomin) l'utilisation du speckle
- en interférométrie est revenue au goût du jour par Meier et Rösgen 
+Beaucoup utilisé au début des années 2000 (Fomin) l'emploie du speckle en
+ interférométrie est revenue au goût du jour par 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Meier13"
+key "Meier2013"
 
 \end_inset
 
@@ -1721,7 +1773,11 @@ key "Meier13"
  Les défauts de rugosité à la surface du matériaux créent de multiples retard
  de phase, à l'origine des interférences speckle.
  La taille des grains du speckle est seulement liée à la longueur d'onde
- et à l'ouverture du système optique comme illustré en figure 
+ et à l'ouverture du système optique comme illustré en Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -1827,12 +1883,12 @@ status open
 BOS speckle 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Meier13"
+key "Meier2013"
 
 \end_inset
 
  : a) Evolution de la taille du motif de speckle avec l'ouverture caméra.
- b) Sensibilité de la technique: déplacement observé fonction de la distance
+ b) Sensibilité de la technique: déplacement observé en fonction de la distance
  de mise au point 
 \begin_inset Formula $l$
 \end_inset
@@ -1855,7 +1911,7 @@ name "fig:biblio:speckle"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:speckle"
@@ -1867,13 +1923,17 @@ reference "fig:biblio:speckle"
  Par conséquent, peu importe la position de l'écran qui génère le speckle,
  c'est la position du plan focal qui va affecter la sensibilité de la mesure.
  Contrairement à la BOS classique, pour le speckle, la position du fond
- et la sensibilité sont décorrélés.
+ et la sensibilité sont décorrélées.
 \end_layout
 
 \begin_layout Standard
 Meier s'intéresse alors à l'évolution de cette sensibilité en fonction de
  la position de mise au point de la caméra.
- On retrouve sur la figure 
+ On retrouve sur la Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:speckle"
@@ -1888,7 +1948,7 @@ reference "fig:biblio:speckle"
 
 ).
  De manière surprenante, Meier obtient des déplacements opposés lorsque
- la mise au moins est faite devant l'écoulement, avec une sensibilité qui
+ la mise au point est faite devant l'écoulement, avec une sensibilité qui
  augmente bien plus rapidement lorsqu'il s'éloigne que dans le montage classique.
  De plus, Meier présente un montage 
 \begin_inset Quotes fld
@@ -1914,16 +1974,17 @@ key "bathel2015"
 
 \end_inset
 
- rapporte justement de grosses difficultés a corrélé des mouchetis de speckle
- lors d'essais en soufflerie.
- Il semble toutefois très approprié au petites expériences 
+ rapporte justement de grosses difficultés pour corréler des mouchetis de
+ speckle lors d'essais en soufflerie.
+ Il semble toutefois très approprié aux expériences de petites dimensions
+ (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "stoller2014"
 
 \end_inset
 
- (qui peuvent se faire sur table optique) mais surtout pour lesquelles il
+) qui peuvent se faire sur table optique mais surtout pour lesquelles il
  est difficile d'imprimer un mouchetis suffisamment petit.
  Enfin, bien qu'intéressant le montage double passe nécessite un alignement
  précis du faisceau laser et de la caméra.
@@ -1957,7 +2018,14 @@ L'éclairage du mouchetis est le plus souvent réalisé en lumière blanche.
  Une source lumineuse plus intense permet aussi d'opérer à plus faible ouverture
  ce qui améliore la résolution spatiale comme nous l'avons vu précédemment.
  Parmi les sources plus puissante on peut citer les lampes à arc, les progrès
- récent que connaissent les leds et les sources laser.
+ récents que connaissent les LEDs (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "buchmann2012"
+
+\end_inset
+
+) et les sources laser.
  
 \end_layout
 
@@ -1978,7 +2046,7 @@ Après obtention d'une paire d'image, l'image de référence et l'image perturb�
  par corrélation d'images.
  La plupart des équipes utilisent des approches de type corrélation sur
  fenêtre.
- En effet, celles-ci sont largement répandu en PIV et facilement disponible
+ En effet, celles-ci sont largement répandues en PIV et facilement disponible
  sous Matlab (matPIV: 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1994,7 +2062,7 @@ key "thielicke2014"
 \end_inset
 
 ).
- L'approche corrélation sur des fenêtres repose sur un calcul de corrélation
+ L'approche par corrélation sur fenêtres repose sur un calcul de corrélation
  spatiale sur des fenêtres de tailles dégressives afin d'obtenir une meilleur
  résolution.
  D'un autre coté, les méthodes de flot optique utilisées en vision par ordinateu
@@ -2032,28 +2100,28 @@ key "Atcheson09"
 
  a mené une étude comparative entre un calcul par corrélation sur fenêtre
  et différents algorithmes de calculs par flot optiques: les algorithmes
- Lucas-Kanade(LK)
+ Lucas-Kanade(LK)(
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Lucas"
 
 \end_inset
 
- et Horn-Schunk(HS)
+) et Horn-Schunk(HS)(
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Horn"
 
 \end_inset
 
- basés sur le gradient et l'algorithme Brox
+) basés sur le gradient et l'algorithme Brox (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "brox2004"
 
 \end_inset
 
- qui utilise une approche variationnelle.
+) qui utilise une approche variationnelle.
  Au bilan, il montre que les algorithmes Lucas-Kanade (LK) et Horn-Schunck
  (HS) sont plus performant que la moyenne avec une légère avance pour le
  HS.
@@ -2100,14 +2168,14 @@ key "hayasaka2016"
 \end_inset
 
  qui utilisent une version dérivée de l'algorithme HS qui tient compte de
- la physique de l'écoulement recherché 
+ la physique de l'écoulement recherché (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "liu2008"
 
 \end_inset
 
-, montrent dans leur cas le gain apporté par l'utilisation du flot optique
+), montrent dans leur cas le gain apporté par l'utilisation du flot optique
  en terme de résolution.
  Le flot optique permet en effet d'obtenir un vecteur par pixel contrairement
  au techniques par fenêtres qui déterminent un vecteur par fenêtre.
@@ -2119,14 +2187,14 @@ key "liu2008"
 
 \begin_layout Standard
 L'ONERA a développé son propre code de flot optique baptisé Folki, basé
- sur l'algorithme LK et implémenté sous GPU 
+ sur l'algorithme LK et implémenté sous GPU (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Champagnat11,plyer2016"
 
 \end_inset
 
-.
+).
  Folki a été utilisé dans plusieurs applications que ce soit pour de la
  mesure de déformations ou bien pour la PIV.
  En BOS, il a été utilisé par 
@@ -2288,9 +2356,9 @@ Mesures grand champ
 \end_layout
 
 \begin_layout Standard
-Les expériences de BOS de grande dimensions ou dans des environnements complexes
-, en grande soufflerie ou en extérieur, induise des problématiques particulière
- sur lesquelles nous revenons ici.
+Les expériences de BOS de grandes dimensions ou dans des environnements
+ complexes, en grande soufflerie ou en extérieur, induisent des problématiques
+ particulières sur lesquelles nous revenons ici.
 \end_layout
 
 \begin_layout Subsection
@@ -2308,10 +2376,10 @@ key "bathel2015"
 \end_inset
 
 ) a largement utilisé des fonds rétroréfléchissant avec les contraintes
- déjà évoqué.
+ déjà évoquées.
  Quant aux applications en extérieur il faut se contenter de la lumière
  naturelle.
- Les essais réalisés à la NASA au National Full- Scale Aerodynamics Complex
+ Les essais réalisés à la NASA au National Full-Scale Aerodynamics Complex
  sur un rotor d'UH-60A échelle 
 \begin_inset Formula $1:1$
 \end_inset
@@ -2336,11 +2404,11 @@ Perturbations
 \end_layout
 
 \begin_layout Standard
-Que ce soit dans un montage en soufflerie ou bien lors de mesures en extérieur
+Que ce soit dans un montage en soufflerie ou bien lors de mesures en extérieur,
  la stabilité du fond entre l'image de référence et l'image avec écoulement
  est essentielle.
  En soufflerie, le fond est sensibles aux vibrations.
- Pour les limiter 
+ Pour les limiter, 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "venkatakrishnan2005density"
@@ -2348,15 +2416,16 @@ key "venkatakrishnan2005density"
 \end_inset
 
  fixe son mouchetis sur un support robuste et le plus stable possible.
- La NASA qui a testé plusieurs type de fonds (répartition aléatoire, speckle,
- aluminium froissé, peinture brillante)
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bathel2015"
 
 \end_inset
 
-, constate que le speckle n'est pas stable du tout lors des mesures.
+ à la NASA, ont testé plusieurs type de fonds (répartition aléatoire, speckle,
+ aluminium froissé, peinture brillante) et constatent que le speckle n'est
+ pas stable du tout lors des mesures.
  Ils indiquent également que l'aluminium froissé et la peinture brillante
  présentent de fortes variations d'intensité lumineuse au cours des essais
  ce qui affectent la mesure.
@@ -2365,35 +2434,39 @@ key "bathel2015"
 
 \begin_layout Standard
 Une équipe du DLR a réalisé des mesures sur le jet issu du réacteur d'un
- A320 
+ A320 (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "geisler2016"
 
 \end_inset
 
-.
- Ils ont utilisé 4 caméra rapides avec des mouchetis rétroréfléchissants
+).
+ Ils ont utilisé 4 caméras rapides avec des mouchetis rétroréfléchissants
  fixés sur des panneaux rigides qui étaient éclairés par des LEDs.
  Afin de corriger les mouvement de vibrations des panneaux de mouchetis
- dues au fonctionnement du moteur, ils ont retranché le déplacement mesuré
+ dus au fonctionnement du moteur, ils ont retranché le déplacement mesuré
  dans une région de l'image non perturbée de l'écoulement.
  
 \end_layout
 
 \begin_layout Standard
-Une campagne autre d'essai relativement impressionnante a également été
- mené par le DLR 
+Une autre campagne d'essai relativement impressionnante a également été
+ mené par le DLR (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bauknecht2015"
 
 \end_inset
 
- sur des tourbillons de bout de pales d'hélicoptères.
- Pour pouvoir reconstruire en 3-dimensions la position des tourbillons d'un
- hélicoptère échelle 1:1, Baucknecht et son équipe ont installé 12 caméras
- disposées en arc de cercle dans une carrière 
+) sur des tourbillons de bout de pales d'hélicoptères.
+ Pour pouvoir reconstruire en trois dimensions la position des tourbillons
+ d'un hélicoptère échelle 1:1, Baucknecht et son équipe ont installé 12
+ caméras disposées en arc de cercle dans une carrière (Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:label:carriere"
@@ -2404,7 +2477,7 @@ reference "fig:label:carriere"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -2468,8 +2541,17 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Reconstruction de la position des tourbillons de bout de pâles d'un hélicoptère
- par géométrie épipolaire.
+Campagne de mesure de tourbillons de bout de pales (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bauknecht2015"
+
+\end_inset
+
+).
+ a) Position de caméras dans la carrière et volume de mesure autour de l'hélicop
+tère.
+ b) Positions des tourbillons reconstruits par géométrie épipolaire.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -2487,33 +2569,33 @@ name "fig:label:carriere"
 
 \end_inset
 
- et utilisé la texture naturelle de la paroi rocheuse comme fond.
+) et utilisé la texture naturelle de la paroi rocheuse comme fond.
  Ils ont utilisé l'information de position des tourbillons capturée par
  chaque caméra pour reconstruire leur position dans l'espace par géométrie
  épipolaire.
- Lors de ces mesures ils réalisent des mesures très rapidement après avoir
- enregistrer l'image de référence pour limiter tout mouvement ou variation
+ Lors de ces essais ils réalisent des mesures très rapidement après avoir
+ enregistré l'image de référence pour limiter tout mouvement ou variation
  d'illumination.
  Comme ce n'est pas suffisant, ils corrigent à la fois des mouvement de
- translations éventuels mais aussi de rotation afin de dewarper les images.
+ translations éventuels mais aussi de rotation afin de corriger les images.
  Pour cela, ils estiment leur matrice de transformation à partir des coins
  non perturbés de chaque image.
 \end_layout
 
 \begin_layout Standard
-Les essais menés dans les différentes installation de la NASA 
+Les essais menés dans les différentes installation de la NASA (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bathel2015"
 
 \end_inset
 
- révèlent également la problématique de la tenu du mouchetis à l'environnement
+) révèlent également la problématique de la tenu du mouchetis à l'environnement
  soufflerie: les efforts aérodynamiques peuvent arracher le mouchetis collé
  sur les parois, la dépression qui règne au sein du circuit est responsable
  de l'apparition de bulles qui conduisent au décollement des fonds et les
- installations cryogéniques comme la National Transonic Facility à Langley,
- abime très rapidement les fonds.
+ conditions qui règnent dans les installations cryogéniques comme la National
+ Transonic Facility à Langley, abîment très rapidement les fonds.
 \end_layout
 
 \begin_layout Subsection
@@ -2524,21 +2606,25 @@ Calibration
 La calibration de caméras est essentielle lorsque l'on souhaite à minima
  localiser une structure dans l'espace.
  Les essais conduits à la NASA sur la localisation des tourbillons de bout
- de pâle par utilisation d'un système BOS stéréoscopique 
+ de pale par utilisation d'un système BOS stéréoscopique (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "schairer2013"
 
 \end_inset
 
-, a nécessité le développement d'une solution propre à la taille de leur
+), a nécessité le développement d'une solution propre à la taille de leur
  soufflerie.
  La zone d'intérêt étant difficile d'accès, ils ont construit une structure
- en tube ABS sur laquelle sont positionnées 65 cibles 
+ en tube ABS sur laquelle sont positionnées 65 cibles (Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2546,10 +2632,6 @@ status open
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align left
@@ -2592,6 +2674,11 @@ name "fig:biblio:shairer"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
 \end_inset
 
 
@@ -2661,14 +2748,14 @@ name "fig:biblio:heineck"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:shairer"
 
 \end_inset
 
-.
+).
  Lors d'une expérience similaire sur un rotor statique, 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2676,33 +2763,58 @@ key "heineck2016"
 
 \end_inset
 
- ont également disposé un ensemble de cibles dans le volume d'intérêt 
+ ont également disposé un ensemble de cibles dans le volume d'intérêt (Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:heineck"
 
 \end_inset
 
-, puis calibré le système de stéréo-vision à l'aide du logiciel de photogrammétr
-ie commercial VSTARS.
+), puis calibré le système de stéréo-vision à l'aide du logiciel de photogrammét
+rie commercial VSTARS.
 \end_layout
 
 \begin_layout Standard
-Lors des essais menés dans la carrière par le DLR 
+Lors des essais menés dans la carrière par le DLR (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bauknecht2015"
 
 \end_inset
 
-, le volume de mesure était trop haut pour être atteignable à partir du
+), le volume de mesure était trop haut pour être atteignable à partir du
  sol.
- Ils ont donc déployé un ballon blanc remplis d'hélium.
+ Ils ont donc déployé un ballon blanc rempli d'hélium.
  Puis à l'aide d'un distance-mètre laser, ils ont mesuré les distances des
  caméras au ballon et les angles entre les caméra pour obtenir une première
  estimation de la calibration.
  La calibration finale a été réalisée in-situ à partir de marqueurs spécifiques
  collés sur l'hélicoptère.
+\end_layout
+
+\begin_layout Standard
+A l'ONERA, nous avons développé nos propres outils permettant de calibrer
+ un système multi-caméras (une douzaine) (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lesant2014"
+
+\end_inset
+
+).
+ Nous travaillons avec une mire classique à points.
+ Après avoir pris une image de référence qui fixe la postion du repère,
+ nous déplaçons la mire dans le volume de mesure afin qu'elle soit vue par
+ l'ensemble des caméras.
+ Lors du processus de calibration, le lien est fait d'une image à l'autre
+ pour déterminer la position des caméras dans l'espace.
+ Afin de minimiser le temps de calcul associé à une charge de travail relativeme
+nt importante (une cinquantaine d'images par caméra), le processus de calibratio
+n est implémenté sous GPU.
 \end_layout
 
 \begin_layout Subsection
@@ -2719,17 +2831,21 @@ key "raffel2000helico,Bauknecht2014b"
 
  est la BOS sans référence.
  Elle n'est pas tant destiné à réaliser une mesure d'un écoulement mais
- plus à suivre une structure qui se déformerait peu entre deux instants
+ plus à suivre une structure qui se déformerait lentement entre deux instants
  très court.
- Les auteurs exploite le fait qu'un tourbillons de bout de pâle va traverser
+ Les auteurs exploitent le fait qu'un tourbillons de bout de pale va traverser
  l'image et passer à un moment donné devant le fond.
- Le déplacement peut alors être calculé entre la zone ou la structure n'est
+ Le déplacement peut alors être calculé entre la zone où la structure n'est
  pas présente à l'instant 
 \begin_inset Formula $t_{1}$
 \end_inset
 
  et celle où elle est présente à l'instant 
 \begin_inset Formula $t_{2}$
+\end_inset
+
+ (Fig.
+\begin_inset space ~
 \end_inset
 
 
@@ -2740,10 +2856,21 @@ status collapsed
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename Images/reference-free.png
+	filename Images/reference-free.pdf
 	lyxscale 20
-	width 70text%
+	width 63text%
 
 \end_inset
 
@@ -2751,14 +2878,6 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-BOS sans référence 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Bauknecht2014b"
-
-\end_inset
-
-.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -2766,7 +2885,7 @@ name "fig:biblio:reference-free"
 
 \end_inset
 
- 
+
 \end_layout
 
 \end_inset
@@ -2780,16 +2899,95 @@ name "fig:biblio:reference-free"
 
 \end_inset
 
- 
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/double_cam.png
+	lyxscale 30
+	width 33text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:double_cam"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+a) Principe de la BOS sans référence 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bauknecht2014b"
+
+\end_inset
+
+ et b) système d'acquisition à deux caméras.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:reference-free"
 
 \end_inset
 
-.
+).
  Cette solution permet alors aux auteurs d'utiliser un système de deux caméras
- combinées pour suivre un hélicoptère en manœuvre 
+ (Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:double_cam"
+
+\end_inset
+
+) combinées pour suivre un hélicoptère en manœuvre 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bauknecht2014b"
@@ -2816,6 +3014,195 @@ FloatBarrier
 
 \end_layout
 
+\begin_layout Subsection
+Mesures BOS à partir du soleil
+\end_layout
+
+\begin_layout Standard
+Pour réduire le bruit des avions supersonique, la NASA a développé des technique
+s de visualisation des ondes de choc pour des avions en vol.
+ Initialement, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "weinstein1994,weinstein1997"
+
+\end_inset
+
+ ont développé un système strioscopique pour des mesures en vol (SAF), à
+ partir d'un télescope muni d'une fente.
+ Ils ont pu imager les ondes de choc présente autour d'un T-38 volant à
+ Mach 1.1 à une altitude de 
+\begin_inset Formula $13700 ft$
+\end_inset
+
+ et de deux F-18 volant à Mach 1.4 à 
+\begin_inset Formula $35000\, ft.$
+\end_inset
+
+ Dans le cadre du projet BOSCO (Background Oriented Schlieren using Celestial
+ Objects), 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hill2016"
+
+\end_inset
+
+ ont adapté ce système pour réaliser des mesures BOS depuis le sol (GASP).
+ Pour obtenir un fond exploitable en BOS, ils testent deux types filtres:
+ au calcium-K et à l'hydrogène-
+\begin_inset Formula $\alpha$
+\end_inset
+
+ qui mettent évidence les zones de champs magnétique intenses au cœur du
+ soleil.
+ Ces images présentent alors une texture assez similaire à du speckle.
+ Une images du soleil obtenue avec un filtre au calcium-K (caKEBOS) est
+ visible en Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:C-K"
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/C-K.png
+	lyxscale 20
+	height 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:C-K"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/T-38_en_vol.png
+	lyxscale 20
+	height 30text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:T-38"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mesures BOS d'un T-38 en vol réalisées par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hill2016"
+
+\end_inset
+
+.
+ a) Image du soleil obtenue avec un filtre calcium-K.
+ b) Déplacements horizontaux et verticaux en pixels, moyennés sur 70 images.
+ Mesures caKEBOS .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Les résultats obtenus sur un T-38 en vol sont présentées en Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:T-38"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Ecoulements haute vitesse
 \end_layout
@@ -2823,20 +3210,20 @@ Ecoulements haute vitesse
 \begin_layout Standard
 Les écoulements rapides (compressibles) sont responsables d'aberrations
  optiques dues aux forts gradients d'indice rencontrés.
- Ces aberrations sont gênantes pour la métrologie et nottament pour la PIV
+ Ces aberrations sont gênantes pour la métrologie et notamment pour la PIV
  où elles conduisent à des erreurs de positionnement de particules et des
- bais dans le calcul des vecteurs vitesse 
+ bais dans le calcul des vecteurs vitesse (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "elsinga2005evaluation,elsinga2015"
 
 \end_inset
 
-.
+).
  En BOS, à partir du moment où l'on travaille en faisceaux divergents, le
  présence de forts gradients de masse volumique comme les ondes de choc,
  peuvent induire de l'astigmatisme parasite: les rayons subissent une déviation
- telle qu'ils ne focalise plus en un même pixel sur le CCD.
+ telle qu'ils ne focalisent plus en un même pixel sur le CCD.
  Il en résulte un flou d'astigmatisme 
 \begin_inset Float figure
 wide false
@@ -2934,7 +3321,7 @@ key "Leopold2013"
 
 \begin_layout Standard
 En plus de l'astigmatisme présent au niveau des forts gradients, la bonne
- capture des ces phénomènes très minces est un problème en soi.
+ capture de ces phénomènes très minces est un problème en soi.
  Deux filtrages viennent affecter la mesure BOS: le premier est lié à la
  taille de la fenêtre d'interrogation tandis que le deuxième résulte de
  la taille du cercle de confusion associé au 
@@ -3079,21 +3466,29 @@ Cas axisymétrique: transformée d'Abel
 \end_layout
 
 \begin_layout Standard
-Pour un écoulement axisymmétrique, une seule vue est nécessaire pour capturer
+Pour un écoulement axisymétrique, une seule vue est nécessaire pour capturer
  la phénomène.
  Et, dans ce cas précis, il est possible d'utiliser la transformée d'Abel
- inverse 
+ inverse (Eq.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:biblio:abel"
 
 \end_inset
 
- pour reconstruire le champ 
+) pour reconstruire le champ 
 \begin_inset Formula $f(r)$
 \end_inset
 
- 
+ (Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -3134,14 +3529,14 @@ name "fig:biblio:abel"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:abel"
 
 \end_inset
 
-.
+).
 \begin_inset Formula 
 \begin{equation}
 p(y)=2\int_{y}^{\text{\ensuremath{\infty}}}\frac{f(r)rdr}{\sqrt{r^{2}-y^{2}}},\hspace{10mm}f(r)=\frac{-1}{\pi}\int_{r}^{\text{\ensuremath{\infty}}}\frac{dF}{dy}\frac{dy}{\sqrt{y^{2}-r^{2}}}\label{eq:biblio:abel}
@@ -3157,7 +3552,7 @@ La transformée d'Abel exprime la projection
 \begin_inset Formula $p(y)$
 \end_inset
 
- d'une fonction axi-symmétrique 
+ d'une fonction axisymétrique 
 \begin_inset Formula $f(r)$
 \end_inset
 
@@ -3174,7 +3569,7 @@ La transformée d'Abel exprime la projection
 
 \begin_layout Standard
 Très utilisée, la transformée d'Abel permet de remonter au champ de masse
- volumique pour un certains nombre d'écoulements qui sont axisymmétrique,
+ volumique pour un certains nombre d'écoulements qui sont axisymétrique,
  le plus souvent en moyenne.
  La difficulté réside dans l'estimation précise de l'axe de symétrie lors
  du montage expérimental.
@@ -3186,7 +3581,7 @@ Très utilisée, la transformée d'Abel permet de remonter au champ de masse
 
 \begin_layout Standard
 Lorsque ces écoulements ne sont pas axisymétrique il faut faire appel à
- des techniques de reconstructions plus complexes que la transformé d'Abel,
+ des techniques de reconstructions plus complexes que la transformée d'Abel,
  telle que la rétroprojection filtrée: Filtered BackProjection (FBP) ou
  bien les méthodes algébriques: Algebraic Reconstruction Techniques (ART).
  
@@ -3197,10 +3592,13 @@ Rétroprojection filtrée (FBP)
 \end_layout
 
 \begin_layout Standard
-\align center
 La rétroprojection filtrée est basée sur la transformée de Radon, une généralisa
 tion de la transformée d'Abel, qui tient compte de l'angle de visée.
- En adoptant les notations de 
+ En adoptant les notations de la Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
@@ -3252,7 +3650,7 @@ name "fig:biblio:radon"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-R[f](t,\mytheta)=p_{\mytheta}(t)=\int f(t\cdot cos\mytheta-s\cdot sin\mytheta,sin\mytheta+s\cdot cos\mytheta)ds
+R[f](t,\mytheta)=p_{\mytheta}(t)=\int f(t\cdot\cos\mytheta-s\cdot\sin\mytheta,\sin\mytheta+s\cdot\cos\mytheta)ds
 \end{equation}
 
 \end_inset
@@ -3267,7 +3665,7 @@ La reconstruction de la fonction
 
  exploite alors le théorème de la tranche centrale (
 \shape italic
-Fourrier slice theorem
+Fourier slice theorem
 \shape default
  en anglais), qui stipule qu'une projection 
 \begin_inset Formula $p_{\mytheta1}(t)$
@@ -3283,7 +3681,7 @@ Fourrier slice theorem
 \end_inset
 
  dans l'espace fréquentiel.
- L'idée est donc de reconstruire la transformée de Frourrier du champ 
+ L'idée est donc de reconstruire la transformée de Fourier du champ 
 \begin_inset Formula $\myF\{f(x,y)\}$
 \end_inset
 
@@ -3313,7 +3711,7 @@ Enfin, la FBP nécessite un grand nombre de projection pour fonctionner:
 nt.
  Une manière d'améliorer la qualité des reconstructions est d'interpoler
  les données manquantes en se basant sur le sinogramme.
- Le sinogramme est une façon de représenter l'ensemble des projections 
+ Le sinogramme est une façon de visualiser l'ensemble des projections 
 \begin_inset Formula $p_{\mytheta}(t)$
 \end_inset
 
@@ -3321,12 +3719,12 @@ nt.
 \begin_inset Formula $\theta$
 \end_inset
 
-), chaque ligne représentant une projection suivant l'angle 
+), chaque ligne traduisant une projection suivant l'angle 
 \begin_inset Formula $\mytheta$
 \end_inset
 
 .
- Il est appelé ainsi car l'image dans point se traduit par une sinusoïde.
+ Il est appelé ainsi car l'image d'un point se traduit par une sinusoïde.
  L'interpolation du sinogramme permet donc de combler le manque de données
  et d'améliorer la reconstruction.
 \end_layout
@@ -3339,7 +3737,7 @@ Reconstruction algébrique (ART)
 Les méthodes algébrique connaissent un intérêt croissant depuis une dizaine
  d'années.
  Elles étaient jusque là peu utilisées en raison de leur coût de calcul
- prohibitif mais elles se démocratisent avec l'amélioration performances
+ prohibitif mais elles se démocratisent avec l'amélioration des performances
  des ordinateurs.
  Ces méthodes consistent à rechercher la distribution 
 \begin_inset Formula $f(x,y)$
@@ -3347,6 +3745,10 @@ Les méthodes algébrique connaissent un intérêt croissant depuis une dizaine
 
  sur un espace discret de fonctions de base 
 \begin_inset Formula $\phi_{i}$
+\end_inset
+
+ (Fig.
+\begin_inset space ~
 \end_inset
 
 
@@ -3390,14 +3792,14 @@ name "fig:biblio:art"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:art"
 
 \end_inset
 
-:
+):
 \end_layout
 
 \begin_layout Standard
@@ -3446,14 +3848,14 @@ p_{j}=\sum_{i=1}^{n}A_{ij}f_{i}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $R_{ij}$
+\begin_inset Formula $A_{ij}$
 \end_inset
 
  représente la contribution du voxel 
 \begin_inset Formula $i$
 \end_inset
 
- à la mesure selon ligne 
+ à la mesure selon la ligne 
 \begin_inset Formula $j$
 \end_inset
 
@@ -3478,7 +3880,7 @@ Le vecteur
 \begin_inset Formula $k$
 \end_inset
 
- est égale au produit du nombre de prise de vue 
+ est égale au produit du nombre de prises de vue 
 \begin_inset Formula $M$
 \end_inset
 
@@ -3510,8 +3912,8 @@ Le vecteur
 
 .
  Le principe des méthodes ART est de mettre à jour de manière itérative
- les valeurs des voxels en ajoutant la valeur calculée à l'itération précédente
- le résidu entre la valeur mesurée en 
+ les valeurs des voxels à partir du résidu calculé entre la valeur mesurée
+ en 
 \begin_inset Formula $j$
 \end_inset
 
@@ -3520,11 +3922,11 @@ Le vecteur
 \end_layout
 
 \begin_layout Standard
-En pratique, en tomographie la matrice 
+En pratique, en tomographie, la matrice 
 \begin_inset Formula $A$
 \end_inset
 
- du système n'est pas carré, donc non inversible au sens strict.
+ du système n'est pas carrée, donc non inversible au sens strict.
  On cherche donc, le plus souvent, la solution au sens des moindres carré.
  De plus, le problème étant mal conditionné, le système est sensible au
  bruit et une régularisation s'impose pour pouvoir converger vers une solution.
@@ -3545,7 +3947,7 @@ key "hartmann2016"
  ont proposé une approche mixte.
  Après avoir constaté que, d'une part leur reconstruction FBP est très affectée
  par des artefacts suivant les lignes de vues mais qu'elle est capable de
- reconstruire de forts gradients et que , d'autre part leur reconstruction
+ reconstruire de forts gradients et que d'autre part leur reconstruction
  ART est relativement propre mais sous-estime de manière systématique les
  niveaux de masse volumique, ils proposent de combiner les deux techniques.
  Pour cela, ils réalisent tout d'abord une reconstruction FBP à partir de
@@ -3589,8 +3991,8 @@ ions tomographiques décrites précédemment permettent donc de reconstruire
 .
  Il est alors nécessaire d'intégrer le résultat pour accéder au champ de
  masse volumique.
- Plusieurs solution ont été utilisées dans la littérature.
- La plus simple consiste a intégré le champ de gradients par différences
+ Plusieurs solutions ont été utilisées dans la littérature.
+ La plus simple consiste à intégrer le champ de gradients par différences
  finies dans les trois directions de l'espace.
  Elle est utilisée par 
 \begin_inset CommandInset citation
@@ -3600,8 +4002,8 @@ key "Leopold2013"
 \end_inset
 
 .
- Une seconde façon de procédé consiste à faire apparaitre une équation de
- Poisson en dérivant le champ de gradient:
+ Une seconde façon de procéder consiste à faire apparaitre une équation
+ de Poisson en dérivant le champ de gradient:
 \end_layout
 
 \begin_layout Standard
@@ -3617,41 +4019,40 @@ key "Leopold2013"
 
 \begin_layout Standard
 L'intégration 3D est alors calculée de manière itérative, le plus souvent
- par la méthode de sur-relaxation SOR (Successive Over Relaxation) 
+ par la méthode de sur-relaxation SOR (Successive Over Relaxation) (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ota11,ota2012"
 
 \end_inset
 
-.
+).
  
 \end_layout
 
 \begin_layout Standard
-Venkatakrishnan applique lui aussi l'équation de Poisson 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Venkatakrishnan04"
 
 \end_inset
 
- mais sur les champs de déplacement pour obtenir des champs de masse volumique
- intégrée.
+ appliquent eux aussi l'équation de Poisson mais sur les champs de déplacement
+ pour obtenir des champs de masse volumique intégrée.
  Il applique ensuite son algorithme de FBP pour reconstruire la masse volumique.
 \end_layout
 
 \begin_layout Standard
 Enfin, à l'ONERA, nous avons fait le choix de construire un algorithme de
  reconstruction qui tient compte de l'intégration et qui reconstruit donc
- directement le champ de masse volumique 
+ directement le champ de masse volumique (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Todoroff2013,todoroff2014reconstruction"
 
 \end_inset
 
-.
+).
  Le fonctionnement de cet algorithme sera détaillé par la suite.
 \end_layout
 
@@ -3666,19 +4067,19 @@ e.
 \end_layout
 
 \begin_layout Subsection
-Ecoulements axisymmétriques
+Ecoulements axisymétriques
 \end_layout
 
 \begin_layout Standard
-Les écoulements axi-symmétriques sont les plus faciles à mesurer: des techniques
- peu couteuse comme l'inversion de la transformée d'Abel peuvent être employées
- et ils ne nécessite qu'une seule prise de vue.
- Le plus souvent ce sont des écoulements axi-symmétriques en moyenne qui
- sont étudiés.
+Les écoulements axisymétriques sont les plus faciles à mesurer: des techniques
+ peu coûteuse comme l'inversion de la transformée d'Abel peuvent être employées
+ et ils ne nécessitent qu'une seule prise de vue.
+ Le plus souvent ce sont des écoulements axisymétriques en moyenne qui sont
+ étudiés.
 \end_layout
 
 \begin_layout Standard
-Bien qu'il soit difficile d'obtenir des mesures quantitative en strioscopie,
+Bien qu'il soit difficile d'obtenir des mesures quantitatives en strioscopie,
  en réalisant une calibration, il est également possible d'effectuer une
  reconstruction du champ de masse volumique.
  La strioscopie couleur, encore appelée 
@@ -3690,8 +4091,8 @@ rainbow schlieren
 \end_inset
 
  nécessite l'emploie d'un filtre coloré.
- Plusieurs type de filtres existe: les filtres à variation progressive comme
- celui employé par 
+ Plusieurs type de filtres existent: les filtres à variation progressive
+ comme celui employé par 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Elsinga04"
@@ -3699,27 +4100,37 @@ key "Elsinga04"
 \end_inset
 
  permet de caractériser complètement le vecteur déplacement.
- Sa calibration reste néanmoins compliquée et beaucoup de gens préfèrent
- utiliser un filtre en coloration de Hue 
+ Sa calibration reste néanmoins compliquée et 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Agrawal06,kolhe2009,takano2016"
 
 \end_inset
 
-.
+ préfèrent utiliser un filtre en coloration de Hue (Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:hue_filter"
+
+\end_inset
+
+).
  Une fois calibré, ce dernier permet d'associer à chaque couleur un déplacement.
  Comme le filtre est 2D, il est néanmoins nécessaire de tourner le filtre
  de 90° pour mesurer à la fois les gradients horizontaux et verticaux.
- A partir de ces mesures, les auteurs ont pu reconstruire le champ axisymmétriqu
-e de masse volumique par transformée d'Abel 
+ A partir de ces mesures, les auteurs ont pu reconstruire le champ axisymétrique
+ de masse volumique par transformée d'Abel (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "kolhe2009,takano2016"
 
 \end_inset
 
- ou bien par une variante de FBP dénommée 
+) ou bien par une variante de FBP dénommée 
 \begin_inset Quotes fld
 \end_inset
 
@@ -3727,14 +4138,18 @@ Convolution BackProjection
 \begin_inset Quotes frd
 \end_inset
 
- (CBP) 
+ (CBP) (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Agrawal06,takano2016"
 
 \end_inset
 
- 
+) (Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -3763,6 +4178,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:hue_filter"
+
+\end_inset
+
 
 \end_layout
 
@@ -3814,8 +4235,8 @@ key "takano2016"
 \end_inset
 
 .
- a) Striscopie couleur obtenu avec un filtre hue, gradients verticaux.
- b) Reconstruction du cahmp de masse volumique par transformée d'Abel inverse
+ a) Strioscopie couleur obtenu avec un filtre hue, gradients verticaux.
+ b) Reconstruction du champ de masse volumique par transformée d'Abel inverse
  et par 
 \begin_inset Quotes fld
 \end_inset
@@ -3842,14 +4263,14 @@ name "fig:biblio:rainbow"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:rainbow"
 
 \end_inset
 
-.
+).
  
 \end_layout
 
@@ -3864,14 +4285,14 @@ key "richard2000background,meier02"
  ont démontré le potentiel de la technique en utilisant une reconstruction
  FBP sur un jet sous-détendu.
  Par la suite de nombreuses équipes se sont intéressées à des écoulement
- supersonique, autour d'un cône 
+ supersoniques, autour d'un cône (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Venkatakrishnan04,ota2012,sourgen2004"
 
 \end_inset
 
-
+)
 \begin_inset Note Note
 status open
 
@@ -3918,21 +4339,21 @@ key "ota2012"
 
 \end_inset
 
-, d'un spike 
+, d'un spike (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "sourgen2005"
 
 \end_inset
 
- ou sur un arrière corps 
+) ou sur un arrière corps (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Venkatakrishnan09"
 
 \end_inset
 
-.
+).
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3941,7 +4362,12 @@ key "Leopold2013"
 \end_inset
 
  reconstruit différents instants d'un écoulement instationnaire autour d'un
- spike par méthode algébrique en supposant que celui-ci reste axisymmétrique
+ spike par méthode algébrique en supposant que celui-ci reste axisymétrique
+ (Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
@@ -4108,14 +4534,14 @@ name "fig:biblio:spike"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:spike"
 
 \end_inset
 
-.
+).
  
 \end_layout
 
@@ -4128,19 +4554,18 @@ key "tan2015"
 \end_inset
 
  propose une technique dérivée de la transformée d'Abel, l'algorithme d'Abel
- Fourrier-Hankel adaptatif 
+ Fourrier-Hankel adaptatif (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ma2008,chehouani2013"
 
 \end_inset
 
- pour reconstruire des profils axisymétrique de jets d'hélium.
+) pour reconstruire des profils axisymétrique de jets d'hélium.
  Cette solution permet d'être plus robuste au bruit que la transformée d'Abel
  classique et contrairement au méthodes FBP, elle ne nécessite pas de choisir
  un filtre adéquat.
- Elle repose néanmoins sur un paramètre de lissage qu'il convient d'ajuster
- correctement.
+ Elle repose néanmoins sur un paramètre de lissage à ajuster.
 \end_layout
 
 \begin_layout Standard
@@ -4164,12 +4589,12 @@ Ecoulements stationnaires
 \end_layout
 
 \begin_layout Standard
-Les équipes précédentes ont poursuivit leurs développements en s'intéressant
+Les équipes précédentes ont poursuivi leurs développements en s'intéressant
  aux écoulement stationnaires.
  En effet, avec un écoulement stationnaire, il est possible de réaliser
  plusieurs prises de vues successivement en tournant autour de l'écoulement.
  En général, plutôt que de tourner la caméra, on préfère déplacer la maquette
- qui est très souvent monté sur un bras robotisé.
+ qui est très souvent montée sur un bras robotisé.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -4177,7 +4602,7 @@ key "Ota11"
 
 \end_inset
 
- procèdent de cette manière et enregistre 19 projections réalisées tous
+ procèdent de cette manière et enregistrent 19 projections réalisées tous
  les 5° entre 0° et 90° pour reconstruire l'écoulement supersonique autour
  d'un cône tronqué.
  
@@ -4193,9 +4618,13 @@ key "Sourgen12"
  la reconstruction.
  Ils proposent une solution consistant à interpoler la zone masquée du sinogramm
 e.
- Après avoir évaluer leur solution sur le fantôme de Shepp-Logan, ils démontrent
+ Après avoir évalué leur solution sur le fantôme de Shepp-Logan, ils démontrent
  le potentiel de leur technique pour reconstruire des champ de masse volumique
- autour d'un cône à Mach 2.06 
+ autour d'un cône à Mach 2.06 (Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
@@ -4241,15 +4670,14 @@ name "fig:biblio:sourgen"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:sourgen"
 
 \end_inset
 
-.
- .
+).
 \end_layout
 
 \begin_layout Subsection
@@ -4263,14 +4691,19 @@ key "cabaleiro2013"
 
 \end_inset
 
- et son équipe travaillent avec des strioscopie classique en niveau de gris.
+ et son équipe travaillent avec des strioscopies classiques en niveau de
+ gris.
  Ils adoptent cependant une démarche intéressante: ils exploitent le caractère
  périodique de leur écoulement, un jet pulsé, pour réaliser des acquisitions
  suivant différentes orientations.
  Pour chacune de leurs 36 points de vues, ils calculent des moyennes de
- phases sur 20 images.
+ phase sur 20 images.
  Ils reconstruisent alors le champ de masse volumique pour chacune des phases
- et illustrent le développement temporel de ce micro jet d'hélium 
+ et illustrent le développement temporel de ce micro jet d'hélium (Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -4320,14 +4753,14 @@ name "fig:biblio:cabaleiro"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:cabaleiro"
 
 \end_inset
 
-.
+).
  
 \end_layout
 
@@ -4355,14 +4788,18 @@ key "ishino2016"
 
 \end_inset
 
- ont développé un banc avec 20 lignes strioscopique 
+ ont développé un banc avec 20 lignes strioscopique (Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:ishino"
 
 \end_inset
 
- 
+
 \begin_inset Float figure
 placement h
 wide false
@@ -4465,18 +4902,32 @@ name "fig:biblio:ishino"
 
 \end_inset
 
-.
- Après avoir calibré la sensibilité des caméra avec un filtre à densité
- de pas, les auteurs évaluent leur reconstruction sur un bruleur à flammes
- calibrées avant de l'appliquer à un cas instationnaire et de reconstruire
- le champ instantané de masse volumique d'une flamme turbulente 
+).
+ Les auteurs calibrent la sensibilité des caméras avec un filtre à densité
+ de pas puis utilisent une méthode de reconstruction algébrique basée sur
+ le maximum de vraisemblance (MLEM) (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dempster1977,yokoi2000"
+
+\end_inset
+
+) pour étudier des flammes.
+ Ils évaluent tout d'abord les performances de leur méthode sur un brûleur
+ à flammes calibrées avant de l'appliquer à un cas instationnaire et de
+ reconstruire le champ instantané de masse volumique d'une flamme turbulente
+ (Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:ishino"
 
 \end_inset
 
-.
+).
 \end_layout
 
 \begin_layout Subsubsection
@@ -4485,14 +4936,14 @@ Développements précurseurs de la BOS 3D
 
 \begin_layout Standard
 Les premiers à avoir développé un système BOS multi-caméras sont Ihrke et
- Atcheson
+ Atcheson (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ihrke07,Atcheson08"
 
 \end_inset
 
-.
+).
  Issus de la communauté de l'infographie (
 \shape italic
 Computer graphics
@@ -4509,14 +4960,18 @@ inventer
 \end_inset
 
  un champ de densité, ils ont développé un système de mesure de BOS 3D à
- 16 caméras afin de capturer un écoulement de convection 
+ 16 caméras afin de capturer un écoulement de convection (Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:atcheson"
 
 \end_inset
 
- 
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -4564,7 +5019,7 @@ name "fig:biblio:atcheson"
 
 \end_inset
 
-.
+).
  Il reconstruisent le champ de masse volumique en deux étapes.
  La première consiste à reconstruire le champ de gradients part méthode
  ART.
@@ -4582,17 +5037,17 @@ reference "fig:biblio:atcheson"
 
 .
  De plus, en comparaison des méthode de FBP utilisées jusqu'alors, elle
- fonctionne avec nombre relativement limitée de projections (16).
+ fonctionne avec un nombre relativement limitée de projections (16).
  Cette équipe a par la suite poursuivit ses développements en tenant compte
  de la présence éventuelle d'un objet occultant au sein de l'écoulement
- 
+ (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Berger09"
 
 \end_inset
 
-.
+).
  Toutefois, cette démonstration n'a pas pour vocation de réaliser des mesures
  précises, l'aspect visuel étant privilégié dans un contexte de rendu par
  ordinateur.
@@ -4603,7 +5058,7 @@ Mesures BOS 3D à partir d'une caméra plénoptique
 \end_layout
 
 \begin_layout Standard
-Les caméras plénoptiques se distingues des caméras classiques par la présence
+Les caméras plénoptiques se distinguent des caméras classiques par la présence
  d'un ensemble de mico-lentilles devant le CCD.
  Ce dispositif leur permet d'enregistrer la direction avec laquelle les
  rayons lumineux pénètrent dans la caméra.
@@ -4613,14 +5068,14 @@ Les caméras plénoptiques se distingues des caméras classiques par la présenc
  quelques années à l'utilisation d'une telle caméra pour effectuer des mesures
  de PIV 3D.
  Récemment, ils ont proposé d'utiliser leur caméra plénotpique pour réaliser
- des mesures de BOS 3D 
+ des mesures de BOS 3D (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bichal2015"
 
 \end_inset
 
-.
+).
  Les auteurs ont développé un algorithme spécifique pour reconstruire par
  méthode algébrique le champ de masse volumique à partir d'une caméra plénoptiqu
 e.
@@ -4648,25 +5103,25 @@ Le développement de la BOS 3D à l'ONERA est le fruit d'une collaboration
  (DTIM).
  L'objectif était de mettre au point une technique de reconstruction de
  champs instantanés de masse volumique par BOS 3D.
- Le code reconstruction qui a été développé au cours de la thèse de Violaine
- Todoroff 
+ Le code de reconstruction qui a été développé au cours de la thèse de Violaine
+ Todoroff (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Todoroff2013"
 
 \end_inset
 
- se distingue des précédent travaux par approche novatrice : il permet la
- reconstruction directe du champ de masse volumique.
+) se distingue des précédents travaux par son approche novatrice : il permet
+ la reconstruction directe du champ de masse volumique.
  Cela se traduit par le fait que l'algorithme ne fonctionne pas en 2 étapes
- comme évoqué précédemment 
+ comme évoqué précédemment (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ihrke07,Atcheson08,Leopold2013,Ota11,ishino2016"
 
 \end_inset
 
- (reconstruction des gradients + intégration) mais permet de reconstruire
+) (reconstruction des gradients + intégration) mais permet de reconstruire
  directement le champ de masse volumique.
  De plus, l'approche algébrique de résolution du problème repose sur la
  minimisation d'un critère des moindres carrés régularisé 
@@ -4688,7 +5143,11 @@ key "Ihrke07,Atcheson08,Leopold2013,Ota11,ishino2016"
 \end_layout
 
 \begin_layout Standard
-Dans la partie de droite de 
+Dans la partie de droite de l'Eq.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:biblio:critere"
@@ -4716,7 +5175,7 @@ reference "eq:biblio:critere"
 
 .
  L'objectif de cette régularisation est de lutter contre le mauvais conditionnem
-ent du système et de de rechercher une solution relativement lisse.
+ent du système et de rechercher une solution relativement lisse.
  Au cours de sa thèse, Violaine Todoroff s'est intéressée à deux types de
  régularisations: une régularisation quadratique (Tikhonov), et une régularisati
 on par variation totale, 
@@ -4773,7 +5232,11 @@ key "Hansen"
 
 \shape default
 : elle consiste à tracer le terme de régularisation en fonction du terme
- d'adéquation aux données pour différents paramètres de régularisation 
+ d'adéquation aux données pour différents paramètres de régularisation (Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -4816,15 +5279,15 @@ name "fig:biblio:l-curve"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:l-curve"
 
 \end_inset
 
-.
- Le point situé aux maximum de courbure minimise, les deux termes du critère:
+).
+ Le point situé aux maximum de courbure minimise les deux termes du critère:
  c'est le 
 \begin_inset Formula $\mylambda$
 \end_inset
@@ -4845,18 +5308,22 @@ reference "fig:biblio:l-curve"
 \begin_layout Standard
 Le code de reconstruction BOS 3D développé à l'ONERA a tout d'abord été
  évalué sur des données synthétiques puis de manière expérimentale.
- Pour cela, un banc d'essai BOS 3D, la géode a été conçu au DMAE 
+ Pour cela, un banc d'essai BOS 3D, la géode (Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:géode"
 
 \end_inset
 
- 
+
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4958,18 +5425,22 @@ name "fig:biblio:geode_jet-chaud"
 
 \end_inset
 
-.
+), a été conçu au DMAE.
  Ce montage comporte un hémisphère couvert de mouchetis semi-aléatoires
  tandis que le second hémisphère est dédié au support de 12 caméras.
  Sur cette installation, de très bons résultats ont été obtenus sur des
- écoulements de convection, comme un jet chaud 
+ écoulements de convection, comme un jet chaud (Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:geode_jet-chaud"
 
 \end_inset
 
- ou bien un charbon en rotation.
+) ou bien un charbon en rotation.
  
 \end_layout
 
@@ -5062,7 +5533,7 @@ arraystretch}{1.5}
 \begin_inset Float table
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align left
@@ -6363,7 +6834,8 @@ ART
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-ebfcebjce .
+Principales études faisant l'objet d'une mesure champ tridimensionnelle
+ de masse volumique.
  
 \begin_inset CommandInset label
 LatexCommand label

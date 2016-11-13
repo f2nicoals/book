@@ -53,11 +53,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="102.30527"
-     inkscape:cy="215.46945"
+     inkscape:zoom="2.8"
+     inkscape:cx="183.03876"
+     inkscape:cy="44.980491"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g5154"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1006"
@@ -217,47 +217,29 @@
    id="flowSpan3995"
    style="font-size:65.00091553%;baseline-shift:sub">p</flowSpan>&gt; &lt;v<flowSpan
    id="flowSpan3997"
-   style="font-size:65.00091553%;baseline-shift:sub">p</flowSpan>&gt;</flowPara></flowRoot>      <g
-         transform="translate(22,4)"
-         id="g4084">
-        <flowRoot
-           xml:space="preserve"
-           id="flowRoot3827-6-8-4"
-           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           transform="translate(297.3267,-88.849076)"><flowRegion
-             id="flowRegion3829-4-2-7"><rect
-               id="rect3831-4-2-4"
-               width="30.000023"
-               height="53.214294"
-               x="92.14286"
-               y="672.36218" /></flowRegion><flowPara
-             style="font-size:10px;font-weight:bold;fill:#008000;-inkscape-font-specification:Sans Bold"
-             id="flowPara4009-8">&lt;u&gt; &lt;v&gt; &lt;u<flowSpan
-   style="font-size:65.00091553%;baseline-shift:sub"
-   id="flowSpan3995-6">p</flowSpan>&gt; &lt;v<flowSpan
-   style="font-size:65.00091553%;baseline-shift:sub"
-   id="flowSpan3997-9">p</flowSpan>&gt;</flowPara></flowRoot>        <path
-           style="fill:none;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           d="m 397.14286,585.93361 10.35714,0"
-           id="path4050"
-           inkscape:connector-curvature="0" />
-        <path
-           style="fill:none;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           d="m 396.67411,598.76844 10.35714,0"
-           id="path4050-6"
-           inkscape:connector-curvature="0" />
-        <path
-           style="fill:none;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           d="m 397.92411,610.88896 10.35714,0"
-           id="path4050-5"
-           inkscape:connector-curvature="0" />
-        <path
-           style="fill:none;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           d="m 397.90179,623.74611 10.35714,0"
-           id="path4050-9"
-           inkscape:connector-curvature="0" />
-      </g>
-      <flowRoot
+   style="font-size:65.00091553%;baseline-shift:sub">p</flowSpan>&gt;</flowPara></flowRoot>      <flowRoot
+         transform="translate(329.3267,-84.849076)"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         id="flowRoot3827-6-8-4"
+         xml:space="preserve"><flowRegion
+           id="flowRegion3829-4-2-7"><rect
+             y="672.36218"
+             x="92.14286"
+             height="53.214294"
+             width="30.000023"
+             id="rect3831-4-2-4" /></flowRegion><flowPara
+           id="flowPara4009-8"
+           style="font-size:10px;font-weight:bold;fill:#008000;-inkscape-font-specification:Sans Bold">U </flowPara><flowPara
+           style="font-size:10px;font-weight:bold;fill:#008000;-inkscape-font-specification:Sans Bold"
+           id="flowPara3167">V </flowPara><flowPara
+           style="font-size:10px;font-weight:bold;fill:#008000;-inkscape-font-specification:Sans Bold"
+           id="flowPara3171">U<flowSpan
+   id="flowSpan3995-6"
+   style="font-size:65.00091553%;baseline-shift:sub">p</flowSpan> </flowPara><flowPara
+           style="font-size:10px;font-weight:bold;fill:#008000;-inkscape-font-specification:Sans Bold"
+           id="flowPara3181">V<flowSpan
+   id="flowSpan3997-9"
+   style="font-size:65.00091553%;baseline-shift:sub">p</flowSpan></flowPara></flowRoot>      <flowRoot
          transform="translate(316.17181,-109.26819)"
          style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          id="flowRoot3827-9-5"
@@ -286,6 +268,20 @@
          id="path4968"
          d="m 402.31994,615.20432 c 0,-0.003 0.032,-0.0526 0.0712,-0.11001 0.2874,-0.42144 0.49841,-0.92193 0.60397,-1.43251 0.0954,-0.46134 0.10892,-0.98393 0.0377,-1.456 -0.0903,-0.59819 -0.31543,-1.18083 -0.64865,-1.67831 -0.0363,-0.0542 -0.0644,-0.10008 -0.0623,-0.10189 0.004,-0.004 6.50489,2.38606 6.50094,2.39001 -10e-4,10e-4 -1.45639,0.53731 -3.23319,1.19079 -1.77681,0.65349 -3.23935,1.19162 -3.25009,1.19585 -0.0107,0.004 -0.0195,0.005 -0.0195,0.002 z"
          style="fill:#ff0000;stroke:none" />
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="370.09464"
+         y="63.381969"
+         id="text3175"
+         sodipodi:linespacing="125%"
+         transform="translate(55.571429,557.93358)"><tspan
+           sodipodi:role="line"
+           id="tspan3177"
+           x="370.09464"
+           y="63.381969"></tspan><tspan
+           sodipodi:role="line"
+           id="tspan3179" /></text>
     </g>
   </g>
 </svg>

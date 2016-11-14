@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.0 r"
-   sodipodi:docname="no_jet.svg">
+   sodipodi:docname="no_jet.svg"
+   inkscape:export-filename="/d/fnicolas/Documents/Manuscrit/book/Chapitre_4/Images/no_jet.png"
+   inkscape:export-xdpi="20"
+   inkscape:export-ydpi="20">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="417.59446"
-     inkscape:cy="431.73013"
+     inkscape:zoom="0.35"
+     inkscape:cx="144.9804"
+     inkscape:cy="621.15877"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -6948,8 +6951,8 @@ RU5ErkJggg==
        height="760"
        width="980" />
     <image
-       y="352.36218"
-       x="1095.7142"
+       y="292.36221"
+       x="0"
        id="image3004"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAL4CAIAAAAVrygqAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4
 nOx9fZBmRXX3WXFFIZtpKouJBt37UoYVlTAU8YsQGC2TKGBYgkQSk7BaBkNFDWhZmIrRVam8WkkJ
@@ -11665,8 +11668,8 @@ pleiXXxv2rRp06ZNmzZt2vRKtIvvTZs2bdq0adOmTZteif4vc9IrN3fEdZsAAAAASUVORK5CYII=
        height="760"
        width="980" />
     <image
-       y="266.64789"
-       x="-1621.4286"
+       y="292.36221"
+       x="0"
        id="image3015"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAL4CAIAAAAVrygqAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4
 nOy9fbBeVXU/vjQGFBqzsQFfGuQZhgrUUkJtBSOlGcbWF7RfKWOFOopaimUq+qWOY9txLFr6VUem
@@ -16339,7 +16342,7 @@ UCgUCoV7QpHvQqFQKBQKhULhnvC/LQC008zP/lYAAAAASUVORK5CYII=
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="zzcczz" />
     <path
-       style="fill:none;stroke:#ff0000;stroke-width:4.65026426;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:55.8031711, 4.65026426;stroke-dashoffset:0"
+       style="fill:none;stroke:#800080;stroke-width:4.65026426000000015;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:55.80317110000000014, 4.65026426000000015;stroke-dashoffset:0"
        d="m 60.659498,632.36221 c 0,-76.53624 73.715242,-111.84929 45.328392,-150 C 77.601043,444.2115 29,345.59843 29,536.03264 c 0,190.43421 0,13.38794 0,205.12817 0,191.74023 50.899162,86.40938 77,41.2014 26.10084,-45.20798 -45.340502,-73.46376 -45.340502,-150 z"
        id="path3037-4-8"
        inkscape:connector-curvature="0"

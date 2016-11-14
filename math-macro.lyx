@@ -460,5 +460,73 @@ description "distance caméra-écoulement"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myomega}{\omega}
+{\omega}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\omega$"
+description "pulsation lumineuse"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mynu}{\nu}
+{\nu}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\nu$"
+description "fréquence"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myk}{\textbf{k}}
+{\textbf{k}}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\textbf{k}$"
+description "vecteur d'onde"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mySigma}{\Sigma}
+{\Sigma}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\Sigma$"
+description "Surface d'onde"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

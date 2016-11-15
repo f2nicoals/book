@@ -528,5 +528,39 @@ description "Surface d'onde"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myu}{\textbf{u}}
+{\textbf{u}}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\textbf{x}$"
+description "Vecteur directeur du rayon lumineux"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myr}{\textbf{r}}
+{\textbf{r}}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\textbf{x}$"
+description "Vecteur directeur du rayon lumineux"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

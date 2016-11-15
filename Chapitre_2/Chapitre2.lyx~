@@ -72,6 +72,13 @@
 
 \begin_layout Chapter
 Reconstruction de champs instantanés de masse volumique
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:BOS3D"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1347,6 +1354,49 @@ status open
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+A travers ce chapitre nous avons développé un code de reconstruction BOS
+ 3D avec une approche directe.
+ Il repose sur la minimisation d'un critère aux moindres carrés régularisé.
+ pour la régularisation quadratique que nous avons adopté, le paramètre
+ de régularisation peut être sélectionner de manière automatique à partir
+ de la L-curve.
+ Nous avons validé notre code sur des données synthétiques et montré que
+ pour l'étude d'un jet, le placement optimal des caméras est la répartition
+ circulaire.
+ Nous avons ensuite conçu un banc d'essai expérimental, la géode, sur laquelle
+ 12 caméras ont été utilisées.
+ La chaine de traitement qui a été mise en place nous a permis de reconstruire
+ la topologie de différents écoulements de convection.
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 

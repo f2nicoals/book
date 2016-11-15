@@ -356,6 +356,49 @@ Une onde lumineuse est une onde électromagnétique caractérisée par son champ
 \begin_inset Formula $H$
 \end_inset
 
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/onde_EM.pdf
+	lyxscale 40
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:onde_EM"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 .
  Dans le vide elle se propage à la célérité 
 \begin_inset Formula $c=299792458\, m/s$
@@ -374,8 +417,8 @@ n\stackrel{\Delta}{=}\dfrac{c}{v}
 
 \end_inset
 
-L'indice optique est donc supérieur à 1 (à l'exception de matériaux exotiques,
- comme certains méta-matériaux) et dans l'air 
+L'indice optique est donc supérieur à 1 (à l'exception de quelques matériaux
+ exotiques, comme certains méta-matériaux) et dans l'air 
 \begin_inset Formula $n\text{≈1}$
 \end_inset
 
@@ -390,7 +433,7 @@ Toute onde peut être décrite comme la superposition d'ondes sinusoïdales
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-A\cos(\myomega t-\myk r)
+A\cos(\myomega t-\myk\cdot\myr)
 \end{equation}
 
 \end_inset
@@ -538,7 +581,7 @@ Ainsi, la surface d'onde
 \begin_inset Formula $\mySigma_{2}$
 \end_inset
 
-à l'instant 
+ à l'instant 
 \begin_inset Formula $t_{2}=t_{1}+dt$
 \end_inset
 
@@ -546,7 +589,7 @@ Ainsi, la surface d'onde
 \begin_inset Formula $\mySigma_{1}$
 \end_inset
 
-à l'instant 
+ à l'instant 
 \begin_inset Formula $t_{1}$
 \end_inset
 
@@ -562,7 +605,7 @@ en traçant en chaque point
 \begin_inset Formula $A_{1}$
 \end_inset
 
-et dont le rayon est tel que la durée de propagation lumineuse soit égale
+ et dont le rayon est tel que la durée de propagation lumineuse soit égale
  à 
 \begin_inset Formula $dt$
 \end_inset
@@ -652,7 +695,7 @@ où
 \end_layout
 
 \begin_layout Standard
-On définit alors le chemin optique entre de points 
+On définit alors le chemin optique entre deux points 
 \begin_inset Formula $A$
 \end_inset
 
@@ -682,7 +725,7 @@ L=\int_{t_{A}}^{t_{B}}cdt=\int_{A}^{B}nds=c(t_{B}-t_{A})
 \end_layout
 
 \begin_layout Subsubsection
-Principe de Fermat
+Principe de Fermat et ses consséquences
 \end_layout
 
 \begin_layout Standard
@@ -729,6 +772,13 @@ Une autre propriété qui en découle est établie par le théorème de Malus-Du
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \bar under
 Propagation dans un milieu homogène:
@@ -741,7 +791,7 @@ Dans un milieu d'indice uniforme, le chemin optique s'exprime comme:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-L=\int_{A}^{B}nds=n\bar{AB}
+L=\int_{A}^{B}nds=n\wideparen{AB}
 \end{equation}
 
 \end_inset
@@ -753,8 +803,8 @@ L=\int_{A}^{B}nds=n\bar{AB}
 \begin_inset Formula $L$
 \end_inset
 
-est alors minimal si 
-\begin_inset Formula $\bar{AB}$
+ est alors minimal si 
+\begin_inset Formula $\bar{\wideparen{AB}}$
 \end_inset
 
  s'identifie à la droite 
@@ -847,6 +897,7 @@ Comme
 
  l'est aussi et le trajet suivi par la lumière ne dépend pas du sens de
  parcours.
+ C'est le principe de retour inverse de la lumière.
 \end_layout
 
 \begin_layout Standard
@@ -867,7 +918,279 @@ Equation fondamentale de l'optique géométrique
 \end_layout
 
 \begin_layout Standard
+Calculons le chemin optique le long du rayon lumineux courbe R.L passant
+ par les points 
+\begin_inset Formula $A_{0}$
+\end_inset
 
+ de 
+\begin_inset Formula $\mySigma_{0}$
+\end_inset
+
+ et 
+\begin_inset Formula $A$
+\end_inset
+
+ de 
+\begin_inset Formula $\mySigma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L=\int_{A_{0}}^{A}nds
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lorsque le point 
+\begin_inset Formula $A_{0}(r_{0})$
+\end_inset
+
+ est fixé et que 
+\begin_inset Formula $A(r)$
+\end_inset
+
+ se déplace, le chemin optique ainsi calculé ne dépend alors que de 
+\begin_inset Formula $r$
+\end_inset
+
+ puisque RL est une courbe effectivement suivie par la lumière: 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/eikonal.pdf
+	lyxscale 30
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:eikonal"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L(r)=\int_{r_{0}}^{r}nds
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+d'où:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+dL=gradL\cdot d\myr
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+or cette variation élémentaire s'écrit aussi:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+dL=nds=nAH=n(d\myr\cdot\myu)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Il vient en identifiant que:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+nd\myr\cdot\myu=gradL.dr
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+soit, puisque 
+\begin_inset Formula $dr$
+\end_inset
+
+ est quelconque:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+n\myu=gradL\mbox{ d'où }n=||gradL||\label{eq:biblio:eikonale}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cette dernière équation exprime que l'indice du milieu est égal à la norme
+ du vecteur gradient de la fonction chemin optique.
+ Elle est connu sous le nom d'équation eikonale.
+\end_layout
+
+\begin_layout Standard
+La démonstration n'est pas montrée ici, mais cette équation peut aussi s'exprime
+r sous la forme d'une équation différentielle:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{d}{d\mys}(\myn\frac{d}{ds}\myr(\mys))=\nabla\myn
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+on l'appelle l'équation fondamentale de l'optique géométrique.
+ Elle décrit la trajectoire des rayons lumineux dans un milieu non homogène.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Remarque:
+\end_layout
+
+\begin_layout Standard
+Si l'on multiplie l'équation eikonale (Eq.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:biblio:eikonale"
+
+\end_inset
+
+) par 
+\begin_inset Formula $\myk_{0}\stackrel{\Delta}{=}\nicefrac{2\pi}{\lambda_{0}}\myu$
+\end_inset
+
+, il vient:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\myk_{0}n\myu=grad(\myk_{0}L)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+et finalement:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\myk=grad\phi\mbox{ où }\phi\stackrel{\Delta}{=}\myk_{0}L
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La phase 
+\begin_inset Formula $\phi,$
+\end_inset
+
+le chemin optique 
+\begin_inset Formula $L=\nicefrac{\phi}{\myk_{0}}$
+\end_inset
+
+ et le temps de propagation 
+\begin_inset Formula $\tau\stackrel{\Delta}{=}\nicefrac{L}{c}$
+\end_inset
+
+ sont des grandeurs proportionnelles.
+ Toutes les ondes véhiculées par les rayons entre les points 
+\begin_inset Formula $A_{0}$
+\end_inset
+
+et 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ sont en phase.
 \end_layout
 
 \begin_layout Subsection

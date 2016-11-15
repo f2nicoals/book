@@ -97,15 +97,265 @@ minitoc
 \end_layout
 
 \begin_layout Section
-Optimisation de la prise d'image
+Introduction
 \end_layout
 
 \begin_layout Section
-Mesures BOS 3D sur un jet sous-détendu
+Article
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+includepdf[pages=-,
+\end_layout
+
+\begin_layout Plain Layout
+
+addtotoc={
+\end_layout
+
+\begin_layout Plain Layout
+
+1, section, 1, Introduction, sec:113:intro,
+\end_layout
+
+\begin_layout Plain Layout
+
+1, subsection, 2, Underexpanded jets, sec:113:intro:jets,
+\end_layout
+
+\begin_layout Plain Layout
+
+2, subsection, 2, Measurement techniques, sec:113:intro:techniques,
+\end_layout
+
+\begin_layout Plain Layout
+
+3, subsection, 2, Background oriented schlieren, sec:113:intro:BOS,
+\end_layout
+
+\begin_layout Plain Layout
+
+3, subsection, 2, Contributions, sec:113:intro:contrib,
+\end_layout
+
+\begin_layout Plain Layout
+
+3, section, 1, Opimizing the BOS experimental set-up for high resolution
+ measurements, sec:113:2D,
+\end_layout
+
+\begin_layout Plain Layout
+
+4, subsection, 2,Astigmatism effects, sec:113:2D:astigmatism,
+\end_layout
+
+\begin_layout Plain Layout
+
+4, subsection, 2,Installation, sec:113:2D:installation,
+\end_layout
+
+\begin_layout Plain Layout
+
+5, subsection, 2,Parametric analysis, sec:113:2D:param,
+\end_layout
+
+\begin_layout Plain Layout
+
+6, section, 1, underexpanded jet 3D density field measurement, sec:113:3D,
+\end_layout
+
+\begin_layout Plain Layout
+
+6, subsection, 2, 3D BOS bench, sec:113:3D:bench,
+\end_layout
+
+\begin_layout Plain Layout
+
+7, subsection, 2, Instantaneous density field reconstruction, sec:113:3D:Inst,
+\end_layout
+
+\begin_layout Plain Layout
+
+9, subsection, 2, Mean fiels analysis, sec:113:3D:mean,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, section, 1, Vortex shedding analysis, sec:113:KH,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, section, 1, Conclusion, sec:113:conclu
+\end_layout
+
+\begin_layout Plain Layout
+
+},
+\end_layout
+
+\begin_layout Plain Layout
+
+addtolist={
+\end_layout
+
+\begin_layout Plain Layout
+
+5, figure, {Schematic view of the flow topology for a highly underexpanded
+ jet.}, fig:113:jet,
+\end_layout
+
+\begin_layout Plain Layout
+
+6, figure, { Example of astigmatism effect induced by an underexpanded shock
+ cell visible on a raw BOS image.}, fig:113:astigmatism,
+\end_layout
+
+\begin_layout Plain Layout
+
+7, figure, {Jet facility and camera field of view at ONERA Toulouse.}, fig:113:fa
+cility,
+\end_layout
+
+\begin_layout Plain Layout
+
+7, figure, {BOS principle.}, fig:113:facility,
+\end_layout
+
+\begin_layout Plain Layout
+
+8, figure, {Influence of the camera aperture on instantaneous and mean BOS
+ field.}, fig:113:aperture,
+\end_layout
+
+\begin_layout Plain Layout
+
+8, figure, {Displacement norm (N) extracted in $X=D$  for different f-number.},
+ fig:113:f-number,
+\end_layout
+
+\begin_layout Plain Layout
+
+9, figure, {Comparison between BOS image (top) and schlieren image (bottom).
+ NPR=5.}, fig:113:strio,
+\end_layout
+
+\begin_layout Plain Layout
+
+9, figure, {3D BOS bench and supersonic hot jet facility.}, fig:113:bench,
+\end_layout
+
+\begin_layout Plain Layout
+
+10, figure, {Laser splitting table, here with 3 beams.
+ In practice, we used 4 beams}, fig:113:laser,
+\end_layout
+
+\begin_layout Plain Layout
+
+10, figure, {Instantaneous density field reconstruction for $NPR=2.1$ case.
+ Slice at $y=0$.}, fig:113:inst_slice,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {Instantaneous density field reconstruction for $NPR=2.1$ case.
+ Iso-density.}, fig:113:inst_iso,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {Deviation map comparisons for x map at the top and z map at
+ the bottom.}, fig:113:dev_map,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {3D mean density field reconstruction on the right and extracted
+ centerline profiles for each NPR on the left.}, fig:113:mean,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {CMean density field reconstruction for NPR=5 case on the left
+ and Density gradient magnitude on the right.}, fig:113:CFD,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {Evolution of the Mach disk position and diameter with respect
+ to the NPR.}, fig:113:XMD,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {Normalized eigenvalues in descending order for each POD mode},
+ fig:113:energy,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {Spatial functions for POD modes 1 and 2 u and v displacements.},
+ fig:113:modes,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {Phase portrait of the normalized amplitudes for mode 1 and
+ mode 2.}, fig:113:portrait,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {Phases}, fig:113:phases
+\end_layout
+
+\begin_layout Plain Layout
+
+},
+\end_layout
+
+\begin_layout Plain Layout
+
+pagecommand={
+\backslash
+thispagestyle{headings}},
+\end_layout
+
+\begin_layout Plain Layout
+
+scale=0.95,
+\end_layout
+
+\begin_layout Plain Layout
+
+clip,trim= 1cm 2cm 1mm 2.06cm,
+\end_layout
+
+\begin_layout Plain Layout
+
+offset=0cm -0.7cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+{Chapitre_5/113.pdf} 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Résultats
+Conclusion
 \end_layout
 
 \end_body

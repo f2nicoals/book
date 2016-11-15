@@ -356,15 +356,15 @@ Une onde lumineuse est une onde électromagnétique caractérisée par son champ
 \begin_inset Formula $H$
 \end_inset
 
- 
+ (Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -379,6 +379,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Onde électromagnétique.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:biblio:onde_EM"
@@ -399,9 +400,16 @@ name "fig:biblio:onde_EM"
 
 \end_inset
 
-.
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:onde_EM"
+
+\end_inset
+
+).
  Dans le vide elle se propage à la célérité 
-\begin_inset Formula $c=299792458\, m/s$
+\begin_inset Formula $c=299\,792\,458\, m/s$
 \end_inset
 
 .
@@ -433,7 +441,7 @@ Toute onde peut être décrite comme la superposition d'ondes sinusoïdales
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-A\cos(\myomega t-\myk\cdot\myr)
+A\cos(\myomega t-\myk\cdot\myx)
 \end{equation}
 
 \end_inset
@@ -459,11 +467,11 @@ Dans cette expression,
 \begin_inset Formula $t$
 \end_inset
 
- et 
-\begin_inset Formula $x$
+ représentent les coordonnées de temps et 
+\begin_inset Formula $\myx=x(t)e_{x}+y(t)e_{y}+z(t)e_{z}$
 \end_inset
 
- représentent les coordonnées de temps et d'espace.
+, les coordonnées d'espace.
 \end_layout
 
 \begin_layout Standard
@@ -524,7 +532,7 @@ le vecteur d'onde déjà évoqué:
 \begin_inset Formula $\myu$
 \end_inset
 
-étant le vecteur unitaire définissant la direction et le sens de propagation.
+ étant le vecteur unitaire définissant la direction et le sens de propagation.
 \end_layout
 
 \begin_layout Subsubsection
@@ -690,7 +698,11 @@ où
 \begin_inset Formula $s$
 \end_inset
 
- représente l'abscisse curviligne le long de la trajectoire lumineuse.
+ représente l'abscisse curviligne le long de la trajectoire lumineuse (
+\begin_inset Formula $ds=\sqrt{dx^{2}+dy^{2}+dz^{2}}$
+\end_inset
+
+).
  
 \end_layout
 
@@ -725,7 +737,7 @@ L=\int_{t_{A}}^{t_{B}}cdt=\int_{A}^{B}nds=c(t_{B}-t_{A})
 \end_layout
 
 \begin_layout Subsubsection
-Principe de Fermat et ses consséquences
+Principe de Fermat et ses conséquences
 \end_layout
 
 \begin_layout Standard
@@ -804,7 +816,7 @@ L=\int_{A}^{B}nds=n\wideparen{AB}
 \end_inset
 
  est alors minimal si 
-\begin_inset Formula $\bar{\wideparen{AB}}$
+\begin_inset Formula $\wideparen{AB}$
 \end_inset
 
  s'identifie à la droite 
@@ -918,8 +930,11 @@ Equation fondamentale de l'optique géométrique
 \end_layout
 
 \begin_layout Standard
-Calculons le chemin optique le long du rayon lumineux courbe R.L passant
- par les points 
+Calculons le chemin optique le long du rayon lumineux courbe 
+\begin_inset Formula $\mathcal{\mathcal{C}}$
+\end_inset
+
+ passant par les points 
 \begin_inset Formula $A_{0}$
 \end_inset
 
@@ -935,42 +950,15 @@ Calculons le chemin optique le long du rayon lumineux courbe R.L passant
 \begin_inset Formula $\mySigma$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-L=\int_{A_{0}}^{A}nds
-\end{equation}
-
+ (Fig.
+\begin_inset space ~
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Lorsque le point 
-\begin_inset Formula $A_{0}(r_{0})$
-\end_inset
-
- est fixé et que 
-\begin_inset Formula $A(r)$
-\end_inset
-
- se déplace, le chemin optique ainsi calculé ne dépend alors que de 
-\begin_inset Formula $r$
-\end_inset
-
- puisque RL est une courbe effectivement suivie par la lumière: 
 \begin_inset Float figure
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -999,13 +987,47 @@ name "fig:biblio:eikonal"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:eikonal"
+
+\end_inset
+
+):
 \end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L=\int_{A_{0}}^{A}nds
+\end{equation}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Lorsque le point 
+\begin_inset Formula $A_{0}(r_{0})$
+\end_inset
+
+ est fixé et que 
+\begin_inset Formula $A(r)$
+\end_inset
+
+ se déplace, le chemin optique ainsi calculé ne dépend alors que de 
+\begin_inset Formula $r$
+\end_inset
+
+ puisque 
+\begin_inset Formula $\mathcal{\mathcal{C}}$
+\end_inset
+
+ est une courbe effectivement suivie par la lumière: 
 \end_layout
 
 \begin_layout Standard
@@ -1026,7 +1048,7 @@ d'où:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-dL=gradL\cdot d\myr
+dL=gradL\cdot d\myx
 \end{equation}
 
 \end_inset
@@ -1041,7 +1063,7 @@ or cette variation élémentaire s'écrit aussi:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-dL=nds=nAH=n(d\myr\cdot\myu)
+dL=nds=nAH=n(d\myx\cdot\myu)
 \end{equation}
 
 \end_inset
@@ -1056,7 +1078,7 @@ Il vient en identifiant que:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-nd\myr\cdot\myu=gradL.dr
+nd\myx\cdot\myu=gradL.dr
 \end{equation}
 
 \end_inset
@@ -1097,7 +1119,7 @@ r sous la forme d'une équation différentielle:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{d}{d\mys}(\myn\frac{d}{ds}\myr(\mys))=\nabla\myn
+\frac{d}{d\mys}(\myn\frac{d}{ds}\myx(\mys))=\nabla\myn\label{eq:biblio:ray}
 \end{equation}
 
 \end_inset
@@ -1182,15 +1204,7 @@ le chemin optique
 \end_inset
 
  sont des grandeurs proportionnelles.
- Toutes les ondes véhiculées par les rayons entre les points 
-\begin_inset Formula $A_{0}$
-\end_inset
-
-et 
-\begin_inset Formula $A_{i}$
-\end_inset
-
- sont en phase.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -1207,17 +1221,6 @@ Dans un milieu d'indice non homogène la lumière ne se propage plus en ligne
 \end_inset
 
  est décrite par l'équation fondamentale de l'optique géométrique:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\frac{d}{d\mys}(\myn\frac{d}{ds}\myx(\mys))=\nabla\myn\label{eq:biblio:ray}
-\end{equation}
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1434,7 +1437,11 @@ Détaillons à présent le montage BOS.
 \end_inset
 
  se propage en ligne droite jusqu'à la caméra et vient impacter le CCD en
- X.
+ 
+\begin_inset Formula $X+\Delta X$
+\end_inset
+
+.
  
 \begin_inset Float figure
 wide false
@@ -1444,7 +1451,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/principle.pdf
+	filename Images/principle3.pdf
 	lyxscale 30
 	width 80text%
 
@@ -1477,7 +1484,7 @@ name "fig:biblio:setup"
 
 \begin_layout Standard
 En présence de l'écoulement, le rayon est dévié et touche le CCD en 
-\begin_inset Formula $X+\Delta X$
+\begin_inset Formula $X$
 \end_inset
 
 .
@@ -1520,7 +1527,7 @@ key "Todoroff2013"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\Delta X=\myl M\myepsilon=f\left(\dfrac{\myl}{\mym+\myl-f}\right)\myepsilon\label{eq:biblio:sensibilite}
+\Delta X=\myl M\myepsilon=f\left(\dfrac{\myl}{\mym+\myl-f}\right)\myepsilon\text{≈}f\left(\dfrac{\myl}{\mym+\myl}\right)\myepsilon\mbox{ si }m+l\text{ ≫ }f\label{eq:biblio:sensibilite}
 \end{equation}
 
 \end_inset
@@ -1818,6 +1825,87 @@ Dans cette expression, le premier terme est très souvent prépondérant devant
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Deux filtrages viennent affecter la mesure BOS: le premier est lié à la
+ taille de la fenêtre d'interrogation tandis que le deuxième résulte de
+ la taille du cercle de confusion associé au 
+\begin_inset Quotes fld
+\end_inset
+
+pinceau lumineux
+\begin_inset Quotes frd
+\end_inset
+
+ au niveau de l'écoulement.
+ Le cercle de confusion étant contrôlé par l'ouverture caméra il vaut mieux
+ travailler à grand nombre d'ouverture.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kirmse11"
+
+\end_inset
+
+ montre qu'en appliquant un filtre de la taille de son cercle de confusion
+ (qui est l'effet dominant dans son cas) à sa simulation il parvient à retrouver
+ des résultats semblables à sa mesure BOS 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/kirmse.png
+	lyxscale 30
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparaison entre mesure BOS (haut) et CFD sur une sphère à Mach 8.1 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kirmse11"
+
+\end_inset
+
+.
+ En bas à gauche résultat CFD brut.
+ En bas à droite, résultat CFD avec prise en compte des filtrages spatiaux
+ qui affecte la mesure BOS.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:kirmse-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:kirmse-1"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard

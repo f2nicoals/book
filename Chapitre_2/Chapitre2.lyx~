@@ -1397,7 +1397,28 @@ A travers ce chapitre nous avons développé un code de reconstruction BOS
 \end_layout
 
 \begin_layout Plain Layout
+A travers ce chapitre nous avons également montré l'importance de ne prendre
+ en compte que les rayons qui ont traversé l'écoulement de part en part
+ (les rayons dit 
+\begin_inset Quotes fld
+\end_inset
 
+valides
+\begin_inset Quotes frd
+\end_inset
+
+).
+ Enfin, le choix des conditions aux limites a également une grande importance
+ sur la qualité de la reconstruction.
+\end_layout
+
+\begin_layout Plain Layout
+Notre technique BOS 3D a été mise en œuvre en laboratoire et présente de
+ beaux résultats.
+ Cela n'est pas suffisant dans le contexte de la métrologie pour l'aérodynamique
+ et à travers le chapitre suivant nous allons déployer pour la première
+ fois la technique en soufflerie et confronter les mesures BOS 3D à des
+ mesures thermocouples.
 \end_layout
 
 \end_inset

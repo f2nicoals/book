@@ -136,8 +136,8 @@ key "raffel2000"
  Dalziel s'intéressait aux variations de masse volumique présentes dans
  un écoulement stratifié soumis à des oscillations périodiques.
  Il s'est inspiré de la technique de strioscopie par grille encore appelée
- “ focusing schlieren ” pour remplacer la grille par une impression d'un
- ensemencement PIV.
+ “ focusing schlieren ” pour remplacer la grille par un motif de points
+ répartis aléatoirement.
  Il montre alors qu'il est aisé de calculer les déplacements horizontaux
  et verticaux par corrélation d'images.
  Il entrevoit un fort potentiel pour cette nouvelle technique qui est simple
@@ -151,7 +151,7 @@ Raffel et son équipe au DLR travaillaient en particulier sur les tourbillons
  de bout de pales d'hélicoptères.
  Ils se sont inspirés de la vélocimétrie par image de particules (PIV) et
  des algorithmes développés pour calculer le champ de déplacement entre
- deux images de particules.
+ deux images.
  Pour cela, ils ont 
 \begin_inset Quotes eld
 \end_inset
@@ -281,7 +281,7 @@ reference "fig:biblio:DLR"
 .
  Ils ont ensuite observé leur hélicoptère en vol stationnaire depuis le
  toit d'un bâtiment et après avoir calculé leur champ de déplacement, ils
- ont pu mettre en évidebnce les tourbillons de bout de pales et leur évolution.
+ ont pu mettre en évidence les tourbillons de bout de pales et leur évolution.
  Peu de temps après, 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -296,11 +296,19 @@ key "meier02"
 \end_layout
 
 \begin_layout Standard
-Après avoir décrit la techniques BOS et les différents éléments qui constituent
- le montage, nous nous pencherons sur des applications particulières, pour
- des expériences de grandes dimensions et à haute vitesse.
- Nous décrirons ensuite brièvement les techniques classiques de tomographie
- puis nous verrons comment elles peuvent être appliquées à la technique
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Après ce bref rappel historique, nous allons décrire la technique BOS et
+ les différents éléments qui constituent le montage.
+ Nous nous pencherons sur des applications particulières, pour des expériences
+ de grandes dimensions et à haute vitesse.
+ Enfin, nous décrirons ensuite brièvement les techniques classiques de tomograph
+ie puis nous verrons comment elles peuvent être appliquées à la technique
  BOS pour reconstruire le champ tridimensionnel de masse volumique.
  
 \end_layout
@@ -524,7 +532,7 @@ le vecteur d'onde déjà évoqué:
 \begin_inset Formula $\myk\stackrel{\Delta}{=}\nicefrac{2\pi}{\lambda}\myu$
 \end_inset
 
- et le vecteur d'onde dans le vide 
+, et le vecteur d'onde dans le vide 
 \begin_inset Formula $\myk_{0}\stackrel{\Delta}{=}\nicefrac{2\pi}{\lambda_{0}}\myu$
 \end_inset
 
@@ -540,8 +548,9 @@ Principe de Huygens
 \end_layout
 
 \begin_layout Standard
-On se place dans le cas d'un milieu isotrope, c'est à dire que l'indice
- optique 
+Le principe de Huygens est à la base de la théorie ondulatoire de la lumière.
+ Nous nous plaçons dans la suite dans le cas d'un milieu isotrope, c'est
+ à dire que l'indice optique 
 \begin_inset Formula $\myn$
 \end_inset
 
@@ -768,7 +777,21 @@ La lumière se propage d'un point
 \end_layout
 
 \begin_layout Standard
-Plusieurs choses découlent du principe de Fermat, la première étant qu'en
+Ce qui peut être traduit en équation par le fait que pour le chemin optique
+ 
+\begin_inset Formula $L+dL$
+\end_inset
+
+ infiniment proche de 
+\begin_inset Formula $L$
+\end_inset
+
+, on peut poser 
+\begin_inset Formula $dL=0$
+\end_inset
+
+.
+ Plusieurs choses découlent du principe de Fermat, la première étant qu'en
  l'absence de singularité, dans les milieux continus, le rayon lumineux
  est la trajectoire qui réalise le minimum de 
 \begin_inset Formula $L$
@@ -1012,11 +1035,11 @@ L=\int_{A_{0}}^{A}nds
 
 \begin_layout Standard
 Lorsque le point 
-\begin_inset Formula $A_{0}(r_{0})$
+\begin_inset Formula $A_{0}(\myx_{0})$
 \end_inset
 
  est fixé et que 
-\begin_inset Formula $A(r)$
+\begin_inset Formula $A(\myx)$
 \end_inset
 
  se déplace, le chemin optique ainsi calculé ne dépend alors que de 
@@ -1033,7 +1056,7 @@ Lorsque le point
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-L(r)=\int_{r_{0}}^{r}nds
+L(\myx)=\int_{r_{0}}^{r}nds
 \end{equation}
 
 \end_inset
@@ -1097,7 +1120,7 @@ soit, puisque
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-n\myu=gradL\mbox{ d'où }n=||gradL||\label{eq:biblio:eikonale}
+\boxed{n\myu=gradL\mbox{ d'où }n=||gradL||}\label{eq:biblio:eikonale}
 \end{equation}
 
 \end_inset
@@ -1113,13 +1136,14 @@ Cette dernière équation exprime que l'indice du milieu est égal à la norme
 
 \begin_layout Standard
 La démonstration n'est pas montrée ici, mais cette équation peut aussi s'exprime
-r sous la forme d'une équation différentielle:
+r sous la forme d'une équation différentielle appelé l'équation fondamentale
+ de l'optique géométrique:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{d}{d\mys}(\myn\frac{d}{ds}\myx(\mys))=\nabla\myn\label{eq:biblio:ray}
+\boxed{\frac{d}{d\mys}(\myn\frac{d}{ds}\myx(\mys))=\nabla\myn}\label{eq:biblio:ray}
 \end{equation}
 
 \end_inset
@@ -1128,8 +1152,25 @@ r sous la forme d'une équation différentielle:
 \end_layout
 
 \begin_layout Standard
-on l'appelle l'équation fondamentale de l'optique géométrique.
- Elle décrit la trajectoire des rayons lumineux dans un milieu non homogène.
+où 
+\begin_inset Formula $\mys$
+\end_inset
+
+ représente l'abscisse curviligne, et 
+\begin_inset Formula $\myx(\mys)$
+\end_inset
+
+ la trajectoire du rayon lumineux.
+ Dans la suite, le vecteur directeur 
+\begin_inset Formula $\dfrac{d\myx}{ds}$
+\end_inset
+
+ sera noté 
+\begin_inset Formula $\textbf{d}$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1182,7 +1223,7 @@ et finalement:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\myk=grad\phi\mbox{ où }\phi\stackrel{\Delta}{=}\myk_{0}L
+\myk=grad\phi\mbox{ \ où\  }\phi\stackrel{\Delta}{=}\myk_{0}L
 \end{equation}
 
 \end_inset
@@ -1207,57 +1248,25 @@ le chemin optique
  
 \end_layout
 
-\begin_layout Subsection
-Trajectoire des rayons lumineux dans un milieu d'indice non homogène
+\begin_layout Subsubsection
+Déviation des rayons lumineux
 \end_layout
 
 \begin_layout Standard
-Dans un milieu d'indice non homogène la lumière ne se propage plus en ligne
- droite.
- Les rayons lumineux sont courbés par le gradient d'indice optique aboutissant
- au phénomène de mirage.
- La trajectoire des rayons lumineux dans un milieu d'indice optique 
-\begin_inset Formula $n$
+Les différentes techniques exploitant les variations d'indice optique, l'ombrosc
+opie, la strioscopie, la BOS et l'holographie, peuvent toutes êtres décrites
+ à partir des de cette équation fondamentale de l'optique géométrique (Eq.
+\begin_inset space ~
 \end_inset
 
- est décrite par l'équation fondamentale de l'optique géométrique:
-\end_layout
 
-\begin_layout Standard
-où 
-\begin_inset Formula $\mys$
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:biblio:ray"
+
 \end_inset
 
- représente l'abscisse curviligne, et 
-\begin_inset Formula $\myx(\mys)$
-\end_inset
-
- la trajectoire du rayon lumineux.
- Dans la suite, le vecteur directeur 
-\begin_inset Formula $\dfrac{d\myx}{ds}$
-\end_inset
-
- sera noté 
-\begin_inset Formula $\textbf{d}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Cette équation résulte du principe de Fermat qui stipule que pour aller
- d'un point 
-\begin_inset Formula $A$
-\end_inset
-
- à un point 
-\begin_inset Formula $B$
-\end_inset
-
-, la lumière suit le trajet le plus court.
- Les différentes techniques exploitant les variations d'indice optique,
- l'ombroscopie, la strioscopie, la BOS et l'holographie, peuvent toutes
- êtres décrites à partir des de cette équation.
+).
  Lorsqu'un rayon traverse un milieu d'indice inhomogène sa trajectoire courbe
  induit 3 phénomènes: un retard, une déviation et un déplacement Fig.
 \begin_inset space ~
@@ -1320,9 +1329,13 @@ reference "fig:biblio:merzkirch"
 \end_inset
 
 .
- Le retard est exploité par l'holographie pour mesurer le champ d'indice.
- La déviation est directement mesurée par la strioscopie tandis que la BOS
- exploite le déplacement.
+ L'holographie mesure le déphasage de l'onde lumineuse, ce qui est équivalent
+ comme nous l'avons vu au retard ou bien à la variation de chemin optique
+ (ou différence de marche optique).
+ L'holographie mesure donc une quantité proportionnelle à l'intégrale de
+ l'indice optique à travers l'écoulement.
+ La déviation des rayons lumineux est directement mesurée par la strioscopie
+ tandis que la BOS exploite le déplacement.
  Toutes deux sont sensibles au gradient de masse volumique.
  L'ombroscopie quant à elle, exploite la conséquence du déplacement sur
  l'intensité lumineuse.
@@ -1361,7 +1374,7 @@ reference "eq:biblio:ray"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\myepsilon=\mydo-\mydi=\frac{1}{\myn_{ext}}\int_{s_{in}}^{s_{out}}\nabla n(\textbf{x}(r))dr
+\myepsilon=\mydo-\mydi=\frac{1}{\myn_{ext}}\int_{s_{in}}^{s_{out}}\nabla n(\textbf{x}(s))ds\label{eq:biblio:dev_indice}
 \end{equation}
 
 \end_inset
@@ -1370,14 +1383,65 @@ reference "eq:biblio:ray"
 \end_layout
 
 \begin_layout Standard
-Enfin, en utilisant la relation de Gladstone-Dale, qui relie de manière
- linéaire l'indice optique à la masse volumique, nous pouvons écrire:
+La relation de Gladstone-Dale relie de manière linéaire l'indice optique
+ à la masse volumique:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\myepsilon=\frac{\myG}{\myn_{ext}}\int_{s_{in}}^{s_{out}}\nabla\myrho(\textbf{x}(r))dr
+n-1=G\myrho\label{eq:biblio:gladstone}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+où 
+\begin_inset Formula $\myG$
+\end_inset
+
+ représente la constante de Gadstone-Dale.
+ Celle-ci dépend principalement du gaz considéré et de la longueur d'onde.
+ Pour de l'air en conditions standard elle vaut 
+\begin_inset Formula $\myG=0.23.10^{-3}m^{3}/kg$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En utilisant l'Eq.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:biblio:gladstone"
+
+\end_inset
+
+ dans l'expression de la déviation lumineuse (Eq.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:biblio:dev_indice"
+
+\end_inset
+
+), nous pouvons écrire:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\myepsilon=\frac{\myG}{\myn_{ext}}\int_{s_{in}}^{s_{out}}\nabla\myrho(\textbf{x}(s))ds
 \end{equation}
 
 \end_inset
@@ -1390,17 +1454,7 @@ avec
 \begin_inset Formula $n_{ext}$
 \end_inset
 
- l'indice optique de l'air ambiant et 
-\begin_inset Formula $\myG$
-\end_inset
-
-, la constante de Gadstone-Dale.
- Celle-ci dépend principalement du gaz considéré et de la longueur d'onde.
- Pour de l'air en conditions standard elle vaut 
-\begin_inset Formula $\myG=0.23.10^{-3}m^{3}/kg$
-\end_inset
-
-.
+ l'indice optique de l'air ambiant.
  Le vecteur de déviation peut être décomposé suivant chacun des axes du
  repère monde 
 \begin_inset Formula $\myepsilon=\left(\begin{array}{c}
@@ -1508,6 +1562,10 @@ En présence de l'écoulement, le rayon est dévié et touche le CCD en
  demeure inconnue.
  Pour pouvoir l'estimer, on fait l'hypothèse que la déviation s'est produite
  brutalement sur un point à l'intérieur du volume.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1520,8 +1578,63 @@ key "Todoroff2013"
 \begin_inset Formula $\myepsilon$
 \end_inset
 
- et de manière classique les auteurs choisissent le point milieu.
- On abouti alors à la formule classique : 
+ et 
+\end_layout
+
+\end_inset
+
+De manière classique les auteurs choisissent le point milieu.
+\end_layout
+
+\begin_layout Standard
+A partir de la relation de conjugaison des lentilles minces qui relie la
+ focale 
+\begin_inset Formula $f$
+\end_inset
+
+ de la caméra au plan objet situé en 
+\begin_inset Formula $m+l$
+\end_inset
+
+ et au plan image situé en 
+\begin_inset Formula $z$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\dfrac{1}{f}=\dfrac{1}{l+m}+\dfrac{1}{z}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On peut exprimer le grandissement optique 
+\begin_inset Formula $M$
+\end_inset
+
+ de la caméra :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M=\dfrac{f}{\mym+\myl-f}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On abouti alors à la formule classique pour la sensibilité: 
 \end_layout
 
 \begin_layout Standard
@@ -1533,14 +1646,6 @@ key "Todoroff2013"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-où 
-\begin_inset Formula $\myM$
-\end_inset
-
-, fait référence au grandissement optique de la caméra.
 \end_layout
 
 \begin_layout Subsection
@@ -1561,8 +1666,16 @@ Plusieurs paramètres influent sur la sensibilité et la résolution de la
 \begin_inset Formula $\myl$
 \end_inset
 
- (écoulement-fond), la focale, l'ouverture caméra, le plan de mise au point.
- Nous allons revenir sur chacun de ses paramètres et monter que pour une
+ (écoulement-fond), la focale 
+\begin_inset Formula $f$
+\end_inset
+
+, l'ouverture caméra 
+\begin_inset Formula $f_{\#}$
+\end_inset
+
+, le plan de mise au point.
+ Nous allons revenir sur chacun de ces paramètres et montrer que pour une
  mesure donnée un certain compromis doit être trouvé entre résolution et
  sensibilité.
  Comme on peut le voir sur l'Eq.
@@ -1577,8 +1690,8 @@ reference "eq:biblio:sensibilite"
 \end_inset
 
 , la sensibilité de la mesure est directement liée à la focale.
- De plus, pour maximiser la sensibilité, on a intérêt à éloigner le fonds
- par rapport à l'écoulement et à rapprocher la caméra.
+ De plus, pour maximiser la sensibilité, il est également intéressant d'éloigner
+ le fond par rapport à l'écoulement et de rapprocher la caméra.
  L'analyse faite par 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1596,19 +1709,23 @@ key "Goldhahn07"
 
  qui impacte la sensibilité de la technique.
  En pratique, comment choisir l'ensemble de ses paramètres ? En général,
- on dispose d'une caméra donné et l'on veut observer un phénomène sur un
- champ de taille elle aussi donnée.
- La taille focale caméra et distance d'observation sont directement liés
- pour une taille de capteur 
+ on dispose d'une caméra donnée dont la taille du capteur 
+\begin_inset Formula $C$
+\end_inset
+
+ est égal au nombre de pixels multiplié par la dimension des pixels :
 \begin_inset Formula $C=N\cdot pix$
 \end_inset
 
- fixée.
- Pour un écoulement de taille 
+.
+ Avec cette caméra on souhaite observer un phénomène d'une certaine taille
+ 
 \begin_inset Formula $U$
 \end_inset
 
- on peut faire le lien entre ces deux grandeurs via le grandissement:
+.
+ La focale caméra et la distance d'observation sont alors liés à travers
+ le grandissement:
 \end_layout
 
 \begin_layout Standard
@@ -1717,10 +1834,6 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/circle_of_confusion.pdf
@@ -1803,8 +1916,8 @@ status open
 
 \begin_inset Formula 
 \begin{eqnarray}
-\delta_{t} & = & \dfrac{lD}{m+l}+\dfrac{\delta_{b}m}{m+l}\nonumber \\
- & = & \underbrace{\dfrac{M}{1+M}\dfrac{l}{f_{\#}}}_{1}+\underbrace{\dfrac{\Delta t}{M}\dfrac{m}{l+m}}_{2}
+\delta & = & \dfrac{l\cdot D}{m+l}+\dfrac{\delta_{b}\cdot m}{m+l}\nonumber \\
+ & = & \underbrace{\dfrac{M}{1+M}\dfrac{l}{f_{\#}}}_{1}+\underbrace{\dfrac{pix}{M}\dfrac{m}{l+m}}_{2}
 \end{eqnarray}
 
 \end_inset
@@ -1813,9 +1926,24 @@ status open
 \end_layout
 
 \begin_layout Standard
-Dans cette expression, le premier terme est très souvent prépondérant devant
- le deuxième.
- On voit alors que pour améliorer la résolution spatiale, il faut principalement
+Dans cette expression, le premier terme est prépondérant devant le deuxième
+ et finalement le cercle de confusion est donné par le cône de rayons associé
+ à un point (la taille du pixel n'intervient plus):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta=\dfrac{l\cdot f}{l+m}\dfrac{1}{f_{\#}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On voit alors que pour améliorer la résolution spatiale, il faut principalement
  agir sur l'ouverture caméra 
 \begin_inset Formula $f_{\#}$
 \end_inset
@@ -1828,29 +1956,29 @@ Dans cette expression, le premier terme est très souvent prépondérant devant
 \end_layout
 
 \begin_layout Standard
-Deux filtrages viennent affecter la mesure BOS: le premier est lié à la
- taille de la fenêtre d'interrogation tandis que le deuxième résulte de
- la taille du cercle de confusion associé au 
-\begin_inset Quotes fld
+\begin_inset VSpace defskip
 \end_inset
 
-pinceau lumineux
-\begin_inset Quotes frd
-\end_inset
 
- au niveau de l'écoulement.
- Le cercle de confusion étant contrôlé par l'ouverture caméra il vaut mieux
- travailler à grand nombre d'ouverture.
- 
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Kirmse11"
 
 \end_inset
 
- montre qu'en appliquant un filtre de la taille de son cercle de confusion
- (qui est l'effet dominant dans son cas) à sa simulation il parvient à retrouver
- des résultats semblables à sa mesure BOS 
+ met en évidence l'importance de ce cercle de confusion à travers son étude
+ du choc présent devant un hémisphère en écoulement hypersonique.
+ Pour comparer ses mesures BOS au résultat d'une simulation numérique, il
+ synthétise un champ de déplacements à partir de la simulation en réalisant
+ un calcul de lancer de rayons.
+ Dans son cas, le filtrage associé au cercle de confusion est dominant devant
+ le filtrage associé à la taille de la fenêtre de corrélation.
+ Il montre ensuite qu'en appliquant un filtre de la taille de son cercle
+ de confusion à sa simulation il parvient à retrouver des résultats semblables
+ à sa mesure BOS 
 \begin_inset Float figure
 wide false
 sideways false
@@ -1883,7 +2011,7 @@ key "Kirmse11"
  
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:biblio:kirmse-1"
+name "fig:biblio:kirmse"
 
 \end_inset
 
@@ -1900,7 +2028,7 @@ name "fig:biblio:kirmse-1"
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:biblio:kirmse-1"
+reference "fig:biblio:kirmse"
 
 \end_inset
 
@@ -3035,10 +3163,9 @@ name "sec:biblio:correlation"
 Après obtention d'une paire d'image, l'image de référence et l'image perturbée,
  le calcul des champs de déplacements (verticaux et horizontaux) se fait
  par corrélation d'images.
- La plupart des équipes utilisent des approches de type corrélation sur
- fenêtre.
- En effet, celles-ci sont largement répandues en PIV et facilement disponible
- sous Matlab (matPIV: 
+ La plupart des équipes utilisent des approches fondées sur le recalage
+ de fenêtres locales (interrogation windows en PIV) par optimisation d’un
+ critère de corrélation (matPIV: 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "sveen2004"
@@ -3053,13 +3180,28 @@ key "thielicke2014"
 \end_inset
 
 ).
- L'approche par corrélation sur fenêtres repose sur un calcul de corrélation
- spatiale sur des fenêtres de tailles dégressives afin d'obtenir une meilleur
- résolution.
- D'un autre coté, les méthodes de flot optique utilisées en vision par ordinateu
-r ont également prouvé leur intérêt.
- Le flot optique repose sur l'invariance de l'intensité lumineuse entre
- deux images et cherche à estimer le vecteur déplacement 
+ La mise en oeuvre classique consiste à rechercher l’optimum par un calcul
+ exhaustif sur des décalages pixelliques (en utilisant la FFT accélérer
+ les calculs), puis à interpoler une valeur subpixellique du décalage.
+ Ce calcul est répété pour des tailles de fenêtre décroissantes, afin d’améliore
+r la résolution spatiale de l’estimation du champ de déplacement.
+ Le résultat est rendu sur une grille de pixels dont le pas est défini par
+ la taille de fenêtre et le taux de recouvrement utilisé, habituellement
+ de l’ordre de 75%.
+\end_layout
+
+\begin_layout Standard
+Plusieurs travaux récents en BOS mettent en avant les avantages des méthodes
+ de flot optique dérivées de techniques proposées dans le domaine de la
+ vision par ordinateur.
+ Le flot optique est le champ des déplacements apparents entre deux images
+ d’une séquence, il est a priori défini en tout pixel.
+ Son calcul se fonde sur une approche différentielle, qu’on peut résumer
+ par l’équation du flot optique suivante:
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset Formula $(\delta x,\delta y)$
 \end_inset
 
@@ -3074,111 +3216,119 @@ r ont également prouvé leur intérêt.
  de l'image 2:
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-I_{1}(x,y,t)=I_{2}(x+\delta x,y+\delta y,t+\delta t)
+dI=\dfrac{dI}{dt}+\nabla I.u=0
 \end{equation}
 
 \end_inset
 
 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Atcheson09"
+\end_layout
 
+\begin_layout Standard
+qui indique que la différence d’apparence entre deux images (
+\begin_inset Formula $\nicefrac{dI}{dt}$
 \end_inset
 
- a mené une étude comparative entre un calcul par corrélation sur fenêtre
- et différents algorithmes de calculs par flot optiques: les algorithmes
- Lucas-Kanade(LK)(
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Lucas"
-
+) peut être expliquée par le produit entre le flot optique (
+\begin_inset Formula $u$
 \end_inset
 
-) et Horn-Schunk(HS)(
+) et le gradient spatial de l’image (
+\begin_inset Formula $\nabla I$
+\end_inset
+
+).
+ De cette équation générale, on déduit des techniques itératives d’estimation
+ du champ de déplacement en tout pixel qu’on appelle souvent « gradient
+ based ».
+ Un point important est que l’équation du flot optique ne suffit pas à détermine
+r le flot optique (elle ne fournit qu’une équation alors qu’il y a deux
+ composantes à estimer par pixel).
+ On ajoute une contrainte de régularité spatiale pour lever cette indéterminatio
+n, soit en ajoutant une pénalisation sur les dérivées du champ (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Horn"
 
 \end_inset
 
-) basés sur le gradient et l'algorithme Brox (
+), soit en imposant la constance du déplacement sur une fenêtre locale (
 \begin_inset CommandInset citation
 LatexCommand cite
-key "brox2004"
+key "Lucas"
 
 \end_inset
 
-) qui utilise une approche variationnelle.
- Au bilan, il montre que les algorithmes Lucas-Kanade (LK) et Horn-Schunck
- (HS) sont plus performant que la moyenne avec une légère avance pour le
- HS.
- Néanmoins il met en avant le fait que contrairement au HS, l'algorithme
- LK est moins sensible aux paramètres de réglage.
+) ce qui se rapproche des techniques de recalage de fenêtre locales.
+ Au final, les techniques de flot optique fournissent un résultat dense
+ (ie.
+ un vecteur déplacement estimé par pixel) et subpixellique, dont le degré
+ de lissage est réglable via un paramètre de régularisation pour les approches
+ Horn-Schunk (HS) ou le choix d’une taille de fenêtre pour les méthodes
+ dérivées de Lucas-Kanade (LK).
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Atcheson09"
+
+\end_inset
+
+ montrent que les approches par flot optiques LK ou HS sont globalement
+ plus performantes que les approches par corrélation de fenêtre, avec une
+ moindre sensibilité de LK au paramétrage.
+ Certains travaux appliquent à la BOS des méthodes de flot optique récentes
+ dérivées de l’approche HS, notamment en modifiant l’équation du flot optique
+ pour mieux correspondre aux mouvements fluides (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "liu2008,hayasaka2016"
+
+\end_inset
+
+) ou en introduisant une régularisation non quadratique « totale variation
+ » (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "letelier2016"
 
 \end_inset
 
- proposent une méthode permettant de déterminer les paramètres 
-\begin_inset Formula $(p_{1},p_{2})$
+).
+ Des gains sont observés par exemple pour l’estimation de mouvements faibles
+ et localisés (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hayasaka2016,letelier2016"
+
 \end_inset
 
- optimaux de leur algorithme de variation total avec une norme 
-\begin_inset Formula $\mathcal{L}1$
-\end_inset
-
-.
- Après avoir définit une métrique de similarité, ils comparent un post-traitemen
-t par flot optique à un post-traitement sur des fenêtres pour un ensemble
- de paramètres.
- La carte de métrique associée est alors interpolée pour trouver le meilleur
- couple 
-\begin_inset Formula $(p_{1},p_{2})$
-\end_inset
-
-.
- C'est ce choix de paramètres moyenné sur quelques images qui est alors
- utilisé sur l'ensemble du jeu de données.
- Même si un choix de paramètres automatique pour la corrélation est intéressant,
- il est ici très lourd à mettre en œuvre et très couteux en temps de calcul.
-\end_layout
-
-\begin_layout Standard
+), mais ces méthodes restent très coûteuses en calcul, notamment parce qu’elles
+ impliquent le réglage de paramètres plus nombreux et souvent plus critiques.
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "hayasaka2016"
 
 \end_inset
 
- qui utilisent une version dérivée de l'algorithme HS qui tient compte de
- la physique de l'écoulement recherché (
-\begin_inset CommandInset citation
-LatexCommand cite
-key "liu2008"
-
-\end_inset
-
-), montrent dans leur cas le gain apporté par l'utilisation du flot optique
- en terme de résolution.
- Le flot optique permet en effet d'obtenir un vecteur par pixel contrairement
- au techniques par fenêtres qui déterminent un vecteur par fenêtre.
- Les auteurs montrent que cette grande résolution est nécessaire pour bien
- capturer des ondes de chocs dans l'eau et pour correctement reconstruire
- le champ de pression associé.
- 
+ montrent également que la grande résolution apporté par le calcul par flot
+ optique leur permet de mieux capturer un phénomène très brutal comme une
+ onde de choc.
 \end_layout
 
 \begin_layout Standard
-L'ONERA a développé son propre code de flot optique baptisé Folki, basé
- sur l'algorithme LK et implémenté sous GPU (
+L’ONERA a développé son propre code de flot optique baptisé Folki, basé
+ sur l’algorithme LK et implémenté sous GPU (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Champagnat11,plyer2016"
@@ -3196,7 +3346,11 @@ key "Todoroff2013"
 \end_inset
 
  pour calculer les champs de déplacement comme pour le jet chaud présenté
- en figure 
+ en Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:folki"
@@ -3204,8 +3358,9 @@ reference "fig:biblio:folki"
 \end_inset
 
 .
- Sa rapidité de calcul est extrêmement intéressante lorsqu'il est nécessaire
- de traiter un grand nombre d'images.
+ Sa rapidité de calcul est extrêmement intéressante en BOS où il est nécessaire
+ de traiter un grand nombre d’images.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -4026,7 +4181,7 @@ key "weinstein1994,weinstein1997"
 \begin_inset Formula $13700 ft$
 \end_inset
 
- et de deux F-18 volant à Mach 1.4 à 
+ et deux F-18 volant à Mach 1.4 à 
 \begin_inset Formula $35000\, ft.$
 \end_inset
 
@@ -4335,7 +4490,12 @@ key "Kirmse11"
 
  montre qu'en appliquant un filtre de la taille de son cercle de confusion
  (qui est l'effet dominant dans son cas) à sa simulation il parvient à retrouver
- des résultats semblables à sa mesure BOS 
+ des résultats semblables à sa mesure BOS
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ 
 \begin_inset Float figure
 wide false
 sideways false
@@ -4368,7 +4528,7 @@ key "Kirmse11"
  
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:biblio:kirmse"
+name "fig:biblio:kirmse-1"
 
 \end_inset
 
@@ -4377,36 +4537,40 @@ name "fig:biblio:kirmse"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
 \end_inset
 
  
+\end_layout
+
+\end_inset
+
+(Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:biblio:kirmse"
 
 \end_inset
 
-.
+).
  
 \end_layout
 
 \begin_layout Standard
-Ota propose une solution au problème d'astigmatisme et du cercle de confusion
- en suggérant l'utilisation d'un objectif télécentrique
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ota2015"
 
 \end_inset
 
-.
+ proposent une solution au problème d'astigmatisme et du cercle de confusion
+ en suggérant l'utilisation d'un objectif télécentrique.
  Cette solution permet de travailler avec un faisceau de lumière parallèle
  et donc d'augmenter la profondeur de champ.
  Ce dernier point est très utile lorsque l'on travaille en présence d'une
@@ -4928,7 +5092,7 @@ Combinaison FBP et ART
 \end_layout
 
 \begin_layout Standard
-Tout récemment 
+Tout récemment, 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "hartmann2016"
@@ -6659,7 +6823,7 @@ Axi
 \begin_inset Text
 
 \begin_layout Plain Layout
-CBP
+FBP
 \end_layout
 
 \end_inset
@@ -6801,7 +6965,7 @@ Axi
 \begin_inset Text
 
 \begin_layout Plain Layout
-Abel/CPB
+Abel/FBP
 \end_layout
 
 \end_inset

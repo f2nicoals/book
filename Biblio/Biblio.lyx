@@ -981,7 +981,7 @@ Calculons le chemin optique le long du rayon lumineux courbe
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -996,6 +996,15 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Trajectoire d'un rayon lumineux entre deux surfaces d'onde (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Perez"
+
+\end_inset
+
+).
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:biblio:eikonal"

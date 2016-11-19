@@ -141,6 +141,30 @@
 \usepackage{calc}
 \usepackage{colortbl}
 \usepackage{xcolor}
+%%%%%%
+\usepackage[ED=MEGEP-DyF, Ets=ISAE]{tlsflyleaf} %page de garde
+%%%%%
+%% Titre, auteur, date, laboratoire, cotutelle
+\title{Reconstruction de champs instantanés de masse volumique par BOS 3D. Application à l'étude des écoulments complexes en grande soufflerie.}
+\author{François NICOLAS}
+\defencedate{Date de défense (JJ/MM/AAAA)}
+\lab{Nom du laboratoire (UMR)}
+%\cotutelle{Institut de cotutelle}
+
+%% Directeur(s) de thèse
+\nboss{2}                                    % Nombre de directeur(s) de thèse
+\makesomeone{boss}{2}{David DONJAT}{}{}  % Sera affiché en second
+\makesomeone{boss}{1}{Grégoire CASALIS}{}{} % Sera affiché en premier
+%% Referee
+\nreferee{2}
+\makesomeone{referee}{1}{Premier RAPPORTEUR}{}{}
+\makesomeone{referee}{2}{Second RAPPORTEUR}{}{}
+%% Jury
+\njudge{3}
+\makesomeone{judge}{1}{Premier MEMBRE}{Professeur d'Université}{Président du Jury}
+\makesomeone{judge}{2}{Second MEMBRE}{Astronome Adjoint}{Membre du Jury}
+\makesomeone{judge}{3}{Troisième MEMBRE}{Chargé de Recherche}{Membre du Jury}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \include{alphabet}
@@ -174,10 +198,6 @@
 %\setlength{\intextsep}{0pt plus 2pt minus 2pt}
 \end_preamble
 \use_default_options true
-\begin_includeonly
-math-macro.lyx
-Biblio/Biblio.lyx
-\end_includeonly
 \maintain_unincluded_children false
 \language french
 \language_package default
@@ -269,6 +289,22 @@ status open
 
 \backslash
 dominitoc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+makeflyleaf
 \end_layout
 
 \end_inset

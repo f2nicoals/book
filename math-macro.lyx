@@ -156,14 +156,14 @@ description "pseudo-période de l'amplification du mode 1"
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\myepsilon}{\boldsymbol{\epsilon}}
-{\boldsymbol{\epsilon}}
+\newcommand{\myepsilon}{\boldsymbol{\varepsilon}}
+{\boldsymbol{\varepsilon}}
 \end_inset
 
 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "$\\epsilon$"
+symbol "$\\boldsymbol{\\varepsilon}$"
 description "déviation lumineuse"
 
 \end_inset
@@ -190,8 +190,8 @@ description "critère des moindres carrés régularisés"
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\myA}{\mathcal{\mathcal{A}}}
-{\mathcal{\mathcal{A}}}
+\newcommand{\myA}{\boldsymbol{A}}
+{\boldsymbol{A}}
 \end_inset
 
 
@@ -216,6 +216,74 @@ description "Opérateur direct"
 LatexCommand nomenclature
 symbol "$\\mathcal{J}$"
 description "Terme de régualrisation"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myD}{\boldsymbol{D}}
+{\boldsymbol{D}}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\mathcal{D}$"
+description "Opérateur de dérivation"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myT}{\boldsymbol{T}}
+{\boldsymbol{T}}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\mathcal{T}$"
+description "Opérateur de tomographie"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myB}{\boldsymbol{B}}
+{\boldsymbol{B}}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\mathcal{B}$"
+description "Opérateur BOS 2.0"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myP}{\boldsymbol{P}}
+{\boldsymbol{P}}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\mathcal{P}$"
+description "Opérateur de projection"
 
 \end_inset
 
@@ -385,6 +453,23 @@ description "Direction d'entrée du rayon lumineux"
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\textbf{d_{out}}$"
+description "Direction de sortie du rayon lumineux"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mydos}{\textbf{d_{out}^{*}}}
+{\textbf{d_{out}^{*}}}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\textbf{d^*_{out}}$"
 description "Direction de sortie du rayon lumineux"
 
 \end_inset

@@ -126,12 +126,7 @@ L'objectif de ce chapitre est de démontrer la faisabilité d'une mesure BOS
  Au-delà de ce changement d'échelle, nous étudions ici les contraintes liées
  à l'environnement même de cette soufflerie: vibrations, déformations, monté
  en température.
- Ces essais ont eu lieu du 29 juin au 10 juillet 2015 dans le cadre du projet
- Carnot 
-\shape italic
-BOS 3D
-\shape default
-.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -146,16 +141,24 @@ Contexte
 \end_layout
 
 \begin_layout Subsection
-Motivations
+Carnot BOS 3D
 \end_layout
 
 \begin_layout Standard
-Le Carnot BOS 3D s'est achevé à l'été 2015 par une démonstration dans l'immense
- soufflerie S1MA de l'ONERA à Modane.
+Le Carnot BOS 3D qui s'est déroulé sur 3 ans avait pour objectif de développer
+ un moyen expérimental ainsi qu'une plateforme logicielle pour le traitement
+ 3D des champs de masse volumique instantanés.
+ Il impliquait à la fois le DMAE, le DTIM et le département des souffleries
+ de Modane-Avrieux (DSMA).
+ Il s'est achevé par une application en soufflerie industrielle avec une
+ démonstration dans l'immense soufflerie S1MA de l'ONERA à Modane.
+ Ces essais, assez exceptionnels du point de vue des moyens mis en œuvre,
+ résultent d'une volonté d'équiper les grands moyens techniques (GMT) de
+ l'ONERA de nouveaux outils métrologiques.
+ Ils ont par ailleurs été menés durant l'été 2015, du 29 juin au 10 juillet
+ 2015.
  La première semaine ayant été consacrée à l'installation, les essais à
  proprement parlé ont eu lieu du 6 au 8 juillet.
- Le caractère exceptionnel de ces essais résulte d'une volonté d'équiper
- les grands moyens techniques (GMT) de l'ONERA de nouveaux outils métrologiques.
  Cette campagne de mesure représente également un challenge de part le fait
  que 2 ans à peine se sont écoulés depuis les premiers essais BOS 3D réalisés
  sur la géode au DMAE (
@@ -166,11 +169,11 @@ key "Todoroff2013"
 \end_inset
 
 ).
- En plus des équipes du DMAE et du DTIM, de nombreuses personnes de GMT
- ont été impliquées: des ingénieur d'essais pour la préparation et le suivi
- de la campagne, le bureau d'étude pour la conception de la maquette et
- de son support, des monteurs et instrumentistes.
- Toute cette équipe est visible sur la figure 
+ De nombreuses personnes ont été impliquées dans cette campagne d'essais:
+ des ingénieur d'essais pour la préparation et le suivi de la campagne,
+ le bureau d'étude pour la conception de la maquette et de son support,
+ des monteurs et instrumentistes.
+ Toute l'équipe est présentée sur la Figure 
 \begin_inset Float figure
 placement h
 wide false
@@ -225,8 +228,9 @@ reference "fig:S1MA:equipe"
 \begin_layout Standard
 L'objectif de cette première démonstration était de mettre en œuvre le système
  BOS 3D complet (12 caméras, mouchetis et laser) dans cet environnement
- complexe et d'acquérir des mesures à un Mach de vol de 0.85, représentatif
- des conditions de croisière pour les avions civil.
+ complexe et d'acquérir des mesures dans des conditions variées et jusqu'à
+ un Mach de vol de 0.85, représentatif des conditions de croisière pour les
+ avions civil.
 \end_layout
 
 \begin_layout Subsection
@@ -274,7 +278,11 @@ La soufflerie S1MA représente une prise de guerre de l'armée française à
 \begin_layout Standard
 Depuis son entrée en service en 1950, la plupart des grand projets aéronautiques
  français sont passés à S1MA, comme le Concorde, le Rafale, l'A400M ou l'A380
- dont la maquette est visible sur la figure 
+ dont la maquette est visible sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
@@ -286,52 +294,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/S1MA.png
-	lyxscale 30
-	width 46text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Illustration du circuit aérodynamique de S1MA et des 3 charriots interchangeable
-s.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:S1MA:schema"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -365,6 +328,50 @@ name "fig:A380"
 \end_inset
 
 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/S1MA.png
+	lyxscale 30
+	width 46text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Illustration du circuit aérodynamique de S1MA et des 3 chariots interchangeables.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:schema"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -382,7 +389,7 @@ name "fig:A380"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:A380"
@@ -390,16 +397,19 @@ reference "fig:A380"
 \end_inset
 
 .
- Afin d'optimiser les essais, 3 chariots interchangeables cohabitent (figure
- 
+ Une vue globale du circuit aérodynamique de S1MA est présenté en Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:schema"
 
 \end_inset
 
-): pendant que des essais ont lieu en veine, les essais suivant peuvent
- être préparés dans les autres charriots.
+ : la veine peut être occupée par trois chariots interchangeables de sorte
+ à optimiser le fonctionnement.
 \end_layout
 
 \begin_layout Subsection
@@ -411,7 +421,7 @@ Contraintes
 \end_layout
 
 \begin_layout Standard
-Dans une installation d'un tel gigantisme, un certains nombre de contraintes
+Dans une installation d'une telle taille, un certain nombre de contraintes
  et de problématiques rendent difficile le déploiement de la technique BOS
  3D: 
 \end_layout
@@ -431,8 +441,9 @@ status open
 
 D'une part, les accès optiques sont ici bien plus étroits que les larges
  panneaux vitrés dont nous disposions à F2.
- De plus, certains logements caméras ne sont pas accessible pendant le fonctionn
-ement de la soufflerie, empêchant toute intervention au cours de l'essai.
+ De plus, certains logements caméras ne sont pas accessibles pendant le
+ fonctionnement de la soufflerie, empêchant toute intervention au cours
+ de l'essai.
 \end_layout
 
 \begin_layout Itemize
@@ -448,8 +459,8 @@ status open
 
 \end_inset
 
-Les mouchetis qui seront collés sur les parois de la veine seront exposés
- à un écoulement à Mach 0.85.
+Les mouchetis qui sont collés sur les parois de la veine sont exposés à
+ un écoulement à Mach 0.85.
 \end_layout
 
 \begin_layout Itemize
@@ -506,27 +517,24 @@ De plus, en raison de l'échauffement de l'air par frottements, la température
 \begin_inset Formula $50\,°C$
 \end_inset
 
-.
- Ce phénomène thermique peut induire de la dilatation sur la structure de
- la veine et également des perturbations sur des images de références prises
- à la fin d'une rotation.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Argument item:1
+ et peut induire de la dilatation sur la structure de la veine.
+ 
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-\begin_inset Formula $\bullet$
+et également des perturbations sur des images de références prises à la
+ fin d'une rotation.
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\end_inset
-
-Enfin, une contrainte sur la conception du banc maquette impose un montage
- issu de l'aval de la soufflerie.
+\begin_layout Standard
+Enfin, une contrainte supplémentaire sur la conception du banc maquette
+ impose un montage issu de l'aval de la soufflerie.
 \end_layout
 
 \begin_layout Subsubsection
@@ -539,13 +547,16 @@ L'objectif ici n'était pas tant d'étudier un phénomène physique particulier
  Pour des questions de simplicité, nous avons étudié un jet à contre-courant.
  En effet, si ce choix peut sembler peu commun, il concilie notre contrainte
  liée à l'absence de maquette dans le champ de vue, et les contrainte soufflerie
-s qui impose un montage à partir du tripode (visible en vert sur la figure
- 
+s qui impose un montage à partir du tripode (visible en vert sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -766,7 +777,7 @@ name "fig:S1MA:buse"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:tripode"
@@ -777,7 +788,11 @@ reference "fig:S1MA:tripode"
 \end_layout
 
 \begin_layout Standard
-Le système illustré par des couleurs sur la figure 
+Le système illustré par des couleurs sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:tripode"
@@ -786,8 +801,7 @@ reference "fig:S1MA:tripode"
 
  fonctionne donc comme suit: le dard FLA7 (en rouge) qui supporte l'arrivée
  d'air haute pression (HP) (bleu) est monté sur le tripode.
- Le jet est finalement généré par une buse (grise) montée à l'extrémité
- du dard.
+ Le jet est généré par une buse (grise) montée à l'extrémité du dard.
  Deux types de buses sont testées: une simple buse de 
 \begin_inset Formula $80\, mm$
 \end_inset
@@ -796,16 +810,25 @@ reference "fig:S1MA:tripode"
 \begin_inset Formula $56.6\, mm$
 \end_inset
 
- de diamètre 
+ de diamètre (voir Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:buse"
 
 \end_inset
 
-.
- Ainsi, les 2 buses présentent la même aire dans leur section de sortie.
- Sur le plan en figure 
+).
+ Ainsi, les 2 types de buses présentent la même aire dans leur section de
+ sortie.
+ Sur le plan en Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:buse_simple_1"
@@ -817,7 +840,7 @@ reference "fig:S1MA:buse_simple_1"
  Les deux buses sont instrumentées avec une prise de pression et de température
  statiques.
  Ce montage permet d'atteindre un débit d'air maximal de 
-\begin_inset Formula $3.4\, kg/s$
+\begin_inset Formula $3.0\, kg/s$
 \end_inset
 
 .
@@ -825,7 +848,7 @@ reference "fig:S1MA:buse_simple_1"
 
 \begin_layout Standard
 Comme nous l'avons dit cette configuration de jet à contre courant est plutôt
- originale.
+ inhabituelle.
  Elle se rapproche néanmoins des études liées à du contrôle d'écoulement
  en régime supersonique ou hypersonique.
  Ce type de contrôle utilise une injection fluidique (parfois réalisée au
@@ -870,10 +893,9 @@ Dimensionnement du montage
 Encore une fois, l'originalité de cette configuration rend difficile la
  préparation de l'essai notamment concernant la distance de pénétration
  du jet dans l'écoulement de la soufflerie.
- Afin de correctement dimensionner notre montage: choix la focale caméra
- qui permettra de visualiser l'écoulement d'intérêt et par conséquent la
- taille des points du mouchetis, nous avons réaliser une simulation numérique
- RANS 2D axisymmétrique au moyen du logiciel 
+ Afin de correctement dimensionner notre montage, et notamment le choix
+ de la focale caméra et la taille des points du mouchetis, nous avons réalisé
+ une simulation numérique RANS 2D axisymmétrique au moyen du logiciel 
 \shape italic
 elsA
 \shape default
@@ -881,7 +903,11 @@ elsA
  Ce calcul CFD a été effectué sur la configuration objectif de l'essai à
  savoir une vitesse veine de Mach 0.85, et un jet débouchant de la simple
  buse convergente à Mach 1.05.
- L'ensemble des paramètres du calcul est résumé sur la figure 
+ L'ensemble des paramètres du calcul est résumé sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
@@ -924,7 +950,7 @@ name "fig:S1MA:simu"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:simu"
@@ -935,7 +961,11 @@ reference "fig:S1MA:simu"
 \end_layout
 
 \begin_layout Standard
-Sur la figure 
+Sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:RANS"
@@ -946,7 +976,11 @@ reference "fig:S1MA:RANS"
 \begin_inset Formula $V_{x}$
 \end_inset
 
- ( 
+ (Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -1138,7 +1172,11 @@ reference "fig:S1MA:Vx"
 \begin_inset Formula $V_{y}$
 \end_inset
 
- (
+ (Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:Vy"
@@ -1149,7 +1187,11 @@ reference "fig:S1MA:Vy"
 \begin_inset Formula $M$
 \end_inset
 
- (
+ (Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:M"
@@ -1160,7 +1202,11 @@ reference "fig:S1MA:M"
 \begin_inset Formula $\myrho$
 \end_inset
 
- (
+ (Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:rho"
@@ -1188,11 +1234,11 @@ Ce calcul de dimensionnement nous permet d'estimer la longueur de pénétration
 \end_inset
 
 .
- Pour notre montage BOS 3D cela se traduit par l'emploie de focales de 
+ Pour notre montage BOS 3D cela se traduit par l'emploi de focales de 
 \begin_inset Formula $70\, mm$
 \end_inset
 
- sur nos caméras et l'utilisation de panneaux de mouchetis de 
+ et l'utilisation de panneaux de mouchetis de 
 \begin_inset Formula $1\, m$
 \end_inset
 
@@ -1297,12 +1343,16 @@ Pour anticiper le problème des vibrations deux actions ont été menées:
 \begin_layout Standard
 D'une part, un accéléromètre a été installé sur une caméra puis testé au
  cours d'un essai.
- L'évolution du spectre associé au vibrations en fonction du nombre de Mach
- est présenté sur la figure 
+ L'évolution du spectre associé aux vibrations en fonction du nombre de
+ Mach est présenté sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1342,7 +1392,7 @@ name "fig:S1MA:frequences_vibrations"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:frequences_vibrations"
@@ -1350,7 +1400,7 @@ reference "fig:S1MA:frequences_vibrations"
 \end_inset
 
 .
- Sur cette figure on peut constater qu'il y a surtout un phénomène basse
+ Sur cette Figure on peut constater qu'il y a surtout un phénomène basse
  fréquence, autour de 
 \begin_inset Formula $55\, Hz$
 \end_inset
@@ -1372,7 +1422,11 @@ key "olson2011"
 \end_inset
 
 ) ont été rajoutés sur le mouchetis.
- Ce type de marqueurs dont un exemple est visible en figure 
+ Ce type de marqueurs dont un exemple est visible en Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -1469,23 +1523,26 @@ name "fig:S1MA:veine3D"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:apriltag"
 
 \end_inset
 
- a été développé pour des applications de vision par ordinateur dans le
+, a été développé pour des applications de vision par ordinateur dans le
  domaine de la robotique.
  Nous les avons collés sur le mouchetis, dans les coins des champs de vue
  caméra.
- En cas de vibrations trop intenses ces marqueurs permettraient d'estimer
+ En cas de vibrations trop intenses ces marqueurs permettront d'estimer
  le mouvement entre les caméras et le mouchetis et de corriger les images
  en conséquence.
  De plus, le DTIM a utilisé ses marqueurs pour réaliser des mesures tridimension
-nelle de la géométrie de la veine dont un exemple est présenté en figure
- 
+nelle de la géométrie de la veine dont un exemple est présenté en Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:apriltag"
@@ -1518,7 +1575,11 @@ Mise en œuvre de la BOS 3D à S1MA
 \end_layout
 
 \begin_layout Standard
-L'ensemble du système BOS 3D mis en œuvre à S1MA visible sur la figure 
+L'ensemble du système BOS 3D mis en œuvre à S1MA visible sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
@@ -1562,7 +1623,7 @@ name "fig:S1MA:montage_BOS3D"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:montage_BOS3D"
@@ -1570,7 +1631,7 @@ reference "fig:S1MA:montage_BOS3D"
 \end_inset
 
  s'inspire fortement du montage réalisé à F2.
- L'évolution majeur concerne l'emploi d'un nouveau switch 
+ L'évolution majeure concerne l'emploi d'un nouveau switch 
 \shape italic
 Enterasys 24 port
 \shape default
@@ -1599,7 +1660,11 @@ Installation des caméras
 \end_layout
 
 \begin_layout Standard
-Comme nous l'avons dans le chapitre 
+Comme nous l'avons vu dans le chapitre
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:BOS3D"
@@ -1610,7 +1675,11 @@ reference "chap:BOS3D"
  couronne.
  Nous répartissons donc nos 12 caméras par paires, derrière les différents
  hublots, sur la partie supérieure de la veine.
- Les caméras et leur positions sont représentées en figure 
+ Les caméras et leur positions sont représentées en Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:montage_BOS3D"
@@ -1622,7 +1691,7 @@ reference "fig:S1MA:montage_BOS3D"
  le nombre important de hublots sur le chariot que nous utilisons et la
  petite taille de nos caméras nous permet de les disposer autour de la veine
  sans trop de difficultés.
- Chacune de nos caméra est équipée d'un objectif de 
+ Chacune des caméras est équipée d'un objectif de 
 \begin_inset Formula $70\, mm$
 \end_inset
 
@@ -1655,15 +1724,20 @@ Nous employons des panneaux de mouchetis de
  Le mouchetis est appliqué sur les parois nettoyées de la veine, en face
  des caméras.
  Comme nous le verrons par la suite, ce type de mouchetis a très bien fonctionné
-, excepté en présence de défauts de surface qui ont pu compromettre sont
+, excepté en présence de défauts de surface qui ont pu compromettre son
  intégrité.
- En effet, lors de la première rotation, lorsque l'on a atteint Mach 0.7,
- des bulles se sont formées sous certains panneaux de mouchetis 
+ En effet, lors de la première rotation, lorsque Mach 0.7 a été atteint,
+ des bulles se sont formées sous certains panneaux de mouchetis, comme illustré
+ en Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1732,8 +1806,8 @@ Panneaux de mouchetis collés sur la veine avec bords d'attaque renforcé
  par du scotch aluminium.
  On distingue également les marqueurs AprilTags utilisés pour la reconstruction
  stéréoscopique de la veine.
- Les dommages causés par l'apparition de bulles au cours de s premiers essais
- est clairement visible a posteriori sur la photo de droite.
+ Les dommages causés par l'apparition de bulles au cours de ces premiers
+ essais sont clairement visible a posteriori sur la photo de droite.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -1772,7 +1846,11 @@ bord d'attaque
 \end_inset
 
  des panneaux de mouchetis également renforcé avec une bande de scotch aluminium
- 
+ également visible sur al Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:mouchetis"
@@ -1800,7 +1878,11 @@ Nous reprenons ici le même type de montage que celui utilisé à F2, à savoir
 \end_inset
 
  par pulse.
- Le laser et sa table de séparation visibles en figure 
+ Le laser et sa table de séparation sont présentés en Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
@@ -1810,8 +1892,8 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/laser.png
-	lyxscale 20
+	filename Images/laser2.jpg
+	lyxscale 10
 	width 50text%
 
 \end_inset
@@ -1841,15 +1923,16 @@ name "fig:S1MA:laser"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:laser"
 
 \end_inset
 
-, sont installés dans un local climatisé au-dessus de la soufflerie tandis
- que de nouveaux guides de lumières 
+.
+ En pratique ils ont été installés dans un local climatisé au-dessus de
+ la soufflerie tandis que de nouveaux guides de lumières 
 \shape italic
 Rayvision
 \shape default
@@ -1861,12 +1944,12 @@ Rayvision
 \begin_inset Formula $10\, m$
 \end_inset
 
- permettent d'amener les faisceau jusqu'aux différents hublots.
+ permettaient d'amener les faisceaux jusqu'aux différents hublots.
  Enfin, nous installons des lentilles divergentes de 
 \begin_inset Formula $50\, mm$
 \end_inset
 
- pour éclater le faisceau sur un diamètre de près d'
+ pour éclater chaque faisceau sur un diamètre de près d'
 \begin_inset Formula $1\, m$
 \end_inset
 
@@ -1875,18 +1958,23 @@ Rayvision
 
 \begin_layout Standard
 La quantité de lumière disponible nous contraint à travailler avec une ouverture
-s caméras de 
+ de 
 \begin_inset Formula $f_{\#}=2$
 \end_inset
 
 .
- Ce grande ouverture conduit à un cercle de confusion au niveau de l'écoulement
- relativement important de près de 
+ Cette valeur d'ouverture conduit à un cercle de confusion au niveau de
+ l'écoulement relativement important de près de 
 \begin_inset Formula $18\, mm$
 \end_inset
 
  et donc à une perte de résolution spatiale de la technique.
- En fin de campagne nous avons testé une configuration d'éclairage différente:
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+En fin de campagne nous avons testé une configuration d'éclairage différente:
  nous nous somme placé en configuration de BOS 2D en ne gardant qu'une caméra
  et, en regroupant les illuminateurs sur un panneau de mouchetis.
  De ce fait, nous avons travailler à 
@@ -1900,21 +1988,36 @@ s caméras de
 .
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-A noté qu'au cours des essais, une lame semi-séparatrice a été endommagée
- par le laser 
+A noter qu'au cours des essais, une lame semi-séparatrice a été endommagée
+ par le laser
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:laser"
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
 , probablement à cause d'une poussière qui s'est déposée à sa surface.
  Cela a fortement impacté l'intensité lumineuse transmise aux caméras 4
  et 10 situées à l'horizontale.
- Ces images plus sombres et moins contrastées sont néanmoins utilisables,
- la seule conséquence est un baisse du rapport signal sur bruit dans le
- calcul de corrélation.
+ Ces images plus sombres et moins contrastées conduisent à une diminution
+ du rapport signal à bruit en sortie de corrélation, mais les mesures restent
+ exploitables
 \end_layout
 
 \begin_layout Subsection
@@ -1927,7 +2030,11 @@ Nous avons adapté notre processus de calibration aux dimensions de S1MA
 \begin_inset Formula $80\, cm\,\times\,80\, cm$
 \end_inset
 
- sur un panneau en nid d'abeille 
+ sur un panneau en nid d'abeille visible sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:calib"
@@ -1938,7 +2045,12 @@ reference "fig:S1MA:calib"
  Grâce à un système de fixation conçu par impression 3D nous pouvons fixer
  la mire directement sur les différentes buses afin de connaitre précisément
  la position du référentiel mire par rapport à celui de la buse.
- Chaque calibration se déroule en 2 phases: la prise d'une image de référence
+ Chaque calibration se déroule en 2 phases: d'abord la prise d'une image
+ de référence (Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
@@ -2082,13 +2194,25 @@ reference "fig:S1MA:calib_ref"
 
 \end_inset
 
- avec la mire fixée sur la buse puis l'enregistrement en continu d'une soixantai
-ne de points de vue pendant lequel un opérateur déplace la mire dans le
- champ de vue des caméras 
+) avec la mire fixée sur la buse puis l'enregistrement en continu d'une
+ soixantaine d'images pendant qu'un opérateur déplace la mire dans le champ
+ de vue des caméras (Figures
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:calib_acq1"
 
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+et
+\begin_inset space ~
 \end_inset
 
 
@@ -2098,21 +2222,21 @@ reference "fig:S1MA:calib_acq2"
 
 \end_inset
 
-.
+).
  
 \end_layout
 
 \begin_layout Standard
 Nous vérifions la qualité de notre calibration tout d'abord de manière visuelle
- en inspectant sur la figure 
+ en inspectant sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2228,10 +2352,21 @@ name "fig:S1MA:erreur_quad"
 
 \end_inset
 
-la position et l'orientation des caméras dans l'espace.
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:camera_position"
+
+\end_inset
+
+ la position et l'orientation des caméras dans l'espace.
  On retrouve ici les 12 caméras réparties 2 par 2 derrière chaque hublot
  et positionnées autour du volume de mesure visible au centre.
- La figure 
+ La Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:erreur_quad"
@@ -2257,7 +2392,11 @@ Déroulement des essais
 Au cours des 2 jours et demi d'essais les deux types de buse sont testés
  en commençant par la buse simple.
  Nous avons travaillé par demi-journée en se rapprochant du modèle présenté
- en figure 
+ en Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -2268,7 +2407,7 @@ status collapsed
 \begin_inset Graphics
 	filename Images/deroulement.pdf
 	lyxscale 40
-	width 70text%
+	width 65text%
 
 \end_inset
 
@@ -2294,7 +2433,7 @@ name "fig:S1MA:deroulement"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:deroulement"
@@ -2314,7 +2453,7 @@ reference "fig:S1MA:deroulement"
 \end_inset
 
 .
- Puis pour chaque conditions d'essais nous avons autant que possible réalisé
+ Puis pour chaque condition d'essai nous avons autant que possible réalisé
  des acquisitions avec la soufflerie seule puis en rajoutant le jet.
  Enfin, pour vérifier la qualité de nos images de références et s'assurer
  que le système n'a pas bougé pendant le fonctionnement de la soufflerie,
@@ -2334,12 +2473,16 @@ n des parois.
 \end_layout
 
 \begin_layout Standard
-Pour chaque configuration, l'ensemble des points de mesure testés en Mach
- et en débit est rappelé dans la matrice d'essais 
+Pour chaque configuration, l'ensemble des points de mesure de la matrice
+ d'essais est rappelé dans la Table
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4017,7 +4160,7 @@ X
 
 \begin_layout Plain Layout
 Matrices d'essais.
- Les configurations faisant l'objet d'une reconstruction 3D sont indiquée
+ Les configurations faisant l'objet d'une reconstruction 3D sont indiquées
  en vert.
  
 \begin_inset CommandInset label
@@ -4036,7 +4179,7 @@ name "tab:S1MA:matrice"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:S1MA:matrice"
@@ -4045,10 +4188,10 @@ reference "tab:S1MA:matrice"
 
 .
  Parmi ce grand nombre de configurations seules 2 conditions d'essais ont
- fait l'objet d'une reconstruction 3D par manque de temps.
+ fait l'objet d'une reconstruction 3D.
  Elles ont toutefois permis d'aborder différentes problématiques de mesures
- dans un tel environnement et de proposer des stratégies de post-traitement
- que nous allons détaillons par la suite.
+ en grande soufflerie et de proposer des stratégies de post-traitement que
+ nous allons détaillons par la suite.
 \end_layout
 
 \begin_layout Standard
@@ -4085,7 +4228,11 @@ BOS 2D
 \end_layout
 
 \begin_layout Standard
-Nous présentons en figure 
+Nous présentons en Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
@@ -4161,7 +4308,7 @@ name "fig:S1MA:matrice"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:matrice"
@@ -4182,14 +4329,14 @@ reference "fig:S1MA:matrice"
 ).
  Les mesures instantanées offrent également une très belle visualisation
  des ondes acoustiques qui naissent aux niveau des lèvres de la buse et
- se propage vers l'aval du jet.
+ se propagent vers l'aval du jet.
  Pour le cas à débit de 
 \begin_inset Formula $2.5\, kg/s$
 \end_inset
 
-, d'autres ondes acoustiques qui se propage vers l'amont se superposent
+, d'autres ondes acoustiques qui se propagent vers l'amont se superposent
  aux premières: elles sont liées à la présence de sources acoustiques au
- niveau des sommet des des cellules de chocs.
+ niveau des sommets des cellules de chocs.
  On peut également apercevoir sur ces champs de déplacement l'empreinte
  des marqueurs 
 \shape italic
@@ -4227,18 +4374,37 @@ A partir des champs de déplacements moyennés sur
 \begin_inset Formula $900$
 \end_inset
 
- images (visible en bas à droite de la figure 
+ images (dont un exemple est visible en bas à droite de la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:matrice"
 
 \end_inset
 
-) et de la calibration, les cartes de déviations ont pu être calculées.
+) et de la calibration, les cartes de déviations sont calculées selon le
+ procédé décrit au chapitre
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:BOS3D"
+
+\end_inset
+
+.
  Nous reconstruisons ensuite le champ de masse volumique en imposant la
  valeur de la masse volumique à l'extérieur du jet.
- La reconstruction, soufflerie à l'arrêt (sans vent), obtenue pour le paramètre
- de régularisation optimal est présentée en figure 
+ La reconstruction, soufflerie à l'arrêt (sans vent) est présentée en Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
@@ -4278,7 +4444,7 @@ name "fig:S1MA:sans_vent"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:sans_vent"
@@ -4329,8 +4495,8 @@ nt de la soufflerie avec toutes les problématiques de vibrations, d'échauffeme
  De plus, en étudiant ce cas à faible débit (vis à vis de l'écoulement amont),
  la distance de pénétration du jet reste relativement faible.
  Ceci garantit la présence d'une zone non perturbée par l'écoulement en
- dehors du jet.
- 
+ dehors du jet, zone qui sera utile pour la correction des données, comme
+ nous le verrons par la suite.
 \end_layout
 
 \begin_layout Subsubsection
@@ -4338,7 +4504,7 @@ Problématique
 \end_layout
 
 \begin_layout Standard
-Les champs de déplacements associés à ce point de fonctionnement (figure
+Les champs de déplacements associés à ce point de fonctionnement (Figure
  
 \begin_inset Float figure
 placement h
@@ -4463,15 +4629,23 @@ reference "fig:S1MA:deplacements_bruts"
 \end_inset
 
 ) illustrent clairement le problème rencontré: les déplacements lié à la
- présence du jet à contre-courant sont complètement noyés dans un bruit
- de 5 à 6 pixel en norme, qui affecte l'ensemble de l'image.
- 
+ présence du jet à contre-courant sont complètement noyés dans un déplacement
+ global assez lisse de norme moyenne proche de 5 pixels.
 \end_layout
 
 \begin_layout Standard
-Ces résultats nous laissent penser dans un premier temps que les vibrations
+C
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+es résultats nous laissent penser dans un premier temps que les vibrations
  ont eu un impact plus négatif que prévu et qu'elles ont largement affecté
  la mesure.
+\end_layout
+
+\end_inset
+
  
 \begin_inset Note Note
 status open
@@ -4492,9 +4666,9 @@ La déformation de la veine sous la charge aérodynamique ou encore la dilatatio
 \end_layout
 
 \begin_layout Standard
-Par la suite, nous cherchons à comprendre les phénomènes mis en jeu et à
- les mitiger pour pouvoir exploiter les données et reconstruire un champ
- de masse volumique lorsque la soufflerie est en fonctionnement.
+Dans la suite de cette section, nous cherchons à comprendre les phénomènes
+ mis en jeu et à les corriger pour pouvoir exploiter les données et reconstruire
+ un champ de masse volumique lorsque la soufflerie est en fonctionnement.
  
 \end_layout
 
@@ -4531,7 +4705,7 @@ nts horizontaux et verticaux (u et v) associés au repère caméra.
 \begin_inset Formula $200\,\times\,200$
 \end_inset
 
- pixels (figure 
+ pixels (Figure 
 \begin_inset Float figure
 wide false
 sideways false
@@ -4577,11 +4751,11 @@ reference "fig:S1MA:moyennes"
 
 ).
  Nous calculons également les écarts types associés (
-\begin_inset Formula $u_{p}$
+\begin_inset Formula $U_{p}$
 \end_inset
 
  et 
-\begin_inset Formula $v_{p}$
+\begin_inset Formula $V_{p}$
 \end_inset
 
 ).
@@ -4591,7 +4765,7 @@ reference "fig:S1MA:moyennes"
 En présence de l'écoulement de la soufflerie uniquement, on devrait s'attendre
  à obtenir des déplacements nuls en moyenne, le milieu étant homogène.
  Malheureusement ce n'est pas le cas.
- Comme on peut le voir en figure 
+ Comme on peut le voir en Figure 
 \begin_inset Float figure
 placement h
 wide false
@@ -4735,7 +4909,21 @@ name "fig:S1MA:Vp_mach"
 
 \begin_layout Plain Layout
 Evolution du mouvement moyen des mouchetis en fonction du Mach soufflerie.
- 
+ a) Norme des déplacements moyens 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ b) Ecart-types horizontaux moyens 
+\begin_inset Formula $U_{p}$
+\end_inset
+
+.
+ c) cart-types verticaux moyens 
+\begin_inset Formula $V_{p}$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -4752,7 +4940,7 @@ reference "fig:S1MA:N_mach"
 
 \end_inset
 
- la norme 
+, la norme 
 \begin_inset Formula $N=\sqrt{U^{2}+V^{2}}$
 \end_inset
 
@@ -4760,17 +4948,29 @@ reference "fig:S1MA:N_mach"
  Mach devient important pour atteindre un maximum à Mach 0.7 de 17 pixels
  ! Bien que ces valeurs de déplacements varient d'une caméra à l'autre,
  la tendance reste la même.
- De plus, en suivant l'évolution des déplacements, on peut reconnaitre les
+ De plus, en suivant l'évolution des déplacements, on peut reconnaître les
  couples de caméras associées à chaque hublot car elles présentent des comportem
 ents identiques.
- Au contraire, les écart-types 
+ Au contraire, les écart-types présentés en Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:Up_mach"
 
 \end_inset
 
-, 
+
+\begin_inset space ~
+\end_inset
+
+et
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:Vp_mach"
@@ -4813,7 +5013,7 @@ FloatBarrier
 status open
 
 \begin_layout Plain Layout
-Pour mieux appréhender le phénomène, nous représentons en figure .
+Pour mieux appréhender le phénomène, nous représentons en Figure .
  les déplacements u et v en mm, associés à chaque caméra.
  Il apparait clairement que tous les déplacements sur U sont orientés dans
  le sens de l'écoulement tandis que les déplacements en V semble indiquer
@@ -4837,7 +5037,11 @@ Pour mettre en place notre correction, nous faisons tout d'abord l'hypothèse
  que le mouchetis a subi un mouvement de translation.
  Il devrait alors être possible de supprimer ce mouvement en mesurant un
  déplacement moyen dans une zone non perturbée par l'écoulement.
- Sur la figure 
+ Sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
@@ -4955,24 +5159,24 @@ name "fig:S1MA:simple"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:simple"
 
 \end_inset
 
- on peut voir des champs de déplacement corrigé à partir du déplacement
+ on peut voir des champs de déplacement corrigés à partir du déplacement
  moyen calculé dans la fenêtre rouge de 
 \begin_inset Formula $200\,\times\,100$
 \end_inset
 
  pixels.
  Si la correction fait clairement ressortir la topologie du jet, une forte
- discontinuité apparait désormais au sein de l'image au niveau de la jointure
- présente sur la paroi.
+ discontinuité apparaît désormais au niveau de la jointure présente sur
+ la paroi.
  Cette observation implique bien un mouvement du mouchetis mais également
- des mouvements disjoints des différents éléments qui constitue la veine.
+ des mouvements disjoints des différents éléments qui constituent la veine.
  La correction précédente est donc insuffisante pour corriger de manière
  satisfaisante ce type de perturbation.
 \end_layout
@@ -4982,7 +5186,11 @@ Nous poussons donc le concept un peu plus loin et choisissons de corriger
  le mouvement de chaque élément de paroi de manière indépendante.
  Cela nécessite donc de distinguer 2 zones sur chaque image et de soustraire
  le mouvement global de chacune des zones.
- A nouveau sur la figure 
+ A nouveau sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
@@ -5099,18 +5307,18 @@ name "fig:S1MA:double"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:double"
 
 \end_inset
 
- la correction correction est appliquée en calculant les déplacements moyens
- sur la fenêtre rouge pour la partie supérieure de l'image et sur la fenêtre
- noire pour la partie inférieure.
+, la correction est appliquée en calculant les déplacements moyens sur la
+ fenêtre rouge pour la partie supérieure de l'image et sur la fenêtre noire
+ pour la partie inférieure.
  Les caméras qui ne visualisent pas de discontinuités ne nécessite qu'une
- fenêtre bien évidement.
+ fenêtre bien évidemment.
  Cette approche améliore le résultat mais elle ne semble pas suffisante:
  en effet, si on obtient bien une continuité du champ de déplacement hors
  de l'écoulement, au niveau des cadres, la discontinuité est toujours visible
@@ -5120,12 +5328,16 @@ reference "fig:S1MA:double"
 
 \begin_layout Standard
 Pour analyser ce phénomène plus en détails nous revenons sur les données
- sans jet (figure 
+ sans jet (Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5238,7 +5450,7 @@ name "fig:S1MA:no_jet"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:no_jet"
@@ -5259,7 +5471,7 @@ nts et de déterminer pour chaque zone le mouvement subi par le mouchetis.
 \shape italic
 AprilTags
 \shape default
- présent en bordure de champs.
+ en bordure de champs.
 \end_layout
 
 \begin_layout Standard
@@ -5290,32 +5502,44 @@ name "sub:S1MA:Solution"
 \end_layout
 
 \begin_layout Standard
-La solution peu couteuse qui a été retenue consiste à soustraire aux champs
- de déplacements perturbés 
+La solution peu coûteuse qui a été retenue consiste à soustraire aux champs
+ de déplacements perturbés (Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:deplacements_bruts"
 
 \end_inset
 
- les déplacement calculés en l'absence du jet 
+) les déplacements calculés en l'absence du jet (Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:no_jet"
 
 \end_inset
 
-.
+).
  En effet, si l'on considère qu'en moyenne à un Mach donné, le mouvement
  du mouchetis ne résulte que de la montée en vitesse, pour chaque cas d'étude
  on peut soustraire aux mesures avec jet les mesures sans jet et retrouver
  ainsi le déplacement associé au jet lui-même.
- Cette procédure fonctionne plutôt bien comme on peut le voir sur la figure
+ Cette procédure fonctionne plutôt bien comme on peut le voir sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5434,7 +5658,7 @@ name "fig:S1MA:soustraction"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:soustraction"
@@ -5457,7 +5681,11 @@ champignon
 Cette solution présente toutefois des limites puisque lorsque le jet est
  à l'arrêt, l'écoulement génère tout de même des effets aéro-optiques dues
  aux accélérations sur l'intrados et l'extrados de la buse qui sont entourés
- sur la partie gauche de la figure 
+ sur la partie gauche de la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:soustraction"
@@ -5498,7 +5726,11 @@ Reconstruction BOS 3D
 Les champs de déplacement corrigés nous permettent de correctement estimer
  les cartes de déviations puis de réaliser la reconstruction de l'écoulement
  moyen.
- Le champ de masse volumique obtenu est visible sur la figure 
+ Le champ de masse volumique obtenu est présenté sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:M0d4_Q1d0"
@@ -5510,7 +5742,7 @@ reference "fig:S1MA:M0d4_Q1d0"
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5651,7 +5883,7 @@ name "fig:S1MA:M0d4_Q1d0"
 .
  Le jet issu de la buse est rapidement arrêté par l'écoulement amont et
  rebrousse chemin donnant à l'écoulement cette forme en champignon.
- Sur les iso-surfaces de densité, on peut distinguer la forme en tore associé
+ Sur les iso-surfaces de densité, on peut distinguer la forme en tore associée
  à la région de recirculation.
 \end_layout
 
@@ -5678,15 +5910,19 @@ Résultats complémentaires BOS 2D
 \begin_layout Standard
 La reconstruction présenté ci-dessus est la seule qui a été effectuée au
  cours de cette étude.
- Néanmoins, afin d'illustrer quelques configurations de la matrice d'essais,
- la méthode de traitement présenté en 
+ Néanmoins, afin d'illustrer quelques configurations de la matrice d'essais
+ avec la soufflerie en marche, la méthode de traitement présentée en section
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:S1MA:Solution"
 
 \end_inset
 
- a été appliquée sur les points suivant: 
+ a été appliquée sur les points suivants: 
 \end_layout
 
 \begin_layout Itemize
@@ -5750,7 +5986,11 @@ Mach 0.6,
 \end_layout
 
 \begin_layout Standard
-Les champs instantanés correspondant sont présentés sur la figure 
+Les champs instantanés correspondants sont présentés sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
@@ -5925,7 +6165,7 @@ name "fig:S1MA:inst_corrige"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:inst_corrige"
@@ -5935,42 +6175,59 @@ reference "fig:S1MA:inst_corrige"
 .
  On peut constater sur ces images la grande complexité de l'écoulement ainsi
  que son caractère fortement instationnaire.
- En effet, le champs instantané à Mach 0.4 
+ En effet, le caractère instationnaire apparaît nettement en comparant le
+ champ instantané à Mach 0.4 de la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:M0d4_inst"
 
 \end_inset
 
- peut être comparé au champ moyen qui a servi à la reconstruction 
+ au champ moyen présenté en Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:S1MA:M0d4_moy"
+reference "fig:S1MA:M0d4_inst"
 
 \end_inset
 
 .
  On peut également observer des ondes acoustiques qui se propagent, notamment
- en sortie de buse pour le cas à Mach 0.2 
+ pour le cas à Mach 0.2 sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:M0d2_inst"
 
 \end_inset
 
-.
+, en sortie de buse.
  Sur le dernier cas, à Mach 0.6 avec un jet à 
 \begin_inset Formula $2\, kg/s$
 \end_inset
 
- 
+ (Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:M0d6_inst"
 
 \end_inset
 
-, on distingue vaguement une première cellule de choc puis la topologie
+), on distingue vaguement une première cellule de choc puis la topologie
  est fortement perturbée jusqu'au point d'arrêt qui lui reste bien marqué.
  
 \end_layout
@@ -5992,7 +6249,7 @@ FloatBarrier
 \end_layout
 
 \begin_layout Section
-Discussion sur les enseignements à tirer de la campagne
+Discussion
 \end_layout
 
 \begin_layout Standard
@@ -6006,7 +6263,11 @@ Mesure tridimensionnelle de champs étendus
 
 \begin_layout Standard
 Bien qu'il présente une belle topologie le champ de masse volumique reconstruit
- à Mach 0.4 (figure 
+ à Mach 0.4 (Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:M0d4_Q1d0"
@@ -6014,13 +6275,17 @@ reference "fig:S1MA:M0d4_Q1d0"
 \end_inset
 
 ) a fait surgir quelques problématiques lors du processus de reconstruction
- qu'il nous apparait intéressant d'expliciter ici.
+ qu'il nous apparaît intéressant d'expliciter ici.
  Contrairement aux mesure faites jusqu'à présent (jet de la buse seul, mesures
  réalisées à F2) la taille de l'écoulement étudié est ici relativement important
 e vis à vis du champ de vue caméra et pour certains points de vue, les bords
  du phénomène aérodynamique sont coupés.
  Cela n'est pas sans conséquence pour le processus de reconstruction comme
- nous allons l'expliquer à partir de la figure 
+ nous allons l'expliquer à partir de la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -6058,7 +6323,7 @@ name "fig:S1MA:grand_champ"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:grand_champ"
@@ -6070,8 +6335,19 @@ reference "fig:S1MA:grand_champ"
 \end_layout
 
 \begin_layout Standard
-Le masque 3D résulte de l'intersection des volumes visibles par toutes les
- caméras (
+Comme expliquer au chapitre
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:BOS3D"
+
+\end_inset
+
+, le masque 3D utilisé pour la reconstruction résulte de l'intersection
+ des volumes visibles par toutes les caméras (
 \begin_inset Quotes fld
 \end_inset
 
@@ -6086,8 +6362,8 @@ Visual hull
  pas d'écoulement jusqu'à rencontrer le bord du masque ce qui est en contradicti
 on avec la mesure effectuée puisque l'écoulement est plus grand que le masque.
  On peut ici corriger ce problème en relâchant la contrainte sur le masque
-  3D et en le construisant sur la base de la région commune à un certains
- nombre de caméra.
+  3D et en le construisant sur la base de la région commune à un certain
+ nombre de caméras.
  Ce choix implique alors la présence de zones de poids différents dans le
  champ reconstruit, certaines étant moins 
 \begin_inset Quotes fld
@@ -6098,21 +6374,25 @@ fiables
 \end_inset
 
  car leurs voxels sont observés par moins de caméras.
- Pour reconstruire l'écoulement à Mach 0.4 présenté en figure 
+ Pour reconstruire l'écoulement à Mach 0.4 présenté en Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:M0d4_Q1d0"
 
 \end_inset
 
-, un masque plus lâche, définit comme le volume commun à 9 caméras a été
+, un masque plus lâche, défini comme le volume commun à 9 caméras a été
  utilisé.
 \end_layout
 
 \begin_layout Standard
 Si l'on pousse le raisonnement plus loin, ce problème pose la question de
  la mesure de grands champs par BOS 3D.
- Du fait de la nature intégrale de la technique BOS, il apparait nécessaire
+ Du fait de la nature intégrale de la technique BOS, il apparaît nécessaire
  d'englober l'ensemble de l'écoulement lors de la prise de vue pour pouvoir
  effectuer une reconstruction.
  Ceci est réalisable au moyen d'une focale plus courte mais s'accompagne
@@ -6149,7 +6429,7 @@ Une seconde difficulté liée à la taille du champ mesuré réside dans la faç
  en un point connu à partir d'une mesure extérieure par exemple mais cela
  nécessite d'avantage de mesures.
  Enfin, étant donné que le volume reconstruit n'est pas directement positionné
- aux niveau de la sortie de la buse, il n'est pas non plus approprié d'utilisé
+ aux niveau de la sortie de la buse, il n'est pas non plus approprié d'utiliser
  la valeur de masse volumique calculée à partir des conditions génératrices.
  
 \end_layout
@@ -6175,17 +6455,26 @@ Effets d'astigmatisme
 \end_layout
 
 \begin_layout Standard
-Une autre problématique qui a été rencontrée lors des essai à S1MA concerne
- la nature de l'écoulement étudié.
+Une autre problématique rencontrée lors des essais à S1MA concerne la nature
+ de l'écoulement étudié.
  Pour la première fois, nous appliquons la BOS 3D a des écoulements compressible
 s qui présentent de forts gradients de masse volumique.
  Lorsque l'on étudie un écoulement en BOS, en utilisant de manière classique
- un éclairage non collimaté, il possible que les images présentent de l'astigmat
-isme parasite comme on peut le voir sur l'écoulement du jet à 
-\begin_inset Formula $3\, kg/s$
+ un éclairage non collimaté, il est possible que les images présentent de
+ l'astigmatisme parasite comme on peut le voir sur l'écoulement du jet double
+ buse à 
+\begin_inset Formula $2.5\, kg/s$
 \end_inset
 
- en figure 
+ en Figure
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
@@ -6231,7 +6520,130 @@ name "fig:S1MA:astigmatisme"
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Double_buse_f2.jpg
+	lyxscale 20
+	width 48text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA_f2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Double_buse_f8.jpg
+	lyxscale 20
+	width 48text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA_f8"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Astigmatisme parasite visible le détail d'une image brute pour a) 
+\begin_inset Formula $f_{\#}=2$
+\end_inset
+
+ et b) 
+\begin_inset Formula $f$
+\end_inset
+
+_# =8.
  
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:astigmatisme-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:astigmatisme"
@@ -6275,7 +6687,18 @@ aires en BOS 2D en jouant sur un autre paramètre : l'ouverture caméra.
 \begin_inset Formula $f_{\#}=2$
 \end_inset
 
-, à  
+ (Figure
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA_f2"
+
+\end_inset
+
+), à  
 \begin_inset Formula $4.6\, mm$
 \end_inset
 
@@ -6283,9 +6706,24 @@ aires en BOS 2D en jouant sur un autre paramètre : l'ouverture caméra.
 \begin_inset Formula $f_{\#}=8$
 \end_inset
 
-.
- Les champs de déplacements associés à chacune des ouvertures caméras sur
- la configuration de double buse sont présentés sur la figure 
+ (Figure
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA_f8"
+
+\end_inset
+
+) et de réduire fortement le flou d'astigmatisme.
+ Les champs de déplacements associés à chacune des ouvertures caméras sont
+ présentés sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -6379,7 +6817,7 @@ name "fig:S1MA:f-number"
 
 \end_inset
 
- 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:f-number"
@@ -6391,7 +6829,7 @@ reference "fig:S1MA:f-number"
 \begin_inset Formula $f_{\#}=2$
 \end_inset
 
-), les nouvelles mesure réalisées à 
+), les nouvelles mesures réalisées à 
 \begin_inset Formula $f_{\#}=8$
 \end_inset
 
@@ -6409,16 +6847,7 @@ Ce résultat préliminaire est intéressant car il apporte un élément de solut
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-FloatBarrier
-\end_layout
-
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -6443,35 +6872,38 @@ height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
-Pour la première fois la BOS 3D a été déployé dans une des plus grandes
- souffleries du monde avec succès.
- La réalisation de mesures optiques dans un tel environnelment n'est pas
+Pour la première fois la BOS 3D a été déployée dans une des plus grandes
+ souffleries du monde et a permis d'obtenir des reconstructions 3D de masse
+ volumique.
+ La réalisation de mesures optiques dans un tel environnement n'est pas
  chose aisée et à l'issue de cette campagne trois problématiques spécifiques
  émergent:
 \end_layout
 
 \begin_layout Plain Layout
 La première concerne les mouvements complexes qui affectent les éléments
- de la souffleries et qui se traduisent par des mouvements relatifs entre
- les mouchetis et les caméra.
+ de la soufflerie lors de son fonctionnement et qui se traduisent par des
+ mouvements relatifs entre les mouchetis et les caméra.
  Une solution a été mise en œuvre afin de corriger ces perturbations et
  de permettre la reconstruction de l'écoulement à Mach 0.4.
 \end_layout
 
 \begin_layout Plain Layout
-La seconde concerne la mesure des écoulements de grande de taille.
+La seconde concerne la mesure des écoulements de grande taille.
  En effet, de part sa nature intégrale, la technique BOS mesure un gradient
  de masse volumique sur l'ensemble de la trajectoire des rayons lumineux.
  Il est donc nécessaire de reconstruire l'ensemble du domaine perturbé et
  cela avec un nombre suffisant de caméras.
  Si la solution la plus simple consiste à travailler avec de petites focales,
- d'autres solutions pouraient être envisagée par combinaisons de caméras
+ d'autres solutions pourraient être envisagée par combinaisons de caméras
  et/ou de différentes focales pour couvrir l'ensemble du champ.
 \end_layout
 
 \begin_layout Plain Layout
-Enfin, la troisième difficulté est liée à la présence d'astigmatisme parasite
- qui sera étudié plus en détails dans le chapitre suivant.
+Enfin, la troisième difficulté à l'étude de phénomènes à forts gradients
+ qui se traduisent notamment par des effets d'astigmatisme qui affectent
+ les mesures.
+ Ce point sera étudié plus en détails dans le chapitre suivant.
  Une solution qui a été mis en évidence suggère de travailler à plus faible
  ouverture et nécessite donc de disposer de sources d'éclairage très puissantes.
  
@@ -6479,14 +6911,44 @@ Enfin, la troisième difficulté est liée à la présence d'astigmatisme parasi
 
 \begin_layout Plain Layout
 Au cours de cette campagne une très grande quantité de données ont été acquises,
- à la fois en BOS mais aussi grâce aux acquisitions stéréoscipiques du DTIM.
- Bien que très peu de points de mesures ont été traités, le procédure de
- correction mise en place peut directement s'appliquer à plusieurs cas de
- la matrice d'essais.
- Cela permettra une étude plus approfondie de ce jet à contre-courant.
- Il sserait également intéressant d'étudier les scans avant et après essais
- et de les comparer aux mesures de déplacements des parois obtenus par la
- BOS.
+ qu’il s’agisse des données BOS elle-même ou des données complémentaires
+ acquises par stéréoscopie par le DTIM.
+ Seules quelques configurations ont été traitées dans le cadre de ce travail.
+ L’exploitation complète des données exigera selon nous plusieurs mois de
+ travaux.
+ Elle permettrait d’améliorer la procédure de correction des effets liés
+ au fonctionnement de la soufflerie, notamment par la prise en compte de
+ modèles de déplacement plus complexes, pour étendre les reconstructions
+ à des régimes de fonctionnement plus élevés.
+ Ce faisant on accèderait à une meilleure caractérisation géométrique de
+ la veine lors du fonctionnement, notamment en croisant les mesures BOS
+ et les mesures stéréoscopiques ce qui pourra être utile pour la conception
+ de futures campagnes BOS.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ et même pour le déploiement d’autres moyens de mesures, notamment 3D comme
+ la PIV3D.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Pour conclure, même si des difficultés ont été rencontrées et si toutes
+ les conditions d'essai n'ont pu être traitées, le premier mérite de cette
+ campagne est de démontrer la faisabilité effective de la BOS3D dans ce
+ type de soufflerie, résultat qui était loin d'être évident.
+ Autrement dit, il est possible mettre en œuvre les moyens de la mesure
+ (caméras, fonds et moyens d'illumination) en nombre suffisant pour avoir
+ une capacité de reconstruction 3D, en profitant d'accès assez nombreux
+ mais qui n'avaient pas été dédiés à ce type de mesure.
+ Ce travail ouvre la voie à la conception d’équipements compatibles avec
+ les exigences de souffleries industrielles et dédiés à ce type de mesure
+ : BOS2D en divers plans dans la veine, et BOS3D dans un volume prédéterminé.
  
 \end_layout
 

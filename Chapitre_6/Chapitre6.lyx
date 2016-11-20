@@ -6,7 +6,7 @@
 \use_default_options true
 \maintain_unincluded_children false
 \language french
-\language_package default
+\language_package none
 \inputencoding auto
 \fontencoding default
 \font_roman default
@@ -70,7 +70,7 @@
 \begin_body
 
 \begin_layout Chapter
-Letter
+Construction d'un nouveau modèle BOS
 \end_layout
 
 \begin_layout Standard
@@ -469,7 +469,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/point4.pdf
+	filename Images/point5.pdf
 	lyxscale 50
 	width 80text%
 
@@ -1253,7 +1253,7 @@ reference "eq:BOS2:approxxx"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-%\boxed{\boldsymbol{\Delta}^{\star}\approx\frac{1}{n_{in}}\int_{s_{in}}^{s_{out}}(s_{out}-t)\nabla n(\textbf{x}_{0}(t))dt}
+%\boxed{\boldsymbol{\Delta}^{\star}\approx\frac{1}{n_{in}}\int_{s_{in}}^{s_{out}}(s_{out}-t)\nablan(\textbf{x}_{0}(t))dt}
 \label{eq:BOS2:deltan}
 \end{equation}
 
@@ -1546,8 +1546,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sketch of the forward models involved in classic BOS (upper part) and in
- the proposed bos2.
+Schéma du modèle BOS classique (en haut) et du modèle 
+\begin_inset Formula $\bosD$
+\end_inset
+
+ (en bas).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:BOS2:model_direct"
@@ -1565,22 +1568,6 @@ name "fig:BOS2:model_direct"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-paragraph{}
-\end_layout
-
-\end_inset
-
- 
 \end_layout
 
 \begin_layout Standard
@@ -2030,6 +2017,53 @@ pixels et est modélisé comme un pinhole.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/rho_letter.pdf
+	lyxscale 50
+	width 80text%
+	BoundingBox 75bp 10bp 570bp 230bp
+	clip
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ground truth (left) and reconstructed density fields by classical BOS (middle)
+ and bos2 (right), with the associated root-mean-squared errors (RMS).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BOS2:rho"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Les véritables champs de déplacements associés à chaque caméra sont générés
  à partir d'un lancer de rayon qui repose sur une intégration Runge-Kutta
  du 
@@ -2138,60 +2172,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/rho_letter.pdf
-	lyxscale 50
-	width 80text%
-	BoundingBox 75bp 10bp 570bp 230bp
-	clip
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Ground truth (left) and reconstructed density fields by classical BOS (middle)
- and bos2 (right), with the associated root-mean-squared errors (RMS).
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:BOS2:rho"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -2260,8 +2244,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-a) Horizontal and b) vertical slices of the reconstructed density fields
- as compared to the ground truth.
+Coupe a) horizontale et b) verticale des champs de masse volumique reconstruits
+ comparées au volume de référence (GT).
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:BOS2:disp"

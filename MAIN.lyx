@@ -200,8 +200,10 @@
 \use_default_options true
 \begin_includeonly
 Chapitre_6/Chapitre6.lyx
-Biblio/Biblio.lyx
 math-macro.lyx
+Biblio/Biblio.lyx
+Intro.lyx
+Conclusion.lyx
 \end_includeonly
 \maintain_unincluded_children false
 \language french
@@ -364,18 +366,18 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
 
 \end_inset
 
 
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Intro.lyx"
 
 \end_inset
 
@@ -436,6 +438,16 @@ filename "Chapitre_5/Chapitre5.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "Chapitre_6/Chapitre6.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Conclusion.lyx"
 
 \end_inset
 

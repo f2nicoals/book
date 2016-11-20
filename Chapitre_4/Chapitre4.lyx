@@ -2236,7 +2236,7 @@ Nous vérifions la qualité de notre calibration tout d'abord de manière visuel
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2301,9 +2301,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename Images/erreur.pdf
-	lyxscale 35
 	width 40text%
-	BoundingBox 70bp 240bp 530bp 620bp
+	BoundingBox 100bp 275bp 480bp 580bp
 	clip
 
 \end_inset

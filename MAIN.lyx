@@ -141,6 +141,9 @@
 \usepackage{calc}
 \usepackage{colortbl}
 \usepackage{xcolor}
+\usepackage{draftwatermark} %filigrane
+
+
 %%%%%%
 \usepackage[ED=MEGEP-DyF, Ets=ISAE]{tlsflyleaf} %page de garde
 %%%%%
@@ -306,6 +309,20 @@ dominitoc
 \begin_layout Standard
 \begin_inset ERT
 status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SetWatermarkText{Version provisoire}%texte
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+SetWatermarkScale{0.5}%echelle
+\end_layout
 
 \begin_layout Plain Layout
 

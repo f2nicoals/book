@@ -2374,9 +2374,9 @@ reference "fig:S1MA:erreur_quad"
 \end_inset
 
  présente quant à elle le résultat de l'optimisation aboutissant à la calibratio
-n : l'histogramme des erreurs quadratiques en pixels y est représentée.
+n : l'histogramme des erreurs en pixels y est représentée.
  Malgré les grandes dimensions du système notre processus est plutôt efficace
- puisque nous atteignons une erreur quadratique inférieure au pixel (
+ puisque nous atteignons une erreur moyenne inférieure au pixel (
 \begin_inset Formula $0.42$
 \end_inset
 

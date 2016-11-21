@@ -201,13 +201,6 @@
 %\setlength{\intextsep}{0pt plus 2pt minus 2pt}
 \end_preamble
 \use_default_options true
-\begin_includeonly
-Chapitre_6/Chapitre6.lyx
-math-macro.lyx
-Biblio/Biblio.lyx
-Intro.lyx
-Conclusion.lyx
-\end_includeonly
 \maintain_unincluded_children false
 \language french
 \language_package default
@@ -402,9 +395,18 @@ filename "Intro.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand include
 filename "Biblio/Biblio.lyx"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 

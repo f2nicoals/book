@@ -1898,7 +1898,7 @@ reference "fig:biblio:circle_of_confusion"
  à l'ouverture caméra 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "gojani2013,ota2015"
+key "gojani2013b,ota2015"
 
 \end_inset
 
@@ -1915,16 +1915,6 @@ status open
 setlength{
 \backslash
 jot}{3mm+3pt}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -6691,7 +6681,7 @@ status open
 
 \begin_layout Plain Layout
 
-{
+
 \backslash
 renewcommand{
 \backslash

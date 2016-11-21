@@ -94,35 +94,47 @@ numberline{}Introduction générale}
 \end_layout
 
 \begin_layout Standard
-m
+La mécanique des fluides est régit par les équations de Navier-Stokes qui
+ sont d'une grande complexité.
+ Aujourd'hui encore, la puissance des ordinateurs ne nous permet pas de
+ résoudre ces équations par simulation numérique directe (DNS) sur un avion
+ complet en régime de croisière.
+ Seul quelques écoulements très académiques font l'objet de tels calculs.
+ De ce fait, nous utilisons des modélisations pour simuler les différentes
+ propriétés de la turbulence.
+ Ces modèles développés par les numériciens doivent donc être validés avant
+ de pouvoir être utilisés et malgré tous les progrès accomplit dans la simulatio
+n numérique les mesures expérimentales demeurent encore incontournables.
+ 
 \end_layout
 
 \begin_layout Standard
-m
-\end_layout
-
-\begin_layout Standard
-m
-\end_layout
-
-\begin_layout Standard
-m
-\end_layout
-
-\begin_layout Standard
-m
-\end_layout
-
-\begin_layout Standard
-m
-\end_layout
-
-\begin_layout Standard
-m
-\end_layout
-
-\begin_layout Standard
-m
+En aérodynamique, la plupart des essais ont lieu en soufflerie.
+ L'ONERA possède l'un des plus grand parc de soufflerie d'Europe avec des
+ installations qui couvrent l'ensemble des gammes d'écoulements: du subsonique
+ au supersonique, et même à l'hypersonique.
+ Les mesures classiques réalisées sur une maquette en soufflerie sont les
+ mesures d'efforts (portance, trainée), le plus souvent via une balance
+ aérodynamique.
+ On peut également instrumenter la maquette avec des prises de pression
+ par exemple.
+ Il est par contre plus difficile de réaliser une mesure en un point quelconque
+ de l'écoulement.
+ Diverses sondes ont été développées par le passé pour mesurer la température
+ ou la vitesse.
+ Mais ce type de mesure est relativement gênant puisque le fait d'introduire
+ une sonde modifie directement l'écoulement.
+ L'invention du laser va révolutionner la mesure en permettant de sonder
+ l'écoulement avec le lumière et donc sans perturbations.
+ En effet, diverse méthodes optiques comme la LDV (Laser Doppler Velocimetry)
+ vont émerger.
+ Par contre, tout comme les sondes, la LDV ne fournit qu'une mesure ponctuelle
+ et il faut répéter un grand nombre de fois la mesure pour échantillonner
+ notre objet d'étude.
+ Plus récemment, la métrologie a connu de grands progrès avec l'apparition
+ des techniques de champ dont la PIV (Particle Image Velocimetry) reste
+ la plus utilisée.
+ Celle-ci donne 
 \end_layout
 
 \end_body

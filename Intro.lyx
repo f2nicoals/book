@@ -134,7 +134,79 @@ En aérodynamique, la plupart des essais ont lieu en soufflerie.
  Plus récemment, la métrologie a connu de grands progrès avec l'apparition
  des techniques de champ dont la PIV (Particle Image Velocimetry) reste
  la plus utilisée.
- Celle-ci donne 
+ Celle-ci donne accès au champ de vitesse 2D dans le plan de la nappe laser
+ pour sa forme la plus simple, à condition d'avoir correctement ensemencer
+ l'écoulement.
+ La PIV a ensuite connu un certains nombre d'évolution lui permettant de
+ réaliser des mesures résolues (TR-PIV) en temps et de l'étendre à la troisième
+ dimension de l'espace (TOMO-PIV).
+ Aujourd'hui, la PIV ainsi que la PTV (Particle Tracking Velocimetry) permettent
+ d'étudier des phénomènes complexes en laboratoire en fournissant des champs
+ de vitesse 3D,voire des champs de pression dans certains cas.
+ Pour le 3D, elle cependant limitée à des volumes de quelques cm
+\begin_inset Formula $^{3}$
+\end_inset
+
+ car nécessite une importante énergie lumineuse.
+ Enfin, tout comme la LDV, le point dur de ces technique repose sur un ensemence
+ment correct avec des particules qui suivent bien la dynamique de l'écoulement.
+ Réaliser des mesures fiables est donc d'autant plus difficile que l'écoulement
+ est rapide ou présente une grande dynamique de vitesses.
+\end_layout
+
+\begin_layout Standard
+Par ailleurs, d'autres techniques reposant sur trajectoire courbe des rayons
+ lumineux à travers un milieu d'indice optique non homogène.
+ Depuis les premières observations de Hook au 17ème siècle et du premier
+ système strioscopique de Toepler au 19ème siècle plusieurs techniques se
+ sont développées pour visualiser l'invisible.
+ L'ombroscopie, la strioscopie et l'holographie ont toujours fasciné par
+ leur capacité à imager les mouvements de l'air.
+ La strioscopie et l'ombroscopie convertissent la déviation des rayons en
+ intensité lumineuse pour donner une cartographie en noir et blanc respectivemen
+t proportionnelle à la dérivé première et de la dérivée seconde de l'indice
+ optique.
+ L'holographie permet, par interférences, de mesurer le déphasage de la
+ lumière ayant traversé l'écoulement.
+ Après traitement, donne une mesure proportionnelle à l'inde optique directement.
+ Ces techniques ont beaucoup été utilisées en aérodynamique pour étudier
+ les mouvements de convection ainsi que les ondes de chocs en écoulement
+ supersonique.
+ Ce sont des outils de métrologie optiques très intéressant puisque ils
+ ne perturbe en aucune façon l'écoulement et qu'ils ne nécessite pas d'ensemence
+ment.
+ L'holographie reste toutefois assez lourde à mettre en œuvre et nécessite
+ l'usage d'une table optique pour assurer la stabilité des différents éléments.
+ L'ombroscopie et la strioscopie, plus simples, offrent de belles visualisations.
+ L'ombroscopie met en évidence les changements brutaux d'indice optique
+ comme les interface ou les ondes de chocs.
+ En strioscopie, la dynamique peut être ajustée en déplaçant la lame de
+ couteau toutefois il est difficile de réaliser des mesures quantitative.
+ En effet pour cela il faut calibrer la mesure, en échelle de gris ou bien
+ à l'aide d'un filtre coloré, ce qui n'est pas chose aisée.
+ De plus la strioscopie ne peut mesurer qu'un seul gradient d'indice optique
+ à la fois, selon l'orientation de la lame de couteau.
+\end_layout
+
+\begin_layout Standard
+Plus récemment, la technique de Background Oriented Schlieren (BOS) a fait
+ son apparition.
+ Elle s'apparente fortement à la strioscopie classique.
+ Elle consiste à imager un motif texturé une première fois sans écoulement
+ puis une seconde fois en présence de l'écoulement entre la caméra et le
+ fond.
+ Les variations d'indice optique au sein de l'écoulement dues à des variations
+ de masse volumiques et donc de température et/ou de pression, courbe la
+ trajectoire des rayons lumineux.
+ On observe alors un déplacement apparent de la texture du fond.
+ Ce déplacement entre l'image de référence et la ou les images acquises
+ en présence de l'écoulement peut être calculés par des techniques de corrélatio
+ns d'image comme celles couramment utilisées désormais en PIV.
+ Connaissant la géométrie du système de mesure, on peut déduire de ces champs
+ de déplacement des informations quantitatives sur les gradients de masse
+ volumique de l'écoulement.
+ Depuis ses premiers développements la BOS connait un large succès de part
+ sa simplicité de mise en œuvre.
 \end_layout
 
 \end_body

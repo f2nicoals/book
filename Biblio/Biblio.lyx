@@ -1087,7 +1087,7 @@ d'où:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-dL=gradL\cdot d\myx
+dL=\mathrm{grad}L\cdot d\myx
 \end{equation}
 
 \end_inset
@@ -1117,7 +1117,7 @@ Il vient en identifiant que:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-nd\myx\cdot\myu=gradL.dr
+nd\myx\cdot\myu=\mathrm{grad}L.dr
 \end{equation}
 
 \end_inset
@@ -1136,7 +1136,7 @@ soit, puisque
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\boxed{n\myu=gradL\mbox{ d'où }n=||gradL||}\label{eq:biblio:eikonale}
+\boxed{n\myu=\mathrm{grad}L\mbox{ d'où }n=||\mathrm{grad}L||}\label{eq:biblio:eikonale}
 \end{equation}
 
 \end_inset
@@ -1224,7 +1224,7 @@ reference "eq:biblio:eikonale"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\myk_{0}n\myu=grad(\myk_{0}L)
+\myk_{0}n\myu=\mathrm{grad}(\myk_{0}L)
 \end{equation}
 
 \end_inset
@@ -1239,7 +1239,7 @@ et finalement:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\myk=grad\phi\mbox{ \ où\  }\phi\stackrel{\Delta}{=}\myk_{0}L
+\myk=\mathrm{grad}\phi\mbox{ \ où\  }\phi\stackrel{\Delta}{=}\myk_{0}L
 \end{equation}
 
 \end_inset
@@ -1971,7 +1971,7 @@ On voit alors que pour améliorer la résolution spatiale, il faut principalemen
 \begin_layout Standard
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Kirmse11"
+key "Kirmse2011"
 
 \end_inset
 
@@ -2518,7 +2518,7 @@ reference "fig:biblio:natural"
  Ils concluent, tout comme 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Kindler07"
+key "Kindler2007"
 
 \end_inset
 
@@ -4490,7 +4490,7 @@ pinceau lumineux
  
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Kirmse11"
+key "Kirmse2011"
 
 \end_inset
 

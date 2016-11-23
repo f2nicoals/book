@@ -141,17 +141,17 @@
 \usepackage{calc}
 \usepackage{colortbl}
 \usepackage{xcolor}
-\usepackage{draftwatermark} %filigrane
+\usepackage[firstpage]{draftwatermark} %filigrane
 
 
 %%%%%%
 \usepackage[ED=MEGEP-DyF, Ets=ISAE]{tlsflyleaf} %page de garde
 %%%%%
 %% Titre, auteur, date, laboratoire, cotutelle
-\title{Reconstruction de champs instantanés de masse volumique par BOS 3D. Application à l'étude des écoulments complexes en grande soufflerie.}
+\title{Reconstruction de champs instantanés de masse volumique par BOS 3D. Application à l'étude des écoulements complexes en grande soufflerie.}
 \author{François NICOLAS}
 \defencedate{Date de défense (JJ/MM/AAAA)}
-\lab{Nom du laboratoire (UMR)}
+\lab{ONERA, Département Modèles pour l'Aérodynamique et l'Energétique}
 %\cotutelle{Institut de cotutelle}
 
 %% Directeur(s) de thèse
@@ -160,13 +160,19 @@
 \makesomeone{boss}{1}{Grégoire CASALIS}{}{} % Sera affiché en premier
 %% Referee
 \nreferee{2}
-\makesomeone{referee}{1}{Premier RAPPORTEUR}{}{}
-\makesomeone{referee}{2}{Second RAPPORTEUR}{}{}
+\makesomeone{referee}{1}{Fulvio SCARANO}{}{}
+\makesomeone{referee}{2}{Friedrich LEOPOLD}{}{}
 %% Jury
-\njudge{3}
-\makesomeone{judge}{1}{Premier MEMBRE}{Professeur d'Université}{Président du Jury}
-\makesomeone{judge}{2}{Second MEMBRE}{Astronome Adjoint}{Membre du Jury}
-\makesomeone{judge}{3}{Troisième MEMBRE}{Chargé de Recherche}{Membre du Jury}
+\njudge{8}
+\makesomeone{judge}{1}{Thomas ROSGEN}{Professeur à l'ETH Zurich}{Président du Jury}
+\makesomeone{judge}{2}{Fabien ANSELMET}{Professeur à l'Ecole Centrale Marseille}{Membre du Jury}
+\makesomeone{judge}{3}{Fulvio SCARANO}{Professeur à TU Delft}{Membre du Jury}
+\makesomeone{judge}{4}{Friedrich LEOPOLD}{Ingénieur de recherche à l'ISL}{Membre du Jury}
+\makesomeone{judge}{5}{David DONJAT}{Ingénieur de recherche ONERA/DMAE}{Membre du Jury}
+\makesomeone{judge}{6}{Frédéric CHAMPAGNAT}{Ingénieur de recherche ONERA/DTIM}{Membre du Jury}
+\makesomeone{judge}{7}{Guy LE BESNERAIS}{Directeur de recherche ONERA/DTIM}{Membre du Jury}
+\makesomeone{judge}{8}{Grégoire CASALIS}{Professeur à l'ISAE}{Membre du Jury}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -324,6 +330,13 @@ SetWatermarkScale{0.5}%echelle
 makeflyleaf
 \end_layout
 
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{Roman}
+\end_layout
+
 \end_inset
 
 
@@ -340,18 +353,8 @@ filename "math-macro.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset nomencl_print
-LatexCommand printnomenclature
-set_width "auto"
-
-\end_inset
-
-
-\end_layout
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
 
 \end_inset
 
@@ -359,10 +362,13 @@ set_width "auto"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
+\begin_inset Newpage cleardoublepage
+\end_inset
 
-\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset FloatList figure
 
 \end_inset
@@ -370,6 +376,16 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
 \end_inset
 
 
@@ -392,8 +408,29 @@ adjustmtc
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "auto"
+
+\end_inset
+
+
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic}
+\end_layout
 
 \end_inset
 
@@ -411,10 +448,24 @@ filename "Intro.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "Biblio/Biblio.lyx"
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
 \end_inset
 
 
@@ -431,10 +482,21 @@ filename "Chapitre_2/Chapitre2.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "Chapitre_3/Chapitre3.lyx"
 
+\end_inset
+
+
+\begin_inset Newpage cleardoublepage
 \end_inset
 
 
@@ -448,6 +510,10 @@ filename "Chapitre_4/Chapitre4.lyx"
 \end_inset
 
 
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -455,6 +521,10 @@ filename "Chapitre_4/Chapitre4.lyx"
 LatexCommand include
 filename "Chapitre_5/Chapitre5.lyx"
 
+\end_inset
+
+
+\begin_inset Newpage cleardoublepage
 \end_inset
 
 
@@ -468,6 +538,10 @@ filename "Chapitre_6/Chapitre6.lyx"
 \end_inset
 
 
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -475,6 +549,10 @@ filename "Chapitre_6/Chapitre6.lyx"
 LatexCommand include
 filename "Conclusion.lyx"
 
+\end_inset
+
+
+\begin_inset Newpage cleardoublepage
 \end_inset
 
 

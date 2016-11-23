@@ -119,10 +119,14 @@ L'objectif de ce chapitre est de démontrer la faisabilité d'une mesure BOS
  Après avoir déployé pour la première fois la technique en soufflerie à
  F2, nous changeons ici d'échelle pour réaliser des mesures à S1MA qui possède
  une veine de 
-\begin_inset Formula $8\, m$
+\begin_inset Formula $8$
 \end_inset
 
- de diamètre et dont la vitesse veine peut atteindre Mach 1.
+
+\begin_inset space ~
+\end_inset
+
+m de diamètre et dont la vitesse veine peut atteindre Mach 1.
  Au-delà de ce changement d'échelle, nous étudions ici les contraintes liées
  à l'environnement même de cette soufflerie: vibrations, déformations, monté
  en température.
@@ -249,28 +253,48 @@ La soufflerie S1MA représente une prise de guerre de l'armée française à
  Elle a été déplacée et achevée à Avrieux à coté de Modane, dans les Alpes
  pour reproduire ce système.
  C'est une retenue d'eau située 
-\begin_inset Formula $800\, m$
+\begin_inset Formula $800$
 \end_inset
 
- plus haut qui alimente la soufflerie et permet d'atteindre Mach 1 en veine
+
+\begin_inset space ~
+\end_inset
+
+m plus haut qui alimente la soufflerie et permet d'atteindre Mach 1 en veine
  pour une puissance totale de 
-\begin_inset Formula $88\, MW$
+\begin_inset Formula $88$
 \end_inset
 
-.
+
+\begin_inset space ~
+\end_inset
+
+MW.
  Avec sa veine de 
-\begin_inset Formula $8\, m$
+\begin_inset Formula $8$
 \end_inset
 
- de diamètre, son circuit de près de 
-\begin_inset Formula $400\, m$
+
+\begin_inset space ~
 \end_inset
 
- de long et une hauteur de 
-\begin_inset Formula $24\, m$
+m de diamètre, son circuit de près de 
+\begin_inset Formula $400$
 \end_inset
 
- à son diamètre le plus large, S1MA fait partie des plus grandes souffleries
+
+\begin_inset space ~
+\end_inset
+
+m de long et une hauteur de 
+\begin_inset Formula $24$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+m à son diamètre le plus large, S1MA fait partie des plus grandes souffleries
  au monde.
  
 \end_layout
@@ -287,14 +311,14 @@ Depuis son entrée en service en 1950, la plupart des grand projets aéronautiqu
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -336,7 +360,7 @@ name "fig:A380"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -379,7 +403,7 @@ name "fig:S1MA:schema"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Soufflerie S1MA.
 \end_layout
 
 \end_inset
@@ -477,7 +501,15 @@ status open
 \end_inset
 
 Il est nécessaire d'éclairer une surface de mouchetis de près de 
-\begin_inset Formula $10\, m^{2}$
+\begin_inset Formula $10$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+m
+\begin_inset Formula $^{2}$
 \end_inset
 
 .
@@ -514,10 +546,14 @@ status open
 
 De plus, en raison de l'échauffement de l'air par frottements, la température
  de l'air à la fin d'un essai peut atteindre près 
-\begin_inset Formula $50\,°C$
+\begin_inset Formula $50$
 \end_inset
 
- et peut induire de la dilatation sur la structure de la veine.
+
+\begin_inset space ~
+\end_inset
+
+°C et peut induire de la dilatation sur la structure de la veine.
  
 \begin_inset Note Note
 status open
@@ -556,7 +592,7 @@ s qui impose un montage à partir du tripode (visible en vert sur la Figure
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -803,14 +839,22 @@ reference "fig:S1MA:tripode"
  d'air haute pression (HP) (bleu) est monté sur le tripode.
  Le jet est généré par une buse (grise) montée à l'extrémité du dard.
  Deux types de buses sont testées: une simple buse de 
-\begin_inset Formula $80\, mm$
+\begin_inset Formula $80$
 \end_inset
 
- de diamètre et une double buse de 
-\begin_inset Formula $56.6\, mm$
+
+\begin_inset space ~
 \end_inset
 
- de diamètre (voir Figure
+mm de diamètre et une double buse de 
+\begin_inset Formula $56.6$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+mm de diamètre (voir Figure
 \begin_inset space ~
 \end_inset
 
@@ -840,10 +884,14 @@ reference "fig:S1MA:buse_simple_1"
  Les deux buses sont instrumentées avec une prise de pression et de température
  statiques.
  Ce montage permet d'atteindre un débit d'air maximal de 
-\begin_inset Formula $3.0\, kg/s$
+\begin_inset Formula $3.0$
 \end_inset
 
-.
+
+\begin_inset space ~
+\end_inset
+
+kg/s.
 \end_layout
 
 \begin_layout Standard
@@ -912,11 +960,7 @@ elsA
 placement h
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -937,6 +981,16 @@ Paramètres et domaine de calcul utilisés pour la simulation RANS du jet
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:S1MA:simu"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Paramètres de la simulation RANS.
+\end_layout
 
 \end_inset
 
@@ -984,7 +1038,7 @@ reference "fig:S1MA:RANS"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -1152,6 +1206,16 @@ name "fig:S1MA:RANS"
 \end_inset
 
  
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Calcul RANS 2D axisymétrique d'un jet à contre-courant.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1230,23 +1294,39 @@ ent de la soufflerie, qui accélère lors du contournement.
 \begin_layout Standard
 Ce calcul de dimensionnement nous permet d'estimer la longueur de pénétration
  du jet autour de 6 diamètres pour cette configuration, soit près de 
-\begin_inset Formula $50\, cm$
+\begin_inset Formula $50$
 \end_inset
 
-.
+
+\begin_inset space ~
+\end_inset
+
+cm.
  Pour notre montage BOS 3D cela se traduit par l'emploi de focales de 
-\begin_inset Formula $70\, mm$
+\begin_inset Formula $70$
 \end_inset
 
- et l'utilisation de panneaux de mouchetis de 
-\begin_inset Formula $1\, m$
+
+\begin_inset space ~
 \end_inset
 
- de large avec des points de 
-\begin_inset Formula $1\, mm$
+mm et l'utilisation de panneaux de mouchetis de 
+\begin_inset Formula $1$
 \end_inset
 
- de diamètre.
+
+\begin_inset space ~
+\end_inset
+
+m de large avec des points de 
+\begin_inset Formula $1$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+mm de diamètre.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1402,10 +1482,14 @@ reference "fig:S1MA:frequences_vibrations"
 .
  Sur cette Figure on peut constater qu'il y a surtout un phénomène basse
  fréquence, autour de 
-\begin_inset Formula $55\, Hz$
+\begin_inset Formula $55$
 \end_inset
 
- qui domine.
+
+\begin_inset space ~
+\end_inset
+
+Hz qui domine.
  Ce phénomène est particulièrement intense à Mach 0.7.
  A partir de ces mesures, des plateaux amortis ont été conçu en accord avec
  le poids des caméras et de leur support afin d'atténuer au maximum ces
@@ -1430,7 +1514,7 @@ key "olson2011"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1514,6 +1598,16 @@ name "fig:S1MA:veine3D"
 \end_inset
 
 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Modèle 3D de la veine de S1MA.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1584,7 +1678,7 @@ L'ensemble du système BOS 3D mis en œuvre à S1MA visible sur la Figure
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1614,6 +1708,16 @@ name "fig:S1MA:montage_BOS3D"
 \end_inset
 
 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Montage BOS 3D dans la veine de S1MA.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1636,19 +1740,27 @@ reference "fig:S1MA:montage_BOS3D"
 Enterasys 24 port
 \shape default
 s avec des liaisons en fibre optique à 
-\begin_inset Formula $20\, Gb/s$
+\begin_inset Formula $20$
 \end_inset
 
- et le stockage des images en RAM.
+
+\begin_inset space ~
+\end_inset
+
+Gb/s et le stockage des images en RAM.
  Ce système nous permet désormais d'enregistrer un total de 
 \begin_inset Formula $900$
 \end_inset
 
  images par caméra à une fréquence de 
-\begin_inset Formula $10\, Hz$
+\begin_inset Formula $10$
 \end_inset
 
-.
+
+\begin_inset space ~
+\end_inset
+
+Hz.
  Les images sont ensuite transférées sur des disques SSD montés en RAID,
  afin de libérer la RAM.
  Les spécificités du montage BOS 3D relatives à S1MA sont décrites par la
@@ -1692,14 +1804,15 @@ reference "fig:S1MA:montage_BOS3D"
  petite taille de nos caméras nous permet de les disposer autour de la veine
  sans trop de difficultés.
  Chacune des caméras est équipée d'un objectif de 
-\begin_inset Formula $70\, mm$
+\begin_inset Formula $70$
 \end_inset
 
- afin de viser un volume cubique d'une cinquantaine de 
-\begin_inset Formula $cm$
+
+\begin_inset space ~
 \end_inset
 
- de coté en amont de la buse.
+mm afin de viser un volume cubique d'une cinquantaine de cm de coté en amont
+ de la buse.
  
 \end_layout
 
@@ -1709,15 +1822,35 @@ Mouchetis
 
 \begin_layout Standard
 Nous employons des panneaux de mouchetis de 
-\begin_inset Formula $1\, m^{2}$
+\begin_inset Formula $1$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+m
+\begin_inset Formula $^{2}$
 \end_inset
 
  avec des points de 
-\begin_inset Formula $1\, mm$
+\begin_inset Formula $1$
 \end_inset
 
- de diamètre afin recouvrir près de 
-\begin_inset Formula $10\, m^{2}$
+
+\begin_inset space ~
+\end_inset
+
+mm de diamètre afin recouvrir près de 
+\begin_inset Formula $10$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+m
+\begin_inset Formula $^{2}$
 \end_inset
 
  en veine.
@@ -1816,6 +1949,17 @@ name "fig:S1MA:mouchetis"
 \end_inset
 
 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Panneaux de mouchetis collés sur la veine avec bords d'attaque renforcé
+ par du scotch aluminium.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1874,10 +2018,14 @@ Nous reprenons ici le même type de montage que celui utilisé à F2, à savoir
 \end_inset
 
  faisceaux couplée à un laser Quantel Twins B de 
-\begin_inset Formula $380\, mJ$
+\begin_inset Formula $380$
 \end_inset
 
- par pulse.
+
+\begin_inset space ~
+\end_inset
+
+mJ par pulse.
  Le laser et sa table de séparation sont présentés en Figure
 \begin_inset space ~
 \end_inset
@@ -1887,7 +2035,7 @@ Nous reprenons ici le même type de montage que celui utilisé à F2, à savoir
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1910,6 +2058,17 @@ Platine de séparation du faisceau laser.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:S1MA:laser"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Platine de séparation du faisceau laser.
+ 
+\end_layout
 
 \end_inset
 
@@ -1941,19 +2100,31 @@ Rayvision
 \end_inset
 
  et 
-\begin_inset Formula $10\, m$
+\begin_inset Formula $10$
 \end_inset
 
- permettaient d'amener les faisceaux jusqu'aux différents hublots.
+
+\begin_inset space ~
+\end_inset
+
+m permettaient d'amener les faisceaux jusqu'aux différents hublots.
  Enfin, nous installons des lentilles divergentes de 
-\begin_inset Formula $50\, mm$
+\begin_inset Formula $50$
 \end_inset
 
- pour éclater chaque faisceau sur un diamètre de près d'
-\begin_inset Formula $1\, m$
+
+\begin_inset space ~
 \end_inset
 
-.
+mm pour éclater chaque faisceau sur un diamètre de près d'
+\begin_inset Formula $1$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+m.
 \end_layout
 
 \begin_layout Standard
@@ -2027,10 +2198,30 @@ Calibration
 \begin_layout Standard
 Nous avons adapté notre processus de calibration aux dimensions de S1MA
  en faisant imprimer une mire de 
-\begin_inset Formula $80\, cm\,\times\,80\, cm$
+\begin_inset Formula $80$
 \end_inset
 
- sur un panneau en nid d'abeille visible sur la Figure
+
+\begin_inset space ~
+\end_inset
+
+cm
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset Formula $80$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+cm sur un panneau en nid d'abeille visible sur la Figure
 \begin_inset space ~
 \end_inset
 
@@ -2055,7 +2246,7 @@ reference "fig:S1MA:calib"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -2063,7 +2254,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2174,6 +2365,16 @@ a) Mire en position de référence.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:S1MA:calib"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Procédure de calibration.
+\end_layout
 
 \end_inset
 
@@ -2337,7 +2538,7 @@ name "fig:S1MA:erreur_quad"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Résultats de calibration.
 \end_layout
 
 \end_inset
@@ -2399,7 +2600,7 @@ Au cours des 2 jours et demi d'essais les deux types de buse sont testés
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2481,7 +2682,7 @@ Pour chaque configuration, l'ensemble des points de mesure de la matrice
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4236,7 +4437,7 @@ Nous présentons en Figure
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4287,13 +4488,24 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Norme du champ de déplacement instantané et moyen pour différents débit
+Norme des champs de déplacements instantanés et moyens pour différents débit
  d'air au niveau de la buse: Q=1kg/s, Q=1.5kg/s, Q=2kg/s, Q=2.5kg/s.
  Soufflerie à l'arrêt.
  
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:S1MA:matrice"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Norme des champs de déplacements instantanés et moyens pour différents débit
+ d'air au niveau de la buse.
+\end_layout
 
 \end_inset
 
@@ -4322,18 +4534,26 @@ reference "fig:S1MA:matrice"
  en plus marquée.
  On voit très nettement l'apparition de cellules de chocs caractéristiques
  d'un jet sous-détendu pour le débit le plus important (
-\begin_inset Formula $Q=2.5\, kg/s$
+\begin_inset Formula $Q=2.5$
 \end_inset
 
-).
+
+\begin_inset space ~
+\end_inset
+
+kg/s).
  Les mesures instantanées offrent également une très belle visualisation
  des ondes acoustiques qui naissent aux niveau des lèvres de la buse et
  se propagent vers l'aval du jet.
  Pour le cas à débit de 
-\begin_inset Formula $2.5\, kg/s$
+\begin_inset Formula $2.5$
 \end_inset
 
-, d'autres ondes acoustiques qui se propagent vers l'amont se superposent
+
+\begin_inset space ~
+\end_inset
+
+kg/s, d'autres ondes acoustiques qui se propagent vers l'amont se superposent
  aux premières: elles sont liées à la présence de sources acoustiques au
  niveau des sommets des cellules de chocs.
  On peut également apercevoir sur ces champs de déplacement l'empreinte
@@ -4408,7 +4628,7 @@ reference "chap:BOS3D"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4484,10 +4704,14 @@ nt de la soufflerie avec toutes les problématiques de vibrations, d'échauffeme
  évoquées au début de ce chapitre.
  Nous avons fait le choix de traiter les données sur un point particulier
  de la matrice d'essais : l'écoulement à Mach 0.4 et un jet de débit 
-\begin_inset Formula $1\, kg/s$
+\begin_inset Formula $1$
 \end_inset
 
-.
+
+\begin_inset space ~
+\end_inset
+
+kg/s.
  Ce point intermédiaire dans la gamme de Mach étudié est suffisant pour
  analyser et proposer une stratégie de correction des images sans représenter
  la pire situation.
@@ -4509,7 +4733,7 @@ Les champs de déplacements associés à ce point de fonctionnement (Figure
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -4923,6 +5147,16 @@ Evolution du mouvement moyen des mouchetis en fonction du Mach soufflerie.
 \end_inset
 
 .
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Evolution du mouvement moyen des mouchetis en fonction du Mach soufflerie.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5045,7 +5279,7 @@ Pour mettre en place notre correction, nous faisons tout d'abord l'hypothèse
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5149,6 +5383,16 @@ name "fig:S1MA:simple"
 \end_inset
 
 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Champs de déplacement après correction par mouvement de translation.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5194,7 +5438,7 @@ Nous poussons donc le concept un peu plus loin et choisissons de corriger
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5336,7 +5580,7 @@ Pour analyser ce phénomène plus en détails nous revenons sur les données
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5440,6 +5684,16 @@ name "fig:S1MA:no_jet"
 \end_inset
 
 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Champs de déplacement moyens obtenus à débit nul.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5538,7 +5792,7 @@ reference "fig:S1MA:no_jet"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5741,7 +5995,7 @@ reference "fig:S1MA:M0d4_Q1d0"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5938,7 +6192,7 @@ status open
 \end_inset
 
 Mach 0.2, 
-\begin_inset Formula $Q=1\, kg/s$
+\begin_inset Formula $Q=1$
 \end_inset
 
  
@@ -5958,10 +6212,14 @@ status open
 \end_inset
 
 Mach 0.4, 
-\begin_inset Formula $Q=1\, kg/s$
+\begin_inset Formula $Q=1$
 \end_inset
 
- 
+
+\begin_inset space ~
+\end_inset
+
+kg/s 
 \end_layout
 
 \begin_layout Itemize
@@ -5978,10 +6236,14 @@ status open
 \end_inset
 
 Mach 0.6, 
-\begin_inset Formula $Q=2\, kg/s$
+\begin_inset Formula $Q=2$
 \end_inset
 
- 
+
+\begin_inset space ~
+\end_inset
+
+kg/s 
 \end_layout
 
 \begin_layout Standard
@@ -5994,7 +6256,7 @@ Les champs instantanés correspondants sont présentés sur la Figure
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -6018,10 +6280,14 @@ status open
 
 \begin_layout Plain Layout
 Mach 0.2, 
-\begin_inset Formula $Q=1\, kg/s$
+\begin_inset Formula $Q=1$
 \end_inset
 
- 
+
+\begin_inset space ~
+\end_inset
+
+kg/s 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:S1MA:M0d2_inst"
@@ -6068,10 +6334,14 @@ status open
 
 \begin_layout Plain Layout
 Mach 0.4, 
-\begin_inset Formula $Q=1\, kg/s$
+\begin_inset Formula $Q=1$
 \end_inset
 
- 
+
+\begin_inset space ~
+\end_inset
+
+kg/s 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:S1MA:M0d4_inst"
@@ -6114,10 +6384,14 @@ status open
 
 \begin_layout Plain Layout
 Mach 0.6, 
-\begin_inset Formula $Q=2\, kg/s$
+\begin_inset Formula $Q=2$
 \end_inset
 
- 
+
+\begin_inset space ~
+\end_inset
+
+kg/s 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:S1MA:M0d6_inst"
@@ -6288,7 +6562,7 @@ e vis à vis du champ de vue caméra et pour certains points de vue, les bords
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6303,8 +6577,8 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-illustration de la problématique associée à un champ de vue caméra trop
- faible vis à vis du phénomène étudié.
+Problématique associée à un champ de vue caméra trop faible vis à vis du
+ phénomène étudié.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -6462,10 +6736,14 @@ s qui présentent de forts gradients de masse volumique.
  un éclairage non collimaté, il est possible que les images présentent de
  l'astigmatisme parasite comme on peut le voir sur l'écoulement du jet double
  buse à 
-\begin_inset Formula $2.5\, kg/s$
+\begin_inset Formula $2.5$
 \end_inset
 
- en Figure
+
+\begin_inset space ~
+\end_inset
+
+kg/s en Figure
 \begin_inset space ~
 \end_inset
 
@@ -6528,7 +6806,7 @@ name "fig:S1MA:astigmatisme"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -6616,7 +6894,7 @@ name "fig:S1MA_f8"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Astigmatisme parasite visible le détail d'une image brute pour a) 
+Astigmatisme parasite visible sur des images brutes pour a) 
 \begin_inset Formula $f_{\#}=2$
 \end_inset
 
@@ -6645,7 +6923,7 @@ name "fig:S1MA:astigmatisme-1"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:S1MA:astigmatisme"
+reference "fig:S1MA:astigmatisme-1"
 
 \end_inset
 
@@ -6679,10 +6957,14 @@ aires en BOS 2D en jouant sur un autre paramètre : l'ouverture caméra.
 
 .
  Ceci nous permet de passer d'une taille du cercle de confusion de 
-\begin_inset Formula $1.8\, mm$
+\begin_inset Formula $1.8$
 \end_inset
 
- à 
+
+\begin_inset space ~
+\end_inset
+
+mm à 
 \begin_inset Formula $f_{\#}=2$
 \end_inset
 
@@ -6698,10 +6980,14 @@ reference "fig:S1MA_f2"
 \end_inset
 
 ), à  
-\begin_inset Formula $4.6\, mm$
+\begin_inset Formula $4.6$
 \end_inset
 
- à 
+
+\begin_inset space ~
+\end_inset
+
+mm à 
 \begin_inset Formula $f_{\#}=8$
 \end_inset
 
@@ -6726,7 +7012,7 @@ reference "fig:S1MA_f8"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Float figure

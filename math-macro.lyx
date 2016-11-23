@@ -78,7 +78,7 @@
 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "$\\rho$"
+symbol "$\\boldsymbol{\\rho}$"
 description "Masse volumique"
 
 \end_inset
@@ -197,7 +197,7 @@ description "critère des moindres carrés régularisés"
 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "$\\mathcal{A}$"
+symbol "$\\boldsymbol{A}$"
 description "Opérateur direct"
 
 \end_inset
@@ -214,7 +214,7 @@ description "Opérateur direct"
 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "$\\mathcal{J}$"
+symbol "$\\mathcal{R}$"
 description "Terme de régualrisation"
 
 \end_inset
@@ -231,7 +231,7 @@ description "Terme de régualrisation"
 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "$\\mathcal{D}$"
+symbol "$\\boldsymbol{D}$"
 description "Opérateur de dérivation"
 
 \end_inset
@@ -248,7 +248,7 @@ description "Opérateur de dérivation"
 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "$\\mathcal{T}$"
+symbol "$\\boldsymbol{T}$"
 description "Opérateur de tomographie"
 
 \end_inset
@@ -265,7 +265,7 @@ description "Opérateur de tomographie"
 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "$\\mathcal{B}$"
+symbol "$\\boldsymbol{B}$"
 description "Opérateur BOS 2.0"
 
 \end_inset
@@ -282,7 +282,7 @@ description "Opérateur BOS 2.0"
 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "$\\mathcal{P}$"
+symbol "$\\boldsymbol{P}$"
 description "Opérateur de projection"
 
 \end_inset
@@ -435,7 +435,7 @@ description "Transformée de Fourrier\\\\"
 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "$\\textbf{d_{in}}$"
+symbol "$\\boldsymbol{d_{in}}$"
 description "Direction d'entrée du rayon lumineux"
 
 \end_inset
@@ -452,7 +452,7 @@ description "Direction d'entrée du rayon lumineux"
 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "$\\textbf{d_{out}}$"
+symbol "$\\boldsymbol{d_{out}}$"
 description "Direction de sortie du rayon lumineux"
 
 \end_inset
@@ -469,7 +469,7 @@ description "Direction de sortie du rayon lumineux"
 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "$\\textbf{d^*_{out}}$"
+symbol "$\\boldsymbol{d^{*}_{out}}$"
 description "Direction de sortie du rayon lumineux"
 
 \end_inset

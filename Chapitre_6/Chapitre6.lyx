@@ -71,6 +71,13 @@
 
 \begin_layout Chapter
 Construction d'un nouveau modèle BOS
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:BOS2"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2253,6 +2260,16 @@ name "fig:BOS2:disp"
 \end_inset
 
 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Coupe des champs de masse volumique reconstruits.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2277,6 +2294,20 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
 Nous avons introduis dans ce chapitre une nouvelle formulation du problème
  BOS à partir d'un modèle de propagation des rayons lumineux à travers un
  milieu d'indice inhomogène qui tient compte non seulement de la déviation
@@ -2291,13 +2322,35 @@ Nous avons introduis dans ce chapitre une nouvelle formulation du problème
  en BOS pour convertir les champs de déplacement en carte de déviation.
  Notre algorithme de reconstruction de BOS 3D basé sur la minimisation d'un
  critère d'adéquation aux données a été réécrit en termes de déplacement
- mesurés.
+ mesurés.Pour l'écoulement étudié notre étude montre que l'hypothèse du point
+ milieu utilisée par la 
+\begin_inset Formula $\bosU$
+\end_inset
+
+ donne des résultats équivalents à la 
+\begin_inset Formula $\bosD$
+\end_inset
+
+.
+ Dans des cas plus complexes ou bien dans un cas 3D plus général, la 
+\begin_inset Formula $\bosD$
+\end_inset
+
+ pourrait néanmoins prouver son intérêt.
+ Dans tous les cas, celle-ci s'affranchit du choix du point de référence
+ pour le calcul des déviations et elle travaille sur les champs de déplacements,
+ plus proche des données de mesures.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Acknowledgements: The authors want to thank G.
  Daviller from Cerfacs for providing the LES simulation of the supersonic
  jet.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

@@ -207,6 +207,227 @@ ns d'image comme celles couramment utilisées désormais en PIV.
  volumique de l'écoulement.
  Depuis ses premiers développements la BOS connait un large succès de part
  sa simplicité de mise en œuvre.
+ Elle a été utilisée sur de nombreuses configurations: depuis les écoulements
+ aérothermiques jusqu'aux écoulement hypersoniques.
+ La BOS est une technique de mesure intégrale, c'est à dire que le déplacement
+ mesuré est proportionnel à l'intégrale du gradient de masse volumique le
+ long du rayon lumineux.
+ Pour déterminer le champ de masse volumique plusieurs solution existent:
+ soit l'écoulement étudier présente une symétrie particulière et on peut
+ en déterminer la valeur, soit il faut réaliser une reconstruction tomographique.
+ Dans ce cas également, des hypothèses de symétrie ou bien de stationnarité
+ permettent de travailler avec une seule caméra en enregistrant différentes
+ prises de vues successivement.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ihrke07,Atcheson08"
+
+\end_inset
+
+ qui travaillent dans le domaine du rendu graphique, sont les premiers à
+ avoir mis en œuvre un système multi-caméras pour reconstruire des écoulements
+ instantanés.
+ Grâce à leur système à 16 caméras, ils ont pu reconstruire des écoulements
+ de convection et intégrer ces effets de distorsion dans des images de synthèse.
+ 
+\end_layout
+
+\begin_layout Standard
+A l'ONERA nous cherchons a développer des techniques de mesures innovantes
+ à la fois pour des études de phénomènes complexes en laboratoire mais aussi
+ pour en faire profiter les grandes souffleries dans lesquelles les grands
+ industriels de l'aéronautique testent leurs futurs appareils.
+ Lors de la thèse de Violaine Todoroff (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Todoroff2013"
+
+\end_inset
+
+), une technique BOS 3D a été développée avec pour objectif la mesure de
+ champ instantanés de masse volumique.
+ Ces premiers travaux très encourageant, ont aboutis la construction d'un
+ banc d'essai BOS 3D à 12 caméras et à des reconstructions cohérentes d'écouleme
+nts aérohermiques.
+ 
+\end_layout
+
+\begin_layout Section*
+Objectifs
+\end_layout
+
+\begin_layout Standard
+Mes travaux de thèse s'inscrivent dans la suite de la thèse de Violaine
+ Todoroff et dans la poursuite du développement de la BOS 3D à l'ONERA.
+ L'objectif est de développer un outil métrologique robuste et fiable permettant
+ de reconstruire des champs de masse volumique instantanés en soufflerie.
+ 
+\end_layout
+
+\begin_layout Standard
+Dans un premier temps, nous réalisons un état de l'art (chapitre
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:biblio"
+
+\end_inset
+
+) des différentes techniques BOS et strioscopiques permettant la reconstruction
+ du champ tridimensionnel de masse volumique.
+ Nous mettons en avant le très faible nombre d'études consacrées à la mesure
+ d'écoulements instantanés.
+\end_layout
+
+\begin_layout Standard
+Dans un deuxième temps, à travers le chapitre
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:BOS3D"
+
+\end_inset
+
+ nous détaillons la construction de notre algorithme de reconstruction BOS
+ 3D qui est issu de plusieurs amélioration apportés à la solution initiale
+ proposée par
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Todoroff2013"
+
+\end_inset
+
+.
+ Afin de pouvoir traiter des résultats expérimentaux nous avons également
+ mis en place une chaine de traitement automatique qui permet de corriger
+ les images et de définir des masques avant de lancer le processus de reconstruc
+tion.
+ Enfin, nous présentons des reconstructions cohérentes d'écoulements de
+ convection obtenues sur le banc d'essai géode.
+\end_layout
+
+\begin_layout Standard
+Ensuite, nous avons cherché à déployer la technique en soufflerie afin de
+ démonter la portabilité de notre système et de démontrer son fonctionnement
+ lors d'une campagne d'essai en soufflerie (chapitre
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:F2"
+
+\end_inset
+
+).
+ Nous avons choisi d'étudier un jet chaud issu d'une conduite co-courant
+ à l'écoulement de la soufflerie.
+ Pour qualifier la BOS 3D en tant que véritable outil métrologique, nous
+ validé les mesures BOS 3D en champ moyen via des mesures thermocouples.
+ Enfin, nous avons réalisé une reconstruction instantanée de l'écoulement
+ avec une résolution spatiale permettant de distinguer de fines structures
+ de la topologie du jet.
+\end_layout
+
+\begin_layout Standard
+Pour étendre le domaine d'application de la technique nous avons cherché
+ à appliquer la BOS 3D à des écoulements compressibles en grande soufflerie
+ (chapitre
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:S1MA"
+
+\end_inset
+
+).
+ Pour préparer ces essais à S1MA, la plus grande soufflerie sonique au monde,
+ nous avons réaliser une simulation numérique afin de mieux appréhender
+ la topologie de l'écoulement d'étude: un jet à contre-courant dans un écoulemen
+t jusqu'à Mach 0.85.
+ Nous avons également dimensionné notre système de mesure pour amortir les
+ vibrations dues aux fonctionnement de l'installation.
+ Parmi la très grande quantité de mesures réalisées, nous mis en place sur
+ un point de fonctionnement une procédure de traitement qui puisse tenir
+ compte des mouvements de la soufflerie en fonctionnement.
+ 
+\end_layout
+
+\begin_layout Standard
+Les phénomènes compressibles étudiés à S1MA ont montrés que dans ces conditions,
+ les forts gradients de masse volumique dégradent la qualité des images
+ BOS, rendant parfois leur exploitation impossible.
+ Cette problématique est étudié en particulier dans le chapitre
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:113"
+
+\end_inset
+
+.
+ Notre démarche à consister à étudier l'impact des phénomènes compressibles
+ rencontré dans un jet sous-détendu à travers une étude paramétrique des
+ éléments géométriques qui constitue le montage BOS.
+ Après avoir trouvé un compromis satisfaisant, nous avons conçu un banc
+ BOS 3D afin de reconstruire la champ de masse volumique d'un jet sous-détendus
+ pour différentes conditions génératrices.
+ Nous montrons qu'il y a un bon accord entre nos résultats et des données
+ de la littérature.
+ Enfin, à partir d'une analyse POD sur les champs de déplacement instantanés
+ nous identifions et nous reconstruisons un phénomène de lâcher tourbillonnaire
+ périodique.
+\end_layout
+
+\begin_layout Standard
+A travers un dernier chapitre (chapitre
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:BOS2"
+
+\end_inset
+
+), nous nous questionnons sur la validité d'une hypothèse classiquement
+ utilisée en BOS pour déduire les cartes de déviations lumineuses à partir
+ des champs de déplacements mesurés.
+ Dans un premier temps, nous démontrons la validité de cette hypothèse pour
+ des écoulements axisymétrique.
+ Puis, dans un second temps, nous construisons un nouveau modèle BOS qui
+ s'affranchit du choix de ce point et qui relie directement le déplacement
+ à la masse volumique.
+ Nous avons implémenter ce nouvel algorithme dans une version 2D et comparer
+ des reconstruction réalisés avec le modèle classique par rapport à notre
+ modèle.
+ Dans le cas étudié, la BOS classique donne des résultats équivalent à notre
+ modèle, toutefois celui-ci pourrait s'avérer bénéfique sur des cas plus
+ complexes.
+\end_layout
+
+\begin_layout Standard
+Nous concluons finalement notre étude et nous donnons quelques perspectives
+ quant à l'avenir de la technique BOS 3D.
 \end_layout
 
 \end_body

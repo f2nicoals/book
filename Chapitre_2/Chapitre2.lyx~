@@ -281,7 +281,7 @@ key "Vuillot08"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -346,6 +346,32 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Calcul LES du jet Double flux CoJen (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Vuillot08"
+
+\end_inset
+
+).
+ a) Coupe longitudinal du champ de masse volumique.
+ b)Iso-densité.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Calcul LES du jet Double flux CoJen (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Vuillot08"
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -484,7 +510,7 @@ Nous revenons ici sur la reconstruction optimale obtenue par Violaine Todoroff.
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -499,8 +525,14 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Champ de masse volumique reconstruit avec 52 caméras par Todoroff en utilisant
- une régularisation 
+Champ de masse volumique reconstruit avec 52 caméras par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Todoroff2013"
+
+\end_inset
+
+ en utilisant une régularisation 
 \begin_inset Formula $\myLL$
 \end_inset
 
@@ -509,6 +541,23 @@ Champ de masse volumique reconstruit avec 52 caméras par Todoroff en utilisant
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:BOS3D:L2L1"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Champ de masse volumique reconstruit avec 52 caméras par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Todoroff2013"
+
+\end_inset
+
+.
+\end_layout
 
 \end_inset
 
@@ -613,7 +662,7 @@ et
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -695,6 +744,16 @@ name "fig:BOS3D:proj"
 \end_inset
 
 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Implémentatin des opérateurs de projection.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -761,7 +820,7 @@ Enfin, nous avons également distinguer deux types de conditions aux
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -850,7 +909,7 @@ Au final, nous appliquons notre nouveau code de reconstruction sur le jet
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1356,6 +1415,16 @@ status open
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tikhonov77"
 
 \end_inset
 

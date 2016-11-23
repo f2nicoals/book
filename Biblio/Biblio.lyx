@@ -262,6 +262,23 @@ name "fig:biblio:DLR"
 \end_inset
 
 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Mesure BOS de tourbillons de bout de pales par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Richard2002"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -424,10 +441,14 @@ reference "fig:biblio:onde_EM"
 
 ).
  Dans le vide elle se propage à la célérité 
-\begin_inset Formula $c=299\,792\,458\, m/s$
+\begin_inset Formula $c=299\,792\,458$
 \end_inset
 
-.
+
+\begin_inset space ~
+\end_inset
+
+m/s.
  Par définition, l'indice optique est égal au rapport de la vitesse de la
  lumière dans le vide sur la vitesse de la lumière dans le milieu considéré:
 \end_layout
@@ -643,10 +664,6 @@ en traçant en chaque point
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -1292,7 +1309,7 @@ reference "eq:biblio:ray"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1320,6 +1337,24 @@ key "Merzkirch"
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:biblio:merzkirch"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Trajectoire d'un rayon lumineux.
+ D'après 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Merzkirch"
+
+\end_inset
+
+.
+\end_layout
 
 \end_inset
 
@@ -1847,7 +1882,7 @@ pinceau
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1868,6 +1903,16 @@ Cercle de confusion associé au pinceau lumineux qui traverse l'écoulement
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:biblio:circle_of_confusion"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Cercle de confusion.
+\end_layout
 
 \end_inset
 
@@ -1988,7 +2033,7 @@ key "Kirmse2011"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2003,14 +2048,14 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Comparaison entre mesure BOS (haut) et CFD sur une sphère à Mach 8.1 
+Comparaison entre mesure BOS (haut) et CFD sur une sphère à Mach 8.1 (
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Kirmse11"
+key "Kirmse2011"
 
 \end_inset
 
-.
+).
  En bas à gauche résultat CFD brut.
  En bas à droite, résultat CFD avec prise en compte des filtrages spatiaux
  qui affecte la mesure BOS.
@@ -2018,6 +2063,23 @@ key "Kirmse11"
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:biblio:kirmse"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Comparaison entre mesure BOS (haut) et CFD sur une sphère à Mach 8.1 (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kirmse2011"
+
+\end_inset
+
+).
+\end_layout
 
 \end_inset
 
@@ -2110,7 +2172,7 @@ L'utilisation première de sprays de peinture pour créer le mouchetis est
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2257,6 +2319,16 @@ key "Todoroff2013"
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:biblio:mouchetis"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Différents types de mouchetis utilisés en BOS.
+\end_layout
 
 \end_inset
 
@@ -2458,7 +2530,7 @@ key "bauknecht2014a,Bauknecht2014b"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2485,11 +2557,29 @@ key "bauknecht2014a"
  a)-f )Exemples de fonds.
  g) Evolution du critère de qualité en fonction de la taille de fenêtre
  d'interrogation.
- h) Détail de g.
+ h) Détail de g).
  
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:biblio:natural"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Etude de l'impact du fond naturel sur la qualité de la corrélation réalisée
+ par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bauknecht2014a"
+
+\end_inset
+
+.
+\end_layout
 
 \end_inset
 
@@ -2575,7 +2665,7 @@ key "leopold2007"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2669,6 +2759,23 @@ key "Leopold2013"
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:biblio:CBOS"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Color-BOS 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leopold2013"
+
+\end_inset
+
+.
+\end_layout
 
 \end_inset
 
@@ -2801,7 +2908,7 @@ key "Ota11"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2820,19 +2927,36 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CG-BOS sur un cône tronqué à Mach 2.0 
+CG-BOS sur un cône tronqué à Mach 2.0 (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ota11"
 
 \end_inset
 
-: Détail des grilles verticale et horizontale (à gauche) qui donne le motif
+): Détail des grilles verticale et horizontale (à gauche) qui donne le motif
  complet (à droite).
  
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:biblio:CGBOS"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+CG-BOS sur un cône tronqué à Mach 2.0 (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ota11"
+
+\end_inset
+
+).
+\end_layout
 
 \end_inset
 
@@ -2906,7 +3030,7 @@ key "Meier2013"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -3023,6 +3147,23 @@ key "Meier2013"
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:biblio:speckle"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+BOS speckle 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Meier2013"
+
+\end_inset
+
+.
+\end_layout
 
 \end_inset
 
@@ -3712,6 +3853,24 @@ name "fig:label:carriere"
 \end_inset
 
 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Campagne de mesure de tourbillons de bout de pales (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bauknecht2015"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3776,7 +3935,7 @@ key "schairer2013"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3886,7 +4045,7 @@ name "fig:biblio:heineck"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Techniques de calibration.
 \end_layout
 
 \end_inset
@@ -4004,7 +4163,7 @@ key "raffel2000helico,Bauknecht2014b"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4106,6 +4265,23 @@ key "Bauknecht2014b"
 \end_inset
 
  et b) système d'acquisition à deux caméras.
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+BOS sans référence 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bauknecht2014b"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4184,13 +4360,22 @@ key "weinstein1994,weinstein1997"
  partir d'un télescope muni d'une fente.
  Ils ont pu imager les ondes de choc présente autour d'un T-38 volant à
  Mach 1.1 à une altitude de 
-\begin_inset Formula $13700 ft$
+\begin_inset Formula $13700$
 \end_inset
 
- et deux F-18 volant à Mach 1.4 à 
-\begin_inset Formula $35000\, ft.$
+
+\begin_inset space ~
 \end_inset
 
+ft et deux F-18 volant à Mach 1.4 à 
+\begin_inset Formula $35000$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+ft.
  Dans le cadre du projet BOSCO (Background Oriented Schlieren using Celestial
  Objects), 
 \begin_inset CommandInset citation
@@ -4315,6 +4500,23 @@ key "hill2016"
  a) Image du soleil obtenue avec un filtre calcium-K.
  b) Déplacements horizontaux et verticaux en pixels, moyennés sur 70 images.
  Mesures caKEBOS .
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Mesures BOS d'un T-38 en vol réalisées par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hill2016"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4653,7 +4855,7 @@ reference "eq:biblio:abel"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5314,7 +5516,7 @@ key "Agrawal06,takano2016"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5411,6 +5613,23 @@ Computed Tomography
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:biblio:rainbow"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Etude d'un jet sous-détendu en strioscopie couleur par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "takano2016"
+
+\end_inset
+
+ (NPR=4).
+\end_layout
 
 \end_inset
 
@@ -5533,7 +5752,7 @@ key "Leopold2013"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5686,6 +5905,23 @@ name "fig:biblio:spike"
 \end_inset
 
 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Mesures CBOS réalisées par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leopold2013"
+
+\end_inset
+
+ autour d'un spike.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5790,7 +6026,7 @@ e.
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5818,6 +6054,24 @@ key "Sourgen12"
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:biblio:sourgen"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Comparaison réalisée par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sourgen12"
+
+\end_inset
+
+ des champs de masse volumique, reconstruit par BOS et obtenus par calcul
+ RANS.
+\end_layout
 
 \end_inset
 
@@ -5868,7 +6122,7 @@ key "cabaleiro2013"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5893,7 +6147,15 @@ key "cabaleiro2013"
 
 .
  Iso-surface de densité 
-\begin_inset Formula $0.75\, kg/m^{3}$
+\begin_inset Formula $0.75$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+kg/m
+\begin_inset Formula $^{3}$
 \end_inset
 
 .
@@ -5901,6 +6163,24 @@ key "cabaleiro2013"
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:biblio:cabaleiro"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Evolution d'un micro-jet d'hélium issu d'une buse rectangulaire mesurée
+ par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cabaleiro2013"
+
+\end_inset
+
+.
+\end_layout
 
 \end_inset
 
@@ -5965,7 +6245,7 @@ reference "fig:biblio:ishino"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6053,6 +6333,23 @@ name "fig:biblio:ishino"
 
 \end_inset
 
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Mesure instantanée d'une flamme turbulente par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ishino2016"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
  
 \end_layout
 
@@ -6136,7 +6433,7 @@ reference "fig:biblio:atcheson"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6167,6 +6464,23 @@ key "Atcheson08"
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:biblio:atcheson"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+BOS 3D instationnaire 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Atcheson08"
+
+\end_inset
+
+.
+\end_layout
 
 \end_inset
 
@@ -6401,7 +6715,7 @@ key "Hansen"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6484,7 +6798,7 @@ reference "fig:biblio:géode"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6576,7 +6890,7 @@ name "fig:biblio:geode_jet-chaud"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+BOS 3D à l'ONERA.
 \end_layout
 
 \end_inset

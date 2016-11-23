@@ -71,6 +71,13 @@
 
 \begin_layout Chapter
 Etude des écoulements compressibles
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:113"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -101,7 +108,32 @@ Introduction
 \end_layout
 
 \begin_layout Standard
+La campagne d'essais réalisée à S1MA a soulevé une problématique associé
+ à la mesure des forts gradients de masse volumique.
+ La technique BOS étant utilisée ici en faisceaux de lumière divergents,
+ l'image d'un point sur le capteur résulte de l'intégration de tous les
+ rayons ayant pénétré par l'ouverture caméra.
+ Si les gradients de masse volumique observés sont trop intenses, l'ensemble
+ de ces rayons peut ne plus focaliser sur un pixel et conduire à une tâche
+ qui s'étale sur des pixels voisins.
+ Ce phénomène appelé astigmatisme provoque un flou sur les images brutes
+ qui a pour conséquence une plus faible qualité de corrélation et même dans
+ certains cas l'absence de corrélation.
+ 
+\end_layout
 
+\begin_layout Standard
+A travers ce chapitre nous revenons sur la problématique d'astigmatisme.
+ Nous réalisons une étude 2D paramétrique sur un écoulement de jet sous-détendu
+ afin d'optimiser le montage BOS.
+ Puis à partir d'un nouveau BOS 3D, nous reconstruisons le champ de masse
+ volumique à différentes conditions de fonctionnement.
+ Nous comparons les champs moyens avec des résultats de la littérature ainsi
+ qu'avec une simulation numérique.
+ Enfin, une analyse POD nous permet de moyenner de manière conditionnée
+ nos mesure pour reconstruire des champ de masse volumique en moyenne de
+ phase et ainsi mettre en évidence la périodicité du lâcher tourbillonnaire
+ dans la couche de mélange.
 \end_layout
 
 \begin_layout Section
@@ -360,6 +392,42 @@ offset=0cm -0.7cm]
 
 \begin_layout Section
 Conclusion
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Les résultats obtenus dans ce chapitre montre bien tout l'intérêt de la
+ BOS 3D pour la mesure des écoulements compressibles.
+ Les champs moyens reconstruits présentent des structures topologiques en
+ accord avec la littérature.
+ De plus, le champs moyen reconstruit à NPR=5 montre un excellent accord
+ avec la simulation numérique.
+ Enfin, l'analyse en moyenne de phase laisse entrevoir le potentiel de la
+ technique.
+ On pourrait envisager des acquisitions conditionnées par des mesures acoustique
+s pour suivre un phénomène en particulier.
+ Enfin, des reconstructions plus rapides permettraient également d'obtenir
+ le champ de fluctuations de masse volumique permettraient d'étudier plus
+ en détail l'origine du bruit de screech.
+ 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

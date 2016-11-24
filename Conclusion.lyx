@@ -93,5 +93,63 @@ numberline{}Conclusion générale}
 
 \end_layout
 
+\begin_layout Standard
+Le cadre relatif à cette étude concerne le développement d'outils métrologiques
+ avancés pour la mécanique des fluides.
+ Afin d'accéder expérimentalement à des données de plus en plus fines et
+ de plus exhaustives, les méthodes optiques dites 
+\begin_inset Quotes fld
+\end_inset
+
+de champ
+\begin_inset Quotes frd
+\end_inset
+
+ connaissent de grands progrès.
+ En effet, elles permettent de mesurer une grandeur physique avec une grande
+ résolution et cela, sans perturber l'écoulement de part leur caractère
+ non intrusif.
+ Cette étude se concentre sur la technique BOS et en particulier son extension
+ 3D.
+ Elle poursuit les développement initiés à l'ONERA par Violaine Todoroff
+ afin d'étendre les domaines d'application à des régimes d'écoulement compressib
+les et de permettre le déploiement de la technique en soufflerie.
+ 
+\end_layout
+
+\begin_layout Standard
+Au cours de ces travaux nous avons tout d'abord élaboré une version améliorée
+ du code initialement développé à l'ONERA.
+ Elle repose sur la minimisation d'un critère des moindres carrés régularisés.
+ L'harmonisation des opérateurs de projection et de rétroprojection et l'ajout
+ de conditions aux limites adaptées nous ont permis d'accroitre les performances
+ de notre algorithme.
+ Nous avons conservé une régularisation quadratique car elle donne des résultats
+ très satisfaisant.
+ Des tests synthétiques nous ont ensuite permis de définir le positionnement
+ optimal des caméras pour étudier un jet.
+ Une chaine de traitement semi-automatique a également été développée afin
+ de traiter les données expérimentales.
+ Enfin, un nouveau modèle direct a été définit.
+ Même si nous n'avons pas pu montrer son intérêt dans la situation étudié,
+ il pourrait profiter aux écoulements plus complexes.
+\end_layout
+
+\begin_layout Standard
+Une étape importante franchie dans le développement de la BOS 3D est sa
+ validation par des mesures thermocouples dans un cas incompressible.
+ Dans une telle situation, notre méthode peut donc offrir un moyen innover
+ de mesurer la température de l'écoulement, de surcroit en 3D.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section*
+Perspectives
+\end_layout
+
 \end_body
 \end_document

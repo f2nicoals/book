@@ -117,7 +117,7 @@ Notre technique BOS 3D a démontré son potentiel en laboratoire sur le banc
  Lors du développement d'un nouvel outil métrologique, il est essentiel
  de pouvoir qualifier la technique tant sur la fiabilité de ses mesures
  que dans ses conditions de mise en œuvre.
- Quelle est la qualité des mesures de masse volumique fourni par la BOS
+ Quelle est la qualité des mesures de masse volumique fournis par la BOS
  3D ? Est-il possible de déployer 12 caméras en soufflerie ? 
 \end_layout
 
@@ -126,16 +126,16 @@ Pour répondre à ces différentes questions, nous avons mené une campagne
  d'essais dans la soufflerie de recherche F2 de l'ONERA.
  Cette soufflerie subsonique, située sur le centre du Fauga-Mauzac, possède
  une veine de 
-\begin_inset Formula $1.4\, m\times\,1.8\, m$
+\begin_inset Formula $1.4\mbox{\, m}\times\,1.8\mbox{\, m}$
 \end_inset
 
  de large avec de très bons accès optiques.
  Nous avons étudié un jet chaud co-courant avec l'écoulement de la veine,
  issu d'une conduite carénée en forme de profil d'aile simplifié.
  Dans ces conditions d'écoulement incompressible, nous avons comparé le
- champ dérivé du champ de masse volumique mesuré par BOS 3D à des mesures
- thermocouples.
- Enfin, des mesures PIV ont également été réalisées et en particulier des
+ champ de température déduit du champ de masse volumique mesuré par BOS
+ 3D, à des mesures thermocouples.
+ Enfin, des mesures PIV ont également été réalisées et en particulier, des
  mesures couplées avec la BOS 3D.
  
 \end_layout
@@ -157,142 +157,100 @@ includepdf[pages=-,
 
 \begin_layout Plain Layout
 
-addtotoc={1, section, 1, Introduction, sec:exif:intro,
+addtotoc={1, section, 1, Introduction, sec:F2:intro,
 \end_layout
 
 \begin_layout Plain Layout
 
-1, subsection, 2, BOS and 3DBOS, sec:exif:intro:bos,
+1, subsection, 2, Direct 3DBOS, sec:F2:intro:Direct_3DBOS,
 \end_layout
 
 \begin_layout Plain Layout
 
-2, subsection, 2, Related works, sec:exif:intro:works,
+2, subsection, 2, Wind tunnel BOS measurements, sec:F2:intro:windtunnel,
 \end_layout
 
 \begin_layout Plain Layout
 
-3, subsection, 2, Contributions and outline of the pape, sec:exif:intro:outline,
+3, subsection, 2, Thermal measurements from refractive index techniques,
+ sec:F2:intro:thermal,
 \end_layout
 
 \begin_layout Plain Layout
 
-3, section, 1, A regularized framework for direct 3DBOS reconstruction,
- sec:direct,
+3, section, 1, Experimental set-up and measurement techniques, sec:expe,
 \end_layout
 
 \begin_layout Plain Layout
 
-4, subsection, 2,Discretization, sec:exif:direct:discretization,
+4, subsection, 2,Experimental setup, sec:F2:expe:setup,
 \end_layout
 
 \begin_layout Plain Layout
 
-4, subsection, 2,Regularization, sec:exif:direct:regularization,
+4, subsection, 2,3DBOS setup, sec:F2:expe:BOS,
 \end_layout
 
 \begin_layout Plain Layout
 
-5, subsection, 2,Optimization, sec:exif:direct:optim,
+5, subsection, 2,Temperature measurements, sec:F2:expe:temperature,
 \end_layout
 
 \begin_layout Plain Layout
 
-6, section, 1, Validation of the one-step inversion method on simulated
- data, sec:exif:simu,
+5, subsection, 2,Stereo particle image velocimetry setup, sec:F2:expe:SPIV,
 \end_layout
 
 \begin_layout Plain Layout
 
-6, subsection, 2, Test case, sec:exif:simu:test,
+5, subsection, 2,BOS-SPIV coupling, sec:F2:expe:BOS-SPIV,
 \end_layout
 
 \begin_layout Plain Layout
 
-7, subsection, 2, Choice of the regularization parameter, sec:exif:simu:regu,
+6, section, 1, 3DBOS reconstruction process, sec:F2:BOS3D,
 \end_layout
 
 \begin_layout Plain Layout
 
-9, subsection, 2, Influence of the mask, sec:exif:simu:mask,
+6, subsection, 2, Calibration, sec:F2:BOS3D:calib,
 \end_layout
 
 \begin_layout Plain Layout
 
-10, subsection, 2, Geometrical configuration of the cameras, sec:exif:simu:confi
-g,
+7, subsection, 2, Deviation maps computation, sec:F2:BOS3D:mascarade,
 \end_layout
 
 \begin_layout Plain Layout
 
-10, subsection, 2, Conclusion of the simulation study, sec:exif:simu:conclu,
+9, subsection, 2, 3D reconstruction, sec:F2:BOS3D:3D,
 \end_layout
 
 \begin_layout Plain Layout
 
-11, section, 1, Experimental bench for instantaneous 3DBOS: the Geode, sec:exif:
-geode,
+11, section, 1, Experimental results and discussion, sec:F2:results,
 \end_layout
 
 \begin_layout Plain Layout
 
-11, subsection, 2, Camera setup, sec:exif:geode:setup,
+11, subsection, 2, Mean density field reconstruction and validation, sec:F2:resu
+lts:mean,
 \end_layout
 
 \begin_layout Plain Layout
 
-11, subsection, 2, Background, sec:exif:geode:background,
+11, subsection, 2, 3D Instantaneous density field measurement, sec:F2:results:in
+st,
 \end_layout
 
 \begin_layout Plain Layout
 
-11, subsection, 2, Geometric setting and calibration, sec:exif:geode:calib,
+11, subsection, 2, 3DBOS and SPIV coupled acquisition, sec:F2:results:BOS-SPIV,
 \end_layout
 
 \begin_layout Plain Layout
 
-14, section, 1, From images to deviation fields : the Geode, sec:exif:dev,
-\end_layout
-
-\begin_layout Plain Layout
-
-14, subsection, 2, Displacements estimation, sec:exif:dev:disp,
-\end_layout
-
-\begin_layout Plain Layout
-
-15, subsection, 2, Converting image displacement into deviations, sec:exif:dev:c
-onvert,
-\end_layout
-
-\begin_layout Plain Layout
-
-15, subsection, 2, 3D mask, sec:exif:dev:mask,
-\end_layout
-
-\begin_layout Plain Layout
-
-15, section, 1, Experimental results and discussion, sec:exif:expe,
-\end_layout
-
-\begin_layout Plain Layout
-
-16, subsection, 2, Plume of a candle, sec:exif:expe:candle,
-\end_layout
-
-\begin_layout Plain Layout
-
-16, subsection, 2, Hot plume, sec:exif:expe:plume,
-\end_layout
-
-\begin_layout Plain Layout
-
-18, subsection, 2, Rotating flows, sec:exif:expe:rotate,
-\end_layout
-
-\begin_layout Plain Layout
-
-20, section, 1, Conclusion, sec:exif:conclu
+12, section, 1, Conclusion, sec:F2:conclu
 \end_layout
 
 \begin_layout Plain Layout
@@ -307,150 +265,101 @@ addtolist={
 
 \begin_layout Plain Layout
 
-5, figure, {Mask and boundary conditions.}, fig:exif:valid,
+5, figure, {BOS technique.}, fig:F2:principle,
 \end_layout
 
 \begin_layout Plain Layout
 
-6, figure, { Illustration of the pixelwise ray tracing operation.}, fig:exif:rayt
-racing,
+6, figure, {Sketch of the F2 wind-tunnel of ONERA.}, fig:F2:F2,
 \end_layout
 
 \begin_layout Plain Layout
 
-7, figure, {Reference camera configuration for 3DBOS: 'coplanar180' case},
- fig:exif:cam180,
+7, figure, {Jet interaction model.}, fig:F2:model,
 \end_layout
 
 \begin_layout Plain Layout
 
-7, table, {Cameras angular positions.}, fig:exif:cam_angles,
+7, table,  {Camera JAi BM500 GE characteristics.}, tab:F2:cameras,
 \end_layout
 
 \begin_layout Plain Layout
 
-8, figure, {Simulated deviation fields.}, fig:exif:simu_dev,
+8, figure, {3DBOD system adapted for F2 wind tunnel.}, fig:F2:system,
 \end_layout
 
 \begin_layout Plain Layout
 
-8, figure, {Choice of the regularization parameter.
- Density field.}, fig:exif:regu_choice,
+8, figure, {Experimental setup : 3DBOS and SPIV implementation in F2 wind
+ tunnel.}, fig:F2:setup,
 \end_layout
 
 \begin_layout Plain Layout
 
-9, figure, {Choice of the regularization parameter.
- L-curve.}, fig:exif:L-curve,
+9, figure, {BOS laser division plate.
+ Laser beam division example with 3 exiting beams.}, fig:F2:laser,
 \end_layout
 
 \begin_layout Plain Layout
 
-9, figure, {Profiles of density along slices extracted from the volumes.},
- fig:exif:slices,
+9, figure, {Thermocouple probe rake.}, fig:F2:thermocouple,
 \end_layout
 
 \begin_layout Plain Layout
 
-10, figure, {Residual error per voxel as a function of the number of cameras.},
- fig:exif:errror_ncam,
+10, figure, {PIV laser sheet generation.}, fig:F2:PIV,
 \end_layout
 
 \begin_layout Plain Layout
 
-10, figure, {Noncoplanar camera configurations.
- a Shifted180 b Cluster30}, fig:exif:cameras_conf,
+10, figure, {Calibration of 3DBOS for F2 experiment - Camera positions around
+ reconstructed volume MV.}, fig:F2:calibration,
 \end_layout
 
 \begin_layout Plain Layout
 
-12, figure, {Synthetic reconstructions}, fig:exif:synth_reconstruction,
+10, figure, {Displacement norm in pixels.}, fig:F2:displacement,
 \end_layout
 
 \begin_layout Plain Layout
 
-13, table, { The Geode, a 3DBOS experimental facility.}, tab:exif:geode,
+10, figure, {L-curve mean density field.}, fig:F2:l-curve,
 \end_layout
 
 \begin_layout Plain Layout
 
-13, figure, {The semi-random background.}, fig:exif:background,
+10, figure, {Streamwise velocity field.}, fig:F2:velocity,
 \end_layout
 
 \begin_layout Plain Layout
 
-13, table, {Camera JAI BM500 GE characteristics and acquisition parameters.},
- tab:exif:camera,
+10, figure, {Longitudinal profile of averaged density field.}, fig:F2:mean,
 \end_layout
 
 \begin_layout Plain Layout
 
-13, figure, {Sketch of the geometrical configuration of cameras in a typical
- 3DBOS setting.}, tab:exif:calib,
+10, figure, {Temperature profiles 3DBOS thermocouples.}, fig:F2:temperature,
 \end_layout
 
 \begin_layout Plain Layout
 
-14, figure, {Processing chain.}, fig:exif:mascarade,
+10, figure, {Optimal reconstruction of the co-flowing jet.}, fig:F2:isodensity,
 \end_layout
 
 \begin_layout Plain Layout
 
-15, figure, {Principle of BOS measurement.}, fig:exif:principle,
+10, figure, {Longitudinal profile of density field.}, fig:F2:inst,
 \end_layout
 
 \begin_layout Plain Layout
 
-15, figure, {Masked displacement norm.}, fig:exif:disp,
+10, figure, {Longitudinal profile of the density's gradient field}, fig:F2:grad,
 \end_layout
 
 \begin_layout Plain Layout
 
-16, table, {Size of the reconstructed volumes and computation times.}, fig:exif:c
-omputation_time,
-\end_layout
-
-\begin_layout Plain Layout
-
-16, figure, {L-curve of the 3D reconstruction of a candle plume for a coplanar
- configuration.}, fig:exif:L-curve_expe,
-\end_layout
-
-\begin_layout Plain Layout
-
-17, figure, {Candle plume reconstruction.}, fig:exif:candle,
-\end_layout
-
-\begin_layout Plain Layout
-
-17, figure, {Comparison between input deviations and computed deviations.},
- fig:exif:expe_dev,
-\end_layout
-
-\begin_layout Plain Layout
-
-18, figure, {Hot jet instantaneous field reconstruction}, fig:exif:hot_jet_inst,
-\end_layout
-
-\begin_layout Plain Layout
-
-18, figure, {Hot jet mean field reconstruction}, fig:exif:hot_jet_mean,
-\end_layout
-
-\begin_layout Plain Layout
-
-19, figure, {Comparison between thermocouple measurements and density field
- reconstructed by 3DBOS}, fig:exif:thermocouples_comparison,
-\end_layout
-
-\begin_layout Plain Layout
-
-19, figure, {Rotating ember reconstruction}, fig:exif:ember,
-\end_layout
-
-\begin_layout Plain Layout
-
-19, figure, {Rotating gas burner}, fig:exif:burner
+10, figure, {Density gradient magnitude in gray scale superimposed with
+ the most energetic structures of Q-criterion.}, fig:F2:critereQ
 \end_layout
 
 \begin_layout Plain Layout
@@ -501,51 +410,13 @@ Analyse modale d'un champ de masse volumique instantané
 \begin_layout Standard
 Nous présentons dans cette section un début d'analyse physique du comportement
  du jet.
- Bien que l'objectif de cette thèse n'est pas de caractériser ce jet, il
- est intéressant de se pencher sur l'information que l'on obtenir et extraire
- d'une mesure BOS 3D.
+ Bien que l'objectif de cette thèse n'est pas de caractériser ce type d'écouleme
+nt, il est intéressant de se pencher sur l'information que l'on peut obtenir
+ et extraire d'une mesure BOS 3D.
  En observant attentivement notre champ de masse volumique instantanée,
  et en particulier le champ de gradient, une organisation hélicoïdale des
- enroulements de Kelvin-Helmoltz semble émerger (figure
+ enroulements de Kelvin-Helmoltz semble émerger (Fig.
 \begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/Slice_Z_Grad2.png
-	lyxscale 20
-	width 70text%
-	BoundingBox 20bp 420bp 2040bp 1600bp
-	clip
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:F2:grad"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -560,15 +431,66 @@ reference "fig:F2:grad"
 \end_layout
 
 \begin_layout Standard
-Afin d'investiguer si un mode hélicoïdal domine effectivement, nous avons
- réaliser une décomposition modale.
- Dans un premier temps, nous avons interpolé notre champ de masse volumique
- fluctuant 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/FFT.pdf
+	width 45text%
+	BoundingBox 0bp 15bp 398bp 180bp
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Découpage du volume sur un maillage cylindrique.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:F2:cylindre"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Afin d'étudier si un mode hélicoïdal domine effectivement l'écoulement,
+ nous avons réalisé une décomposition modale.
+ Pour cela, nous avons dans un premier temps interpolé notre champ de masse
+ volumique fluctuant 
 \begin_inset Formula $\myrho'=\myrho-<\myrho>$
 \end_inset
 
- sur une maillage cylindrique afin de pouvoir réaliser des transformée de
- Fourier azimutales.
+ sur un maillage cylindrique (voir Figure
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:F2:cylindre"
+
+\end_inset
+
+) afin de pouvoir réaliser des transformées de Fourier azimutales.
  La taille des mailles sur l'axe (en 
 \begin_inset Formula $z$
 \end_inset
@@ -585,11 +507,19 @@ n.
 
 ) est définit de façon à obtenir la taille des mailles du maillage cartésien
  au niveau de la couche de mélange (
-\begin_inset Formula $0.5 mm$
+\begin_inset Formula $0.5$
 \end_inset
 
-).
- Au final notre maillage contient X cellules en Z, Y en r et 340 en 
+
+\begin_inset space ~
+\end_inset
+
+mm).
+ Au final notre maillage contient 700
+\begin_inset space ~
+\end_inset
+
+cellules en Z, 140 en r et 340 en 
 \begin_inset Formula $\mytheta$
 \end_inset
 
@@ -605,29 +535,69 @@ Ainsi, pour chaque coupe en
 \begin_inset Formula $r$
 \end_inset
 
-, nous pouvons calculer une transformée de Fourrier azimutale.
+, nous pouvons calculer une transformée de Fourier azimutale.
  Pour chaque mode nous pouvons alors représenter sur un plan 
 \begin_inset Formula $z-r$
 \end_inset
 
  une carte d'intensité.
- La partie réelle et l'amplitude des 5 premiers modes est présentée en figure
+ La partie réelle et l'amplitude des 4 premiers modes est présentée en Fig.
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset Float figure
-placement h
 wide false
 sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/FFT.pdf
+	filename Images/Abs_modes.pdf
+	width 50text%
+	BoundingBox 20bp 240bp 595bp 750bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Amplitude
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Re_modes.pdf
 	lyxscale 50
-	width 60text%
+	width 50text%
+	BoundingBox 25bp 240bp 595bp 750bp
+	clip
 
 \end_inset
 
@@ -635,6 +605,27 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Partie réelle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Représentation des 5 premiers modes azimutaux.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:F2:modes"
+
+\end_inset
+
 
 \end_layout
 
@@ -679,121 +670,11 @@ Si l'on extrait la partie réelle du mode 1 en
 \begin_inset Formula $r/D=0.5$
 \end_inset
 
- on obtient la courbe présentée en figure
+ on obtient la courbe présentée en Fig.
 \begin_inset space ~
 \end_inset
 
 
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/Abs_modes.pdf
-	lyxscale 50
-	width 50text%
-	BoundingBox 20bp 100bp 595bp 750bp
-	clip
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Amplitude
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/Re_modes.pdf
-	lyxscale 50
-	width 50text%
-	BoundingBox 25bp 100bp 595bp 750bp
-	clip
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Partie réelle
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Représentation des 5 premiers modes azimutaux
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:F2:modes"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:F2:amplification"
-
-\end_inset
-
-.
- Sur la première partie de la mesure on observe une belle amplification
- sinusoïdale de pseudo-période 
-\begin_inset Formula $\myperiod\approx0.6D$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Ce début d'analyse 
 \begin_inset Float figure
 wide false
 sideways false
@@ -836,10 +717,27 @@ name "fig:F2:amplification"
 
 \end_inset
 
- est encourageant et montre l'intérêt de pouvoir reconstruire des champs
- de masse volumique instantanés mais il demeure trop limité pour pouvoir
- tirer d'avantage de conclusions.
- Sur un cas tel que celui-ci mais aussi de manière plus générale), il serait
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:F2:amplification"
+
+\end_inset
+
+.
+ Sur la première partie de la mesure on observe une belle amplification
+ sinusoïdale de pseudo-période 
+\begin_inset Formula $\myperiod\approx0.6D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Ce début d'analyse est encourageant et montre l'intérêt de pouvoir reconstruire
+ des champs de masse volumique instantanés mais il demeure trop limité pour
+ pouvoir tirer d'avantage de conclusions.
+ Sur un cas tel que celui-ci mais aussi de manière plus générale, il serait
  intéressant de reconstruire l'ensemble des champs instantanés afin de pouvoir
  réaliser des statistiques.
  Le processus décrit précédemment pourrait être répété sur l'ensemble des
@@ -886,7 +784,19 @@ height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
-
+Ce début d'analyse est encourageant et montre l'intérêt de pouvoir reconstruire
+ des champs de masse volumique instantanés mais il demeure trop limité pour
+ pouvoir tirer d'avantage de conclusions.
+ Sur un cas tel que celui-ci mais aussi de manière plus générale, il serait
+ intéressant de reconstruire l'ensemble des champs instantanés afin de pouvoir
+ réaliser des statistiques.
+ Le processus décrit précédemment pourrait être répété sur l'ensemble des
+ champs.
+ On pourrait alors estimer un taux d'amplification associé à chacun des
+ modes.
+ Il serait alors intéressant de comparer ce résultat avec une analyse de
+ stabilité, d'autant plus que l'on dispose de manière expérimentale à la
+ fois des champs température et de vitesse moyens.
 \end_layout
 
 \end_inset

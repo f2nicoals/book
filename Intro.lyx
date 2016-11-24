@@ -99,122 +99,172 @@ La mécanique des fluides est régit par les équations de Navier-Stokes qui
  Aujourd'hui encore, la puissance des ordinateurs ne nous permet pas de
  résoudre ces équations par simulation numérique directe (DNS) sur un avion
  complet en régime de croisière.
- Seul quelques écoulements très académiques font l'objet de tels calculs.
+ Seuls quelques écoulements très académiques font l'objet de tels calculs.
  De ce fait, nous utilisons des modélisations pour simuler les différentes
  propriétés de la turbulence.
  Ces modèles développés par les numériciens doivent donc être validés avant
- de pouvoir être utilisés et malgré tous les progrès accomplit dans la simulatio
-n numérique les mesures expérimentales demeurent encore incontournables.
+ de pouvoir être utilisés, et malgré tous les progrès accomplis dans la
+ simulation numérique, les mesures expérimentales demeurent encore incontournabl
+es.
  
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 En aérodynamique, la plupart des essais ont lieu en soufflerie.
- L'ONERA possède l'un des plus grand parc de soufflerie d'Europe avec des
- installations qui couvrent l'ensemble des gammes d'écoulements: du subsonique
- au supersonique, et même à l'hypersonique.
- Les mesures classiques réalisées sur une maquette en soufflerie sont les
- mesures d'efforts (portance, trainée), le plus souvent via une balance
- aérodynamique.
+ L'ONERA possède l'un des plus grand parc de souffleries d'Europe avec des
+ installations qui couvrent l'ensemble des gammes d'écoulement: du subsonique
+ au supersonique, et même jusqu'à l'hypersonique.
+ De manière classique, sur une maquette en soufflerie, on réalise des mesures
+ d'efforts (portance, trainée), le plus souvent via une balance aérodynamique.
  On peut également instrumenter la maquette avec des prises de pression
  par exemple.
  Il est par contre plus difficile de réaliser une mesure en un point quelconque
  de l'écoulement.
  Diverses sondes ont été développées par le passé pour mesurer la température
  ou la vitesse.
- Mais ce type de mesure est relativement gênant puisque le fait d'introduire
- une sonde modifie directement l'écoulement.
+ Mais ce type de mesure est relativement gênant puisque le caractère intrusif
+ des sonde perturbe l'écoulement.
  L'invention du laser va révolutionner la mesure en permettant de sonder
  l'écoulement avec le lumière et donc sans perturbations.
  En effet, diverse méthodes optiques comme la LDV (Laser Doppler Velocimetry)
  vont émerger.
  Par contre, tout comme les sondes, la LDV ne fournit qu'une mesure ponctuelle
- et il faut répéter un grand nombre de fois la mesure pour échantillonner
- notre objet d'étude.
+ et il faut répéter un grand nombre de fois le processus d'acquisition pour
+ échantillonner l'objet d'étude.
  Plus récemment, la métrologie a connu de grands progrès avec l'apparition
  des techniques de champ dont la PIV (Particle Image Velocimetry) reste
  la plus utilisée.
  Celle-ci donne accès au champ de vitesse 2D dans le plan de la nappe laser
  pour sa forme la plus simple, à condition d'avoir correctement ensemencer
  l'écoulement.
- La PIV a ensuite connu un certains nombre d'évolution lui permettant de
- réaliser des mesures résolues (TR-PIV) en temps et de l'étendre à la troisième
+ La PIV a ensuite connu un certain nombre d'évolutions lui permettant de
+ réaliser des mesures résolues en temps (TR-PIV) et de l'étendre à la troisième
  dimension de l'espace (TOMO-PIV).
  Aujourd'hui, la PIV ainsi que la PTV (Particle Tracking Velocimetry) permettent
  d'étudier des phénomènes complexes en laboratoire en fournissant des champs
- de vitesse 3D,voire des champs de pression dans certains cas.
- Pour le 3D, elle cependant limitée à des volumes de quelques cm
+ de vitesse 3D, et même des champs de pression dans certains cas.
+ Pour le 3D, elle est cependant limitée à des volumes de quelques cm
 \begin_inset Formula $^{3}$
 \end_inset
 
- car nécessite une importante énergie lumineuse.
- Enfin, tout comme la LDV, le point dur de ces technique repose sur un ensemence
-ment correct avec des particules qui suivent bien la dynamique de l'écoulement.
+ car elle nécessite une importante énergie lumineuse.
+ Enfin, tout comme la LDV, la difficulté de ces technique réside dans la
+ qualité de ensemencement et il faut travailler avec des particules qui
+ suivent bien la dynamique de l'écoulement.
  Réaliser des mesures fiables est donc d'autant plus difficile que l'écoulement
- est rapide ou présente une grande dynamique de vitesses.
+ est rapide ou qu'il présente une grande dynamique de vitesses.
 \end_layout
 
 \begin_layout Standard
-Par ailleurs, d'autres techniques reposant sur trajectoire courbe des rayons
- lumineux à travers un milieu d'indice optique non homogène.
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Par ailleurs, d'autres techniques reposant sur la déviation des rayons lumineux
+ à travers un milieu d'indice optique non homogène sont également utilisées
+ en mécanique des fluides.
  Depuis les premières observations de Hook au 17ème siècle et du premier
- système strioscopique de Toepler au 19ème siècle plusieurs techniques se
- sont développées pour visualiser l'invisible.
+ système strioscopique de Toepler au 19ème siècle, plusieurs techniques
+ se sont développées permettent de 
+\begin_inset Quotes fld
+\end_inset
+
+voir l'invisible
+\begin_inset Quotes frd
+\end_inset
+
+.
  L'ombroscopie, la strioscopie et l'holographie ont toujours fasciné par
  leur capacité à imager les mouvements de l'air.
- La strioscopie et l'ombroscopie convertissent la déviation des rayons en
- intensité lumineuse pour donner une cartographie en noir et blanc respectivemen
-t proportionnelle à la dérivé première et de la dérivée seconde de l'indice
- optique.
+ La strioscopie et l'ombroscopie, sous leur forme classique, convertissent
+ la déviation des rayons en intensité lumineuse pour donner une cartographie
+ en noir et blanc respectivement proportionnelle à la dérivé première et
+ de la dérivée seconde de l'indice optique.
  L'holographie permet, par interférences, de mesurer le déphasage de la
  lumière ayant traversé l'écoulement.
- Après traitement, donne une mesure proportionnelle à l'inde optique directement.
+ Après traitement, elle donne une mesure proportionnelle à l'indice optique
+ directement.
  Ces techniques ont beaucoup été utilisées en aérodynamique pour étudier
  les mouvements de convection ainsi que les ondes de chocs en écoulement
  supersonique.
- Ce sont des outils de métrologie optiques très intéressant puisque ils
- ne perturbe en aucune façon l'écoulement et qu'ils ne nécessite pas d'ensemence
-ment.
+ Ce sont des outils de métrologie optique très intéressant puisque ils ne
+ perturbent en aucune façon l'écoulement et qu'ils ne nécessitent pas d'ensemenc
+ement.
  L'holographie reste toutefois assez lourde à mettre en œuvre et nécessite
  l'usage d'une table optique pour assurer la stabilité des différents éléments.
  L'ombroscopie et la strioscopie, plus simples, offrent de belles visualisations.
  L'ombroscopie met en évidence les changements brutaux d'indice optique
  comme les interface ou les ondes de chocs.
  En strioscopie, la dynamique peut être ajustée en déplaçant la lame de
- couteau toutefois il est difficile de réaliser des mesures quantitative.
- En effet pour cela il faut calibrer la mesure, en échelle de gris ou bien
- à l'aide d'un filtre coloré, ce qui n'est pas chose aisée.
+ couteau toutefois il est difficile de réaliser des mesures quantitatives.
+ En effet, pour y parvenir il faut calibrer la mesure, en échelle de gris
+ ou bien à l'aide d'un filtre coloré, ce qui n'est pas chose aisée.
  De plus la strioscopie ne peut mesurer qu'un seul gradient d'indice optique
  à la fois, selon l'orientation de la lame de couteau.
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Plus récemment, la technique de Background Oriented Schlieren (BOS) a fait
- son apparition.
+ son apparition (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dalziel00,raffel2000"
+
+\end_inset
+
+).
  Elle s'apparente fortement à la strioscopie classique.
  Elle consiste à imager un motif texturé une première fois sans écoulement
  puis une seconde fois en présence de l'écoulement entre la caméra et le
  fond.
- Les variations d'indice optique au sein de l'écoulement dues à des variations
- de masse volumiques et donc de température et/ou de pression, courbe la
+ Les variations d'indice optique au sein de l'écoulement dues à des fluctuations
+ de masse volumique et donc de température et/ou de pression, courbent la
  trajectoire des rayons lumineux.
- On observe alors un déplacement apparent de la texture du fond.
- Ce déplacement entre l'image de référence et la ou les images acquises
- en présence de l'écoulement peut être calculés par des techniques de corrélatio
-ns d'image comme celles couramment utilisées désormais en PIV.
+ Un déplacement apparent de la texture du fond peut alors être observé.
+ Ce déplacement entre l'image de référence et l'image acquise en présence
+ de l'écoulement peut être calculé par des techniques de corrélations d'image
+ comme celles couramment utilisées désormais en PIV.
  Connaissant la géométrie du système de mesure, on peut déduire de ces champs
- de déplacement des informations quantitatives sur les gradients de masse
+ de déplacements des informations quantitatives sur les gradients de masse
  volumique de l'écoulement.
- Depuis ses premiers développements la BOS connait un large succès de part
+ Depuis ses premiers développements, la BOS connait un large succès de part
  sa simplicité de mise en œuvre.
- Elle a été utilisée sur de nombreuses configurations: depuis les écoulements
+ Elle a été utilisée sur de nombreuses configurations, depuis les écoulements
  aérothermiques jusqu'aux écoulement hypersoniques.
- La BOS est une technique de mesure intégrale, c'est à dire que le déplacement
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La BOS est une technique de mesure intégrale, c'est-à-dire que le déplacement
  mesuré est proportionnel à l'intégrale du gradient de masse volumique le
  long du rayon lumineux.
- Pour déterminer le champ de masse volumique plusieurs solution existent:
- soit l'écoulement étudier présente une symétrie particulière et on peut
- en déterminer la valeur, soit il faut réaliser une reconstruction tomographique.
+ Pour déterminer le champ de masse volumique, plusieurs solutions existent:
+ soit l'écoulement étudié présente une symétrie particulière et il est possible
+ d'en déterminer la valeur, soit il faut réaliser une reconstruction tomographiq
+ue.
  Dans ce cas également, des hypothèses de symétrie ou bien de stationnarité
  permettent de travailler avec une seule caméra en enregistrant différentes
  prises de vues successivement.
@@ -234,10 +284,17 @@ key "Ihrke07,Atcheson08"
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 A l'ONERA nous cherchons a développer des techniques de mesures innovantes
- à la fois pour des études de phénomènes complexes en laboratoire mais aussi
- pour en faire profiter les grandes souffleries dans lesquelles les grands
- industriels de l'aéronautique testent leurs futurs appareils.
+ à la fois pour des études de phénomènes complexes en laboratoire, mais
+ aussi pour proposer des mesures plus exhaustives aux industriels de l'aéronauti
+que qui testent leurs futurs appareils dans les grandes souffleries.
  Lors de la thèse de Violaine Todoroff (
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -246,10 +303,10 @@ key "Todoroff2013"
 \end_inset
 
 ), une technique BOS 3D a été développée avec pour objectif la mesure de
- champ instantanés de masse volumique.
- Ces premiers travaux très encourageant, ont aboutis la construction d'un
- banc d'essai BOS 3D à 12 caméras et à des reconstructions cohérentes d'écouleme
-nts aérohermiques.
+ champs instantanés de masse volumique.
+ Ces premiers travaux très encourageants, ont aboutit à la construction
+ d'un banc d'essai BOS 3D à 12 caméras et à des reconstructions cohérentes
+ d'écoulements aérothermiques.
  
 \end_layout
 
@@ -258,11 +315,19 @@ Objectifs
 \end_layout
 
 \begin_layout Standard
-Mes travaux de thèse s'inscrivent dans la suite de la thèse de Violaine
- Todoroff et dans la poursuite du développement de la BOS 3D à l'ONERA.
+Les travaux présentés dans ce mémoire s'inscrivent dans la suite de la thèse
+ de Violaine Todoroff et dans la poursuite du développement de la BOS 3D
+ à l'ONERA.
  L'objectif est de développer un outil métrologique robuste et fiable permettant
  de reconstruire des champs de masse volumique instantanés en soufflerie.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -284,6 +349,13 @@ reference "chap:biblio"
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Dans un deuxième temps, à travers le chapitre
 \begin_inset space ~
 \end_inset
@@ -296,7 +368,7 @@ reference "chap:BOS3D"
 \end_inset
 
  nous détaillons la construction de notre algorithme de reconstruction BOS
- 3D qui est issu de plusieurs amélioration apportés à la solution initiale
+ 3D qui est issu de plusieurs améliorations apportés à la solution initiale
  proposée par
 \begin_inset space ~
 \end_inset
@@ -309,8 +381,8 @@ key "Todoroff2013"
 \end_inset
 
 .
- Afin de pouvoir traiter des résultats expérimentaux nous avons également
- mis en place une chaine de traitement automatique qui permet de corriger
+ Afin de pouvoir traiter des résultats expérimentaux, nous avons également
+ mis en place une chaîne de traitement semi-automatique permettant de corriger
  les images et de définir des masques avant de lancer le processus de reconstruc
 tion.
  Enfin, nous présentons des reconstructions cohérentes d'écoulements de
@@ -318,9 +390,16 @@ tion.
 \end_layout
 
 \begin_layout Standard
-Ensuite, nous avons cherché à déployer la technique en soufflerie afin de
- démonter la portabilité de notre système et de démontrer son fonctionnement
- lors d'une campagne d'essai en soufflerie (chapitre
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ensuite, nous avons cherché à déployer la technique en soufflerie pour évaluer
+ la portabilité de notre système et de démontrer son fonctionnement lors
+ d'une campagne d'essai en soufflerie (chapitre
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -335,10 +414,17 @@ reference "chap:F2"
  Nous avons choisi d'étudier un jet chaud issu d'une conduite co-courant
  à l'écoulement de la soufflerie.
  Pour qualifier la BOS 3D en tant que véritable outil métrologique, nous
- validé les mesures BOS 3D en champ moyen via des mesures thermocouples.
+ avons validé les mesures BOS 3D en champ moyen via des mesures thermocouples.
  Enfin, nous avons réalisé une reconstruction instantanée de l'écoulement
  avec une résolution spatiale permettant de distinguer de fines structures
  de la topologie du jet.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -357,15 +443,22 @@ reference "chap:S1MA"
 
 ).
  Pour préparer ces essais à S1MA, la plus grande soufflerie sonique au monde,
- nous avons réaliser une simulation numérique afin de mieux appréhender
- la topologie de l'écoulement d'étude: un jet à contre-courant dans un écoulemen
-t jusqu'à Mach 0.85.
+ nous avons réalisé une simulation numérique afin de mieux appréhender la
+ topologie de l'écoulement d'étude: un jet à contre-courant dans un écoulement
+ allant jusqu'à Mach 0.85.
  Nous avons également dimensionné notre système de mesure pour amortir les
- vibrations dues aux fonctionnement de l'installation.
- Parmi la très grande quantité de mesures réalisées, nous mis en place sur
- un point de fonctionnement une procédure de traitement qui puisse tenir
+ vibrations dues au fonctionnement de l'installation.
+ Parmi la très grande quantité de mesures réalisées, nous avons mis en place
+ sur un point de fonctionnement une procédure de traitement qui puisse tenir
  compte des mouvements de la soufflerie en fonctionnement.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -385,16 +478,23 @@ reference "chap:113"
 
 .
  Notre démarche à consister à étudier l'impact des phénomènes compressibles
- rencontré dans un jet sous-détendu à travers une étude paramétrique des
- éléments géométriques qui constitue le montage BOS.
+ rencontrés dans un jet sous-détendu à travers une étude paramétrique des
+ éléments géométriques qui constituent le montage BOS.
  Après avoir trouvé un compromis satisfaisant, nous avons conçu un banc
- BOS 3D afin de reconstruire la champ de masse volumique d'un jet sous-détendus
+ BOS 3D afin de reconstruire le champ de masse volumique d'un jet sous-détendu
  pour différentes conditions génératrices.
  Nous montrons qu'il y a un bon accord entre nos résultats et des données
  de la littérature.
  Enfin, à partir d'une analyse POD sur les champs de déplacement instantanés
  nous identifions et nous reconstruisons un phénomène de lâcher tourbillonnaire
  périodique.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -415,14 +515,21 @@ reference "chap:BOS2"
  Dans un premier temps, nous démontrons la validité de cette hypothèse pour
  des écoulements axisymétrique.
  Puis, dans un second temps, nous construisons un nouveau modèle BOS qui
- s'affranchit du choix de ce point et qui relie directement le déplacement
- à la masse volumique.
- Nous avons implémenter ce nouvel algorithme dans une version 2D et comparer
- des reconstruction réalisés avec le modèle classique par rapport à notre
+ s'affranchit de choix adhoc et qui relie directement le déplacement à la
+ masse volumique.
+ Nous avons implémenté ce nouvel algorithme dans une version 2D et comparé
+ des reconstruction réalisées avec le modèle classique par rapport à notre
  modèle.
  Dans le cas étudié, la BOS classique donne des résultats équivalent à notre
  modèle, toutefois celui-ci pourrait s'avérer bénéfique sur des cas plus
  complexes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

@@ -418,7 +418,7 @@ description "Constante de Gladstone-Dale"
 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "$n$"
+symbol "$\\mathcal{F}$"
 description "Transformée de Fourrier\\\\"
 
 \end_inset
@@ -503,8 +503,25 @@ description "focale caméra"
 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "$m$"
+symbol "$M$"
 description "Grandissement optique"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myfn}{f_{\#}}
+{f_{\#}}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$f_{\\#}$"
+description "Ouverture caméra"
 
 \end_inset
 
@@ -683,6 +700,23 @@ description "BOS 2.0"
 LatexCommand nomenclature
 symbol "$BOS~1.0$"
 description "BOS 1.0"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mydeltat}{\delta_{t}}
+{\delta_{t}}
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\delta_t$"
+description "Diamètre du cercle de confusion au niveau de l'écoulement"
 
 \end_inset
 

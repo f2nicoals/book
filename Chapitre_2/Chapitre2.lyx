@@ -98,35 +98,32 @@ minitoc
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 1.5cm
+\begin_inset Newpage newpage
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Introduction
 \end_layout
 
 \begin_layout Standard
 Dans ce chapitre nous revenons dans un premier temps sur les faiblesses
  du code de reconstruction de masse volumique par BOS 3D développé par Violaine
  Todoroff.
- Après avoir identifier les problèmes majeurs, nous décrivons le fonctionnement
- de ce nouveau code optimisé.
+ Après avoir identifié les problèmes majeurs, nous décrivons le fonctionnement
+ du nouveau code optimisé.
  Ses performances sont dans un premier temps évaluées sur des données synthétiqu
 es, générées à partir d'un écoulements résultant d'une simulation numérique
  de type LES.
  L'utilisation des données de synthèse nous permet d'évaluer l'impact de
- paramètres clés comme le nombre de caméras et leur répartitions spatiale
+ paramètres clés comme le nombre de caméras et leur répartition spatiale
  sur la qualité des reconstructions.
- Enfin, nous présentons l'uilisation de la méthode sur un banc d'essai expérimen
-tal comportant 12 caméras.
+ Enfin, nous présentons la mise en oeuvre de la méthode sur un banc d'essai
+ expérimental comportant 12 caméras.
  Nous démontrons ainsi le fonctionnement de notre méthode sur des écoulements
  de convection.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -144,9 +141,9 @@ Le code de reconstruction conçu par Violaine Todoroff repose sur la minimisatio
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \mathcal{\myJ}(\myrho)=||\myA\myrho-\myepsilon||^{2}-\mylambda\mathcal{R}(\myrho)
-\]
+\end{equation}
 
 \end_inset
 
@@ -154,8 +151,8 @@ Le code de reconstruction conçu par Violaine Todoroff repose sur la minimisatio
 \end_layout
 
 \begin_layout Standard
-où le terme de régularisation
-\begin_inset Formula $R(\myrho)$
+où le terme de régularisation 
+\begin_inset Formula $\myR(\myrho)$
 \end_inset
 
  vaut 
@@ -199,18 +196,18 @@ où le terme de régularisation
 \noun default
 \color inherit
 .
- Dans notre étude et dans toute la suite du manuscrit nous nous sommes intéressé
- uniquement à la régularisation 
+ Dans notre étude et dans toute la suite du manuscrit, nous nous sommes
+ intéressés uniquement à la régularisation 
 \begin_inset Formula $\myL$
 \end_inset
 
- qui a montré des résultats suffisamment convaincant pour envisager un autre
- type de régularisation.
- La recherche de ce minimum est résolu de manière itérative via un algorithme
+ qui a montré des résultats suffisamment convaincant pour ne pas envisager
+ un autre type de régularisation.
+ La recherche de ce minimum est résolut de manière itérative via un algorithme
  de gradient conjugué.
  La direction de descente est alors donnée par une combinaison linéaire
  de la direction courante 
-\begin_inset Formula $\nabla\mathcal{\myJ}(\myrho)$
+\begin_inset Formula $-\nabla\mathcal{\myJ}(\myrho)$
 \end_inset
 
  et de la direction précédente, avec:
@@ -218,9 +215,9 @@ où le terme de régularisation
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-\nabla\myJ(\myrho)=2\myA^{T}(\myA\myrho-\myepsilon)-\Delta\myrho
-\]
+\begin{equation}
+\nabla\myJ(\myrho)=2(\myA^{T}(\myA\myrho-\myepsilon)-\mylambda\Delta\myrho)
+\end{equation}
 
 \end_inset
 
@@ -233,7 +230,7 @@ pour la régularisation
 \begin_inset Formula $\myA$
 \end_inset
 
-comme l'opérateur direct ou opérateur de projection, tandis que 
+ comme l'opérateur direct ou opérateur de projection, tandis que 
 \begin_inset Formula $\myA^{T}$
 \end_inset
 
@@ -246,7 +243,7 @@ Cas d'étude
 
 \begin_layout Standard
 Pour évaluer son algorithme de reconstruction, Violaine Todoroff a utilisé
- un champ de masse volumique obtenu par simulation numérique: le jet CoJen.
+ un champ de masse volumique obtenu par simulation numérique: le jet CoJeN.
  Cet écoulement de jet double-flux, typique de ceux rencontrés sur des moteurs
  aéronautiques, a été calculé par simulation aux grandes échelle (LES)
 \begin_inset space ~
@@ -276,7 +273,11 @@ key "Vuillot08"
 .
  Nous nous intéressons ici à un champ instantané qui présente bien plus
  d'échelles et de complexité que le champ moyen.
- Sur la 
+ Sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
@@ -295,7 +296,7 @@ status open
 \begin_inset Graphics
 	filename Images/True_vol.png
 	lyxscale 20
-	width 40text%
+	width 48text%
 
 \end_inset
 
@@ -324,7 +325,7 @@ status open
 \begin_inset Graphics
 	filename Images/True_vol_Surf_film2.png
 	lyxscale 20
-	width 40text%
+	width 48text%
 
 \end_inset
 
@@ -346,7 +347,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calcul LES du jet Double flux CoJen (
+Calcul LES du jet Double flux CoJeN (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Vuillot08"
@@ -356,11 +357,18 @@ key "Vuillot08"
 ).
  a) Coupe longitudinal du champ de masse volumique.
  b)Iso-densité.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BOS3D:cojen"
+
+\end_inset
+
+
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-Calcul LES du jet Double flux CoJen (
+Calcul LES du jet Double flux CoJeN (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Vuillot08"
@@ -382,12 +390,15 @@ key "Vuillot08"
 
 \end_inset
 
- figure
-\begin_inset space ~
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BOS3D:cojen"
+
 \end_inset
 
- on peut voir une coupe longitudinal du jet ainsi qu'une isosurface de densité,
- illustrant le caractère tridimensionnel du jet.
+ on peut voir une coupe longitudinal du jet ainsi qu'une iso-surface de
+ masse volumique, illustrant le caractère tridimensionnel du jet.
  Cet écoulement est également intéressant par la diversité des gradients
  présents: très intenses au début du jet, les gradients de masse volumiques
  s'atténuent au fur et à mesure du mélange avec l'air ambiant.
@@ -423,19 +434,20 @@ Synthèse des données
 \end_layout
 
 \begin_layout Standard
-A partir ce volume de masse volumique nous pouvons générer des données synthétiq
-ues pour tester notre algorithme de reconstruction.
- Pour cela il est tout d'abord nécessaire de définir le système d'observation.
+A partir de ce volume de masse volumique, nous pouvons générer des données
+ synthétiques afin de tester notre algorithme de reconstruction.
+ Pour cela, il est tout d'abord nécessaire de définir le système d'observation.
  Chaque caméra est caractérisée par son fichier de calibration, contenant
  ses paramètres intrinsèques: sa focale, son nombre de pixels, leur taille,
  et ses paramètres extrinsèques: sa position dans l'espace vis à vis du
  repère monde et son orientation.
  On peut alors appliquer l'opérateur direct 
-\begin_inset Formula $\mathcal{A}$
+\begin_inset Formula $\myA$
 \end_inset
 
-, dont fait référence Todoroff, et qui modélise le processus d'acquisition,
- à savoir l'équation d'eikonale reliant le champ de masse volumique 
+, dont fait référence Violaine Todoroff, et qui modélise le processus d'acquisit
+ion, à savoir l'équation fondamentale de l'optique géométrique reliant le
+ champ de masse volumique 
 \begin_inset Formula $\myrho$
 \end_inset
 
@@ -448,9 +460,9 @@ ues pour tester notre algorithme de reconstruction.
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \myepsilon=\dfrac{G}{n_{0}}\int_{s\in ray}\nabla\myrho ds
-\]
+\end{equation}
 
 \end_inset
 
@@ -458,26 +470,87 @@ ues pour tester notre algorithme de reconstruction.
 \end_layout
 
 \begin_layout Standard
-L'aspect dérivation est réalisé par différences finies centrées.
- Quant à l'aspect tomographie-intégration, c'est une opération classique
- de synthèse d'image, à savoir un lancé de rayon.
- Ainsi, pour chaque pixel caméra, un rayon est propagé à travers les volumes
- de gradient de masse volumique.
- Le long du rayon, on intégré les gradients avec un pas de calcul égal à
- 
-\begin_inset Formula $\dfrac{1}{10}^{ème}$
+L'opérateur direct 
+\begin_inset Formula $\myA$
 \end_inset
 
- de voxel.
+ peut être décomposer comme:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\myA=\myT\myD
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+où:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bullet$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\myD$
+\end_inset
+
+ est un opérateur de dérivation implémenté via une matrice de différences
+ finies centrées.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bullet$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\myT$
+\end_inset
+
+ est l'opérateur d'intégration et de tomographie, implémenté via un lancer
+ de rayon.
+\end_layout
+
+\begin_layout Standard
+Ainsi, pour chaque pixel caméra, un rayon est propagé à travers les volumes
+ de masse volumique.
+ Le long du rayon, les gradients sont intégrés avec un pas de calcul égal
+ à 
+\begin_inset Formula $\nicefrac{1}{10}^{ème}$
+\end_inset
+
+ de voxel typiquement.
  Cette valeur a été jugée suffisante après avoir testé différents pas d'intégrat
 ion.
  On obtient alors nos 3 cartes de déviations 
-\begin_inset Formula $\myepsilon_{x},\myepsilon_{y},\myepsilon_{z}$
+\begin_inset Formula $\myepsilon_{x},\myepsilon_{y}\mbox{\, et\,}\myepsilon_{z}$
 \end_inset
 
 .
- Pour être plus réaliste, un bruit blanc gaussien est appliqué sur les cartes
- de déviations.
+ Pour être plus réaliste, un bruit blanc gaussien est appliqué sur ces données.
 \end_layout
 
 \begin_layout Subsection
@@ -505,19 +578,23 @@ Nous revenons ici sur la reconstruction optimale obtenue par Violaine Todoroff.
  de masse volumique moyen.
  Elle a en effet montré que cela permet non seulement accélérer la convergence
  mais aussi d'améliorer la qualité des résultats.
- Une coupe du champ reconstruit est présenté en 
+ Une coupe du champ reconstruit est présenté en Fig
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/Violaine_52cam_L2L1.png
+	filename Images/Violaine_52cam_L2L1.pdf
 	lyxscale 30
-	width 70text%
+	width 60text%
 
 \end_inset
 
@@ -571,10 +648,6 @@ key "Todoroff2013"
 
 \end_inset
 
-figure
-\begin_inset space ~
-\end_inset
-
 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -586,31 +659,57 @@ reference "fig:BOS3D:L2L1"
 \end_layout
 
 \begin_layout Standard
-Si il y a un bon accord avec le champ de référence on peut noter plusieurs
- choses.
- Tout d'abord, des oscillations apparaissent à la fois aucentre du volume
- mais ausi sur le bord du volume au niveau de la sortie du jet.
- Alors que la régularisation semble avoir fait son œuvre sur l'ensemble
- du jet certains voxels ressortent, donnant comme un 
-\begin_inset Quotes eld
+Le résultat montre un bon accord avec le champ de référence présenté en
+ Fig.
+\begin_inset space ~
 \end_inset
 
-piqué
-\begin_inset Quotes erd
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BOS3D:cojen"
+
 \end_inset
 
- à l'image.
- Enfin, dans les zones de forts gradients, à la sortie du jet, on constate
- un effet de rebond et une surestimation des niveaux de masse volumique.
+.
+ On peut toutefois remarquer que:
+\end_layout
+
+\begin_layout Enumerate
+Des oscillations apparaissent à la fois au centre du volume mais aussi sur
+ le bord, au niveau de la sortie du jet.
+\end_layout
+
+\begin_layout Enumerate
+Malgré l'utilisation de la régularisation, un 
+\begin_inset Quotes fld
+\end_inset
+
+grain
+\begin_inset Quotes frd
+\end_inset
+
+ est toujours présent dans certaines zones du champ.
+\end_layout
+
+\begin_layout Enumerate
+Au début du jet, dans les zones de forts gradients, on constate un effet
+ de rebond et une surestimation des niveaux de masse volumique.
 \end_layout
 
 \begin_layout Standard
-Todoroff évoque plusieurs éléments pouvant être responsable de ces artefacts:
- d'une part, le positionnement coplanaire des caméras pourrait expliquer
- les oscillations visibles au centre du volume.
- Ensuite, elle mentionne le fait que ses 2 opérateurs, de projection et
- de rétro-projection, ne sont pas adjoints l'un de l'autre ce qui peut expliquer
- ses problèmes de convergence.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Todoroff2013"
+
+\end_inset
+
+ évoque plusieurs éléments pouvant être responsable de ces artefacts: d'une
+ part, le positionnement coplanaire des caméras pourrait expliquer les oscillati
+ons visibles au centre du volume.
+ Ensuite, elle mentionne le fait que les deux opérateurs, de projection
+ et de rétro-projection, ne sont pas adjoints l'un de l'autre ce qui peut
+ expliquer ces problèmes de convergence.
  Enfin, elle n'a pas implémenter de conditions aux limites particulières.
  
 \end_layout
@@ -649,20 +748,20 @@ Revenons tout d'abord sur le caractère adjoint des opérateurs
 \begin_inset Formula $\myA$
 \end_inset
 
-et 
+ et 
 \begin_inset Formula $\myA^{T}$
 \end_inset
 
 .
  De manière pratique, les opérations de projection et rétroprojection peuvent
- être implémentées de 2 manières: par lancer de rayons, ou bien par projection
- de voxels.
+ être implémentées de deux manières différentes: par lancer de rayons, ou
+ bien par projection de voxels.
  A chaque fois c'est le point de vue qui diffère 
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -684,6 +783,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BOS3D:raytracing"
+
+\end_inset
+
 
 \end_layout
 
@@ -713,6 +818,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BOS3D:voxelproj"
+
+\end_inset
+
 
 \end_layout
 
@@ -763,22 +874,32 @@ Implémentatin des opérateurs de projection.
 
 \end_inset
 
-(figure
+: pour le lancer de rayons (figure
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:BOS3D:proj"
+reference "fig:BOS3D:raytracing"
 
 \end_inset
 
-): pour le lancer de rayons on adopte le point de vue pixel en lançant un
- rayon à travers l'écoulement pour intégrer ou déposer de l'information.
- Au contraire, pour la projection de voxels on regarde quels pixels interceptent
- le voxel courant répartir l'information sur ces pixels ou bien mettre à
- jour la valeur du voxel.
+) on adopte le point de vue pixel en lançant un rayon à travers l'écoulement
+ pour intégrer ou déposer de l'information.
+ Au contraire, pour la projection de voxels (figure
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BOS3D:voxelproj"
+
+\end_inset
+
+) on regarde quels pixels interceptent le voxel courant pour répartir l'informat
+ion sur ces pixels ou bien mettre à jour la valeur du voxel.
 \end_layout
 
 \begin_layout Standard
@@ -798,29 +919,34 @@ FloatBarrier
 \end_layout
 
 \begin_layout Standard
-Violaine utilisait le lancer de rayon pour l'opération de projection et
- la projection de voxels pour la rétroprojection.
+Violaine Todoroff utilisait le lancer de rayon pour l'opération de projection
+ et la projection de voxels pour la rétroprojection.
  Ces méthodes n'étant pas strictement identiques, cela pouvait conduire
  à des disparités l'opérateur direct et son adjoint.
- Pour notre nouvelle version du code de reconstruction nous faisons le choix
+ Dans une nouvelle version du code de reconstruction nous faisons le choix
  d'utiliser le lancer de rayon pour nos deux opérations.
  Ce choix est motivé par le fait qu'en projection les rayons sont indépendant
  les uns des autres ce qui évite les conflits d'écriture dans un code parallèle.
  Après implémentation, nous avons également vérifié que nos deux opérateurs
- été bien adjoints l'un de l'autre.
- Etant donné le bon comportement de notre algorithme nous avons pu également
- ajouter le calcul automatique du pas de descente optimal, abandonner par
+ sont bien adjoints l'un de l'autre.
+ Etant donné le bon comportement de notre algorithme, nous avons pu également
+ ajouter le calcul automatique du pas de descente optimal, abandonné par
  Todoroff suite à des problèmes de convergence.
  
 \end_layout
 
 \begin_layout Standard
-Enfin, nous avons également distinguer deux types de conditions aux 
+Enfin, nous avons également distingué deux types de conditions aux limites
+ illustrées sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -854,10 +980,6 @@ name "fig:BOS3D:boundaries"
 
 \end_inset
 
-limites
-\begin_inset space ~
-\end_inset
-
 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -865,7 +987,39 @@ reference "fig:BOS3D:boundaries"
 
 \end_inset
 
-: les bords où la masse volumiques est imposée et des bords dits 
+: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bullet$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ des bords où la masse volumiques est imposée.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bullet$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ des bords dits 
 \begin_inset Quotes fld
 \end_inset
 
@@ -874,7 +1028,10 @@ libres
 \end_inset
 
  pour les quels un gradient nul est imposé.
- La première permet d'imposer la valeur de 
+\end_layout
+
+\begin_layout Standard
+La première permet de fixer la valeur de 
 \begin_inset Formula $\myrho_{ext}$
 \end_inset
 
@@ -902,9 +1059,13 @@ FloatBarrier
 \end_layout
 
 \begin_layout Standard
-Au final, nous appliquons notre nouveau code de reconstruction sur le jet
- CoJeN avec également 52 caméras virtuelles.
- Une coupe du champ reconstruit est comparé à la référence en 
+Au final, nous appliquons notre nouveau code le reconstruction sur le jet
+ CoJeN dans les mêmes dispositions.
+ Une coupe du champ reconstruit est comparée à la référence en Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Float figure
 placement h
 wide false
@@ -974,7 +1135,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-efefefe.
+a) Jet CoJeN issu du calcul LES.
+ b) Reconstruction optimale optenue en régularisation 
+\begin_inset Formula $\myL$
+\end_inset
+
+ avec la nouvel version du code.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -992,10 +1158,6 @@ name "fig:BOS3D:cojen_good"
 
 \end_inset
 
-figure
-\begin_inset space ~
-\end_inset
-
 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1009,17 +1171,17 @@ reference "fig:BOS3D:cojen_good"
 \begin_layout Standard
 On peut voir ici que nous avons résolu l'ensemble des problèmes visibles
  sur la première version du code.
- Le champ reconstruit présente pratiquement pas de différences avec le volume
- de référence.
+ Le champ reconstruit ne présente pratiquement pas de différences avec le
+ volume de référence.
 \end_layout
 
 \begin_layout Standard
 Dans la section suivante, à travers notre article, nous revenons en détail
- sur le fonctionnement de notre nouvel algorithme.
+ sur le fonctionnement de ce nouvel algorithme.
  Nous évaluons sa capacité à reconstruire le jet CoJeN en fonction du nombre
  de caméras utilisées et de leur position dans l'espace.
  Enfin, après ces tests synthétiques, nous le mettons en œuvre sur des données
- expérimentales obtenues sur un banc d'essais BOS 3D et nous reconstruisons
+ expérimentales obtenues sur le banc d'essais géode afin de reconstruir
  des écoulements de convection.
 \end_layout
 
@@ -1421,10 +1583,6 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Section
 Conclusion
 \end_layout
@@ -1447,8 +1605,8 @@ status open
 A travers ce chapitre nous avons développé un code de reconstruction BOS
  3D avec une approche directe.
  Il repose sur la minimisation d'un critère aux moindres carrés régularisé.
- pour la régularisation quadratique que nous avons adopté, le paramètre
- de régularisation peut être sélectionner de manière automatique à partir
+ Pour la régularisation quadratique que nous avons adoptée, le paramètre
+ de régularisation peut être sélectionné de manière automatique à partir
  de la L-curve.
  Nous avons validé notre code sur des données synthétiques et montré que
  pour l'étude d'un jet, le placement optimal des caméras est la répartition

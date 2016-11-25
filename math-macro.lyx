@@ -70,16 +70,135 @@
 \begin_body
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+nomgroup}[1]{% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifthenelse{
+\backslash
+equal{#1}{G}}{
+\backslash
+item[
+\backslash
+Large{
+\backslash
+textbf{Symboles}} ]}{% 
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+ifthenelse{
+\backslash
+equal{#1}{O}}{
+\backslash
+item[
+\backslash
+Large{
+\backslash
+textbf{Opérateurs}} ]}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+ifthenelse{
+\backslash
+equal{#1}{B}}{
+\backslash
+item[
+\backslash
+Large{
+\backslash
+textbf{Paramètres du montage BOS}} ]}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+			
+\backslash
+ifthenelse{
+\backslash
+equal{#1}{L}}{
+\backslash
+item[
+\backslash
+Large{
+\backslash
+textbf{Paramètres relatifs à l'onde et au rayon lumineux}} ]}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+				
+\backslash
+ifthenelse{
+\backslash
+equal{#1}{C}}{
+\backslash
+item[
+\backslash
+Large{
+\backslash
+textbf{Acronymes}} ]}{}}}}}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset FormulaMacro
 \newcommand{\myrho}{\boldsymbol{\rho}}
 {\boldsymbol{\rho}}
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\boldsymbol{\\rho}$"
 description "Masse volumique"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ga ]{$
+\backslash
+boldsymbol{
+\backslash
+rho}$}{Masse volumique}
+\end_layout
 
 \end_inset
 
@@ -93,10 +212,34 @@ description "Masse volumique"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\lambda$"
 description "paramètre de régularisation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ga ]{$
+\backslash
+lambda$}{Paramètre de régularisation}
+\end_layout
 
 \end_inset
 
@@ -110,10 +253,34 @@ description "paramètre de régularisation"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\delta$"
 description "paramètre de régularisation L2L1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ga ]{$
+\backslash
+delta$}{Paramètre de régularisation L2L1}
+\end_layout
 
 \end_inset
 
@@ -127,10 +294,34 @@ description "paramètre de régularisation L2L1"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\theta$"
 description "coordonnée azimutale"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ga ]{$
+\backslash
+theta$}{Coordonnée azimutale}
+\end_layout
 
 \end_inset
 
@@ -144,10 +335,34 @@ description "coordonnée azimutale"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\lambda_1$"
 description "pseudo-période de l'amplification du mode 1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ga ]{$
+\backslash
+lambda_1$}{pseudo-période de l'amplification du mode 1}
+\end_layout
 
 \end_inset
 
@@ -161,10 +376,36 @@ description "pseudo-période de l'amplification du mode 1"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\boldsymbol{\\varepsilon}$"
 description "déviation lumineuse"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[la ]{$
+\backslash
+boldsymbol{
+\backslash
+varepsilon}$}{Déviation lumineuse}
+\end_layout
 
 \end_inset
 
@@ -178,10 +419,34 @@ description "déviation lumineuse"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\mathcal{J}$"
 description "critère des moindres carrés régularisés"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ga ]{$
+\backslash
+mathcal{J}$}{Critère des moindres carrés régularisés}
+\end_layout
 
 \end_inset
 
@@ -195,10 +460,34 @@ description "critère des moindres carrés régularisés"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\boldsymbol{A}$"
 description "Opérateur direct"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[oa ]{$
+\backslash
+boldsymbol{A}$}{Opérateur direct}
+\end_layout
 
 \end_inset
 
@@ -212,10 +501,34 @@ description "Opérateur direct"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\mathcal{R}$"
 description "Terme de régualrisation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ga ]{$
+\backslash
+mathcal{R}$}{Terme de régualrisation}
+\end_layout
 
 \end_inset
 
@@ -229,10 +542,34 @@ description "Terme de régualrisation"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\boldsymbol{D}$"
 description "Opérateur de dérivation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[oa ]{$
+\backslash
+boldsymbol{D}$}{Opérateur de dérivation}
+\end_layout
 
 \end_inset
 
@@ -246,10 +583,34 @@ description "Opérateur de dérivation"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\boldsymbol{T}$"
 description "Opérateur de tomographie"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[oa ]{$
+\backslash
+boldsymbol{T}$}{Opérateur de tomographie}
+\end_layout
 
 \end_inset
 
@@ -263,10 +624,34 @@ description "Opérateur de tomographie"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\boldsymbol{B}$"
 description "Opérateur BOS 2.0"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[oa ]{$
+\backslash
+boldsymbol{B}$}{Opérateur BOS 2.0}
+\end_layout
 
 \end_inset
 
@@ -280,10 +665,34 @@ description "Opérateur BOS 2.0"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\boldsymbol{P}$"
 description "Opérateur de projection"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[oa ]{$
+\backslash
+boldsymbol{P}$}{Opérateur de projection}
+\end_layout
 
 \end_inset
 
@@ -297,10 +706,36 @@ description "Opérateur de projection"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\mathcal{L}2\\mathcal{L}1$"
 description "Régularisation L2L1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ga ]{$
+\backslash
+mathcal{L}2
+\backslash
+mathcal{L}1$}{Régularisation L2L1}
+\end_layout
 
 \end_inset
 
@@ -314,10 +749,34 @@ description "Régularisation L2L1"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\mathcal{L}2$"
 description "Régularisation L2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ga ]{$
+\backslash
+mathcal{L}2$}{Régularisation L2}
+\end_layout
 
 \end_inset
 
@@ -331,10 +790,32 @@ description "Régularisation L2"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$s$"
 description "Abscisse curviligne"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[la ]{$s$}{Abscisse curviligne}
+\end_layout
 
 \end_inset
 
@@ -348,10 +829,34 @@ description "Abscisse curviligne"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\textbf{x}$"
 description "Vecteur directeur du rayon lumineux"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[la ]{$
+\backslash
+textbf{x}$}{Vecteur directeur du rayon lumineux}
+\end_layout
 
 \end_inset
 
@@ -365,10 +870,36 @@ description "Vecteur directeur du rayon lumineux"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\dot{\\textbf{x}}$"
 description "Vecteur directeur du rayon lumineux"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[la ]{$
+\backslash
+dot{
+\backslash
+textbf{x}}$}{Vecteur directeur du rayon lumineux}
+\end_layout
 
 \end_inset
 
@@ -382,10 +913,32 @@ description "Vecteur directeur du rayon lumineux"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$n$"
 description "Indice optique"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ga ]{$n$}{Indice optique}
+\end_layout
 
 \end_inset
 
@@ -399,10 +952,32 @@ description "Indice optique"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$G$"
 description "Constante de Gladstone-Dale"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ga ]{$G$}{Constante de Gladstone-Dale}
+\end_layout
 
 \end_inset
 
@@ -416,10 +991,34 @@ description "Constante de Gladstone-Dale"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\mathcal{F}$"
 description "Transformée de Fourrier\\\\"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ga ]{$
+\backslash
+mathcal{F}$}{Transformée de Fourier}
+\end_layout
 
 \end_inset
 
@@ -433,10 +1032,34 @@ description "Transformée de Fourrier\\\\"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\boldsymbol{d_{in}}$"
 description "Direction d'entrée du rayon lumineux"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[la ]{$
+\backslash
+boldsymbol{d_{in}}$}{Direction d'entrée du rayon lumineux}
+\end_layout
 
 \end_inset
 
@@ -450,10 +1073,34 @@ description "Direction d'entrée du rayon lumineux"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\boldsymbol{d_{out}}$"
 description "Direction de sortie du rayon lumineux"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[la ]{$
+\backslash
+boldsymbol{d_{out}}$}{Direction de sortie du rayon lumineux}
+\end_layout
 
 \end_inset
 
@@ -467,10 +1114,34 @@ description "Direction de sortie du rayon lumineux"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\boldsymbol{d^{*}_{out}}$"
 description "Direction de sortie du rayon lumineux"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[la ]{$
+\backslash
+boldsymbol{d^{*}_{out}}$}{Direction de sortie du rayon lumineux}
+\end_layout
 
 \end_inset
 
@@ -484,10 +1155,32 @@ description "Direction de sortie du rayon lumineux"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$f$"
 description "focale caméra"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ba ]{$f$}{Focale caméra}
+\end_layout
 
 \end_inset
 
@@ -501,10 +1194,32 @@ description "focale caméra"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$M$"
 description "Grandissement optique"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ba ]{$M$}{Grandissement optique}
+\end_layout
 
 \end_inset
 
@@ -518,10 +1233,34 @@ description "Grandissement optique"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$f_{\\#}$"
 description "Ouverture caméra"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ba ]{$f_{
+\backslash
+#}$}{Ouverture caméra}
+\end_layout
 
 \end_inset
 
@@ -535,10 +1274,32 @@ description "Ouverture caméra"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$l$"
 description "distance écoulement-mouchetis"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ba ]{$l$}{Distance écoulement-mouchetis}
+\end_layout
 
 \end_inset
 
@@ -552,10 +1313,32 @@ description "distance écoulement-mouchetis"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$m$"
 description "distance caméra-écoulement"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ba ]{$m$}{Distance caméra-écoulement}
+\end_layout
 
 \end_inset
 
@@ -569,10 +1352,34 @@ description "distance caméra-écoulement"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\omega$"
 description "pulsation lumineuse"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[la ]{$
+\backslash
+omega$}{Pulsation lumineuse}
+\end_layout
 
 \end_inset
 
@@ -586,10 +1393,34 @@ description "pulsation lumineuse"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\nu$"
 description "fréquence"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[la ]{$
+\backslash
+nu$}{Fréquence}
+\end_layout
 
 \end_inset
 
@@ -603,10 +1434,34 @@ description "fréquence"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\textbf{k}$"
 description "vecteur d'onde"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[la ]{$
+\backslash
+textbf{k}$}{Vecteur d'onde}
+\end_layout
 
 \end_inset
 
@@ -620,10 +1475,34 @@ description "vecteur d'onde"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\Sigma$"
 description "Surface d'onde"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[la ]{$
+\backslash
+Sigma$}{Surface d'onde}
+\end_layout
 
 \end_inset
 
@@ -637,10 +1516,34 @@ description "Surface d'onde"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\textbf{x}$"
 description "Vecteur directeur du rayon lumineux"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[la ]{$
+\backslash
+textbf{x}$}{Vecteur directeur du rayon lumineux}
+\end_layout
 
 \end_inset
 
@@ -654,10 +1557,34 @@ description "Vecteur directeur du rayon lumineux"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\textbf{x}$"
 description "Vecteur directeur du rayon lumineux"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[la ]{$
+\backslash
+lambda$}{paramètre de régularisation}
+\end_layout
 
 \end_inset
 
@@ -671,10 +1598,41 @@ description "Vecteur directeur du rayon lumineux"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$BOS~2.0$"
 description "BOS 2.0"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ga ]{$BOS~2.0$}{BOS 2.0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -688,18 +1646,41 @@ description "BOS 2.0"
 \end_inset
 
 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "$BOS~2.0$"
-description "BOS 2.0"
+\begin_inset Note Note
+status open
 
-\end_inset
-
-
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$BOS~1.0$"
 description "BOS 1.0"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ga ]{$BOS~1.0$}{BOS 1.0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -713,10 +1694,34 @@ description "BOS 1.0"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\delta_t$"
 description "Diamètre du cercle de confusion au niveau de l'écoulement"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ba ]{$
+\backslash
+delta_t$}{Diamètre du cercle de confusion au niveau de l'écoulement}
+\end_layout
 
 \end_inset
 

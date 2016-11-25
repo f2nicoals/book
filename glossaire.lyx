@@ -2,7 +2,7 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass article
+\textclass report
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -25,6 +25,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -69,6 +70,10 @@
 \begin_body
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DMAE"
@@ -79,7 +84,30 @@ description "Département Modèles pour l'Aérodynamique et l'Energétique\\\\"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{DMAE}{Département Modèles pour l'Aérodynamique et l'Energétiqu
+e}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DTIM"
@@ -90,7 +118,30 @@ description "Département Traitement de l'Information et Modélisation "
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{DTIM}{Département Traitement de l'Information et Modélisation
+ }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "GMT"
@@ -101,7 +152,29 @@ description "Grands Moyens Techniques"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{GMT}{Grands Moyens Techniques}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DSMA"
@@ -112,7 +185,29 @@ description "Département des Ssouffleries de Modane-Avrieux"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{DSMA}{Département des Ssouffleries de Modane-Avrieux}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "PIV"
@@ -123,7 +218,29 @@ description "Particle Image Velocimetry"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{PIV}{Particle Image Velocimetry}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "SPIV"
@@ -134,7 +251,29 @@ description "Stereo Particle Image Velocimetry"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{SPIV}{Stereo Particle Image Velocimetry}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "TR-PIV"
@@ -145,7 +284,29 @@ description "Time Resolved Particle Image Velocimetry"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{TR-PIV}{Time Resolved Particle Image Velocimetry}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "LDV"
@@ -156,7 +317,29 @@ description "Laser Doppler Velocimetry"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{LDV}{Laser Doppler Velocimetry}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "BOS"
@@ -167,7 +350,29 @@ description "Backgroundd Oriented Schlieren"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{BOS}{Backgroundd Oriented Schlieren}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "RBOS"
@@ -178,7 +383,29 @@ description "Retroreflective Backgroundd Oriented Schlieren"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{RBOS}{Retroreflective Backgroundd Oriented Schlieren}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "CBOS"
@@ -189,7 +416,29 @@ description "Color Backgroundd Oriented Schlieren"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{CBOS}{Color Backgroundd Oriented Schlieren}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "CG-BOS"
@@ -200,7 +449,29 @@ description "Color Grid Backgroundd Oriented Schlieren"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{CG-BOS}{Color Grid Backgroundd Oriented Schlieren}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "SAF"
@@ -211,7 +482,29 @@ description "Schlieren for Aircraft in Flight"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{SAF}{Schlieren for Aircraft in Flight}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "BOSCO"
@@ -222,7 +515,30 @@ description "Background Oriented Schlieren using Celestial Objects\\\\"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{BOSCO}{Background Oriented Schlieren using Celestial Objects
+ }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "GASP"
@@ -233,7 +549,29 @@ description "Ground to Air Schlieren Photography system"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{GASP}{Ground to Air Schlieren Photography system}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "caKEBOS "
@@ -244,7 +582,29 @@ description "Calcium-K Eclipse Background Oriented Schlieren"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{caKEBOS}{Calcium-K Eclipse Background Oriented Schlieren}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "LK"
@@ -255,7 +615,29 @@ description "Méthode de flot optique Lucas-Kanade"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{LK}{Méthode de flot optique Lucas-Kanade}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "HS"
@@ -266,7 +648,29 @@ description "Méthode de flot optique Horn-Schunck"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{HS}{Méthode de flot optique Horn-Schunck}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "NPR"
@@ -277,7 +681,29 @@ description "Nozzle Pressure Ratio"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{NPR}{Nozzle Pressure Ratio}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "MV"
@@ -288,7 +714,29 @@ description "Measurement Volume"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{MV}{Measurement Volume}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "CB"
@@ -299,7 +747,29 @@ description "Calibration Body"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{CB}{Calibration Body}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "GPU"
@@ -310,7 +780,29 @@ description "Graphics Processing Unit"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{GPU}{Graphics Processing Unit}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "CG"
@@ -321,7 +813,29 @@ description "Conjugated Gradient"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{CG}{Conjugated Gradient}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "CT"
@@ -332,7 +846,29 @@ description "Computed Tomography"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{CT}{Computed Tomography}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ART"
@@ -343,7 +879,29 @@ description "Algebraic Reconstruction Technique"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{ART}{Algebraic Reconstruction Technique}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "FBP"
@@ -354,7 +912,29 @@ description "Filtered Back Projection"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{FBP}{Filtered Back Projection}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "TV"
@@ -365,7 +945,29 @@ description "Total Variation\\\\"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{TV}{Total Variation }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "MSE"
@@ -376,7 +978,29 @@ description "Mean Squared Error \\\\"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{MSE}{Mean Squared Error}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "NLLS"
@@ -387,7 +1011,29 @@ description "Non Linear Least Ssquares\\\\"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{NLLS}{Non Linear Least Squares }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DES"
@@ -398,7 +1044,29 @@ description "Detached Eddy Simulation"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{DES}{Detached Eddy Simulation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "MD"
@@ -409,7 +1077,29 @@ description "Mach Disk"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{MD}{Mach Disk}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "POD"
@@ -420,11 +1110,51 @@ description "Proper Orthogonal Decomposition"
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{POD}{Proper Orthogonal Decomposition}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "K-H"
 description "Kelvin-Helmoltz"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{DMAE}{Kelvin-Helmoltz}
+\end_layout
 
 \end_inset
 

@@ -2260,6 +2260,16 @@ name "fig:BOS2:disp"
 \end_inset
 
 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Coupe des champs de masse volumique reconstruits.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

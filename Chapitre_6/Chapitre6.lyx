@@ -1260,7 +1260,7 @@ reference "eq:BOS2:approxxx"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-%\boxed{\boldsymbol{\Delta}^{\star}\approx\frac{1}{n_{in}}\int_{s_{in}}^{s_{out}}(s_{out}-t)\nablan(\textbf{x}_{0}(t))dt}
+%\boxed{\boldsymbol{\Delta}^{\star}\approx\frac{1}{n_{in}}\int_{s_{in}}^{s_{out}}(s_{out}-t)\nabla n(\textbf{x}_{0}(t))dt}
 \label{eq:BOS2:deltan}
 \end{equation}
 

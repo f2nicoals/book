@@ -138,17 +138,133 @@ Au cours de ces travaux nous avons tout d'abord élaboré une version amélioré
 \begin_layout Standard
 Une étape importante franchie dans le développement de la BOS 3D est sa
  validation par des mesures thermocouples dans un cas incompressible.
- Dans une telle situation, notre méthode peut donc offrir un moyen innover
+ Dans une telle situation, notre méthode peut donc offrir un moyen innovant
  de mesurer la température de l'écoulement, de surcroit en 3D.
  
 \end_layout
 
 \begin_layout Standard
+Nous avons déployé la BOS 3D en soufflerie de recherche à F2 et également
+ en soufflerie industrielle a S1MA.
+ Cette dernière présente un environnement beaucoup moins favorable à l'utilisati
+on de techniques optiques.
+ Néanmoins nous avons mis au point une première méthode de traitement qui
+ nous a permis de reconstruire l'écoulement moyen d'un jet à contre-courant
+ à Mach 0.4.
+ Il est important de relever les résultats obtenus par la BOS 3D sur des
+ volumes de taille importante et dans ce contexte de soufflerie industrielle,
+ là où d'autre méthodes comme la PIV, et en particulier la PIV 3D sont difficile
+s à mettre en œuvre.
+\end_layout
 
+\begin_layout Standard
+Les essais réalisés à S1MA, pour la première fois sur des écoulements compressib
+les ont mis en évidence l'astigmatisme parasite causé par les forts gradients
+ de masse volumique.
+ A travers une étude dédiée sur un banc d'essai en laboratoire nous avons
+ pu atténuer ces effets et évaluer notre algorithme de reconstruction sur
+ jet sous-détendu.
+ Les très bons accord obtenus vis à vis de la littérature et d'une simulation
+ numérique sur la topologie du jet mais aussi sur les niveaux de masse volumique
+, illustrent les bonnes performances de la technique.
+ De plus, le nombre important d'acquisitions nous ont permit d'extraire,
+ à partir d'une analyse POD, le lâcher tourbillonnaire périodique présent
+ dans la couche de mélange.
+\end_layout
+
+\begin_layout Standard
+Au final, ces travaux de thèse ont permis d'accroitre le degré de maturité
+ de la technique.
+ Bien qu'elle soit encore relativement jeune, nous avons démontrer son fonctionn
+ent pour des écoulements de plus en plus rapides et sur des installations
+ de plus en plus complexes.
+ A la fin de cette étude, nous pouvons entrevoir de nombreuses applications
+ mais aussi le fort potentiel pour analyser la physique de certains écoulements
+ complexes, des écoulements de convection au bruit de screech dans les jets
+ sous-détendus.
 \end_layout
 
 \begin_layout Section*
 Perspectives
+\end_layout
+
+\begin_layout Standard
+Comme nous venons de le dire la BOS 3D offre un nouvel outil pour analyser
+ la physique des écoulements.
+ Toutefois, le point le plus limitant avec la méthode actuelle est son coût
+ de calcul.
+ Bien qu'elle soit déjà implémenté sous architecture GPU, elle possède un
+ fort potentiel d'optimisation qui permettrait accroitre notablement ses
+ performances.
+ Ceci donnerai la possibilité de calculer des champs de fluctuations de
+ masse volumique.
+\end_layout
+
+\begin_layout Standard
+Au niveau algorithmie, l'approche 
+\begin_inset Formula $\myLL$
+\end_inset
+
+ qui n'a pas été étudié dans ces travaux pourrait faire l'objet d'une nouvelle
+ évaluation.
+ Elle éviterait un éventuel lissage excessif opérer par la régularisation
+ 
+\begin_inset Formula $\myL$
+\end_inset
+
+ et de faire ressortir des petites structures présentent sur les champs
+ instantanés notamment.
+ Elle pourrait aussi bénéficier aux écoulements supersoniques en préservant
+ les structures intenses des ondes de chocs.
+ Nous l'avons vu à S1MA, le masque 3D peut poser problème lors du processus
+ de reconstruction lorsque les contraintes qu'il induit ne sont pas en accord
+ avec la mesure.
+ De manière générale, il faudra veiller à ce qu'il y ait bien une surjection
+ entre les images masquées des caméras et le masque 3D.
+ Enfin, la prise en compte du moyennage spatial associé su cercle de confusion
+ dans notre opérateur direct, apporterai peut être une meilleure résolution
+ aux champs de masse volumique reconstruits.
+\end_layout
+
+\begin_layout Standard
+Lors de notre étude sur un jet sous-détendus nous n'avons pas pu travailler
+ au paramètre d'ouverture optimal en configuration 3D.
+ Des solutions technologiques tels que des panneaux rétroréfléchissant ou
+ bien l'utilisation d'un éclairage du mouchetis par l'arrière offriraient
+ un surcroit de lumière.
+ Il serait également intéressant d'étudier des algorithmes de flot optiques
+ plus élaborés pour pouvoir traiter les images dégradées par du flou.
+\end_layout
+
+\begin_layout Standard
+Dans cette étude nous avons élargit le champ d'application de la technique
+ suivant deux axes: la vitesse de l'écoulement et son emploi dans un environneme
+nt complexe de soufflerie.
+ D'autres voies restent à explorer.
+ La plus attendu est sûrement la résolution temporelle mais c'est aussi
+ la plus coûteuse.
+ Il faut d'une part avoir à disposition un grand nombre de caméras rapides
+ mais il faut aussi être capable de traiter l'énorme quantité de données
+ obtenus.
+ A court terme, cette axe de développement semble encore inaccessible.
+\end_layout
+
+\begin_layout Standard
+Une deuxième voie concerne la prise en compte d'une maquette au cœur de
+ l'écoulement.
+ Un objet obstruera évidement les prises de vues et il faudra tenir compte
+ de ce manque de données dans la reconstruction.
+ Tous les voxels n'auront pas non plus le même poids selon le nombre de
+ caméras qu'ils voient.
+ Enfin, il faudra peut être revoir le positionnement des caméras pour ce
+ genre d'étude.
+\end_layout
+
+\begin_layout Standard
+Une dernière piste qui peut être explorée est l'étude des mélanges de gaz
+ et notamment des mesures en combustion.
+ Il serait intéressant de déterminer l'intérêt de la BOS 3D pour ce type
+ de mesures.
 \end_layout
 
 \end_body

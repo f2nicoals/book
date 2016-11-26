@@ -172,9 +172,12 @@ Les essais réalisés à S1MA, sont les premiers tests réalisés sur des écoul
  A travers une étude dédiée sur un banc d'essai en laboratoire nous avons
  pu atténuer ces effets et évaluer notre algorithme de reconstruction sur
  jet sous-détendu.
- Les très bons accord obtenus comparés à la littérature ainsi qu'à une simulatio
-n numérique sur la topologie du jet mais aussi sur les niveaux de masse
- volumique, illustrent les bonnes performances de la technique.
+ Nous avons également démontré le bon fonctionnement de notre algorithme
+ en présence de forts gradients de masse volumique, sous l'hypothèse de
+ rayons paraxiaux.
+ Les très bons accord obtenus, comparés à la littérature ainsi qu'à une
+ simulation numérique sur la topologie du jet mais aussi sur les niveaux
+ de masse volumique, illustrent les bonnes performances de la technique.
  De plus, le nombre important d'acquisitions nous ont permit d'extraire,
  à partir d'une analyse POD, le lâcher tourbillonnaire périodique présent
  dans la couche de mélange.

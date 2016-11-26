@@ -138,7 +138,7 @@ key "Atcheson08,Hinsberg2014,nicolas2016"
 \end_inset
 
  exploitent des connaissances a priori de la géométrie de l'écoulement.
- Dans ce chapitre nous revenons sur le calcul des champs de déviation à
+ Dans ce chapitre, nous revenons sur le calcul des champs de déviation à
  partir des champs de déplacements.
  En particulier, nous remettons en cause l'hypothèse qui est classiquement
  utilisée en BOS et que nous avons utilisé jusqu'à présent concernant le
@@ -237,7 +237,7 @@ key "stam1996"
 
 \end_inset
 
- a étudié la propagation des rayons lumineux en termes de déplacement 
+ ont étudié la propagation des rayons lumineux en terme de déplacement 
 \begin_inset Note Note
 status open
 
@@ -360,7 +360,7 @@ reference "sec:biblio:principe"
 
 \end_inset
 
-, le trajet suivi par la lumière ne dépend pas de sons sens de parcours.
+, le trajet suivi par la lumière ne dépend pas de son sens de parcours.
 \end_layout
 
 \begin_layout Standard
@@ -399,7 +399,7 @@ key "Ihrke07,Atcheson08"
 \end_layout
 
 \begin_layout Standard
-un rayon qui sort de la caméra avec la direction 
+Un rayon qui sort de la caméra avec la direction 
 \begin_inset Formula $\mydi$
 \end_inset
 
@@ -426,7 +426,18 @@ un rayon qui sort de la caméra avec la direction
 \begin_inset Formula $\boldsymbol{\varepsilon}^{\star}=\mydos-\mydi$
 \end_inset
 
-.
+(Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BOS2:ref_point"
+
+\end_inset
+
+).
  
 \begin_inset Note Note
 status collapsed
@@ -510,27 +521,27 @@ name "fig:BOS2:ref_point"
 \end_layout
 
 \begin_layout Standard
-En prolongeant le rayon depuis la caméra jusqu'au mouchetis conduit au point
- 
+Le prolongement du rayon depuis la caméra jusqu'au mouchetis conduit au
+ point 
 \begin_inset Formula $H$
 \end_inset
 
-, à partir duquel la lumière semble venir en présence de l'écoulement.
+, à partir duquel la lumière semble provenir en présence de l'écoulement.
  Pour l'image de référence, sans écoulement, la lumière provient effectivement
  de 
 \begin_inset Formula $H^{\star}$
 \end_inset
 
 .
- Les techniques de corréélation d'image sont utilisée pour calucler le déplaceme
-nt entre l'image de référence et l'image perturbée.
- Pour simplifier le discours nous parlerons dans la suite que de points
- et de déplacements localisés sur mouchetis.
+ Les techniques de corrélation d'images sont utilisées pour calculer le
+ déplacement entre l'image de référence et l'image perturbée.
+ Pour simplifier le discours nous parlerons par la suite de points et de
+ déplacements localisés sur mouchetis.
  Cela n'implique pas d'approximation supplémentaire ni de perte de généralité
  puisque le lien entre le plan de mise au point au niveau du mouchetis et
- le plan image est 1 to 1.
- Dans un cas idéal, ce lien n'est qu'une homotétie dont les paramètres sont
- déduit de la calibration du montage 
+ le plan image est bijectif.
+ Dans un cas idéal, ce lien n'est qu'une homothétie dont les paramètres
+ sont déduis de la calibration du montage 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "lesant2014"
@@ -582,8 +593,7 @@ key "lesant2014"
 \end_layout
 
 \begin_layout Standard
-A partir de là, les mesures images donnent accès à la position des points
- 
+Les mesures images donnent accès à la position des points 
 \begin_inset Formula $I_{in}$
 \end_inset
 
@@ -595,19 +605,20 @@ A partir de là, les mesures images donnent accès à la position des points
 \begin_inset Formula $H^{\star}$
 \end_inset
 
- et aussi à la direction du vecteur directeur 
+ ainsi qu'à la direction du vecteur directeur 
 \begin_inset Formula $\mydi$
 \end_inset
 
-, mais ni 
+.
+ Par contre, ni 
 \begin_inset Formula $\mydos$
 \end_inset
 
- ou 
+ ni 
 \begin_inset Formula $\boldsymbol{\varepsilon}^{\star}$
 \end_inset
 
- n'est observé.
+ ne sont observés.
  La direction du vecteur 
 \begin_inset Formula $\mydos$
 \end_inset
@@ -629,7 +640,14 @@ A partir de là, les mesures images donnent accès à la position des points
 \begin_inset Formula $I_{m}$
 \end_inset
 
-, le point milieu (voir Fig.
+ (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dalziel00,Atcheson08"
+
+\end_inset
+
+), le point milieu (voir Fig.
 \begin_inset space ~
 \end_inset
 
@@ -640,14 +658,7 @@ reference "fig:BOS2:ref_point"
 
 \end_inset
 
-) 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Dalziel00,Atcheson08"
-
-\end_inset
-
-.
+).
  Nous montrons dans un premier temps que ce choix est rigoureusement justifié
  sous l'approximation paraxiale pour les écoulements axisymétyrique.
  
@@ -732,7 +743,7 @@ key "Dalziel00,Atcheson08"
 
 \begin_layout Standard
 Ce point milieu est également une bonne approximation pour les situations
- en champ lointain, soit quand la taille 
+ en champ lointain, c'est à dire quand la taille 
 \begin_inset Formula $W$
 \end_inset
 
@@ -771,7 +782,7 @@ A travers ce chapitre nous proposons une nouvelle formulation linéaire nommée
 
 , qui relie directement le déplacement à la masse volumique.
  Elle repose sur la propagation, sous approximation paraxiale, de la déviation
- lumineuse mais aussi du déplacement du déplacement du point de sortie.
+ lumineuse mais aussi du déplacement du point de sortie.
 \end_layout
 
 \begin_layout Standard
@@ -1260,7 +1271,7 @@ reference "eq:BOS2:approxxx"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-%\boxed{\boldsymbol{\Delta}^{\star}\approx\frac{1}{n_{in}}\int_{s_{in}}^{s_{out}}(s_{out}-t)\nabla n(\textbf{x}_{0}(t))dt}
+%\boxed{\boldsymbol{\Delta}^{\star}\approx\frac{1}{n_{in}}\int_{s_{in}}^{s_{out}}(s_{out}-t)\nablan(\textbf{x}_{0}(t))dt}
 \label{eq:BOS2:deltan}
 \end{equation}
 

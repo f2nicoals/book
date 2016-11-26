@@ -1650,12 +1650,17 @@ valides
 \end_layout
 
 \begin_layout Plain Layout
-Notre technique BOS 3D a été mise en œuvre en laboratoire et présente de
- beaux résultats.
- Cela n'est pas suffisant dans le contexte de la métrologie pour l'aérodynamique
- et à travers le chapitre suivant nous allons déployer pour la première
- fois la technique en soufflerie et confronter les mesures BOS 3D à des
- mesures thermocouples.
+Notre technique BOS 3D a ensuite été mise en œuvre en laboratoire sur le
+ banc géode.
+ Des écoulements instantanés de convection, à la topologie complexe, ont
+ été reconstruits démontrant le fonctionnement de notre méthode.
+ Néanmoins, une première comparaison avec des mesures thermocouples semble
+ indiquer une sous estimation des niveaux de masse volumique reconstruits
+ par BOS 3D.
+ Avant de pourvoir envisager un déploiement de la technique en soufflerie,
+ nous revenons dans le chapitre suivant sur les hypothèses utilisées dans
+ notre modèle BOS afin d'expliquer les écarts observés.
+ 
 \end_layout
 
 \end_inset

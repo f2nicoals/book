@@ -259,7 +259,7 @@ key "Vuillot08"
 .
  L'écoulement primaire, chaud, est éjecté à Mach 0.7 avec une température
  de 
-\begin_inset Formula $850\, K$
+\begin_inset Formula $850\,K$
 \end_inset
 
 , tandis que l'écoulement secondaire plus froid, sort à Mach
@@ -267,7 +267,7 @@ key "Vuillot08"
 \end_inset
 
 0.9 avec une température de 
-\begin_inset Formula $335\, K$
+\begin_inset Formula $335\,K$
 \end_inset
 
 .
@@ -761,7 +761,7 @@ Revenons tout d'abord sur le caractère adjoint des opérateurs
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -773,9 +773,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/raytracing.png
-	lyxscale 50
-	width 45text%
+	filename Images/raytracing.pdf
+	width 48text%
+	BoundingBox 30bp 0bp 520bp 315bp
+	clip
 
 \end_inset
 
@@ -800,6 +801,10 @@ name "fig:BOS3D:raytracing"
 \end_inset
 
 
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -808,9 +813,11 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/voxelProj.png
+	filename Images/voxel_proj.pdf
 	lyxscale 50
-	width 45text%
+	width 48text%
+	BoundingBox 30bp 0bp 520bp 315bp
+	clip
 
 \end_inset
 
@@ -946,7 +953,7 @@ Enfin, nous avons également distingué deux types de conditions aux limites
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1214,6 +1221,15 @@ A direct approach for instantaneous 3D density field reconstruction
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Article initialement parut dans 
+\shape italic
+Experiments in Fluids,
+\shape default
+ volume 57, janvier 2016, issue 1, article 13.
+ 
 \end_layout
 
 \begin_layout Standard

@@ -761,7 +761,7 @@ Revenons tout d'abord sur le caractère adjoint des opérateurs
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -773,9 +773,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/raytracing.png
-	lyxscale 50
-	width 45text%
+	filename Images/raytracing.pdf
+	width 48text%
+	BoundingBox 30bp 0bp 520bp 315bp
+	clip
 
 \end_inset
 
@@ -800,6 +801,10 @@ name "fig:BOS3D:raytracing"
 \end_inset
 
 
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -808,9 +813,11 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/voxelProj.png
+	filename Images/voxel_proj.pdf
 	lyxscale 50
-	width 45text%
+	width 48text%
+	BoundingBox 30bp 0bp 520bp 315bp
+	clip
 
 \end_inset
 
@@ -842,7 +849,7 @@ Deux manières d'implémenter les opérateurs
 \begin_inset Formula $\myA$
 \end_inset
 
-et 
+ et 
 \begin_inset Formula $\myA^{T}$
 \end_inset
 
@@ -946,7 +953,7 @@ Enfin, nous avons également distingué deux types de conditions aux limites
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center

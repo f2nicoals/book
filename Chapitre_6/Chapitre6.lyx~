@@ -3,7 +3,7 @@
 \begin_document
 \begin_header
 \textclass report
-\use_default_options true
+\use_default_options false
 \maintain_unincluded_children false
 \language french
 \language_package none
@@ -30,15 +30,15 @@
 \papersize default
 \use_geometry false
 \use_package amsmath 1
-\use_package amssymb 1
-\use_package cancel 1
+\use_package amssymb 0
+\use_package cancel 0
 \use_package esint 1
-\use_package mathdots 1
-\use_package mathtools 1
-\use_package mhchem 1
-\use_package stackrel 1
-\use_package stmaryrd 1
-\use_package undertilde 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
 \cite_engine basic
 \cite_engine_type default
 \biblio_style plain
@@ -47,7 +47,7 @@
 \paperorientation portrait
 \suppress_date false
 \justification true
-\use_refstyle 1
+\use_refstyle 0
 \index Index
 \shortcut idx
 \color #008000
@@ -70,10 +70,10 @@
 \begin_body
 
 \begin_layout Chapter
-Construction d'un nouveau modèle BOS
+Etude des écoulements compressibles
 \begin_inset CommandInset label
 LatexCommand label
-name "chap:BOS2"
+name "chap:113"
 
 \end_inset
 
@@ -94,6 +94,9 @@ minitoc
 \end_inset
 
  
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -105,2196 +108,298 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-De manière classique, en BOS, lorsqu'on souhaite reconstruire le champ de
- masse volumique, le problème inverse à résoudre est formulé en fonction
- des cartes de déviations.
- Toutefois, les grandeurs directement observables sont les champs de déplacement
-s et non les cartes de déviations.
- Pour faire le lien entre ces deux grandeurs, il est nécessaire de faire
- certaines hypothèses comme nous l'avons vu dans le chapitre
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:biblio"
-
-\end_inset
-
-.
+La campagne d'essais réalisée à S1MA a soulevé une problématique associé
+ à la mesure des forts gradients de masse volumique.
+ La technique BOS étant utilisée ici en faisceaux de lumière divergents,
+ l'image d'un point sur le capteur résulte de l'intégration de tous les
+ rayons ayant pénétré par l'ouverture caméra.
+ Si les gradients de masse volumique observés sont trop intenses, l'ensemble
+ de ces rayons peut ne plus focaliser sur un pixel et conduire à une tâche
+ qui s'étale sur des pixels voisins.
+ Ce phénomène appelé astigmatisme provoque un flou sur les images brutes
+ qui a pour conséquence une plus faible qualité de corrélation et même dans
+ certains cas l'absence de corrélation.
  
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Dalziel00,Ihrke07"
-
-\end_inset
-
- se placent dans des conditions de champ lointain tandis que 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Atcheson08,Hinsberg2014,nicolas2016"
-
-\end_inset
-
- exploitent des connaissances a priori de la géométrie de l'écoulement.
- Dans ce chapitre, nous revenons sur le calcul des champs de déviation à
- partir des champs de déplacements.
- En particulier, nous remettons en cause l'hypothèse qui est classiquement
- utilisée en BOS et que nous avons utilisé jusqu'à présent concernant le
- choix du point de référence pour déterminer la direction des rayons lumineux.
- Nous reformulons ici le problème BOS de manière linéaire afin de relier
- explicitement le déplacement au champ de masse volumique.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-As light travels within an inhomogenous media its path is deviated by optical
- index gradients.
- Several optical techniques make use of this phenomenon to visualize or
- measure the optical index, or, using the Gladstone-Dale relationship, the
- density of a medium.
- Among them, background oriented schlieren (BOS) measures the displacements
- of patterns between images recorded with and without the fluid under study
+Dans ce chapitre, nous revenons tout d'abord sur la problématique d'astigmatisme
+, à travers l'étude d'un jet sous-détendu.
+ Nous réalisons une analyse paramétrique d'un montage BOS 2D afin d'optimiser
+ la qualité des images.
+ Après avoir conçu un nouveau banc BOS 3D, nous évaluons la capacité de
+ notre code actuel à reconstruire de tels champs de masse volumique.
+ En effet, en présence de gradients très intenses comme les ondes de choc,
+ l'hypothèse paraxiale utilisée jusqu'à présent peut être mise en défaut.
  
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Dalziel00,raffel2015"
-
-\end_inset
-
-.
- Image displacements are related to integral of the index gradient along
- the light paths.
- BOS measurement with various orientations can be exploited to reconstruct
- the 3D density field of the flow.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-However, while the basic observables are displacements, such 3D BOS reconstructi
-on is always formulated as the numerical inversion of an equation relating
- density or density gradients to deviations.
- Ray deviations have to be inferred from image displacements, but the mapping
- is many to one, and additional assumptions are required, such as far field
- conditions 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Dalziel00,Ihrke07"
-
-\end_inset
-
- or a priori knowledge on the geometry of the flow 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Atcheson08,Hinsberg2014,nicolas2016"
-
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-The validity of such assumptions is questionable in case of unsteady compressibl
-e flows.
- This letter deals with an alternative formulation of the BOS problem that
- completely removes the necessity of such hypotheses.
- It is based on a derivation of the light propagation within an inhomogeneous
- refractive index volume which accounts for the displacement of the ray
- together with its deviation.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Dans le domaine du rendu graphique, 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "stam1996"
-
-\end_inset
-
- ont étudié la propagation des rayons lumineux en terme de déplacement 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Mais ???
-\end_layout
-
-\end_inset
-
-.
- Dans la communauté BOS, la plupart des études exploitent la déviation des
- rayon lumineux à l'exception de 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Ihrke07,Yu13"
-
-\end_inset
-
- qui utilisent une formulation non linéaire du problème BOS 3D en considérant
- des rayons courbes.
- Comme décrit dans 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Ihrke07"
-
-\end_inset
-
-, cette approche non linéaire nécessite un processus itératif où, à chaque
- étape, la trajectoire courbe des rayons lumineux à travers le volume d'indice
- est calculée.
- Puis, le nouveau système linéaire qui est construit permet de calculer
- une nouvelle estimation du volume d'indice et le processus se répète ainsi.
- Au contraire, l'approche que nous développons ici repose sur l'approximation
- paraxiale et exprime un modèle linéaire dont l'inversion ne nécessite qu'une
- seule étape.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-In the context of rendering technique in computer graphics 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "stam1996"
-
-\end_inset
-
- has studied the propagation in terms of ray displacement.
- In the BOS community, most previous references focused on deviation, except
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Ihrke07,Yu13"
-
-\end_inset
-
- which were based on a non linear formulation of 3DBOS accounting for ray
- curvature.
- As described in 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Ihrke07"
-
-\end_inset
-
-, such non linear BOS models call for an iterative estimation process where,
- given a current estimate of the index volume, curved light paths are computed,
- then a linear system is built which inversion provide the new volume estimate,
- and so on.
- In contrast, we build upon the paraxial approximation and derive a single
- linear model, leading to a solution with a single inversion step.
-\end_layout
-
-\end_inset
-
-
+Finalement, nous reconstruisons le champ de masse volumique à différentes
+ conditions de fonctionnement.
+ Nous comparons les champs moyens avec des résultats de la littérature ainsi
+ qu'avec une simulation numérique.
+ Enfin, une analyse POD nous permet de moyenner de manière conditionnée
+ nos mesure pour reconstruire des champ de masse volumique en moyenne de
+ phase et ainsi mettre en évidence la périodicité du lâcher tourbillonnaire
+ dans la couche de mélange.
 \end_layout
 
 \begin_layout Section
-Présentation du problème
+Article
 \end_layout
 
 \begin_layout Standard
-Sur la Fig.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BOS2:ref_point"
-
-\end_inset
-
-, nous reprenons la schéma classique de la technique BOS.
- A noter que pour simplifier le discours, nous adoptons ici un point de
- vue inverse, également proposé par 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Ihrke07,Atcheson08"
-
-\end_inset
-
-.
- Nous suivons donc le rayon lumineux depuis la caméra jusqu'au mouchetis.
- Cette représentation n'affecte pas la modélisation du phénomène puisque
- comme nous l'avons vu dans dans la section
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:biblio:principe"
-
-\end_inset
-
-, le trajet suivi par la lumière ne dépend pas de son sens de parcours.
+Article soumis à 
+\shape italic
+Experiments in Fluids.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Fig.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BOS2:ref_point"
-
-\end_inset
-
- illustrates the basic setting of BOS.
- Note that for modeling purposes it is more convenient to travel rays from
- the camera toward the background, in the opposite direction with respect
- to the imaging process, as proposed in 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Ihrke07,Atcheson08"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Un rayon qui sort de la caméra avec la direction 
-\begin_inset Formula $\mydi$
-\end_inset
-
- rentre dans le volume d'indice optique en 
-\begin_inset Formula $I_{in}$
-\end_inset
-
-, est dévié par les inhomogénéitées de masse volumique et sort du volume
- en 
-\begin_inset Formula $I_{out}^{\star}$
-\end_inset
-
- avec la direction 
-\begin_inset Formula $\mydos$
-\end_inset
-
- avant d'atteindre le mouchetis en 
-\begin_inset Formula $H^{\star}$
-\end_inset
-
-.
- La déviation lumineuse est donc la différence des vecteurs directeurs des
- rayons d'entrée et de sortie 
-\begin_inset Formula $\boldsymbol{\varepsilon}^{\star}=\mydos-\mydi$
-\end_inset
-
-(Fig.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BOS2:ref_point"
-
-\end_inset
-
-).
- 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-A ray collected by the camera from direction 
-\begin_inset Formula $\mydi$
-\end_inset
-
- inputs the volume at some point 
-\begin_inset Formula $I_{in}$
-\end_inset
-
-, is deviated by density inhomogeneities and exits the volume at 
-\begin_inset Formula $I_{out}^{\star}$
-\end_inset
-
- with direction 
-\begin_inset Formula $\mydos$
-\end_inset
-
- before striking the background at point 
-\begin_inset Formula $H^{\star}$
-\end_inset
-
-.
- The ray deviation is the difference of the direction vectors between the
- input and output rays 
-\begin_inset Formula $\boldsymbol{\varepsilon}^{\star}=\mydos-\mydi$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/point5.pdf
-	lyxscale 50
-	width 80text%
-
-\end_inset
 
 
+\backslash
+includepdf[pages=-,
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
 
-\begin_layout Plain Layout
- Modèle BOS.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:BOS2:ref_point"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Le prolongement du rayon depuis la caméra jusqu'au mouchetis conduit au
- point 
-\begin_inset Formula $H$
-\end_inset
-
-, à partir duquel la lumière semble provenir en présence de l'écoulement.
- Pour l'image de référence, sans écoulement, la lumière provient effectivement
- de 
-\begin_inset Formula $H^{\star}$
-\end_inset
-
-.
- Les techniques de corrélation d'images sont utilisées pour calculer le
- déplacement entre l'image de référence et l'image perturbée.
- Pour simplifier le discours nous parlerons par la suite de points et de
- déplacements localisés sur mouchetis.
- Cela n'implique pas d'approximation supplémentaire ni de perte de généralité
- puisque le lien entre le plan de mise au point au niveau du mouchetis et
- le plan image est bijectif.
- Dans un cas idéal, ce lien n'est qu'une homothétie dont les paramètres
- sont déduis de la calibration du montage 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "lesant2014"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Prolongating the ray from the camera towards the background leads to point
- 
-\begin_inset Formula $H$
-\end_inset
-
-, which is the point from which the light seems to come when the perturbating
- flow is present.
- In the reference image without the flow, the light actually comes from
- 
-\begin_inset Formula $H^{\star}$
-\end_inset
-
-.
- Image correlation techniques are used to match these two regions between
- the reference and perturbed images.
- For convenience only points and displacements within the background plane
- will be considered in the following paragraphs.
- It does not imply any approximation or loss of generality since there is
- a one-to-one mapping between the background plane and the image plane.
- In an ideal situation this mapping is only a scaling, more generally a
- plane homography, whose parameters are defined by a preliminary calibration
- of the set-up 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "lesant2014"
-
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Les mesures images donnent accès à la position des points 
-\begin_inset Formula $I_{in}$
-\end_inset
-
-, 
-\begin_inset Formula $H$
-\end_inset
-
- et 
-\begin_inset Formula $H^{\star}$
-\end_inset
-
- ainsi qu'à la direction du vecteur directeur 
-\begin_inset Formula $\mydi$
-\end_inset
-
-.
- Par contre, ni 
-\begin_inset Formula $\mydos$
-\end_inset
-
- ni 
-\begin_inset Formula $\boldsymbol{\varepsilon}^{\star}$
-\end_inset
-
- ne sont observés.
- La direction du vecteur 
-\begin_inset Formula $\mydos$
-\end_inset
-
- dépend de la position du point de sortie 
-\begin_inset Formula $I_{out}^{\star}$
-\end_inset
-
- qui est inconnue.
- Afin d'estimer le champ de masse volumique à partir des déviations, toutes
- les techniques BOS linéaires s'affranchissent de ce problème en faisant
- l'approximation que le déviation est localisée en un point particulier
- de l'intersection du rayon non perturbé 
-\begin_inset Formula $OH$
-\end_inset
-
- et du volume de mesure.
- Le choix habituel se porte sur 
-\begin_inset Formula $I_{m}$
-\end_inset
-
-, le point milieu (voir Fig.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BOS2:ref_point"
-
-\end_inset
-
-) 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Dalziel00,Atcheson08"
-
-\end_inset
-
-.
- Nous montrons dans un premier temps que ce choix est rigoureusement justifié
- sous l'approximation paraxiale pour les écoulements axisymétyrique.
- 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-As a result, image measurements give access to the locations of 
-\begin_inset Formula $I_{in}$
-\end_inset
-
-, 
-\begin_inset Formula $H$
-\end_inset
-
- and 
-\begin_inset Formula $H^{\star}$
-\end_inset
-
- and also to the direction vector 
-\begin_inset Formula $\mydi$
-\end_inset
-
-, but neither 
-\begin_inset Formula $\mydos$
-\end_inset
-
- or 
-\begin_inset Formula $\boldsymbol{\varepsilon}^{\star}$
-\end_inset
-
- is observed.
- The direction vector 
-\begin_inset Formula $\mydos$
-\end_inset
-
- depends on the output point 
-\begin_inset Formula $I_{out}^{\star}$
-\end_inset
-
- which position is not known.
- As they aim at estimating density from deviations, all linear BOS techniques
- overcome this issue by using an approximate propagation model where the
- deflection occurs on some point of the intersection of non perturbed ray
- 
-\begin_inset Formula $OH$
-\end_inset
-
- and the experimental volume.
- A common choice is the middle point 
-\begin_inset Formula $I_{m}$
-\end_inset
-
- (see Fig.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BOS2:ref_point"
-
-\end_inset
-
-) 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Dalziel00,Atcheson08"
-
-\end_inset
-
-.
- Our first contribution is to demonstrate that, in the case of axisymmetric
- flow under a paraxial approximation, the choice of the middle point can
- be rigourously justified.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Ce point milieu est également une bonne approximation pour les situations
- en champ lointain, soit quand la taille 
-\begin_inset Formula $W$
-\end_inset
-
- de l'écoulement d'étude est petite par rapport à la distance moyenne du
- fond 
-\begin_inset Formula $m$
-\end_inset
-
-.
- Pour les situations en champ proche, 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Hinsberg2014"
-
-\end_inset
-
- proposent d'utiliser un facteur correctif basé sur la géométrie de l'écoulement.
-\end_layout
-
-\begin_layout Standard
-Cependant, dans le cas général, la déviation réelle est déterminée par la
- position du point 
-\begin_inset Formula $I_{out}^{\star}$
-\end_inset
-
- qui dépend lui-même de la distribution d'indice optique au sein du volume.
- Une correction reposant uniquement sur la géométrie de l'écoulement ne
- peut donc pas prédire correctement la déviation lumineuse.
-\end_layout
-
-\begin_layout Standard
-A travers ce chapitre nous proposons une nouvelle formulation linéaire nommée
- 
-\begin_inset Formula $\bosD$
-\end_inset
-
-, qui relie directement le déplacement à la masse volumique.
- Elle repose sur la propagation, sous approximation paraxiale, de la déviation
- lumineuse mais aussi du déplacement du déplacement du point de sortie.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-The middle point is also a good approximation in the far field situation,
- i.e.
- if the size 
-\begin_inset Formula $W$
-\end_inset
-
- of the flow under study is small with respect to its mean distance to the
- background.
- For near field situations, van Hinsberg and Rösgen have proposed a correction
- factor based on the flow geometry 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Hinsberg2014"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Plain Layout
-However, in the general case, the real deviation is determined by the location
- of the output point 
-\begin_inset Formula $I_{out}^{\star}$
-\end_inset
-
- which, itself, depends on the refraction index field inside the volume.
- Hence all choices based on the geometry of the set-up are proned to bias.
-\end_layout
-
-\begin_layout Plain Layout
-The main contribution of this paper is to formulate a linear bos2 model
- directly in terms of displacement, by propagating, under a paraxial hypothesis,
- both the deviation and the displacement of the ray.
- through a propagation model under paraxial hypothesis which explains both
- the deviation and the displacement of the ray.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Nouveau modèle
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Nous définissons la trajectoire d'un rayon lumineux par la focntion 
-\begin_inset Formula $\textbf{x}(s)$
-\end_inset
-
- de 
-\begin_inset Formula $\mathbb{R}$
-\end_inset
-
- dans 
-\begin_inset Formula $\mathbb{R}^{3}$
-\end_inset
-
-, où 
-\begin_inset Formula $s$
-\end_inset
-
- représente l'abscisse curviligne.
- Nous notons également 
-\begin_inset Formula $\dot{\textbf{x}}%\stackrel{\Delta}{=}\dfrac{d\textbf{x}}{ds}
-$
-\end_inset
-
- tel que 
-\begin_inset Formula $||\dot{\textbf{x}}||=1$
-\end_inset
-
-.
- Comme nous l'avons mentionné, il est plus aisé d'adopter un point de vue
- caméra et de propager le rayon lumineux dans le sens inverse du processus
- d'imagerie.
- Un rayon lumineux se propage donc depuis la caméra à travers le volume
- d'indice optique variable.
- Nous désignons par We 
-\begin_inset Formula $s_{in}$
-\end_inset
-
- l'abscisse curviligne du point 
-\begin_inset Formula $I_{in}$
-\end_inset
-
- par lequel le rayon issu de la caméra pénètre dans le volume.
- La déviation 
-\begin_inset Formula $\boldsymbol{\varepsilon}^{\star}$
-\end_inset
-
- qui a lieu entre 
-\begin_inset Formula $s_{in}$
-\end_inset
-
- et une position arbitraire 
-\begin_inset Formula $s$
-\end_inset
-
- sur la trajectoire du rayon s'écrit:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-We define a ray trajectory by a function 
-\begin_inset Formula $\textbf{x}(s)$
-\end_inset
-
- from 
-\begin_inset Formula $\mathbb{R}$
-\end_inset
-
- to 
-\begin_inset Formula $\mathbb{R}^{3}$
-\end_inset
-
-, where 
-\begin_inset Formula $s$
-\end_inset
-
- is the curvilinear abscissa.
- We also write 
-\begin_inset Formula $\dot{\textbf{x}}%\stackrel{\Delta}{=}\dfrac{d\textbf{x}}{ds}
-$
-\end_inset
-
- such as 
-\begin_inset Formula $||\dot{\textbf{x}}||=1$
-\end_inset
-
-.
- As already mentioned, it is more convenient to propagate the ray in the
- backward direction with respect to the imaging process.
- A light ray then propagates from the camera through the volume of non constant
- optical index.
- We denote by 
-\begin_inset Formula $s_{in}$
-\end_inset
-
- the curvilinear abscissa of the point 
-\begin_inset Formula $I_{in}$
-\end_inset
-
- at which the ray from the camera enters the flow.
- The deviation 
-\begin_inset Formula $\boldsymbol{\varepsilon}^{\star}$
-\end_inset
-
- occurring between 
-\begin_inset Formula $s_{in}$
-\end_inset
-
- and an arbitrary position 
-\begin_inset Formula $s$
-\end_inset
-
- on the ray trajectory is written:
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\boldsymbol{\varepsilon}^{\star}(s)=\dot{\textbf{x}}(s)-\dot{\textbf{x}}(s_{in})\label{eq:BOS2:defdev}
-\end{equation}
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-La trajectoire de la lumière dans un milieu d'indice optique non homogène
- est dictée par l'équation fondamentale de l'optique géométrique déjà présentée
- dans le chapitre
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:biblio"
-
-\end_inset
-
- et rappelée ici:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\frac{d}{ds}(n\frac{d}{ds}\textbf{x}(s))=\nabla n
-\end{equation}
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Elle peut ensuite être intégrée comme suit:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\dot{\textbf{x}}(s)=\frac{1}{n(\textbf{x}(s))}\int_{s_{in}}^{s}\nabla n(\textbf{x}(r))dr+\frac{n_{ext}}{n(\textbf{x}(s))}\dot{\textbf{x}}(s_{in})\label{eq:BOS2:eikonalint}
-\end{equation}
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-La notation 
-\begin_inset Formula $n_{ext}$
-\end_inset
-
- fait référence à l'indice optique extérieur à l'écoulement.
- L'équation de Gladstone-Dale, également déjà présentée dans le chapitre
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:biblio"
-
-\end_inset
-
-, relie l'indice optique et la masse volumique:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-n=1+G\rho\label{eq:BOS2:gd}
-\end{equation}
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-où 
-\begin_inset Formula $G$
-\end_inset
-
- est la constante de Gladstone-Dale caractéristique du fluide.
- Pour les études aérodynamiques, avec de l'air, l'ordre de grandeur de 
-\begin_inset Formula $G$
-\end_inset
-
- est de 
-\begin_inset Formula $10^{-4}$
-\end_inset
-
-, alors que la gamme de variation de 
-\begin_inset Formula $\myrho$
-\end_inset
-
- excède rarement 
-\begin_inset Formula $10$
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-kg.m
-\begin_inset Formula $^{-3}$
-\end_inset
-
- même pour des ondes de choc.
- Dans ce cas, selon l'Eq.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:BOS2:gd"
-
-\end_inset
-
-, la variation relative d'indice optique reste inférieure à 
-\begin_inset Formula $10^{-3}$
-\end_inset
-
- et nous pouvons faire l'approximation suivante pour l'Eq.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:BOS2:eikonalint"
-
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\dot{\textbf{x}}(s)\approx\frac{1}{n_{ext}}\int_{s_{in}}^{s}\nabla n(\textbf{x}(r))dr+\dot{\textbf{x}}(s_{in})\label{eq:BOS2:approx}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-En intégrant l'équation précédente nous aboutissons au déplacement:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\textbf{x}(s)-\textbf{x}(s_{in})\approx\frac{1}{n_{ext}}\int_{s_{in}}^{s}dt\int_{s_{in}}^{t}\nabla n(\textbf{x}(r))dr+(s-s_{in})\dot{\textbf{x}}(s_{in})\label{eq:BOS2:approxx}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Finalement, avec le théorème de Fubini: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\textbf{x}(s)-\textbf{x}(s_{in})\approx\ \frac{1}{n_{ext}}\int_{s_{in}}^{s}(s-r)\nabla n(\textbf{x}(r))dr+(s-s_{in})\dot{\textbf{x}}(s_{in})\label{eq:BOS2:approxxx}
-\end{equation}
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Nous introduisons maintenant l'approximation paraxiale.
- Nous remplaçons dans l'Eq.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:BOS2:approx"
-
-\end_inset
-
- et l'Eq.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:BOS2:approxx"
-
-\end_inset
-
-, 
-\begin_inset Formula $\textbf{x}(s)$
-\end_inset
-
- par 
-\begin_inset Formula $\textbf{x}_{0}(s)$
-\end_inset
-
- où l'indice 
-\begin_inset Formula $_{0}$
-\end_inset
-
- fait référence au rayon paraxial: 
-\begin_inset Formula 
-\begin{equation}
-\textbf{x}_{0}(s)=\textbf{x}(s_{in})+(s-s_{in})\dot{\textbf{x}}(s_{in})
-\end{equation}
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-A partir de l'Eq.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:BOS2:defdev"
-
-\end_inset
-
- et l'Eq.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:BOS2:approx"
-
-\end_inset
-
- nous exprimons:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\boxed{\boldsymbol{\varepsilon}^{*}(s_{out})\approx\frac{1}{n_{ext}}\int_{s_{in}}^{s_{out}}\nabla n(\textbf{x}_{0}(s))ds}\label{eq:BOS2:bosAntecedent}
-\end{equation}
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-A partir de la déviation lumineuse, il est possible d'exprimer le déplacement
- du rayon 
-\begin_inset Formula $\boldsymbol{\Delta}^{\star}$
-\end_inset
-
- défini comme la différence entre le point de sortie du volume et celui
- relatif au rayon paraxial: 
-\begin_inset Formula 
-\begin{equation}
-\boldsymbol{\Delta}^{\star}\stackrel{\Delta}{=}\textbf{x}(s_{out})-(\textbf{x}(s_{in})+(s_{out}-s_{in})\dot{\textbf{x}}(s_{in}))
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-En combinant cette définition et l'Eq.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:BOS2:approxxx"
-
-\end_inset
-
-, on obtient:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-%\boxed{\boldsymbol{\Delta}^{\star}\approx\frac{1}{n_{in}}\int_{s_{in}}^{s_{out}}(s_{out}-t)\nablan(\textbf{x}_{0}(t))dt}
-\label{eq:BOS2:deltan}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-qui rappelle l'Eq.
-\begin_inset space ~
-\end_inset
-
-7 dans 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "stam1996"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Grâce à l'approximation paraxiale, on a donc une relation linéaire vis à
- vis de l'indice optique 
-\begin_inset Formula $n$
-\end_inset
-
- entre le rayon qui entre et celui qui sort.
- Par la relation de Gladstone-Dale (Eq.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:BOS2:gd"
-
-\end_inset
-
-) cette relation est également linéaire vis à vis de 
-\begin_inset Formula $\rho$
-\end_inset
-
-.
- A partir de l'Eq.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:BOS2:bosAntecedent"
-
-\end_inset
-
- nous en déduisons l'équation classique de la BOS pour la déviation 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Atcheson08"
-
-\end_inset
-
-: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-%\boxed{\boldsymbol{\varepsilon}^{\star}\approx\boldsymbol{\varepsilon}(\myrho)=\frac{G}{n_{ext}}\int_{s_{in}}^{s_{out}}\nabla\myrho(\textbf{x}_{0}(s))ds}
-\label{eq:BOS2:epsrho}
-\end{equation}
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Et à partir de l'Eq.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:BOS2:deltan"
-
-\end_inset
-
-, nous obtenons un modèle direct reliant la masse volumique au déplacement:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-%\boxed{\boldsymbol{\Delta}^{\star}\approx\boldsymbol{\Delta}(\myrho)=\frac{G}{n_{ext}}\int_{s_{in}}^{s_{out}}(s_{out}-t)\nabla\myrho(\textbf{x}_{0}(t))dt}
-\label{eq:BOS2:deltarho}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-où la dépendance de 
-\begin_inset Formula $\myepsilon$
-\end_inset
-
- et 
-\begin_inset Formula $\boldsymbol{\Delta}$
-\end_inset
-
- par rapport 
-\begin_inset Formula $\myrho$
-\end_inset
-
- est indiquée de manière explicite.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La méthode de reconstruction BOS 3D classique repose sur l'Eq.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:BOS2:epsrho"
-
-\end_inset
-
- et cherche à minimiser:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-||\boldsymbol{\varepsilon_{m}}-\boldsymbol{\varepsilon}(\myrho)||^{2}
-\end{equation}
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Les mesures de déviuations 
-\begin_inset Formula $\boldsymbol{\varepsilon}_{m}$
-\end_inset
-
- sont souvent obtenues en supposant le rayon d'entrée et le rayon de sortie
- se croisent au niveau du point milieu 
-\begin_inset Formula $I_{m}$
-\end_inset
-
-, comme illustré sur le premier schéma de la Fig.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BOS2:model_direct"
-
-\end_inset
-
-.
- Une telle approximation est rigoureusement démontrée dans la suite dans
- le cas d'un écoulement axisymétrique.
- Dans ce cas, le rayon paraxial croise un cercle et la fonction 
-\begin_inset Formula $\nabla\myrho(\textbf{x}_{0}(s))$
-\end_inset
-
- devient symétrique entre 
-\begin_inset Formula $s_{in}$
-\end_inset
-
- et 
-\begin_inset Formula $s_{out}$
-\end_inset
-
-.
- A partir de l'Eq.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:BOS2:deltarho"
-
-\end_inset
-
- et en utilisant la symétrie, on obtient:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\int_{s_{in}}^{s_{out}}(s_{out}-r)\nabla\myrho(\textbf{x}_{0}(r))dr=\int_{s_{in}}^{s_{out}}(r-s_{in})\nabla\myrho(\textbf{x}_{0}(r))dr=\frac{\boldsymbol{\Delta}n_{ext}}{G}\label{eq:BOS2:sym}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La somme des deux termes de gauche dans l'Eq.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:BOS2:sym"
-
-\end_inset
-
- s'identifie avec 
-\begin_inset Formula $n_{ext}(s_{out}-s_{in})\boldsymbol{\varepsilon}/G$
-\end_inset
-
- , et nous obtenons:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-2\boldsymbol{\Delta}=(s_{out}-s_{in})\boldsymbol{\varepsilon}.
-\end{equation}
-
-\end_inset
-
-Cette égalité signifie que le rayon paraxial et le rayon dévié s'intersectent
- au point milieu entre 
-\begin_inset Formula $I_{in}$
-\end_inset
-
- et 
-\begin_inset Formula $I_{out}^{\star}$
-\end_inset
-
-.
- Dans le cas général, l'axisymétrie n'est pas vérifiée et l'hypothèse précédente
- peut conduire à un biais dans la reconstruction, en particulier lorsque
- la taille de l'objet de phase 
-\begin_inset Formula $W$
-\end_inset
-
-, n'est pas négligeable vis à vis de la distance au fond 
-\begin_inset Formula $m$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/BOS2-final2.pdf
-	lyxscale 50
-	width 80text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Schéma du modèle BOS classique (en haut) et du modèle 
-\begin_inset Formula $\bosD$
-\end_inset
-
- (en bas).
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:BOS2:model_direct"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Nous construisons maintenant un nouveau modèle BOS comme illustré sur partie
- inférieure de la Fig.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BOS2:model_direct"
-
-\end_inset
-
-.
- A partir du modèle direct porposé (Eq.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:BOS2:deltarho"
-
-\end_inset
-
-), nous pouvons prédire le déplacement du rayon lumineux 
-\begin_inset Formula $\Delta(\myrho)$
-\end_inset
-
- qui a lieu au sein du volume d'étude.
- En projetant le point 
-\begin_inset Formula $I_{out}+\Delta(\myrho)$
-\end_inset
-
- sur le fond suivant la direction 
-\begin_inset Formula $\mydi+\boldsymbol{\varepsilon}(\rho)$
-\end_inset
-
-, le déplacement final 
-\begin_inset Formula $H\overline{H}(\rho)$
-\end_inset
-
- est obtenu.
- Ensuite, une nouvelle méthode 
-\begin_inset Formula $\bosD$
-\end_inset
-
- peut être définie en recherchant la valeur de 
-\begin_inset Formula $\myrho$
-\end_inset
-
- qui minimise:
-\begin_inset Formula 
-\begin{equation}
-\vert\vert HH^{*}-H\overline{H}(\myrho)\vert\vert^{2}\label{eq:BOS20}
-\end{equation}
-
-\end_inset
-
- remarquons que cette méthode ne nécessite pas de connaissance a priori
- sur la topologie de l'écoulement et ne dépend pas non plus d'un modèle
- géométrique du volume d'étude contrairement à la formulation classique
- de la technique BOS (
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Dalziel00,Atcheson08"
-
-\end_inset
-
-) ou à ses améliorations (
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Hinsberg2014,nicolas2016"
-
-\end_inset
-
-).
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Implémentation numérique des problèmes de 
-\begin_inset Formula $\bosU$
-\end_inset
-
- et de 
-\begin_inset Formula $\bosD$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-\begin_inset Formula $\bosU$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Pour mettre en évidence les différences entre le modèle BOS classique (
-\begin_inset Formula $\bosU$
-\end_inset
-
-) et notre nouveau modèle (
-\begin_inset Formula $\bosD$
-\end_inset
-
-) nous reprenons ici une description succincte du modèle classique.
-\end_layout
-
-\begin_layout Standard
-Le champ de masse volumique 
-\begin_inset Formula $\myrho$
-\end_inset
-
- est défini sur un volume 
-\begin_inset Formula ${\cal V}$
-\end_inset
-
- et discrétisé sur une base de voxel, par exemple une base constante par
- morceaux.
- Le vecteur des coefficients de 
-\begin_inset Formula $\myrho$
-\end_inset
-
- sur cette représentation discrète est noté 
-\begin_inset Formula $\myrho$
-\end_inset
-
-.
- Sur le plan caméra, la discrétisation pixel défini un ensemble fini de
- vecteurs directeurs 
-\begin_inset Formula $\mydi$
-\end_inset
-
-, qui sont associés à des déviations mesurées (voir la figure du haut de
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BOS2:model_direct"
-
-\end_inset
-
-).
- Le modèle direct discrétisé de la BOS s'écrit alors: 
-\begin_inset Formula 
-\begin{equation}
-\boldsymbol{\varepsilon}=\myA\myrho=\begin{pmatrix}\myT_{1}\myD_{x}\\
-\myT_{1}\myD_{y}\\
-\myT_{1}\myD_{z}
-\end{pmatrix}\myrho\label{eq:pbClassic}
-\end{equation}
-
-\end_inset
-
- Pour chaque direction de l'espace 
-\begin_inset Formula $w\in\{x,y,z\}$
-\end_inset
-
-, les gradients de masse volumique sont calculés en utilisant un opérateur
- de différences finies 
-\begin_inset Formula $\myD_{w}$
-\end_inset
-
-.
- Nous utilisons un schéma aux différences centrées du second ordre et par
- rapport aux conditions aux limites, une masse volumique de référence 
-\begin_inset Formula $\rho_{ext}$
-\end_inset
-
- est imposée à l'extérieur de 
-\begin_inset Formula ${\cal V}$
-\end_inset
-
-.
- 
-\begin_inset Formula $\myT_{1}$
-\end_inset
-
- est un opérateur de tomogrpahie qui réalise une intégration numérique de
- l'Eq.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:BOS2:epsrho"
-
-\end_inset
-
- en sommant les gradients de masse volumique le long des rayons paraxiaux
- discrets (le pas de discrétisation typiquement utilisé est de 
-\begin_inset Formula $1/10$
-\end_inset
-
- de voxel).
- 
-\end_layout
-
-\begin_layout Subsection
-\begin_inset Formula $\bosD$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Pour la discrétisation du problème en 
-\begin_inset Formula $\bosD$
-\end_inset
-
-, les vecteurs directeurs 
-\begin_inset Formula $\mydi$
-\end_inset
-
- sont reliés à un ensemble de déplacements mesurés 
-\begin_inset Formula $\mydelta$
-\end_inset
-
- sur le plan du mouchetis.
- Le problème direct s'écrit:
-\begin_inset Formula 
-\begin{equation}
-\mydelta=\myB\myrho=\myP\begin{pmatrix}\myT_{1} & \myT_{1} & \myT_{1}\\
-\myT_{2} & \myT_{2} & \myT_{2}
-\end{pmatrix}\begin{pmatrix}\myD_{x}\\
-\myD_{y}\\
-\myD_{z}
-\end{pmatrix}\myrho\label{eq:BOS2:pb}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La parie centrale de la matrice d'observation 
-\begin_inset Formula $\myB$
-\end_inset
-
- fait référence à l'intégration tomographique des gradients de masse volumique,
- qui donne accès à la déviation (ligne du haut) et au déplacement (ligne
- du bas).
- 
-\begin_inset Formula $\myT_{2}$
-\end_inset
-
- calcule l'intégration numérique de l'Eq.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:BOS2:deltarho"
-
-\end_inset
-
-.
- L'opérateur le plus à gauche 
-\begin_inset Formula $P$
-\end_inset
-
- traduit l'approximation linéaire de la projection du point 
-\begin_inset Formula $I_{in}+\Delta(\myrho)$
-\end_inset
-
- (voir Fig.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BOS2:model_direct"
-
-\end_inset
-
-) sur le mouchetis.
- 
-\end_layout
-
-\begin_layout Standard
-Résultant de la combinaison d'intégrations tomographiques et d'opérateurs
- de gradients, les deux matrices 
-\begin_inset Formula $\myA$
-\end_inset
-
- et 
-\begin_inset Formula $\myB$
-\end_inset
-
- sont mal conditionnées.
- Une stratégie de régularisation est alors nécessaire: dans le chapitre
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:BOS3D"
-
-\end_inset
-
- une simple régularisation quadratique est proposée pour la BOS classique:
- 
-\begin_inset Formula 
-\begin{equation}
-\mathcal{J}(\rho)=\|\myA\myrho-\boldsymbol{\varepsilon}\|^{2}+\mylambda\|\overline{\myD}\myrho\|^{2},\label{eq:BOS2:criteria}
-\end{equation}
-
-\end_inset
-
- où le critère des moindres carré est pénalisé par la norme 
-\begin_inset Formula $L_{2}$
-\end_inset
-
- des gradients spatiaux de densité 
-\begin_inset Formula $\overline{\myD}$
-\end_inset
-
- qui est un opérateur de différences finies centré amont.
- L'équilibre entre les deux termes est ajusté par le paramètre de régularisation
- 
-\begin_inset Formula $\mylambda>0$
-\end_inset
-
-.
- La minimisation du critère
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:BOS2:criteria"
-
-\end_inset
-
- est réalisé via un algorithme itératif de gradient conjugué.
- LA même approche peut être utilisée pour critère associé à la 
-\begin_inset Formula $\bosD$
-\end_inset
-
-: 
-\begin_inset Formula 
-\begin{equation}
-\mathcal{J}_{2.0}(\rho)=\|\myB\myrho-\mydelta\|^{2}+\mu\|\overline{\myD}\myrho\|^{2},\label{eq:BOS2:criteria2}
-\end{equation}
-
-\end_inset
-
- Le bon comportement d'un tel critère quadratique permet de réduire les
- effets de bruit mais il peut aussi conduire à un lissage trop prononcé
- des éventuelles discontinuités de masse volumique présentent dans l'écoulement.
- D'autres régularisations plus sophistiquées pourraient être utilisées ici
- leur évaluation sort du cadre de notre étude.
-\end_layout
-
-\begin_layout Section
-Application
-\end_layout
-
-\begin_layout Standard
-Nous comparons maintenant nos deux approche BOS sur un cas 2D représentatif
- d'un écoulement que l'on peut rencontrer en mécanique des fluides.
- Le champ de masse volumique de référence utilisé est extrait du calcul
- LES d'un jet supersonique.
- Le jet issu d'une buse convergent avec un rapport de pression NPR=
-\begin_inset Formula $2.3$
-\end_inset
-
-.
- Nous choisissons une coupe transverse d'un champ instantané de dimensions
- 
-\begin_inset Formula $50x50$
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-cm au niveau d'une cellule de choc.
- Le champ est discrétisé sur une grille régulière de 
-\begin_inset Formula $\ensuremath{100\times100}$
-\end_inset
-
- voxels 2D.
- Le champ de masse volumique correspondant est visible sur la partie gauche
- de la Fig.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BOS2:rho"
-
-\end_inset
-
-.
- Il présente une grande diversité de gradients de densité et d'échelles
- turbulentes.
- 12 caméras virtuelles sont positionnées autour de ce champ de masse volumique
- sur une demi-anneau, à une distance de 
-\begin_inset Formula $m=1.5$
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-m du centre de l'écoulement.
- Les caméras font face à un fond virtuel situé à une distance 
-\begin_inset Formula $m+l=2$
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-m.
- Chaque caméra est composée de 
-\begin_inset Formula $100$
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-pixels et est modélisé comme un pinhole.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/rho_letter.pdf
-	lyxscale 50
-	width 80text%
-	BoundingBox 75bp 10bp 570bp 230bp
-	clip
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Ground truth (left) and reconstructed density fields by classical BOS (middle)
- and bos2 (right), with the associated root-mean-squared errors (RMS).
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:BOS2:rho"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Les véritables champs de déplacements associés à chaque caméra sont générés
- à partir d'un lancer de rayon qui repose sur une intégration Runge-Kutta
- du 
-\begin_inset Formula $\ensuremath{4^{ème}}$
-\end_inset
-
- ordre.
- Les déviations lumineuses associées à la reconstruction BOS classique sont
- générées à partir des champs de déplacements en utilisant l'hypothèse du
- point milieu.
- Nous n'avons pas ajouté de bruit sur les données ici car nous souhaitons
- plus valider le modèle direct que la méthode d'inversion.
-\end_layout
-
-\begin_layout Standard
-A noter que l'approximation paraxiale a ici été vérifiée en comparant la
- trajectoire des rayons paraxiaux à celle obtenue par l'intégration Runge-Kutta.
- Le écarts relatifs des déviations calculées suivant le rayon paraxial et
- le rayon courbe sont ici inférieurs à 
-\begin_inset Formula $0.01\%$
-\end_inset
-
-.
- Par conséquent, une approche non-linéaire comme celle décrite par 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Ihrke07"
-
-\end_inset
-
- n'apporterai pas de gain supplémentaire ici.
-\end_layout
-
-\begin_layout Standard
-Sur la Fig.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BOS2:rho"
-
-\end_inset
-
- nous présentons le champ de masse volumique de référence, issu du calcul
- LES (à gauche), la reconstruction obtenue en BOS classique (au milieu)
- et le résultat 
-\begin_inset Formula $\bosD$
-\end_inset
-
- (à droite).
- des coupes horizontale et verticale sont par ailleurs visibles sur la Fig.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BOS2:disp"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-La forme de l'écoulement est correctement capturée aussi bien en 
-\begin_inset Formula $\bosU$
-\end_inset
-
- qu'en 
-\begin_inset Formula $\bosD$
-\end_inset
-
-.
- Naturellement les petites échelles de la turbulence sont ici lissées à
- cause du nombre limité de données.néanmoins, l'allure de la cellule de choc
- reste bien définie.
- En comparant les deux reconstructions, il apparaît que la 
-\begin_inset Formula $\bosU$
-\end_inset
-
- surestime de manière significative les niveaux de masse volumique tandis
- que la 
-\begin_inset Formula $\bosD$
-\end_inset
-
- retrouve les bonnes valeurs de 
-\begin_inset Formula $\myrho$
-\end_inset
-
-.
- Par conséquent, la 
-\begin_inset Formula $\bosD$
-\end_inset
-
- atteint une erreur RMS bien meilleure.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/Horiz_slice_fp2.pdf
-	lyxscale 50
-	width 48text%
-	BoundingBox 110bp 280bp 480bp 580bp
-	clip
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+addtotoc={
 \end_layout
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/Verti_slice_fp2.pdf
-	lyxscale 50
-	width 48text%
-	BoundingBox 110bp 280bp 480bp 580bp
-	clip
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+1, section, 1, Introduction, sec:113:intro,
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
+
+1, subsection, 2, Underexpanded jets, sec:113:intro:jets,
+\end_layout
 
 \begin_layout Plain Layout
-Coupe a) horizontale et b) verticale des champs de masse volumique reconstruits
- comparées au volume de référence (GT).
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:BOS2:disp"
 
-\end_inset
-
-
-\begin_inset Argument 1
-status open
+2, subsection, 2, Measurement techniques, sec:113:intro:techniques,
+\end_layout
 
 \begin_layout Plain Layout
-Coupe des champs de masse volumique reconstruits.
+
+3, subsection, 2, Background oriented schlieren, sec:113:intro:BOS,
 \end_layout
 
-\end_inset
+\begin_layout Plain Layout
 
-
+3, subsection, 2, Contributions, sec:113:intro:contrib,
 \end_layout
 
-\end_inset
+\begin_layout Plain Layout
 
-
+3, section, 1, Opimizing the BOS experimental set-up for high resolution
+ measurements, sec:113:2D,
 \end_layout
 
-\end_inset
+\begin_layout Plain Layout
 
-
+4, subsection, 2,Astigmatism effects, sec:113:2D:astigmatism,
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace defskip
+\begin_layout Plain Layout
+
+4, subsection, 2,Installation, sec:113:2D:installation,
+\end_layout
+
+\begin_layout Plain Layout
+
+5, subsection, 2,Parametric analysis, sec:113:2D:param,
+\end_layout
+
+\begin_layout Plain Layout
+
+6, section, 1, underexpanded jet 3D density field measurement, sec:113:3D,
+\end_layout
+
+\begin_layout Plain Layout
+
+6, subsection, 2, 3D BOS bench, sec:113:3D:bench,
+\end_layout
+
+\begin_layout Plain Layout
+
+7, subsection, 2, Instantaneous density field reconstruction, sec:113:3D:Inst,
+\end_layout
+
+\begin_layout Plain Layout
+
+9, subsection, 2, Mean fiels analysis, sec:113:3D:mean,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, section, 1, Vortex shedding analysis, sec:113:KH,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, section, 1, Conclusion, sec:113:conclu
+\end_layout
+
+\begin_layout Plain Layout
+
+},
+\end_layout
+
+\begin_layout Plain Layout
+
+addtolist={
+\end_layout
+
+\begin_layout Plain Layout
+
+5, figure, {Schematic view of the flow topology for a highly underexpanded
+ jet.}, fig:113:jet,
+\end_layout
+
+\begin_layout Plain Layout
+
+6, figure, { Example of astigmatism effect induced by an underexpanded shock
+ cell visible on a raw BOS image.}, fig:113:astigmatism,
+\end_layout
+
+\begin_layout Plain Layout
+
+7, figure, {Jet facility and camera field of view at ONERA Toulouse.}, fig:113:fa
+cility,
+\end_layout
+
+\begin_layout Plain Layout
+
+7, figure, {BOS principle.}, fig:113:facility,
+\end_layout
+
+\begin_layout Plain Layout
+
+8, figure, {Influence of the camera aperture on instantaneous and mean BOS
+ field.}, fig:113:aperture,
+\end_layout
+
+\begin_layout Plain Layout
+
+8, figure, {Displacement norm (N) extracted in $X=D$  for different f-number.},
+ fig:113:f-number,
+\end_layout
+
+\begin_layout Plain Layout
+
+9, figure, {Comparison between BOS image (top) and schlieren image (bottom).
+ NPR=5.}, fig:113:strio,
+\end_layout
+
+\begin_layout Plain Layout
+
+9, figure, {3D BOS bench and supersonic hot jet facility.}, fig:113:bench,
+\end_layout
+
+\begin_layout Plain Layout
+
+10, figure, {Laser splitting table, here with 3 beams.
+ In practice, we used 4 beams}, fig:113:laser,
+\end_layout
+
+\begin_layout Plain Layout
+
+10, figure, {Instantaneous density field reconstruction for $NPR=2.1$ case.
+ Slice at $y=0$.}, fig:113:inst_slice,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {Instantaneous density field reconstruction for $NPR=2.1$ case.
+ Iso-density.}, fig:113:inst_iso,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {Deviation map comparisons for x map at the top and z map at
+ the bottom.}, fig:113:dev_map,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {3D mean density field reconstruction on the right and extracted
+ centerline profiles for each NPR on the left.}, fig:113:mean,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {CMean density field reconstruction for NPR=5 case on the left
+ and Density gradient magnitude on the right.}, fig:113:CFD,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {Evolution of the Mach disk position and diameter with respect
+ to the NPR.}, fig:113:XMD,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {Normalized eigenvalues in descending order for each POD mode},
+ fig:113:energy,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {Spatial functions for POD modes 1 and 2 u and v displacements.},
+ fig:113:modes,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {Phase portrait of the normalized amplitudes for mode 1 and
+ mode 2.}, fig:113:portrait,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {Phases}, fig:113:phases
+\end_layout
+
+\begin_layout Plain Layout
+
+},
+\end_layout
+
+\begin_layout Plain Layout
+
+pagecommand={
+\backslash
+thispagestyle{headings}},
+\end_layout
+
+\begin_layout Plain Layout
+
+scale=0.95,
+\end_layout
+
+\begin_layout Plain Layout
+
+clip,trim= 1cm 2cm 1mm 3.06cm,
+\end_layout
+
+\begin_layout Plain Layout
+
+offset=0cm -0.7cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+{Chapitre_5/113.pdf} 
+\end_layout
+
 \end_inset
 
 
@@ -2319,65 +424,20 @@ height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
-Nous avons introduis dans ce chapitre une nouvelle formulation du problème
- BOS à partir d'un modèle de propagation des rayons lumineux à travers un
- milieu d'indice inhomogène qui tient compte non seulement de la déviation
- mais aussi du déplacement.
- La formulation 
-\begin_inset Formula $\bosD$
-\end_inset
-
- relie directement le champ de densité aux déplacements mesurés sur le mouchetis
- via un modèle linéaire.
- De plus, ce modèle évite le choix arbitraire qui est fait classiquement
- en BOS pour convertir les champs de déplacement en carte de déviation.
- Notre algorithme de reconstruction de BOS 3D basé sur la minimisation d'un
- critère d'adéquation aux données a été réécrit en termes de déplacement
- mesurés.Pour l'écoulement étudié notre étude montre que l'hypothèse du point
- milieu utilisée par la 
-\begin_inset Formula $\bosU$
-\end_inset
-
- donne des résultats équivalents à la 
-\begin_inset Formula $\bosD$
-\end_inset
-
-.
- Dans des cas plus complexes ou bien dans un cas 3D plus général, la 
-\begin_inset Formula $\bosD$
-\end_inset
-
- pourrait néanmoins prouver son intérêt.
- Dans tous les cas, celle-ci s'affranchit du choix du point de référence
- pour le calcul des déviations et elle travaille sur les champs de déplacements,
- plus proche des données de mesures.
-\end_layout
-
-\begin_layout Plain Layout
-Acknowledgements: The authors want to thank G.
- Daviller from Cerfacs for providing the LES simulation of the supersonic
- jet.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset External
-	template PDFPages
-	filename modeling-ray-displacement.pdf
-	lyxscale 90
-	extra LaTeX "pages=1-4, pagecommand={\thispagestyle{headings}},clip,trim=0cm 2cm 0cm 2.06cm,offset=0cm 0cm"
-
-\end_inset
-
-
+Les résultats obtenus dans ce chapitre montre bien tout l'intérêt de la
+ BOS 3D pour la mesure des écoulements compressibles.
+ Les champs moyens reconstruits présentent des structures topologiques en
+ accord avec la littérature.
+ De plus, le champs moyen reconstruit à NPR=5 montre un excellent accord
+ avec la simulation numérique.
+ Enfin, l'analyse en moyenne de phase laisse entrevoir le potentiel de la
+ technique.
+ On pourrait envisager des acquisitions conditionnées par des mesures acoustique
+s pour suivre un phénomène en particulier.
+ Enfin, des reconstructions plus rapides permettraient également d'obtenir
+ le champ de fluctuations de masse volumique permettraient d'étudier plus
+ en détail l'origine du bruit de screech.
+ 
 \end_layout
 
 \end_inset

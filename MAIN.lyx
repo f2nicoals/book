@@ -141,6 +141,7 @@
 \usepackage{calc}
 \usepackage{colortbl}
 \usepackage{xcolor}
+\usepackage{slashbox}
 \RequirePackage{ifthen}
 \usepackage[firstpage]{draftwatermark} %filigrane
 

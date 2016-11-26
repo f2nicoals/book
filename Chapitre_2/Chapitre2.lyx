@@ -259,7 +259,7 @@ key "Vuillot08"
 .
  L'écoulement primaire, chaud, est éjecté à Mach 0.7 avec une température
  de 
-\begin_inset Formula $850\, K$
+\begin_inset Formula $850\,K$
 \end_inset
 
 , tandis que l'écoulement secondaire plus froid, sort à Mach
@@ -267,7 +267,7 @@ key "Vuillot08"
 \end_inset
 
 0.9 avec une température de 
-\begin_inset Formula $335\, K$
+\begin_inset Formula $335\,K$
 \end_inset
 
 .
@@ -1214,6 +1214,15 @@ A direct approach for instantaneous 3D density field reconstruction
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Article initialement parut dans 
+\shape italic
+Experiments in Fluids,
+\shape default
+ volume 57, janvier 2016, issue 1, article 13.
+ 
 \end_layout
 
 \begin_layout Standard

@@ -1070,7 +1070,7 @@ Au final, nous appliquons notre nouveau code le reconstruction sur le jet
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1135,7 +1135,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-efefefe.
+a) Jet CoJeN issu du calcul LES.
+ b) Reconstruction optimale optenue en régularisation 
+\begin_inset Formula $\myL$
+\end_inset
+
+ avec la nouvel version du code.
  
 \begin_inset CommandInset label
 LatexCommand label

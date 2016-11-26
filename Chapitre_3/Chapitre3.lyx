@@ -145,6 +145,12 @@ Article
 \end_layout
 
 \begin_layout Standard
+Article soumis à 
+\shape italic
+Experiments in Fluids.
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -381,7 +387,7 @@ scale=0.95,
 
 \begin_layout Plain Layout
 
-clip,trim= 1cm 2cm 1mm 2.06cm,
+clip,trim= 1cm 2cm 1mm 3.06cm,
 \end_layout
 
 \begin_layout Plain Layout

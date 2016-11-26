@@ -114,6 +114,17 @@ minitoc
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
 L'objectif de ce chapitre est de démontrer la faisabilité d'une mesure BOS
  3D en soufflerie industrielle.
  Après avoir déployé pour la première fois la technique en soufflerie à
@@ -133,13 +144,6 @@ m de diamètre et dont la vitesse veine peut atteindre Mach 1.
  
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Contexte
 \end_layout
@@ -154,7 +158,11 @@ Le Carnot BOS 3D qui s'est déroulé sur 3 ans avait pour objectif de développe
  3D des champs de masse volumique instantanés.
  Il impliquait à la fois le DMAE, le DTIM et le département des souffleries
  de Modane-Avrieux (DSMA).
- Il s'est achevé par une application en soufflerie industrielle avec une
+ 
+\end_layout
+
+\begin_layout Standard
+Il s'est achevé par une application en soufflerie industrielle avec une
  démonstration dans l'immense soufflerie S1MA de l'ONERA à Modane.
  Ces essais, assez exceptionnels du point de vue des moyens mis en œuvre,
  résultent d'une volonté d'équiper les grands moyens techniques (GMT) de
@@ -243,7 +251,11 @@ Présentation de la soufflerie S1MA
 
 \begin_layout Standard
 La soufflerie S1MA représente une prise de guerre de l'armée française à
- la fin de la seconde guerre mondiale.
+ la fin de la 
+\begin_inset Formula $2^{nd}$
+\end_inset
+
+ Guerre Mondiale.
  Cette installation unique au monde était alors en construction dans le
  Tyrol autrichien.
  La puissance requise pour faire fonctionner cette soufflerie est telle
@@ -318,7 +330,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -352,15 +364,14 @@ name "fig:A380"
 \end_inset
 
 
-\begin_inset space \hspace{}
-\length 0.5cm
+\begin_inset space \hfill{}
 \end_inset
 
 
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -433,7 +444,7 @@ reference "fig:S1MA:schema"
 \end_inset
 
  : la veine peut être occupée par trois chariots interchangeables de sorte
- à optimiser le fonctionnement.
+ à optimiser le fonctionnement de l'installation.
 \end_layout
 
 \begin_layout Subsection
@@ -483,8 +494,8 @@ status open
 
 \end_inset
 
-Les mouchetis qui sont collés sur les parois de la veine sont exposés à
- un écoulement à Mach 0.85.
+Les mouchetis, collés sur les parois de la veine, sont exposés à un écoulement
+ à Mach 0.85.
 \end_layout
 
 \begin_layout Itemize
@@ -528,7 +539,7 @@ status open
 
 \end_inset
 
-Lors de son fonctionnement la soufflerie induit des vibrations.
+Lors de son fonctionnement, la soufflerie induit des vibrations importantes.
 \end_layout
 
 \begin_layout Itemize
@@ -544,7 +555,7 @@ status open
 
 \end_inset
 
-De plus, en raison de l'échauffement de l'air par frottements, la température
+De plus, en raison de l'échauffement de l'air par frottement, la température
  de l'air à la fin d'un essai peut atteindre près 
 \begin_inset Formula $50$
 \end_inset
@@ -569,6 +580,9 @@ et également des perturbations sur des images de références prises à la
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
 Enfin, une contrainte supplémentaire sur la conception du banc maquette
  impose un montage issu de l'aval de la soufflerie.
 \end_layout
@@ -578,16 +592,6 @@ Phénomène étudié
 \end_layout
 
 \begin_layout Standard
-L'objectif ici n'était pas tant d'étudier un phénomène physique particulier
- mais plus de démontrer la faisabilité de la BOS 3D en soufflerie industrielle.
- Pour des questions de simplicité, nous avons étudié un jet à contre-courant.
- En effet, si ce choix peut sembler peu commun, il concilie notre contrainte
- liée à l'absence de maquette dans le champ de vue, et les contrainte soufflerie
-s qui impose un montage à partir du tripode (visible en vert sur la Figure
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset Float figure
 placement H
 wide false
@@ -607,6 +611,8 @@ status open
 	filename Images/Buse1.png
 	lyxscale 20
 	width 50text%
+	BoundingBox 0bp 100bp 1091bp 750bp
+	clip
 
 \end_inset
 
@@ -634,7 +640,7 @@ name "fig:S1MA:tripode"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -642,6 +648,8 @@ status collapsed
 	filename Images/Buse2.JPG
 	lyxscale 5
 	width 50text%
+	BoundingBox 0bp 300bp 3180bp 2150bp
+	clip
 
 \end_inset
 
@@ -674,7 +682,9 @@ status open
 \begin_inset Graphics
 	filename Images/simpleBuse_C.pdf
 	lyxscale 20
-	height 45text%
+	height 44text%
+	BoundingBox 0bp 0bp 992bp 770bp
+	clip
 
 \end_inset
 
@@ -702,15 +712,15 @@ name "fig:S1MA:buse_simple_1"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/simpleBuse_F.pdf
 	lyxscale 20
-	height 45text%
-	BoundingBox 10bp 0bp 774bp 784bp
+	height 44text%
+	BoundingBox 10bp 0bp 774bp 770bp
 	clip
 
 \end_inset
@@ -737,14 +747,16 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/doubleBuse_C.pdf
 	lyxscale 20
-	height 45text%
+	height 40text%
+	BoundingBox 0bp 40bp 1000bp 760bp
+	clip
 
 \end_inset
 
@@ -766,14 +778,16 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/doubleBuse_F.pdf
 	lyxscale 20
-	height 45text%
+	height 40text%
+	BoundingBox 0bp 40bp 784bp 760bp
+	clip
 
 \end_inset
 
@@ -795,7 +809,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Buse simple (a,c,e) et buse double (b,d,f).
+Buse simple (a, c, d) et buse double (b, e, f).
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -814,6 +828,19 @@ name "fig:S1MA:buse"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+L'objectif ici n'était pas tant d'étudier un phénomène physique particulier
+ mais plus de démontrer la faisabilité de la BOS 3D en soufflerie industrielle.
+ Pour des questions de simplicité, nous avons étudié un jet à contre-courant.
+ En effet, si ce choix peut sembler peu commun, il concilie notre contrainte
+ liée à l'absence de maquette dans le champ de vue, et les contrainte soufflerie
+s qui impose un montage à partir du tripode (visible en vert sur la Figure
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:tripode"
@@ -824,7 +851,9 @@ reference "fig:S1MA:tripode"
 \end_layout
 
 \begin_layout Standard
-Le système illustré par des couleurs sur la Figure
+Le système de
+\backslash
+mesures est présenté sur la Figure
 \begin_inset space ~
 \end_inset
 
@@ -835,7 +864,7 @@ reference "fig:S1MA:tripode"
 
 \end_inset
 
- fonctionne donc comme suit: le dard FLA7 (en rouge) qui supporte l'arrivée
+ et fonctionne comme suit: le dard FLA7 (en rouge) qui supporte l'arrivée
  d'air haute pression (HP) (bleu) est monté sur le tripode.
  Le jet est généré par une buse (grise) montée à l'extrémité du dard.
  Deux types de buses sont testées: une simple buse de 
@@ -846,7 +875,7 @@ reference "fig:S1MA:tripode"
 \begin_inset space ~
 \end_inset
 
-mm de diamètre et une double buse de 
+mm de diamètre et une double buse dont chaque sortie fait 
 \begin_inset Formula $56.6$
 \end_inset
 
@@ -866,9 +895,9 @@ reference "fig:S1MA:buse"
 \end_inset
 
 ).
- Ainsi, les 2 types de buses présentent la même aire dans leur section de
- sortie.
- Sur le plan en Figure
+ Ainsi, les 2 types de buses présentent la même aire dans leur section d'éjectio
+n.
+ Sur le plan présenté en Figure
 \begin_inset space ~
 \end_inset
 
@@ -879,10 +908,10 @@ reference "fig:S1MA:buse_simple_1"
 
 \end_inset
 
-, on peut voir l'arrivée d'air HP par le haut qui passe dans un coude puis
- dans un cône perforé afin d'homogénéiser l'écoulement.
- Les deux buses sont instrumentées avec une prise de pression et de température
- statiques.
+, l'air HP arrive via la conduite au sommet de la buse puis passe dans un
+ coude avant d'atteindre un cône perforé permettant d'homogénéiser l'écoulement.
+ Les deux maquettes sont instrumentées avec une prise de pression et de
+ température statiques.
  Ce montage permet d'atteindre un débit d'air maximal de 
 \begin_inset Formula $3.0$
 \end_inset
@@ -895,8 +924,8 @@ kg/s.
 \end_layout
 
 \begin_layout Standard
-Comme nous l'avons dit cette configuration de jet à contre courant est plutôt
- inhabituelle.
+Comme nous l'avons évoqué, cette configuration de jet à contre courant est
+ plutôt inhabituelle.
  Elle se rapproche néanmoins des études liées à du contrôle d'écoulement
  en régime supersonique ou hypersonique.
  Ce type de contrôle utilise une injection fluidique (parfois réalisée au
@@ -1278,17 +1307,14 @@ reference "fig:S1MA:rho"
 \end_inset
 
 ).
- Sur le champ de masse volumique et de vitesse radiale, on peut observer
- les cellules de chocs liées au jet sous-détendus issu de la buse.
- A la pointe du jet, on retrouve un point d'arrêt avec une vitesse nulle,
- tout comme sur la ligne de glissement qui sépare l'écoulement dans le sens
- des 
-\begin_inset Formula $X$
-\end_inset
-
- positif du jet, de celui négatif de la soufflerie.
- Enfin, l'écoulement du jet agit comme une surface rigide vis à vis de l'écoulem
-ent de la soufflerie, qui accélère lors du contournement.
+ Sur les champs de masse volumique et de vitesse radiale, on peut observer
+ les cellules de chocs liées au jet sous-détendu issu de la buse.
+ A la pointe du jet, on retrouve un point d'arrêt avec une vitesse nulle.
+ Une ligne de glissement sépare le jet de l'écoulement de la soufflerie.
+ Elle aussi est caractérisée par une vitesse nulle.
+ Enfin, du point de vue de l'écoulement extérieur, le jet agit comme un
+ obstacle.
+ L'écoulement accélère donc lors de son contournement.
 \end_layout
 
 \begin_layout Standard
@@ -1417,7 +1443,7 @@ Mesures de vibrations
 \end_layout
 
 \begin_layout Standard
-Pour anticiper le problème des vibrations deux actions ont été menées:
+Pour anticiper le problème des vibrations, deux actions ont été menées:
 \end_layout
 
 \begin_layout Standard
@@ -1429,17 +1455,43 @@ D'une part, un accéléromètre a été installé sur une caméra puis testé au
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:frequences_vibrations"
+
+\end_inset
+
+.
+ Sur cette Figure on peut constater qu'il y a surtout un phénomène basse
+ fréquence, autour de 
+\begin_inset Formula $55$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Hz qui domine.
+ Ce phénomène est particulièrement intense à Mach 0.7.
+ A partir de ces mesures, des plateaux amortis ont été conçu en accord avec
+ le poids des caméras et de leur support afin d'atténuer au maximum ces
+ vibrations.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/vibrations.pdf
 	lyxscale 40
-	width 90text%
+	width 65text%
 	BoundingBox 40bp 210bp 540bp 620bp
 	clip
 
@@ -1466,35 +1518,9 @@ name "fig:S1MA:frequences_vibrations"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:S1MA:frequences_vibrations"
-
-\end_inset
-
-.
- Sur cette Figure on peut constater qu'il y a surtout un phénomène basse
- fréquence, autour de 
-\begin_inset Formula $55$
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-Hz qui domine.
- Ce phénomène est particulièrement intense à Mach 0.7.
- A partir de ces mesures, des plateaux amortis ont été conçu en accord avec
- le poids des caméras et de leur support afin d'atténuer au maximum ces
- vibrations.
- 
 \end_layout
 
 \begin_layout Standard
@@ -1589,7 +1615,7 @@ status open
 
 \begin_layout Plain Layout
 Modèle 3D de la veine de S1MA obtenu par stéréoscopie avec détail d'un marqueur
- AprilTag et système de scan stéréo-vision.
+ AprilTag et système de stéréo-vision.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -1669,11 +1695,6 @@ Mise en œuvre de la BOS 3D à S1MA
 \end_layout
 
 \begin_layout Standard
-L'ensemble du système BOS 3D mis en œuvre à S1MA visible sur la Figure
-\begin_inset space ~
-\end_inset
-
-
 \begin_inset Float figure
 placement h
 wide false
@@ -1697,7 +1718,7 @@ status open
 
 \begin_layout Plain Layout
 Montage BOS 3D dans la veine de S1MA.
- Les caméras sont disposées par paires derrières les hublots et font face
+ Les caméras sont disposées par paire derrière les hublots et font face
  aux panneaux de mouchetis collés sur les parois.
  Les mouchetis sont éclairés au moyen de différents illuminateurs laser.
  
@@ -1725,6 +1746,14 @@ Montage BOS 3D dans la veine de S1MA.
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L'ensemble du système BOS 3D mis en œuvre à S1MA visible sur la Figure
+\begin_inset space ~
 \end_inset
 
 
@@ -1767,6 +1796,22 @@ Hz.
  suite.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Installation des caméras
 \end_layout
@@ -1783,7 +1828,7 @@ reference "chap:BOS3D"
 
 \end_inset
 
-, la disposition optimale de caméras pour un jet est la configuration en
+, la disposition optimale des caméras pour un jet est la configuration en
  couronne.
  Nous répartissons donc nos 12 caméras par paires, derrière les différents
  hublots, sur la partie supérieure de la veine.
@@ -1841,7 +1886,7 @@ m
 \begin_inset space ~
 \end_inset
 
-mm de diamètre afin recouvrir près de 
+mm de diamètre afin de recouvrir près de 
 \begin_inset Formula $10$
 \end_inset
 
@@ -1854,8 +1899,7 @@ m
 \end_inset
 
  en veine.
- Le mouchetis est appliqué sur les parois nettoyées de la veine, en face
- des caméras.
+ Le mouchetis est appliqué sur les parois nettoyées, en face des caméras.
  Comme nous le verrons par la suite, ce type de mouchetis a très bien fonctionné
 , excepté en présence de défauts de surface qui ont pu compromettre son
  intégrité.
@@ -1866,18 +1910,29 @@ m
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:mouchetis"
+
+\end_inset
+
+.
+ L'un d'eux s'est même arraché.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1903,10 +1958,15 @@ status open
 \end_inset
 
 
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1970,17 +2030,12 @@ Panneaux de mouchetis collés sur la veine avec bords d'attaque renforcé
 \end_inset
 
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:S1MA:mouchetis"
+\end_layout
 
-\end_inset
-
-.
- L'un d'eux s'est même arraché.
- Il est apparu que de l'air passait par des jointures ou des pas de vis
- situés sous le mouchetis lorsque la soufflerie est en fonctionnement, et
- donc en dépression.
+\begin_layout Standard
+Il est apparu que de l'air passait par des jointures ou des pas de vis situés
+ sous le mouchetis lorsque la soufflerie était en fonctionnement, et donc
+ en dépression.
  Ces trous ont donc été bouchés avec du scotch aluminium et le 
 \begin_inset Quotes fld
 \end_inset
@@ -1990,7 +2045,7 @@ bord d'attaque
 \end_inset
 
  des panneaux de mouchetis également renforcé avec une bande de scotch aluminium
- également visible sur al Figure
+ également visible sur la Figure
 \begin_inset space ~
 \end_inset
 
@@ -2004,16 +2059,32 @@ reference "fig:S1MA:mouchetis"
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Eclairage
 \end_layout
 
 \begin_layout Standard
 Nous reprenons ici le même type de montage que celui utilisé à F2, à savoir
- une table de séparation du faisceau laser puis des guides de lumières associés
+ une table de séparation du faisceau laser puis des guides de lumière associés
  à des lentilles divergentes.
- Pour pouvoir éclairer convenablement l'ensemble des mouchetis nous utilisons
- une table de séparation en 
+ Afin d'éclairer convenablement l'ensemble des mouchetis, nous utilisons
+ une table de séparation à 
 \begin_inset Formula $8$
 \end_inset
 
@@ -2031,11 +2102,56 @@ mJ par pulse.
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:laser"
+
+\end_inset
+
+.
+ En pratique ils sont installés dans un local climatisé au-dessus de la
+ soufflerie tandis que de nouveaux guides de lumières 
+\shape italic
+Rayvision
+\shape default
+ de 
+\begin_inset Formula $5$
+\end_inset
+
+ et 
+\begin_inset Formula $10$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+m permettent d'amener les faisceaux jusqu'aux différents hublots.
+ Enfin, nous utilisons des lentilles divergentes de 
+\begin_inset Formula $50$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+mm pour éclater chaque faisceau sur un diamètre de près d'
+\begin_inset Formula $1$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+m.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2083,36 +2199,6 @@ Platine de séparation du faisceau laser.
 \end_inset
 
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:S1MA:laser"
-
-\end_inset
-
-.
- En pratique ils ont été installés dans un local climatisé au-dessus de
- la soufflerie tandis que de nouveaux guides de lumières 
-\shape italic
-Rayvision
-\shape default
- de 
-\begin_inset Formula $5$
-\end_inset
-
- et 
-\begin_inset Formula $10\, m$
-\end_inset
-
- permettaient d'amener les faisceaux jusqu'aux différents hublots.
- Enfin, nous installons des lentilles divergentes de 
-\begin_inset Formula $50\, mm$
-\end_inset
-
- pour éclater chaque faisceau sur un diamètre de près d'
-\begin_inset Formula $1\, m$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -2124,13 +2210,13 @@ La quantité de lumière disponible nous contraint à travailler avec une ouvert
 .
  Cette valeur d'ouverture conduit à un cercle de confusion au niveau de
  l'écoulement relativement important de près de 
-\begin_inset Formula $18\, mm$
+\begin_inset Formula $18\,mm$
 \end_inset
 
  et donc à une perte de résolution spatiale de la technique.
  
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 En fin de campagne nous avons testé une configuration d'éclairage différente:
@@ -2141,7 +2227,7 @@ En fin de campagne nous avons testé une configuration d'éclairage différente:
 \end_inset
 
 , soit un cercle de confusion de 
-\begin_inset Formula $4.6\, mm$
+\begin_inset Formula $4.6\,mm$
 \end_inset
 
 .
@@ -2156,7 +2242,7 @@ En fin de campagne nous avons testé une configuration d'éclairage différente:
 A noter qu'au cours des essais, une lame semi-séparatrice a été endommagée
  par le laser
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
  
@@ -2179,6 +2265,22 @@ reference "fig:S1MA:laser"
  exploitables
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Calibration
 \end_layout
@@ -2186,10 +2288,30 @@ Calibration
 \begin_layout Standard
 Nous avons adapté notre processus de calibration aux dimensions de S1MA
  en faisant imprimer une mire de 
-\begin_inset Formula $80\, cm\,\times\,80\, cm$
+\begin_inset Formula $80$
 \end_inset
 
- sur un panneau en nid d'abeille visible sur la Figure
+
+\begin_inset space ~
+\end_inset
+
+cm
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset Formula $80$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+cm sur un panneau en nid d'abeille visible sur la Figure
 \begin_inset space ~
 \end_inset
 
@@ -2222,7 +2344,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2253,7 +2375,11 @@ name "fig:S1MA:calib_ref"
 
 \end_inset
 
- 
+
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -2288,7 +2414,11 @@ name "fig:S1MA:calib_acq1"
 
 \end_inset
 
- 
+
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -2552,6 +2682,22 @@ n : l'histogramme des erreurs en pixels y est représentée.
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+FloatBarrier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Déroulement des essais 
 \end_layout
@@ -2565,10 +2711,49 @@ Au cours des 2 jours et demi d'essais les deux types de buse sont testés
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:deroulement"
+
+\end_inset
+
+.
+ Chaque rotation débute par une calibration des caméras ainsi que par un
+ relevé tridimensionnel de la veine réalisé avec le système d'acquisition
+ stéréoscopique du DTIM.
+ Nous réalisons ensuite des images de référence 
+\begin_inset Quotes fld
+\end_inset
+
+à froid
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Puis pour chaque condition d'essai nous avons autant que possible réalisé
+ des acquisitions avec la soufflerie seule puis en rajoutant le jet.
+ Enfin, pour vérifier la qualité de nos images de références et s'assurer
+ que le système n'a pas bougé pendant le fonctionnement de la soufflerie,
+ nous reprenons des images de référence et réalisons une nouvelle calibration
+ 
+\begin_inset Quotes fld
+\end_inset
+
+à chaud
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Une nouvelle mesure stéréo-photographique est aussi enregistrée pour éventuelle
+ment détecter une dilatation des parois.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2602,42 +2787,6 @@ name "fig:S1MA:deroulement"
 \end_inset
 
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:S1MA:deroulement"
-
-\end_inset
-
-.
- Chaque rotation débute par une calibration des caméras ainsi que par un
- scan 3D de la veine réalisé avec le système d'acquisition stéréoscopique
- du DTIM.
- Nous réalisons ensuite des images de référence 
-\begin_inset Quotes fld
-\end_inset
-
-à froid
-\begin_inset Quotes frd
-\end_inset
-
-.
- Puis pour chaque condition d'essai nous avons autant que possible réalisé
- des acquisitions avec la soufflerie seule puis en rajoutant le jet.
- Enfin, pour vérifier la qualité de nos images de références et s'assurer
- que le système n'a pas bougé pendant le fonctionnement de la soufflerie,
- nous reprenons des images de référence et réalisons une nouvelle calibration
- 
-\begin_inset Quotes fld
-\end_inset
-
-à chaud
-\begin_inset Quotes frd
-\end_inset
-
-.
- Un nouveau scan est aussi enregistré pour éventuellement détecter une dilatatio
-n des parois.
- 
 \end_layout
 
 \begin_layout Standard
@@ -2647,6 +2796,10 @@ Pour chaque configuration, l'ensemble des points de mesure de la matrice
 \end_inset
 
 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 \begin_inset Float table
 wide false
 sideways false
@@ -2656,7 +2809,7 @@ status open
 \align center
  
 \begin_inset Tabular
-<lyxtabular version="3" rows="21" columns="8">
+<lyxtabular version="3" rows="22" columns="8">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -3574,13 +3727,99 @@ Double buse
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Formula $f_{\#}=2$
 \end_inset
 
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+diaghead{MachDebit kg/}{Mach}{Débit (kg/s)} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="middle" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -4348,6 +4587,11 @@ name "tab:S1MA:matrice"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:S1MA:matrice"
@@ -4360,6 +4604,1908 @@ reference "tab:S1MA:matrice"
  Elles ont toutefois permis d'aborder différentes problématiques de mesures
  en grande soufflerie et de proposer des stratégies de post-traitement que
  nous allons détaillons par la suite.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="8">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="middle" width="3.5cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\shape italic
+Simple buse
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{\#}=2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+backslashbox{Mach}{Débit(kg/s)} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor{green!25}
+\end_layout
+
+\end_inset
+
+1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor{green!25}
+\end_layout
+
+\end_inset
+
+2.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor{green!25}
+\end_layout
+
+\end_inset
+
+0.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor{green!25}
+\end_layout
+
+\end_inset
+
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor{green!25}
+\end_layout
+
+\end_inset
+
+0.4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor{green!25}
+\end_layout
+
+\end_inset
+
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="13" columns="8">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="middle" width="3.5cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\shape italic
+Double buse
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{\#}=2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+backslashbox{Mach}{Débit(kg/s)} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.85
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{\#}=8$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.85
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4502,18 +6648,26 @@ reference "fig:S1MA:matrice"
  en plus marquée.
  On voit très nettement l'apparition de cellules de chocs caractéristiques
  d'un jet sous-détendu pour le débit le plus important (
-\begin_inset Formula $Q=2.5\, kg/s$
+\begin_inset Formula $Q=2.5$
 \end_inset
 
-).
+
+\begin_inset space ~
+\end_inset
+
+kg/s).
  Les mesures instantanées offrent également une très belle visualisation
  des ondes acoustiques qui naissent aux niveau des lèvres de la buse et
  se propagent vers l'aval du jet.
- Pour le cas à débit de 
-\begin_inset Formula $2.5\, kg/s$
+ Pour le débit de 
+\begin_inset Formula $2.5$
 \end_inset
 
-, d'autres ondes acoustiques qui se propagent vers l'amont se superposent
+
+\begin_inset space ~
+\end_inset
+
+kg/s, d'autres ondes acoustiques se propageant vers l'amont se superposent
  aux premières: elles sont liées à la présence de sources acoustiques au
  niveau des sommets des cellules de chocs.
  On peut également apercevoir sur ces champs de déplacement l'empreinte
@@ -4630,7 +6784,7 @@ reference "fig:S1MA:sans_vent"
 
 \end_inset
 
- sur laquelle des iso-surfaces de densité sont représentées.
+ sur laquelle des iso-surfaces de masse volumique sont représentées.
  De manière classique pour un jet sous-détendu, on peut observer la succession
  de systèmes choc-détente sous la forme de cellules en diamant.
  Ce résultat constitue une première démonstration de la capacité de la technique
@@ -4664,10 +6818,14 @@ nt de la soufflerie avec toutes les problématiques de vibrations, d'échauffeme
  évoquées au début de ce chapitre.
  Nous avons fait le choix de traiter les données sur un point particulier
  de la matrice d'essais : l'écoulement à Mach 0.4 et un jet de débit 
-\begin_inset Formula $1\, kg/s$
+\begin_inset Formula $1$
 \end_inset
 
-.
+
+\begin_inset space ~
+\end_inset
+
+kg/s.
  Ce point intermédiaire dans la gamme de Mach étudié est suffisant pour
  analyser et proposer une stratégie de correction des images sans représenter
  la pire situation.
@@ -4683,13 +6841,28 @@ Problématique
 \end_layout
 
 \begin_layout Standard
-Les champs de déplacements associés à ce point de fonctionnement (Figure
- 
+Les champs de déplacements associés à ce point de fonctionnement (Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:deplacements_bruts"
+
+\end_inset
+
+) illustrent clairement le problème rencontré: les déplacements lié à la
+ présence du jet à contre-courant sont complètement noyés dans un déplacement
+ global assez lisse de norme moyenne proche de 5 pixels.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -4800,25 +6973,15 @@ name "fig:S1MA:deplacements_bruts"
 
 \end_inset
 
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:S1MA:deplacements_bruts"
 
-\end_inset
-
-) illustrent clairement le problème rencontré: les déplacements lié à la
- présence du jet à contre-courant sont complètement noyés dans un déplacement
- global assez lisse de norme moyenne proche de 5 pixels.
 \end_layout
 
 \begin_layout Standard
-C
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-es résultats nous laissent penser dans un premier temps que les vibrations
+Ces résultats nous laissent penser dans un premier temps que les vibrations
  ont eu un impact plus négatif que prévu et qu'elles ont largement affecté
  la mesure.
 \end_layout
@@ -4845,9 +7008,10 @@ La déformation de la veine sous la charge aérodynamique ou encore la dilatatio
 \end_layout
 
 \begin_layout Standard
-Dans la suite de cette section, nous cherchons à comprendre les phénomènes
- mis en jeu et à les corriger pour pouvoir exploiter les données et reconstruire
- un champ de masse volumique lorsque la soufflerie est en fonctionnement.
+Dans la suite de cette section, nous cherchons à déterminer l'origine de
+ ces phénomènes perturbateurs.
+ Puis, nous les corrigeons afin de reconstruire un champ de masse volumique
+ lorsque la soufflerie est en fonctionnement.
  
 \end_layout
 
@@ -4941,15 +7105,11 @@ reference "fig:S1MA:moyennes"
 \end_layout
 
 \begin_layout Standard
-En présence de l'écoulement de la soufflerie uniquement, on devrait s'attendre
- à obtenir des déplacements nuls en moyenne, le milieu étant homogène.
- Malheureusement ce n'est pas le cas.
- Comme on peut le voir en Figure 
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4963,7 +7123,7 @@ status open
 \begin_inset Graphics
 	filename Images/N_Mach.pdf
 	lyxscale 50
-	width 70text%
+	width 32text%
 	BoundingBox 105bp 260bp 475bp 570bp
 	clip
 
@@ -4987,14 +7147,6 @@ name "fig:S1MA:N_mach"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
 \end_inset
 
 
@@ -5008,7 +7160,7 @@ status open
 \begin_inset Graphics
 	filename Images/Up_Mach.pdf
 	lyxscale 50
-	width 40text%
+	width 32text%
 	BoundingBox 105bp 260bp 475bp 570bp
 	clip
 
@@ -5032,10 +7184,6 @@ name "fig:S1MA:Up_mach"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -5045,15 +7193,11 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/Vp_Mach.pdf
 	lyxscale 50
-	width 40text%
+	width 32text%
 	BoundingBox 105bp 260bp 475bp 570bp
 	clip
 
@@ -5077,10 +7221,6 @@ name "fig:S1MA:Vp_mach"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -5098,11 +7238,22 @@ Evolution du mouvement moyen des mouchetis en fonction du Mach soufflerie.
 \end_inset
 
 .
- c) cart-types verticaux moyens 
+ c) Ecart-types verticaux moyens 
 \begin_inset Formula $V_{p}$
 \end_inset
 
-.
+.(Position des caméras visibles sur la Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:montage_BOS3D"
+
+\end_inset
+
+)
 \begin_inset Argument 1
 status open
 
@@ -5122,7 +7273,18 @@ Evolution du mouvement moyen des mouchetis en fonction du Mach soufflerie.
 
 \end_inset
 
- 
+
+\end_layout
+
+\begin_layout Standard
+En présence de l'écoulement de la soufflerieseul, nous devrions obtenir
+ des déplacements nuls en moyenne, le milieu étant homogène.
+ Malheureusement ce n'est pas le cas.
+ Comme on peut le voir en Fig.
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:S1MA:N_mach"
@@ -5133,10 +7295,10 @@ reference "fig:S1MA:N_mach"
 \begin_inset Formula $N=\sqrt{U^{2}+V^{2}}$
 \end_inset
 
- des déplacements moyens augmentent fortement au fur et à mesure que le
- Mach devient important pour atteindre un maximum à Mach 0.7 de 17 pixels
- ! Bien que ces valeurs de déplacements varient d'une caméra à l'autre,
- la tendance reste la même.
+ des déplacements moyens augmente fortement au fur et à mesure que le Mach
+ devient important pour atteindre un maximum à Mach 0.7 de 17 pixels ! Bien
+ que ces valeurs de déplacements varient d'une caméra à l'autre, la tendance
+ reste la même.
  De plus, en suivant l'évolution des déplacements, on peut reconnaître les
  couples de caméras associées à chaque hublot car elles présentent des comportem
 ents identiques.
@@ -5173,11 +7335,57 @@ reference "fig:S1MA:Vp_mach"
  nuls en moyenne tandis que les écarts-types augmenteraient avec le Mach.
  Il y a donc un phénomène perturbateur autre, dont l'amplitude augmente
  de manière importante avec le nombre de Mach.
- Celui-ci peut être de nature aéro-optique: la couche limite présente sur
- le hublot pourrait générer des déplacements perturbateurs, ou bien géométrique:
- une déformation de la veine due à la dépression aérodynamique ou bien aux
- effets thermiques pourrait occasionner un déplacement relatif entre les
- caméras et le mouchetis.
+ L'origine de celui-ci peut être:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bullet$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Aéro-optique: la couche limite présente sur le hublot pourrait générer des
+ déplacements perturbateurs.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bullet$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Géométrique: une déformation de la veine due à la dépression aérodynamique.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bullet$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Thermiques: la dilatation de la structure induirait un déplacement relatif
+ entre les caméras et le mouchetis.
  
 \end_layout
 
@@ -5226,23 +7434,45 @@ Pour mettre en place notre correction, nous faisons tout d'abord l'hypothèse
  que le mouchetis a subi un mouvement de translation.
  Il devrait alors être possible de supprimer ce mouvement en mesurant un
  déplacement moyen dans une zone non perturbée par l'écoulement.
- Sur la Figure
+ Sur la Fig.
 \begin_inset space ~
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:simple"
+
+\end_inset
+
+ on peut voir des champs de déplacement corrigés à partir du déplacement
+ moyen calculé dans la fenêtre rouge de 
+\begin_inset Formula $200\,\times\,100$
+\end_inset
+
+ pixels.
+ Si la correction fait clairement ressortir la topologie du jet, une forte
+ discontinuité apparaît désormais au niveau de la jointure présente sur
+ la paroi.
+ Cette observation implique bien un mouvement du mouchetis mais également
+ des mouvements disjoints des différents éléments qui constituent la veine.
+ La correction précédente est donc insuffisante pour corriger de manière
+ satisfaisante ce type de perturbation.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5271,7 +7501,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5300,7 +7530,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5359,25 +7589,6 @@ Champs de déplacement après correction par mouvement de translation.
 \end_inset
 
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:S1MA:simple"
-
-\end_inset
-
- on peut voir des champs de déplacement corrigés à partir du déplacement
- moyen calculé dans la fenêtre rouge de 
-\begin_inset Formula $200\,\times\,100$
-\end_inset
-
- pixels.
- Si la correction fait clairement ressortir la topologie du jet, une forte
- discontinuité apparaît désormais au niveau de la jointure présente sur
- la paroi.
- Cette observation implique bien un mouvement du mouchetis mais également
- des mouvements disjoints des différents éléments qui constituent la veine.
- La correction précédente est donc insuffisante pour corriger de manière
- satisfaisante ce type de perturbation.
 \end_layout
 
 \begin_layout Standard
@@ -5385,16 +7596,34 @@ Nous poussons donc le concept un peu plus loin et choisissons de corriger
  le mouvement de chaque élément de paroi de manière indépendante.
  Cela nécessite donc de distinguer 2 zones sur chaque image et de soustraire
  le mouvement global de chacune des zones.
- A nouveau sur la Figure
+ Cette correction par morceau est appliquée en calculant les déplacements
+ moyens sur la fenêtre rouge pour la partie supérieure de l'image et sur
+ la fenêtre noire pour la partie inférieure (Fig.
 \begin_inset space ~
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:double"
+
+\end_inset
+
+).
+ Cette approche améliore le résultat mais elle ne semble pas suffisante:
+ en effet, si on obtient bien une continuité du champ de déplacement hors
+ de l'écoulement où les mouvements ont été calculés, la discontinuité est
+ toujours visible sur la partie gauche des champs au niveau de la sortie
+ du jet.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5507,36 +7736,37 @@ name "fig:S1MA:double"
 \end_inset
 
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:S1MA:double"
-
-\end_inset
-
-, la correction est appliquée en calculant les déplacements moyens sur la
- fenêtre rouge pour la partie supérieure de l'image et sur la fenêtre noire
- pour la partie inférieure.
- Les caméras qui ne visualisent pas de discontinuités ne nécessite qu'une
- fenêtre bien évidemment.
- Cette approche améliore le résultat mais elle ne semble pas suffisante:
- en effet, si on obtient bien une continuité du champ de déplacement hors
- de l'écoulement, au niveau des cadres, la discontinuité est toujours visible
- sur la partie gauche des champs au niveau de la sortie du jet.
- 
 \end_layout
 
 \begin_layout Standard
 Pour analyser ce phénomène plus en détails nous revenons sur les données
- sans jet (Figure
+ sans jet (Fig.
 \begin_inset space ~
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:no_jet"
+
+\end_inset
+
+).
+ Là aussi le même phénomène apparaît : il y a non seulement une discontinuité
+ mais aussi une variabilité des déplacements selon la diagonale de l'image.
+ Cela semble indiquer un mouvement plus complexe qu'une simple translation
+ de la part des éléments de paroi qui constituent la veine.
+ Le phénomène présente peu de variations temporelles également.
+ On aurait donc, lors de la montée en Mach un mouvement de corps solide-rigide
+ des différents éléments qui constituent la paroi de la veine.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5631,7 +7861,7 @@ status open
 
 \begin_layout Plain Layout
 Champs de déplacement moyens obtenus à débit nul.
- L'influence de l'écoulement sur la buse est entouré sur la partie gauche
+ L'influence de l'écoulement sur la buse est entourée sur la partie gauche
  des champs.
 \begin_inset CommandInset label
 LatexCommand label
@@ -5660,23 +7890,12 @@ Champs de déplacement moyens obtenus à débit nul.
 \end_inset
 
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:S1MA:no_jet"
+\end_layout
 
-\end_inset
-
-).
- Là aussi le même phénomène apparait : il y a non seulement une discontinuité
- mais aussi une variabilité des déplacements selon la diagonale de l'image.
- Cela semble indiquer un mouvement plus complexe qu'un simple translation
- de la part des éléments de paroi qui constituent la veine.
- Le phénomène présente peu de variations temporelles également.
- On aurait donc, lors de la montée en Mach un mouvement de corps solide-rigide
- des différents éléments qui constituent la paroi de la veine.
- Une étude approfondie serait nécessaire afin d'analyser les champs de déplaceme
-nts et de déterminer pour chaque zone le mouvement subi par le mouchetis.
- Ce travail pourrait s'appuyer sur la présence des marqueurs 
+\begin_layout Standard
+Une étude approfondie est nécessaire afin d'analyser les champs de déplacements
+ et de déterminer pour chaque zone le mouvement subi par le mouchetis.
+ Ce travail pourra s'appuyer sur la présence des marqueurs 
 \shape italic
 AprilTags
 \shape default
@@ -5711,19 +7930,10 @@ name "sub:S1MA:Solution"
 \end_layout
 
 \begin_layout Standard
-La solution peu coûteuse qui a été retenue consiste à soustraire aux champs
- de déplacements perturbés (Figure
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:S1MA:deplacements_bruts"
-
-\end_inset
-
-) les déplacements calculés en l'absence du jet (Figure
+Une solution rapide peut néanmoins être appliquée.
+ En effet, pour un Mach donné, le mouvement global moyen du mouchetis est
+ similaire avec ou sans jet.
+ Ainsi, la soustraction du champ moyen obtenu sans jet (Fig.
 \begin_inset space ~
 \end_inset
 
@@ -5734,21 +7944,37 @@ reference "fig:S1MA:no_jet"
 
 \end_inset
 
-).
- En effet, si l'on considère qu'en moyenne à un Mach donné, le mouvement
- du mouchetis ne résulte que de la montée en vitesse, pour chaque cas d'étude
- on peut soustraire aux mesures avec jet les mesures sans jet et retrouver
- ainsi le déplacement associé au jet lui-même.
- Cette procédure fonctionne plutôt bien comme on peut le voir sur la Figure
+) permet de corriger chaque champ avec jet correspondant aux mêmes conditions
+ de Mach.
+ Cette procédure fonctionne plutôt bien comme on peut le voir sur la Fig.
 \begin_inset space ~
 \end_inset
 
 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:soustraction"
+
+\end_inset
+
+.
+ On retrouve désormais une belle structure en forme de 
+\begin_inset Quotes fld
+\end_inset
+
+champignon
+\begin_inset Quotes frd
+\end_inset
+
+, comparable à celle prédit par la CFD.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5868,22 +8094,6 @@ name "fig:S1MA:soustraction"
 \end_inset
 
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:S1MA:soustraction"
-
-\end_inset
-
-.
- On retrouve désormais une belle structure en forme de 
-\begin_inset Quotes fld
-\end_inset
-
-champignon
-\begin_inset Quotes frd
-\end_inset
-
- que l'on attendait pour un jet à contre-courant.
 \end_layout
 
 \begin_layout Standard
@@ -5932,9 +8142,8 @@ Reconstruction BOS 3D
 \end_layout
 
 \begin_layout Standard
-Les champs de déplacement corrigés nous permettent de correctement estimer
- les cartes de déviations puis de réaliser la reconstruction de l'écoulement
- moyen.
+Les champs de déplacement corrigés permettent une estimation correcte des
+ cartes de déviations nécessaire à la reconstruction de l'écoulement moyen.
  Le champ de masse volumique obtenu est présenté sur la Figure
 \begin_inset space ~
 \end_inset
@@ -5951,7 +8160,7 @@ reference "fig:S1MA:M0d4_Q1d0"
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5975,6 +8184,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S1MA:tore"
+
+\end_inset
+
 
 \end_layout
 
@@ -6064,7 +8279,7 @@ status open
 
 \begin_layout Plain Layout
 Iso-surfaces et coupes de masse volumique pour un jet débitant à 
-\begin_inset Formula $1\, kg/s$
+\begin_inset Formula $1\,kg/s$
 \end_inset
 
  face à un écoulement à Mach 
@@ -6091,9 +8306,21 @@ name "fig:S1MA:M0d4_Q1d0"
 
 .
  Le jet issu de la buse est rapidement arrêté par l'écoulement amont et
- rebrousse chemin donnant à l'écoulement cette forme en champignon.
- Sur les iso-surfaces de densité, on peut distinguer la forme en tore associée
- à la région de recirculation.
+ rebrousse chemin donnant à l'écoulement cette forme caractéristique en
+ ''champignon''.
+ Sur les iso-surfaces présentés en Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S1MA:tore"
+
+\end_inset
+
+, on peut distinguer la forme en tore associée à la région de recirculation,
+ marquée par une chute locale de la masse volumique.
 \end_layout
 
 \begin_layout Standard
@@ -6117,8 +8344,8 @@ Résultats complémentaires BOS 2D
 \end_layout
 
 \begin_layout Standard
-La reconstruction présenté ci-dessus est la seule qui a été effectuée au
- cours de cette étude.
+La reconstruction présenté précédemment est la seule qui a été effectuée
+ au cours de cette étude.
  Néanmoins, afin d'illustrer quelques configurations de la matrice d'essais
  avec la soufflerie en marche, la méthode de traitement présentée en section
 \begin_inset space ~
@@ -6148,7 +8375,7 @@ status open
 \end_inset
 
 Mach 0.2, 
-\begin_inset Formula $Q=1\, kg/s$
+\begin_inset Formula $Q=1$
 \end_inset
 
  
@@ -6168,10 +8395,14 @@ status open
 \end_inset
 
 Mach 0.4, 
-\begin_inset Formula $Q=1\, kg/s$
+\begin_inset Formula $Q=1$
 \end_inset
 
- 
+
+\begin_inset space ~
+\end_inset
+
+kg/s 
 \end_layout
 
 \begin_layout Itemize
@@ -6188,10 +8419,14 @@ status open
 \end_inset
 
 Mach 0.6, 
-\begin_inset Formula $Q=2\, kg/s$
+\begin_inset Formula $Q=2$
 \end_inset
 
- 
+
+\begin_inset space ~
+\end_inset
+
+kg/s 
 \end_layout
 
 \begin_layout Standard
@@ -6228,10 +8463,14 @@ status open
 
 \begin_layout Plain Layout
 Mach 0.2, 
-\begin_inset Formula $Q=1\, kg/s$
+\begin_inset Formula $Q=1$
 \end_inset
 
- 
+
+\begin_inset space ~
+\end_inset
+
+kg/s 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:S1MA:M0d2_inst"
@@ -6259,10 +8498,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Images/M0d4_Q1d0.pdf
@@ -6278,10 +8513,14 @@ status open
 
 \begin_layout Plain Layout
 Mach 0.4, 
-\begin_inset Formula $Q=1\, kg/s$
+\begin_inset Formula $Q=1$
 \end_inset
 
- 
+
+\begin_inset space ~
+\end_inset
+
+kg/s 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:S1MA:M0d4_inst"
@@ -6296,10 +8535,6 @@ name "fig:S1MA:M0d4_inst"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -6311,10 +8546,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/M0d6_Q2d0.pdf
+	filename Images/M0d6_Q2d0-2.pdf
 	lyxscale 50
 	width 33text%
-	BoundingBox 75bp 250bp 550bp 625bp
+	BoundingBox 75bp 230bp 550bp 610bp
 	clip
 
 \end_inset
@@ -6324,10 +8559,14 @@ status open
 
 \begin_layout Plain Layout
 Mach 0.6, 
-\begin_inset Formula $Q=2\, kg/s$
+\begin_inset Formula $Q=2$
 \end_inset
 
- 
+
+\begin_inset space ~
+\end_inset
+
+kg/s 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:S1MA:M0d6_inst"
@@ -6384,8 +8623,8 @@ reference "fig:S1MA:inst_corrige"
 .
  On peut constater sur ces images la grande complexité de l'écoulement ainsi
  que son caractère fortement instationnaire.
- En effet, le caractère instationnaire apparaît nettement en comparant le
- champ instantané à Mach 0.4 de la Figure
+ Ce dernier est bien mis en évidence lorsqu'on compare le champ instantané
+ à Mach 0.4 de la Figure
 \begin_inset space ~
 \end_inset
 
@@ -6422,7 +8661,7 @@ reference "fig:S1MA:M0d2_inst"
 
 , en sortie de buse.
  Sur le dernier cas, à Mach 0.6 avec un jet à 
-\begin_inset Formula $2\, kg/s$
+\begin_inset Formula $2\,kg/s$
 \end_inset
 
  (Figure
@@ -6436,8 +8675,8 @@ reference "fig:S1MA:M0d6_inst"
 
 \end_inset
 
-), on distingue vaguement une première cellule de choc puis la topologie
- est fortement perturbée jusqu'au point d'arrêt qui lui reste bien marqué.
+), on distingue une première cellule de choc puis la topologie est fortement
+ perturbée jusqu'au point d'arrêt qui lui reste bien marqué.
  
 \end_layout
 
@@ -6471,8 +8710,7 @@ Mesure tridimensionnelle de champs étendus
 \end_layout
 
 \begin_layout Standard
-Bien qu'il présente une belle topologie le champ de masse volumique reconstruit
- à Mach 0.4 (Figure
+Le champ de masse volumique reconstruit à Mach 0.4 (Figure
 \begin_inset space ~
 \end_inset
 
@@ -6485,10 +8723,10 @@ reference "fig:S1MA:M0d4_Q1d0"
 
 ) a fait surgir quelques problématiques lors du processus de reconstruction
  qu'il nous apparaît intéressant d'expliciter ici.
- Contrairement aux mesure faites jusqu'à présent (jet de la buse seul, mesures
- réalisées à F2) la taille de l'écoulement étudié est ici relativement important
-e vis à vis du champ de vue caméra et pour certains points de vue, les bords
- du phénomène aérodynamique sont coupés.
+ Contrairement aux mesure faites jusqu'à présent (jet de la buse sans vent
+ contraire, mesures réalisées à F2), la taille de l'écoulement étudié est
+ ici relativement importante vis-à-vis du champ observé et pour certains
+ points de vue, les bords du phénomène aérodynamique sont coupés.
  Cela n'est pas sans conséquence pour le processus de reconstruction comme
  nous allons l'expliquer à partir de la Figure
 \begin_inset space ~
@@ -6574,11 +8812,7 @@ on avec la mesure effectuée puisque l'écoulement est plus grand que le masque.
   3D et en le construisant sur la base de la région commune à un certain
  nombre de caméras.
  Ce choix implique alors la présence de zones de poids différents dans le
- champ reconstruit, certaines étant moins 
-\begin_inset Quotes fld
-\end_inset
-
-fiables
+ champ reconstruit, certaines étant moins informées
 \begin_inset Quotes frd
 \end_inset
 
@@ -6600,7 +8834,7 @@ reference "fig:S1MA:M0d4_Q1d0"
 
 \begin_layout Standard
 Si l'on pousse le raisonnement plus loin, ce problème pose la question de
- la mesure de grands champs par BOS 3D.
+ la mesure des grands champs par BOS 3D.
  Du fait de la nature intégrale de la technique BOS, il apparaît nécessaire
  d'englober l'ensemble de l'écoulement lors de la prise de vue pour pouvoir
  effectuer une reconstruction.
@@ -6612,8 +8846,8 @@ t.
  entrainerait nécessairement une variabilité sur le nombre de caméras observant
  chaque voxel.
  Il faudrait alors d'une part veiller à ce que cette variabilité reste faible
- au sein du volume à reconstruire et également analyser l'impact de ce volume
- de poids inégaux dans le processus de reconstruction.
+ au sein du volume à reconstruire et d'autre part analyser l'impact de ce
+ volume de poids inégaux dans le processus de reconstruction.
  Il s'agit d'éviter que des gradients artificiels n'apparaissent du fait
  des changements de pondération lors du processus de reconstruction et ne
  viennent gêner la convergence.
@@ -6672,10 +8906,14 @@ s qui présentent de forts gradients de masse volumique.
  un éclairage non collimaté, il est possible que les images présentent de
  l'astigmatisme parasite comme on peut le voir sur l'écoulement du jet double
  buse à 
-\begin_inset Formula $2.5\, kg/s$
+\begin_inset Formula $2.5$
 \end_inset
 
- en Figure
+
+\begin_inset space ~
+\end_inset
+
+kg/s en Figure
 \begin_inset space ~
 \end_inset
 
@@ -6708,7 +8946,7 @@ status open
 \begin_layout Plain Layout
 Astigmatisme parasite visible sur une image brute de la sortie du jet simple
  buse, soufflerie arrêtée, débit de 
-\begin_inset Formula $3\, kg/s$
+\begin_inset Formula $3\,kg/s$
 \end_inset
 
 .
@@ -6831,10 +9069,10 @@ Astigmatisme parasite visible sur des images brutes pour a)
 \end_inset
 
  et b) 
-\begin_inset Formula $f$
+\begin_inset Formula $f_{\#}=8$
 \end_inset
 
-_# =8.
+ .
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -6873,7 +9111,7 @@ Ce phénomène qui sera étudié plus en détail dans le chapitre suivant est
  de confusion est grand.
  Notre configuration à S1MA est loin d'être optimale puisqu'en collant les
  mouchetis à 
-\begin_inset Formula $4\, m$
+\begin_inset Formula $4\,m$
 \end_inset
 
  de l'écoulement, sur les parois, nous avons une grande sensibilité mais
@@ -6889,10 +9127,14 @@ aires en BOS 2D en jouant sur un autre paramètre : l'ouverture caméra.
 
 .
  Ceci nous permet de passer d'une taille du cercle de confusion de 
-\begin_inset Formula $1.8\, mm$
+\begin_inset Formula $18$
 \end_inset
 
- à 
+
+\begin_inset space ~
+\end_inset
+
+mm à 
 \begin_inset Formula $f_{\#}=2$
 \end_inset
 
@@ -6908,10 +9150,14 @@ reference "fig:S1MA_f2"
 \end_inset
 
 ), à  
-\begin_inset Formula $4.6\, mm$
+\begin_inset Formula $4.6$
 \end_inset
 
- à 
+
+\begin_inset space ~
+\end_inset
+
+mm à 
 \begin_inset Formula $f_{\#}=8$
 \end_inset
 
@@ -6936,7 +9182,7 @@ reference "fig:S1MA_f8"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure

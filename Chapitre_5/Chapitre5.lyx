@@ -123,11 +123,20 @@ La campagne d'essais réalisée à S1MA a soulevé une problématique associé
 \end_layout
 
 \begin_layout Standard
-A travers ce chapitre nous revenons sur la problématique d'astigmatisme.
- Nous réalisons une étude 2D paramétrique sur un écoulement de jet sous-détendu
- afin d'optimiser le montage BOS.
- Puis à partir d'un nouveau BOS 3D, nous reconstruisons le champ de masse
- volumique à différentes conditions de fonctionnement.
+Dans ce chapitre, nous revenons tout d'abord sur la problématique d'astigmatisme
+, à travers l'étude d'un jet sous-détendu.
+ Nous réalisons une analyse paramétrique d'un montage BOS 2D afin d'optimiser
+ la qualité des images.
+ Après avoir conçu un nouveau banc BOS 3D, nous évaluons la capacité de
+ notre code actuel à reconstruire de tels champs de masse volumique.
+ En effet, en présence de gradients très intenses comme les ondes de choc,
+ l'hypothèse paraxiale utilisée jusqu'à présent peut être mise en défaut.
+ 
+\end_layout
+
+\begin_layout Standard
+Finalement, nous reconstruisons le champ de masse volumique à différentes
+ conditions de fonctionnement.
  Nous comparons les champs moyens avec des résultats de la littérature ainsi
  qu'avec une simulation numérique.
  Enfin, une analyse POD nous permet de moyenner de manière conditionnée
@@ -138,6 +147,12 @@ A travers ce chapitre nous revenons sur la problématique d'astigmatisme.
 
 \begin_layout Section
 Article
+\end_layout
+
+\begin_layout Standard
+Article soumis à 
+\shape italic
+Experiments in Fluids.
 \end_layout
 
 \begin_layout Standard
@@ -372,7 +387,7 @@ scale=0.95,
 
 \begin_layout Plain Layout
 
-clip,trim= 1cm 2cm 1mm 2.06cm,
+clip,trim= 1cm 2cm 1mm 3.06cm,
 \end_layout
 
 \begin_layout Plain Layout

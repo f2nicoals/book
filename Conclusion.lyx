@@ -94,10 +94,10 @@ numberline{}Conclusion générale}
 \end_layout
 
 \begin_layout Standard
-Le cadre relatif à cette étude concerne le développement d'outils métrologiques
+Le cadre de cette étude concerne le développement des outils métrologiques
  avancés pour la mécanique des fluides.
  Afin d'accéder expérimentalement à des données de plus en plus fines et
- de plus exhaustives, les méthodes optiques dites 
+ dela de manière exhaustive, les méthodes optiques dites 
 \begin_inset Quotes fld
 \end_inset
 
@@ -120,17 +120,24 @@ les et de permettre le déploiement de la technique en soufflerie.
 \begin_layout Standard
 Au cours de ces travaux nous avons tout d'abord élaboré une version améliorée
  du code initialement développé à l'ONERA.
- Elle repose sur la minimisation d'un critère des moindres carrés régularisés.
- L'harmonisation des opérateurs de projection et de rétroprojection et l'ajout
- de conditions aux limites adaptées nous ont permis d'accroitre les performances
- de notre algorithme.
- Nous avons conservé une régularisation quadratique car elle donne des résultats
- très satisfaisant.
+ Celle-ci repose sur la minimisation d'un critère des moindres carrés régularisé
+s.
+ L'harmonisation des opérateurs de projection et de rétroprojection ainsi
+ que l'ajout de conditions aux limites adaptées nous ont permis d'accroitre
+ les performances de notre algorithme.
+ Nous avons conservé une régularisation quadratique de part ses résultats
+ très satisfaisants.
  Des tests synthétiques nous ont ensuite permis de définir le positionnement
- optimal des caméras pour étudier un jet.
- Une chaine de traitement semi-automatique a également été développée afin
+ optimal des caméras pour l'étude d'une configuration de type jet.
+ Une chaîne de traitement semi-automatique a également été développée afin
  de traiter les données expérimentales.
- Enfin, un nouveau modèle direct a été définit.
+ Enfin, un nouveau modèle direct, la 
+\begin_inset Formula $\bosD$
+\end_inset
+
+, a été définit.
+ Celui-ci exprime de manière plus rigoureuse le lien entre les déplacements
+ mesurés et la masse volumique.
  Même si nous n'avons pas pu montrer son intérêt dans la situation étudié,
  il pourrait profiter aux écoulements plus complexes.
 \end_layout
@@ -144,8 +151,8 @@ Une étape importante franchie dans le développement de la BOS 3D est sa
 \end_layout
 
 \begin_layout Standard
-Nous avons déployé la BOS 3D en soufflerie de recherche à F2 et également
- en soufflerie industrielle a S1MA.
+Nous avons déployé la BOS 3D en soufflerie de recherche à F2 et puis en
+ soufflerie industrielle a S1MA.
  Cette dernière présente un environnement beaucoup moins favorable à l'utilisati
 on de techniques optiques.
  Néanmoins nous avons mis au point une première méthode de traitement qui
@@ -153,35 +160,36 @@ on de techniques optiques.
  à Mach 0.4.
  Il est important de relever les résultats obtenus par la BOS 3D sur des
  volumes de taille importante et dans ce contexte de soufflerie industrielle,
- là où d'autre méthodes comme la PIV, et en particulier la PIV 3D sont difficile
-s à mettre en œuvre.
+ là où d'autre méthodes comme la PIV, et son extension 3D sont difficiles
+ à mettre en œuvre.
 \end_layout
 
 \begin_layout Standard
-Les essais réalisés à S1MA, pour la première fois sur des écoulements compressib
-les ont mis en évidence l'astigmatisme parasite causé par les forts gradients
+Les essais réalisés à S1MA, sont les premiers tests réalisés sur des écoulements
+ compressibles.
+ Ils ont mis en évidence l'astigmatisme parasite causé par les forts gradients
  de masse volumique.
  A travers une étude dédiée sur un banc d'essai en laboratoire nous avons
  pu atténuer ces effets et évaluer notre algorithme de reconstruction sur
  jet sous-détendu.
- Les très bons accord obtenus vis à vis de la littérature et d'une simulation
- numérique sur la topologie du jet mais aussi sur les niveaux de masse volumique
-, illustrent les bonnes performances de la technique.
+ Les très bons accord obtenus comparés à la littérature ainsi qu'à une simulatio
+n numérique sur la topologie du jet mais aussi sur les niveaux de masse
+ volumique, illustrent les bonnes performances de la technique.
  De plus, le nombre important d'acquisitions nous ont permit d'extraire,
  à partir d'une analyse POD, le lâcher tourbillonnaire périodique présent
  dans la couche de mélange.
 \end_layout
 
 \begin_layout Standard
-Au final, ces travaux de thèse ont permis d'accroitre le degré de maturité
+Au final, ces travaux de thèse ont permis d'accroître le degré de maturité
  de la technique.
- Bien qu'elle soit encore relativement jeune, nous avons démontrer son fonctionn
-ent pour des écoulements de plus en plus rapides et sur des installations
+ Bien qu'elle soit encore relativement jeune, nous avons démontré son fonctionne
+ment pour des écoulements de plus en plus rapides et sur des installations
  de plus en plus complexes.
  A la fin de cette étude, nous pouvons entrevoir de nombreuses applications
- mais aussi le fort potentiel pour analyser la physique de certains écoulements
- complexes, des écoulements de convection au bruit de screech dans les jets
- sous-détendus.
+ mais aussi le fort potentiel de cette technique pour l'analyse de la physique
+ de certains écoulements complexes tels que les écoulements de convection
+ ou le bruit de screech dans les jets sous-détendus.
 \end_layout
 
 \begin_layout Section*
@@ -189,15 +197,14 @@ Perspectives
 \end_layout
 
 \begin_layout Standard
-Comme nous venons de le dire la BOS 3D offre un nouvel outil pour analyser
- la physique des écoulements.
+La BOS 3D offre un nouvel outil pour analyser la physique des écoulements.
  Toutefois, le point le plus limitant avec la méthode actuelle est son coût
  de calcul.
  Bien qu'elle soit déjà implémenté sous architecture GPU, elle possède un
  fort potentiel d'optimisation qui permettrait accroitre notablement ses
  performances.
- Ceci donnerai la possibilité de calculer des champs de fluctuations de
- masse volumique.
+ Par exemple, cela offrirait la possibilité de calculer des champs de fluctuatio
+ns de masse volumique, si précieuses pour les modélisations.
 \end_layout
 
 \begin_layout Standard
@@ -205,14 +212,14 @@ Au niveau algorithmie, l'approche
 \begin_inset Formula $\myLL$
 \end_inset
 
- qui n'a pas été étudié dans ces travaux pourrait faire l'objet d'une nouvelle
- évaluation.
+, qui n'a pas été étudiée dans ces travaux, pourrait faire l'objet d'une
+ nouvelle évaluation.
  Elle éviterait un éventuel lissage excessif opérer par la régularisation
  
 \begin_inset Formula $\myL$
 \end_inset
 
- et de faire ressortir des petites structures présentent sur les champs
+ et ferait sans doute ressortir des petites détails présents sur les champs
  instantanés notamment.
  Elle pourrait aussi bénéficier aux écoulements supersoniques en préservant
  les structures intenses des ondes de chocs.
@@ -221,23 +228,24 @@ Au niveau algorithmie, l'approche
  avec la mesure.
  De manière générale, il faudra veiller à ce qu'il y ait bien une surjection
  entre les images masquées des caméras et le masque 3D.
- Enfin, la prise en compte du moyennage spatial associé su cercle de confusion
- dans notre opérateur direct, apporterai peut être une meilleure résolution
+ Enfin, la prise en compte du moyennage spatial associé au cercle de confusion
+ dans notre opérateur direct, apporterait peut être une meilleure résolution
  aux champs de masse volumique reconstruits.
 \end_layout
 
 \begin_layout Standard
-Lors de notre étude sur un jet sous-détendus nous n'avons pas pu travailler
- au paramètre d'ouverture optimal en configuration 3D.
- Des solutions technologiques tels que des panneaux rétroréfléchissant ou
- bien l'utilisation d'un éclairage du mouchetis par l'arrière offriraient
- un surcroit de lumière.
+Lors de notre étude sur un jet sous-détendu, nous n'avons pas pu travailler
+ avec le paramètre d'ouverture optimal en configuration 3D.
+ Des solutions technologiques, tels que des panneaux rétroréfléchissants
+ ou bien l'utilisation d'un éclairage du mouchetis par l'arrière, offriraient
+ un surcroit de lumière qui manque actuellement.
  Il serait également intéressant d'étudier des algorithmes de flot optiques
- plus élaborés pour pouvoir traiter les images dégradées par du flou.
+ plus élaborés permettant un meilleur traitement des images dégradées par
+ du flou.
 \end_layout
 
 \begin_layout Standard
-Dans cette étude nous avons élargit le champ d'application de la technique
+Dans cette étude nous avons élargi le champ d'application de la technique
  suivant deux axes: la vitesse de l'écoulement et son emploi dans un environneme
 nt complexe de soufflerie.
  D'autres voies restent à explorer.
@@ -256,12 +264,12 @@ Une deuxième voie concerne la prise en compte d'une maquette au cœur de
  de ce manque de données dans la reconstruction.
  Tous les voxels n'auront pas non plus le même poids selon le nombre de
  caméras qu'ils voient.
- Enfin, il faudra peut être revoir le positionnement des caméras pour ce
- genre d'étude.
+ Enfin, il faudra peut être revoir le positionnement des caméras pour ces
+ configurations.
 \end_layout
 
 \begin_layout Standard
-Une dernière piste qui peut être explorée est l'étude des mélanges de gaz
+Une dernière piste pouvant être explorée, est l'étude des mélanges de gaz
  et notamment des mesures en combustion.
  Il serait intéressant de déterminer l'intérêt de la BOS 3D pour ce type
  de mesures.

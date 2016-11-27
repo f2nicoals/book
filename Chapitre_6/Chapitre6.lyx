@@ -424,6 +424,40 @@ height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
+Dans ce chapitre, nous avons tout d'abord montré qu'une optimisation du
+ montage BOS classique permet d'acquérir des images de déplacement de très
+ bonne qualité, approchant même la résolution de la strioscopie.
+ Cette première étape est essentielle pour réaliser des mesures BOS 3D de
+ qualité.
+ L'importance de l'ouverture caméra a également été souligné de part le
+ filtrage spatial qu'elle induit.
+ Il est donc important de travailler avec une ouverture suffisamment faible
+ pour conserver une bonne résolution.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Nous avons aussi prouvé le fonctionnement de notre algorithme dans sa version
+ actuel pour reconstruire des gradients de masse volumique intenses.
+ L'hypothèse paraxiale utilisée jusqu'à présent semble toujours valide.
+ La régularisation 
+\begin_inset Formula $\myL$
+\end_inset
+
+ employée s'est révélée suffisante pour les conditions d'éclairage utilisées.
+ Une amélioration du banc de mesure, afin de travailler à 
+\begin_inset Formula $f_{\#}=16$
+\end_inset
+
+, apporterai un surcroit de résolution et permettrai d'envisager une régularisat
+ion 
+\begin_inset Formula $\myLL$
+\end_inset
+
+ pour préserver les discontinuités.
+\end_layout
+
+\begin_layout Plain Layout
 Les résultats obtenus dans ce chapitre montre bien tout l'intérêt de la
  BOS 3D pour la mesure des écoulements compressibles.
  Les champs moyens reconstruits présentent des structures topologiques en
@@ -435,8 +469,8 @@ Les résultats obtenus dans ce chapitre montre bien tout l'intérêt de la
  On pourrait envisager des acquisitions conditionnées par des mesures acoustique
 s pour suivre un phénomène en particulier.
  Enfin, des reconstructions plus rapides permettraient également d'obtenir
- le champ de fluctuations de masse volumique permettraient d'étudier plus
- en détail l'origine du bruit de screech.
+ le champ de fluctuations de masse volumique permettant d'étudier plus en
+ détail l'origine du bruit de screech.
  
 \end_layout
 

@@ -800,17 +800,20 @@ status open
 \begin_layout Plain Layout
 Pour la première fois la BOS 3D a été déployée en soufflerie pour reconstruire
  un champ instantané de masse volumique.
- Les mesures réalisées ont été validées en température par comparaison avec
- des acquisitions thermocouple.
+ Les mesures réalisées ont été validées sur le champ moyen de température
+ par comparaison avec des acquisitions thermocouple.
  Ce résultat illustre également la capacité de la technique BOS 3D à mesurer
  un champ tridimensionnel de température.
+ La qualité de la reconstruction d'un champ instantané permet, de part sa
+ résolution, une analyse plus fine de la topologie du jet et des instabilités
+ naissant dans la couche de mélange.
  La possibilité de coupler la BOS 3D et la SPIV est également intéressante.
  Cette première réalisation montre l'intérêt de pouvoir combiner ces deux
  type de mesures notamment pour l'étude des échanges de chaleur et donc
  du transport d'énergie.
  Ces essais ont aussi mis en lumière les limites du système d'acquisition
  actuel, limité à 
-\begin_inset Formula $2$
+\begin_inset Formula $0.2$
 \end_inset
 
 
@@ -825,7 +828,8 @@ Hz et par conséquent de l'interprétation physique que l'on peut faire des
  d'heures) est encore trop lourd pour envisager de reconstruire tous les
  champs instantanés.
  Une amélioration des performances du code nous donnerait accès à d'avantage
- de données et notamment aux champs de fluctuations de masse volumique.
+ de données et notamment aux champs de fluctuations de masse volumique,
+ forts utiles pour la modélisation.
 \end_layout
 
 \end_inset

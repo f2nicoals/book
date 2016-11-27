@@ -120,7 +120,7 @@ es, générées à partir d'un écoulements résultant d'une simulation numériq
  L'utilisation des données de synthèse nous permet d'évaluer l'impact de
  paramètres clés comme le nombre de caméras et leur répartition spatiale
  sur la qualité des reconstructions.
- Enfin, nous présentons la mise en oeuvre de la méthode sur un banc d'essai
+ Enfin, nous présentons la mise en œuvre de la méthode sur un banc d'essai
  expérimental comportant 12 caméras.
  Nous démontrons ainsi le fonctionnement de notre méthode sur des écoulements
  de convection.

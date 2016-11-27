@@ -5719,7 +5719,7 @@ key "takano2016"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5769,7 +5769,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/Takano.png
+	filename Images/Takano.pdf
 	lyxscale 50
 	height 35text%
 

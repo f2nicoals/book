@@ -105,6 +105,14 @@ Introduction
 \end_layout
 
 \begin_layout Standard
+Dans le chapitre précédent nous avons démontré le fonctionnement de notre
+ algorithme de reconstruction en laboratoire.
+ Les premières comparaisons que nous avons faites montrent une sous estimation
+ des niveau de masse volumiques reconstruits par BOS 3D.
+ 
+\end_layout
+
+\begin_layout Standard
 De manière classique, en BOS, lorsqu'on souhaite reconstruire le champ de
  masse volumique, le problème inverse à résoudre est formulé en fonction
  des cartes de déviations.
@@ -143,58 +151,15 @@ key "Atcheson08,Hinsberg2014,nicolas2016"
  En particulier, nous remettons en cause l'hypothèse qui est classiquement
  utilisée en BOS et que nous avons utilisé jusqu'à présent concernant le
  choix du point de référence pour déterminer la direction des rayons lumineux.
- Nous reformulons ici le problème BOS de manière linéaire afin de relier
- explicitement le déplacement au champ de masse volumique.
-\end_layout
-
-\begin_layout Standard
-Dans le domaine du rendu graphique, 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "stam1996"
-
-\end_inset
-
- ont étudié la propagation des rayons lumineux en terme de déplacement 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Mais ???
-\end_layout
-
-\end_inset
-
-.
- Dans la communauté BOS, la plupart des études exploitent la déviation des
- rayon lumineux à l'exception de 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Ihrke07,Yu13"
-
-\end_inset
-
- qui utilisent une formulation non linéaire du problème BOS 3D en considérant
- des rayons courbes.
- Comme décrit dans 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Ihrke07"
-
-\end_inset
-
-, cette approche non linéaire nécessite un processus itératif où, à chaque
- étape, la trajectoire courbe des rayons lumineux à travers le volume d'indice
- est calculée.
- Puis, le nouveau système linéaire qui est construit permet de calculer
- une nouvelle estimation du volume d'indice et le processus se répète ainsi.
- Au contraire, l'approche que nous développons ici repose sur l'approximation
- paraxiale et exprime un modèle linéaire dont l'inversion ne nécessite qu'une
- seule étape.
+ Nous montrons que le choix du point milieu est justifié pour les écoulements
+ axisymétriques.
+ Enfin, nous reformulons ici le problème BOS de manière linéaire afin de
+ relier explicitement le déplacement au champ de masse volumique et de s'affranc
+hir du choix arbitraire d'un point de référence.
 \end_layout
 
 \begin_layout Section
-Présentation du problème
+Choix du point de référence pour le calcul des déviations
 \end_layout
 
 \begin_layout Standard
@@ -240,7 +205,7 @@ reference "sec:biblio:principe"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -396,18 +361,44 @@ Les mesures images donnent accès à la position des points
 \end_inset
 
  et du volume de mesure.
- Le choix habituel se porte sur 
+ 
+\end_layout
+
+\begin_layout Standard
+Dès lors, on peut se poser la question du choix correct de ce point.
+ Violaine Todoroff (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Todoroff2013"
+
+\end_inset
+
+) a constaté pour son cas d'étude que le choix de ce point de référence
+ a relativement peu d'influence.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dalziel00"
+
+\end_inset
+
+ et 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Atcheson08"
+
+\end_inset
+
+ choisissent 
 \begin_inset Formula $I_{m}$
 \end_inset
 
- (
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Dalziel00,Atcheson08"
-
+ , le point milieu qui semble justifié pour les écoulements axisymétrique.
+ Dans le chapitre précédent, nous avons calculés nos cartes de déviations
+ à partir du point 
+\begin_inset Formula $I_{in}$
 \end_inset
 
-), le point milieu (voir Fig.
+, ce qui a tendance à sous estimer les déviations si on se réfère à la Fig.
 \begin_inset space ~
 \end_inset
 
@@ -418,25 +409,30 @@ reference "fig:BOS2:ref_point"
 
 \end_inset
 
-).
- Nous montrons dans un premier temps que ce choix est rigoureusement justifié
- sous l'approximation paraxiale pour les écoulements axisymétyrique.
- 
-\end_layout
+.
+ Et toujours d'après la Fig.
+\begin_inset space ~
+\end_inset
 
-\begin_layout Standard
-Ce point milieu est également une bonne approximation pour les situations
- en champ lointain, c'est à dire quand la taille 
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BOS2:ref_point"
+
+\end_inset
+
+, cette sous estimation sera d'autant plus importante en champ proche, c'est
+ à dire quand la taille 
 \begin_inset Formula $W$
 \end_inset
 
- de l'écoulement d'étude est petite par rapport à la distance moyenne du
+ de l'écoulement d'étude est grande par rapport à la distance moyenne du
  fond 
 \begin_inset Formula $m$
 \end_inset
 
 .
- Pour les situations en champ proche, 
+ Pour ces situations, 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Hinsberg2014"
@@ -444,11 +440,8 @@ key "Hinsberg2014"
 \end_inset
 
  proposent d'utiliser un facteur correctif basé sur la géométrie de l'écoulement.
-\end_layout
-
-\begin_layout Standard
-Cependant, dans le cas général, la déviation réelle est déterminée par la
- position du point 
+ Cependant, dans le cas général, la déviation réelle est déterminée par
+ la position du point 
 \begin_inset Formula $I_{out}^{\star}$
 \end_inset
 
@@ -458,22 +451,122 @@ Cependant, dans le cas général, la déviation réelle est déterminée par la
 \end_layout
 
 \begin_layout Standard
-A travers ce chapitre nous proposons une nouvelle formulation linéaire nommée
- 
+Nous proposons dans la suite une nouvelle formulation linéaire nommée 
 \begin_inset Formula $\bosD$
 \end_inset
 
 , qui relie directement le déplacement à la masse volumique.
  Elle repose sur la propagation, sous approximation paraxiale, de la déviation
  lumineuse mais aussi du déplacement du point de sortie.
+ La description et la mise en œuvre de ce modèle nous permet de :
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bullet$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Montrer l'importance du choix du point de référence pour estimer correctement
+ les niveaux de masse volumique.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bullet$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Montrer que le choix du point milieu est justifié sous l'approximation paraxiale
+ pour les écoulements axisymétyrique.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bullet$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Mettre en place de manière plus rigoureuse un modèle reliant directement
+ le déplacement au champ de masse volumique.
 \end_layout
 
 \begin_layout Section
-Nouveau modèle
+Modèle 
+\begin_inset Formula $\bosD$
+\end_inset
+
+ reliant le déplacement au champ de masse volumique
+\end_layout
+
+\begin_layout Subsection
+Contexte
 \end_layout
 
 \begin_layout Standard
-Nous définissons la trajectoire d'un rayon lumineux par la focntion 
+Dans le domaine du rendu graphique, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "stam1996"
+
+\end_inset
+
+ ont étudié la propagation des rayons lumineux en terme de déplacement.
+ Dans la communauté BOS, la plupart des études exploitent la déviation des
+ rayon lumineux à l'exception de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ihrke07,Yu13"
+
+\end_inset
+
+ qui utilisent une formulation non linéaire du problème BOS 3D en considérant
+ des rayons courbes.
+ Comme décrit dans 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ihrke07"
+
+\end_inset
+
+, cette approche non linéaire nécessite un processus itératif où, à chaque
+ étape, la trajectoire courbe des rayons lumineux à travers le volume d'indice
+ est calculée.
+ Puis, le nouveau système linéaire qui est construit permet de calculer
+ une nouvelle estimation du volume d'indice et le processus se répète ainsi.
+ Au contraire, l'approche que nous développons ici repose sur l'approximation
+ paraxiale et exprime un modèle linéaire dont l'inversion ne nécessite qu'une
+ seule étape.
+\end_layout
+
+\begin_layout Subsection
+Expression de la déviation et du déplacement du rayon lumineux
+\end_layout
+
+\begin_layout Standard
+Nous définissons la trajectoire d'un rayon lumineux par la fonction 
 \begin_inset Formula $\textbf{x}(s)$
 \end_inset
 
@@ -955,11 +1048,8 @@ où la dépendance de
  est indiquée de manière explicite.
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
-
-
+\begin_layout Subsection
+justification du choix du point milieu pour les écoulements axisymétrique
 \end_layout
 
 \begin_layout Standard
@@ -1101,12 +1191,20 @@ Cette égalité signifie que le rayon paraxial et le rayon dévié s'intersecten
  
 \end_layout
 
+\begin_layout Subsection
+Modèle 
+\begin_inset Formula $\bosD$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1162,7 +1260,7 @@ reference "fig:BOS2:model_direct"
 \end_inset
 
 .
- A partir du modèle direct porposé (Eq.
+ A partir du modèle direct proposé (Eq.
 \begin_inset space ~
 \end_inset
 
@@ -1226,13 +1324,6 @@ key "Hinsberg2014,nicolas2016"
 
 ).
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -1528,7 +1619,8 @@ Application
 Nous comparons maintenant nos deux approche BOS sur un cas 2D représentatif
  d'un écoulement que l'on peut rencontrer en mécanique des fluides.
  Le champ de masse volumique de référence utilisé est extrait du calcul
- LES d'un jet supersonique.
+ LES d'un jet supersonique, aimablement fournit par G.
+ Daviller du Cerfacs.
  Le jet issu d'une buse convergent avec un rapport de pression NPR=
 \begin_inset Formula $2.3$
 \end_inset
@@ -1911,6 +2003,14 @@ Nous avons introduis dans ce chapitre une nouvelle formulation du problème
  Dans tous les cas, celle-ci s'affranchit du choix du point de référence
  pour le calcul des déviations et elle travaille sur les champs de déplacements,
  plus proche des données de mesures.
+\end_layout
+
+\begin_layout Plain Layout
+Dans la suite du manuscrit, nous conservons notre algorithme 
+\begin_inset Formula $\bosU$
+\end_inset
+
+ en utilisant le point milieu pour le calcul des déviations.
 \end_layout
 
 \begin_layout Plain Layout

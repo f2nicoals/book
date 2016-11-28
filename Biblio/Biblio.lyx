@@ -157,14 +157,14 @@ imprimé
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -198,7 +198,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -384,7 +384,7 @@ Une onde lumineuse est une onde électromagnétique caractérisée par son champ
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3146,7 +3146,7 @@ speckle
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -5730,10 +5730,36 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+raisebox{0.1
+\backslash
+height}{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename Images/Rainbow_schlieren_2.png
 	lyxscale 30
-	height 35text%
+	height 36text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -5771,11 +5797,16 @@ status open
 \begin_inset Graphics
 	filename Images/Takano.pdf
 	lyxscale 50
-	height 35text%
+	height 40text%
+	BoundingBox 0bp 0bp 583bp 636bp
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout

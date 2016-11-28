@@ -1153,7 +1153,40 @@ status open
 
 
 \backslash
-nomenclature[ca ]{DMAE}{Kelvin-Helmoltz}
+nomenclature[ca ]{K-H}{Kelvin-Helmoltz}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "LOS"
+description "Line-Of-Sight"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{LOS}{Line-Of-Sight}
 \end_layout
 
 \end_inset

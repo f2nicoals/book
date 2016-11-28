@@ -1027,8 +1027,8 @@ mathcal{F}$}{Transformée de Fourier}
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\mydi}{\textbf{d_{in}}}
-{\textbf{d_{in}}}
+\newcommand{\mydi}{\boldsymbol{d}_{in}}
+{\boldsymbol{d}_{in}}
 \end_inset
 
 
@@ -1068,8 +1068,8 @@ boldsymbol{d_{in}}$}{Direction d'entrée du rayon lumineux}
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\mydd}{\textbf{d}}
-{\textbf{d}}
+\newcommand{\mydd}{\boldsymbol{d}}
+{\boldsymbol{d}}
 \end_inset
 
 
@@ -1109,8 +1109,8 @@ boldsymbol{d}$}{Direction du rayon lumineux}
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\mydo}{\textbf{d_{out}}}
-{\textbf{d_{out}}}
+\newcommand{\mydo}{\boldsymbol{d}_{out}}
+{\boldsymbol{d}_{out}}
 \end_inset
 
 
@@ -1150,8 +1150,8 @@ boldsymbol{d_{out}}$}{Direction de sortie du rayon lumineux}
 
 \begin_layout Standard
 \begin_inset FormulaMacro
-\newcommand{\mydos}{\textbf{d_{out}^{*}}}
-{\textbf{d_{out}^{*}}}
+\newcommand{\mydos}{\boldsymbol{d}_{out}^{\star}}
+{\boldsymbol{d}_{out}^{\star}}
 \end_inset
 
 

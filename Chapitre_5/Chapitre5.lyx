@@ -156,8 +156,8 @@ Carnot BOS 3D
 Le Carnot BOS 3D qui s'est déroulé sur 3 ans avait pour objectif de développer
  un moyen expérimental ainsi qu'une plateforme logicielle pour le traitement
  3D des champs de masse volumique instantanés.
- Il impliquait à la fois le DMAE, le DTIM et le département des souffleries
- de Modane-Avrieux (DSMA).
+ Il impliquait à la fois le DMAE, le DTIM et les départements des souffleries
+ du Fauga-Mauzac (DSFM) et de Modane-Avrieux (DSMA).
  
 \end_layout
 
@@ -1817,7 +1817,7 @@ Installation des caméras
 \end_layout
 
 \begin_layout Standard
-Comme nous l'avons vu dans le chapitre
+Comme nous l'avons vu dans le Chapitre
 \begin_inset space ~
 \end_inset
 
@@ -2210,7 +2210,7 @@ La quantité de lumière disponible nous contraint à travailler avec une ouvert
 .
  Cette valeur d'ouverture conduit à un cercle de confusion au niveau de
  l'écoulement relativement important de près de 
-\begin_inset Formula $18\,mm$
+\begin_inset Formula $18\, mm$
 \end_inset
 
  et donc à une perte de résolution spatiale de la technique.
@@ -2227,7 +2227,7 @@ En fin de campagne nous avons testé une configuration d'éclairage différente:
 \end_inset
 
 , soit un cercle de confusion de 
-\begin_inset Formula $4.6\,mm$
+\begin_inset Formula $4.6\, mm$
 \end_inset
 
 .
@@ -6719,7 +6719,7 @@ reference "fig:S1MA:matrice"
 \end_inset
 
 ) et de la calibration, les cartes de déviations sont calculées selon le
- procédé décrit au chapitre
+ procédé décrit au Chapitre
 \begin_inset space ~
 \end_inset
 
@@ -8279,7 +8279,7 @@ status open
 
 \begin_layout Plain Layout
 Iso-surfaces et coupes de masse volumique pour un jet débitant à 
-\begin_inset Formula $1\,kg/s$
+\begin_inset Formula $1\, kg/s$
 \end_inset
 
  face à un écoulement à Mach 
@@ -8661,7 +8661,7 @@ reference "fig:S1MA:M0d2_inst"
 
 , en sortie de buse.
  Sur le dernier cas, à Mach 0.6 avec un jet à 
-\begin_inset Formula $2\,kg/s$
+\begin_inset Formula $2\, kg/s$
 \end_inset
 
  (Figure
@@ -8782,7 +8782,7 @@ reference "fig:S1MA:grand_champ"
 \end_layout
 
 \begin_layout Standard
-Comme expliquer au chapitre
+Comme expliquer au Chapitre
 \begin_inset space ~
 \end_inset
 
@@ -8946,7 +8946,7 @@ status open
 \begin_layout Plain Layout
 Astigmatisme parasite visible sur une image brute de la sortie du jet simple
  buse, soufflerie arrêtée, débit de 
-\begin_inset Formula $3\,kg/s$
+\begin_inset Formula $3\, kg/s$
 \end_inset
 
 .
@@ -9111,7 +9111,7 @@ Ce phénomène qui sera étudié plus en détail dans le chapitre suivant est
  de confusion est grand.
  Notre configuration à S1MA est loin d'être optimale puisqu'en collant les
  mouchetis à 
-\begin_inset Formula $4\,m$
+\begin_inset Formula $4\, m$
 \end_inset
 
  de l'écoulement, sur les parois, nous avons une grande sensibilité mais

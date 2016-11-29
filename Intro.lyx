@@ -295,7 +295,7 @@ A l'ONERA nous cherchons a développer des techniques de mesures innovantes
  à la fois pour des études de phénomènes complexes en laboratoire, mais
  aussi pour proposer des mesures plus exhaustives aux industriels de l'aéronauti
 que qui testent leurs futurs appareils dans les grandes souffleries.
- Lors de la thèse de Violaine Todoroff (
+ Au cours de la thèse de Violaine Todoroff (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Todoroff2013"
@@ -307,7 +307,15 @@ key "Todoroff2013"
  Ces premiers travaux très encourageants, ont aboutit à la construction
  d'un banc d'essai BOS 3D à 12 caméras et à des reconstructions cohérentes
  d'écoulements aérothermiques.
- 
+ Cette thèse s'inscrivait dans un projet plus large, le Carnot BOS 2D-3D,
+ qui s'est déroulé de 2012 à mi-2015.
+ Le Carnot avait pour objectif de développer un outil de mesure ainsi qu'une
+ chaîne de traitement permettant d'accéder au champ tridimensionnel de masse
+ volumique.
+ Il impliquait différents départements de l'ONERA: le Département Modèle
+ pour l'aérodynamique et l'énergétique (DMAE), Département traitement de
+ l'information et modélisation (DTIM), ainsi que les départements des soufflerie
+s du Fauga-Mauzac (DSFM) et de Modane-Avrieux (DSMA).
 \end_layout
 
 \begin_layout Section*
@@ -331,7 +339,7 @@ Les travaux présentés dans ce mémoire s'inscrivent dans la suite de la thèse
 \end_layout
 
 \begin_layout Standard
-Dans un premier temps, nous réalisons un état de l'art (chapitre
+Dans un premier temps, nous réalisons un état de l'art (Chapitre
 \begin_inset space ~
 \end_inset
 
@@ -356,7 +364,7 @@ reference "chap:biblio"
 \end_layout
 
 \begin_layout Standard
-Dans un deuxième temps, à travers le chapitre
+Dans un deuxième temps, à travers le Chapitre
 \begin_inset space ~
 \end_inset
 
@@ -399,7 +407,7 @@ tion.
 \begin_layout Standard
 Ensuite, nous avons cherché à déployer la technique en soufflerie pour évaluer
  la portabilité de notre système et de démontrer son fonctionnement lors
- d'une campagne d'essai en soufflerie (chapitre
+ d'une campagne d'essai en soufflerie (Chapitre
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -430,7 +438,7 @@ reference "chap:F2"
 \begin_layout Standard
 Pour étendre le domaine d'application de la technique nous avons cherché
  à appliquer la BOS 3D à des écoulements compressibles en grande soufflerie
- (chapitre
+ (Chapitre
 \begin_inset space ~
 \end_inset
 
@@ -465,7 +473,7 @@ reference "chap:S1MA"
 Les phénomènes compressibles étudiés à S1MA ont montrés que dans ces conditions,
  les forts gradients de masse volumique dégradent la qualité des images
  BOS, rendant parfois leur exploitation impossible.
- Cette problématique est étudié en particulier dans le chapitre
+ Cette problématique est étudié en particulier dans le Chapitre
 \begin_inset space ~
 \end_inset
 
@@ -498,7 +506,7 @@ reference "chap:113"
 \end_layout
 
 \begin_layout Standard
-A travers un dernier chapitre (chapitre
+A travers un dernier chapitre (Chapitre
 \begin_inset space ~
 \end_inset
 

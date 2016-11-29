@@ -119,7 +119,7 @@ De manière classique, en BOS, lorsqu'on souhaite reconstruire le champ de
  Toutefois, les grandeurs directement observables sont les champs de déplacement
 s et non les cartes de déviations.
  Pour faire le lien entre ces deux grandeurs, il est nécessaire de faire
- certaines hypothèses comme nous l'avons vu dans le chapitre
+ certaines hypothèses comme nous l'avons vu dans le Chapitre
 \begin_inset space ~
 \end_inset
 
@@ -639,7 +639,7 @@ Nous définissons la trajectoire d'un rayon lumineux par la fonction
 \begin_layout Standard
 La trajectoire de la lumière dans un milieu d'indice optique non homogène
  est dictée par l'équation fondamentale de l'optique géométrique déjà présentée
- dans le chapitre
+ dans le Chapitre
 \begin_inset space ~
 \end_inset
 
@@ -685,7 +685,7 @@ La notation
 \end_inset
 
  fait référence à l'indice optique extérieur à l'écoulement.
- L'équation de Gladstone-Dale, également déjà présentée dans le chapitre
+ L'équation de Gladstone-Dale, également déjà présentée dans le Chapitre
 \begin_inset space ~
 \end_inset
 
@@ -1550,7 +1550,7 @@ Résultant de la combinaison d'intégrations tomographiques et d'opérateurs
 \end_inset
 
  sont mal conditionnées.
- Une stratégie de régularisation est alors nécessaire: dans le chapitre
+ Une stratégie de régularisation est alors nécessaire: dans le Chapitre
 \begin_inset space ~
 \end_inset
 

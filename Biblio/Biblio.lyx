@@ -1613,7 +1613,7 @@ En présence de l'écoulement, le rayon est dévié et touche le CCD en
 \end_inset
 
  demeure inconnue.
- Cette question sera traitée en détail au chapitre
+ Cette question sera traitée en détail au Chapitre
 \begin_inset space ~
 \end_inset
 
@@ -1733,7 +1733,7 @@ n des points
 
 .
  Cet écart est lié à 
-\begin_inset Formula $X$
+\begin_inset Formula $\Delta X$
 \end_inset
 
  à travers le grandissement 
@@ -1875,7 +1875,59 @@ reference "fig:biblio:circle_of_confusion"
 \end_inset
 
 .
- La déviation en ce pixel résulte donc d'un moyennage spatial.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/circle_of_confusion.pdf
+	lyxscale 50
+	width 60text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cercle de confusion associé au pinceau lumineux qui traverse l'écoulement
+ en faisceau divergent.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:circle_of_confusion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La déviation en ce pixel résulte donc d'un moyennage spatial.
  Le diamètre du cercle de confusion au niveau de l'écoulement est proportionnel
  à l'ouverture caméra 
 \begin_inset CommandInset citation
@@ -6894,6 +6946,13 @@ e.
 
 \begin_layout Subsubsection
 Développement de la BOS 3D à l'ONERA
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:biblio:BOS3D_ONERA"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -8702,7 +8761,7 @@ n grâce à un algorithme dont la particularité est de reconstruire directement
  Avant de pouvoir utiliser la BOS 3D comme réel moyen de mesure il est nécessair
 e de poursuivre son développement.
  Cela commence par gagner en robustesse sur le code de reconstruction introduit
- par Violaine Todoroff (chapitre
+ par Violaine Todoroff (Chapitre
 \begin_inset space ~
 \end_inset
 
@@ -8715,7 +8774,7 @@ reference "chap:BOS3D"
 
 ).
  De plus, il convient de valider les résultats obtenus par une technique
- complémentaire pour pouvoir qualifier la technique (chapitre
+ complémentaire pour pouvoir qualifier la technique (Chapitre
 \begin_inset space ~
 \end_inset
 
@@ -8731,7 +8790,7 @@ reference "chap:F2"
  il est particulièrement intéressant de pouvoir déployer cette nouvelle
  métrologie dans ces installations.
  On s'intéressera donc à la mise en œuvre et au traitement de données BOS
- 3D dans un contexte soufflerie (chapitre
+ 3D dans un contexte soufflerie (Chapitre
 \begin_inset space ~
 \end_inset
 
@@ -8742,7 +8801,7 @@ reference "chap:F2"
 
 \end_inset
 
- et chapitre
+ et Chapitre
 \begin_inset space ~
 \end_inset
 
@@ -8756,7 +8815,7 @@ reference "chap:S1MA"
 ).
  Enfin, il est essentiel d'élargir le domaine d'application de la technique
  pour être capable de traiter des écoulements compressibles, à haute vitesse
- (chapitre
+ (Chapitre
 \begin_inset space ~
 \end_inset
 

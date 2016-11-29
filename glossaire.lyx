@@ -195,7 +195,40 @@ status open
 
 
 \backslash
-nomenclature[ca ]{DSMA}{Département des Ssouffleries de Modane-Avrieux}
+nomenclature[ca ]{DSMA}{Département des Souffleries de Modane-Avrieux}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DSMA"
+description "Département des Ssouffleries de Modane-Avrieux"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[ca ]{DSFM}{Département des Souffleries du Fauga-Mauzac}
 \end_layout
 
 \end_inset

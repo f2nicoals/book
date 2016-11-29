@@ -456,6 +456,10 @@ ion
 
  pour préserver les discontinuités.
  Le disque de Mach serait alors plus facile à identifier.
+ Toujours dans le but de bien identifier les ondes de chocs, un maillage
+ plus fin permettrait de mieux localiser ces forts gradients de masse volumique.
+ Cela augmenterait toutefois sensiblement le coût de calcul à moins de de
+ mettre en place des maillages de type adaptatif.
 \end_layout
 
 \begin_layout Plain Layout

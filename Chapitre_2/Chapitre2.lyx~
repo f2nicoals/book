@@ -186,8 +186,9 @@ status open
 
 \end_inset
 
-Les mouchetis, collés sur les parois de la veine, sont exposés à un écoulement
- à Mach 0.85.
+Modifié ces aspects dans le code CUDA appelé « Mirage » réalisant la reconstruct
+ion de type tomographique du volume de densité à partir des déviations,
+ en lien notamment avec Aurélien Plyer de l’ONERA/DTIM.
 \end_layout
 
 \begin_layout Itemize
@@ -203,19 +204,43 @@ status open
 
 \end_inset
 
-Il est nécessaire d'éclairer une surface de mouchetis de près de 
-\begin_inset Formula $10$
+Développé une chaîne de prétraitement appelée « Mascarade » permettant de
+ calculer les champs de déviations à partir des images BOS et comprenant
+ notamment :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+une étape de calibration géométrique des caméras utilisant des codes Matlab
+ développés par Philippe Cornic à l’ONERA/DTIM.
+\end_layout
+
+\begin_layout Itemize
+le calcul de l’ensemble des champs de déplacement fondé sur le logiciel
+ de PIV FOLKI-SPIV, développé par Yves Le Sant à l’ONERA/DAFE.
+\end_layout
+
+\begin_layout Itemize
+la conversion des déplacements en déviations en exploitant les paramètres
+ de calibration et la sélection des déviations correspondant à des rayons
+ valides pour le masque considéré.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bullet$
 \end_inset
 
 
-\begin_inset space ~
+\end_layout
+
 \end_inset
 
-m
-\begin_inset Formula $^{2}$
-\end_inset
-
-.
+Conduit une série de reconstructions de validation sur données synthétiques.
 \end_layout
 
 \begin_layout Itemize
@@ -231,27 +256,9 @@ status open
 
 \end_inset
 
-Lors de son fonctionnement, la soufflerie induit des vibrations importantes.
-\end_layout
-
-\begin_layout Standard
-; modifié ces aspects dans le code CUDA appelé « Mirage » réalisant la reconstru
-ction de type tomographique du volume de densité à partir des déviations,
- en lien notamment avec Aurélien Plyer de l’ONERA/DTIM ; développé une chaîne
- de prétraitement appelée « Mascarade » permettant de calculer les champs
- de déviations à partir des images BOS et comprenant notamment : une étape
- de calibration géométrique des caméras utilisant des codes Matlab développés
- par Philippe Cornic à l’ONERA/DTIM ; le calcul de l’ensemble des champs
- de déplacement fondé sur le logiciel de PIV FOLKI-SPIV développé par Yves
- Le Sant à l’ONERA/DAFE ; le choix interactif des masques 2D dans les images
- et la construction du masque 3D délimitant la zone reconstruite ; la conversion
- des déplacements en déviations en exploitant les paramètres de calibration
- et la sélection des déviations correspondant à des rayons valides pour
- le masque considéré ; conduit une série de reconstruction de validation
- sur données synthétiques ; conduit une nouvelle série d’expérimentations
- de BOS3D (acquisition et traitement) dans la géode, notamment en variant
- les positionnements caméra pour comparer les performances des diverses
- configurations géométriques.
+Conduit une nouvelle série d’expérimentations de BOS3D (acquisition et traitemen
+t) dans la géode, notamment en variant les positionnements caméra pour comparer
+ les performances des diverses configurations géométriques.
 \end_layout
 
 \begin_layout Standard

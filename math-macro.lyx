@@ -1191,6 +1191,164 @@ boldsymbol{d^{*}_{out}}$}{Direction de sortie du rayon lumineux}
 
 \begin_layout Standard
 \begin_inset FormulaMacro
+\newcommand{\myIi}{I_{in}}
+{I_{in}}
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\boldsymbol{d_{out}}$"
+description "Direction de sortie du rayon lumineux"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[la ]{$i_{in}$}{Point d'entrée du rayon lumineux}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myIm}{I_{m}}
+{I_{m}}
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\boldsymbol{d_{out}}$"
+description "Direction de sortie du rayon lumineux"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[la ]{$I_{m}$}{Point milieu}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myIo}{I_{out}}
+{I_{out}}
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\boldsymbol{d_{out}}$"
+description "Direction de sortie du rayon lumineux"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[la ]{$I_{out}$}{Point de sortie estimé}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\myIos}{I_{out}^{\star}}
+{I_{out}^{\star}}
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\boldsymbol{d_{out}}$"
+description "Direction de sortie du rayon lumineux"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nomenclature[la ]{$I_{out}^{
+\backslash
+star}$}{Point de sortie du rayon lumineux}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
 \newcommand{\myf}{f}
 {f}
 \end_inset

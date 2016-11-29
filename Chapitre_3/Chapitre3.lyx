@@ -1662,15 +1662,14 @@ cm au niveau d'une cellule de choc.
 \end_inset
 
  voxels 2D.
- Le champ de masse volumique correspondant est visible sur la partie gauche
- de la Fig.
+ Le champ de masse volumique correspondant est visible sur la Fig.
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:BOS2:rho"
+reference "fig:BOS2:GT"
 
 \end_inset
 
@@ -1733,6 +1732,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Positionnement du montage BOS 3D autour du volume étudié.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BOS2:setup"
+
+\end_inset
+
 
 \end_layout
 
@@ -1774,24 +1780,242 @@ status collapsed
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename Images/rho_letter.pdf
+	filename Images/GT.pdf
 	lyxscale 50
-	width 80text%
-	BoundingBox 75bp 10bp 570bp 230bp
+	width 30text%
+	BoundingBox 40bp 20bp 390bp 330bp
 	clip
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Ground truth (left) and reconstructed density fields by classical BOS (middle)
- and bos2 (right), with the associated root-mean-squared errors (RMS).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BOS2:GT"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Cerfacs2_0_fp2.pdf
+	lyxscale 50
+	width 30text%
+	BoundingBox 40bp 20bp 390bp 330bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BOS2:bos2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Cerfacs1_0_Iin_fp2.pdf
+	lyxscale 50
+	width 30text%
+	BoundingBox 40bp 20bp 390bp 330bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BOS2:bos1_Iin"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Cerfacs1_0_Im_fp2.pdf
+	lyxscale 50
+	width 30text%
+	BoundingBox 40bp 20bp 390bp 330bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BOS2:bos1_Im"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Cerfacs1_0_Iout_fp2.pdf
+	lyxscale 50
+	width 30text%
+	BoundingBox 40bp 20bp 390bp 330bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BOS2:bos1_Iout"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Calcvul LES (a) et champs reconstruits par méthode 
+\begin_inset Formula $\bosD$
+\end_inset
+
+ (b) et 
+\begin_inset Formula $\bosU$
+\end_inset
+
+(c,d,e).
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -1844,13 +2068,47 @@ reference "fig:BOS2:rho"
 \end_inset
 
  nous présentons le champ de masse volumique de référence, issu du calcul
- LES (à gauche), la reconstruction obtenue en BOS classique (au milieu)
- et le résultat 
+ LES (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BOS2:GT"
+
+\end_inset
+
+), le résultat 
 \begin_inset Formula $\bosD$
 \end_inset
 
- (à droite).
- des coupes horizontale et verticale sont par ailleurs visibles sur la Fig.
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BOS2:bos2"
+
+\end_inset
+
+) et la reconstruction obtenue en BOS classique (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BOS2:bos1_Iin"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BOS2:bos1_Im"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BOS2:bos1_Iout"
+
+\end_inset
+
+).
+ Des coupes horizontale et verticale sont par ailleurs visibles sur la Fig.
 \begin_inset space ~
 \end_inset
 
@@ -1875,27 +2133,46 @@ La forme de l'écoulement est correctement capturée aussi bien en
 
 .
  Naturellement les petites échelles de la turbulence sont ici lissées à
- cause du nombre limité de données.néanmoins, l'allure de la cellule de choc
- reste bien définie.
- En comparant les deux reconstructions, il apparaît que la 
+ cause du nombre limité de données.
+ Néanmoins, l'allure de la cellule de choc reste bien définie.
+ La 
+\begin_inset Formula $\bosD$
+\end_inset
+
+ estime correctement le champ de masse volumique à partir des champs de
+ déplacements.
+ En comparant les deux méthodes, il apparaît que la 
 \begin_inset Formula $\bosU$
 \end_inset
 
- surestime de manière significative les niveaux de masse volumique tandis
- que la 
-\begin_inset Formula $\bosD$
-\end_inset
-
- retrouve les bonnes valeurs de 
-\begin_inset Formula $\myrho$
+ surestime de manière significative les niveaux de masse volumique avec
+ le choix du point 
+\begin_inset Formula $\myIi$
 \end_inset
 
 .
- Par conséquent, la 
+ L'algorithme de reconstruction a également des difficultés à converger
+ et le champ reste relativement bruité.
+ Au contraire, la reconstruction réalisée à partir de 
+\begin_inset Formula $\myIo$
+\end_inset
+
+ sous estime les niveaux de masse volumique.
+ Enfin, le choix du point milieu (
+\begin_inset Formula $\myIm$
+\end_inset
+
+) se montre quant à lui tout à fait approprié pour cet écoulement.
+ En effet, la reconstruction en BOS classique (
+\begin_inset Formula $\bosU$
+\end_inset
+
+), donne un résultat tout à fait similaire au cas 
 \begin_inset Formula $\bosD$
 \end_inset
 
- atteint une erreur RMS bien meilleure.
+ et estime correctement le champ de masse volumique.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1903,7 +2180,7 @@ La forme de l'écoulement est correctement capturée aussi bien en
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -2010,10 +2287,26 @@ Coupe des champs de masse volumique reconstruits.
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace defskip
+Ce résultat met en évidence la sensibilité de la méthode 
+\begin_inset Formula $\bosU$
 \end_inset
 
+ au choix d'un point de référence qui localise la déviation.
+ Notre nouveau modèle de 
+\begin_inset Formula $\bosD$
+\end_inset
 
+ permet de reconstruire correctement le champ de masse volumique en s'affranchis
+sant de cette hypothèse.
+ Sur ce cas d'étude, il semble néanmoins que le choix du point milieu (
+\begin_inset Formula $\myIm$
+\end_inset
+
+) pour l'estimation des déviations en 
+\begin_inset Formula $\bosU$
+\end_inset
+
+ soit tout à fait satisfaisant.
 \end_layout
 
 \begin_layout Section
@@ -2049,24 +2342,34 @@ Nous avons introduis dans ce chapitre une nouvelle formulation du problème
  en BOS pour convertir les champs de déplacement en carte de déviation.
  Notre algorithme de reconstruction de BOS 3D basé sur la minimisation d'un
  critère d'adéquation aux données a été réécrit en termes de déplacement
- mesurés.Pour l'écoulement étudié notre étude montre que l'hypothèse du point
- milieu utilisée par la 
+ mesurés.
+ L'étude numérique réalisée dans ce chapitre montre une forte sensibilité
+ de la reconstruction à l'hypothèse concernant la position d'intersection
+ du rayon incident et du rayon sortant.
+ l'approche 
+\begin_inset Formula $\bosD$
+\end_inset
+
+ permet de s'affranchir complètement d'une telle hypothèse.
+ Néanmoins, les résultats préliminaires montrent une bonne robustesse de
+ l'approximation du point milieu, que nous avons rigoureusement justifié
+ pour le cas axisymétrique.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Une perspective de ces travaux serait d'analyser plus en détail la validité
+ de l'approximation du point milieu sur des écoulements plus complexes,
+ tridimensionnels, de manière à préciser un domaine d'emploi respectif de
+ la 
 \begin_inset Formula $\bosU$
 \end_inset
 
- donne des résultats équivalents à la 
+ et 
 \begin_inset Formula $\bosD$
 \end_inset
 
 .
- Dans des cas plus complexes ou bien dans un cas 3D plus général, la 
-\begin_inset Formula $\bosD$
-\end_inset
-
- pourrait néanmoins prouver son intérêt.
- Dans tous les cas, celle-ci s'affranchit du choix du point de référence
- pour le calcul des déviations et elle travaille sur les champs de déplacements,
- plus proche des données de mesures.
 \end_layout
 
 \begin_layout Plain Layout
@@ -2075,12 +2378,6 @@ Dans la suite du manuscrit, nous conservons notre algorithme
 \end_inset
 
  en utilisant le point milieu pour le calcul des déviations.
-\end_layout
-
-\begin_layout Plain Layout
-Acknowledgements: The authors want to thank G.
- Daviller from Cerfacs for providing the LES simulation of the supersonic
- jet.
 \end_layout
 
 \end_inset

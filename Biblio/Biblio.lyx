@@ -1595,7 +1595,61 @@ En présence de l'écoulement, le rayon est dévié et touche le CCD en
  La relation entre le déplacement mesuré et la déviation lumineuse, et donc
  au gradient de masse volumique, n'est pas immédiate et nécessite une hypothèse
  supplémentaire.
- En effet, la direction du rayon dévié est connue: 
+ D'une manière générale, la relation entre le déplacement mesuré 
+\begin_inset Formula $\Delta X$
+\end_inset
+
+ et la déviation lumineuse 
+\begin_inset Formula $\myepsilon$
+\end_inset
+
+ ne peux être déduite sans hypothèse supplémentaire.
+ En effet, la direction du rayon dévié est connue : 
+\begin_inset Formula $\mydo=\overline{OX}$
+\end_inset
+
+, tandis que la direction d'entrée 
+\begin_inset Formula $\mydi$
+\end_inset
+
+ demeure inconnue.
+ Cette question sera traitée en détail au chapitre
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:BOS2"
+
+\end_inset
+
+ de cette thèse.
+\end_layout
+
+\begin_layout Standard
+Néanmoins, il est possible d'obtenir une expression au premier ordre de
+ 
+\begin_inset Formula $\Delta X$
+\end_inset
+
+ en fonction d'
+\begin_inset Formula $\myepsilon$
+\end_inset
+
+, ce qui permet de caractériser la sensibilité de la méthode.
+\end_layout
+
+\begin_layout Subsubsection
+Sensibilité
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+En effet, la direction du rayon dévié est connue: 
 \begin_inset Formula $\mydo=\overline{OX}$
 \end_inset
 
@@ -1630,7 +1684,7 @@ key "Todoroff2013"
 De manière classique les auteurs choisissent le point milieu.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 A partir de la relation de conjugaison des lentilles minces qui relie la
  focale 
 \begin_inset Formula $f$
@@ -1647,6 +1701,61 @@ A partir de la relation de conjugaison des lentilles minces qui relie la
 :
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En se référant à la Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:setup"
+
+\end_inset
+
+, qui est une simplification pour les petits angles, l'écart entre les projectio
+n des points 
+\begin_inset Formula $X$
+\end_inset
+
+ et 
+\begin_inset Formula $X+\Delta X$
+\end_inset
+
+ sur le mouchetis vaut 
+\begin_inset Formula $l\myepsilon$
+\end_inset
+
+.
+ Cet écart est lié à 
+\begin_inset Formula $X$
+\end_inset
+
+ à travers le grandissement 
+\begin_inset Formula $M$
+\end_inset
+
+ que l'on déduit de la relation de conjugaison des lentilles minces reliant
+ la focale 
+\begin_inset space ~
+\end_inset
+
+ de la caméra au plan objet situé en 
+\begin_inset Formula $m+l$
+\end_inset
+
+ et au plan image situé en 
+\begin_inset Formula $z$
+\end_inset
+
+ :
+\end_layout
+
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
@@ -1659,11 +1768,11 @@ A partir de la relation de conjugaison des lentilles minces qui relie la
 \end_layout
 
 \begin_layout Standard
-On peut exprimer le grandissement optique 
+Sous ces hypothèses le grandissement optique 
 \begin_inset Formula $M$
 \end_inset
 
- de la caméra :
+ de la caméra s'écrit:
 \end_layout
 
 \begin_layout Standard
@@ -1684,7 +1793,7 @@ On abouti alors à la formule classique pour la sensibilité:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\Delta X=\myl M\myepsilon=f\left(\dfrac{\myl}{\mym+\myl-f}\right)\myepsilon\text{≈}f\left(\dfrac{\myl}{\mym+\myl}\right)\myepsilon\mbox{ si }m+l\text{ ≫ }f\label{eq:biblio:sensibilite}
+\dfrac{\Delta X}{\myepsilon}=M\myl=\dfrac{f\myl}{\mym+\myl-f}\text{≈}\dfrac{f\myl}{\mym+\myl}\mbox{ si }m+l\text{ ≫ }f\label{eq:biblio:sensibilite}
 \end{equation}
 
 \end_inset
@@ -1692,17 +1801,271 @@ On abouti alors à la formule classique pour la sensibilité:
 
 \end_layout
 
-\begin_layout Subsection
-Optimisation du montage BOS
+\begin_layout Standard
+Comme on peut le voir avec l'Eq.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:biblio:sensibilite"
+
+\end_inset
+
+, la sensibilité de la mesure est directement liée à la focale.
+ Comme noté par 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Goldhahn07"
+
+\end_inset
+
+, la sensibilité augmente avec le rapport 
+\begin_inset Formula $l/m$
+\end_inset
+
+, pour l'améliorer on peut éloigner le fond par rapport à l'écoulement et/ou
+ de rapprocher la caméra.
+ En pratique il faut aussi tenir compte d'une autre caractéristique de la
+ mesure BOS : la résolution.
 \end_layout
 
 \begin_layout Subsubsection
-Sensibilité
+Résolution
 \end_layout
 
 \begin_layout Standard
-Plusieurs paramètres influent sur la sensibilité et la résolution de la
- mesure BOS: 
+La résolution fait intervenir plusieurs aspects: on peut parler de la résolution
+ avec laquelle le fond est imagée, c'est la résolution caméra.
+ Meilleure elle sera et plus petits pourront être les points du mouchetis
+ et donc les fenêtre de corrélation (
+\begin_inset Formula $N\cdot\mbox{pix}$
+\end_inset
+
+) pour le calcul du champ de déplacement.
+\end_layout
+
+\begin_layout Standard
+Il existe également une résolution de mesure au niveau de l'écoulement :
+ on parlera alors plus de cercle de confusion.
+ En effet, à partir du moment où l'on ne travaille pas en lumière collimaté
+ mais avec un faisceau divergent, la lumière qui arrive sur un pixel est
+ issu d'un 
+\begin_inset Quotes fld
+\end_inset
+
+pinceau
+\begin_inset Quotes frd
+\end_inset
+
+ qui a un certain diamètre au niveau de l'écoulement 
+\begin_inset Formula $\delta$
+\end_inset
+
+ comme illustré sur la Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:circle_of_confusion"
+
+\end_inset
+
+.
+ La déviation en ce pixel résulte donc d'un moyennage spatial.
+ Le diamètre du cercle de confusion au niveau de l'écoulement est proportionnel
+ à l'ouverture caméra 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gojani2013b,ota2015"
+
+\end_inset
+
+.
+ Il est égal à la largeur d'un cône au niveau de l'écoulement plus la distance
+ entre deux cônes : 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+jot}{3mm+3pt}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray}
+\delta & = & \dfrac{l\cdot D}{m+l}+\dfrac{\delta_{b}\cdot m}{m+l}\nonumber \\
+ & = & \underbrace{\dfrac{M}{1+M}\dfrac{l}{f_{\#}}}_{1}+\underbrace{\dfrac{N\cdot\mbox{pix}}{M}\dfrac{m}{l+m}}_{2}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dans cette expression, le premier terme est prépondérant devant le deuxième
+ : la taille du cercle de confusion est donnée au premier ordre par le cône
+ de rayons associé à un point sur le capteur.
+ Ainsi la notion de résolution est essentiellement liée aux caractéristiques
+ de l'objectif et non à la taille de la fenêtre d'interrogation pixels qui
+ n'intervient qu'au second ordre.
+ En combinant cette dernière expression avec celle de la sensibilité (Eq
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:biblio:sensibilite"
+
+\end_inset
+
+) on obtient :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta=\dfrac{l\cdot f}{l+m}\dfrac{1}{f_{\#}}=\dfrac{\Delta X}{\myepsilon}\dfrac{1}{\myfn}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On voit alors que la résolution spatiale est égale à la sensibilité divisée
+ par le nombre d'ouverture.
+ Donc toute médication de 
+\begin_inset Formula $l$
+\end_inset
+
+ ou 
+\begin_inset Formula $m$
+\end_inset
+
+ permettant d'augmenter la sensibilité diminuera d'autant la résolution.
+ Dans ces conditions, la seule possibilité que l'on a pour améliorer la
+ résolution sans toucher à la sensibilité est de jouer sur l'ouverture caméra
+ 
+\begin_inset Formula $\myfn$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kirmse2011"
+
+\end_inset
+
+ mettent en évidence l'importance de ce cercle de confusion à travers son
+ étude du choc présent devant un hémisphère en écoulement hypersonique.
+ Pour comparer les mesures BOS aux résultats donnés par une simulation numérique
+, il synthétise un champ de déplacements à partir de la simulation en réalisant
+ un calcul de lancer de rayons.
+ Il montre ensuite qu'en appliquant un filtre de la taille de son cercle
+ de confusion à sa simulation il parvient à retrouver des résultats semblables
+ à sa mesure BOS (Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/kirmse.pdf
+	lyxscale 30
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparaison entre mesure BOS (haut) et CFD sur une sphère à Mach 8.1 (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kirmse2011"
+
+\end_inset
+
+).
+ En bas à gauche résultat CFD brut.
+ En bas à droite, résultat CFD avec prise en compte des filtrages spatiaux
+ qui affecte la mesure BOS.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:biblio:kirmse"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Comparaison entre mesure BOS (haut) et CFD sur une sphère à Mach 8.1 (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kirmse2011"
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:biblio:kirmse"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Optimisation du montage BOS
+\end_layout
+
+\begin_layout Standard
+Nous venons de voir que plusieurs paramètres influent sur la sensibilité
+ et la résolution de la mesure BOS: 
 \end_layout
 
 \begin_layout Itemize
@@ -1802,46 +2165,29 @@ la position du plan de mise au point
 \end_layout
 
 \begin_layout Standard
-Nous allons revenir sur chacun de ces paramètres et montrer que pour une
- mesure donnée un certain compromis doit être trouvé entre résolution et
- sensibilité.
- Comme on peut le voir avec l'Eq.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:biblio:sensibilite"
-
-\end_inset
-
-, la sensibilité de la mesure est directement liée à la focale.
- De plus, pour maximiser la sensibilité, il est également intéressant d'éloigner
- le fond par rapport à l'écoulement et de rapprocher la caméra.
- L'analyse faite par 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Goldhahn07"
-
-\end_inset
-
- montre que c'est surtout le rapport des distances 
-\begin_inset Formula $m$
-\end_inset
-
- et 
+Nous avons vu aussi que les choix des paramètres 
 \begin_inset Formula $l$
 \end_inset
 
- qui impacte la sensibilité de la technique.
- En pratique, comment choisir l'ensemble de ses paramètres ? En général,
- on dispose d'une caméra donnée dont la taille du capteur 
-\begin_inset Formula $C$
+ et 
+\begin_inset Formula $m$
 \end_inset
 
- est égal au nombre de pixels multiplié par la dimension des pixels: 
-\begin_inset Formula $C=N\cdot\mbox{pix}$
+ qui augmentent la sensibilité diminuent d'autant la résolution.
+ Cependant les considérations précédentes oublient un facteur : c'est que
+ modifier 
+\begin_inset Formula $m$
+\end_inset
+
+ ou 
+\begin_inset Formula $f$
+\end_inset
+
+ modifie le champ de l'écoulement visualisé.
+ Ajoutons dans le problème de dimensionnement la contrainte de champ de
+ vue constant; on dispose d'une caméra dont la taille du capteur est notée
+ 
+\begin_inset Formula $C$
 \end_inset
 
 .
@@ -1851,29 +2197,13 @@ key "Goldhahn07"
 \end_inset
 
 .
- La focale caméra et la distance d'observation sont alors liés à travers
- le grandissement:
+ La focale caméra et la distance d'observation sont alors liés par :
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\dfrac{C}{U}=\dfrac{z}{\mym}=\dfrac{(m+l)M}{m}=\dfrac{f}{m}\dfrac{1}{1-\dfrac{f}{m+l}}\text{≈}\dfrac{f}{m}\mbox{ si }m+l\text{≫f}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-d'où,
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-f\text{≈}\dfrac{C\cdot\mym}{U}
+\dfrac{C}{U}\text{≈}\dfrac{f}{m}\label{eq:biblio:champ}
 \end{equation}
 
 \end_inset
@@ -1899,7 +2229,7 @@ reference "eq:biblio:sensibilite"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\Delta X=\dfrac{C}{U}\myepsilon\dfrac{lm}{l+m}
+\dfrac{\Delta X}{\myepsilon}=\dfrac{C}{U}\dfrac{lm}{l+m}
 \end{equation}
 
 \end_inset
@@ -1924,287 +2254,52 @@ Les distances
  maquette.
  On peut donc rapprocher le mouchetis tout en éloignant la caméra pour conserver
  de la sensibilité.
-\end_layout
-
-\begin_layout Subsubsection
-Résolution
-\end_layout
-
-\begin_layout Standard
-La résolution fait intervenir plusieurs aspects: on peut parler de la résolution
- avec laquelle le fond est imagée, c'est la résolution caméra.
- Meilleure elle sera et plus petits pourront être les points du mouchetis
- et donc les fenêtre de corrélation pour le calcul du champ de déplacement.
-\end_layout
-
-\begin_layout Standard
-Il existe également une résolution de mesure au niveau de l'écoulement:
- on parlera alors plus de cercle de confusion.
- En effet, à partir du moment où l'on travaille pas en lumière collimaté
- mais avec un faisceau divergent, la lumière qui arrive sur un pixel est
- issu d'un 
-\begin_inset Quotes fld
-\end_inset
-
-pinceau
-\begin_inset Quotes frd
-\end_inset
-
- qui a un certain diamètre au niveau de l'écoulement 
-\begin_inset Formula $\delta_{t}$
-\end_inset
-
- comme illustré sur la Fig.
+ Mais il faut dans le même temps augmenter la focale pour satisfaire l'Eq.
 \begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/circle_of_confusion.pdf
-	lyxscale 30
-	width 60text%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Cercle de confusion associé au pinceau lumineux qui traverse l'écoulement
- en faisceau divergent.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:biblio:circle_of_confusion"
-
-\end_inset
-
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Cercle de confusion.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:biblio:circle_of_confusion"
+reference "eq:biblio:champ"
 
 \end_inset
 
 .
- La déviation en ce pixel résulte donc d'un moyennage spatial.
- Le diamètre du cercle de confusion au niveau de l'écoulement est proportionnel
- à l'ouverture caméra 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "gojani2013b,ota2015"
-
-\end_inset
-
-.
- Il est égal à la largeur d'un cône au niveau de l'écoulement plus la distance
- entre deux cônes: 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-setlength{
-\backslash
-jot}{3mm+3pt}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{eqnarray}
-\delta & = & \dfrac{l\cdot D}{m+l}+\dfrac{\delta_{b}\cdot m}{m+l}\nonumber \\
- & = & \underbrace{\dfrac{M}{1+M}\dfrac{l}{f_{\#}}}_{1}+\underbrace{\dfrac{pix}{M}\dfrac{m}{l+m}}_{2}
-\end{eqnarray}
-
-\end_inset
-
-
+ Cette possibilité n'a pas été proposée auparavant à notre connaissance,
+ il serait intéressant de la valider dans nos montages futurs.
 \end_layout
 
 \begin_layout Standard
-Dans cette expression, le premier terme est prépondérant devant le deuxième
- et finalement le cercle de confusion est donné par le cône de rayons associé
- à un point sur le capteur (la taille du pixel n'intervient plus):
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\delta=\dfrac{l\cdot f}{l+m}\dfrac{1}{f_{\#}}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-On voit alors que pour améliorer la résolution spatiale, il faut principalement
- agir sur l'ouverture caméra 
-\begin_inset Formula $f_{\#}$
-\end_inset
-
- et sur la distance du mouchetis 
-\begin_inset Formula $l$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Kirmse2011"
-
-\end_inset
-
- mettent en évidence l'importance de ce cercle de confusion à travers son
- étude du choc présent devant un hémisphère en écoulement hypersonique.
- Pour comparer les mesures BOS aux résultats donnés par une simulation numérique
-, il synthétise un champ de déplacements à partir de la simulation en réalisant
- un calcul de lancer de rayons.
- Dans son cas, le filtrage associé au cercle de confusion est dominant devant
- le filtrage associé à la taille de la fenêtre de corrélation.
- Il montre ensuite qu'en appliquant un filtre de la taille de son cercle
- de confusion à sa simulation il parvient à retrouver des résultats semblables
- à sa mesure BOS (Fig.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Images/kirmse.pdf
-	lyxscale 30
-	width 80text%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Comparaison entre mesure BOS (haut) et CFD sur une sphère à Mach 8.1 (
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Kirmse2011"
-
-\end_inset
-
-).
- En bas à gauche résultat CFD brut.
- En bas à droite, résultat CFD avec prise en compte des filtrages spatiaux
- qui affecte la mesure BOS.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:biblio:kirmse"
-
-\end_inset
-
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Comparaison entre mesure BOS (haut) et CFD sur une sphère à Mach 8.1 (
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Kirmse2011"
-
-\end_inset
-
-).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:biblio:kirmse"
-
-\end_inset
-
-).
- 
-\end_layout
-
-\begin_layout Standard
-Pour améliorer la résolution au niveau de l'écoulement, 
+Une dernière possibilité optimisation a été proposé par 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "bichal2013"
 
 \end_inset
 
- proposent de positionner le plan focal entre la caméra et le mouchetis
- de telle sorte que l'ensemble soit dans la profondeur de champ.
- Néanmoins, Bichal et Thurow n'évaluent pas dans leur étude l'impact de
- ce choix de dimensionnement sur la qualité de la corrélation.
- De plus, les couples de paramètres (
-\begin_inset Formula $l,m$
+.
+ Ces auteurs proposent de relâcher la contrainte de focalisation sur le
+ mouchetis : ils acceptent un certain flou image pour gagner en résolution,
+ par exemple en positionnant le plan focal entre la caméra et le mouchetis.
+ Néanmoins, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bichal2013"
+
 \end_inset
 
-) étudiés ne sont pas représentatifs des dimensions classiques d'un montage
+ n'évaluent pas l'impact de ce choix sur la dégradation de la qualité de
+ la corrélation, qui affecte la précision de mesure de 
+\begin_inset Formula $\Delta X$
+\end_inset
+
+.
+ De plus, les couples de paramètres 
+\begin_inset Formula $(l,m)$
+\end_inset
+
+ étudiés ne sont pas représentatifs des dimensions classiques d'un montage
  BOS.
 \end_layout
 

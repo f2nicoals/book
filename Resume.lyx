@@ -1,0 +1,197 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass report
+\use_default_options true
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Titre
+\end_layout
+
+\begin_layout Standard
+Reconstruction de champs instantanés de masse volumique par BOS 3D, applications
+ à l'étude d'écoulements complexes en grande soufflerie.
+\end_layout
+
+\begin_layout Section*
+Resumé
+\end_layout
+
+\begin_layout Standard
+Ces travaux de thèses s'inscrivent dans le développement d'outils métrologiques
+ avancés pour la mécanique des fluides, et en particulier pour les souffleries.
+ La Background Oriented Schlieren (BOS) 3D qui a été développée à l'ONERA
+ est une technique qui exploite la déviation des rayons lumineux par un
+ milieu non homogène pour mesurer la masse volumique.
+ Elle consiste comparer l'image de référence d'un fond texturé avec l'image
+ de ce même fond en présence d'un écoulement.
+ La corrélation entre ces deux images permet de calculer la déviation des
+ rayons lumineux.
+ En réalisant une acquisition simultanée à partir de différents points de
+ vue, il est possible de reconstruire le champ de masse volumique associé,
+ par résolution d'un problème inverse.
+ Afin de poursuivre le développement de la technique nous avons tout d'abord
+ développé une chaîne de traitement plus systématique et amélioré la robustesse
+ de notre algorithme de reconstruction.
+ Après avoir validé notre méthode sur des données de synthèse, nous l'avons
+ mise en œuvre sur un banc d'essais comportant 12 caméras.
+ Par la suite, la technique a été déployée une première fois en soufflerie
+ sur un jet chaud subsonique.
+ Lors de cette campagne, la technique a été validée par des mesures de températu
+re et des mesures couplées BOS 3D et stéréo PIV ont également été effectuées.
+ Nous avons ensuite réalisé une démonstration en soufflerie industrielle,
+ dans la soufflerie S1MA de l'ONERA.
+ Les problématiques rencontrées sur les écoulements compressibles lors de
+ ces essais ont ensuite conduit a étudier de manière plus approfondie les
+ écoulements présentant de forts gradients d'indice optique.
+ Nous avons donc conçu un nouveau banc de mesure BOS 3D afin d'optimiser
+ la mesure d'un jet sous-détendu.
+ Sur cette configurations de très bon accords ont été obtenus avec la littératur
+e ainsi qu'avec une simulation LES.
+ Enfin, les moyennes de phases réalisées ont permis de mettre en avant le
+ caractère périodique du lâcher tourbillonnaire.
+\end_layout
+
+\begin_layout Standard
+A travers cette étude, nous avons étendus le domaine d'application de la
+ BOS 3D aux écoulements compressibles et démontré son utilisation en soufflerie.
+ La qualité des résultats obtenus laisse entrevoir un grand potentiel d'analyse
+ des écoulements pour la technique.
+ 
+\end_layout
+
+\begin_layout Section*
+Mots clés
+\end_layout
+
+\begin_layout Standard
+Strioscopie, Tomographie, Onde de choc, Optique
+\end_layout
+
+\begin_layout Section*
+Title
+\end_layout
+
+\begin_layout Standard
+Instantaneous density fields reconstruction by 3DBOS, application to complex
+ flows in large wind tunnel.
+\end_layout
+
+\begin_layout Section*
+Abstract
+\end_layout
+
+\begin_layout Standard
+This PhD work is part of the development of advanced metrological tools
+ for fluid dynamics, especially for wind tunnel applications.
+ 3D Background Oriented Schlieren (BOS) which has been developed at l'ONERA
+ is a line-of-sight technique which takes advantage of light rays deviation
+ through an inhomogenous index media to measure density.
+ It consisted in comparing a reference image of a textured background with
+ the image of the background with the flow in presence.
+ Image correlation can then be used to compute light rays deviations.
+ Performing such acquisition from multiple view pointsallows one to reconstruct
+ the corresponding density field, solving an inverse problem.
+ In order to persue the technique development, we first elaborate a systematic
+ processing chain and improved the robustness of the reconstruction algorithm.
+ After validating our method on synthetic data, we employed it on a 3D BOS
+ bench equipped with 12 cameras.
+ Then, the technique has been set up for the first time in a wind tunnel
+ environement, on a subsonic hot jet configuration.
+ During this test campaign, the technique has been validated via thermocouples
+ measurements and coupled 3DBOS and stereo-PIV acquisitions have been performed.
+ Thereafter, a demonstration in industrial wind tunnel has been performed
+ in S1MA ONERA wind tunnel.
+ Compressible flows issues encountered during those tests lead us to finer
+ analysis high density gradient flows.
+ To do so, we build up a new 3DBOS setup in order to optimize underexpanded
+ jet measurements.
+ On this specific configuration, very good agreements have bee obtained
+ in comparison with literature and with a LES simulation.
+ Finally, phase averaged data enable us to highlight the periodic vortex
+ shedding of the jet.
+\end_layout
+
+\begin_layout Standard
+This study has allowed the extension of 3DBOS application domain to compressible
+ flows and has demonstrated its use in a wind tunnel environment.
+ The quality of the results opens the way for flow physical investigation
+ by the technique.
+ 
+\end_layout
+
+\begin_layout Section*
+Key words
+\end_layout
+
+\begin_layout Standard
+Schlieren, Tomography, Shockwave, Optics
+\end_layout
+
+\end_body
+\end_document

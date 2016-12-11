@@ -279,7 +279,11 @@ status open
 \backslash
 nomenclature[ga ]{$
 \backslash
-delta$}{Paramètre de régularisation L2L1}
+delta$}{Paramètre de régularisation $
+\backslash
+mathcal{L}2
+\backslash
+mathcal{L}1$}
 \end_layout
 
 \end_inset
@@ -361,7 +365,7 @@ status open
 \backslash
 nomenclature[ga ]{$
 \backslash
-lambda_1$}{pseudo-période de l'amplification du mode 1}
+lambda_1$}{Pseudo-période de l'amplification du mode 1}
 \end_layout
 
 \end_inset
@@ -527,7 +531,7 @@ status open
 \backslash
 nomenclature[ga ]{$
 \backslash
-mathcal{R}$}{Terme de régualrisation}
+mathcal{R}$}{Terme de régularisation}
 \end_layout
 
 \end_inset
@@ -723,6 +727,10 @@ description "Régularisation L2L1"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -735,6 +743,11 @@ nomenclature[ga ]{$
 mathcal{L}2
 \backslash
 mathcal{L}1$}{Régularisation L2L1}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -766,6 +779,10 @@ description "Régularisation L2"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -776,6 +793,11 @@ status open
 nomenclature[ga ]{$
 \backslash
 mathcal{L}2$}{Régularisation L2}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -887,6 +909,10 @@ description "Vecteur directeur du rayon lumineux"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -899,6 +925,11 @@ nomenclature[la ]{$
 dot{
 \backslash
 textbf{x}}$}{Vecteur directeur du rayon lumineux}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1181,7 +1212,7 @@ status open
 \backslash
 nomenclature[la ]{$
 \backslash
-boldsymbol{d^{*}_{out}}$}{Direction de sortie du rayon lumineux}
+boldsymbol{d^{*}_{out}}$}{Direction estimée de sortie du rayon lumineux}
 \end_layout
 
 \end_inset
@@ -1732,6 +1763,10 @@ description "Vecteur directeur du rayon lumineux"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1742,6 +1777,11 @@ status open
 nomenclature[la ]{$
 \backslash
 textbf{x}$}{Vecteur directeur du rayon lumineux}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1773,6 +1813,10 @@ description "Vecteur directeur du rayon lumineux"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1783,6 +1827,11 @@ status open
 nomenclature[la ]{$
 \backslash
 lambda$}{paramètre de régularisation}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

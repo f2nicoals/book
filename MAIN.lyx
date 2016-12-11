@@ -166,7 +166,7 @@
 \makesomeone{referee}{2}{Friedrich LEOPOLD}{}{}
 %% Jury
 \njudge{8}
-\makesomeone{judge}{1}{Thomas ROSGEN}{Professeur à l'ETH Zurich}{Président du Jury}
+\makesomeone{judge}{1}{Thomas ROSGEN}{Professeur à l'ETH Zurich}{Membre du Jury}
 \makesomeone{judge}{2}{Fabien ANSELMET}{Professeur à l'Ecole Centrale Marseille}{Membre du Jury}
 \makesomeone{judge}{3}{Fulvio SCARANO}{Professeur à TU Delft}{Membre du Jury}
 \makesomeone{judge}{4}{Friedrich LEOPOLD}{Ingénieur de recherche à l'ISL}{Membre du Jury}

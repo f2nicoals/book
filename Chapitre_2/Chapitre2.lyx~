@@ -269,7 +269,7 @@ L’article qui suit résulte donc des travaux de thèse de Violaine Todoroff
  de l'expérimentation menée dans la géode.
 \end_layout
 
-\begin_layout Section
+\begin_layout Standard
 \begin_inset Note Note
 status collapsed
 
@@ -428,7 +428,7 @@ key "Vuillot08"
 .
  L'écoulement primaire, chaud, est éjecté à Mach 0.7 avec une température
  de 
-\begin_inset Formula $850\, K$
+\begin_inset Formula $850\,K$
 \end_inset
 
 , tandis que l'écoulement secondaire plus froid, sort à Mach
@@ -436,7 +436,7 @@ key "Vuillot08"
 \end_inset
 
 0.9 avec une température de 
-\begin_inset Formula $335\, K$
+\begin_inset Formula $335\,K$
 \end_inset
 
 .
@@ -1828,7 +1828,26 @@ Notre technique BOS 3D a ensuite été mise en œuvre en laboratoire sur le
  banc géode.
  Des écoulements instantanés de convection, à la topologie complexe, ont
  été reconstruits démontrant le fonctionnement de notre méthode.
- Néanmoins, une première comparaison avec des mesures thermocouples semble
+ L'élimination des rayons non valides améliore fortement la qualité des
+ reconstructions, notamment sur les bords du volume.
+ L'élimination de ces rayons impacte cependant la forme du volume commun
+ aux 12
+\begin_inset space ~
+\end_inset
+
+caméras.
+ En effet, celui-ci présente désormais un renfoncement au niveau des faces
+ de sorties et d'entrée du jet.
+ La conséquence directe est que les conditions de bords libre du volume
+ cubique ne s'appliquent pas directement sur la zone affectée par les données
+ et la région en question n'est pas contrainte par la reconstruction.
+ Nous n'avons pas apporter de réponses à cette question au cours de ces
+ travaux mais c'est un point qui pourrait également améliorer la qualité
+ des reconstructions.
+\end_layout
+
+\begin_layout Plain Layout
+Néanmoins, une première comparaison avec des mesures thermocouples semble
  indiquer une sous estimation des niveaux de masse volumique reconstruits
  par BOS 3D.
  Avant de pourvoir envisager un déploiement de la technique en soufflerie,

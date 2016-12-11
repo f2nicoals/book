@@ -94,7 +94,7 @@ numberline{}Introduction générale}
 \end_layout
 
 \begin_layout Standard
-La mécanique des fluides est régit par les équations de Navier-Stokes qui
+La mécanique des fluides est régi par les équations de Navier-Stokes qui
  sont d'une grande complexité.
  Aujourd'hui encore, la puissance des ordinateurs ne nous permet pas de
  résoudre ces équations par simulation numérique directe (DNS) sur un avion
@@ -122,7 +122,7 @@ En aérodynamique, la plupart des essais ont lieu en soufflerie.
  installations qui couvrent l'ensemble des gammes d'écoulement: du subsonique
  au supersonique, et même jusqu'à l'hypersonique.
  De manière classique, sur une maquette en soufflerie, on réalise des mesures
- d'efforts (portance, trainée), le plus souvent via une balance aérodynamique.
+ d'efforts (portance, traînée), le plus souvent via une balance aérodynamique.
  On peut également instrumenter la maquette avec des prises de pression
  par exemple.
  Il est par contre plus difficile de réaliser une mesure en un point quelconque
@@ -130,10 +130,10 @@ En aérodynamique, la plupart des essais ont lieu en soufflerie.
  Diverses sondes ont été développées par le passé pour mesurer la température
  ou la vitesse.
  Mais ce type de mesure est relativement gênant puisque le caractère intrusif
- des sonde perturbe l'écoulement.
+ des sondes perturbe l'écoulement.
  L'invention du laser va révolutionner la mesure en permettant de sonder
  l'écoulement avec le lumière et donc sans perturbations.
- En effet, diverse méthodes optiques comme la LDV (Laser Doppler Velocimetry)
+ En effet, diverses méthodes optiques comme la LDV (Laser Doppler Velocimetry)
  vont émerger.
  Par contre, tout comme les sondes, la LDV ne fournit qu'une mesure ponctuelle
  et il faut répéter un grand nombre de fois le processus d'acquisition pour
@@ -155,8 +155,8 @@ En aérodynamique, la plupart des essais ont lieu en soufflerie.
 \end_inset
 
  car elle nécessite une importante énergie lumineuse.
- Enfin, tout comme la LDV, la difficulté de ces technique réside dans la
- qualité de ensemencement et il faut travailler avec des particules qui
+ Enfin, tout comme la LDV, la difficulté de ces techniques réside dans la
+ qualité de l'ensemencement et il faut travailler avec des particules qui
  suivent bien la dynamique de l'écoulement.
  Réaliser des mesures fiables est donc d'autant plus difficile que l'écoulement
  est rapide ou qu'il présente une grande dynamique de vitesses.
@@ -173,9 +173,15 @@ En aérodynamique, la plupart des essais ont lieu en soufflerie.
 Par ailleurs, d'autres techniques reposant sur la déviation des rayons lumineux
  à travers un milieu d'indice optique non homogène sont également utilisées
  en mécanique des fluides.
- Depuis les premières observations de Hook au 17ème siècle et du premier
- système strioscopique de Toepler au 19ème siècle, plusieurs techniques
- se sont développées permettent de 
+ Depuis les premières observations de Hook au 17
+\begin_inset Formula $^{\mbox{ème}}$
+\end_inset
+
+ siècle et du premier système strioscopique de Toepler au 19
+\begin_inset Formula $^{\mbox{ème}}$
+\end_inset
+
+ siècle, plusieurs techniques permettant de 
 \begin_inset Quotes fld
 \end_inset
 
@@ -183,7 +189,7 @@ voir l'invisible
 \begin_inset Quotes frd
 \end_inset
 
-.
+ se sont développées.
  L'ombroscopie, la strioscopie et l'holographie ont toujours fasciné par
  leur capacité à imager les mouvements de l'air.
  La strioscopie et l'ombroscopie, sous leur forme classique, convertissent
@@ -195,16 +201,16 @@ voir l'invisible
  Après traitement, elle donne une mesure proportionnelle à l'indice optique
  directement.
  Ces techniques ont beaucoup été utilisées en aérodynamique pour étudier
- les mouvements de convection ainsi que les ondes de chocs en écoulement
+ les mouvements de convection ainsi que les ondes de choc en écoulement
  supersonique.
- Ce sont des outils de métrologie optique très intéressant puisque ils ne
- perturbent en aucune façon l'écoulement et qu'ils ne nécessitent pas d'ensemenc
-ement.
+ Ce sont des outils de métrologie optique très intéressants puisque ils
+ ne perturbent en aucune façon l'écoulement et qu'ils ne nécessitent pas
+ d'ensemencement.
  L'holographie reste toutefois assez lourde à mettre en œuvre et nécessite
  l'usage d'une table optique pour assurer la stabilité des différents éléments.
  L'ombroscopie et la strioscopie, plus simples, offrent de belles visualisations.
  L'ombroscopie met en évidence les changements brutaux d'indice optique
- comme les interface ou les ondes de chocs.
+ comme les interfaces ou les ondes de choc.
  En strioscopie, la dynamique peut être ajustée en déplaçant la lame de
  couteau toutefois il est difficile de réaliser des mesures quantitatives.
  En effet, pour y parvenir il faut calibrer la mesure, en échelle de gris
@@ -244,7 +250,7 @@ key "Dalziel00,raffel2000"
  Connaissant la géométrie du système de mesure, on peut déduire de ces champs
  de déplacements des informations quantitatives sur les gradients de masse
  volumique de l'écoulement.
- Depuis ses premiers développements, la BOS connait un large succès de part
+ Depuis ses premiers développements, la BOS connaît un large succès de part
  sa simplicité de mise en œuvre.
  Elle a été utilisée sur de nombreuses configurations, depuis les écoulements
  aérothermiques jusqu'aux écoulement hypersoniques.
@@ -304,18 +310,18 @@ key "Todoroff2013"
 
 ), une technique BOS 3D a été développée avec pour objectif la mesure de
  champs instantanés de masse volumique.
- Ces premiers travaux très encourageants, ont aboutit à la construction
- d'un banc d'essai BOS 3D à 12 caméras et à des reconstructions cohérentes
- d'écoulements aérothermiques.
+ Ces premiers travaux très encourageants, ont abouti à la construction d'un
+ banc d'essai BOS 3D à 12 caméras et à des reconstructions cohérentes d'écouleme
+nts aérothermiques.
  Cette thèse s'inscrivait dans un projet plus large, le Carnot BOS 2D-3D,
  qui s'est déroulé de 2012 à mi-2015.
  Le Carnot avait pour objectif de développer un outil de mesure ainsi qu'une
  chaîne de traitement permettant d'accéder au champ tridimensionnel de masse
  volumique.
- Il impliquait différents départements de l'ONERA: le Département Modèle
- pour l'aérodynamique et l'énergétique (DMAE), Département traitement de
- l'information et modélisation (DTIM), ainsi que les départements des soufflerie
-s du Fauga-Mauzac (DSFM) et de Modane-Avrieux (DSMA).
+ Il impliquait différents départements de l'ONERA: le Département modèles
+ pour l'aérodynamique et l'énergétique (DMAE), le Département traitement
+ de l'information et modélisation (DTIM), ainsi que les départements des
+ souffleries du Fauga-Mauzac (DSFM) et de Modane-Avrieux (DSMA).
 \end_layout
 
 \begin_layout Section*
@@ -376,7 +382,7 @@ reference "chap:BOS3D"
 \end_inset
 
  nous détaillons la construction de notre algorithme de reconstruction BOS
- 3D qui est issu de plusieurs améliorations apportés à la solution initiale
+ 3D qui est issu de plusieurs améliorations apportées à la solution initiale
  proposée par
 \begin_inset space ~
 \end_inset
@@ -395,6 +401,48 @@ key "Todoroff2013"
 tion.
  Enfin, nous présentons des reconstructions cohérentes d'écoulements de
  convection obtenues sur le banc d'essai géode.
+ Une première comparaison avec des mesures réalisées par thermocouple donne
+ cependant des résultats mitigés: nous retrouvons bien la forme des profils
+ mais les niveaux de masse volumiques sont sous-estimés.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A travers le chapitre suivant (Chapitre
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:BOS2"
+
+\end_inset
+
+), nous nous questionnons sur la validité d'une hypothèse classiquement
+ utilisée en BOS pour déduire les cartes de déviations lumineuses à partir
+ des champs de déplacements mesurés.
+ Pour estimer les cartes de déviations il faut en effet supposer que la
+ déviation sést produite brutalement en un point de l'écoulement.
+ Dans un premier temps, nous démontrons la validité du choix du point milieu
+ pour des écoulements axisymétriques.
+ Puis, dans un second temps, nous construisons un nouveau modèle BOS qui
+ s'affranchit de choix adhoc et qui relie directement le déplacement à la
+ masse volumique.
+ Nous avons implémenté ce nouvel algorithme dans une version 2D et comparé
+ des reconstructions réalisées avec le modèle classique par rapport à notre
+ modèle.
+ Dans le cas étudié, la BOS classique donne des résultats équivalent à notre
+ modèle, toutefois ce nouvel algorithme pourrait s'avérer bénéfique sur
+ des cas plus complexes.
+ Nous conservons par conséquent notre modèle BOS classique avec le point
+ milieu pour référence dans la suite de notre étude.
 \end_layout
 
 \begin_layout Standard
@@ -422,7 +470,8 @@ reference "chap:F2"
  Nous avons choisi d'étudier un jet chaud issu d'une conduite co-courant
  à l'écoulement de la soufflerie.
  Pour qualifier la BOS 3D en tant que véritable outil métrologique, nous
- avons validé les mesures BOS 3D en champ moyen via des mesures thermocouples.
+ avons validé les mesures BOS 3D en champ moyen via des mesures par thermocouple
+s.
  Enfin, nous avons réalisé une reconstruction instantanée de l'écoulement
  avec une résolution spatiale permettant de distinguer de fines structures
  de la topologie du jet.
@@ -470,10 +519,10 @@ reference "chap:S1MA"
 \end_layout
 
 \begin_layout Standard
-Les phénomènes compressibles étudiés à S1MA ont montrés que dans ces conditions,
+Les phénomènes compressibles étudiés à S1MA ont montré que dans ces conditions,
  les forts gradients de masse volumique dégradent la qualité des images
  BOS, rendant parfois leur exploitation impossible.
- Cette problématique est étudié en particulier dans le Chapitre
+ Cette problématique est étudiée en particulier dans le Chapitre
 \begin_inset space ~
 \end_inset
 
@@ -485,7 +534,7 @@ reference "chap:113"
 \end_inset
 
 .
- Notre démarche à consister à étudier l'impact des phénomènes compressibles
+ Notre démarche a consisté à étudier l'impact des phénomènes compressibles
  rencontrés dans un jet sous-détendu à travers une étude paramétrique des
  éléments géométriques qui constituent le montage BOS.
  Après avoir trouvé un compromis satisfaisant, nous avons conçu un banc
@@ -506,43 +555,8 @@ reference "chap:113"
 \end_layout
 
 \begin_layout Standard
-A travers un dernier chapitre (Chapitre
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:BOS2"
-
-\end_inset
-
-), nous nous questionnons sur la validité d'une hypothèse classiquement
- utilisée en BOS pour déduire les cartes de déviations lumineuses à partir
- des champs de déplacements mesurés.
- Dans un premier temps, nous démontrons la validité de cette hypothèse pour
- des écoulements axisymétrique.
- Puis, dans un second temps, nous construisons un nouveau modèle BOS qui
- s'affranchit de choix adhoc et qui relie directement le déplacement à la
- masse volumique.
- Nous avons implémenté ce nouvel algorithme dans une version 2D et comparé
- des reconstruction réalisées avec le modèle classique par rapport à notre
- modèle.
- Dans le cas étudié, la BOS classique donne des résultats équivalent à notre
- modèle, toutefois celui-ci pourrait s'avérer bénéfique sur des cas plus
- complexes.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Nous concluons finalement notre étude et nous donnons quelques perspectives
- quant à l'avenir de la technique BOS 3D.
+Nous concluons finalement notre étude et donnons quelques perspectives quant
+ à l'avenir de la technique BOS 3D.
 \end_layout
 
 \end_body

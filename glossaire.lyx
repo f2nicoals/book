@@ -393,7 +393,7 @@ status open
 
 
 \backslash
-nomenclature[ca ]{BOS}{Backgroundd Oriented Schlieren}
+nomenclature[ca ]{BOS}{Background Oriented Schlieren}
 \end_layout
 
 \end_inset
@@ -426,7 +426,7 @@ status open
 
 
 \backslash
-nomenclature[ca ]{RBOS}{Retroreflective Backgroundd Oriented Schlieren}
+nomenclature[ca ]{RBOS}{Retroreflective Background Oriented Schlieren}
 \end_layout
 
 \end_inset
@@ -459,7 +459,7 @@ status open
 
 
 \backslash
-nomenclature[ca ]{CBOS}{Color Backgroundd Oriented Schlieren}
+nomenclature[ca ]{CBOS}{Color Background Oriented Schlieren}
 \end_layout
 
 \end_inset
@@ -492,7 +492,7 @@ status open
 
 
 \backslash
-nomenclature[ca ]{CG-BOS}{Color Grid Backgroundd Oriented Schlieren}
+nomenclature[ca ]{CG-BOS}{Color Grid Background Oriented Schlieren}
 \end_layout
 
 \end_inset
@@ -1186,7 +1186,7 @@ status open
 
 
 \backslash
-nomenclature[ca ]{K-H}{Kelvin-Helmoltz}
+nomenclature[ca ]{K-H}{Kelvin-Helmholtz}
 \end_layout
 
 \end_inset

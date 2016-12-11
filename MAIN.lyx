@@ -152,7 +152,7 @@
 %% Titre, auteur, date, laboratoire, cotutelle
 \title{Reconstruction de champs instantanés de masse volumique par BOS 3D. Application à l'étude des écoulements complexes en grande soufflerie.}
 \author{François NICOLAS}
-\defencedate{Date de défense (06/03/2017)}
+\defencedate{Date de défense (07/03/2017)}
 \lab{ONERA, Département Modèles pour l'Aérodynamique et l'Energétique}
 %\cotutelle{Institut de cotutelle}
 
@@ -178,30 +178,30 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\include{alphabet}
-\usepackage{amsmath}
-\usepackage{xspace}
-\usepackage{bbm}
-\newcommand{\boldnabla}{\mbox{\boldmath$\nabla$}}
-\newcommand{\boldeps}{\mbox{\boldmath$\epsilon$}}
-\newcommand{\boldDelta}{\mbox{\boldmath$\Delta$}}
-\newcommand{\boldrho}{\mbox{\boldmath$\rho$}}
-\newcommand{\boldr}{\mbox{\boldmath$r$}}
-\newcommand{\boldd}{\mbox{\boldmath$d$}}
-\newcommand{\boldc}{\mbox{\boldmath$c$}}
-\newcommand{\boldv}{\mbox{\boldmath$v$}}
-\newcommand{\boldx}{\mbox{\boldmath$x$}}
-\newcommand{\boldy}{\mbox{\boldmath$y$}}
-\newcommand{\boldp}{\mbox{\boldmath$p$}}
-\newcommand{\boldP}{\mbox{\boldmath$P$}}
-\newcommand{\argmin}{\operatornamewithlimits{argmin}}
-\newcommand{\Diag}{{\sdm {diag}}}
-\newcommand{\Vect}{{\sdm {vect}}}
-\newcommand{\sign}{{\sdm {sign}}}
-\newcommand{\rouge}[1]{\textcolor{red}{#1}}
-\newcommand{\bleu}[1]{\textcolor{blue}{#1}}
-\newcommand{\Laplace}{\mathop{}\!\mathbin\bigtriangleup}
-\newcommand{\vdir}[1]{\ab_{#1}}
+%\include{alphabet}
+%\usepackage{amsmath}
+%\usepackage{xspace}
+%\usepackage{bbm}
+%\newcommand{\boldnabla}{\mbox{\boldmath$\nabla$}}
+%\newcommand{\boldeps}{\mbox{\boldmath$\epsilon$}}
+%\newcommand{\boldDelta}{\mbox{\boldmath$\Delta$}}
+%\newcommand{\boldrho}{\mbox{\boldmath$\rho$}}
+%\newcommand{\boldr}{\mbox{\boldmath$r$}}
+%\newcommand{\boldd}{\mbox{\boldmath$d$}}
+%\newcommand{\boldc}{\mbox{\boldmath$c$}}
+%\newcommand{\boldv}{\mbox{\boldmath$v$}}
+%\newcommand{\boldx}{\mbox{\boldmath$x$}}
+%\newcommand{\boldy}{\mbox{\boldmath$y$}}
+%\newcommand{\boldp}{\mbox{\boldmath$p$}}
+%\newcommand{\boldP}{\mbox{\boldmath$P$}}
+%\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+%\newcommand{\Diag}{{\sdm {diag}}}
+%\newcommand{\Vect}{{\sdm {vect}}}
+%\newcommand{\sign}{{\sdm {sign}}}
+%\newcommand{\rouge}[1]{\textcolor{red}{#1}}
+%\newcommand{\bleu}[1]{\textcolor{blue}{#1}}
+%\newcommand{\Laplace}{\mathop{}\!\mathbin\bigtriangleup}
+%\newcommand{\vdir}[1]{\ab_{#1}}
 
 
 \renewcommand{\floatpagefraction}{.99}

@@ -1801,16 +1801,16 @@ A travers ce chapitre nous avons développé un code de reconstruction BOS
  Nous avons validé notre code sur des données synthétiques et montré que
  pour l'étude d'un jet, le placement optimal des caméras est la répartition
  circulaire.
- Nous avons ensuite conçu un banc d'essai expérimental, la géode, sur laquelle
+ Nous avons ensuite conçu un banc d'essai expérimental, la géode, sur lequel
  12 caméras ont été utilisées.
- La chaine de traitement qui a été mise en place nous a permis de reconstruire
+ La chaîne de traitement qui a été mise en place nous a permis de reconstruire
  la topologie de différents écoulements de convection.
 \end_layout
 
 \begin_layout Plain Layout
 A travers ce chapitre nous avons également montré l'importance de ne prendre
  en compte que les rayons qui ont traversé l'écoulement de part en part
- (les rayons dit 
+ (les rayons dits 
 \begin_inset Quotes fld
 \end_inset
 
@@ -1838,17 +1838,17 @@ Notre technique BOS 3D a ensuite été mise en œuvre en laboratoire sur le
 caméras.
  En effet, celui-ci présente désormais un renfoncement au niveau des faces
  de sorties et d'entrée du jet.
- La conséquence directe est que les conditions de bords libre du volume
+ La conséquence directe est que les conditions de bords libres du volume
  cubique ne s'appliquent pas directement sur la zone affectée par les données
  et la région en question n'est pas contrainte par la reconstruction.
- Nous n'avons pas apporter de réponses à cette question au cours de ces
- travaux mais c'est un point qui pourrait également améliorer la qualité
- des reconstructions.
+ Nous n'avons pas apporté de réponses à cette question au cours de ces travaux
+ mais c'est un point qui pourrait également améliorer la qualité des reconstruct
+ions.
 \end_layout
 
 \begin_layout Plain Layout
 Néanmoins, une première comparaison avec des mesures thermocouples semble
- indiquer une sous estimation des niveaux de masse volumique reconstruits
+ indiquer une sous-estimation des niveaux de masse volumique reconstruits
  par BOS 3D.
  Avant de pourvoir envisager un déploiement de la technique en soufflerie,
  nous revenons dans le chapitre suivant sur les hypothèses utilisées dans

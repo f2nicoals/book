@@ -108,13 +108,13 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-La campagne d'essais réalisée à S1MA a soulevé une problématique associé
+La campagne d'essais réalisée à S1MA a soulevé une problématique associée
  à la mesure des forts gradients de masse volumique.
  La technique BOS étant utilisée ici en faisceaux de lumière divergents,
  l'image d'un point sur le capteur résulte de l'intégration de tous les
  rayons ayant pénétré par l'ouverture caméra.
  Si les gradients de masse volumique observés sont trop intenses, l'ensemble
- de ces rayons peut ne plus focaliser sur un pixel et conduire à une tâche
+ de ces rayons peut ne plus focaliser sur un pixel et conduire à une tache
  qui s'étale sur des pixels voisins.
  Ce phénomène appelé astigmatisme provoque un flou sur les images brutes
  qui a pour conséquence une plus faible qualité de corrélation et même dans
@@ -429,7 +429,7 @@ Dans ce chapitre, nous avons tout d'abord montré qu'une optimisation du
  bonne qualité, approchant même la résolution de la strioscopie.
  Cette première étape est essentielle pour réaliser des mesures BOS 3D de
  qualité.
- L'importance de l'ouverture caméra a également été souligné de part le
+ L'importance de l'ouverture caméra a également été soulignée de par le
  filtrage spatial qu'elle induit.
  Il est donc important de travailler avec une ouverture suffisamment faible
  pour conserver une bonne résolution.
@@ -438,7 +438,7 @@ Dans ce chapitre, nous avons tout d'abord montré qu'une optimisation du
 
 \begin_layout Plain Layout
 Nous avons aussi prouvé le fonctionnement de notre algorithme dans sa version
- actuel pour reconstruire des gradients de masse volumique intenses.
+ actuelle pour reconstruire des gradients de masse volumique intenses.
  L'hypothèse paraxiale utilisée jusqu'à présent semble toujours valide.
  La régularisation 
 \begin_inset Formula $\myL$
@@ -449,13 +449,17 @@ Nous avons aussi prouvé le fonctionnement de notre algorithme dans sa version
 \begin_inset Formula $f_{\#}=16$
 \end_inset
 
-, apporterai un surcroit de résolution et permettrai d'envisager une régularisat
-ion 
+, apporterait un surcroît de résolution et permettrait d'envisager une régularis
+ation 
 \begin_inset Formula $\myLL$
 \end_inset
 
  pour préserver les discontinuités.
  Le disque de Mach serait alors plus facile à identifier.
+ Toujours dans le but de bien identifier les ondes de chocs, un maillage
+ plus fin permettrait de mieux localiser ces forts gradients de masse volumique.
+ Cela augmenterait toutefois sensiblement le coût de calcul à moins de de
+ mettre en place des maillages de type adaptatif.
 \end_layout
 
 \begin_layout Plain Layout
@@ -471,8 +475,7 @@ Les résultats obtenus dans ce chapitre montre bien tout l'intérêt de la
 s pour suivre un phénomène en particulier.
  Enfin, des reconstructions plus rapides permettraient également d'obtenir
  le champ de fluctuations de masse volumique permettant d'étudier plus en
- détail l'origine du bruit de screech.
- 
+ détail l'origine du bruit de screech par exemple.
 \end_layout
 
 \end_inset

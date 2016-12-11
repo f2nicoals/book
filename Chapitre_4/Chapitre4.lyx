@@ -140,6 +140,11 @@ Pour répondre à ces différentes questions, nous avons mené une campagne
  
 \end_layout
 
+\begin_layout Standard
+La mise en oeuvre de ces essais et les résultats obtenus font l'objet de
+ l'article ci-dessous.
+\end_layout
+
 \begin_layout Section
 Article
 \end_layout
@@ -147,7 +152,7 @@ Article
 \begin_layout Standard
 Article soumis à 
 \shape italic
-Experiments in Fluids.
+Measurement Sciences and Technology.
 \end_layout
 
 \begin_layout Standard
@@ -413,32 +418,22 @@ Compléments
 Nous présentons dans cette section l'intérêt de disposer de champs instantanés
  de masse volumique.
  Bien que l'objectif de cette thèse n'est pas de caractériser ce type d'écouleme
-nt, il est intéressant de se pencher sur l'information que l'on peut obtenir
- et extraire d'une mesure BOS 3D.
+nt, il est intéressant de se pencher sur l'information que l'on peut extraire
+ d'une mesure BOS 3D.
  Nous nous intéressons dans la suite à l'étude du champ instantané précédemment
  reconstruit.
  L'analyse présentée ci-dessous est une piste proposée pour analyser plus
  en détails l'écoulement de la buse.
  En effet, étant donné le faible nombre d'acquisitions réalisées à F2, il
- n'est pas possible d'en tirer des conclusions sur la physique du jet.
+ est difficile d'en tirer des conclusions sur la physique du jet.
  
 \end_layout
 
 \begin_layout Standard
 En observant attentivement notre champ de masse volumique instantanée, et
- en particulier le champ de gradient, une organisation hélicoïdale des enrouleme
-nts de Kelvin-Helmoltz semble émerger (Fig.
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:F2:grad"
-
-\end_inset
-
-).
+ en particulier le champ de gradient sur les figures 16 et 17 de l'article
+ précédent, une organisation hélicoïdale des enroulements de Kelvin-Helmoltz
+ semble émerger.
  
 \end_layout
 
@@ -517,7 +512,7 @@ n.
 \begin_inset Formula $\mytheta$
 \end_inset
 
-) est définit de façon à obtenir la taille des mailles du maillage cartésien
+) est défini de façon à obtenir la taille des mailles du maillage cartésien
  au niveau de la couche de mélange (
 \begin_inset Formula $0.5$
 \end_inset
@@ -665,7 +660,7 @@ reference "fig:F2:modes"
 , est symbolisée par la ligne noire.
  Le mode 0 est relativement absent au début du jet avant de s'amplifier
  en aval.
- On peut voir apparaitre sur le mode 1, le mode hélicoïdal marqué pat plusieurs
+ On peut voir apparaître sur le mode 1, le mode hélicoïdal marqué pat plusieurs
  structures énergétiques entre 
 \begin_inset Formula $Z/D=2.5$
 \end_inset
@@ -751,7 +746,7 @@ reference "fig:F2:amplification"
 \begin_layout Standard
 Ce début d'analyse est encourageant et montre l'intérêt de pouvoir reconstruire
  des champs de masse volumique instantanés mais il demeure trop limité pour
- pouvoir tirer d'avantage de conclusions.
+ pouvoir tirer davantage de conclusions.
  Sur un cas tel que celui-ci mais aussi de manière plus générale, il serait
  intéressant de reconstruire l'ensemble des champs instantanés afin de pouvoir
  réaliser des statistiques.
@@ -801,15 +796,15 @@ status open
 Pour la première fois la BOS 3D a été déployée en soufflerie pour reconstruire
  un champ instantané de masse volumique.
  Les mesures réalisées ont été validées sur le champ moyen de température
- par comparaison avec des acquisitions thermocouple.
+ par comparaison avec des acquisitions par thermocouple.
  Ce résultat illustre également la capacité de la technique BOS 3D à mesurer
  un champ tridimensionnel de température.
- La qualité de la reconstruction d'un champ instantané permet, de part sa
+ La qualité de la reconstruction d'un champ instantané permet, de par sa
  résolution, une analyse plus fine de la topologie du jet et des instabilités
  naissant dans la couche de mélange.
  La possibilité de coupler la BOS 3D et la SPIV est également intéressante.
  Cette première réalisation montre l'intérêt de pouvoir combiner ces deux
- type de mesures notamment pour l'étude des échanges de chaleur et donc
+ types de mesures notamment pour l'étude des échanges de chaleur et donc
  du transport d'énergie.
  Ces essais ont aussi mis en lumière les limites du système d'acquisition
  actuel, limité à 
@@ -827,7 +822,7 @@ Hz et par conséquent de l'interprétation physique que l'on peut faire des
  En effet, le temps de calcul associé aux reconstructions (quelques dizaines
  d'heures) est encore trop lourd pour envisager de reconstruire tous les
  champs instantanés.
- Une amélioration des performances du code nous donnerait accès à d'avantage
+ Une amélioration des performances du code nous donnerait accès à davantage
  de données et notamment aux champs de fluctuations de masse volumique,
  forts utiles pour la modélisation.
 \end_layout

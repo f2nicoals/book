@@ -158,7 +158,7 @@ status open
 
 Identifié les problèmes de convergences de l’algorithme de Violaine Todoroff
  avec des différences dans le calcul des opérateurs de tomographie directs
- et rétrograde (cf.
+ et rétrogrades (cf.
  l’introduction de ces opérateurs dans la Section
 \begin_inset space ~
 \end_inset
@@ -262,8 +262,8 @@ t) dans la géode, notamment en variant les positionnements caméra pour compare
 \end_layout
 
 \begin_layout Standard
-L’article qui suit résulte donc des travaux de thèse de Violaine Todoroff
- et des actions listées ci-dessus.
+L’article qui suit résulte des travaux de thèse de Violaine Todoroff et
+ des actions listées ci-dessus.
  Il est centré sur la description de la méthode de reconstruction 3D par
  BOS, sa validation sur données de synthèse et sa mise en oeuvre aux cours
  de l'expérimentation menée dans la géode.

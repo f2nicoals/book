@@ -107,7 +107,7 @@ Introduction
 \begin_layout Standard
 Dans le chapitre précédent nous avons démontré le fonctionnement de notre
  algorithme de reconstruction en laboratoire.
- Les premières comparaisons que nous avons faites montrent une sous estimation
+ Les premières comparaisons que nous avons faites montrent une sous-estimation
  des niveau de masse volumiques reconstruits par BOS 3D.
  
 \end_layout
@@ -149,7 +149,7 @@ key "Atcheson08,Hinsberg2014,nicolas2016"
  Dans ce chapitre, nous revenons sur le calcul des champs de déviation à
  partir des champs de déplacements.
  En particulier, nous remettons en cause l'hypothèse qui est classiquement
- utilisée en BOS et que nous avons utilisé jusqu'à présent concernant le
+ utilisée en BOS et que nous avons utilisée jusqu'à présent concernant le
  choix du point de référence pour déterminer la direction des rayons lumineux.
  Nous montrons que le choix du point milieu est justifié pour les écoulements
  axisymétriques.
@@ -174,7 +174,7 @@ reference "fig:BOS2:ref_point"
 
 \end_inset
 
-, nous reprenons la schéma classique de la technique BOS.
+, nous reprenons le schéma classique de la technique BOS.
  A noter que pour simplifier le discours, nous adoptons ici un point de
  vue inverse, également proposé par 
 \begin_inset CommandInset citation
@@ -186,7 +186,7 @@ key "Ihrke07,Atcheson08"
 .
  Nous suivons donc le rayon lumineux depuis la caméra jusqu'au mouchetis.
  Cette représentation n'affecte pas la modélisation du phénomène puisque
- comme nous l'avons vu dans dans la section
+ comme nous l'avons vu dans la section
 \begin_inset space ~
 \end_inset
 
@@ -307,14 +307,14 @@ Le prolongement du rayon depuis la caméra jusqu'au mouchetis conduit au
  puisque le lien entre le plan de mise au point au niveau du mouchetis et
  le plan image est bijectif.
  Dans un cas idéal, ce lien n'est qu'une homothétie dont les paramètres
- sont déduis de la calibration du montage 
+ sont déduits de la calibration du montage (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "lesant2014"
 
 \end_inset
 
-.
+).
 \end_layout
 
 \begin_layout Standard
@@ -355,7 +355,7 @@ Les mesures images donnent accès à la position des points
  qui est inconnue.
  Afin d'estimer le champ de masse volumique à partir des déviations, toutes
  les techniques BOS linéaires s'affranchissent de ce problème en faisant
- l'approximation que le déviation est localisée en un point particulier
+ l'approximation que la déviation est localisée en un point particulier
  de l'intersection du rayon non perturbé 
 \begin_inset Formula $OH$
 \end_inset
@@ -375,6 +375,7 @@ key "Todoroff2013"
 
 ) a constaté pour son cas d'étude que le choix de ce point de référence
  a relativement peu d'influence.
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Dalziel00"
@@ -392,13 +393,13 @@ key "Atcheson08"
 \begin_inset Formula $I_{m}$
 \end_inset
 
- , le point milieu qui semble justifié pour les écoulements axisymétrique.
- Dans le chapitre précédent, nous avons calculés nos cartes de déviations
+ , le point milieu qui semble justifié pour les écoulements axisymétriques.
+ Dans le chapitre précédent, nous avons calculé nos cartes de déviations
  à partir du point 
 \begin_inset Formula $I_{in}$
 \end_inset
 
-, ce qui a tendance à sous estimer les déviations si on se réfère à la Fig.
+, ce qui a tendance à sous-estimer les déviations si on se réfère à la Fig.
 \begin_inset space ~
 \end_inset
 
@@ -421,8 +422,8 @@ reference "fig:BOS2:ref_point"
 
 \end_inset
 
-, cette sous estimation sera d'autant plus importante en champ proche, c'est
- à dire quand la taille 
+, cette sous-estimation sera d'autant plus importante en champ proche, c'est-à-d
+ire quand la taille 
 \begin_inset Formula $W$
 \end_inset
 
@@ -462,7 +463,7 @@ Nous proposons dans la suite une nouvelle formulation linéaire nommée
 \end_inset
 
 .
- La description et la mise en œuvre de ce modèle nous permet de :
+ La description et la mise en œuvre de ce modèle nous permettent de :
 \end_layout
 
 \begin_layout Itemize
@@ -496,7 +497,7 @@ status open
 \end_inset
 
 Montrer que le choix du point milieu est justifié sous l'approximation paraxiale
- pour les écoulements axisymétyrique.
+ pour les écoulements axisymétyriques.
  
 \end_layout
 
@@ -539,7 +540,7 @@ key "stam1996"
 
  ont étudié la propagation des rayons lumineux en terme de déplacement.
  Dans la communauté BOS, la plupart des études exploitent la déviation des
- rayon lumineux à l'exception de 
+ rayons lumineux à l'exception de 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ihrke07,Yu13"
@@ -707,11 +708,7 @@ n=1+G\rho\label{eq:BOS2:gd}
 
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
-où 
+ où 
 \begin_inset Formula $G$
 \end_inset
 
@@ -936,10 +933,6 @@ reference "eq:BOS2:approxxx"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 qui rappelle l'Eq.
 \begin_inset space ~
 \end_inset
@@ -956,8 +949,8 @@ key "stam1996"
 \end_layout
 
 \begin_layout Standard
-Grâce à l'approximation paraxiale, on a donc une relation linéaire vis à
- vis de l'indice optique 
+Grâce à l'approximation paraxiale, on a donc une relation linéaire vis-à-vis
+ de l'indice optique 
 \begin_inset Formula $n$
 \end_inset
 
@@ -973,7 +966,7 @@ reference "eq:BOS2:gd"
 
 \end_inset
 
-) cette relation est également linéaire vis à vis de 
+) cette relation est également linéaire vis-à-vis de 
 \begin_inset Formula $\rho$
 \end_inset
 
@@ -1033,10 +1026,6 @@ reference "eq:BOS2:deltan"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 où la dépendance de 
 \begin_inset Formula $\myepsilon$
 \end_inset
@@ -1087,8 +1076,8 @@ Les mesures de déviuations
 \begin_inset Formula $\boldsymbol{\varepsilon}_{m}$
 \end_inset
 
- sont souvent obtenues en supposant le rayon d'entrée et le rayon de sortie
- se croisent au niveau du point milieu 
+ sont souvent obtenues en supposant que le rayon d'entrée et le rayon de
+ sortie se croisent au niveau du point milieu 
 \begin_inset Formula $I_{m}$
 \end_inset
 
@@ -1187,7 +1176,7 @@ Cette égalité signifie que le rayon paraxial et le rayon dévié s'intersecten
 \begin_inset Formula $W$
 \end_inset
 
- de l'objet de phase, n'est pas négligeable vis à vis de la distance au
+ de l'objet de phase, n'est pas négligeable vis-à-vis de la distance au
  fond 
 \begin_inset Formula $m$
 \end_inset
@@ -1310,7 +1299,7 @@ reference "eq:BOS2:deltarho"
 
 \end_inset
 
- remarquons que cette méthode ne nécessite pas de connaissance a priori
+ Remarquons que cette méthode ne nécessite pas de connaissance a priori
  sur la topologie de l'écoulement et ne dépend pas non plus d'un modèle
  géométrique du volume d'étude contrairement à la formulation classique
  de la technique BOS (
@@ -1382,7 +1371,7 @@ Le champ de masse volumique
 \end_inset
 
 .
- Sur le plan caméra, la discrétisation pixel défini un ensemble fini de
+ Sur le plan caméra, la discrétisation pixel définit un ensemble fini de
  vecteurs directeurs 
 \begin_inset Formula $\mydi$
 \end_inset
@@ -1565,12 +1554,12 @@ reference "chap:BOS3D"
  
 \begin_inset Formula 
 \begin{equation}
-\mathcal{J}(\rho)=\|\myA\myrho-\boldsymbol{\varepsilon}\|^{2}+\mylambda\|\overline{\myD}\myrho\|^{2},\label{eq:BOS2:criteria}
+\mathcal{J}(\rho)=\|\myA\myrho-\boldsymbol{\varepsilon}\|^{2}+\mylambda\|\overline{\myD}\myrho\|^{2}\label{eq:BOS2:criteria}
 \end{equation}
 
 \end_inset
 
- où le critère des moindres carré est pénalisé par la norme 
+ où le critère des moindres carrés est pénalisé par la norme 
 \begin_inset Formula $L_{2}$
 \end_inset
 
@@ -1597,14 +1586,14 @@ reference "eq:BOS2:criteria"
 \end_inset
 
 ) est réalisé via un algorithme itératif de gradient conjugué.
- La même approche est utilisée pour critère associé à la 
+ La même approche est utilisée pour le critère associé à la 
 \begin_inset Formula $\bosD$
 \end_inset
 
 : 
 \begin_inset Formula 
 \begin{equation}
-\mathcal{J}_{2.0}(\rho)=\|\myB\myrho-\mydelta\|^{2}+\mu\|\overline{\myD}\myrho\|^{2},\label{eq:BOS2:criteria2}
+\mathcal{J}_{2.0}(\rho)=\|\myB\myrho-\mydelta\|^{2}+\mu\|\overline{\myD}\myrho\|^{2}\label{eq:BOS2:criteria2}
 \end{equation}
 
 \end_inset
@@ -1637,10 +1626,10 @@ Application
 \end_layout
 
 \begin_layout Standard
-Nous comparons maintenant nos deux approche BOS sur un cas 2D représentatif
+Nous comparons maintenant nos deux approches BOS sur un cas 2D représentatif
  d'un écoulement que l'on peut rencontrer en mécanique des fluides.
  Le champ de masse volumique de référence utilisé est extrait du calcul
- LES d'un jet supersonique, aimablement fournit par G.
+ LES d'un jet supersonique, aimablement fourni par G.
  Daviller du Cerfacs.
  Le jet issu d'une buse convergent avec un rapport de pression NPR=
 \begin_inset Formula $2.3$
@@ -1677,7 +1666,7 @@ reference "fig:BOS2:GT"
  Il présente une grande diversité de gradients de densité et d'échelles
  turbulentes.
  12 caméras virtuelles sont positionnées autour de ce champ de masse volumique
- sur une demi-anneau, à une distance de 
+ sur un demi-anneau, à une distance de 
 \begin_inset Formula $m=1.5$
 \end_inset
 
@@ -2157,7 +2146,7 @@ La forme de l'écoulement est correctement capturée aussi bien en
 \begin_inset Formula $\myIo$
 \end_inset
 
- sous estime les niveaux de masse volumique.
+ sous-estime les niveaux de masse volumique.
  Enfin, le choix du point milieu (
 \begin_inset Formula $\myIm$
 \end_inset
@@ -2328,7 +2317,7 @@ height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
-Nous avons introduis dans ce chapitre une nouvelle formulation du problème
+Nous avons introduit dans ce chapitre une nouvelle formulation du problème
  BOS à partir d'un modèle de propagation des rayons lumineux à travers un
  milieu d'indice inhomogène qui tient compte non seulement de la déviation
  mais aussi du déplacement.
@@ -2341,7 +2330,7 @@ Nous avons introduis dans ce chapitre une nouvelle formulation du problème
  De plus, ce modèle évite le choix arbitraire qui est fait classiquement
  en BOS pour convertir les champs de déplacement en carte de déviation.
  Notre algorithme de reconstruction de BOS 3D basé sur la minimisation d'un
- critère d'adéquation aux données a été réécrit en termes de déplacement
+ critère d'adéquation aux données a été réécrit en termes de déplacements
  mesurés.
  L'étude numérique réalisée dans ce chapitre montre une forte sensibilité
  de la reconstruction à l'hypothèse concernant la position d'intersection

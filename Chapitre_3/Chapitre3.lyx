@@ -514,7 +514,7 @@ status open
 
 \end_inset
 
-Mettre en place de manière plus rigoureuse un modèle reliant directement
+Mettre en place de manière plus rigoureuse un modèle exprimant directement
  le déplacement au champ de masse volumique.
 \end_layout
 
@@ -558,7 +558,7 @@ key "Ihrke07"
 
 , cette approche non linéaire nécessite un processus itératif où, à chaque
  étape, la trajectoire courbe des rayons lumineux à travers le volume d'indice
- est calculée.
+ est re-calculée.
  Puis, le nouveau système linéaire qui est construit permet de calculer
  une nouvelle estimation du volume d'indice et le processus se répète ainsi.
  Au contraire, l'approche que nous développons ici repose sur l'approximation
@@ -1042,7 +1042,7 @@ où la dépendance de
 \end_layout
 
 \begin_layout Subsection
-justification du choix du point milieu pour les écoulements axisymétrique
+Justification du choix du point milieu pour les écoulements axisymétrique
 \end_layout
 
 \begin_layout Standard
@@ -1076,8 +1076,11 @@ Les mesures de déviuations
 \begin_inset Formula $\boldsymbol{\varepsilon}_{m}$
 \end_inset
 
- sont souvent obtenues en supposant que le rayon d'entrée et le rayon de
- sortie se croisent au niveau du point milieu 
+ sont obtenues en faisant diverses hypothèses sur le point d'intersection
+ entre les rayons d'entrée et de sortie.
+ Nous montrons ci-dessous que, sous l'approximation paraxiale et dans le
+ cas d'un écoulement axisymétrique, les deux rayons se coupent au point
+ milieu 
 \begin_inset Formula $I_{m}$
 \end_inset
 
@@ -1123,6 +1126,10 @@ reference "eq:BOS2:deltarho"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 \int_{s_{in}}^{s_{out}}(s_{out}-r)\nabla\myrho(\textbf{x}_{0}(r))dr=\int_{s_{in}}^{s_{out}}(r-s_{in})\nabla\myrho(\textbf{x}_{0}(r))dr=\frac{\boldsymbol{\Delta}n_{ext}}{G}\label{eq:BOS2:sym}
@@ -1133,8 +1140,32 @@ reference "eq:BOS2:deltarho"
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-La somme des deux termes de gauche dans l'Eq.
+\begin_inset Formula 
+\begin{equation}
+{\renewcommand{\arraystretch}{1.5}}\left\{ \begin{array}{l}
+\int_{s_{in}}^{s_{out}}(s_{out}-r)\nabla\myrho(\textbf{x}_{0}(r))dr=\frac{\boldsymbol{\Delta}n_{ext}}{G}\\
+\int_{s_{in}}^{s_{out}}(r-s_{in})\nabla\myrho(\textbf{x}_{0}(r))dr=\frac{\boldsymbol{\Delta}n_{ext}}{G}
+\end{array}\right.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La somme des deux équtions précédentes 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+termes de gauche dans l'Eq.
 \begin_inset space ~
 \end_inset
 
@@ -1142,6 +1173,11 @@ La somme des deux termes de gauche dans l'Eq.
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:BOS2:sym"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1585,7 +1621,7 @@ reference "eq:BOS2:criteria"
 
 \end_inset
 
-) est réalisé via un algorithme itératif de gradient conjugué.
+) est réalisée via un algorithme itératif de gradient conjugué.
  La même approche est utilisée pour le critère associé à la 
 \begin_inset Formula $\bosD$
 \end_inset
@@ -1626,7 +1662,7 @@ Application
 \end_layout
 
 \begin_layout Standard
-Nous comparons maintenant nos deux approches BOS sur un cas 2D représentatif
+Nous comparons maintenant les deux approches BOS sur un cas 2D représentatif
  d'un écoulement que l'on peut rencontrer en mécanique des fluides.
  Le champ de masse volumique de référence utilisé est extrait du calcul
  LES d'un jet supersonique, aimablement fourni par G.
@@ -1692,7 +1728,7 @@ m.
 \begin_inset space ~
 \end_inset
 
-pixels et modélisée comme un pinhole.
+pixels et modélisée comme un sténopé.
 \end_layout
 
 \begin_layout Standard
@@ -1755,7 +1791,7 @@ Les véritables champs de déplacements associés à chaque caméra sont génér
  ordre.
  Les déviations lumineuses associées à la reconstruction BOS classique sont
  générées à partir des champs de déplacements en utilisant l'hypothèse du
- point milieu.
+ point d'entrée, point milieu ou bien du point de sortie.
  Nous n'avons pas ajouté de bruit sur les données ici car nous souhaitons
  plus valider le modèle direct que la méthode d'inversion.
 \end_layout
@@ -2147,11 +2183,11 @@ La forme de l'écoulement est correctement capturée aussi bien en
 \end_inset
 
  sous-estime les niveaux de masse volumique.
- Enfin, le choix du point milieu (
+ Enfin, le choix du point milieu 
 \begin_inset Formula $\myIm$
 \end_inset
 
-) se montre quant à lui tout à fait approprié pour cet écoulement.
+ se montre quant à lui tout à fait approprié pour cet écoulement.
  En effet, la reconstruction en BOS classique (
 \begin_inset Formula $\bosU$
 \end_inset

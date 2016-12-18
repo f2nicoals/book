@@ -153,9 +153,9 @@ Carnot BOS 3D
 \end_layout
 
 \begin_layout Standard
-Le Carnot BOS 3D qui s'est déroulé sur 3 ans avait pour objectif de développer
- un moyen expérimental ainsi qu'une plateforme logicielle pour le traitement
- 3D des champs de masse volumique instantanés.
+Le projet Carnot BOS 3D, qui s'est déroulé sur 3 ans, avait pour objectif
+ de développer un moyen expérimental ainsi qu'une plateforme logicielle
+ pour le traitement 3D des champs de masse volumique instantanés.
  Il impliquait à la fois le DMAE, le DTIM et les départements des souffleries
  du Fauga-Mauzac (DSFM) et de Modane-Avrieux (DSMA).
  
@@ -250,8 +250,8 @@ Présentation de la soufflerie S1MA
 \end_layout
 
 \begin_layout Standard
-La soufflerie S1MA représente une prise de guerre de l'armée française à
- la fin de la 
+La soufflerie S1MA est une prise de guerre de l'armée française à la fin
+ de la 
 \begin_inset Formula $2^{nde}$
 \end_inset
 
@@ -432,7 +432,7 @@ reference "fig:A380"
 \end_inset
 
 .
- Une vue globale du circuit aérodynamique de S1MA est présenté en Figure
+ Une vue globale du circuit aérodynamique de S1MA est présentée en Figure
 \begin_inset space ~
 \end_inset
 
@@ -1344,7 +1344,46 @@ Ce calcul de dimensionnement nous permet d'estimer la longueur de pénétration
 \end_inset
 
 cm.
- Pour notre montage BOS 3D cela se traduit par l'emploi de focales de 
+ A partir de l'Eq.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:biblio:champ"
+
+\end_inset
+
+ du Chapitre
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:biblio"
+
+\end_inset
+
+, on en déduit que la focale nécessaire pour observer ce champ à 
+\begin_inset Formula $4$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+m vaut 
+\begin_inset Formula $68$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+mm.
+ Nous utilisons donc des objectifs de 
 \begin_inset Formula $70$
 \end_inset
 
@@ -1352,7 +1391,7 @@ cm.
 \begin_inset space ~
 \end_inset
 
-mm et l'utilisation de panneaux de mouchetis de 
+mm et des panneaux de mouchetis de 
 \begin_inset Formula $1$
 \end_inset
 
@@ -1673,7 +1712,7 @@ reference "fig:S1MA:apriltag"
  En cas de vibrations trop intenses ces marqueurs permettront d'estimer
  le mouvement entre les caméras et le mouchetis et de corriger les images
  en conséquence.
- De plus, le DTIM a utilisé ses marqueurs pour réaliser des mesures tridimension
+ De plus, le DTIM a utilisé ces marqueurs pour réaliser des mesures tridimension
 nelles de la géométrie de la veine dont un exemple est présenté en Figure
 \begin_inset space ~
 \end_inset
@@ -1941,7 +1980,7 @@ reference "fig:S1MA:mouchetis"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2016,7 +2055,7 @@ Panneaux de mouchetis collés sur la veine avec bords d'attaque renforcé
  On distingue également les marqueurs AprilTags utilisés pour la reconstruction
  stéréoscopique de la veine.
  Les dommages causés par l'apparition de bulles au cours de ces premiers
- essais sont clairement visible a posteriori sur la photo de droite.
+ essais sont clairement visibles a posteriori sur la photo de droite.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -2167,7 +2206,7 @@ m.
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2226,10 +2265,17 @@ La quantité de lumière disponible nous contraint à travailler avec une ouvert
 .
  Cette valeur d'ouverture conduit à un cercle de confusion au niveau de
  l'écoulement relativement important de près de 
-\begin_inset Formula $18\,mm$
+\begin_inset Formula $18$
 \end_inset
 
- et donc à une perte de résolution spatiale de la technique.
+
+\begin_inset space ~
+\end_inset
+
+mm.
+ Cette résolution spatiale, la plus faible parmi toutes les expériences
+ reportées dans cette thèse, doit toutefois être mise en regard des dimensions
+ de l'expérience.
  
 \begin_inset Note Note
 status collapsed
@@ -2360,7 +2406,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2626,7 +2672,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Histogramme des erreurs quadratiques (en pixels).
+Histogramme des erreurs de reprojection (en pixels).
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -2687,8 +2733,8 @@ reference "fig:S1MA:erreur_quad"
 
 \end_inset
 
- présente quant à elle le résultat de l'optimisation aboutissant à la calibratio
-n : l'histogramme des erreurs en pixels y est représentée.
+ présente le résultat de l'optimisation aboutissant à la calibration : l'histogr
+amme des erreurs de reprojection en pixels y est représentée.
  Malgré les grandes dimensions du système notre processus est plutôt efficace
  puisque nous atteignons une erreur moyenne inférieure au pixel (
 \begin_inset Formula $0.42$
@@ -8025,7 +8071,7 @@ champignon
 \begin_inset Quotes frd
 \end_inset
 
-, comparable à celle prédit par la CFD.
+, comparable à celle prédite par la CFD.
 \end_layout
 
 \begin_layout Standard
@@ -8176,7 +8222,7 @@ reference "fig:S1MA:soustraction"
  Pour la suite ces régions ont donc été écartées en utilisant un masque.
  De plus, si ce mouvement global représentait la plus grande perturbation
  dans un premier temps, une fois la correction faite, les mouvements du
- second ordre dus aux vibrations pourraient s'avérés non négligeables.
+ second ordre dus aux vibrations pourraient s'avérer non négligeables.
  
 \end_layout
 

@@ -209,10 +209,6 @@
 %\setlength{\intextsep}{0pt plus 2pt minus 2pt}
 \end_preamble
 \use_default_options true
-\begin_includeonly
-Chapitre_3/Chapitre3.lyx
-math-macro.lyx
-\end_includeonly
 \maintain_unincluded_children false
 \language french
 \language_package default

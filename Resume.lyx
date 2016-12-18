@@ -74,8 +74,8 @@ Titre
 \end_layout
 
 \begin_layout Standard
-Reconstruction de champs instantanés de masse volumique par BOS 3D, applications
- à l'étude d'écoulements complexes en grande soufflerie.
+Reconstruction de champs instantanés de masse volumique par BOS 3D.
+ Applications à l'étude d'écoulements complexes en grande soufflerie.
 \end_layout
 
 \begin_layout Section*
@@ -83,45 +83,46 @@ Resumé
 \end_layout
 
 \begin_layout Standard
-Ces travaux de thèses s'inscrivent dans le développement d'outils métrologiques
- avancés pour la mécanique des fluides, et en particulier pour les souffleries.
- La Background Oriented Schlieren (BOS) 3D qui a été développée à l'ONERA
- est une technique qui exploite la déviation des rayons lumineux par un
- milieu non homogène pour mesurer la masse volumique.
- Elle consiste comparer l'image de référence d'un fond texturé avec l'image
+Ces travaux de thèses s'inscrivent dans le cadre du développement d'outils
+ métrologiques avancés pour la mécanique des fluides, et en particulier
+ pour les souffleries.
+ La Background Oriented Schlieren (BOS) 3D, développée à l'ONERA, est une
+ technique qui exploite la déviation des rayons lumineux par un milieu non
+ homogène pour mesurer la masse volumique.
+ Elle consiste à comparer l'image de référence d'un fond texturé avec l'image
  de ce même fond en présence d'un écoulement.
  La corrélation entre ces deux images permet de calculer la déviation des
  rayons lumineux.
  En réalisant une acquisition simultanée à partir de différents points de
  vue, il est possible de reconstruire le champ de masse volumique associé,
  par résolution d'un problème inverse.
- Afin de poursuivre le développement de la technique nous avons tout d'abord
- développé une chaîne de traitement plus systématique et amélioré la robustesse
- de notre algorithme de reconstruction.
- Après avoir validé notre méthode sur des données de synthèse, nous l'avons
- mise en œuvre sur un banc d'essais comportant 12 caméras.
- Par la suite, la technique a été déployée une première fois en soufflerie
+ Afin de poursuivre le développement de la technique, nous avons tout d'abord
+ développé une chaîne de traitement plus systématique puia amélioré la robustess
+e de notre algorithme de reconstruction.
+ Après avoir rálisé une validation sur des données de synthèse, nous avons
+ mise en œuvre notre méthode sur un banc d'essais comportant 12 caméras.
+ Par la suite, la technique a été déployée pour la première fois en soufflerie
  sur un jet chaud subsonique.
- Lors de cette campagne, la technique a été validée par des mesures de températu
-re et des mesures couplées BOS 3D et stéréo PIV ont également été effectuées.
- Nous avons ensuite réalisé une démonstration en soufflerie industrielle,
- dans la soufflerie S1MA de l'ONERA.
+ Lors de cette campagne, elle a été validée par comparaison avec des mesures
+ de température.
+ Des acquisistions couplées BOS 3D et stéréo PIV ont également été effectuées.
+ Une démonstration à l'échelle d'une soufflerie industrielle a ensuite été
+ réalisée dans la soufflerie S1MA de l'ONERA.
  Les problématiques rencontrées sur les écoulements compressibles lors de
- ces essais ont ensuite conduit a étudier de manière plus approfondie les
+ ces essais ont ensuite conduit à étudier de manière plus approfondie les
  écoulements présentant de forts gradients d'indice optique.
- Nous avons donc conçu un nouveau banc de mesure BOS 3D afin d'optimiser
- la mesure d'un jet sous-détendu.
- Sur cette configurations de très bon accords ont été obtenus avec la littératur
+ Un banc de mesure BOS 3D a été conçu en laboratoire afin d'optimiser la
+ mesure d'un jet sous-détendu.
+ Sur cette configuration, de très bon accords ont été obtenus avec la littératur
 e ainsi qu'avec une simulation LES.
- Enfin, les moyennes de phases réalisées ont permis de mettre en avant le
- caractère périodique du lâcher tourbillonnaire.
+ 
 \end_layout
 
 \begin_layout Standard
 A travers cette étude, nous avons étendus le domaine d'application de la
  BOS 3D aux écoulements compressibles et démontré son utilisation en soufflerie.
- La qualité des résultats obtenus laisse entrevoir un grand potentiel d'analyse
- des écoulements pour la technique.
+ La qualité des résultats obtenus démontre le potentiel offert par la technique
+ pour l'analyse physique des écoulements.
  
 \end_layout
 
@@ -149,39 +150,39 @@ Abstract
 \begin_layout Standard
 This PhD work is part of the development of advanced metrological tools
  for fluid dynamics, especially for wind tunnel applications.
- 3D Background Oriented Schlieren (BOS) which has been developed at l'ONERA
+ 3D Background Oriented Schlieren (BOS), which has been developed at ONERA,
  is a line-of-sight technique which takes advantage of light rays deviation
  through an inhomogenous index media to measure density.
  It consisted in comparing a reference image of a textured background with
  the image of the background with the flow in presence.
  Image correlation can then be used to compute light rays deviations.
- Performing such acquisition from multiple view pointsallows one to reconstruct
- the corresponding density field, solving an inverse problem.
- In order to persue the technique development, we first elaborate a systematic
+ Performing such acquisition from multiple view points, allows to reconstruct
+ the corresponding density field, by solving an inverse problem.
+ In order to pursue the technique development, we first elaborate a systematic
  processing chain and improved the robustness of the reconstruction algorithm.
- After validating our method on synthetic data, we employed it on a 3D BOS
+ After validating our method on synthetic data, we applied it on a 3DBOS
  bench equipped with 12 cameras.
- Then, the technique has been set up for the first time in a wind tunnel
- environement, on a subsonic hot jet configuration.
+ Thereafter, the technique has been set up for the first time in a wind
+ tunnel environment, on a subsonic hot jet configuration.
  During this test campaign, the technique has been validated via thermocouples
- measurements and coupled 3DBOS and stereo-PIV acquisitions have been performed.
+ measurements.
+ Moreover, 3DBOS and stereo-PIV coupled acquisitions have been performed.
  Thereafter, a demonstration in industrial wind tunnel has been performed
- in S1MA ONERA wind tunnel.
+ in ONERA S1MA facility.
  Compressible flows issues encountered during those tests lead us to finer
  analysis high density gradient flows.
- To do so, we build up a new 3DBOS setup in order to optimize underexpanded
- jet measurements.
+ A 3DBOS test bench has been built in laboratory in order to optimize underexpan
+ded jet measurements.
  On this specific configuration, very good agreements have bee obtained
  in comparison with literature and with a LES simulation.
- Finally, phase averaged data enable us to highlight the periodic vortex
- shedding of the jet.
+ 
 \end_layout
 
 \begin_layout Standard
 This study has allowed the extension of 3DBOS application domain to compressible
- flows and has demonstrated its use in a wind tunnel environment.
- The quality of the results opens the way for flow physical investigation
- by the technique.
+ flows and it has demonstrated its use in a wind tunnel environment.
+ The quality of the results highlights the technique potential for flows
+ physical investigation.
  
 \end_layout
 

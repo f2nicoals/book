@@ -1158,7 +1158,7 @@ status open
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-{\newcommand{\arraystretch}{1.5}}\left\{ \begin{array}{l}
+{\renewcommand{\arraystretch}{1.5}}\left\{ \begin{array}{l}
 \boldsymbol{\Delta}=\frac{G}{n_{ext}}\int_{s_{in}}^{s_{out}}(s_{out}-r)\nabla\myrho(\textbf{x}_{0}(r))dr\\
 \boldsymbol{\Delta}=\frac{G}{n_{ext}}\int_{s_{in}}^{s_{out}}(r-s_{in})\nabla\myrho(\textbf{x}_{0}(r))dr
 \end{array}\right.
@@ -2386,13 +2386,13 @@ Nous avons introduit dans ce chapitre une nouvelle formulation du problème
  via un modèle linéaire.
  De plus, ce modèle évite le choix arbitraire qui est fait classiquement
  en BOS pour convertir les champs de déplacement en carte de déviation.
- Notre algorithme de reconstruction de BOS 3D basé sur la minimisation d'un
+ L'algorithme de reconstruction de BOS 3D basé sur la minimisation d'un
  critère d'adéquation aux données a été réécrit en termes de déplacements
  mesurés.
  L'étude numérique réalisée dans ce chapitre montre une forte sensibilité
  de la reconstruction à l'hypothèse concernant la position d'intersection
  du rayon incident et du rayon sortant.
- l'approche 
+ L'approche 
 \begin_inset Formula $\bosD$
 \end_inset
 
@@ -2419,7 +2419,7 @@ Une perspective de ces travaux serait d'analyser plus en détail la validité
 \end_layout
 
 \begin_layout Plain Layout
-Dans la suite du manuscrit, nous conservons notre algorithme 
+Dans la suite du manuscrit, nous conservons l'algorithme 
 \begin_inset Formula $\bosU$
 \end_inset
 

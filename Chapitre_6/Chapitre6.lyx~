@@ -429,17 +429,17 @@ Dans ce chapitre, nous avons tout d'abord montré qu'une optimisation du
  bonne qualité, approchant même la résolution de la strioscopie.
  Cette première étape est essentielle pour réaliser des mesures BOS 3D de
  qualité.
- L'importance de l'ouverture caméra a également été soulignée de par le
- filtrage spatial qu'elle induit.
+ L'importance de l'ouverture caméra a également été soulignée pour limiter
+ le filtrage spatial qu'elle induit.
  Il est donc important de travailler avec une ouverture suffisamment faible
  pour conserver une bonne résolution.
  
 \end_layout
 
 \begin_layout Plain Layout
-Nous avons aussi prouvé le fonctionnement de notre algorithme dans sa version
- actuelle pour reconstruire des gradients de masse volumique intenses.
- L'hypothèse paraxiale utilisée jusqu'à présent semble toujours valide.
+Nous avons aussi prouvé le fonctionnement de l'algorithme dans sa version
+ actuelle, fondée sur l'hypothèse paraxiale, pour reconstruire des gradients
+ de masse volumique intenses.
  La régularisation 
 \begin_inset Formula $\myL$
 \end_inset
@@ -454,20 +454,20 @@ ation
 \begin_inset Formula $\myLL$
 \end_inset
 
- pour préserver les discontinuités.
- Le disque de Mach serait alors plus facile à identifier.
+ pour préserver les discontinuités, utile par exemple à l'identification
+ du disque de Mach.
  Toujours dans le but de bien identifier les ondes de chocs, un maillage
  plus fin permettrait de mieux localiser ces forts gradients de masse volumique.
- Cela augmenterait toutefois sensiblement le coût de calcul à moins de de
- mettre en place des maillages de type adaptatif.
+ Cela augmenterait toutefois sensiblement le coût de calcul à moins de mettre
+ en place des maillages de type adaptatif dans la méthode de reconstruction.
 \end_layout
 
 \begin_layout Plain Layout
-Les résultats obtenus dans ce chapitre montre bien tout l'intérêt de la
+Les résultats obtenus dans ce chapitre montrent bien tout l'intérêt de la
  BOS 3D pour la mesure des écoulements compressibles.
  Les champs moyens reconstruits présentent des structures topologiques en
  accord avec la littérature.
- De plus, le champs moyen reconstruit à NPR=5 montre un excellent accord
+ De plus, le champ moyen reconstruit à NPR=5 montre un excellent accord
  avec la simulation numérique.
  Enfin, l'analyse en moyenne de phase laisse entrevoir le potentiel de la
  technique.

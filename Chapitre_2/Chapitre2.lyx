@@ -1792,8 +1792,8 @@ height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
-A travers ce chapitre nous avons développé un code de reconstruction BOS
- 3D avec une approche directe.
+Dans ce chapitre, nous avons décrit un code de reconstruction BOS 3D avec
+ une approche directe.
  Il repose sur la minimisation d'un critère aux moindres carrés régularisé.
  Pour la régularisation quadratique que nous avons adoptée, le paramètre
  de régularisation peut être sélectionné de manière automatique à partir
@@ -1801,16 +1801,25 @@ A travers ce chapitre nous avons développé un code de reconstruction BOS
  Nous avons validé notre code sur des données synthétiques et montré que
  pour l'étude d'un jet, le placement optimal des caméras est la répartition
  circulaire.
- Nous avons ensuite conçu un banc d'essai expérimental, la géode, sur lequel
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Nous avons ensuite conçu un banc d'essai expérimental, la géode, sur lequel
  12 caméras ont été utilisées.
  La chaîne de traitement qui a été mise en place nous a permis de reconstruire
  la topologie de différents écoulements de convection.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Plain Layout
-A travers ce chapitre nous avons également montré l'importance de ne prendre
- en compte que les rayons qui ont traversé l'écoulement de part en part
- (les rayons dits 
+Nous avons montré l'importance de ne prendre en compte que les rayons qui
+ ont traversé l'écoulement de part en part (les rayons dits 
 \begin_inset Quotes fld
 \end_inset
 
@@ -1819,15 +1828,15 @@ valides
 \end_inset
 
 ).
- Enfin, le choix des conditions aux limites a également une grande importance
+ De plus, le choix des conditions aux limites a également une grande importance
  sur la qualité de la reconstruction.
 \end_layout
 
 \begin_layout Plain Layout
-Notre technique BOS 3D a ensuite été mise en œuvre en laboratoire sur le
- banc géode.
+La technique BOS 3D a ensuite été mise en œuvre en laboratoire sur le banc
+ géode.
  Des écoulements instantanés de convection, à la topologie complexe, ont
- été reconstruits démontrant le fonctionnement de notre méthode.
+ été reconstruits démontrant le fonctionnement de la méthode.
  L'élimination des rayons non valides améliore fortement la qualité des
  reconstructions, notamment sur les bords du volume.
  L'élimination de ces rayons impacte cependant la forme du volume commun
@@ -1842,17 +1851,17 @@ caméras.
  cubique ne s'appliquent pas directement sur la zone affectée par les données
  et la région en question n'est pas contrainte par la reconstruction.
  Nous n'avons pas apporté de réponses à cette question au cours de ces travaux
- mais c'est un point qui pourrait également améliorer la qualité des reconstruct
-ions.
+ mais c'est un point qui pourrait être considéré dans le futur pour améliorer
+ la qualité des reconstructions.
 \end_layout
 
 \begin_layout Plain Layout
-Néanmoins, une première comparaison avec des mesures thermocouples semble
- indiquer une sous-estimation des niveaux de masse volumique reconstruits
- par BOS 3D.
+Une première comparaison avec des mesures thermocouples semble indiquer
+ une sous-estimation des niveaux de masse volumique reconstruits par BOS
+ 3D.
  Avant de pourvoir envisager un déploiement de la technique en soufflerie,
  nous revenons dans le chapitre suivant sur les hypothèses utilisées dans
- notre modèle BOS afin d'expliquer les écarts observés.
+ notre modèle BOS afin d'expliquer et si possible, corriger les écarts observés.
  
 \end_layout
 

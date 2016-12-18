@@ -415,23 +415,21 @@ Compléments
 \end_layout
 
 \begin_layout Standard
-Nous présentons dans cette section l'intérêt de disposer de champs instantanés
- de masse volumique.
- Bien que l'objectif de cette thèse n'est pas de caractériser ce type d'écouleme
-nt, il est intéressant de se pencher sur l'information que l'on peut extraire
- d'une mesure BOS 3D.
- Nous nous intéressons dans la suite à l'étude du champ instantané précédemment
- reconstruit.
- L'analyse présentée ci-dessous est une piste proposée pour analyser plus
- en détails l'écoulement de la buse.
- En effet, étant donné le faible nombre d'acquisitions réalisées à F2, il
- est difficile d'en tirer des conclusions sur la physique du jet.
+Nous présentons dans cette section des résultats complémentaires obtenus
+ sur un jet instantané reconstruit avec les données acquises à F2.
+ Bien que l’objectif de cette thèse ne soit pas de l’étude physique du type
+ d’écoulement en aval d’une buse comme étudié à F2, il est intéressant de
+ se pencher sur l’information que l’on peut extraire d’une mesure BOS 3D
+ de champs instantanés de masse volumique.
+ Ces résultats prometteurs nous ont cependant apparus trop préliminaires
+ pour être intégrés dans la publication; pour ce faire ils devraient être
+ complétés sur des acquisitions plus nombreuses.
  
 \end_layout
 
 \begin_layout Standard
-En observant attentivement notre champ de masse volumique instantanée, et
- en particulier le champ de gradient sur les figures 16 et 17 de l'article
+En observant attentivement le champ de masse volumique instantanée, et en
+ particulier le champ de gradient sur les figures 16 et 17 de l'article
  précédent, une organisation hélicoïdale des enroulements de Kelvin-Helmoltz
  semble émerger.
  
@@ -481,7 +479,7 @@ name "fig:F2:cylindre"
 \begin_layout Standard
 Afin d'étudier si un mode hélicoïdal domine effectivement l'écoulement,
  nous avons réalisé une décomposition modale.
- Pour cela, nous avons dans un premier temps interpolé notre champ de masse
+ Pour cela, nous avons dans un premier temps interpolé le champ de masse
  volumique fluctuant 
 \begin_inset Formula $\myrho'=\myrho-<\myrho>$
 \end_inset
@@ -558,7 +556,7 @@ Ainsi, pour chaque coupe en
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -628,7 +626,12 @@ Partie réelle
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Représentation des 5 premiers modes azimutaux.
+Représentation des 5 premiers modes azimutaux pour le jet instantané reconstruit
+ en Fig.
+\begin_inset space ~
+\end_inset
+
+16 de l'article précédent.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:F2:modes"
@@ -660,7 +663,7 @@ reference "fig:F2:modes"
 , est symbolisée par la ligne noire.
  Le mode 0 est relativement absent au début du jet avant de s'amplifier
  en aval.
- On peut voir apparaître sur le mode 1, le mode hélicoïdal marqué pat plusieurs
+ On peut voir apparaître sur le mode 1, le mode hélicoïdal marqué par plusieurs
  structures énergétiques entre 
 \begin_inset Formula $Z/D=2.5$
 \end_inset
@@ -688,7 +691,7 @@ Si l'on extrait la partie réelle du mode 1 en
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -751,8 +754,8 @@ Ce début d'analyse est encourageant et montre l'intérêt de pouvoir reconstrui
  intéressant de reconstruire l'ensemble des champs instantanés afin de pouvoir
  réaliser des statistiques.
  Le processus décrit précédemment pourrait alors être répété sur l'ensemble
- des champs.
- Une estimation du taux d'amplification associé à chacun des modes.
+ des champs, conduisant à une estimation du taux d'amplification associé
+ à chacun des modes.
  Il serait alors intéressant de comparer ce résultat avec une analyse de
  stabilité, d'autant plus que l'on dispose de manière expérimentale à la
  fois des champs température et de vitesse moyens.
@@ -799,9 +802,9 @@ Pour la première fois la BOS 3D a été déployée en soufflerie pour reconstru
  par comparaison avec des acquisitions par thermocouple.
  Ce résultat illustre également la capacité de la technique BOS 3D à mesurer
  un champ tridimensionnel de température.
- La qualité de la reconstruction d'un champ instantané permet, de par sa
- résolution, une analyse plus fine de la topologie du jet et des instabilités
- naissant dans la couche de mélange.
+ La qualité de la reconstruction d'un champ instantané, et notamment sa
+ bonne résolution, permet une analyse plus fine de la topologie du jet et
+ des instabilités naissant dans la couche de mélange.
  La possibilité de coupler la BOS 3D et la SPIV est également intéressante.
  Cette première réalisation montre l'intérêt de pouvoir combiner ces deux
  types de mesures notamment pour l'étude des échanges de chaleur et donc

@@ -9458,8 +9458,9 @@ Pour la première fois, la BOS 3D a été déployée dans une des plus grandes
 La première concerne les mouvements complexes qui affectent les éléments
  de la soufflerie lors de son fonctionnement et qui se traduisent par des
  mouvements relatifs entre les mouchetis et les caméra.
- Une solution a été mise en œuvre afin de corriger ces perturbations et
- de permettre la reconstruction de l'écoulement à Mach 0.4.
+ Une première solution a été mise en œuvre pour corriger ces perturbations,
+ permettant la reconstruction 3D de l'écoulement pour des données acquises
+ à Mach 0.4.
 \end_layout
 
 \begin_layout Plain Layout
@@ -9469,17 +9470,17 @@ La seconde concerne la mesure des écoulements de grande taille.
  Il est donc nécessaire de reconstruire l'ensemble du domaine perturbé et
  cela avec un nombre suffisant de caméras.
  Si la solution la plus simple consiste à travailler avec de petites focales,
- d'autres solutions pourraient être envisagée par combinaisons de caméras
+ d'autres solutions pourraient être envisagées par combinaisons de caméras
  et/ou de différentes focales pour couvrir l'ensemble du champ.
 \end_layout
 
 \begin_layout Plain Layout
-Enfin, la troisième difficulté liée à l'étude de phénomènes à forts gradients
- qui se traduisent notamment par des effets d'astigmatisme affectant les
- mesures.
+Enfin, la troisième difficulté provient de l'étude de phénomènes à forts
+ gradients qui se traduisent notamment par des effets d'astigmatisme affectant
+ les mesures.
  Ce point sera étudié plus en détails dans le chapitre suivant.
- Une première solution suggère de travailler à plus faible ouverture et
- ce qui nécessite l'utilisation de sources d'éclairage très puissantes.
+ Une première solution suggère de travailler à plus faible ouverture, ce
+ qui nécessite l'utilisation de sources d'éclairage très puissantes.
  
 \end_layout
 
@@ -9487,7 +9488,8 @@ Enfin, la troisième difficulté liée à l'étude de phénomènes à forts grad
 Au cours de cette campagne une très grande quantité de données a été acquise,
  qu’il s’agisse des données BOS elles-même ou des données complémentaires
  acquises par stéréoscopie par le DTIM.
- Seules quelques configurations ont été traitées dans le cadre de ce travail.
+ Seules quelques configurations ont pu être traitées dans le cadre de cette
+ thèse.
  L’exploitation complète des données exigera selon nous plusieurs mois de
  travaux.
  Elle permettrait d’améliorer la procédure de correction des effets liés

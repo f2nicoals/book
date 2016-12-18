@@ -1,0 +1,393 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass report
+\use_default_options true
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Liste des Publications
+\end_layout
+
+\begin_layout Subsubsection*
+Publiée
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+F.
+ Nicolas, D.
+ Donjat, O.
+ Léon, G.
+ Le Besnerais, F.
+ Champagnat, and F.
+ Micheli.
+ 3d reconstruction of compressible flow by synchronized multicamera bos.
+ Experiments in Fluids.
+ 
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Soumises
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+F.
+ Nicolas, D.
+ Donjat, A.
+ Plyer, F.
+ Champagnat, G.
+ Le Besnerais, F.
+ Micheli, P.
+ Cornic, Y.
+ Le Sant, and J.
+ M.
+ Deluc.
+ An application of direct 3dbos technique in research wind tunnel: the study
+ of a co-flow jet in f2.
+ Measurement Science and Technology.
+ 
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+F.
+ Nicolas, V.
+ Todoroff, A.
+ Plyer, G.
+ Le Besnerais, D.
+ Donjat, F.
+ Micheli, F.
+ Champagnat, P.
+ Cornic, and Y.
+ Le Sant.
+ A direct approach for instantaneous 3d density field reconstruction from
+ background-oriented schlieren (bos) measurements.
+ Experiments in Fluids, 57(1):1–21, 2016.
+ 
+\end_layout
+
+\begin_layout Section*
+Liste des Communications
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+D.
+ Donjat, F.
+ Nicolas, A.
+ Plyer, F.
+ Micheli, P.
+ Cornic, G.
+ Le Besnerais, F.
+ Champagnat, Y.
+ Le Sant, and J.
+ M.
+ Deluc.
+ Study of a co-flowing hot jet: an application of direct 3dbos technique
+ in research wind tunnel.
+ In 10th Pacific Symposium on Flow Visualization and Image Processing, 2015.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+F.
+ Nicolas, D.
+ Donjat, F.
+ Micheli, A.
+ Plyer, P.
+ Cornic, F.
+ Champagnat, and G.
+ Le Besnerais.
+ Investigation of a co-axial hot jet in wind tunnel environment using 3d
+ bos.
+ In MOTAR, Köln, 2015.
+ MOTAR.
+ 
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+F.
+ Nicolas, D.
+ Donjat, F.
+ Micheli, F.and Champagnat, A.
+ Plyer, P.
+ Cornic, and G.
+ Le Besnerais.
+ Application of 3d bos on compressible flows.
+ In MOTAR, Lille, 2016.
+ MOTAR.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+F.
+ Nicolas, D.
+ Donjat, A.
+ Plyer, F.
+ Micheli, P.
+ Cornic, G.
+ Le Besnerais, F.
+ Champagnat, Y.
+ Le Sant, and J.
+ M.
+ Deluc.
+ Reconstruction dún écoulement de convection en soufflerie par bos 3d directe.
+ In CMOI/FLUVISU, 2015.
+ 
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+F.
+ Nicolas, F.
+ Micheli, D.
+ Donjat, A.
+ Plyer, F.
+ Champagnat, and G.
+ Le Besnerais.
+ 3d reconstruction of compressible flow by synchronized multi camera bos.
+ In 18th International Symposium on applications of laser techniques to
+ fluid mechanics, 2016.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+F.
+ Nicolas, F.
+ Micheli, D.
+ Donjat, A.
+ Plyer, F.
+ Champagnat, and G.
+ Le Besnerais.
+ Application de la bos 3d aux écoulements compressibles.
+ In CFTL 2016, 2016.
+ 
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+V.
+ Todoroff, F.
+ Nicolas, D.
+ Donjat, F.
+ Micheli, G.
+ Le Besnerais, F.
+ Champagnat, and A.
+ Plyer.
+ Instantaneous density field re-construction using 3d bos.
+ In MOTAR, Palaiseau, 2014.
+ MOTAR.
+ 
+\end_layout
+
+\end_body
+\end_document

@@ -144,6 +144,7 @@
 \usepackage{slashbox}
 \RequirePackage{ifthen}
 \usepackage[firstpage]{draftwatermark} %filigrane
+\usepackage{bibentry}
 
 
 %%%%%%
@@ -578,6 +579,17 @@ filename "Conclusion.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Publications.lyx"
+
+\end_inset
+
+
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "bib"

@@ -140,7 +140,7 @@ reference "sub:biblio:BOS3D_ONERA"
 \end_layout
 
 \begin_layout Standard
-Plus précisément, j’ai :
+Plus précisément, nous avons :
 \end_layout
 
 \begin_layout Itemize
@@ -1856,12 +1856,12 @@ caméras.
 \end_layout
 
 \begin_layout Plain Layout
-Néanmoins, une première comparaison avec des mesures thermocouples semble
- indiquer une sous-estimation des niveaux de masse volumique reconstruits
- par BOS 3D.
+Une première comparaison avec des mesures thermocouples semble indiquer
+ une sous-estimation des niveaux de masse volumique reconstruits par BOS
+ 3D.
  Avant de pourvoir envisager un déploiement de la technique en soufflerie,
  nous revenons dans le chapitre suivant sur les hypothèses utilisées dans
- notre modèle BOS afin d'expliquer les écarts observés.
+ notre modèle BOS afin d'expliquer et si possible, corriger les écarts observés.
  
 \end_layout
 

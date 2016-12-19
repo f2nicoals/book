@@ -6890,7 +6890,7 @@ reference "fig:S1MA:sans_vent"
 
  sur laquelle des iso-surfaces de masse volumique sont représentées.
  De manière classique pour un jet sous-détendu, on peut observer la succession
- de systèmes choc-détente sous la forme de cellules en diamant.
+ de systèmes choc-détente.
  Ce résultat constitue une première démonstration de la capacité de la technique
  BOS 3D à pouvoir opérer dans un environnement aussi grand.
 \end_layout
@@ -8265,7 +8265,7 @@ reference "fig:S1MA:M0d4_Q1d0"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center

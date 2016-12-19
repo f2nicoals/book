@@ -150,9 +150,11 @@ Article
 \end_layout
 
 \begin_layout Standard
-Article soumis à 
+Reproduction de l'article soumis à 
 \shape italic
-Experiments in Fluids.
+Experiments in Fluids 
+\shape default
+le 9 décembre 2016.
 \end_layout
 
 \begin_layout Standard
@@ -198,28 +200,29 @@ addtotoc={
 
 \begin_layout Plain Layout
 
-3, section, 1, Opimizing the BOS experimental set-up for high resolution
+3, section, 1, Optimization of the BOS experimental setup for high resolution
  measurements, sec:113:2D,
 \end_layout
 
 \begin_layout Plain Layout
 
-4, subsection, 2,Astigmatism effects, sec:113:2D:astigmatism,
+3, subsection, 2,Astigmatism effects, sec:113:2D:astigmatism,
 \end_layout
 
 \begin_layout Plain Layout
 
-4, subsection, 2,Installation, sec:113:2D:installation,
+3, subsection, 2,Installation, sec:113:2D:installation,
 \end_layout
 
 \begin_layout Plain Layout
 
-5, subsection, 2,Parametric analysis, sec:113:2D:param,
+4, subsection, 2,Optimizing BOS settings for the capture of high gradients,
+ sec:113:2D:param,
 \end_layout
 
 \begin_layout Plain Layout
 
-6, section, 1, underexpanded jet 3D density field measurement, sec:113:3D,
+6, section, 1, 3DBOS measurements of the density field, sec:113:3D,
 \end_layout
 
 \begin_layout Plain Layout
@@ -229,22 +232,48 @@ addtotoc={
 
 \begin_layout Plain Layout
 
-7, subsection, 2, Instantaneous density field reconstruction, sec:113:3D:Inst,
+6, subsection, 2, Processing, sec:113:3D:processing,
 \end_layout
 
 \begin_layout Plain Layout
 
-9, subsection, 2, Mean fiels analysis, sec:113:3D:mean,
+7, section, 1, Mean fields results, sec:113:mean,
 \end_layout
 
 \begin_layout Plain Layout
 
-11, section, 1, Vortex shedding analysis, sec:113:KH,
+7, subsection, 2, Reconstructed 3D density fields, sec:113:mean:fields,
 \end_layout
 
 \begin_layout Plain Layout
 
-11, section, 1, Conclusion, sec:113:conclu
+7, subsection, 2, Comparison with a CFD computation, sec:113:mean:CFD,
+\end_layout
+
+\begin_layout Plain Layout
+
+7, subsection, 2, Mean field analysis: conclusion, sec:113:mean:conclu,
+\end_layout
+
+\begin_layout Plain Layout
+
+8, section, 1, Shear layer coherent structures, sec:113:shear,
+\end_layout
+
+\begin_layout Plain Layout
+
+8, subsection, 2, Instantaneous density field reconstruction, sec:113:shear:conc
+lu,
+\end_layout
+
+\begin_layout Plain Layout
+
+10, subsection, 2, Pseudo-phase averaging analysis, sec:113:shear:phase,
+\end_layout
+
+\begin_layout Plain Layout
+
+12, section, 1, Conclusion, sec:113:conclu
 \end_layout
 
 \begin_layout Plain Layout
@@ -259,90 +288,94 @@ addtolist={
 
 \begin_layout Plain Layout
 
-5, figure, {Schematic view of the flow topology for a highly underexpanded
+2, figure, {Schematic view of the flow topology for a highly underexpanded
  jet.}, fig:113:jet,
 \end_layout
 
 \begin_layout Plain Layout
 
-6, figure, { Example of astigmatism effect induced by an underexpanded shock
- cell visible on a raw BOS image.}, fig:113:astigmatism,
+3, figure, {Astigmatism effect induced on a raw BOS image by the shock-cell
+ of an underexanded jet.}, fig:113:astigmatism,
 \end_layout
 
 \begin_layout Plain Layout
 
-7, figure, {Jet facility and camera field of view at ONERA Toulouse.}, fig:113:fa
+4, figure, {Jet facility and camera field of view at ONERA Toulouse.}, fig:113:fa
 cility,
 \end_layout
 
 \begin_layout Plain Layout
 
-7, figure, {BOS principle.}, fig:113:facility,
+4, figure, {Schematic of the BOS principle.}, fig:113:schematic,
 \end_layout
 
 \begin_layout Plain Layout
 
-8, figure, {Influence of the camera aperture on instantaneous and mean BOS
- field.}, fig:113:aperture,
+5, figure, {BOS images of a highly underexpanded jet (NPR=5) for various
+ f-number.}, fig:113:aperture,
 \end_layout
 
 \begin_layout Plain Layout
 
-8, figure, {Displacement norm (N) extracted in $X=D$  for different f-number.},
- fig:113:f-number,
+5, figure, {Displacement norm profiles extracted at axial location $X=D=1.53$,
+ for different f-numbers.}, fig:113:f-number,
 \end_layout
 
 \begin_layout Plain Layout
 
-9, figure, {Comparison between BOS image (top) and schlieren image (bottom).
+6, figure, {Comparison between BOS image (top) and schlieren image (bottom).
  NPR=5.}, fig:113:strio,
 \end_layout
 
 \begin_layout Plain Layout
 
-9, figure, {3D BOS bench and supersonic hot jet facility.}, fig:113:bench,
+6, figure, {The 3DBOS bench mounted in front of the supersonic hot jet facility.}
+, fig:113:bench,
 \end_layout
 
 \begin_layout Plain Layout
 
-10, figure, {Laser splitting table, here with 3 beams.
- In practice, we used 4 beams}, fig:113:laser,
+6, figure, {Laser splitting table, here with 3 beams, 4 beams were used
+ in the experiments.}, fig:113:laser,
 \end_layout
 
 \begin_layout Plain Layout
 
-10, figure, {Instantaneous density field reconstruction for $NPR=2.1$ case.
- Slice at $y=0$.}, fig:113:inst_slice,
-\end_layout
-
-\begin_layout Plain Layout
-
-11, figure, {Instantaneous density field reconstruction for $NPR=2.1$ case.
- Iso-density.}, fig:113:inst_iso,
-\end_layout
-
-\begin_layout Plain Layout
-
-11, figure, {Deviation map comparisons for x map at the top and z map at
- the bottom.}, fig:113:dev_map,
-\end_layout
-
-\begin_layout Plain Layout
-
-11, figure, {3D mean density field reconstruction on the right and extracted
+8, figure, {3D mean density field reconstruction on the right and extracted
  centerline profiles for each NPR on the left.}, fig:113:mean,
 \end_layout
 
 \begin_layout Plain Layout
 
-11, figure, {CMean density field reconstruction for NPR=5 case on the left
- and Density gradient magnitude on the right.}, fig:113:CFD,
+9, figure, {Evolution of the Mach disk position and diameter with respect
+ to the NPR.}, fig:113:XMD,
 \end_layout
 
 \begin_layout Plain Layout
 
-11, figure, {Evolution of the Mach disk position and diameter with respect
- to the NPR.}, fig:113:XMD,
+9, figure, {Mean density field BOS reconstruction compared to CFD result
+ for NPR=5 case.}, fig:113:CFD,
+\end_layout
+
+\begin_layout Plain Layout
+
+9, figure, {Instantaneous density field reconstruction for $NPR=2.1$ case.
+ Slice at $y=0$.}, fig:113:inst_slice,
+\end_layout
+
+\begin_layout Plain Layout
+
+10, figure, {Instantaneous density field reconstruction for $NPR=2.1$ case.
+ Iso-surfaces.}, fig:113:inst_iso,
+\end_layout
+
+\begin_layout Plain Layout
+
+11, figure, {Deviation map comparisons for $
+\backslash
+epsilon_x4 map at the top and 4
+\backslash
+epsilon_z$ map at the bottom.}, fig:113:dev_map,
 \end_layout
 
 \begin_layout Plain Layout
@@ -473,9 +506,9 @@ Les résultats obtenus dans ce chapitre montrent bien tout l'intérêt de la
  technique.
  On pourrait envisager des acquisitions conditionnées par des mesures acoustique
 s pour suivre un phénomène en particulier.
- Enfin, des reconstructions plus rapides permettraient également d'obtenir
- le champ de fluctuations de masse volumique permettant d'étudier plus en
- détail l'origine du bruit de screech par exemple.
+ Enfin, si l'on parvient à réduire le temps de calcul d'une reconstruction,
+ on pourrait également obtenir le champ de fluctuations de masse volumique
+ permettant d'étudier plus en détail l'origine du bruit de screech par exemple.
 \end_layout
 
 \end_inset

@@ -154,7 +154,7 @@ Reproduction de l'article soumis à
 \shape italic
 Measurement Sciences and Technology 
 \emph on
-le 22 décembre 2016
+le 21 décembre 2016
 \emph default
 .
 \end_layout
@@ -172,33 +172,38 @@ includepdf[pages=-,
 
 \begin_layout Plain Layout
 
-addtotoc={1, section, 1, Introduction, sec:F2:intro,
+addtotoc={2, section, 1, Introduction, sec:F2:intro,
 \end_layout
 
 \begin_layout Plain Layout
 
-1, subsection, 2, Direct 3DBOS, sec:F2:intro:Direct_3DBOS,
+2, section, 1, Related works, sec:F2:biblio,
 \end_layout
 
 \begin_layout Plain Layout
 
-2, subsection, 2, Wind tunnel BOS measurements, sec:F2:intro:windtunnel,
+2, subsection, 2, 2D and 3D density measurement by BOS, sec:F2:biblio:BOS,
 \end_layout
 
 \begin_layout Plain Layout
 
-3, subsection, 2, Thermal measurements from refractive index techniques,
- sec:F2:intro:thermal,
+2, subsection, 2, Large field measurement of density gradients with BOS,
+ sec:F2:biblio:windtunnel,
 \end_layout
 
 \begin_layout Plain Layout
 
-3, section, 1, Experimental set-up and measurement techniques, sec:expe,
+3, subsection, 2, Thermal measurements, sec:F2:biblio:thermal,
 \end_layout
 
 \begin_layout Plain Layout
 
-4, subsection, 2,Experimental setup, sec:F2:expe:setup,
+3, section, 1, Experimental set-up and measurement techniques, sec:F2:expe,
+\end_layout
+
+\begin_layout Plain Layout
+
+3, subsection, 2,Experimental setup, sec:F2:expe:setup,
 \end_layout
 
 \begin_layout Plain Layout
@@ -218,7 +223,7 @@ addtotoc={1, section, 1, Introduction, sec:F2:intro,
 
 \begin_layout Plain Layout
 
-5, subsection, 2,BOS-SPIV coupling, sec:F2:expe:BOS-SPIV,
+5, subsection, 2,Coupled 3DBOS and SPIV acquisitions, sec:F2:expe:BOS-SPIV,
 \end_layout
 
 \begin_layout Plain Layout
@@ -233,39 +238,39 @@ addtotoc={1, section, 1, Introduction, sec:F2:intro,
 
 \begin_layout Plain Layout
 
-7, subsection, 2, Deviation maps computation, sec:F2:BOS3D:mascarade,
+6, subsection, 2, Computation of the deviation maps, sec:F2:BOS3D:mascarade,
 \end_layout
 
 \begin_layout Plain Layout
 
-9, subsection, 2, 3D reconstruction, sec:F2:BOS3D:3D,
+7, subsection, 2, Direct 3DBOS algorithm, sec:F2:BOS3D:3D,
 \end_layout
 
 \begin_layout Plain Layout
 
-11, section, 1, Experimental results and discussion, sec:F2:results,
+7, section, 1, Experimental results and discussion, sec:F2:results,
 \end_layout
 
 \begin_layout Plain Layout
 
-11, subsection, 2, Mean density field reconstruction and validation, sec:F2:resu
-lts:mean,
+7, subsection, 2, Mean density field reconstruction and validation, sec:F2:resul
+ts:mean,
 \end_layout
 
 \begin_layout Plain Layout
 
-11, subsection, 2, 3D Instantaneous density field measurement, sec:F2:results:in
-st,
+8, subsection, 2, 3D Instantaneous density field measurement, sec:F2:results:ins
+t,
 \end_layout
 
 \begin_layout Plain Layout
 
-11, subsection, 2, 3DBOS and SPIV coupled acquisition, sec:F2:results:BOS-SPIV,
+8, subsection, 2, 3DBOS and SPIV coupled acquisition, sec:F2:results:BOS-SPIV,
 \end_layout
 
 \begin_layout Plain Layout
 
-12, section, 1, Conclusion, sec:F2:conclu
+10, section, 1, Conclusion, sec:F2:conclu
 \end_layout
 
 \begin_layout Plain Layout
@@ -280,95 +285,102 @@ addtolist={
 
 \begin_layout Plain Layout
 
-5, figure, {BOS technique.}, fig:F2:principle,
+2, figure, {Sketch of a typical BOS setup.}, fig:F2:principle,
 \end_layout
 
 \begin_layout Plain Layout
 
-6, figure, {Sketch of the F2 wind-tunnel of ONERA.}, fig:F2:F2,
+3, figure, {Sketch of the F2 wind-tunnel of ONERA.}, fig:F2:F2,
 \end_layout
 
 \begin_layout Plain Layout
 
-7, figure, {Jet interaction model.}, fig:F2:model,
+3, figure, {Sketch of the model used for jet interaction study.}, fig:F2:model,
 \end_layout
 
 \begin_layout Plain Layout
 
-7, table,  {Camera JAi BM500 GE characteristics.}, tab:F2:cameras,
+4, figure, {The optical measurement system mounted in the F2 wind tunnel.},
+ fig:F2:system,
 \end_layout
 
 \begin_layout Plain Layout
 
-8, figure, {3DBOD system adapted for F2 wind tunnel.}, fig:F2:system,
+4, table,  {Camera JAi BM500 GE characteristics.}, tab:F2:cameras,
 \end_layout
 
 \begin_layout Plain Layout
 
-8, figure, {Experimental setup : 3DBOS and SPIV implementation in F2 wind
+4, figure, {Experimental setup : 3DBOS and SPIV implementation in F2 wind
  tunnel.}, fig:F2:setup,
 \end_layout
 
 \begin_layout Plain Layout
 
-9, figure, {BOS laser division plate.
+5, figure, {BOS laser division plate.
  Laser beam division example with 3 exiting beams.}, fig:F2:laser,
 \end_layout
 
 \begin_layout Plain Layout
 
-9, figure, {Thermocouple probe rake.}, fig:F2:thermocouple,
+5, figure, {Thermocouple probe rake.}, fig:F2:thermocouple,
 \end_layout
 
 \begin_layout Plain Layout
 
-10, figure, {PIV laser sheet generation.}, fig:F2:PIV,
+5, figure, {PIV laser sheet generation.}, fig:F2:PIV,
 \end_layout
 
 \begin_layout Plain Layout
 
-10, figure, {Calibration of 3DBOS for F2 experiment - Camera positions around
+6, figure, {Calibration of 3DBOS for F2 experiment - Camera positions around
  reconstructed volume MV.}, fig:F2:calibration,
 \end_layout
 
 \begin_layout Plain Layout
 
-10, figure, {Displacement norm in pixels.}, fig:F2:displacement,
+6, figure, {Displacement norm in pixels.}, fig:F2:displacement,
 \end_layout
 
 \begin_layout Plain Layout
 
-10, figure, {L-curve mean density field.}, fig:F2:l-curve,
+7, figure, {Mid-point approximation for deviations calculation.}, fig:F2:dev,
 \end_layout
 
 \begin_layout Plain Layout
 
-10, figure, {Streamwise velocity field.}, fig:F2:velocity,
+7, figure, {L-curve mean density field.}, fig:F2:l-curve,
 \end_layout
 
 \begin_layout Plain Layout
 
-10, figure, {Longitudinal profile of averaged density field.}, fig:F2:mean,
+7, figure, {Streamwise mean velocity field.}, fig:F2:velocity,
 \end_layout
 
 \begin_layout Plain Layout
 
-10, figure, {Temperature profiles 3DBOS thermocouples.}, fig:F2:temperature,
+8, figure, {Longitudinal slices of the averaged 3D density fie.}, fig:F2:mean,
 \end_layout
 
 \begin_layout Plain Layout
 
-10, figure, {Optimal reconstruction of the co-flowing jet.}, fig:F2:isodensity,
+9, figure, {Temperature profiles from 3DBOS and from thermocouples.}, fig:F2:temp
+erature,
 \end_layout
 
 \begin_layout Plain Layout
 
-10, figure, {Longitudinal profile of density field.}, fig:F2:inst,
+9, figure, {Optimal reconstruction of the co-flowing jet.}, fig:F2:isodensity,
 \end_layout
 
 \begin_layout Plain Layout
 
-10, figure, {Longitudinal profile of the density's gradient field}, fig:F2:grad,
+9, figure, {Longitudinal profile of density field.}, fig:F2:inst,
+\end_layout
+
+\begin_layout Plain Layout
+
+9, figure, {Longitudinal profile of the density's gradient field}, fig:F2:grad,
 \end_layout
 
 \begin_layout Plain Layout

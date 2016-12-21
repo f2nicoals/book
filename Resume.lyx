@@ -117,7 +117,7 @@ Ces travaux de thèses s'inscrivent dans le cadre du développement d'outils
  vue, il est possible de reconstruire le champ de masse volumique associé,
  par résolution d'un problème inverse.
  Afin de poursuivre le développement de la technique, nous avons tout d'abord
- développé une chaîne de traitement plus systématique puia amélioré la robustess
+ développé une chaîne de traitement plus systématique puis amélioré la robustess
 e de notre algorithme de reconstruction.
  Après avoir rálisé une validation sur des données de synthèse, nous avons
  mise en œuvre notre méthode sur un banc d'essais comportant 12 caméras.
@@ -125,7 +125,7 @@ e de notre algorithme de reconstruction.
  sur un jet chaud subsonique.
  Lors de cette campagne, elle a été validée par comparaison avec des mesures
  de température.
- Des acquisistions couplées BOS 3D et stéréo PIV ont également été effectuées.
+ Des acquisitions couplées BOS 3D et stéréo PIV ont également été effectuées.
  Une démonstration à l'échelle d'une soufflerie industrielle a ensuite été
  réalisée dans la soufflerie S1MA de l'ONERA.
  Les problématiques rencontrées sur les écoulements compressibles lors de

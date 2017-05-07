@@ -7225,10 +7225,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/N_Mach.pdf
+	filename Images/N.pdf
 	lyxscale 50
 	width 32text%
-	BoundingBox 105bp 260bp 475bp 570bp
+	BoundingBox 15bp 15bp 410bp 410bp
 	clip
 
 \end_inset
@@ -7262,10 +7262,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/Up_Mach.pdf
+	filename Images/Up.pdf
 	lyxscale 50
 	width 32text%
-	BoundingBox 105bp 260bp 475bp 570bp
+	BoundingBox 15bp 15bp 410bp 410bp
 	clip
 
 \end_inset
@@ -7299,10 +7299,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Images/Vp_Mach.pdf
+	filename Images/Vp.pdf
 	lyxscale 50
 	width 32text%
-	BoundingBox 105bp 260bp 475bp 570bp
+	BoundingBox 15bp 15bp 410bp 410bp
 	clip
 
 \end_inset

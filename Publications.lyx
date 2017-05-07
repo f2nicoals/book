@@ -74,7 +74,7 @@ Liste des Publications
 \end_layout
 
 \begin_layout Subsubsection*
-Publiée
+Publiées
 \end_layout
 
 \begin_layout Itemize
@@ -98,7 +98,7 @@ F.
  Champagnat, and F.
  Micheli.
  3D reconstruction of compressible flow by synchronized multicamera BOS.
- Experiments in Fluids.
+ Experiments in Fluids, 58(5):46, 2017.
  
 \begin_inset VSpace bigskip
 \end_inset
@@ -106,8 +106,37 @@ F.
 
 \end_layout
 
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+F.
+ Nicolas, V.
+ Todoroff, A.
+ Plyer, G.
+ Le Besnerais, D.
+ Donjat, F.
+ Micheli, F.
+ Champagnat, P.
+ Cornic, and Y.
+ Le Sant.
+ A direct approach for instantaneous 3D density field reconstruction from
+ background-oriented schlieren (BOS) measurements.
+ Experiments in Fluids, 57(1):13, 2016.
+ 
+\end_layout
+
 \begin_layout Subsubsection*
-Soumises
+Soumise
 \end_layout
 
 \begin_layout Itemize
@@ -142,35 +171,6 @@ F.
 \end_inset
 
 
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-\begin_inset space ~
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-F.
- Nicolas, V.
- Todoroff, A.
- Plyer, G.
- Le Besnerais, D.
- Donjat, F.
- Micheli, F.
- Champagnat, P.
- Cornic, and Y.
- Le Sant.
- A direct approach for instantaneous 3D density field reconstruction from
- background-oriented schlieren (BOS) measurements.
- Experiments in Fluids, 57(1):1–21, 2016.
- 
 \end_layout
 
 \begin_layout Section*

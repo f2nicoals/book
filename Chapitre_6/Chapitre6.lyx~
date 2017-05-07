@@ -150,11 +150,9 @@ Article
 \end_layout
 
 \begin_layout Standard
-Reproduction de l'article soumis à 
-\shape italic
-Experiments in Fluids 
-\shape default
-le 9 décembre 2016.
+Reproduction de l'article paru dans Experiments in Fluids, volume 58, mai
+ 2017, issue 5, article 46.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -386,19 +384,24 @@ epsilon_z$ map at the bottom.}, fig:113:dev_map,
 
 \begin_layout Plain Layout
 
-11, figure, {Spatial functions for POD modes 1 and 2 u and v displacements.},
- fig:113:modes,
+11, figure, {Spatial functions of POD modes 1 and 2}, fig:113:modes,
 \end_layout
 
 \begin_layout Plain Layout
 
-11, figure, {Phase portrait of the normalized amplitudes for mode 1 and
- mode 2.}, fig:113:portrait,
+12, figure, {Phase portrait obtained by the amplitudes of the BOS displacement
+ snapshots projected on the two first POD modes.}, fig:113:portrait,
 \end_layout
 
 \begin_layout Plain Layout
 
-11, figure, {Phases}, fig:113:phases
+12, figure, {Phase averaged density field for the most intense ring structure
+ of density.}, fig:113:ring,
+\end_layout
+
+\begin_layout Plain Layout
+
+13, figure, {7 equi-spaced phase of NRP = 2 case.}, fig:113:phases
 \end_layout
 
 \begin_layout Plain Layout

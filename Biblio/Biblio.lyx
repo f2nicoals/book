@@ -358,7 +358,7 @@ name "sec:biblio:principe"
 \end_layout
 
 \begin_layout Subsection
-Rappels d'optiques
+Rappels d'optique
 \end_layout
 
 \begin_layout Standard
@@ -873,7 +873,7 @@ L=\int_{A}^{B}nds=n\wideparen{AB}
 \begin_inset Formula $\wideparen{AB}$
 \end_inset
 
- s'identifie à la droite 
+ s'identifie au segment 
 \begin_inset Formula $AB$
 \end_inset
 
@@ -1461,7 +1461,7 @@ où
 
  représente la constante de Gadstone-Dale.
  Celle-ci dépend principalement du gaz considéré et de la longueur d'onde.
- Pour de l'air en conditions standard elle vaut 
+ Pour de l'air en conditions standards elle vaut 
 \begin_inset Formula $\myG=0.23.10^{-3}m^{3}/kg$
 \end_inset
 
@@ -2069,7 +2069,7 @@ key "Kirmse2011"
 ).
  En bas à gauche résultat CFD brut.
  En bas à droite, résultat CFD avec prise en compte des filtrages spatiaux
- qui affecte la mesure BOS.
+ qui affectent la mesure BOS.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -7071,7 +7071,7 @@ n par variation totale,
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-{\newcommand{\arraystretch}{1.5}}\mathcal{R}(\myrho)=\left\{ \begin{array}{l}
+{\renewcommand{\arraystretch}{1.5}}\mathcal{R}(\myrho)=\left\{ \begin{array}{l}
 ||\nabla\myrho||^{2}\mbox{ pour la régularisation}\myL\\
 \sqrt{||\nabla\myrho||^{2}+\mydelta^{2}}\mbox{ pour la régularisation}\myLL
 \end{array}\right.

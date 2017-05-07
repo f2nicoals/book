@@ -103,7 +103,7 @@ Resumé
 \end_layout
 
 \begin_layout Standard
-Ces travaux de thèses s'inscrivent dans le cadre du développement d'outils
+Ces travaux de thèse s'inscrivent dans le cadre du développement d'outils
  métrologiques avancés pour la mécanique des fluides, et en particulier
  pour les souffleries.
  La Background Oriented Schlieren (BOS) 3D, développée à l'ONERA, est une
@@ -119,7 +119,7 @@ Ces travaux de thèses s'inscrivent dans le cadre du développement d'outils
  Afin de poursuivre le développement de la technique, nous avons tout d'abord
  développé une chaîne de traitement plus systématique puis amélioré la robustess
 e de notre algorithme de reconstruction.
- Après avoir rálisé une validation sur des données de synthèse, nous avons
+ Après avoir réalisé une validation sur des données de synthèse, nous avons
  mise en œuvre notre méthode sur un banc d'essais comportant 12 caméras.
  Par la suite, la technique a été déployée pour la première fois en soufflerie
  sur un jet chaud subsonique.
@@ -134,12 +134,12 @@ e de notre algorithme de reconstruction.
  Un banc de mesure BOS 3D a été conçu en laboratoire afin d'optimiser la
  mesure d'un jet sous-détendu.
  Sur cette configuration, de très bon accords ont été obtenus avec la littératur
-e ainsi qu'avec une simulation LES.
+e ainsi qu'avec une simulation DES.
  
 \end_layout
 
 \begin_layout Standard
-A travers cette étude, nous avons étendus le domaine d'application de la
+A travers cette étude, nous avons étendu le domaine d'application de la
  BOS 3D aux écoulements compressibles et démontré son utilisation en soufflerie.
  La qualité des résultats obtenus démontre le potentiel offert par la technique
  pour l'analyse physique des écoulements.
@@ -194,7 +194,7 @@ This PhD work is part of the development of advanced metrological tools
  A 3DBOS test bench has been built in laboratory in order to optimize underexpan
 ded jet measurements.
  On this specific configuration, very good agreements have bee obtained
- in comparison with literature and with a LES simulation.
+ in comparison with literature and with a DES simulation.
  
 \end_layout
 

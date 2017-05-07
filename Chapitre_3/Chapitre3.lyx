@@ -1158,7 +1158,7 @@ status open
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-{\renewcommand{\arraystretch}{1.5}}\left\{ \begin{array}{l}
+{\newcommand{\arraystretch}{1.5}}\left\{ \begin{array}{l}
 \boldsymbol{\Delta}=\frac{G}{n_{ext}}\int_{s_{in}}^{s_{out}}(s_{out}-r)\nabla\myrho(\textbf{x}_{0}(r))dr\\
 \boldsymbol{\Delta}=\frac{G}{n_{ext}}\int_{s_{in}}^{s_{out}}(r-s_{in})\nabla\myrho(\textbf{x}_{0}(r))dr
 \end{array}\right.
@@ -2053,7 +2053,7 @@ name "fig:BOS2:bos1_Iout"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calcvul LES (a) et champs reconstruits par méthode 
+Calcul LES (a) et champs reconstruits par méthode 
 \begin_inset Formula $\bosD$
 \end_inset
 

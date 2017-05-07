@@ -440,9 +440,9 @@ reference "chap:BOS2"
  Nous avons implémenté ce nouvel algorithme dans une version 2D et comparé
  des reconstructions réalisées avec le modèle classique par rapport à notre
  modèle.
- Dans le cas étudié, la BOS classique donne des résultats équivalent à notre
- modèle, toutefois ce nouvel algorithme pourrait s'avérer bénéfique sur
- des cas plus complexes.
+ Dans le cas étudié, la BOS classique donne des résultats équivalents à
+ notre modèle, toutefois ce nouvel algorithme pourrait s'avérer bénéfique
+ sur des cas plus complexes.
  Nous conservons par conséquent notre modèle BOS classique avec le point
  milieu pour référence dans la suite de notre étude.
 \end_layout

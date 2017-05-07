@@ -150,11 +150,9 @@ Article
 \end_layout
 
 \begin_layout Standard
-Reproduction de l'article soumis à 
-\shape italic
-Experiments in Fluids 
-\shape default
-le 9 décembre 2016.
+Reproduction de l'article paru dans Experiments in Fluids, volume 58, mai
+ 2017, issue 5, article 46.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -425,7 +423,7 @@ scale=0.95,
 
 \begin_layout Plain Layout
 
-clip,trim= 1cm 2cm 1mm 3.06cm,
+clip,trim= 1cm 2cm 1mm 2.06cm,
 \end_layout
 
 \begin_layout Plain Layout

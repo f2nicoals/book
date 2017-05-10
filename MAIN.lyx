@@ -143,7 +143,7 @@
 \usepackage{xcolor}
 \usepackage{slashbox}
 \RequirePackage{ifthen}
-\usepackage[firstpage]{draftwatermark} %filigrane
+%\usepackage[firstpage]{draftwatermark} %filigrane
 \usepackage{bibentry}
 
 
@@ -153,7 +153,7 @@
 %% Titre, auteur, date, laboratoire, cotutelle
 \title{Reconstruction de champs instantanés de masse volumique par BOS 3D. Application à l'étude des écoulements complexes en grande soufflerie.}
 \author{François NICOLAS}
-\defencedate{Date de défense (07/03/2017)}
+\defencedate{07/03/2017}
 \lab{ONERA, Département Modèles pour l'Aérodynamique et l'Energétique}
 %\cotutelle{Institut de cotutelle}
 

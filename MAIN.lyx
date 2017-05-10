@@ -314,14 +314,14 @@ status open
 
 \begin_layout Plain Layout
 
-
+%
 \backslash
 SetWatermarkText{Version provisoire}%texte
 \end_layout
 
 \begin_layout Plain Layout
 
-
+%
 \backslash
 SetWatermarkScale{0.5}%echelle
 \end_layout

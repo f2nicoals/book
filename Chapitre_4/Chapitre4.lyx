@@ -584,7 +584,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename Images/Abs_modes.pdf
-	width 50text%
+	lyxscale 50
+	width 49text%
 	BoundingBox 20bp 240bp 595bp 750bp
 	clip
 
@@ -618,7 +619,7 @@ status open
 \begin_inset Graphics
 	filename Images/Re_modes.pdf
 	lyxscale 50
-	width 50text%
+	width 49text%
 	BoundingBox 25bp 240bp 595bp 750bp
 	clip
 
